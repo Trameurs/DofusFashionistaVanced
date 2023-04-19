@@ -1,5 +1,5 @@
 # dofusfashionista
-The Dofus Fashionista, an equipment advisor for Dofus
+The Dofus Fashionista, an equipment advisor for Dofus    
 This is a fork and an attempt at putting back up the website and update it to the latest version of Dofus
 
 ## Install and Run Fashionista:
