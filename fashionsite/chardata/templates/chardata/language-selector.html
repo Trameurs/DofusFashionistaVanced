@@ -1,0 +1,37 @@
+{% load i18n %}
+{% load static_s3 %}
+{% if experiments.TRANSLATION %}
+    {% get_current_language as LANGUAGE_CODE %}
+    <div class="base-language-selector-div" id="language-div">
+        <form action="/i18n/setlang/" method="post" id="language-selector">
+        {% csrf_token %}
+            <input type="hidden" name="language" value="{{LANGUAGE_CODE}}" id="language-input">
+            {% if LANGUAGE_CODE == 'pt' %}
+            <img src="{% static 'chardata/pt.png' %}" id="flag" title="{% trans 'Portuguese' %}"></img>
+            {% endif %}
+            {% if LANGUAGE_CODE == 'en' %}
+            <img src="{% static 'chardata/en.png' %}" id="flag" title="{% trans 'English' %}"></img>
+            {% endif %}
+            {% if LANGUAGE_CODE == 'fr' %}
+            <img src="{% static 'chardata/fr.png' %}" id="flag" title="{% trans 'French' %}"></img>
+            {% endif %}
+            {% if LANGUAGE_CODE == 'es' %}
+            <img src="{% static 'chardata/es.png' %}" id="flag" title="{% trans 'Spanish' %}"></img>
+            {% endif %}
+        </form>
+        <div id="other-flags">
+            {% if LANGUAGE_CODE != 'pt' %}
+            <img src="{% static 'chardata/pt.png' %}" id="flag-pt" class="flag-choose" title="{% trans 'Portuguese' %}"></img><br>
+            {% endif %}
+            {% if LANGUAGE_CODE != 'en' %}
+            <img src="{% static 'chardata/en.png' %}" id="flag-en" class="flag-choose" title="{% trans 'English' %}"></img><br>
+            {% endif %}
+            {% if LANGUAGE_CODE != 'fr' %}
+            <img src="{% static 'chardata/fr.png' %}" id="flag-fr" class="flag-choose" title="{% trans 'French' %}"></img><br>
+            {% endif %}
+            {% if LANGUAGE_CODE != 'es' %}
+            <img src="{% static 'chardata/es.png' %}" id="flag-es" class="flag-choose" title="{% trans 'Spanish' %}"></img><br>
+            {% endif %}
+        </div>
+    </div>
+{% endif %}

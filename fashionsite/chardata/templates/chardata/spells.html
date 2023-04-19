@@ -1,0 +1,1019 @@
+{% extends 'chardata/base.html' %}
+
+{% load i18n %}
+{% load static_s3 %}
+
+{% block title %}The Dofus Fashionista: {% trans "Spells Damage" %}{% endblock %}
+
+{% block main %}
+  {% load static_s3 %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/spells.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.spells %}" class="spells-css css-file">
+
+    <h1 align="center"> {% trans "Spells Damage" %} </h1>
+    
+    <p align="center" class='text'>
+        {% if char.char_name %}
+            {% blocktrans with charname=char.char_name %}How much damage {{charname}}'s weapon and spells will deal with the suggested set. {% endblocktrans %}
+        {% else %}
+            {% blocktrans %}How much damage your weapon and spells will deal with the suggested set.{% endblocktrans %}
+        {% endif %}</p>
+    
+    <div id="spell-buttons">
+        <table width="100%">
+            <tr>
+                <td width="45%">
+                    <div id="left-buttons">
+                        <button id="all-buffs-button" class="button-generic">{% trans "Fully Buff" %}</button>
+                        <button id="no-buffs-button" class="button-generic">{% trans "Clean Buffs" %}</button>
+                    </div>
+                </td>
+                <td width="55%">
+                    <div id="right-buttons" align="right">
+                        {% if char.level < 200 %}
+                            <button id="level-filter" class="button-generic filter-button">{% trans "Level" %}</button>
+                        {% endif %}
+                        <button id="agi-filter" class="button-generic filter-button">
+                            <img class="spell-elemental-button-image" src="{% static 'chardata/Agility.png' %}">
+                            {% trans "Agi" %}
+                        </button>
+                        <button id="cha-filter" class="button-generic filter-button">
+                            <img class="spell-elemental-button-image" src="{% static 'chardata/Chance.png' %}">
+                            {% trans "Cha" %}
+                        </button>
+                        <button id="int-filter" class="button-generic filter-button">
+                            <img class="spell-elemental-button-image" src="{% static 'chardata/Intelligence.png' %}">
+                            {% trans "Int" %}
+                        </button>
+                        <button id="str-filter" class="button-generic filter-button">
+                            <img class="spell-elemental-button-image" src="{% static 'chardata/Strength.png' %}">
+                            {% trans "Str" %}
+                        </button>
+                        <button id="other-filter" class="button-generic filter-button">{% trans "Others" %}</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        
+        
+    </div>
+    
+    <table id="spells-table" width="100%">
+    <tr>
+    <td class="spells-td" width="33%"> <div id="spells0"></div></td>
+    <td class="spells-td" width="33%"> <div id="spells1"></div></td>
+    <td class="spells-td" width="33%"> <div id="spells2"></div></td>
+    </tr>
+    </table>
+  
+<script>
+    var spellDigests = {{digests_json | safe}};
+    var charStats = {{char_stats_json | safe}};
+    var spells;
+    var cells = {}
+    var buffsForSpell = {};
+    var buffState = {};
+    var levelFilter = false;
+    var agiFilter = false;
+    var intFilter = false;
+    var chaFilter = false;
+    var strFilter = false;
+    var othersFilter = false;
+   
+   
+    function checkElement(spell, element){
+        notEle = true;
+        if (spell.crit_dams != null) {
+            for (var i = 0; i < spell.crit_dams[0].length; i++) {
+                if (spell.crit_dams[0][i].element == element) {
+                    notEle = false;
+                    break;
+                }
+            }
+        }
+        if (notEle && spell.non_crit_dams != null) {
+            for (var i = 0; i < spell.non_crit_dams[0].length; i++) {
+                if (spell.non_crit_dams[0][i].element == element) {
+                    notEle = false;
+                    break;
+                }
+            }
+        }
+        if (notEle){
+            return false;
+        }
+        return true;
+   }
+   
+    function checkIfSpellToDisplay(spell){
+        if (spell == null) {
+            return false;
+        }
+        if (levelFilter){
+            if (spell.level[0] > {{char_level}}){
+                return false;
+            }
+        }
+        
+        var elements = ["air", "fire", "water", "earth", "neut"];
+        var filters = [agiFilter, intFilter, chaFilter, strFilter, strFilter];
+        var hide = true;
+        var hasElement = false;
+        
+        for (var i = 0; i < elements.length; i++) {
+            var isEle = checkElement(spell, elements[i]);
+            if (isEle) {
+                hasElement = true;
+            }
+            if (isEle && !filters[i]){
+                hide = false;
+                break;
+            }
+        }
+        if (!hasElement && !othersFilter) {
+            return true;
+        } else if (!hasElement && othersFilter) {
+            return false;
+        }
+        if (hide){
+            return false;
+        }
+        return true;
+    }
+   
+    function createSpellPairOrSingle(spell) {
+        if (spell.is_linked) {
+            if (spell.is_linked[0] == 1) {
+            
+                var first_spell = spell;
+                var second_spell;
+                for (i = 0; i < spellDigests.length; i++){
+                    if (spellDigests[i].name == spell.is_linked[1]){
+                        second_spell = spellDigests[i];
+                        break;
+                    }
+                }
+            
+                var shouldDisplayFirstSpell = checkIfSpellToDisplay(first_spell);
+                var shouldDisplaySecondSpell = checkIfSpellToDisplay(second_spell);
+                if (shouldDisplayFirstSpell) {
+                    if (shouldDisplaySecondSpell) {
+                        return createDoubleSpellCell(first_spell, second_spell);
+                    } else {
+                        return createSingleSpellCell(first_spell);
+                    }
+                } else {
+                    if (shouldDisplaySecondSpell) {
+                        return createSingleSpellCell(second_spell);
+                    } else {
+                        return null;
+                    }
+                }
+            }
+        } else {
+            if (checkIfSpellToDisplay(spell)) {
+                return createSingleSpellCell(spell);
+            } else {
+                return null;
+            }
+        }
+    }
+    
+    function createDoubleSpellCell(first_spell, second_spell) {
+        var double_cell_container = $("<div class='outer-cell'></div>");
+        double_cell_container.css('border-radius', '7px');
+
+        var cell_container = createSpellCell(first_spell, second_spell);
+        double_cell_container.append(cell_container);
+        setCellContent(first_spell);
+
+        cell_container = createSpellCell(second_spell, first_spell);
+        cell_container.css('margin-top', '1px');
+        double_cell_container.append(cell_container);
+        setCellContent(second_spell);
+        
+        return double_cell_container;
+    }
+       
+    function createSingleSpellCell(spell) {
+        var double_cell_container = $("<div class='outer-cell'></div>");
+        double_cell_container.css('border-radius', '7px');
+        double_cell_container.append(createSpellCell(spell, null));
+        setCellContent(spell);
+        return double_cell_container;
+    }
+        
+    function createSpellCell(spell, linked_to) {
+        var cell_container = $("<div class='spell-cell'></div>");
+
+        var table = $("<div width='100%' class='table-spell'></div>");
+        var header = $("<div class='header-cell' width='100%'></div>");
+        var content = $("<div class='content-cell'></div>");
+        
+        setBordersForSpell(spell, cell_container, table, header, content, linked_to)
+
+        cell_container.append(table);
+        
+        table.append(header);
+        header.append(createHeader(spell));
+        table.append(content);
+        content.append(createContent(spell, header));
+
+        return cell_container;
+    }
+
+    function setBordersForSpell(spell, cell_container, table, header, content, linked_to)
+    {
+        if (spell.is_linked && checkIfSpellToDisplay(linked_to)) {
+            if (spell.is_linked[0] == 1) {
+                cell_container.css('border-radius', '7px 7px 0 0');
+                table.css('border-radius', '7px 7px 0 0');
+                header.css('border-radius', '7px 7px 0 0');
+                content.css('border-radius', '0 0 0 0');
+            } else {
+                cell_container.css('border-radius', '0 0 7px 7px');
+                table.css('border-radius', '0 0 7px 7px');
+                header.css('border-radius', '0 0 0 0');
+                content.css('border-radius', '0 0 7px 7px');
+            }
+        } else {
+            cell_container.css('border-radius', '7px 7px 7px 7px');
+            table.css('border-radius', '7px 7px 7px 7px');
+            header.css('border-radius', '7px 7px 0 0');
+            content.css('border-radius', '0 0 7px 7px');
+        }
+        header.click(function() {
+            if (content.is(":visible")) {
+                content.slideUp(250, function() {
+                    if (spell.is_linked && checkIfSpellToDisplay(linked_to)) {
+                        if (spell.is_linked[0] == 1) {
+                            header.css('border-radius', '7px 7px 0 0');
+                        } else {
+                            header.css('border-radius', '0 0 7px 7px');
+                        }
+                    } else {
+                        header.css('border-radius', '7px 7px 7px 7px');
+                    }
+                });
+            } else {
+                if (spell.is_linked && checkIfSpellToDisplay(linked_to)) {
+                    if (spell.is_linked[0] == 2) {
+                        header.css('border-radius', '0 0 0 0');
+                        content.css('border-radius', '0 0 7px 7px');
+                    }
+                    if (spell.is_linked[0] == 1) {
+                        content.css('border-radius', '0 0 0 0');
+                    }
+                } else {
+                    header.css('border-radius', '7px 7px 0 0');
+                    content.css('border-radius', '0 0 7px 7px');
+                }
+                content.slideDown(250);
+            }
+        });
+    }
+
+    function createHeader(spell) {
+        
+        if (spell.name == 'Desolation'){
+            console.log(spell)
+        }
+        
+        var table = $("<table></table>");
+        var line = $("<tr></tr>");
+        table.append(line);
+        var inner_image_cell = $("<td></td>");
+        line.append(inner_image_cell);
+        var image_source = spell.image_url
+        inner_image_cell.append('<img class="spell-image" src="'+image_source+'"></img>');
+        var inner_title_cell = $("<td class='title-cell'></td>");
+        line.append(inner_title_cell)
+        
+        inner_title_cell.append("<b>"+spell.name+"</b>");
+        inner_title_cell.append("<br>");
+
+        if (spell.type == 'weapon'){
+            inner_title_cell.append("{% trans 'Level' %}: ");
+            
+            inner_title_cell.append(spell.level);
+        }
+        
+        return table;
+    }
+
+    function createContent(spell, header) {
+        var table = $("<table width='100%'></table>");
+        
+        var line_non_crit = $("<tr class='normal-hit-line'></tr>");
+        var non_crit_cell = $("<td class='normal-hit-cell'></td>");
+        
+        table.append(line_non_crit);
+        line_non_crit.append(non_crit_cell);
+        
+        var line_crit_title = $("<tr></tr>");
+        var crit_title_cell = $("<td class='crit-hit-title'></td>");
+        
+        table.append(line_crit_title);
+        line_crit_title.append(crit_title_cell);
+        crit_title_cell.append("<hr class='hr-crit'/>")
+        
+        var line_crit_hit = $("<tr class='crit-hit-line'></tr>");
+        var crit_hit_cell = $("<td class='crit-hit-cell'></td>");
+        
+        table.append(line_crit_hit);
+        line_crit_hit.append(crit_hit_cell);
+        
+        cells[spell.name] = {nonCrit: non_crit_cell, critTitle:crit_title_cell, crit:crit_hit_cell,
+            header: header};
+        header.append(createDots(spell));
+        
+        if (isSpellBuff(spell)) {
+            header.append(createStack(spell));
+        }
+        
+        return table;
+    }
+    
+    function calculateFinalDamageValue(damageHit, isCrit, isMin, spell) {
+        var totalStats = getTotalStats(spell);
+        
+        var mainStat = {neut: 'str', earth: 'str', fire: 'int', water: 'cha', air: 'agi'}
+            [damageHit.element];
+        var baseValue = (isMin ? damageHit.min_dam : damageHit.max_dam);
+        var multiplier = 100 + totalStats[mainStat];
+        if (!damageHit.heals) {
+            multiplier += totalStats['pow'];
+        }
+        if (spell.type == 'weapon' || spell.type == 'weapon_non_mageable') {
+            multiplier += totalStats['powweap'];
+        }
+        var multipliedDamage = Math.floor(baseValue * multiplier / 100.0);
+        
+        var linearDamage;
+        if (!damageHit.heals) {
+            var elementalDamage = damageHit.element + 'dam';
+            linearDamage = totalStats['dam'] + totalStats[elementalDamage];
+            if (isCrit) {
+                linearDamage += totalStats['cridam'];
+            }
+        } else {
+            linearDamage = totalStats['heals'];
+        }
+        var finalDamage = Math.max(0, multipliedDamage + linearDamage);
+        if (totalStats.hasOwnProperty('final') && !damageHit.heals) {
+            finalDamage *= (100 + totalStats['final']) / 100;
+        }
+        if (totalStats.hasOwnProperty('negfinal') && !damageHit.heals) {
+            finalDamage *= (100 - totalStats['negfinal']) / 100;
+        }  
+        if ((spell.type == 'weapon' || spell.type == 'weapon_non_mageable') && (!damageHit.heals)) {
+            finalDamage *= (100 + totalStats['perweadam']) / 100;
+        }
+        if ((spell.type != 'weapon' && spell.type != 'weapon_non_mageable') && (!damageHit.heals)) {
+            finalDamage *= (100 + totalStats['perspedam']) / 100;
+        }  
+        return Math.round(finalDamage);
+    }
+    
+    function getTotalStats(spell) {
+        var totalStats = $.extend({}, charStats);
+        totalStats['powweap'] = 0;
+        $.each(buffsForSpell, function(i, buffs) {
+            $.each(buffs, function(j, buff) {
+                if (buff.stat == 'pow' && buff.spellCategories == 'weapon') {
+                    totalStats['powweap'] += buff.value;
+                } else {
+                    if (buffAppliesToSpell(buff, spell)) {
+                        if (!(buff.stat in totalStats)) {
+                            totalStats[buff.stat] = 0;
+                        }
+                        totalStats[buff.stat] += buff.value;
+                    }
+                }
+            });
+        });
+        return totalStats;
+    }
+    
+    function buffAppliesToSpell(buff, spell) {
+        if (buff.spellCategories == 'spell') {
+            return (spell.type == 'spell');
+        }
+        if (buff.spellCategories == 'weapon') {
+            return (spell.type == 'weapon' || spell.type == 'weapon_non_mageable');
+        }
+        if (buff.spellCategories == 'nonglyph') {
+            return (spell.type == 'weapon' ||
+                    spell.type == 'weapon_non_mageable' ||
+                    (spell.type == 'spell' && spell.special != 'glyph'));
+        }
+        if (buff.spellCategories == 'glyph') {
+            return (spell.type == 'spell' && spell.special == 'glyph');
+        }
+        if (buff.spellCategories == 'traps') {
+            return (spell.type == 'spell' && spell.special == 'trap');
+        }
+        return true;
+    }
+    
+    function calculateFinalDamage(spell, damage, isCrit) {
+        var result = [];
+        $.each(damage, function(i, d) {
+            if (d.element.indexOf("buff") != -1) {
+                result.push(d);
+            } else {
+                result.push({min_dam: calculateFinalDamageValue(d, isCrit, true, spell),
+                             max_dam: calculateFinalDamageValue(d, isCrit, false, spell),
+                             element: d.element,
+                             steals: d.steals,
+                             heals: d.heals});
+            }
+        });
+        return result;
+    }
+    
+    function getHits(spell, damage, isCrit) {
+        var finalDamage = calculateFinalDamage(spell, damage, isCrit);
+        var table = $("<table width='100%'></table>");
+        if (spell.aggregates != null){
+            aggregates = spell.aggregates;
+            
+            //itera nas tuplas do aggregate
+            for (var i = 0; i < aggregates.length; i++) {
+                
+                //itera dentro do segundo vetor de cada tupla
+                var damageInstances = [];
+                for (var j = 0; j < aggregates[i][1].length; j++) {
+                    var hit = aggregates[i][1][j];
+                    if (hit < finalDamage.length) {
+                        damageInstances.push(finalDamage[hit]);
+                    }
+                }
+                
+                var healing = true;
+                $.each(damageInstances, function(j, damageHit) {
+                    if (damageHit.heals === false){
+                        healing = false;
+                    }
+                });
+                
+                var allSteals = true;
+                $.each(damageInstances, function(j, damageHit) {
+                    if (damageHit.steals === false){
+                        allSteals = false;
+                    }
+                });
+                
+                var line1 = $("<tr></tr>");
+                var cell1 = $("<td></td>");
+                table.append(line1);
+                line1.append(cell1);
+                if (aggregates[i][0]) {
+                    cell1.append("<span class='aggregate'><sub>" + aggregates[i][0] + ":</sub></span>");
+                }
+                
+                if (damageInstances.length === 1) {
+                    writeDamageLine(damageInstances[0].element, damageInstances[0].min_dam,
+                                    damageInstances[0].max_dam, healing, allSteals, table);
+                } else {
+                    var line2 = $("<tr></tr>");
+                    var cell2 = $("<td align='center'></td>");
+                    table.append(line2);
+                    line2.append(cell2);
+                    var total_min = 0;
+                    var total_max = 0;
+                    var string_min = "<span class='damage-component'><span class='small-text'> (</span>";
+                    var string_max = "<span class='damage-component'><span class='small-text'> (</span>";
+                    $.each(damageInstances, function(j, damageHit) {
+                        total_min += damageHit.min_dam;
+                        total_max += damageHit.max_dam;
+
+                        string_min += "<span class='" + 
+                                      damageHit.element +
+                                      "'>";
+                        string_max += "<span class='" + 
+                                      damageHit.element +
+                                      "'>"
+                        if (damageHit.steals && !allSteals) {
+                            string_min += " {% trans "steals" %} ";
+                            string_max += " {% trans "steals" %} ";
+                        }
+                        string_min += damageHit.min_dam;
+                        string_min += "</span>";
+                        string_max += damageHit.max_dam;
+                        string_max += "</span>";
+                        
+                        if (j === damageInstances.length - 1){
+                            string_min += "<span class='small-text'>)</span></span>";
+                            string_max += "<span class='small-text'>)</span></span>";
+                        } else {
+                            string_min += "<span class='small-text'> + </span>";
+                            string_max += "<span class='small-text'> + </span>";
+                        }
+                    });
+                    var str = "";
+                    str += "<span class='mixed'>";
+                    if (healing){
+                        str += "<span>{% trans "Heals" %}</span> ";
+                    } else if (allSteals) {
+                        str += "<span>{% trans "Steals" %}</span> ";
+                    }
+                    str += "<span class='main'>" + total_min + "</span>";
+                    str += "</span>";
+                    cell2.append(str);
+                    cell2.append(string_min);
+                    if (total_min != total_max) {
+                        var line3 = $("<tr></tr>");
+                        var cell3 = $("<td align='center'></td>");
+                        table.append(line3);
+                        line3.append(cell3);
+                        cell3.append("<span class='aggregate'> {% trans "to" %} </span>");
+                        var line4 = $("<tr></tr>");
+                        var cell4 = $("<td align='center'></td>");
+                        table.append(line4);
+                        line4.append(cell4);
+                        cell4.append("<span class='mixed main'>" + total_max + "</span>");
+                        cell4.append(string_max);
+                    }
+                }
+            }
+            
+        } else {
+            for (var i = 0; i < finalDamage.length; i++) {
+                writeDamageLine(finalDamage[i].element, finalDamage[i].min_dam,
+                                finalDamage[i].max_dam, finalDamage[i].heals,
+                                finalDamage[i].steals, table);
+            }
+        }
+        return table;
+    }
+    
+    function writeDamageLine(element, minDam, maxDam, heals, steals, table) {
+        var line = $("<tr></tr>");
+        var cell = $("<td align='center'></td>");
+        table.append(line);
+        line.append(cell);
+        var str = "";
+        str += "<span class='" + element + "'>";
+        var format = getTextFormatForHit(element, heals, steals);
+        str += format[0];
+        str += "<span class='main'>" + minDam + "</span>";
+        if (minDam != maxDam){
+            str += "<span class='small-text'> - </span>";
+            str += "<span class='" + element + " main'>" + maxDam + "</span>";
+        }
+        str += format[1];
+        str += "</span>";
+        cell.append(str);
+    }
+    
+    function getTextFormatForHit(element, heals, steals) {
+        if (heals === true) {
+            return ["<span>{% trans "Heals" %}</span> ", ""];
+        } else if (steals === true) {
+            return ["<span>{% trans "Steals" %}</span> ", ""];
+        } else if (element == "buff_pow") {
+            return ["+", "% {% trans "Power" %}"];
+        } else if (element == "buff_depow") {
+            return ["<span class='fire'>-", "% {% trans "Power" %}</span>"];
+        } else if (element == "buff_pow_weapon") {
+            return ["+", "% {% trans "Power" %} {% trans "(weapons)" %}"];
+        } else if (element == "buff_pow_spell") {
+            return ["+", "% {% trans "Power" %} {% trans "(spells)" %}"];
+        } else if (element == "buff_pow_nonglyph") {
+            return ["+", "% {% trans "Power" %} {% trans "(except glyphs)" %}"];
+        } else if (element == "buff_pow_glyph") {
+            return ["+", "% {% trans "Power" %} {% trans "(glyphs)" %}"];
+        } else if (element == "buff_pow_traps") {
+            return ["+", "% {% trans "Power" %} {% trans "(traps)" %}"];
+        } else if (element == "buff_dam") {
+            return ["+", " {% trans "Damage" %}"];
+        } else if (element == "buff_str") {
+            return ["+", " {% trans "Strength" %}"];
+        } else if (element == "buff_int") {
+            return ["+", " {% trans "Intelligence" %}"];
+        } else if (element == "buff_cha") {
+            return ["+", " {% trans "Chance" %}"];
+        } else if (element == "buff_agi") {
+            return ["+", " {% trans "Agility" %}"];
+        } else if (element == "buff_pshdam") {
+            return ["+", " {% trans "Pushback Damage" %}"];
+        } else if (element == "buff_heals") {
+            return ["+", " {% trans "Heals" %}"];
+        } else {
+            return ["", ""];
+        }
+    }
+
+    function createDot(i, text) {
+        var margin = 0;
+        if (text >= 10) {
+            margin = -2;
+        } 
+        if (text >= 100) {
+            margin = -4;
+        }
+        
+        return $('\
+            <div class="circle-container" id="level-' + i + '" style="width: 14px">\
+                <div class="level-circle"></div>\
+                <div class="level-number" style="margin-left:' + margin + 'px">' + text + '</div>\
+            </div>');
+    }
+    
+    function isSpellBuff(spell) {
+        var isBuff = false;
+        $.each(spell.non_crit_dams[0], function(i, effect) {
+            if (effect.element.indexOf("buff") != -1) {
+                isBuff = true;
+            }
+        });
+        if (isBuff) return true;
+        
+        if (!spell.crit_dams) {
+            return isBuff;
+        }
+        $.each(spell.crit_dams[0], function(i, effect) {
+            if (effect.element.indexOf("buff") != -1) {
+                isBuff = true;
+            }
+        });
+        return isBuff;
+    }
+    
+    function findBestBuff(spell){
+        if (spell.stacks > 1) {
+            if (spell.crit_dams) {
+                return 'c' + spell.stacks;
+            } else {
+                return 'n' + spell.stacks;
+            }
+        } else {
+            if (spell.crit_dams) {
+                return 'c1';
+            } else {
+                return 'n1';
+            }
+        }
+    }
+    
+    function createStack(spell) {
+        var select = $('<select class="select-stack"></select>')
+        buffStackForSpell[spell.name] = select;
+        select.append($('<option />').text('{% trans "Off" %}').val('n' + 0));
+        for (var i = 1; i <= spell.stacks; i++) {
+            select.append($('<option />')
+                .text(spell.stacks == 1 ? '{% trans "On" %}' : '{% trans "On" %} x' + i)
+                .val('n' + i));
+            if (spell.crit_dams) {
+                select.append($('<option />')
+                    .text(spell.stacks == 1 ? '{% trans "Crit" %}' : '{% trans "Crit" %} x' + i)
+                    .val('c' + i));
+            }
+        }
+        
+        select.val(buffState[spell.name]);
+        
+        select.click(function(e) {
+            e.stopPropagation();
+        });
+        select.change(function(e) {
+            buffState[spell.name] = select.val();
+            recalculateBuffsForSpell(spell);
+            recalculateDamages();
+        });
+        
+        return select;
+    }
+    
+    function recalculateBuffsForSpell(spell) {
+        var value = buffState[spell.name];
+        var buffCrit = value.charAt(0) == 'c';
+        var buffStacks = parseInt(value.substring(1));
+        var dams = (buffCrit ? spell.crit_dams : spell.non_crit_dams);
+        buffsForSpell[spell.name] = [];
+        $.each(dams[spellLevel[spell.name]], function(i, effect) {
+            effectParts = effect.element.split(/[_]+/);
+            if (effectParts[0] == "buff") {
+                var statBuffed = effectParts[1];
+                var valueBuffed = buffStacks * effect.max_dam;
+                
+                if (statBuffed == 'depow'){
+                    statBuffed = 'pow';
+                    valueBuffed = -valueBuffed;
+                }
+                
+                var buffInstance = {stat: statBuffed, value: valueBuffed};
+                if (effectParts.length > 2) {
+                    buffInstance.spellCategories = effectParts[2];
+                }
+                buffsForSpell[spell.name].push(buffInstance);
+            }
+        });
+    }
+    
+    function range(start, end) {
+        var array = new Array();
+        for(var i = start; i < end; i++) {
+            array.push(i);
+        }
+        return array;
+    }
+    
+    function setCellContent(spell) {
+        var cellsForSpell = cells[spell.name];
+        if (!cellsForSpell) {
+            return;
+        }
+        
+        var non_crit_cell = cellsForSpell.nonCrit;
+        var crit_title_cell = cellsForSpell.critTitle;
+        var crit_hit_cell = cellsForSpell.crit;
+        non_crit_cell.empty();
+        non_crit_cell.append(getHits(spell, spell.non_crit_dams[spellLevel[spell.name]], false));
+        if (spell.crit_dams === null){
+            crit_title_cell.hide();
+            crit_hit_cell.hide();
+        } else {
+            crit_title_cell.show();
+            crit_hit_cell.show();
+            crit_hit_cell.empty();
+            crit_hit_cell.append(getHits(spell, spell.crit_dams[spellLevel[spell.name]], true));
+        }
+    }
+    
+    var LEVEL_TO_ELEMENT = ['N', 'E', 'F', 'W', 'A'];
+    var LEVEL_TO_ELEMENT_STR = ['{% trans "N" %}', '{% trans "E" %}', '{% trans "F" %}', '{% trans "W" %}', '{% trans "A" %}'];
+    function createDots(spell) {
+        var dotSection = $('<div class="all-circles"></div>');
+        var textsOnDot;
+        if (spell.type == 'spell') {
+            textsOnDot = spell.level;
+        } else if (spell.type == 'weapon') {
+            textsOnDot = LEVEL_TO_ELEMENT_STR;
+        } else if (spell.type == 'weapon_non_mageable') {
+            textsOnDot = [];
+        }
+        $.each(textsOnDot, function(level, textOnDot) {
+            var dot = createDot(level, textOnDot);
+            dotSection.append(dot);
+
+            var levelCircle = dot.find('.level-circle');
+            var levelNumber = dot.find('.level-number');
+            if (spell.type == 'weapon') {
+                levelCircle.addClass(['level-circle-neutral', 'level-circle-earth', 'level-circle-fire', 'level-circle-water', 'level-circle-air'][level]);
+                levelNumber.addClass(['neutral', 'earth', 'fire', 'water', 'air'][level]);
+            } else {
+                levelCircle.addClass('level-circle-default-color');
+                levelNumber.addClass('level-number-default-color');
+            }
+        
+            dot.click(function(e) {
+                e.stopPropagation();
+                $(this).parent().find('.circle-container').removeClass('selected-level');
+                $(this).addClass('selected-level');
+                spellLevel[spell.name] = level;
+                setCellContent(spell);
+                
+                if (isSpellBuff(spell)) {
+                    recalculateBuffsForSpell(spell);
+                    recalculateDamages();
+                }
+            });
+        });
+        
+        return dotSection;
+    }
+    
+    function setDot(spell) {
+        var spellCell = cells[spell.name];
+        if (spellCell) {
+            spellCell.header.find('#level-' + spellLevel[spell.name]).trigger('click');
+        }
+    }
+    
+    function setVisible(spell) {
+        if ({{char_level}} < spell.level[0]) {
+            var spellCell = cells[spell.name];
+            if (spellCell) {
+                cells[spell.name].header.trigger('click');
+            }
+        }
+    }
+    
+    function recalculateDamages() {
+        $.each(spells, function(spellName, spell) {
+            setCellContent(spell);
+        });
+    }
+    
+    function createLines(){
+        for ( var i = 0; i < spellDigests.length; i++ ) {
+            if (spellDigests[i].is_linked == null 
+            || (spellDigests[i].is_linked && spellDigests[i].is_linked[0] != 2)) {
+                var cell = $("#spells0");
+                for ( var j = 1; j < 3; j++ ){
+                    if ($("#spells" + j).height() < cell.height()){
+                        cell = $("#spells" + j);
+                    }
+                }
+                var new_cell = createSpellPairOrSingle(spellDigests[i]);
+                cell.append(new_cell);
+            }
+        }
+    }
+
+    function decideLevel(spell) {
+        if (spell.type == 'spell') {
+            numLevels = spell.level.length;
+            if ({{char_level}} < spell.level[0] || numLevels == 1) {
+                return 0;
+            }
+            i = 0;
+            while (i < numLevels - 1) {
+                if ({{char_level}} >= spell.level[i] && {{char_level}} < spell.level[i+1]){
+                    return i;
+                }
+                i = i+1;
+            }
+            return i;
+        } else if (spell.type == 'weapon') {
+            return LEVEL_TO_ELEMENT.indexOf(spell.element_maged.charAt(0).toUpperCase());
+        } else {
+            return 0;
+        }
+    }
+    
+    
+    function reloadSpells(){
+        $("#spells0").empty();
+        $("#spells1").empty();
+        $("#spells2").empty();
+        
+        spells = {};
+        spellLevel = {};
+        buffStackForSpell = {};
+        $.each(spellDigests, function(i, spell) {
+            spells[spell.name] = spell;
+        });
+        $.each(spellDigests, function(i, spell) {
+            spellLevel[spell.name] = decideLevel(spell);
+        });
+        
+        createLines();
+        
+        $.each(spellDigests, function(i, spell) {
+            if (checkIfSpellToDisplay(spell)) {
+                setDot(spell);
+            }
+        });
+    }
+    
+    function checkIfDoubleBuffSlot(spell){
+        if (spell.is_linked) {
+            if (spell.is_linked[0] == 2) {
+                var firstSpell;
+                for (i = 0; i < spellDigests.length; i++){
+                    if (spellDigests[i].name == spell.is_linked[1]){
+                        firstSpell = spellDigests[i];
+                        break;
+                    }
+                }
+                if (isSpellBuff(firstSpell)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    
+    function fullyBuff() {
+        buffsForSpell = {};
+        $.each(spellDigests, function(i, spell) {
+            if (isSpellBuff(spell)) {
+                var doubleBuffSlot = checkIfDoubleBuffSlot(spell);
+                spellLevel[spell.name] = decideLevel(spell);
+                setDot(spell);
+                if ((spell.level[0] <= {{char_level}}) && (!doubleBuffSlot)) {
+                    buffState[spell.name] = findBestBuff(spell);
+                } else {
+                    buffState[spell.name] = "n0";
+                }
+                if (checkIfSpellToDisplay(spell)) {
+                    var select = buffStackForSpell[spell.name];
+                    select.val(buffState[spell.name]);
+                }
+                recalculateBuffsForSpell(spell);
+            }
+        });
+    }
+    
+    function removeAllBuffs() {
+        $.each(spellDigests, function(i, spell) {
+            if (isSpellBuff(spell)) {
+                buffState[spell.name] = "n0";
+            }
+            buffsForSpell = {};
+        });
+    }
+    
+    $(document).ready(function() {
+        spells = {};
+        spellLevel = {};
+        buffStackForSpell = {};
+        $.each(spellDigests, function(i, spell) {
+            spells[spell.name] = spell;
+            if (isSpellBuff(spell)) {
+                buffState[spell.name] = 'n0';
+            }
+        });
+        $.each(spellDigests, function(i, spell) {
+            spellLevel[spell.name] = decideLevel(spell);
+        });
+        
+        createLines();
+        
+        $.each(spellDigests, function(i, spell) {
+            setDot(spell);
+        });
+        recalculateDamages();
+        
+        $("#all-buffs-button").on('click', function() {
+            fullyBuff();
+            recalculateDamages();
+        });
+        
+        $("#no-buffs-button").on('click', function() {
+            removeAllBuffs();
+            $('.select-stack option:first-child').prop('selected', true);
+            recalculateDamages();
+        });
+        
+        $("#level-filter").on('click', function() {
+            if (levelFilter){
+                levelFilter = false;
+                $("#level-filter").css('opacity', '1');
+            } else {
+                levelFilter = true;
+                $("#level-filter").css('opacity', '0.5');
+            }
+            reloadSpells();
+        });
+        
+        $("#agi-filter").on('click', function() {
+            if (agiFilter){
+                agiFilter = false;
+                $("#agi-filter").css('opacity', '1');
+            } else {
+                agiFilter = true;
+                $("#agi-filter").css('opacity', '0.5');
+            }
+            reloadSpells();
+        });
+        $("#int-filter").on('click', function() {
+            if (intFilter){
+                intFilter = false;
+                $("#int-filter").css('opacity', '1');
+            } else {
+                intFilter = true;
+                $("#int-filter").css('opacity', '0.5');
+            }
+            reloadSpells();
+        });
+        $("#cha-filter").on('click', function() {
+            if (chaFilter){
+                chaFilter = false;
+                $("#cha-filter").css('opacity', '1');
+            } else {
+                chaFilter = true;
+                $("#cha-filter").css('opacity', '0.5');
+            }
+            reloadSpells();
+        });
+        $("#str-filter").on('click', function() {
+            if (strFilter){
+                strFilter = false;
+                $("#str-filter").css('opacity', '1');
+            } else {
+                strFilter = true;
+                $("#str-filter").css('opacity', '0.5');
+            }
+            reloadSpells();
+        });
+        $("#other-filter").on('click', function() {
+            if (othersFilter){
+                othersFilter = false;
+                $("#other-filter").css('opacity', '1');
+            } else {
+                othersFilter = true;
+                $("#other-filter").css('opacity', '0.5');
+            }
+            reloadSpells();
+        });
+    });
+</script>    
+{% endblock %}
+

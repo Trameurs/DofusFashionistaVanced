@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//chardata/SocialAuthExceptionMiddleware.py=utf-8
+encoding//chardata/contact_view.py=utf-8
+encoding//chardata/home_view.py=utf-8
+encoding//chardata/item_exchange.py=utf-8
+encoding//chardata/login_view.py=utf-8
+encoding//chardata/manage_account_view.py=utf-8
+encoding//chardata/migrations/0001_initial.py=utf-8
+encoding//chardata/migrations/0002_auto_20160508_0202.py=utf-8
+encoding//chardata/migrations/0003_auto_20160508_2029.py=utf-8
+encoding//chardata/migrations/0004_auto_20160511_1717.py=utf-8
+encoding//chardata/migrations/0005_adshits.py=utf-8
+encoding//chardata/migrations/0006_auto_20170718_1902.py=utf-8
+encoding//chardata/migrations/0007_delete_adshits.py=utf-8
+encoding//chardata/projects_view.py=utf-8
+encoding//chardata/spells_view.py=utf-8

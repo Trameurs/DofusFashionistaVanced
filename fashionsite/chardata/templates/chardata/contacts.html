@@ -1,0 +1,79 @@
+{% extends "chardata/base.html" %}
+
+{% load i18n %}
+{% load static_s3 %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+{% endblock %}
+
+{% block title %}The Dofus Fashionista: {% trans "Contact us" %}{% endblock %}
+
+{% block main %}
+
+<h1 align="center">{% trans "Contact us" %}</h1>
+<table>
+<tr>
+<td>
+    <img src="{% static "chardata/designs/myContact.png" %}"></img>
+</td>
+<td>
+    <div id="c_form">
+        <form name="theform" action="{% url 'chardata.contact_view.send_email'%}" method="post" id="theform">
+            {% csrf_token %}
+            
+            <table style="width: 450px;">
+            <tr>
+            <td class='input-stat-name' style="width: 130px;">
+                {% trans "Name" %}: <label style="font-size: 11px; vertical-align: top;">({% trans "optional" %})</label>
+            </td>
+            <td style="vertical-align: top;">
+                <input type="text" name="name" class="pretty-input" value="{% if useralias %}{{useralias}}{% else %}{{ user.get_full_name }}{% endif %}" id="name" style="width:250px;" />
+            </td>
+            </tr>
+            <tr>
+            <td class='input-stat-name' style="width: 130px;">
+                {% trans "Email" %}: <label style="font-size: 11px; vertical-align: top;">({% trans "optional" %})</label>
+            </td>
+            <td style="vertical-align: top;">
+                <input type="text" name="email" class="pretty-input" {% if user and user.email %} value="{{ user.email }}" {% else %} value="" {% endif %} id="Email" style="width:250px;" />
+            </td>
+            </tr>
+            </table>
+            <table style="width: 450px;">
+            <tr>
+            <td class='input-stat-name' style="width: 80px;">
+                <br><label id="id_subject">{% trans "Subject" %}:</label>
+            </td>
+            <td>
+                <br><input name="topic" value="" class="pretty-input" autocomplete="off" required="required" id="subject" style="width:300px;" /><br>
+            </td>
+            </tr>
+            </table>
+            <table style="width: 450px;">
+            <tr>
+            <td class='input-stat-name'>
+                <br><label id="id_message">{% trans "Message" %}:</label><br>
+                <textarea name="message" class="pretty-input" required="required" rows="8" cols="47" maxlength="10000"></textarea>
+            </td>
+            </tr>
+            </table>
+            <div id="captcha" align="center" class="g-recaptcha" data-sitekey="6Le9YogUAAAAAFRe8QeII5JTi1NQogvL1fW7xjUU" data-theme="
+            {% ifnotequal theme "lighttheme" %}
+                dark
+            {% else %}
+                light
+            {% endifnotequal %}
+            "></div>
+            <div align="center">
+                <input type="submit" value='{{_("Send")|escapejs}}' class="button-generic">
+            </div>
+        </form>
+    </div>
+</td>
+</tr>
+</table> 
+     
+<script src='https://www.google.com/recaptcha/api.js?hl={{language}}'></script>       
+{% endblock %}

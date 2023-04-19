@@ -1,0 +1,362 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-06 22:10-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: admin/js/SelectFilter2.js:45
+#, javascript-format
+msgid "Available %s"
+msgstr ""
+
+#: admin/js/SelectFilter2.js:46
+#, javascript-format
+msgid ""
+"This is the list of available %s. You may choose some by selecting them in "
+"the box below and then clicking the \"Choose\" arrow between the two boxes."
+msgstr ""
+
+#: admin/js/SelectFilter2.js:53
+#, javascript-format
+msgid "Type into this box to filter down the list of available %s."
+msgstr ""
+
+#: admin/js/SelectFilter2.js:57
+msgid "Filter"
+msgstr ""
+
+#: admin/js/SelectFilter2.js:61
+msgid "Choose all"
+msgstr ""
+
+#: admin/js/SelectFilter2.js:61
+#, javascript-format
+msgid "Click to choose all %s at once."
+msgstr ""
+
+#: admin/js/SelectFilter2.js:67
+msgid "Choose"
+msgstr ""
+
+#: admin/js/SelectFilter2.js:69
+msgid "Remove"
+msgstr "Reemplazar "
+
+#: admin/js/SelectFilter2.js:75
+#, javascript-format
+msgid "Chosen %s"
+msgstr ""
+
+#: admin/js/SelectFilter2.js:76
+#, javascript-format
+msgid ""
+"This is the list of chosen %s. You may remove some by selecting them in the "
+"box below and then clicking the \"Remove\" arrow between the two boxes."
+msgstr ""
+
+#: admin/js/SelectFilter2.js:80
+msgid "Remove all"
+msgstr "Reemplazar "
+
+#: admin/js/SelectFilter2.js:80
+#, javascript-format
+msgid "Click to remove all chosen %s at once."
+msgstr ""
+
+#: admin/js/actions.js:18 admin/js/actions.min.js:1
+msgid "%(sel)s of %(cnt)s selected"
+msgid_plural "%(sel)s of %(cnt)s selected"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/js/actions.js:109 admin/js/actions.min.js:5
+msgid ""
+"You have unsaved changes on individual editable fields. If you run an "
+"action, your unsaved changes will be lost."
+msgstr ""
+
+#: admin/js/actions.js:121 admin/js/actions.min.js:5
+msgid ""
+"You have selected an action, but you haven't saved your changes to "
+"individual fields yet. Please click OK to save. You'll need to re-run the "
+"action."
+msgstr ""
+
+#: admin/js/actions.js:123 admin/js/actions.min.js:6
+msgid ""
+"You have selected an action, and you haven't made any changes on individual "
+"fields. You're probably looking for the Go button rather than the Save "
+"button."
+msgstr ""
+
+#: admin/js/admin/DateTimeShortcuts.js:52
+#: admin/js/admin/DateTimeShortcuts.js:88
+msgid "Now"
+msgstr ""
+
+#: admin/js/admin/DateTimeShortcuts.js:56
+msgid "Clock"
+msgstr ""
+
+#: admin/js/admin/DateTimeShortcuts.js:84
+msgid "Choose a time"
+msgstr ""
+
+#: admin/js/admin/DateTimeShortcuts.js:89
+msgid "Midnight"
+msgstr ""
+
+#: admin/js/admin/DateTimeShortcuts.js:90
+msgid "6 a.m."
+msgstr ""
+
+#: admin/js/admin/DateTimeShortcuts.js:91
+msgid "Noon"
+msgstr ""
+
+#: admin/js/admin/DateTimeShortcuts.js:95
+#: admin/js/admin/DateTimeShortcuts.js:208
+msgid "Cancel"
+msgstr ""
+
+#: admin/js/admin/DateTimeShortcuts.js:148
+#: admin/js/admin/DateTimeShortcuts.js:201
+msgid "Today"
+msgstr ""
+
+#: admin/js/admin/DateTimeShortcuts.js:152
+msgid "Calendar"
+msgstr ""
+
+#: admin/js/admin/DateTimeShortcuts.js:199
+msgid "Yesterday"
+msgstr ""
+
+#: admin/js/admin/DateTimeShortcuts.js:203
+msgid "Tomorrow"
+msgstr ""
+
+#: admin/js/calendar.js:8
+msgid ""
+"January February March April May June July August September October November "
+"December"
+msgstr ""
+
+#: admin/js/calendar.js:9
+msgid "S M T W T F S"
+msgstr ""
+
+#: admin/js/collapse.js:8 admin/js/collapse.js:19 admin/js/collapse.min.js:1
+msgid "Show"
+msgstr ""
+
+#: admin/js/collapse.js:16 admin/js/collapse.min.js:1
+msgid "Hide"
+msgstr ""
+
+#: chardata/static/chardata/inclusions.js:13
+#: chardata/static/chardata/solution_popup.js:449
+msgid "Lvl."
+msgstr "Niv."
+
+#: chardata/static/chardata/login.js:13
+msgid "The username and password entered do not match."
+msgstr "El nombre de usuario y la contraseña no coinciden."
+
+#: chardata/static/chardata/login.js:15
+msgid "Confirm your email to log in."
+msgstr "Confirma tu email para iniciar sesión."
+
+#: chardata/static/chardata/login.js:17
+msgid "Error while logging in."
+msgstr "Error durante el inicio de sesión."
+
+#: chardata/static/chardata/login.js:29
+msgid "Your password has been changed."
+msgstr "Tu contraseña ha sido modificada con éxito."
+
+#: chardata/static/chardata/login.js:35
+msgid "Your password did not match our records."
+msgstr "Tu contraseña es incorrecta, intenta nuevamente."
+
+#: chardata/static/chardata/login.js:47
+msgid "This username is already in use."
+msgstr "Este nombre de usuario ya está siendo utilizado."
+
+#: chardata/static/chardata/login.js:63
+msgid "The passwords don't match. Please try again."
+msgstr "Las contraseñas no coinciden. Intenta de nuevo, por favor."
+
+#: chardata/static/chardata/login.js:81
+msgid "You need to enter a valid username."
+msgstr "Debes ingresar un nombre de usuario válido."
+
+#: chardata/static/chardata/login.js:87
+msgid "You need to enter a password."
+msgstr "Debes ingresar una contraseña."
+
+#: chardata/static/chardata/login.js:93
+msgid "You need to enter a valid email."
+msgstr "Debes ingresar un correo electrónico válido."
+
+#: chardata/static/chardata/options.js:94
+msgid "You need to be a higher level to equip this Dofus"
+msgstr "Tienes que ser un nivel más alto para equipar este Dofus"
+
+#: chardata/static/chardata/solution_popup.js:106
+#: chardata/static/chardata/solution_popup.js:122
+msgid "Removing "
+msgstr "Reemplazar "
+
+#: chardata/static/chardata/solution_popup.js:108
+#: chardata/static/chardata/solution_popup.js:124
+msgid "Adding Item"
+msgstr "Adición de objeto"
+
+#: chardata/static/chardata/solution_popup.js:115
+msgid "Loading"
+msgstr "Cargando"
+
+#: chardata/static/chardata/solution_popup.js:127
+msgid "Search"
+msgstr "Buscar"
+
+#: chardata/static/chardata/solution_popup.js:128
+msgid "Reset"
+msgstr "Limpiar"
+
+#: chardata/static/chardata/solution_popup.js:164
+msgid "Order by stats"
+msgstr "Ordenar por características"
+
+#: chardata/static/chardata/solution_popup.js:165
+msgid "Order by hits"
+msgstr "Ordenar por daño"
+
+#: chardata/static/chardata/solution_popup.js:292
+msgid "This item no longer exists"
+msgstr "Este objeto ya no existe"
+
+#: chardata/static/chardata/solution_popup.js:296
+#: chardata/static/chardata/solution_popup.js:305
+#: chardata/static/chardata/solution_popup.js:314
+#: chardata/static/chardata/solution_popup.js:323
+#: chardata/static/chardata/solution_popup.js:340
+#: chardata/static/chardata/solution_popup.js:349
+msgid "Violates %(item)s's condition:"
+msgstr "Viola las condiciones del %(item)s:"
+
+#: chardata/static/chardata/solution_popup.js:332
+msgid "%(item)s is already equipped"
+msgstr "%(item)s ya está equipado."
+
+#: chardata/static/chardata/solution_popup.js:364
+msgid "You cannot equip this item."
+msgstr "No puedes equiparte este objeto."
+
+#: chardata/static/chardata/solution_popup.js:366
+#, javascript-format
+msgid ""
+" To find a set including it, lock it <a href=\"/inclusions/%s/\">here</a> "
+"and tailor a new set."
+msgstr ""
+"Para encontrar un set que lo incluya, asegúralo <a href=\"/inclusions/%s/"
+"\">aquí</a> y teje un nuevo set."
+
+#: chardata/static/chardata/solution_popup.js:374
+msgid ""
+"You can equip this item, but some project minimums will not be respected."
+msgstr ""
+"Puedes equiparte este objeto, pero las preferencias mínimas elegidas para el "
+"proyecto no serán respetadas."
+
+#: chardata/static/chardata/solution_popup.js:376
+#, javascript-format
+msgid ""
+" To find a set including it that fulfills these conditions, lock it <a href="
+"\"/inclusions/%s/\">here</a> and tailor a new set."
+msgstr ""
+"Para encontrar un set que cumpla tus condiciones elegidas, asegúralo <a href="
+"\"/inclusions/%s/\">aquí</a> y teje un nuevo set."
+
+#: chardata/static/chardata/solution_popup.js:433
+msgid "There are no differences."
+msgstr "No hay diferencias."
+
+#: chardata/static/chardata/solution_popup.js:444
+msgid "No items found containing"
+msgstr "No se encontró ningún objeto que contenga "
+
+#: chardata/static/chardata/solution_popup.js:456
+msgid "Comparison"
+msgstr "Comparación"
+
+#: chardata/static/chardata/solution_popup.js:457
+msgid "Attributes"
+msgstr "Atributos"
+
+#: chardata/static/chardata/solution_popup.js:463
+msgid "Select"
+msgstr "Seleccionar"
+
+#: chardata/static/chardata/solution_popup.js:506
+msgid "The average damage/AP of this weapon while %(element)s maged would be"
+msgstr ""
+"El promedio de daño/PA de esta arma forjamagueada a %(element)s sería de"
+
+#: chardata/static/chardata/solution_popup.js:512
+msgid "The average damage/AP of this weapon would be"
+msgstr "El promedio de daño/PA de esta arma sería de"
+
+#: chardata/static/chardata/solution_popup.js:521
+msgid "With the current set this weapon would hit "
+msgstr "Con el equipamiento actual, esta arma dañaría "
+
+#: chardata/static/chardata/solution_popup.js:523
+msgid ""
+"With the current set this weapon would <font color=\"#CC0000\">heal</font> "
+msgstr ""
+"Con el equipamiento actual, esta arma <font color=\"#CC0000\">curaría</font> "
+
+#: chardata/static/chardata/solution_popup.js:544
+msgid ""
+"from <b> %(minNonCrit)s </b> to <b> %(maxNoncritDam)s </b> on a normal hit, "
+"and from <b> %(minCritDam)s </b> to <b> %(maxCritDam)s </b> on a critical "
+"hit."
+msgstr ""
+"desde <b> %(minNonCrit)s </b> hasta <b> %(maxNoncritDam)s </b> en un golpe "
+"normal, y desde <b> %(minCritDam)s </b> hasta <b> %(maxCritDam)s </b> en un "
+"golpe crítico."
+
+#: chardata/static/chardata/solution_popup.js:554
+msgid ""
+"from <b> %(minNonCrit)s </b> to <b> %(maxNoncritDam)s </b> on a normal hit."
+msgstr ""
+"desde <b> %(minNonCrit)s </b> hasta <b> %(maxNoncritDam)s </b> en un golpe "
+"normal."
+
+#: chardata/static/chardata/stateengine.js:5
+msgid "Save"
+msgstr "Guardar"
+
+#: chardata/static/chardata/stateengine.js:5
+msgid "Saved"
+msgstr "Guardado"
+
+#: chardata/static/chardata/stateengine.js:72
+msgid "You have unsaved changes. They will be discarded if you leave."
+msgstr ""
+"No has guardado los cambios. Estos serán eliminados si sales de la página."

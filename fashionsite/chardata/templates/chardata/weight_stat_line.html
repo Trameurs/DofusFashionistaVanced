@@ -1,0 +1,17 @@
+{% load static_s3 %}
+<tr class="weight-stat-line">
+    <td class="weight-stat-icon-cell {% if stat_key == 'vit' %}upper-left-cell{% endif %}
+                                     {% if stat_key == 'resperran' %}bottom-left-cell{% endif %}" >
+        {% if icon %}
+            <img class="weight-stat-icon" src="{% static icon %}">
+        {% endif %}
+    </td>
+    <td align="left">
+        <span class="weight-stat-name">{{stat_name}}</span>
+    </td>
+    <td name="stat_weight_{{stat_key}}" class="weight-stat-input-cell {% if stat_key == 'vit' %}upper-right-cell{% endif %}
+                                                                      {% if stat_key == 'resperran' %}bottom-right-cell{% endif %}">
+        <input name="weight_{{stat_key}}" id="weight_{{stat_key}}" type="number" autocomplete="off" class="weight-stat-input white-pretty-input change-modifies-state {{classes}}">
+        </input>
+    </td>
+</tr>

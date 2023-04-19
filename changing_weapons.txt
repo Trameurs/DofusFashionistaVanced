@@ -1,0 +1,290 @@
+19
+Grofus [318] is missing Ankama ID
+Grofus [318] is missing Ankama type
+Iop Wig [1817] is missing Ankama ID
+Iop Wig [1817] is missing Ankama type
+Karmeleon [1864] is missing Ankama ID
+Karmeleon [1864] is missing Ankama type
+Amakna Mask [1956] is missing Ankama ID
+Amakna Mask [1956] is missing Ankama type
+Ice Dofus [1961] is missing Ankama ID
+Ice Dofus [1961] is missing Ankama type
+Plumobile is missing crit_bonus
+Srambad Daggers is missing crit_bonus
+Queen of Thieves' Sword is missing crit_bonus
+Structure created with 7306540 bytes
+Changing Arachnee Cutter's critical hit rate from 25 to 30
+Changing whether Arachnee Cutter is one handed: from True to False
+326
+Grofus [318] is missing Ankama ID
+Grofus [318] is missing Ankama type
+Iop Wig [1817] is missing Ankama ID
+Iop Wig [1817] is missing Ankama type
+Karmeleon [1864] is missing Ankama ID
+Karmeleon [1864] is missing Ankama type
+Amakna Mask [1956] is missing Ankama ID
+Amakna Mask [1956] is missing Ankama type
+Ice Dofus [1961] is missing Ankama ID
+Ice Dofus [1961] is missing Ankama type
+Plumobile is missing crit_bonus
+Srambad Daggers is missing crit_bonus
+Queen of Thieves' Sword is missing crit_bonus
+Structure created with 7306540 bytes
+Changing Light Treeckler Branch's critical hit rate from 10 to 30
+187
+Grofus [318] is missing Ankama ID
+Grofus [318] is missing Ankama type
+Iop Wig [1817] is missing Ankama ID
+Iop Wig [1817] is missing Ankama type
+Karmeleon [1864] is missing Ankama ID
+Karmeleon [1864] is missing Ankama type
+Amakna Mask [1956] is missing Ankama ID
+Amakna Mask [1956] is missing Ankama type
+Ice Dofus [1961] is missing Ankama ID
+Ice Dofus [1961] is missing Ankama type
+Plumobile is missing crit_bonus
+Srambad Daggers is missing crit_bonus
+Queen of Thieves' Sword is missing crit_bonus
+Structure created with 7306540 bytes
+Adding -1 AP to Zoth Master Staff
+Changing Zoth Master Staff's critical hit rate from 40 to 15
+Changing whether Zoth Master Staff is one handed: from True to False
+13
+Grofus [318] is missing Ankama ID
+Grofus [318] is missing Ankama type
+Iop Wig [1817] is missing Ankama ID
+Iop Wig [1817] is missing Ankama type
+Karmeleon [1864] is missing Ankama ID
+Karmeleon [1864] is missing Ankama type
+Amakna Mask [1956] is missing Ankama ID
+Amakna Mask [1956] is missing Ankama type
+Ice Dofus [1961] is missing Ankama ID
+Ice Dofus [1961] is missing Ankama type
+Plumobile is missing crit_bonus
+Srambad Daggers is missing crit_bonus
+Queen of Thieves' Sword is missing crit_bonus
+Structure created with 7306558 bytes
+Changing Deflower Staff's critical hit rate from 25 to 30
+Changing whether Deflower Staff is one handed: from True to False
+407
+Grofus [318] is missing Ankama ID
+Grofus [318] is missing Ankama type
+Iop Wig [1817] is missing Ankama ID
+Iop Wig [1817] is missing Ankama type
+Karmeleon [1864] is missing Ankama ID
+Karmeleon [1864] is missing Ankama type
+Amakna Mask [1956] is missing Ankama ID
+Amakna Mask [1956] is missing Ankama type
+Ice Dofus [1961] is missing Ankama ID
+Ice Dofus [1961] is missing Ankama type
+Plumobile is missing crit_bonus
+Srambad Daggers is missing crit_bonus
+Queen of Thieves' Sword is missing crit_bonus
+Structure created with 7306558 bytes
+Changing White Rat Sword's critical hit rate from 20 to 30
+121
+Grofus [318] is missing Ankama ID
+Grofus [318] is missing Ankama type
+Iop Wig [1817] is missing Ankama ID
+Iop Wig [1817] is missing Ankama type
+Karmeleon [1864] is missing Ankama ID
+Karmeleon [1864] is missing Ankama type
+Amakna Mask [1956] is missing Ankama ID
+Amakna Mask [1956] is missing Ankama type
+Ice Dofus [1961] is missing Ankama ID
+Ice Dofus [1961] is missing Ankama type
+Plumobile is missing crit_bonus
+Srambad Daggers is missing crit_bonus
+Queen of Thieves' Sword is missing crit_bonus
+Structure created with 7306558 bytes
+Changing Ougaammer's critical hit rate from 50 to 5
+Changing whether Ougaammer is one handed: from True to False
+355
+Grofus [318] is missing Ankama ID
+Grofus [318] is missing Ankama type
+Iop Wig [1817] is missing Ankama ID
+Iop Wig [1817] is missing Ankama type
+Karmeleon [1864] is missing Ankama ID
+Karmeleon [1864] is missing Ankama type
+Amakna Mask [1956] is missing Ankama ID
+Amakna Mask [1956] is missing Ankama type
+Ice Dofus [1961] is missing Ankama ID
+Ice Dofus [1961] is missing Ankama type
+Plumobile is missing crit_bonus
+Srambad Daggers is missing crit_bonus
+Queen of Thieves' Sword is missing crit_bonus
+Structure created with 7306557 bytes
+Changing Snailmet Bow's critical hit rate from 20 to 30
+86
+Grofus [318] is missing Ankama ID
+Grofus [318] is missing Ankama type
+Iop Wig [1817] is missing Ankama ID
+Iop Wig [1817] is missing Ankama type
+Karmeleon [1864] is missing Ankama ID
+Karmeleon [1864] is missing Ankama type
+Amakna Mask [1956] is missing Ankama ID
+Amakna Mask [1956] is missing Ankama type
+Ice Dofus [1961] is missing Ankama ID
+Ice Dofus [1961] is missing Ankama type
+Plumobile is missing crit_bonus
+Srambad Daggers is missing crit_bonus
+Queen of Thieves' Sword is missing crit_bonus
+Structure created with 7306557 bytes
+Changing Stephammer's critical hit rate from 40 to 15
+102
+Grofus [318] is missing Ankama ID
+Grofus [318] is missing Ankama type
+Iop Wig [1817] is missing Ankama ID
+Iop Wig [1817] is missing Ankama type
+Karmeleon [1864] is missing Ankama ID
+Karmeleon [1864] is missing Ankama type
+Amakna Mask [1956] is missing Ankama ID
+Amakna Mask [1956] is missing Ankama type
+Ice Dofus [1961] is missing Ankama ID
+Ice Dofus [1961] is missing Ankama type
+Plumobile is missing crit_bonus
+Srambad Daggers is missing crit_bonus
+Queen of Thieves' Sword is missing crit_bonus
+Structure created with 7306557 bytes
+Adding -1 AP to Mush Cuteers
+Changing Mush Cuteers's critical hit rate from 30 to 25
+135
+Grofus [318] is missing Ankama ID
+Grofus [318] is missing Ankama type
+Iop Wig [1817] is missing Ankama ID
+Iop Wig [1817] is missing Ankama type
+Karmeleon [1864] is missing Ankama ID
+Karmeleon [1864] is missing Ankama type
+Amakna Mask [1956] is missing Ankama ID
+Amakna Mask [1956] is missing Ankama type
+Ice Dofus [1961] is missing Ankama ID
+Ice Dofus [1961] is missing Ankama type
+Plumobile is missing crit_bonus
+Srambad Daggers is missing crit_bonus
+Queen of Thieves' Sword is missing crit_bonus
+Structure created with 7306575 bytes
+Changing Canni Blade's level from 176 to 157
+Changing Canni Blade's critical hit rate from 50 to 5
+Changing whether Canni Blade is one handed: from True to False
+Changing Canni Blade's hit number 0: element changing from neut to water
+Changing Canni Blade's hit number 1: element changing from water to neut
+352
+Grofus [318] is missing Ankama ID
+Grofus [318] is missing Ankama type
+Iop Wig [1817] is missing Ankama ID
+Iop Wig [1817] is missing Ankama type
+Karmeleon [1864] is missing Ankama ID
+Karmeleon [1864] is missing Ankama type
+Amakna Mask [1956] is missing Ankama ID
+Amakna Mask [1956] is missing Ankama type
+Ice Dofus [1961] is missing Ankama ID
+Ice Dofus [1961] is missing Ankama type
+Plumobile is missing crit_bonus
+Srambad Daggers is missing crit_bonus
+Queen of Thieves' Sword is missing crit_bonus
+Structure created with 7306726 bytes
+Changing Mastic Hammer's level from 123 to 122
+Changing Mastic Hammer's critical hit rate from 25 to 30
+Changing whether Mastic Hammer is one handed: from True to False
+200
+Grofus [318] is missing Ankama ID
+Grofus [318] is missing Ankama type
+Iop Wig [1817] is missing Ankama ID
+Iop Wig [1817] is missing Ankama type
+Karmeleon [1864] is missing Ankama ID
+Karmeleon [1864] is missing Ankama type
+Amakna Mask [1956] is missing Ankama ID
+Amakna Mask [1956] is missing Ankama type
+Ice Dofus [1961] is missing Ankama ID
+Ice Dofus [1961] is missing Ankama type
+Plumobile is missing crit_bonus
+Srambad Daggers is missing crit_bonus
+Queen of Thieves' Sword is missing crit_bonus
+Structure created with 7306732 bytes
+Adding 7 % Air Resist to Frigostine's Wand
+Changing Frigostine's Wand's  MP Loss Resist from -4 to 5
+Removing Air Resist from Frigostine's Wand
+Changing Frigostine's Wand's critical hit rate from 20 to 30
+98
+Grofus [318] is missing Ankama ID
+Grofus [318] is missing Ankama type
+Iop Wig [1817] is missing Ankama ID
+Iop Wig [1817] is missing Ankama type
+Karmeleon [1864] is missing Ankama ID
+Karmeleon [1864] is missing Ankama type
+Amakna Mask [1956] is missing Ankama ID
+Amakna Mask [1956] is missing Ankama type
+Ice Dofus [1961] is missing Ankama ID
+Ice Dofus [1961] is missing Ankama type
+Plumobile is missing crit_bonus
+Srambad Daggers is missing crit_bonus
+Queen of Thieves' Sword is missing crit_bonus
+Structure created with 7306731 bytes
+Adding -1 AP to Korriander Axe
+Changing Korriander Axe's critical hit rate from 40 to 15
+195
+Grofus [318] is missing Ankama ID
+Grofus [318] is missing Ankama type
+Iop Wig [1817] is missing Ankama ID
+Iop Wig [1817] is missing Ankama type
+Karmeleon [1864] is missing Ankama ID
+Karmeleon [1864] is missing Ankama type
+Amakna Mask [1956] is missing Ankama ID
+Amakna Mask [1956] is missing Ankama type
+Ice Dofus [1961] is missing Ankama ID
+Ice Dofus [1961] is missing Ankama type
+Plumobile is missing crit_bonus
+Srambad Daggers is missing crit_bonus
+Queen of Thieves' Sword is missing crit_bonus
+Structure created with 7306749 bytes
+Changing Buck Anear's Sabre's  Dodge from -4 to 5
+Changing Buck Anear's Sabre's critical hit rate from 30 to 25
+146
+Grofus [318] is missing Ankama ID
+Grofus [318] is missing Ankama type
+Iop Wig [1817] is missing Ankama ID
+Iop Wig [1817] is missing Ankama type
+Karmeleon [1864] is missing Ankama ID
+Karmeleon [1864] is missing Ankama type
+Amakna Mask [1956] is missing Ankama ID
+Amakna Mask [1956] is missing Ankama type
+Ice Dofus [1961] is missing Ankama ID
+Ice Dofus [1961] is missing Ankama type
+Plumobile is missing crit_bonus
+Srambad Daggers is missing crit_bonus
+Queen of Thieves' Sword is missing crit_bonus
+Structure created with 7306748 bytes
+Adding -1 AP to Staff of the Prophets
+Changing Staff of the Prophets's critical hit rate from 50 to 5
+320
+Grofus [318] is missing Ankama ID
+Grofus [318] is missing Ankama type
+Iop Wig [1817] is missing Ankama ID
+Iop Wig [1817] is missing Ankama type
+Karmeleon [1864] is missing Ankama ID
+Karmeleon [1864] is missing Ankama type
+Amakna Mask [1956] is missing Ankama ID
+Amakna Mask [1956] is missing Ankama type
+Ice Dofus [1961] is missing Ankama ID
+Ice Dofus [1961] is missing Ankama type
+Plumobile is missing crit_bonus
+Srambad Daggers is missing crit_bonus
+Queen of Thieves' Sword is missing crit_bonus
+Structure created with 7306765 bytes
+Changing Ice Daggers's critical hit rate from 30 to 25
+143
+Grofus [318] is missing Ankama ID
+Grofus [318] is missing Ankama type
+Iop Wig [1817] is missing Ankama ID
+Iop Wig [1817] is missing Ankama type
+Karmeleon [1864] is missing Ankama ID
+Karmeleon [1864] is missing Ankama type
+Amakna Mask [1956] is missing Ankama ID
+Amakna Mask [1956] is missing Ankama type
+Ice Dofus [1961] is missing Ankama ID
+Ice Dofus [1961] is missing Ankama type
+Plumobile is missing crit_bonus
+Srambad Daggers is missing crit_bonus
+Queen of Thieves' Sword is missing crit_bonus
+Structure created with 7306765 bytes
+Changing Guten Tak's Bow's critical hit rate from 30 to 25

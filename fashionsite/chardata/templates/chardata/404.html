@@ -1,0 +1,29 @@
+{% extends 'chardata/base.html' %}
+
+{% load i18n %}
+{% load static_s3 %}
+
+{% block title %}The Dofus Fashionista: {% trans "Error" %}{% endblock %}
+
+{% block main %}
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+<h1 align="center"> {% trans "404 - Page Not Found" %} </h1>
+<table align="center">
+<tr>
+<td>
+    <p align="left" class='text'>
+        {% blocktrans %}Oops...{% endblocktrans %}
+        <br><br>
+        {% blocktrans %}We could not find the page you are looking for.{% endblocktrans %}
+        <br><br>
+        {% url 'chardata.home_view.home' as home_url %}
+        {% url 'chardata.contact_view.contact' as contact_url %}
+        {% blocktrans %}You can go back to the <a href="{{home_url}}">home</a> page instead, or send us a message <a href="{{contact_url}}">here</a> if this keeps happening.{% endblocktrans %}
+    </p>
+</td>
+<td>
+    <img src="{% static "chardata/designs/myDown2.png" %}"></img>
+</td>
+</tr>
+</table>
+{% endblock %}

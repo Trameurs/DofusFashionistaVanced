@@ -1,0 +1,583 @@
+{% extends 'chardata/base.html' %}
+
+{% load i18n %}
+{% load static_s3 %}
+
+{% block title %}The Dofus Fashionista: {% trans "Outfit Suggestion" %}{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'chardata/solution.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'chardata/forms.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.solution %}" class="solution-css css-file">
+{% endblock %}
+
+{% block main %}
+    <h1 align="center">{% trans "Outfit Suggestion" %}</h1>
+    
+    {% if not is_guest %}
+    
+    {% if is_generated %}
+    <p class="text">
+    {% if char.char_name %}
+        {% blocktrans with char.char_name as charname %}This is the set that we suggest for <b>{{charname}}</b>. {% endblocktrans %}
+    {% else %}
+        {% trans "This is the suggested set." %}
+    {% endif %} 
+    
+    {% url 'chardata.fashion_action.fashion' char_id  as run_again_link %}
+    
+    {% blocktrans with lock=lock_item switch=switch_item delete=delete_item %}If you don't like an item, click the forbid ( <img style='position: relative; bottom: -3px; left: -2px;' src={{delete}} title='Forbid'> ) button under its name and <a href="{{run_again_link}}" class="rerun-button">run again</a>. If, on the contrary, you want to lock in an item for future sets for this char, click the lock (<img style='position: relative; bottom: -1px; left: 0px;' src={{lock}} title='Lock'>) button. You can also switch any item for another you like best by clicking the switch (<img class='solution-item-button' style='position: relative; bottom: -5px; left: 0px;' src={{switch}} title='Switch'>) button.{% endblocktrans %}
+    </p>
+    {% else %}
+    <p class="text">
+    {% blocktrans with add=add_item %}
+    This set was generated from scratch. Click the add (<img style='position: relative; bottom: -4px; left: 1px;' src={{add}} title='Add'>) buttons to choose items and build a set for you.{% endblocktrans %}
+    </p>
+    {% endif %}
+
+    <div align="center">
+        <div style="display: inline-block;">
+        <form id="compare_form" class="hidden-form" action="{% url 'chardata.compare_sets_view.choose_compare_sets' %}" method="post" style="display: none;">{% csrf_token %}<input  type="text" value="https://dofusfashionista.com/solution/{{char_id}}/" name="char0"></input></form>
+            <button id="compare_set_button" type="submit" class="button-generic" style="margin-right: 5px;">{% trans "Compare to another set" %}</button>
+        </div>
+        <div style="display: inline-block;">
+            <button id="link_sharing_button" class="button-generic"></button>
+        </div>
+        <div style="display: inline-block;">
+            <input type="text" id="link_sharing_url_text" value="" style="width: 350px; " class='pretty-input' readonly />
+        </div>
+    </div>
+    <br>
+    {% else %}
+    <p class="text">
+    {% if owner_alias %}
+        {% if char.char_name %}
+        {% blocktrans with charname=char.char_name owner=owner_alias %}This is {{owner}}'s set for {{charname}}. {% endblocktrans %}
+        {% else %}
+        {% blocktrans with owner=owner_alias %}This is {{owner}}'s set. {% endblocktrans %}
+        {% endif %}
+    {% else %}
+        {% if char.char_name %}
+        {% blocktrans with charname=char.char_name %}This is someone else's set for {{charname}}. {% endblocktrans %}
+        {% else %}
+        {% trans "This is someone else's set." %}
+        {% endif %}
+    {% endif %}
+    {% url 'chardata.projects_view.duplicate_someones_project' encoded_char_id as copy_link%}
+    {% blocktrans %}If you wish to modify it, <a href="{{copy_link}}" class="copy-action-link">copy</a> it to your workspace.</p>{% endblocktrans %}
+    
+    <div align="center">
+    <form id="compare_form" class="hidden-form" action="{% url 'chardata.compare_sets_view.choose_compare_sets' %}" method="post" style="display: none;">{% csrf_token %}<input  type="text" value="{{initial_link}}" name="char0"></input></form>
+            <button id="compare_set_button" type="submit" class="button-generic" style="margin-right: 5px;">{% trans "Compare to another set" %}</button>
+    </div>
+    {% endif %}
+
+    <table class="solution-table"><tr>
+    <td class="solution-item-summary">
+
+    <button id="expand_button" class="solution-item-summary-expand-all button-generic">{% trans "Expand All" %}</button>
+    <button id="collapse_button" class="solution-item-summary-collapse-all button-generic">{% trans "Collapse All" %}</button>
+
+    {% for section in item_sections %}
+    <div class="solution-item-section">
+        {% for item_list_ordered in section %}
+        <div class="solution-item-section-column">
+            {% for item in item_list_ordered %}
+                {% include "chardata/solution_item.html" with item=item %}
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+
+    <div>
+    {% for set_result in sets %}
+        {% include "chardata/solution_set.html" with set=set_result %}
+    {% endfor %}
+    </div>
+
+    {% if not is_guest %}
+    <div align="center">
+    
+      
+
+    <a href="{% url 'chardata.fashion_action.fashion' char_id %}" style='color: white; text-decoration: none; margin:10px;' class='submit-button button-generic rerun-button'><img src="{% static 'chardata/1413454601_needle.png' %}" class="button-img">{% trans "Tailor a New Set" %}</a>
+    
+  
+    
+    </div>
+    {% endif %}
+
+    </td>
+    <td class="solution-stat-summary">
+        <table class="solution-stat-table">
+            <tr><td colspan="4">
+                <div class="solution-stat-summary-mode-option-container">       
+                    <label>                    
+                        <input type="radio" name="total_mode" value="final" checked="checked"> <span class="checkbox-text">{% trans "Total" %}</span>
+                    </label>
+                </div>
+                <div class="solution-stat-summary-mode-option-container">
+                    <label>
+                        <input type="radio" name="total_mode" value="equip"><span class="checkbox-text">{% trans "Equip" %}</span>
+                    </label>
+                </div>
+            </td></tr>
+            <tr class="solution-stat-summary-line">
+                <td class="solution-stat-summary-icon-header"></td>
+                <td class="solution-stat-summary-name-header"></td>
+                <td class="solution-stat-summary-base-value-header solution-stat-summary-value-cell"><a href="{% url 'chardata.base_stats_view.setup_base_stats' char_id %}">{% trans "Base" %}</a></td>
+                <td class="solution-stat-summary-value-header solution-stat-summary-value-cell">Total</td>
+            </tr>
+
+            {% trans "HP" as HP %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Health_Points.png" stat_name=HP stat_key="hp" %}
+            {% trans "Vitality" as Vitality %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Vitality.png" stat_name=Vitality stat_key="vit"  base=True%}
+            {% trans "Wisdom" as Wisdom %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Wisdom.png" stat_name=Wisdom stat_key="wis" base=True %}
+            {% trans "Strength" as Strength %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Strength.png" stat_name=Strength stat_key="str" base=True %}
+            {% trans "Intelligence" as Intelligence %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Intelligence.png" stat_name=Intelligence stat_key="int" base=True %}
+            {% trans "Chance" as Chance %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Chance.png" stat_name=Chance stat_key="cha" base=True %}
+            {% trans "Agility" as Agility %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Agility.png" stat_name=Agility stat_key="agi" base=True %}
+            {% trans "Power" as Power %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Power stat_key="pow" %}
+            {% trans "% Melee Damage" as Power_melee %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Power_melee stat_key="permedam" %}
+            {% trans "% Ranged Damage" as Power_distance %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Power_distance stat_key="perrandam" %}
+            {% trans "% Weapon Damage" as Power_weapons %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Power_weapons stat_key="perweadam" %}
+            {% trans "% Spell Damage" as Power_spells %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Power_spells stat_key="perspedam" %}
+            {% include "chardata/solution_stat_line_empty.html" %}
+            {% trans "AP" as AP %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/AP.png" stat_name=AP stat_key="ap" %}
+            {% trans "MP" as MP %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/MP.png" stat_name=MP stat_key="mp" %}
+            {% trans "Range" as Range %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Range.png" stat_name=Range stat_key="range" %}
+            {% trans "Summons" as Summons %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Summon.png" stat_name=Summons stat_key="summon" %}
+            {% trans "Critical Hits" as Crits %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Crits stat_key="ch" %}
+            {% include "chardata/solution_stat_line_empty.html" %}
+            {% trans "Initiative" as Initiative %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Initiative.png" stat_name=Initiative stat_key="init" %}
+            {% trans "Prospecting" as Prospecting %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Prospecting.png" stat_name=Prospecting stat_key="pp" %}
+            {% trans "Lock" as Lock %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Lock.png" stat_name=Lock stat_key="lock" %}
+            {% trans "Dodge" as Dodge %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Dodge.png" stat_name=Dodge stat_key="dodge" %}
+            {% trans "AP Reduction" as AP_Reduction %}
+            {% include "chardata/solution_stat_line.html" with stat_name=AP_Reduction stat_key="apred" %}
+            {% trans "MP Reduction" as MP_Reduction %}
+            {% include "chardata/solution_stat_line.html" with stat_name=MP_Reduction stat_key="mpred" %}
+            {% trans "AP Loss Resist" as AP_Resist %}
+            {% include "chardata/solution_stat_line.html" with stat_name=AP_Resist stat_key="apres" %}
+            {% trans "MP Loss Resist" as MP_Resist %}
+            {% include "chardata/solution_stat_line.html" with stat_name=MP_Resist stat_key="mpres" %}
+            {% trans "Pushback Resist" as Pushback_Resist %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Pushback_Resist stat_key="pshres" %}
+            {% trans "Critical Resist" as Critical_Resist %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Critical_Resist stat_key="crires" %}
+            {% trans "Pods" as Pods %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Pods stat_key="pod" %}
+            {% trans "Reflects" as Reflects %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Reflects stat_key="ref" %}
+            {% trans "Trap Damage" as Trap_Damage %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Trap_Damage stat_key="trapdam" %}
+            {% trans "% Trap Damage" as Per_Trap_Dam %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Per_Trap_Dam stat_key="trapdamper" %}
+            {% include "chardata/solution_stat_line_empty.html" %}
+            {% trans "Damage" as Damage %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Damage stat_key="dam" %}
+            {% trans "Neutral Damage" as Neutral_Damage %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Neutral.png" stat_name=Neutral_Damage stat_key="neutdam" %}
+            {% trans "Earth Damage" as Earth_Damage %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Strength.png" stat_name=Earth_Damage stat_key="earthdam" %}
+            {% trans "Fire Damage" as Fire_Damage %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Intelligence.png" stat_name=Fire_Damage stat_key="firedam" %}
+            {% trans "Water Damage" as Water_Damage %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Chance.png" stat_name=Water_Damage stat_key="waterdam" %}
+            {% trans "Air Damage" as Air_Damage %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Agility.png" stat_name=Air_Damage stat_key="airdam" %}
+            {% trans "Critical Damage" as Critical_Damage %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Critical_Damage stat_key="cridam" %}
+            {% trans "Pushback Damage" as Pushback_Damage %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Pushback_Damage stat_key="pshdam" %}
+            {% trans "Heals" as Heals %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Heals stat_key="heals" %}
+            {% include "chardata/solution_stat_line_empty.html" %}
+            {% trans "Neutral Resist" as Neutral_Resist %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Neutral.png" stat_name=Neutral_Resist stat_key="neutres" %}
+            {% trans "Earth Resist" as Earth_Resist %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Strength.png" stat_name=Earth_Resist stat_key="earthres" %}
+            {% trans "Fire Resist" as Fire_Resist %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Intelligence.png" stat_name=Fire_Resist stat_key="fireres" %}
+            {% trans "Water Resist" as Water_Resist %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Chance.png" stat_name=Water_Resist stat_key="waterres" %}
+            {% trans "Air Resist" as Air_Resist %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Agility.png" stat_name=Air_Resist stat_key="airres" %}
+            {% include "chardata/solution_stat_line_empty.html" %}
+            {% trans "% Neutral Resist" as Per_Neutral_Res %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Neutral.png" stat_name=Per_Neutral_Res stat_key="neutresper" %}
+            {% trans "% Earth Resist" as Per_Earth_Res %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Strength.png" stat_name=Per_Earth_Res stat_key="earthresper" %}
+            {% trans "% Fire Resist" as Per_Fire_Res %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Intelligence.png" stat_name=Per_Fire_Res stat_key="fireresper" %}
+            {% trans "% Water Resist" as Per_Water_Res %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Chance.png" stat_name=Per_Water_Res stat_key="waterresper" %}
+            {% trans "% Air Resist" as Per_Air_Res %}
+            {% include "chardata/solution_stat_line.html" with icon="chardata/Agility.png" stat_name=Per_Air_Res stat_key="airresper" %}
+            {% trans "% Melee Resist" as Res_Per_Me %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Res_Per_Me stat_key="respermee" %}
+            {% trans "% Ranged Resist" as Res_Per_Dis %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Res_Per_Dis stat_key="resperran" %}
+            <tr>
+        </table>
+    </td>
+    </tr></table>
+    <div id="blanket" style="display:none;"></div>
+    <div id="popUpDiv" style="display:none;">
+        <div class="removing-div"></div>
+        <div class="search-div" align="right"></div>
+        <div class="weapon-order" align="center"></div>
+        <div class="items-to-add"></div>
+        <table width="100%">
+        <tr>
+        <td align="left">
+            <div id="pages"></div>
+        </td>
+        <td align="right">
+        <div align="right" class="popup-cancel-div">
+            <button class='button-generic cancel-popup'>{% trans "Cancel" %}</button>
+        </div>
+        </td>
+        </tr>
+        </table>
+    </div>
+{% include "chardata/jqueryui.html" %}
+    <script src="{% static 'chardata/solution_popup.js' %}"></script>
+    <script>
+        $.ajaxSetup({
+          data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+        });
+
+        var isGuest = {{is_guest_json | safe}};
+        var options = {{options_json | safe}};
+        var external = {{link_external_image | safe}};
+        var loader = {{ ajax_loader | safe }};
+
+
+        function get_loader_img()
+        {
+            if ('{{theme}}' == 'auto'){
+                var now = new Date();
+                var h = now.getHours();
+                theme = 'lighttheme';
+                if (h < 6 || h >= 18 ) {
+                    theme = 'darktheme';
+                }
+                return loader[theme];
+            }
+            return loader;
+        }
+
+        function get_external_img()
+        {
+            if ('{{theme}}' == 'auto'){
+                var now = new Date();
+                var h = now.getHours();
+                theme = 'lighttheme';
+                if (h < 6 || h >= 18 ) {
+                    theme = 'darktheme';
+                }
+                return external[theme];
+            }
+            return external;
+        }
+        
+        function setExternalImage(){
+            var image = get_external_img();
+            $('.item-external-image-link').attr("src",image);
+        }
+        
+        function toggle_expand() {;
+            $header = $(this);
+            $content = $header.next();
+            if ($content.css('display') == 'none') {
+                $header.css("border-radius", "10px 10px 0 0");
+                $content.slideToggle(250);
+            } else {
+                $content.slideToggle(250, function () {
+                    $header.css("border-radius", "10px");
+                });
+            }
+        }
+        function expand_expand($header) {
+            $content = $header.next();
+            $header.css("border-radius", "10px 10px 0px 0px" );
+            $content.slideDown(250);
+        }
+        function collapse_expand($header) {
+            $content = $header.next();
+            $content.slideUp(250, function () {
+                $header.css("border-radius", "10px");
+            });
+        }
+        $(".expand-header").click(toggle_expand);
+    
+        var stats_base = {{stats_base_json | safe}};
+        var stats_gear = {{stats_gear_json | safe}};
+        var stats_total = {{stats_total_json | safe}};
+
+        function update_stats() {
+            if ($("input[name='total_mode']:checked").val() == "equip") {
+                new_stats = stats_gear;
+                $(".solution-stat-summary-value-header").text('{% trans "Equip" %}');
+            } else {
+                new_stats = stats_total;
+                $(".solution-stat-summary-value-header").text('{% trans "Total" %}');
+            }
+
+            $.each(new_stats, function(stat_key, stat_value) {
+                var statValueString;
+                if ((stat_key === "ap" && options["ap_exo"] === true)
+                    || (stat_key === "mp" && options["mp_exo"] === true)
+                    || (stat_key === "range" && options["range_exo"] === true)) {
+                    statValueString = (stat_value - 1).toString() + "+1";
+                } else {
+                    statValueString = stat_value.toString();
+                }
+                if (stat_value < 0) {
+                    statValueString = "<span class='red-text'>" + statValueString + "</span>";
+                }
+                if (stat_key in stats_base) {
+                    $("td[name=stat_value_base_" + stat_key + "]").html(stats_base[stat_key]);
+                }
+                $("td[name=stat_value_" + stat_key + "]").html(statValueString);
+            });
+        }
+
+        var link = {% if link_shared %}"{{initial_link}}"{% else %}null{% endif %};
+        var sharing = {% if link_shared %}true{% else %}false{% endif %};
+        function initLinkSharing() {
+            if (sharing) {
+                $("#link_sharing_button").html('{% trans "Unshare" %}');
+                $("#link_sharing_url_text").show();
+                $("#link_sharing_url_text").val(link);
+            } else {
+                $("#link_sharing_button").html('{% trans "Get link to share" %}');
+                $("#link_sharing_url_text").hide();
+                $("#link_sharing_url_text").val("");
+            }
+        }
+
+        function updateLinkSharing() {
+            if (sharing) {
+                $.get('/getsharinglink/{{char_id}}/', {}, function(data) {
+                    $("#link_sharing_button").html('{% trans "Unshare" %}');
+                    $("#link_sharing_url_text").show();
+                    $("#link_sharing_url_text").val(data);
+                    $("#link_sharing_url_text").select();
+                });
+            } else {
+                $("#link_sharing_button").html('{% trans "Get link to share" %}');
+                $("#link_sharing_url_text").hide();
+                $("#link_sharing_url_text").val("");
+                $.get('/hidesharinglink/{{char_id}}/', {}, function(data) {
+                });
+            }
+        }
+
+        function toggleLinkSharing() {
+            sharing = !sharing;
+            updateLinkSharing();
+        }
+        
+        function switchItem(itemName, slot, char_id) {
+            $.post("/exchange/" + char_id + "/",
+                   {itemName: itemName, slot: slot},
+                   function(data) {
+                       location.reload();
+                   });
+        }
+        function removeItem(slot, char_id) {
+            $.post("/remove/" + char_id + "/",
+                   {slot: slot},
+                   function(data) {
+                       location.reload();
+                   });
+        }
+
+        var itemIsLocked = {{item_is_locked | safe}}
+        var itemIsForbidden = {{item_is_forbidden | safe}}
+        var itemNames = {{item_names | safe}}
+        var transItemNames = {{translated_item_names | safe}}
+        var itemViolates = {{item_violates | safe}}
+
+        function updateLockButtonState(button, key) {
+            if (isGuest) {
+                button.hide();
+            } else if (itemIsLocked[key]) {
+                button.css({opacity: 1});
+            } else {
+                button.css({opacity: 0.3});
+            }
+        }
+
+        function updateForbidButtonState(button, key) {
+            if (isGuest) {
+                button.hide();
+            } else if (itemIsForbidden[key]) {
+                button.css({opacity: 1});
+            } else {
+                button.css({opacity: 0.3});
+            }
+        }
+
+        function updateSwitchButtonState(button) {
+            if (isGuest) {
+                button.hide();
+            } else {
+                button.css({opacity: 1});
+            } 
+        }
+
+        $(document).ready(function() {
+            update_stats();
+            $("input[name='total_mode']").change(update_stats);
+
+            $("#expand_button").click(function(e) {
+                e.preventDefault();
+                $(".expand-header").each(function(index, value) {
+                    expand_expand($(value));
+                });
+            });
+            $("#collapse_button").click(function(e) {
+                e.preventDefault();
+                $(".expand-header").each(function(index, value) {
+                   collapse_expand($(value));
+                });
+            });
+            
+            $(".cancel-popup").click(function() {
+                 top = $(window).scrollTop().pageYOffset + 10;
+                 popupSwitch(top);
+            });
+            $("#blanket").click(function() {
+                 top = $(window).scrollTop().pageYOffset + 10;
+                 popupSwitch(top);
+            });
+
+            initLinkSharing();
+            $("#link_sharing_button").click(function(e) {
+                e.preventDefault();
+                toggleLinkSharing();
+            });
+            $("#link_sharing_url_text").click(function(e) {
+                this.select();
+            });
+
+            $.each(itemViolates, function(key, value) {
+                if (value == true) {
+                    itemTitle = $("#item-name-" + key);
+                    itemTitle.css('color', '#AA0000');
+                }
+            });
+
+            $.each(itemIsLocked, function(key, value) {
+                var itemContainer = $("#item-container-" + key);
+                var lockButton = itemContainer.find(".solution-item-lock-button");
+                var forbidButton = itemContainer.find(".solution-item-forbid-button");
+
+                lockButton.click(function(e) {
+                    e.stopPropagation();
+                    itemIsLocked[key] = !itemIsLocked[key];
+                    if (itemIsLocked[key]) {
+                        itemIsForbidden[key] = false;
+                        updateForbidButtonState(forbidButton, key);
+                    }
+                    updateLockButtonState(lockButton, key);
+                    $.post("/setitemlocked/{{char_id}}/",
+                           {slot: key.toString(), equip: itemNames[key], locked: itemIsLocked[key]},
+                           function(data) {
+                           });
+                });
+                updateLockButtonState(lockButton, key);
+            });
+
+            $.each(itemIsForbidden, function(key, value) {
+                var itemContainer = $("#item-container-" + key);
+                var lockButton = itemContainer.find(".solution-item-lock-button");
+                var forbidButton = itemContainer.find(".solution-item-forbid-button");
+
+                forbidButton.click(function(e) {
+                    e.stopPropagation();
+                    itemIsForbidden[key] = !itemIsForbidden[key];
+                    if (itemIsForbidden[key]) {
+                        itemIsLocked[key] = false;
+                        updateLockButtonState(lockButton, key);
+                    } 
+                    updateForbidButtonState(forbidButton, key);
+                    $.post("/setitemforbidden/{{char_id}}/",
+                           {slot: key.toString(), equip: itemNames[key], forbidden: itemIsForbidden[key]},
+                           function(data) {
+                           });
+                });
+                updateForbidButtonState(forbidButton, key);
+            });
+            $.each(itemNames, function(key, value) {
+                var itemContainer = $("#item-container-" + key);
+                var switchButton = itemContainer.find(".solution-item-switch-button");
+                var removeButton = itemContainer.find(".solution-item-remove-button");
+                var addButton = itemContainer.find(".solution-item-add-button");
+               
+                updateSwitchButtonState(switchButton);
+                
+                switchButton.click(function(e){
+                    clearSwitchDiv(transItemNames[key], get_loader_img())
+                    e.stopPropagation();
+                    populateSwitchDivInitial(key, 1, itemNames, {{char_id}}, transItemNames[key], switchItem, true);
+                    top = $(window).scrollTop();
+                    popupSwitch(top.pageYOffset + 10);
+                });
+                
+                updateSwitchButtonState(addButton);
+                
+                addButton.click(function(e){
+                    clearSwitchDiv(transItemNames[key], get_loader_img())
+                    e.stopPropagation();
+                    populateSwitchDivInitial(key, 1, itemNames, {{char_id}}, "", switchItem, false);
+                    top = $(window).scrollTop();
+                    popupSwitch(top.pageYOffset + 10);
+                });
+                
+                updateSwitchButtonState(removeButton);
+                removeButton.click(function(e){
+                    e.stopPropagation();
+                    removeItem(key, {{char_id}})
+                });
+                
+            });
+            
+            $(".item-external-link").click(function(e) {
+                e.stopPropagation();
+            });
+            
+            $("#compare_set_button").click(function() {
+                
+                $("#compare_form").submit();
+            });
+            setExternalImage();
+        });
+        
+    </script>
+{% endblock %}

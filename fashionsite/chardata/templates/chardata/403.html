@@ -1,0 +1,32 @@
+{% extends 'chardata/base.html' %}
+
+{% load i18n %}
+{% load static_s3 %}
+
+{% block title %}The Dofus Fashionista: {% trans "Error" %}{% endblock %}
+
+{% block main %}
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+<h1 align="center"> {% trans "403 - Forbidden" %} </h1>
+<table align="center">
+<tr>
+<td>
+    <p align="left" class='text'>
+        {% blocktrans %}Oops...{% endblocktrans %}
+        <br><br>
+        {% blocktrans %}It seems like the project you are trying to access is not available. It may have been deleted, or maybe it belongs to someone else.{% endblocktrans %}
+        <br><br>
+        {% url 'chardata.contact_view.contact' as contact_url %}
+        {% blocktrans %}If someone sent you this link, have them send you the 'Share' link at the bottom of their Outfit Suggestion page instead. If that is not the case and this keeps happening, you can contact us <a href="{{contact_url}}">here</a>.{% endblocktrans %}
+        <br><br>
+        {% url 'chardata.home_view.home' as home_url %}
+        {% url 'chardata.create_project_view.setup' as create_project_url %}
+        {% blocktrans %}Or you can go back to the <a href="{{home_url}}">home</a> page or <a href="{{create_project_url}}">create a project</a> of your own.{% endblocktrans %}
+    </p>
+</td>
+<td>
+    <img src="{% static "chardata/designs/myDown3.png" %}"></img>
+</td>
+</tr>
+</table>
+{% endblock %}

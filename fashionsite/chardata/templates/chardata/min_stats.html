@@ -1,0 +1,196 @@
+{% extends 'chardata/base.html' %}
+
+{% load i18n %}
+{% block title %}The Dofus Fashionista: {% trans "Minimum Characteristics" %}{% endblock %}
+
+{% block main %}
+
+    {% load static_s3 %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+
+<form id="main_form" method="post">
+  {% csrf_token %}
+
+<h1 align="center">{% trans "Minimum Characteristics" %}</h1>
+
+<div class="min-stats-div">
+
+  <table align="center" id="form_container">
+  </table>
+</div>
+<br>
+<br>
+<div class="min-stats-div-lower">
+
+  <table align="center" id="composite_form_container">
+  </table>
+</div>
+<br>
+<br>
+<div align="center">
+{% include "chardata/state_engine_all_buttons.html" with include_tailor=True %}
+</div>
+</form>
+
+<script src="{% static "chardata/stateengine.js" %}"></script>
+<script>      
+
+var initialData = {{initial_data | safe}}
+var all_stats = {{stats_order | safe}};  
+var fixedStats = {{stats_fixed | safe}};  
+var advStats = {{stats_adv | safe}};  
+
+function addIfNeeded() {
+    var allselected = true;
+    var selects = $('.stat_select');
+    $.each(selects, function(index, sel_box) {
+        if (!sel_box.value) {
+            allselected = false;
+        }
+    });
+    if (allselected) {
+        addFields();
+    }
+}
+
+function addFields() {
+    var line_container = $("<tr></tr>");
+    $("#form_container").append(line_container);
+    line_container.append($("<td style='width: 30px'></td>"));
+    var cell_container = $("<td style='width: 180px'></td>");
+    line_container.append(cell_container);
+    var select = $("<select class='stat_select'></select>");
+    select.append($("<option></option>"));
+    $.each(all_stats, function(index, value) {
+        if (value.key != "ap" && value.key != "mp" && value.key != "range")
+        select.append($("<option value='" + value.key + "'>" + value.name + "</option>"));
+     });
+    select.prop('selectedIndex', -1);
+    select.change(function() {
+        addIfNeeded();
+    });
+
+    cell_container.append(select);
+    line_container.append($("<td style='width: 81px'><input class='pretty-input' type='number' min='-9999' max='9999' autocomplete='off'></input></td>"));
+
+    var remove_button = $("<td style='width: 30px'><div style='padding-top: 3px'><img src='{% static "chardata/cross-icon.png" %}'></div></td>");
+    line_container.append(remove_button);
+
+    line_container.append($("<br>"));
+
+    var input = line_container.find("input");
+    select.change(function() {
+        input.attr('name', "min_" + this.value);
+    });
+    
+    registerChangeableStateEngine(select);
+    registerChangeableStateEngine(input);
+    registerClickableStateEngine(remove_button.find("img"));
+
+    remove_button.click(function() {
+        $(this).parent().remove();
+    });
+    
+    return line_container;
+}
+
+function addFixedFields(stat) {
+    var line_container = $("<tr></tr>");
+    $("#form_container").append(line_container);
+    line_container.append($("<td style='width: 30px'></td>"));
+    var cell_container = $("<td style='width: 180px' class='min-stat-name'>" + stat.name + "</td>");
+    line_container.append(cell_container);
+
+    line_container.append($("<td style='width: 81px'><input name='min_"+stat.key+"' class='pretty-input' type='number' min='-9999' max='9999' autocomplete='off'></input></td>"));
+
+    line_container.append($("<td style='width: 30px'></td>"));
+
+    var input = line_container.find("input");
+    
+    registerChangeableStateEngine(input);
+
+    return line_container;
+}
+
+function setStatMin(stat, statValue) {
+    var input;
+    if (stat == 'ap') {
+         input = $('input[name=min_ap]');
+    } else if (stat == 'mp') {
+        input = $('input[name=min_mp]');
+    } else if (stat == 'range') {
+        input = $('input[name=min_range]');
+    } else if (stat == 'adv_mins') {
+        $.each(statValue, function(index, value) {
+            input = $('input[name=min_' + index + ']');
+            input.val(value);
+        });
+        return;
+    } else {
+        var selectThere = $("select option[value='" + stat + "']").filter(":selected");
+        var lineContainer;
+        if (selectThere.length > 0) {
+            lineContainer = selectThere.parent().parent();
+        } else {
+            lineContainer = addFields();
+            var selectOption = lineContainer.find("select option[value='" + stat + "']");
+            selectOption.attr('selected', 'selected');
+        }
+        
+        input = lineContainer.find("input");
+    }
+    input.attr('name', 'min_' + stat);
+    input.val(statValue);
+    
+}
+
+function hideStatMin(statName) {
+    var selectThere = $("select option[value='" + statName + "']").filter(":selected");
+    if (selectThere.length > 0) {
+        var lineContainer = selectThere.parent().parent();
+        lineContainer.remove();
+    }
+}
+
+
+function addCompositeMinimums(stat){
+    var line_container = $("<tr></tr>");
+    $("#composite_form_container").append(line_container);
+    line_container.append($("<td style='width: 30px'></td>"));
+    var cell_container = $("<td  class='min-stat-name'>" + stat.local_name + "</td>");
+    line_container.append(cell_container);
+    line_container.append($("<td style='width: 81px'><input name='min_" + stat.key + "' class='pretty-input' type='number' min='-9999' max='9999' autocomplete='off'></input></td>"));
+    line_container.append($("<td style='width: 30px'></td>"));
+    var input = line_container.find("input");
+    registerChangeableStateEngine(input);
+
+    return line_container;
+}
+
+function init(data) {
+    $("#form_container").empty();
+    $.each(fixedStats, function(index, value) {
+        addFixedFields(value);
+     });
+    $.each(advStats, function(index, value) {
+        addCompositeMinimums(value);
+     });
+    $.each(data["minimum_stats"], function(stat, stat_value) {
+        if (stat_value !== '') {
+            setStatMin(stat, stat_value);
+        }
+    });
+}
+
+$(document).ready(function() {
+    setupStateEngine(init,
+         "{% url 'chardata.min_stats_view.min_stats_post' char_id %}",
+         initialData);
+    addIfNeeded();
+});
+
+</script>
+
+{% endblock %}
+

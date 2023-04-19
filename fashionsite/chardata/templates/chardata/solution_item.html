@@ -1,0 +1,55 @@
+{% load i18n %}
+{% load static_s3 %}
+<div class="expand-container" id="item-container-{{item.slot}}">
+    <div class="{% if item.id %}expand-header{% endif %} solution-item-expand-header">
+        <table width="100%"><tr>
+        <td width="62px">
+            <div class="solution-item-icon-container">
+                <img src="{{ item.file }}" class="solution-items-icon">
+            </div>
+        </td>
+        <td class="solution-item-info">
+            <div class="solution-item-name-div"><span id='item-name-{{item.slot}}'>{{item.localized_name}}</span></div>
+            {% if item.link %}<div class="solution-item-link-div"><a class="item-external-link" target="_blank" href="{{item.link}}"><img title='{{item.localized_name}}' class='item-external-image-link'></a></div>{% endif %}
+        
+            <br>
+            <span class="solution-item-level">{% if item.level %}{% trans "Lvl." %} {{item.level}}{% endif %}</span><br>
+            <div class="solution-item-icons">
+            {% if item.id %}
+                <img src="{% static "chardata/lock-icon.png" %}" class="solution-item-button solution-item-lock-button" title='{% trans "Lock" context "button name" %}'>
+                <img src="{% static "chardata/delete-icon.png" %}" class="solution-item-button solution-item-forbid-button" title='{% trans "Forbid" %}'>
+                <img src="{% static "chardata/1412645636_Left-right.png" %}" class="solution-item-button solution-item-switch-button" title='{% trans "Switch" %}'>
+                <img src="{% static "chardata/cross-icon.png" %}" class="solution-item-button solution-item-remove-button" title='{% trans "Remove" %}'>
+            {% else %}
+                <img src="{% static "chardata/add-icon.png" %}" class="solution-item-button solution-item-add-button" title='{% trans "Add" %}'>
+            {% endif %}
+            </div>
+        </td>
+        </tr></table>
+    </div>
+    <div class="expand-content solution-item-expand-content">
+        {% if item.slot == 'weapon' %}
+            {% autoescape off %}{{item.damage_text}}{% endautoescape %}<br>
+            <hr class="solution-item-hr" />
+        {% endif %}
+        {% for line in item.stats_lines %}
+            {% if '#r' in line.formatting %}
+                <span class="solution-negative-stat-text">{{line.text}}</span>
+            {% else %}
+                {{line.text}}
+            {% endif %}
+            <br>
+        {% endfor %}
+        {% if item.condition_lines %}
+            <hr class="solution-item-hr" />
+            {% for line in item.condition_lines %}
+            {% if '#r' in line.formatting %}
+                <span class="solution-negative-stat-text">{{line.text}}</span>
+            {% else %}
+                {{line.text}}
+            {% endif %}
+                <br>
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>

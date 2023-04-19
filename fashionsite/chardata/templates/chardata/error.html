@@ -1,0 +1,22 @@
+{% extends 'chardata/base.html' %}
+
+{% load static_s3 %}
+
+{% block title %}The Dofus Fashionista: Error{% endblock %}
+
+{% block main %}
+  {% load static_s3 %}
+
+    <h1 align="center"> Error</h1>
+    <table>
+    <tr>
+    <td><img src="{% static "chardata/designs/myError.png" %}"></img>
+    </td>
+    <td>
+    <p>
+        Please configure the <a href={{error_link}}>{{error}}</a> page before running the application.<br>
+    </p>
+</td>
+</tr>
+</table>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% load static_s3 %}
+<tr class="solution-stat-summary-line">
+    <td class="solution-stat-summary-icon-cell {% if stat_key == 'resperran' %}bottom-left-cell{% endif %}"">
+        {% if icon %}
+            <img class="solution-stat-summary-icon" src="{% static icon %}">
+        {% endif %}
+    </td>
+    {% if base %}
+    <td>
+        <span class="solution-stat-summary-name">{{stat_name}}</span>
+    </td>
+    <td name="stat_value_base_{{stat_key}}" class="solution-stat-summary-value-cell">
+    </td>
+    {% else %}
+    <td colspan="2">
+        <span class="solution-stat-summary-name">{{stat_name}}</span>
+    </td>
+    {% endif %}
+    <td name="stat_value_{{stat_key}}" class="solution-stat-summary-value-cell {% if stat_key == 'resperran' %}bottom-right-cell{% endif %}"">
+    </td>
+</tr>

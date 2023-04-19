@@ -1,0 +1,22 @@
+{% load i18n %}
+<div class="wizard-div min-stat-name">
+<b>{% blocktrans %}Choose the minimum stats you need on this character{% endblocktrans %}:</b><br><br>
+<table id="main_minimum_stats" width="50%" align="center">
+    <tr>
+        <td class="min-stat-name" align="center"> {% trans "AP" %} </td>
+        <td align="center"> <input id="min_AP" name="min_AP" class="pretty-input change-modifies-state" type="number" min="-50000" max="12" autocomplete="off"></input> </td>
+    </tr>
+    <tr>
+        <td class="min-stat-name" align="center"> {% trans "MP" %} </td>
+        <td align="center"> <input id="min_MP" name="min_MP" class="pretty-input change-modifies-state" type="number" min="-50000" max="6" autocomplete="off"></input> </td>
+    </tr>
+    <tr>
+        <td class="min-stat-name" align="center"> {% trans "Range" %} </td>
+        <td align="center"> <input id="min_Range" name="min_Range" class="pretty-input change-modifies-state" type="number" min="-50000" max="6" autocomplete="off"></input> </td>
+    </tr>
+</table>
+<div align="center" class="small-explain">
+    <br>({% blocktrans %}You can leave the fields empty if you don't care about them{% endblocktrans %})
+    </div>
+</div>
+

@@ -1,0 +1,20 @@
+{% load static_s3 %}
+<tr class='register-line-stat'>
+    <td {% if last %}class='bottom-left-cell'{% endif %}>
+        <img class="stat-icon" src="{% static icon %}">
+    </td>
+    <td class='input-stat-name'> {{text}}</td> 
+    <td class='input-stat-field'>
+        <input class='stat-input scrolled_input change-modifies-state white-pretty-input' id="scrolled_{{key}}" type="number" name="scrolled_{{key}}" min="0" max="100"/>
+    </td>
+    <td class='input-stat-field'>
+        <input class='stat-input points_input change-modifies-state white-pretty-input' id="points_{{key}}" type="number" name="points_{{key}}" min="0" max="3000"/>
+    </td>
+    <td class='input-stat-field'>
+        <label class='stat-softcap' id="total_{{key}}" name="total_{{key}}"/>
+    </td>
+    <td {% if last %}class='bottom-right-cell'{% endif %}>
+        <input type='button' class='button-thin-chardata click-modifies-state put-points-button' id='button-put-points-{{key}}' value='+' />
+    </td>
+</tr>
+

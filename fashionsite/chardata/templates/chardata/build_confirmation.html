@@ -1,0 +1,99 @@
+{% extends 'chardata/base.html' %}
+
+{% block title %}The Dofus Fashionista: Minimum Characteristics{% endblock %}
+
+{% load static_s3 %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+{% endblock %}
+
+{% block main %}
+
+    <h1>Confirm Build</h1>
+    
+    We understood that you care about these aspects from the build line. Please review if we got it right.<br><br>
+    
+    <form action="{% url 'chardata.build_view.build_post' char_id %}" method="post">
+    {% csrf_token %}
+
+    <input class='input-value pretty-input' name="input_build" id="input-build" value="{{ initial_build }}" maxlength="50" />
+    <input type="button" class="button-generic" id="button-understand" value="Understand" /><br><br>
+    <div id="div-checkboxes" class="build-boxes-section">
+        <div id="div-checkboxes-column-0" class="build-boxes-column">
+        </div>
+        <div id="div-checkboxes-column-1" class="build-boxes-column">
+        </div>
+        <div id="div-checkboxes-column-2" class="build-boxes-column">
+        </div>
+        <div id="div-checkboxes-column-3" class="build-boxes-column">
+        </div>
+    </div>
+
+    <br>
+    <input type="submit" class="button-generic" value="Reapply Build & Next" />
+</form>
+
+<script>      
+
+$.ajaxSetup({
+  data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+});
+
+var initialAspects = {{ initial_aspects | safe }};
+var aspectToName = {{ aspect_to_name | safe }};
+var aspectLayout = [['str', 'int', 'cha', 'agi', 'omni'],
+                    ['crit', 'pvp', 'duel'],
+                    ['vit', 'res', 'dam', 'heal', 'aprape', 'mprape'],
+                    ['wis', 'pp', 'pods', 'trap', 'summon', 'pushback']];
+
+function createCheckbox(aspect, label) {
+    return $('<label><input type="checkbox" name="check_' + aspect + '" id="check_' + aspect + '" name="require_crits">' + label + '</label><br>');
+}
+
+function initAspectState(aspectState) {
+    $.each(aspectState, function(aspect, checked) {
+        var box = $("#check_" + aspect);
+        box.prop('checked', checked);
+    });
+}
+
+$(document).ready(function() {
+    $.each(aspectLayout, function(columnIndex, column) {
+        $.each(column, function(i, aspect) {
+            var box = createCheckbox(aspect, aspectToName[aspect]);
+            $("#div-checkboxes-column-" + columnIndex).append(box);
+            box.find("input").prop('checked', initialAspects[aspect]);
+        });
+    });
+    
+    initAspectState(initialAspects);
+    
+    $("#button-understand").click(function(e) {
+        e.stopPropagation();
+        $.post("/understandbuild/{{char_id}}/",
+               {build_line: $("#input-build").val()},
+               function(data) {
+                   initAspectState(JSON.parse(data));
+               });
+    });
+    
+    $("#input-build").keydown(function(e) {
+        if (e.keyCode == 13) {
+            e.preventDefault();
+        }
+    });
+    
+    $("#input-build").keyup(function(e) {
+        if (e.keyCode == 13) {
+            e.preventDefault();
+            $("#button-understand").click();
+        }
+    });
+});
+
+</script>
+
+{% endblock %}
+

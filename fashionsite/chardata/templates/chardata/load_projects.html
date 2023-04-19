@@ -1,0 +1,193 @@
+{% extends 'chardata/base.html' %}
+
+{% load i18n %}
+{% load static_s3 %}
+
+{% block title %}The Dofus Fashionista: {% trans "Load a Project" %}{% endblock %}
+
+{% block main %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+    <h1 align="center">{% trans "Load a Project" %}</h1>
+    <br>
+
+    {% if error_message %}<p class='text'><strong>{{ error_message }}</strong></p>{% endif %}
+    <span id='login-error-top' class='error-message'>{% if error_msg == 'too_many' %}{% trans "You have reached the maximum number of projects. Please delete some old projects and try again." %}{% endif %}</span>
+    {% if user %}
+        {% if has_projects %}
+             <table class="load-project-table">
+                <tr>
+                  <th class="load-project-header">
+                      <a href="" class="all-proj" id="all">{% trans "All" %}</a>
+                      <br>
+                      <a href="" class="no-proj" id="none">{% trans "None" %}</a>
+                  </th>
+                  <th style="color:#FFFFFF;" align="left"></th>
+                  <th class="load-project-header" style="color:#FFFFFF;" align="left">{% trans "Project" %}</th>
+                  <th class="load-project-header" style="color:#FFFFFF;" align="left">{% trans "Char" %}</th>
+                  <th class="load-project-header" style="color:#FFFFFF;" align="left">{% trans "Build" %}</th>
+                  <th class="load-project-header" style="color:#FFFFFF;" align="left">{% trans "Class" %}</th>
+                  <th class="load-project-header" style="color:#FFFFFF;">{% trans "Level" %}</th>
+                </tr>
+                {% for wrapped_char in chars %}
+                    <tr class="load-project-line">
+                      <td class="load-project-cell checkbox-cell" align="center"><div style="width: 20px"><input type="checkbox" name={{wrapped_char.char.id}} value={{wrapped_char.char.id}} class="project-checkbox{% if wrapped_char.char.minimal_solution %} has-solution{% endif %}"></div></td>
+                      <td><div style="width: 24px">{% if wrapped_char.char.minimal_solution %}<img class="button-img needle-img" title="{% trans "A set suggestion has been generated for this project." %}">{% endif %}</div></td>
+                      <td class="load-project-cell"><div style="width: 180px"><a href="{% url 'chardata.views.load_a_project' wrapped_char.char.id %}">{{wrapped_char.char.name}}</a></div></td>
+                      <td class="load-project-cell"><div style="width: 150px" class='big-text'>{{wrapped_char.char.char_name}}</div></td>
+                      <td class="load-project-cell"><div style="width: 170px" class='big-text'>{{wrapped_char.char.char_build}}</div></td>
+                      <td class="load-project-cell"><div style="width: 80px" class='big-text'> {{wrapped_char.class_string}}</div></td>
+                      <td class="load-project-cell level-cell" align="center"><div style="width: 20px;" class='big-text'>{{wrapped_char.char.level}}</div></td>
+                    </tr>
+                {% endfor %}
+            </table> 
+            <span id='login-error' class='error-message'></span>
+            <br>
+          <input type="button" class="button-thin" id="button-delete-project" value="{% trans "Remove" %}" />
+          {% if experiments.COMPARE_SETS %}
+          <input type="button" class="button-thin" id="button-compare-projects" value="{% trans "Compare" %}" />
+          {% endif %}
+          {% if not user.is_anonymous %}
+          <input type="button" class="button-thin" id="button-duplicate-project" value="{% trans "Duplicate" %}" />
+          {% endif %}
+       {% else %}
+            <div align="center" class='text'>
+            {% url 'chardata.create_project_view.setup' as create_project_link %}
+            {% blocktrans %}You don't have any projects yet. Create one <a href="{{ create_project_link }}">here</a>.{% endblocktrans %}
+            </div>
+       {% endif %}
+   {% else %}
+     <div align="center" class='text'>
+       {% trans "You need to login before you can load a project." %}
+     </div>
+   {% endif %}
+
+<script>
+$.ajaxSetup({
+         data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+       });
+       
+var needle = {{needle | safe}};
+
+function all(e) {
+    e.preventDefault();
+    $(".project-checkbox").prop('checked', true);
+    updateButtonStates();
+}
+function none(e) {
+    e.preventDefault();
+    $(".project-checkbox").prop('checked', false);
+    updateButtonStates();
+}
+
+function confirmDelete() {
+    if (confirm("{% trans 'Are you sure you want to delete?' %}")) {
+        deleteProj();
+    }
+}
+
+function deleteProj() {
+    var checkboxesList = new Array();
+    $(".project-checkbox:checkbox:checked").each(function(){
+        checkboxesList.push($(this).val());
+    });
+    $.post("{% url 'chardata.projects_view.delete_projects' %}",
+           {projects: JSON.stringify(checkboxesList)},
+           function (data) {
+                location.reload();
+           });
+}
+
+function duplicateProj() {
+    var checkboxesList = new Array();
+    $(".project-checkbox:checkbox:checked").each(function(){
+        checkboxesList.push($(this).val());
+    });
+    proj_id = checkboxesList[0];
+    $.post("{% url 'chardata.projects_view.duplicate_project' %}",
+           {project_id: JSON.stringify(proj_id)},
+           function (data) {
+                if (data === 'ok') {
+                    $("#login-error").empty();
+                    location.reload();
+                } else if (data === 'too_many') {
+                    $("#login-error").text('{% trans "You have reached the maximum number of projects. Please delete some old projects and try again." %}');
+                } else if (data === 'error') {
+                    $("#login-error").text("{% trans 'An error has occurred' %}");
+                }
+           });
+}
+
+{% if experiments.COMPARE_SETS %}
+function compareProjects() {
+    var checkboxesList = new Array();
+    $(".project-checkbox:checkbox:checked").filter(".has-solution").each(function(){
+        checkboxesList.push($(this).val());
+    });
+    console.log("compareProjects");
+    console.log(checkboxesList.join("/"));
+    window.location.href = "/compare_sets/" + checkboxesList.join("/");
+}
+{% endif %}
+
+function updateButtonStates() {
+    var numberCheckboxesChecked = $(".project-checkbox:checkbox:checked").length;
+    
+    $("#button-delete-project").prop('disabled',
+        numberCheckboxesChecked === 0);
+        
+    {% if experiments.COMPARE_SETS %}
+    var numberSolutionsChecked = $(".project-checkbox:checkbox:checked").filter(".has-solution").length;
+    $("#button-compare-projects").prop('disabled',
+        numberSolutionsChecked < 2 || numberSolutionsChecked > 4);
+    {% endif %}
+    
+    $("#button-duplicate-project").prop('disabled',
+        numberCheckboxesChecked !== 1);
+}
+
+function get_needle_img()
+{
+    if ('{{theme}}' == 'auto'){
+        var now = new Date();
+        var h = now.getHours();
+        theme = 'lighttheme';
+        if (h < 6 || h >= 18 ) {
+            theme = 'darktheme';
+        }
+        return needle[theme];
+    }
+    return needle;
+}
+
+function setNeedleImage(){
+    var image = get_needle_img();
+    $('.needle-img').attr("src",image);
+}
+
+function updateTableTemplate() {
+    $(".checkbox-cell").last().css("border-radius", "0px 0px 0px 4px");
+    $(".level-cell").last().css("border-radius", "0px 0px 4px 0px");
+}
+
+$(document).ready(function() {
+    $("#all").click(all);
+    $("#none").click(none);
+    
+    $(".project-checkbox").change(updateButtonStates);
+    updateButtonStates();
+    updateTableTemplate();
+        
+    $("#button-duplicate-project").click(duplicateProj);
+    $("#button-delete-project").click(confirmDelete);
+    
+    {% if experiments.COMPARE_SETS %}
+    $("#button-compare-projects").click(compareProjects);
+    {% endif %}
+    setNeedleImage();
+});
+
+</script>
+
+   
+{% endblock %}

@@ -1,0 +1,602 @@
+# Copyright (C) 2020 The Dofus Fashionista
+# 
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 3 of the License, or (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# Lesser General Public License for more details.
+# 
+# You should have received a copy of the GNU Lesser General Public License
+# along with this program; if not, write to the Free Software Foundation,
+# Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+from collections import Counter
+from django.utils.translation import ugettext as _
+
+from dofus_constants import (TYPE_NAMES, TYPE_NAME_TO_SLOT, TYPE_NAME_TO_SLOT_NUMBER, SLOTS,
+                             NEUTRAL, DAMAGE_TYPES, BASE_STATS, STAT_KEY_TO_NAME,
+                             calculate_damage, SLOT_NAME_TO_TYPE)
+from structure import get_structure
+from translation import get_supported_language
+from violation import Violation
+from fashionistapulp.dofus_constants import STAT_NAME_TO_KEY
+
+RELEVANT_INPUT = ['options', 'base_stats_by_attr', 'char_level', 'origin']
+
+class ModelResultMinimal():
+
+    def __init__(self, item_per_slot, input_, stats):
+        self.item_per_slot = item_per_slot
+        self.input = input_
+        self.stats = stats
+
+    @classmethod
+    def from_item_id_list(cls, item_id_list, input_, stats):
+        structure = get_structure()
+        
+        # Determine locked slots that were honored. They might not have been if
+        # the locked item is now removed, for example.
+        locked_slots = {}
+        item_id_list_left = list(item_id_list)
+        for locked_slot, locked_id in input_['locked_equips'].iteritems():
+            for variation in structure.get_items_by_or_id(locked_id):
+                if variation.id in item_id_list_left:
+                    item_id_list_left.remove(variation.id)
+                    locked_slots[locked_slot] = locked_id
+                    break
+        
+        item_per_slot = {}
+        open_slots = set(SLOTS)
+        for item_id in item_id_list:
+            item = structure.get_item_by_id(item_id)
+            item_type = structure.get_type_name_by_id(item.type)
+        
+            # Define slot
+            slot = None
+            for open_slot in open_slots:
+                if locked_slots.get(open_slot, None) == item.id:
+                    slot = open_slot
+                    break
+            if slot is None:
+                slot = TYPE_NAME_TO_SLOT[item_type]
+                slot_number = TYPE_NAME_TO_SLOT_NUMBER[item_type]
+                if slot_number > 1:
+                    for i in range(1, slot_number + 1):
+                        candidate_slot = "%s%d" % (slot, i)
+                        if (candidate_slot in open_slots
+                            and not locked_slots.get(candidate_slot, None)):
+                            slot = candidate_slot
+                            break
+                        
+            item_per_slot[slot] = item.id
+            open_slots.remove(slot)
+        return cls(item_per_slot, {k: input_[k] for k in input_ if k in RELEVANT_INPUT}, stats)
+
+    @classmethod
+    def from_model_result(cls, model_result):
+        item_per_slot = {}
+        for slot in SLOTS:
+            item_found = filter(lambda i: i.slot == slot, model_result.item_list)
+            if item_found:
+                item_per_slot[slot] = item_found[0].id
+            else:
+                item_per_slot[slot] = None
+                
+        input_ = model_result.input
+        stats = model_result.get_stats()
+        return cls(item_per_slot, {k: input_[k] for k in input_ if k in RELEVANT_INPUT}, stats)
+    
+    @classmethod
+    def generate_empty_solution(cls, input_):
+        input_['origin'] = 'from_scratch'
+        item_per_slot = {}
+        for slot in SLOTS:
+            item_per_slot[slot] = ModelResultItem(None)
+        return cls(item_per_slot, 
+                   {k: input_[k] for k in input_ if k in RELEVANT_INPUT},  
+                   None)
+    
+    def update_base_stats(self, stats, scrolled):
+        #if self.input.get('origin', None) == 'from_scratch':
+        self.stats = {}
+        for stat in stats:
+            self.stats[STAT_NAME_TO_KEY[stat]] = stats[stat]
+        
+        for stat in scrolled:
+            self.input.get('base_stats_by_attr')[stat] = scrolled[stat]
+
+def model_result_from_minimal(minimal):
+    structure = get_structure()
+    if hasattr(minimal, 'stats'):
+        result = ModelResult(minimal.input, minimal.stats)
+    else:
+        result = ModelResult(minimal.input)
+        
+    for slot, item_id in minimal.item_per_slot.iteritems():
+        if item_id is not None and structure.get_item_by_id(item_id):
+            result.add_item_at_slot(structure.get_item_by_id(item_id), slot)
+        else:
+            result.add_item_at_slot(None, slot) 
+    open_slots = []
+    for slot in result.open_slots:
+        open_slots.append(slot)
+    for slot in open_slots:
+        result.add_item_at_slot(None, slot) 
+    result.calculate_stats()
+    return result
+
+class ModelResult():
+    
+    def __init__(self, input_, stats=None):
+        self.input = input_        
+        
+        self.items = {}
+        for type_name in TYPE_NAMES:
+            self.items[type_name] = []
+        self.item_list = []
+        self.open_slots = set(SLOTS)
+        
+        self.sets = []
+        
+        self.stats = stats
+                
+        self.stats_base = None
+        self.stats_gear = None
+        self.stats_total = None
+
+    def add_item_at_slot(self, item, slot):
+        self._add_result_item_at_slot(slot, ModelResultItem(item))
+        
+    def _add_result_item_at_slot(self, slot, result_item):
+        result_item.set_slot(slot)
+        self.open_slots.remove(slot)
+        
+        self.items[SLOT_NAME_TO_TYPE[slot]].append(result_item)
+        self.item_list.append(result_item)
+
+    def _add_set(self, item_set, number_of_items):
+        self.sets.append(ModelResultSet(item_set, number_of_items))
+        
+    def add_all_sets(self):
+        self.sets = []
+        structure = get_structure()
+        items_of_set = Counter()
+        for item in self.item_list:
+            if item.item_added:
+                items_of_set[item.set] += 1
+        for set_number, number_of_items in items_of_set.iteritems():
+            if set_number and number_of_items > 1:
+                self._add_set(structure.get_set_by_id(set_number), number_of_items)
+        
+    def get_stats(self):
+        return self.stats        
+        
+    def get_stats_base(self):
+        if self.stats_base is None:
+            if self.stats:
+                self.stats_base = {k: self.stats[k]
+                                   + self.input['base_stats_by_attr'][STAT_KEY_TO_NAME[k]]
+                                   for k in BASE_STATS}
+            else:
+                self.stats_base = {k: self.input['base_stats_by_attr'][STAT_KEY_TO_NAME[k]]
+                                   for k in BASE_STATS}
+        return self.stats_base
+        
+    def get_stats_gear(self):
+        if self.stats_gear is None:
+            self.stats_gear = {}
+            for stat in get_structure().get_stats_list():
+                self.stats_gear[stat.key] = 0
+            for result_item in self.item_list:
+                if result_item.item_added:
+                    for stat_key, stat_value in result_item.stats.iteritems():
+                        self.stats_gear[stat_key] += stat_value
+            for result_set in self.sets:
+                for stat_key, stat_value in result_set.get_bonus().iteritems():
+                    self.stats_gear[stat_key] += stat_value
+            if self.input['options']['ap_exo']:
+                self.stats_gear['ap'] += 1
+            if 'range_exo' in self.input['options'] and self.input['options']['range_exo']:
+                self.stats_gear['range'] += 1
+            if self.input['options']['mp_exo'] == True:
+                self.stats_gear['mp'] += 1
+        return self.stats_gear
+        
+    def get_stats_total(self): 
+        if self.stats_total is None:
+            self.stats_total = self.get_stats_gear().copy()
+            structure = get_structure()
+            main_stats = structure.get_main_stats_list()
+            for stat in structure.get_stats_list():
+                self.stats_total[stat.key] += self.input['base_stats_by_attr'].get(stat.name, 0)
+                if stat in main_stats:
+                    if hasattr(self, 'stats') and self.stats is not None:
+                        self.stats_total[stat.key] += self.stats.get(stat.key, 0)
+            self.stats_total['apres'] += self.stats_total['wis'] / 10
+            self.stats_total['mpres'] += self.stats_total['wis'] / 10
+            self.stats_total['apred'] += self.stats_total['wis'] / 10
+            self.stats_total['mpred'] += self.stats_total['wis'] / 10
+            self.stats_total['dodge'] += self.stats_total['agi'] / 10
+            self.stats_total['lock'] += self.stats_total['agi'] / 10
+            self.stats_total['pp'] += self.stats_total['cha'] / 10
+            self.stats_total['pod'] += self.stats_total['str'] * 5
+            self.stats_total['init'] += (self.stats_total['str']
+                                         + self.stats_total['int']
+                                         + self.stats_total['cha']
+                                         + self.stats_total['agi'])
+            self.stats_total['hp'] = self.stats_total['vit'] + self.input['char_level'] * 5 + 50 + self.stats_total['hp']
+        return self.stats_total
+        
+    def switch_item(self, item, slot):
+        result_item = ModelResultItem(item)
+        result_item.set_slot(slot)
+        to_remove = None
+        for candidate_item in self.item_list:
+            if candidate_item.slot == slot:
+                to_remove = candidate_item
+                break
+        self.items[SLOT_NAME_TO_TYPE.get(slot)].remove(to_remove)
+        self.items[SLOT_NAME_TO_TYPE.get(slot)].append(result_item)
+        self.item_list.remove(to_remove)
+        self.item_list.append(result_item)
+        s = get_structure()
+        if not self._get_repeat_violations(s.get_type_id_by_name(SLOT_NAME_TO_TYPE.get(slot))):
+            self.calculate_stats()
+        return result_item
+    
+    def _get_stat_violations(self):
+        violations = []
+        for item in self.item_list:
+            vlist = self._check_items_stat_conditions(item)
+            for vio in vlist:
+                violations.append(vio)
+        return violations
+    
+#     def _get_item_shield_violation(self, item_result):
+#         violations = []
+# 
+#         if not item_result.item_added:
+#             return violations
+#         
+#         violates = False
+#         if item_result.type == 'Weapon':
+#             shield = self.items['Shield'][0]
+#             if shield.item_added:
+#                 if not item_result.is_one_handed:
+#                     violates = True
+#                     
+#         if item_result.type == 'Shield':
+#             weapon = self.items['Weapon'][0]
+#             if weapon.item_added:
+#                 if not weapon.is_one_handed:
+#                     violates = True
+#         
+#         if violates:
+#             violation = Violation()
+#             violation.item_name = item_result.localized_name
+#             violation.stat_name = _("Can't equip a two handed weapon and a shield.")
+#             violation.condition_type = 'shield'
+#             violation.is_red = True
+#             violation.cant_equip = False
+#             violations.append(violation)
+#         return violations
+    def _create_removed_item_violation(self, item):    
+        violation = Violation()
+        violation.item_name = item.localized_name
+        violation.is_red = True
+        violation.condition_type = 'removed'
+        return violation
+                    
+    def _check_items_stat_conditions(self, item_result):  
+        violations = []
+        s = get_structure()  
+        if not item_result.item_added:
+            return violations
+        if item_result.min_stats_to_equip:
+            for stat_key, value in item_result.min_stats_to_equip.iteritems():
+                if self.stats_total[stat_key] < value:
+                    stat_name = _(s.get_stat_by_key(stat_key).name)
+                    violation = Violation()
+                    violation.item_name = item_result.localized_name
+                    violation.stat_name = stat_name
+                    violation.stat_value = value
+                    violation.is_red = True
+                    violation.condition_type = 'min'
+                    violation.cant_equip = False
+                    violations.append(violation)
+                    
+        if item_result.max_stats_to_equip:
+            for stat_key, value in item_result.max_stats_to_equip.iteritems():
+                if self.stats_total[stat_key] > value:
+                    stat_name = _(s.get_stat_by_key(stat_key).name)
+                    violation = Violation()
+                    violation.item_name = item_result.localized_name
+                    violation.stat_name = stat_name
+                    violation.stat_value = value
+                    violation.is_red = True
+                    violation.condition_type = 'max'
+                    violation.cant_equip = False
+                    violations.append(violation)
+        return violations
+        
+    def _get_repeat_violations(self, item_type_id):
+        violations = []
+        s = get_structure()
+        item_type = s.get_type_name_by_id(item_type_id)
+        if len(self.items[item_type]) > 1:
+            dict_names = {}
+            for item in self.items[item_type]:
+                if item.item_added:
+                    or_name = s.get_or_item_name(item.name)
+                    dict_names.setdefault(or_name, []).append(item.name)
+            for (name, occurrences) in dict_names.iteritems():
+                if len(occurrences) > 1:
+                    item_name = occurrences[0]
+                    if (s.get_item_by_name(item_name).type == s.get_type_id_by_name('Dofus')
+                        or s.get_item_by_name(item_name).set):
+                        violation = Violation()
+                        violation.is_red = True
+                        violation.item_name = name
+                        violation.condition_type = 'repeated'
+                        violation.cant_equip = True
+                        violations.append(violation)
+        return violations
+
+    def _get_min_violations(self, min_stats):
+        violations = []
+        s = get_structure()
+        for stat_key, min_val in min_stats.iteritems():
+            if stat_key != 'adv_mins':
+                if self.stats_total[stat_key] < min_val:
+                    stat_name = _(s.get_stat_by_key(stat_key).name)
+                    violation = Violation()
+                    violation.item_name = _('project')
+                    violation.stat_name = stat_name
+                    violation.stat_value = min_val
+                    violation.condition_type = 'min_eq'
+                    violation.cant_equip = False
+                    violations.append(violation)
+            else: 
+                composite_mins = s.get_adv_mins() 
+                for stat in composite_mins:
+                    if stat['key'] in min_val:
+                        char_stat = 0
+                        for attribute in stat['stats']:
+                            char_stat += self.stats_total[STAT_NAME_TO_KEY[attribute]]
+                        if char_stat < min_val[stat['key']]:
+                            violation = Violation()
+                            violation.item_name = _('project')
+                            violation.stat_name = stat['local_name']
+                            violation.stat_value = min_val[stat['key']]
+                            violation.condition_type = 'min_eq'
+                            violation.cant_equip = False
+                            violations.append(violation)
+        return violations
+
+    def _get_removed_item_violations(self):
+        violations = []
+        for item in self.item_list:
+            if item.item_added:  
+                if item.removed:
+                    violation = Violation()
+                    violation.item_name = item.localized_name
+                    violation.condition_type = 'removed'
+                    violation.is_red = True
+                    violation.cant_equip = False
+                    violations.append(violation)
+        return violations
+
+    def _get_weird_violations(self):
+        violations = []
+
+        is_set_light = self.check_if_set_is_light()
+        if not is_set_light:
+            for item in self.item_list:
+                if item.item_added:  
+                    if item.weird_conditions['light_set']:
+                        violation = Violation()
+                        violation.item_name = item.localized_name
+                        violation.stat_name = _("Set bonus < 2")
+                        violation.condition_type = 'weird_light_set'
+                        violation.is_red = True
+                        violation.cant_equip = False
+                        violations.append(violation)
+
+        return violations
+    
+#     def _get_shield_violation(self):
+#         violations = []
+# 
+#         weapon_two_handed = False
+#         has_shield = False
+#         for item in self.item_list:
+#             if item.item_added:
+#                 if item.type == 'Shield':
+#                     has_shield = True
+#                 elif item.type == 'Weapon':
+#                     if not item.is_one_handed:
+#                         weapon_two_handed = True
+#         if weapon_two_handed and has_shield:
+#             violation = Violation()
+#             violation.item_name = item.localized_name
+#             violation.stat_name = _("Can't equip a two handed weapon and a shield.")
+#             violation.condition_type = 'shield'
+#             violation.is_red = True
+#             violation.cant_equip = False
+#             violations.append(violation)
+#         return violations
+    
+    def check_if_set_is_light(self):
+        is_set_light = (len(self.sets) == 0 or
+                        (len(self.sets) == 1 and self.sets[0].number_of_items <= 2))
+        return is_set_light
+
+    def get_all_project_violations(self, item_type_id, min_stats):
+        return (self._get_repeat_violations(item_type_id)
+                + self._get_stat_violations()
+                + self._get_min_violations(min_stats)
+                + self._get_weird_violations()
+                + self._get_removed_item_violations())
+#                + self._get_shield_violation())
+    
+    def get_violations_on_item(self, item):
+        violations = []
+        if item.removed:
+            violations.append(self._create_removed_item_violation(item))
+        for vio in self._check_items_stat_conditions(item):
+            violations.append(vio)
+        if item.weird_conditions['light_set']:
+            if not self.check_if_set_is_light():
+                violation = Violation()
+                violation.item_name = item.localized_name
+                violation.stat_name = _("Set bonus < 2")
+                violation.condition_type = 'weird_light_set'
+                violation.is_red = True
+                violation.cant_equip = False
+                violations.append(violation)
+        item_type_id = get_structure().get_type_id_by_name(item.type)
+        repeat = self._get_repeat_violations(item_type_id)
+        for vio in repeat:
+            if vio.item_name == item.name:
+                violations.append(vio)
+#        shield = self._get_item_shield_violation(item)
+#         for vio in shield:
+#             if vio.item_name == item.name:
+#                 violations.append(vio)
+        return violations
+    
+    def calculate_stats(self):
+        self.sets = []
+        self.stats_gear = None
+        self.stats_total = None
+        
+        self.add_all_sets()
+        self.get_stats_gear()
+        self.get_stats_total()
+        if self.items['Weapon'] and self.items['Weapon'][0].item_added:
+            self.items['Weapon'][0].mage_weapon_smartly(self.get_stats_total())
+
+
+class ModelResultItem():
+    
+    def __init__(self, item):
+        if item:
+            structure = get_structure()
+            self.item_added = True
+            self.id = item.id
+            self.name = item.name
+            self.or_name = (item.or_name if item.or_name else item.name)
+            self.type = structure.get_type_name_by_id(item.type)
+            self.level = item.level
+            self.set = item.set
+            self.ankama_id = item.ankama_id
+            self.ankama_type = item.ankama_type
+            or_item = structure.get_or_item_by_name(item.name)
+            if or_item:
+                any_or_item = or_item[0]
+                self.removed = any_or_item.removed
+            else:
+                self.removed = item.removed
+#            self.is_one_handed = item.is_one_handed
+            self.slot = None
+            if get_supported_language() in item.localized_names:
+                self.localized_name = item.localized_names[get_supported_language()]
+            else:
+                self.localized_name = or_item[0].localized_names[get_supported_language()]
+            
+            self.weird_conditions = item.weird_conditions
+    
+            self.stats = {}
+            for stat_id, stat_value in item.stats:
+                stat = structure.get_stat_by_id(stat_id)
+                self.stats[stat.key] = stat_value
+    
+            self.min_stats_to_equip = {}
+            for stat_id, stat_value in item.min_stats_to_equip:
+                self.min_stats_to_equip[structure.get_stat_by_id(stat_id).key] = stat_value
+            self.max_stats_to_equip = {}
+            for stat_id, stat_value in item.max_stats_to_equip:
+                self.max_stats_to_equip[structure.get_stat_by_id(stat_id).key] = stat_value
+            
+    
+            localized_extras = item.localized_extras.get(get_supported_language())
+            if localized_extras is None:
+                localized_extras = ['[!] ' + line for line in item.localized_extras.get('en', [])]
+            self.extras = localized_extras
+    
+            if self.type == 'Weapon':
+                # Just copy?
+                weapon = structure.get_weapon_by_name(self.name)
+                self.is_mageable = weapon.is_mageable
+                self.non_crit_hits = weapon.non_crit_hits
+                self.crit_hits = weapon.crit_hits
+                self.crit_bonus = weapon.crit_bonus
+                self.crit_chance = weapon.crit_chance_percent
+                self.ap = weapon.ap
+                self.weapon_type = structure.get_weapon_type_by_id(weapon.weapon_type).name
+        else:
+            self.name = 'NoItem'
+            self.id = None
+            self.localized_name = None
+            self.item_added = False
+            
+    def set_slot(self, slot):
+        self.slot = slot
+        if not self.localized_name:
+            self.localized_name = _(SLOT_NAME_TO_TYPE[slot])
+        
+    def mage_weapon_smartly(self, char_stats):
+        if self.is_mageable:
+            calculated_damage = {}
+            for element in DAMAGE_TYPES:
+                calculated_damage[element] = calculate_damage(self.non_crit_hits[element],
+                                                              char_stats, critical_hit=False, is_spell=False)
+                
+            if any([hit.heals for hit in self.non_crit_hits[NEUTRAL]]):
+                lowest_dam = 999999
+                element_chosen = None
+                for element, damage in calculated_damage.iteritems():
+                    total_average_dam = sum([d.average() for d in damage])
+                    if total_average_dam < lowest_dam:
+                        lowest_dam = total_average_dam
+                        element_chosen = element
+                self.element_maged = element_chosen
+            else:
+                highest_dam = -999999
+                element_chosen = None
+                for element, damage in calculated_damage.iteritems():
+                    total_average_dam = sum([d.average() for d in damage])
+                    if total_average_dam > highest_dam:
+                        highest_dam = total_average_dam
+                        element_chosen = element
+                self.element_maged = element_chosen
+            
+            
+
+class ModelResultSet():
+    
+    def __init__(self, item_set, number_of_items):
+        structure = get_structure()
+        self.name = item_set.name
+        self.total_number_of_items = structure.get_number_of_items_in_set_by_id(item_set.id)
+        self.number_of_items = number_of_items
+        self.bonus_per_num_items = item_set.bonus_per_num_items
+        self.items = []
+        for item_id in item_set.items:
+            item = structure.get_item_by_id(item_id)
+            self.items.append(ModelResultItem(item))
+        self.localized_name = item_set.localized_names[get_supported_language()]
+
+    def get_bonus(self):
+        return self.bonus_per_num_items[self.number_of_items]
+
+
+class ModelResultStat():
+    
+    def __init__(self, stat, value):
+        self.stat = stat
+        self.value = value

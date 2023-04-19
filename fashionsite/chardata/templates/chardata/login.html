@@ -1,0 +1,178 @@
+{% extends 'chardata/base.html' %}
+
+{% load i18n %}
+{% load static_s3 %}
+
+{% block title %}The Dofus Fashionista: {% trans "Login" %}{% endblock %}
+
+{% block main %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/common.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.common %}" class="common-css css-file">
+    <h1 align="center">{% trans "Login" %}</h1>
+    {% if user and not user.is_anonymous %}
+    <div>
+    <table width="100%">
+    <tr>
+        <td align="center">
+            <img src="{% static "chardata/designs/MyLogin.png" %}">
+        </td>
+        <td align="left">
+            <span class="big-text">
+            {% blocktrans with user_alias=useralias|default:user.username %}Welcome, you are logged in as {{ user_alias }}!{% endblocktrans %}
+            </span>
+            <br>
+            <span class="big-text">
+            {% url 'chardata.manage_account_view.manage_account' as manage_account_url %}
+            {% blocktrans %}You can change your alias, email and password <a href='{{manage_account_url}}'>here</a>.{% endblocktrans %}
+            </span>
+            <br>
+            <br>
+            <span class="big-text">
+            {% url 'chardata.create_project_view.setup' as create_project_url %}
+            {% url 'chardata.views.load_projects' as load_projects_url %}
+            {% blocktrans %}<a href='{{create_project_url}}'>Create</a> or <a href='{{load_projects_url}}'>load</a> a project to get started.{% endblocktrans %}
+            </span>
+        </td>
+    </tr>
+    </table>
+    </div>
+{% else %}
+
+    {% if from_confirmation %}
+        {% if already_confirmed %}
+    <p align="center" class="big-text">{% trans "Your email had already been confirmed. Please type your password to enter." %}</p>
+        {% else %}
+    <p align="center" class="big-text">{% trans "Thanks for confirming your email. Please type your password to enter." %}</p>
+        {% endif %}
+    {% endif %}
+    
+<div align="center">
+    <table>
+    <tr>
+        <td align="right"><span class="big-text" style="vertical-align: top;">{% trans "Username" %}: </span></td>
+        <td align="left"><input class="pretty-input" type="text" id="login-username" name="username"> </td>
+    </tr>
+    <tr>
+        <td align="right"><span class="big-text" style="vertical-align: top;">{% trans "Password" %}: </span></td>
+        <td align="left"><input class="pretty-input trigger-enter" type="password" id="login-password" name="password"> 
+        <br>
+        <label id="incorrect-password-error"></label></td>
+    </tr>
+    </table> 
+    <span class="big-text"><a style="font-size: 11px; vertical-align: top;" href="{% url 'chardata.login_view.recover_password_email_page' %}">{% trans "Forgot your password?" %}</a></span><br>
+    <button class='button-generic' id="login-enter">{% trans "Enter" %}</button> 
+
+    <br><br>
+    <span class="big-text"><i>{% trans "or" %}</i></span>
+    <br>
+    <br>
+    <div align="center">
+        <a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}"><img src="{% static "chardata/fb_login.png" %}" alt='{{_("Login with Facebook")|escapejs}}'></a> 
+        <br>
+        <a href="{% url 'social:begin' 'google-oauth2' %}?next={{ request.path }}"><img src="{% static "chardata/google_login.png" %}" alt='{{_("Login with Google")|escapejs}}'></a>
+        <br>
+        <br>
+        <span class="big-text">{% blocktrans %}We will <b>never</b> post anything to either of your walls.<br> This step is just an authentication so you are able to save and share projects.{% endblocktrans %}</span>
+    </div>
+    <br>
+    <br>
+    
+    {% if not from_confirmation %}
+    <hr class="hr">
+    <table width="100%">
+    <tr>
+    <td align="right">
+        <div align="center" style="display: inline-block">
+            <br>
+            <span class="big-text"><b>{% trans "New here? Register:" %}</b></span>
+            <br>
+            <br>
+            <div style="width: 400px;"><span class="big-text" style="font-size: 12px;">{% trans "Remember to never use your Dofus login and password on any external websites (which includes this one)" %}</span></div>
+            <br><br><br>
+            <form id="register-form" action="{% url 'chardata.login_view.register'%}" method="post">
+            {% csrf_token %}
+            <table>
+            <tr>
+                <td align="right"><span class="big-text" style="vertical-align: top;">{% trans "Username" %}: </span></td>
+                <td align="left"><input class="pretty-input" type="text" name="username" id="register-username" size="30">  
+                <br>
+                <label id="username-taken-error"></label></td>
+            </tr>
+            <tr>
+                <input type="hidden" name="password" id="password-actual">
+                <td align="right"><span class="big-text" style="vertical-align: top;">{% trans "Password" %}: </span></td>
+                <td align="left"><input class="pretty-input" type="password" size="30" id="password" > </td>
+            </tr>
+            <tr>
+                <td align="right"><span class="big-text" style="vertical-align: top;">{% trans "Confirm Password" %}: </span></td>
+                <td align="left"><input class="pretty-input" type="password" id="password-confirm" size="30"> 
+                <br>
+                <label id="password-error"></label></td>
+            </tr>
+            <tr>
+                <td align="right"><span class="big-text" style="vertical-align: top;">{% trans "Email" %}: </span></td>
+                <td align="left"><input class="pretty-input trigger-register" type="text" name="email" id="email" size="30"> 
+                <br>
+                <label id="email-error"></label></td>
+            </tr>
+            </table>
+            <br>
+            <input type='submit' class='button-generic' id="login-register" value='{{_("Register")|escapejs}}' />
+            </form>
+        </div>
+    </td>
+    <td align="right">
+        <img src="{% static "chardata/designs/myRegister.png" %}"></img>
+    </td>
+    </tr>
+    </table>
+    {% endif %}
+</div>
+{% endif %}
+       
+<script src="{% static "chardata/sha256.js" %}"></script> 
+<script src="{% static "chardata/login.js" %}"></script>
+
+<script>
+$.ajaxSetup({
+         data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+       });
+
+$(document).ready(function() {
+    {% if prefilled_user %}
+    $("#login-username").val("{{ prefilled_user | safe }}");
+    {% endif %}
+    
+    $(".trigger-enter").keypress(function(event) {
+        if (event.keyCode == 13) {
+            $('#login-enter').click();
+        }
+    });
+    $("#register-username").change(function() {
+        validate_username();
+    });
+    $("#password-confirm").change(function() {
+        validate_password();
+    });
+    $("#password").change(function() {
+        validate_password();
+    });
+    $("#login-enter").click(function() {
+        var username = $("#login-username").val();
+        var password = $("#login-password").val();
+        login(username, password);
+    })
+    $("#register-form").submit(registerSubmit)
+    $.post("{% url 'chardata.create_project_view.save_project_to_user' %}",
+           {},
+           function (data) {
+           });
+});
+
+
+</script> 
+         
+{% endblock %}
+

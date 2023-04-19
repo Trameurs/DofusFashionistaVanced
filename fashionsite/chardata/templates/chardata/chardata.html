@@ -1,0 +1,381 @@
+{% extends 'chardata/base.html' %}
+
+{% load i18n %}
+{% load static_s3 %}
+
+{% block title %}The Dofus Fashionista: {% trans "Base Characteristics" %}{% endblock %}
+
+{% block main %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+<div align="center">   
+     <h1>{% trans "Base Characteristics" %}</h1>
+
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+    <form id="main_form" action="{% url 'chardata.base_stats_view.init_base_stats_post' char_id %}" method="post">
+        {% csrf_token %}
+
+        <label class='text'><input type="checkbox" name="choose_stats" value="choose_stats" class="change-modifies-state" id="choose_stats">{% blocktrans %}Distribute the points for me (the points will be applied when designing a set){% endblocktrans %}</label><br><br>
+
+        <table class='register-stat' width="33%">
+          <tr>
+            <th></th>
+            <th class='stat-title'></th>
+            <th class='stat-title'>{% trans "Scrolled" %}</th> 
+            <th class='stat-title'>{% trans "Points" %}</th>
+            <th class='stat-title'>{% trans "Total" %}</th>
+            <td class='stat-title'></td>
+          </tr>
+            {% include "chardata/chardata_line.html" with key="vit" icon="chardata/Vitality.png" text=_("Vitality") %}
+            {% include "chardata/chardata_line.html" with key="wis" icon="chardata/Wisdom.png" text=_("Wisdom") %}
+            {% include "chardata/chardata_line.html" with key="str" icon="chardata/Strength.png" text=_("Strength") %}
+            {% include "chardata/chardata_line.html" with key="int" icon="chardata/Intelligence.png" text=_("Intelligence") %}
+            {% include "chardata/chardata_line.html" with key="cha" icon="chardata/Chance.png" text=_("Chance") %}
+            {% include "chardata/chardata_line.html" with key="agi" icon="chardata/Agility.png" text=_("Agility") last=True %}
+        </table>
+        <div class='remaining-points'>{% trans "Characteristics points:" %} <span id='points'></span></div>
+        <div><span id='base-stats-error-msg' class='error-message'></span></div>
+
+        <div class='stat-submit'>
+          <input type="button" class="button-thin click-modifies-state" id="button-zero" value='{{_("Reset to Zero")|escapejs}}' style="margin-right: 7px;"/>
+          <input type="button" class="button-thin click-modifies-state" id="button-fully-scroll" value='{{_("Fully Scroll")|escapejs}}' />
+          <br><br>
+            <div id="submit-mode">
+              <input class='submit-button button-generic disabled-when-new' type="submit" value='{{_("Proceed to Wizard")|escapejs}}' />
+            </div>
+            <div id="save-mode">
+                {% include "chardata/state_engine_all_buttons.html" with include_tailor=True %}
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <h2> {% trans "Soft Caps" %} - {{wrapped_char.class_string}}</h2>
+
+             <table class='table-softcap-stat'>
+                  <tr>
+                    <th></th>
+                    <th class='stat-title'></th>
+            
+                {% if char.char_class and char.char_class == 'Sacrier' %}
+                    <th class='stat-title'>1:2</th> 
+                {% endif %}
+
+                    <th class='stat-title'>1:1</th> 
+                    <th class='stat-title'>2:1</th>
+                    <th class='stat-title'>3:1</th> 
+                {% if char.char_class and char.char_class != 'Pandawa' and char.char_class != 'Foggernaut' and char.char_class != 'Rogue' %}
+                    <th class='stat-title'>4:1</th>
+                    {% if char.char_class and char.char_class == 'Sacrier' or char.char_class == 'Masqueraider' %}
+                        <th class='stat-title'>5:1</th> 
+                    {% endif %}
+                {% endif %}
+                  </tr>
+                  <tr class='softcap-stat-line'>
+                   {% include "chardata/softcap_line.html" with icon="chardata/Vitality.png" stat_name=_("Vitality") given_lis=soft_caps.vit lower_given_lis=lower_soft_caps.vit char=char %}
+                  </tr>
+                  <tr class='softcap-stat-line'>
+                   {% include "chardata/softcap_line.html" with icon="chardata/Wisdom.png" stat_name=_("Wisdom") given_lis=soft_caps.wis lower_given_lis=lower_soft_caps.wis char=char %}
+                  </tr>
+                  <tr class='softcap-stat-line'>
+                   {% include "chardata/softcap_line.html" with icon="chardata/Strength.png" stat_name=_("Strength") given_lis=soft_caps.str lower_given_lis=lower_soft_caps.str char=char %}
+                  </tr>
+                  <tr class='softcap-stat-line'>
+                   {% include "chardata/softcap_line.html" with icon="chardata/Intelligence.png" stat_name=_("Intelligence") given_lis=soft_caps.int lower_given_lis=lower_soft_caps.int char=char %}
+                  </tr>
+                  <tr class='softcap-stat-line'>
+                   {% include "chardata/softcap_line.html" with icon="chardata/Chance.png" stat_name=_("Chance") given_lis=soft_caps.cha lower_given_lis=lower_soft_caps.cha char=char %}
+                  </tr>
+                  <tr class='softcap-stat-line'>
+                   {% include "chardata/softcap_line.html" with icon="chardata/Agility.png" stat_name=_("Agility") given_lis=soft_caps.agi lower_given_lis=lower_soft_caps.agi char=char %}
+                  </tr>
+                </table>
+    </form>
+</div>
+
+<script src="{% static "chardata/stateengine.js" %}"></script>
+<script>
+    var isNewChar = {{ is_new_char | safe }};
+    var initialStats = {{ stats_json | safe }};
+    var ALL_STATS = ['vit', 'wis', 'str', 'int', 'cha', 'agi'];
+
+    function template(t, data){
+        return t.replace(/%(\w*)%/g,
+            function(m, key){
+                return data.hasOwnProperty(key) ? data[key] : "";
+            });
+    }
+    
+    function initializeBaseStats(stats) {
+        $.each(ALL_STATS, function(i, stat) {
+            $("#scrolled_" + stat).val(stats["scrolled_" + stat]);
+            $("#points_" + stat).val(stats["total_" + stat] - stats["scrolled_" + stat]);
+            $("#total_" + stat).text(stats["total_" + stat]);
+        });
+        updatePoints();
+        
+        if (stats.distrib) {
+            $("#choose_stats").prop('checked', true);
+            disable_points_input();
+        } else {
+            $("#choose_stats").prop('checked', false);
+            enable_points_input();
+        }
+    }
+    
+    function usedPointsOnTier(tier, previousTier, multiplier, totalStat){
+        var startedPuttingPoints = previousTier;
+        var stoppedPuttingPoints = Math.min(tier, totalStat);
+
+        var pointsIncreasedInTier = stoppedPuttingPoints - startedPuttingPoints;
+        if (pointsIncreasedInTier > 0) {
+            return pointsIncreasedInTier * multiplier;
+        } else {
+            return 0;
+        }
+    }
+
+    var softcapsForStat = {};
+    var softcaps;
+    {% for stat_key, values in soft_caps.items %}
+    softcaps = [];
+        {% for val in values %}
+        softcaps.push({% if val != None %} {{val}} {% else %} 999999 {% endif %});
+        {% endfor %}
+    softcapsForStat['{{stat_key}}'] = softcaps;
+    {% endfor %}
+
+    var availablePoints;
+
+    function updatePoints() {
+        var maxPoints = {{char.level}} * 5 - 5;
+
+        {% for stat_key, values in soft_caps.items %}
+
+        var totalStat = $("#points_{{stat_key}}").val();
+        var used = 0;
+        var softcaps = softcapsForStat['{{stat_key}}'];
+
+        used = used + usedPointsOnTier(softcaps[0], 0, 0.5, totalStat);
+        for (var i = 0; i < 5; i++) {
+            used = used + usedPointsOnTier(softcaps[i + 1], softcaps[i], i + 1, totalStat);
+        }
+        maxPoints -= used;
+        {% endfor %}
+
+        availablePoints = maxPoints;
+        $("#points").html(availablePoints);
+        
+        $.each(ALL_STATS, function(i, statKey) {
+            var action = putPointsActionForStat(statKey);
+            var putPointsButton = $("#button-put-points-" + statKey);
+            if (action == null || $("#choose_stats").prop('checked')) {
+                putPointsButton.prop("disabled", true);
+                putPointsButton.attr("title", "");
+            } else {
+                var increase = action.newTotal - action.currentTotal;
+                var pointsUsed = action.ratio * increase;
+                putPointsButton.prop("disabled", false);
+                putPointsButton.attr(
+                    "title",
+                    template(
+                        '{{_("Use %pointsUsed% points to increase to %newTotal% at %ratio%:1")|escapejs}}',
+                        {pointsUsed: pointsUsed, newTotal: action.newTotal, ratio: action.ratio}));
+            }
+        });
+    }
+
+    function setTotalWhenScrolled(changedInput) {
+        var ending = changedInput.split('_')[1];
+        var pointsId = "points_".concat(ending);
+
+        var scrolledValue = parseInt($("#" + changedInput).val());
+        var pointsValue = parseInt($("#" + pointsId).val());
+        
+        var totalId = "total_".concat(ending);
+        
+        $("#" + totalId).text(scrolledValue + pointsValue);
+        console.log(scrolledValue + pointsValue);
+    }
+
+    function setScrolledWhenTotal(changedInput) {
+        var ending = changedInput.split('_')[1];
+        var scrolledId = "scrolled_".concat(ending);
+
+        var scrolledValue = parseInt($("#" + scrolledId).val());
+        var pointsValue = parseInt($("#" + changedInput).val());
+
+        var totalId = "total_".concat(ending);
+        
+        $("#" + totalId).text(scrolledValue + pointsValue);
+    }
+
+    function resetToZero() {
+        $.each(ALL_STATS, function(i, statKey) {
+            $("#scrolled_" + statKey).val(0);
+            $("#points_" + statKey).val(0);
+            $("#total_" + statKey).text(0);
+        });
+        updatePoints();
+    }
+
+    function fullyScroll() {
+        $.each(ALL_STATS, function(i, statKey) {
+            $("#scrolled_" + statKey).val(100);
+            setTotalWhenScrolled("scrolled_" + statKey);
+        });
+        updatePoints();
+    }
+    
+    function findNextSoftcapLevelForStat(statKey) {
+        var currentTotal = parseInt($("#points_" + statKey).val());
+        var softcaps = softcapsForStat[statKey];
+        for (var i = 0; i < 6; i++) {
+            if (softcaps[i] > currentTotal) {
+                return i;
+            }
+        }
+    }
+    
+    function getRatioTowardsLevel(statKey, level) {
+        return level == 0 ? 0.5 : level;
+    }
+    
+    function addStatUntilNextLevel(statKey) {
+        var action = putPointsActionForStat(statKey);
+        if (action != null) {
+            $("#points_" + statKey).val(action.newTotal);
+            setScrolledWhenTotal($("#points_" + statKey).attr('id'));
+            updatePoints();
+        }
+    }
+    
+    function putPointsActionForStat(statKey) {
+        if (availablePoints <= 0) {
+            return null;
+        }
+        
+        var nextSoftcapLevel = findNextSoftcapLevelForStat(statKey);
+        var softcaps = softcapsForStat[statKey];
+        var newTier = softcaps[nextSoftcapLevel];
+        var ratio = getRatioTowardsLevel(statKey, nextSoftcapLevel);
+        var statBudget = Math.floor(availablePoints / ratio);
+        if (statBudget == 0) {
+            return null;
+        }
+        
+        var currentTotal = parseInt($("#points_" + statKey).val());
+        var newTotal = Math.min(currentTotal + statBudget, newTier);
+        
+        return {currentTotal: currentTotal, newTotal: newTotal, ratio: ratio};
+    }
+    
+    function handleSubmit(event) {
+        var statsAreValid = areStatsValid();
+        if (!statsAreValid) {
+            event.preventDefault();
+        }
+    }
+    
+    function sendBaseStatsFunction() {
+        var statsAreValid = areStatsValid();
+        if (!statsAreValid) {
+            return null;
+        } else {
+            return defaultSendDataFunctionStateEngine();
+        }
+    }
+    
+    function areStatsValid() {
+        var allValid = true;
+        $(".scrolled_input").each(function() {
+            var scrolledValue = $(this).val();
+            if (scrolledValue < 0 || scrolledValue > 100) {
+                allValid = false;
+            }
+        });
+        if (!allValid) {
+            $("#base-stats-error-msg").text('{{_("Scrolled stats must be between 0 and 100.")|escapejs}}');
+            return false;
+        }
+        $("#base-stats-error-msg").text("");
+        return true;
+    }
+    
+    function disable_points_input() {
+        $(".points_input").prop('readonly', true);
+        $(".points_input").css("color", "gray");
+    }
+    
+    function enable_points_input() {
+        $(".points_input").prop('readonly', false);
+        theme = get_theme();
+        if (theme == 'darktheme'){
+            $(".points_input").css("color", "white");
+        } else {
+            $(".points_input").css("color", "black");
+        }
+        
+    }
+    
+    function get_theme()
+    {
+        theme = '{{theme}}';
+        if (theme == 'auto'){
+            var now = new Date();
+            var h = now.getHours();
+            theme = 'lighttheme';
+            if (h < 6 || h >= 18 ) {
+                theme = 'darktheme';
+            }
+        }
+        return theme;
+    }
+
+    $(document).ready(function(){
+        if (isNewChar) {
+            $("#save-mode").remove();
+            initializeBaseStats(initialStats);
+            $("#main_form").submit(handleSubmit);
+        } else {
+            $("#submit-mode").remove();
+            setupStateEngine(initializeBaseStats,
+                    "{% url 'chardata.base_stats_view.save_char' char_id %}",
+                    initialStats,
+                    sendBaseStatsFunction);
+        }
+    
+        $(".register-stat").change(updatePoints);
+        updatePoints();
+        $(".scrolled_input").change(function() {
+            setTotalWhenScrolled($(this).attr('id'));
+        });
+        $(".points_input").change(function() {
+            setScrolledWhenTotal($(this).attr('id'));
+        });
+        $("#button-zero").click(function() {
+            resetToZero();
+        });
+        $("#button-fully-scroll").click(function() {
+            fullyScroll();
+        });
+        $("#choose_stats").click(function() {
+            if ($(this).prop('checked')) {
+                disable_points_input();
+            } else {
+                enable_points_input();
+            }
+            updatePoints();
+        });
+        
+        $.each(ALL_STATS, function(i, stat) {
+            $("#button-put-points-" + stat).click(function() {
+                addStatUntilNextLevel(stat);
+            });
+        });
+    });
+</script>
+
+{% endblock %}
+

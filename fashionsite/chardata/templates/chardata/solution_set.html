@@ -1,0 +1,30 @@
+{% load static_s3 %}
+{% load i18n %}
+<div class="expand-container">
+    <div class="expand-header solution-set-expand-header">
+        <div class="solution-set-expand-header-cell" width="100%">
+            <span>{{set_result.localized_name}}</span><br>
+            <span class="solution-item-level">({{set_result.number_of_items}}/{{set_result.total_number_of_items}} {% trans "pieces" %})</span>
+        </div>
+        <div class="solution-set-expand-header-cell solution-set-icons-list">
+            {% for item_file, part in set_result.parts.items %}
+                {% with name=part.0 type=part.1 used_in_set=part.2 %}
+            <div class="solution-set-icon-container{% if not used_in_set %} grayed-out{% endif %}">
+                <img src="{% static item_file %}" class="solution-set-icon" title="{{name}} ({{type}})">
+            </div>
+                {% endwith %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="expand-content solution-set-expand-content">
+        {% for line in set_result.stats_lines %}
+            {% if '#r' in line.formatting %}
+                <span class="solution-negative-stat-text">{{line.text}}</span>
+            {% else %}
+                {{line.text}}
+            {% endif %}
+            <br>
+        {% endfor %}
+    </div>
+</div>
+

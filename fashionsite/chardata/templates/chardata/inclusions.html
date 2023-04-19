@@ -1,0 +1,174 @@
+{% extends 'chardata/base.html' %}
+
+{% load i18n %}
+{% block title %}The Dofus Fashionista: {% trans "Lock Items" %}{% endblock %}
+
+{% block main %}
+
+    {% load static_s3 %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.solution %}" class="solution-css css-file">
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/solution.css" %}">
+
+<form id="main_form" method="post">
+  {% csrf_token %}
+
+  <h1 align="center">{% trans "Lock Items" %}</h1>
+  <div id="form_container">
+    <div class="text">{% trans "If you have any items that <b>must</b> be on the final set, lock them in here:" %} </div> <br>
+  <div class="columns-section inclusions-section">
+  <div class="columns-column inclusions-column">
+    <div class="small-brown-box min-stat-name" align="center">
+        {% include "chardata/inclusions_row.html" with select_name="weapon" %}
+    </div>
+    <div class="small-brown-box min-stat-name" align="center">
+        {% include "chardata/inclusions_row.html" with select_name="cloak" %}
+    </div>
+    <div class="small-brown-box min-stat-name" align="center">
+        {% include "chardata/inclusions_row.html" with select_name="ring1" %}
+    </div>
+    <div class="small-brown-box min-stat-name" align="center">
+        {% include "chardata/inclusions_row.html" with select_name="boots" %}
+    </div>
+    <div class="small-brown-box min-stat-name" align="center">
+        {% include "chardata/inclusions_row.html" with select_name="shield" %}
+    </div>
+    <div class="small-brown-box min-stat-name" align="center">
+        {% include "chardata/inclusions_row.html" with select_name="dofus1" %}
+    </div>
+    <div class="small-brown-box min-stat-name" align="center">
+        {% include "chardata/inclusions_row.html" with select_name="dofus3" %}
+    </div>
+    <div class="small-brown-box min-stat-name" align="center">
+        {% include "chardata/inclusions_row.html" with select_name="dofus5" %}
+    </div>
+  </div>
+  <div class="columns-column inclusions-column">
+    <div class="small-brown-box min-stat-name" align="center">
+        {% include "chardata/inclusions_row.html" with select_name="hat" %}
+    </div>
+    <div class="small-brown-box min-stat-name" align="center">
+        {% include "chardata/inclusions_row.html" with select_name="amulet" %} 
+    </div>
+    <div class="small-brown-box min-stat-name" align="center">
+        {% include "chardata/inclusions_row.html" with select_name="ring2" %}
+    </div>
+    <div class="small-brown-box min-stat-name" align="center">
+        {% include "chardata/inclusions_row.html" with select_name="belt" %}
+    </div>
+    <div class="small-brown-box min-stat-name" align="center">
+        {% include "chardata/inclusions_row.html" with select_name="pet" %}
+    </div>
+    <div class="small-brown-box min-stat-name" align="center">
+        {% include "chardata/inclusions_row.html" with select_name="dofus2" %}
+    </div>
+    <div class="small-brown-box min-stat-name" align="center">
+        {% include "chardata/inclusions_row.html" with select_name="dofus4" %}
+    </div>
+    <div class="small-brown-box min-stat-name" align="center">
+        {% include "chardata/inclusions_row.html" with select_name="dofus6" %}
+    </div>
+  </div>
+  </div>
+        
+      
+  </div>  
+
+<br>
+<br> 
+  <div align="center">
+  {% include "chardata/state_engine_all_buttons.html" with include_tailor=True %}
+  {% include "chardata/jqueryui.html" %}
+
+  </div>
+</form>
+<div id="blanket" style="display:none;"></div>
+<div id="popUpDiv" style="display:none;">
+    <div class="removing-div"></div>
+    <div class="search-div" align="right"></div>
+    <div class="items-to-add"></div>
+    <table width="100%">
+    <tr>
+    <td align="left">
+        <div id="pages"></div>
+    </td>
+    <td align="right">
+    <div align="right" class="popup-cancel-div">
+        <button class='button-generic cancel-popup'>{% trans "Cancel" %}</button>
+    </div>
+    </td>
+    </tr>
+    </table>
+</div>
+<script src="{% static "chardata/stateengine.js" %}"></script>
+<script src="{% static "chardata/inclusions.js" %}"></script>
+<script src="{% static "chardata/solution_popup.js" %}"></script>
+<script>
+
+
+$.ajaxSetup({
+  data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+});
+
+var allItemsPerType = {{ types_json | safe }};
+var allItemsPerTypeAndName = {{ names_and_types_json | safe }};
+var inclusionsInitial = {{ inclusions_json | safe }};
+var slotToType = {{ slot_to_type_json | safe }};
+var slotImages = {{ images_json | safe }};
+var loader = {{ ajax_loader | safe }};
+
+function lockItem(itemId, slot, char_id) {
+    inclusionsUpdateLine(itemId, slot, allItemsPerType, slotToType);
+    $("#item-id-" + slot).change();
+    $("#blanket").click();
+}
+
+function get_loader_img()
+{
+    if ('{{theme}}' == 'auto'){
+        var now = new Date();
+        var h = now.getHours();
+        theme = 'lighttheme';
+        if (h < 6 || h >= 18 ) {
+            theme = 'darktheme';
+        }
+        return loader[theme];
+    }
+    return loader;
+}
+
+$(document).ready(function() {
+    setupStateEngine(inclusionsInitStateEngine,
+            "{% url 'chardata.inclusions_view.inclusions_post' char_id %}",
+             inclusionsInitial);
+             
+    $.each(inclusionsInitial, function(slot, equip) {
+        var addButton = $("#button-add-"+slot);
+
+        addButton.click(function(e){
+            clearSwitchDiv('', get_loader_img())
+            e.stopPropagation();
+            populateSwitchDivInitial(slot, 1, null, {{char_id}}, "", lockItem, false);
+            top = $(window).scrollTop();
+            popupSwitch(top.pageYOffset + 10);
+        });
+        $("#table" + slot).attr('width', '100%');
+    });
+    $(".cancel-popup").click(function() {
+         top = $(window).scrollTop().pageYOffset + 10;
+         popupSwitch(top);
+    });
+    $("#blanket").click(function() {
+         top = $(window).scrollTop().pageYOffset + 10;
+         popupSwitch(top);
+    });
+});
+
+function inclusionsInitStateEngine(inclusionsData) {
+    inclusionsInit(inclusionsData, allItemsPerType, allItemsPerTypeAndName, slotToType, slotImages);
+}
+</script>
+
+{% endblock %}
+

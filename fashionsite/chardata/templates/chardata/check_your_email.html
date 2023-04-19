@@ -1,0 +1,27 @@
+{% extends 'chardata/base.html' %}
+
+{% load i18n %}
+{% load static_s3 %}
+
+{% block title %}The Dofus Fashionista: {% trans "Confirm your email" %}{% endblock %}
+
+{% block main %}
+    {% load static_s3 %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+
+    <h1 align="center"> {% trans "Confirm your email" %} </h1>
+    <table align="center">
+    <tr>
+        <td>
+            <p class="big-text">
+                {% url 'chardata.login_view.login_page' as login_link %}
+                {% blocktrans %}We have sent you a confirmation email. Please click the link in the email and then <a href='{{login_link}}'>login</a>.{% endblocktrans %}
+            </p>
+        </td>
+        <td>
+            <img src="{% static "chardata/designs/myRegister.png" %}"></img>
+        </td>
+    </tr>
+    </table>
+{% endblock %}

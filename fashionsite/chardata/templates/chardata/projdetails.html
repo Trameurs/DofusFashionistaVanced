@@ -1,0 +1,362 @@
+{% extends 'chardata/base.html' %}
+
+{% load get_item %}
+{% load i18n %}
+{% load static_s3 %}
+
+{% block title %}The Dofus Fashionista: {% trans "Project Details" %} {% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+{% endblock %}
+
+{% block main %}
+
+<div align="center">
+    {% if is_new_char %}
+    <h1>{% trans "Create a Project" %}</h1>
+    {% else %}
+    <h1>{% trans "Project Details" %}</h1>
+    {% endif %}
+
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    
+    {% if can_create %}
+        {% if is_new_char %}
+        <p class='big-text'>{% trans "Get started by providing details about your character." %}</p>
+        {% else %}
+        <p class='big-text'>{% trans "Modify the project and character configuration." %}</p>
+        {% endif %}
+    
+        <form id="main_form" action="{% url 'chardata.create_project_view.create_project' %}" method="post">
+            {% csrf_token %}
+                <table class='register'>
+                  <tr class='register-line'>
+                    <td class='input-name'>{% trans "Character Name" %}</td> 
+                    <td align="left"><input class='input-value pretty-input change-modifies-state' id="input-char-name" name="charname" maxlength="50" /></td>
+                  </tr>  
+                  <tr class='register-line'>
+                    <td class='input-name'>{% trans "Character Level" %}</td> 
+                    <td align="left" style="padding: 0px 3px;"><input class='input-value pretty-input change-modifies-state' id="input-char-level" type="number" name="level" min="1" max="200" required="required" style="width: 40px;"/></td>
+                  </tr>  
+                  <tr class='register-line'>
+                    <td class='input-name'>{% trans "Character Class" %}</td> 
+                    <td align="left"> 
+                    <select name="class" class="change-modifies-state" id="select-char-class" required="required">
+                        {% for c in classes %}
+                            <option value="{{class_to_name|get_item:c}}"{% if char.char_class == class_to_name|get_item:c %} selected="selected"{% endif %}>{{c}}</option>
+                        {% endfor %}
+                    </select>
+                    </td>
+                  </tr>  
+                  <tr class='register-line'>
+                    <td class='input-name'>{% trans "Project Name" %}</td>
+                    <td align="left"><input class='input-value pretty-input change-modifies-state' id="input-proj-name" name="project" maxlength="50" required="required"/></td>
+                  </tr>
+                  
+                  <tr class='register-line'>
+                    <td class='input-name'>  </td> 
+                    <td><br></td>
+                  </tr>  
+                </table>
+
+            <table id="table-checkboxes" class="build-boxes-section">
+                <tr>
+                    <td class="build-boxes-column build-boxes-title">{% trans "Elements" %}</td>
+                    <td class="build-boxes-column build-boxes-title">{% trans "Options" %}</td>
+                    <td class="build-boxes-column build-boxes-title" colspan="2">{% trans "Focus on, sacrificing other stats <span id='aspect_limit_text'>(up to 2)</span>" %}</td>
+                </tr>
+                <tr>
+                    <td id="table-checkboxes-column-0" class="build-boxes-column build-boxes-element-column"></td>
+                    <td id="table-checkboxes-column-1" class="build-boxes-column build-boxes-options-column"></td>
+                    <td id="table-checkboxes-column-2" class="build-boxes-column build-boxes-aspects-column"></td>
+                    <td id="table-checkboxes-column-3" class="build-boxes-column build-boxes-aspects-column" style="
+    border-radius: 0px 0px 4px 0px;"></td>
+                </tr>
+            </table>
+            <br>
+            
+            <div id="submit-mode">
+                <input class='submit-button button-generic' name="byhand" type='submit' value="{{ _('Create a set by hand') }}" style='margin-right: 10px;' />
+                <input class='submit-button button-generic' name="wizard" type='submit' value="{{ _('Continue to Wizard') }}" style="margin-left: 10px;"/>
+            </div>
+            <div id="save-mode">
+                <label><input type="checkbox" class="click-modifies-state" name="reapply" value="reapply" id="reapply-cb"><span class='input-name'>{% trans "Restart wizard upon saving" %}</span></label><br><br>
+                {% include "chardata/state_engine_all_buttons.html" with include_tailor=True %}
+            </div>
+        </form>
+    {% else %}
+        <table>
+        <tr>
+        <td><img src="{% static "chardata/designs/myDown4.png" %}"></img>
+        </td>
+        <td>
+        {% if login_problem %}
+        <p>
+            {% url 'chardata.login_view.login_page' as login_link%}
+            {% url 'chardata.views.load_projects' as load_proj_link%}
+            {% blocktrans %} You need to <a href="{{login_link}}">login</a> before you can create another project. Your current project can be found <a href="{{load_proj_link}}">here</a>. {% endblocktrans %}<br>
+        </p>
+        {% else %}
+            {% if too_many_projects_problem %}
+            <p>
+            {% url 'chardata.views.load_projects' as load_proj_link%}
+                {% blocktrans %} You have reached the maximum number of projects allowed. To create a new project, please delete some old ones <a href="{{load_proj_link}}">here</a>.{% endblocktrans %}<br>
+            </p>
+            {% endif %}
+        {% endif %}
+        </td>
+        </tr>
+        </table>
+    {% endif %}
+</div>
+
+<script src="{% static "chardata/stateengine.js" %}"></script>
+<script>
+$.ajaxSetup({
+  data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+});
+
+var isNewChar = {{ is_new_char_json | safe }};
+var initialState = {{ state | safe }};
+var aspectToName = {{ aspect_to_name | safe }};
+var question = {{ questionmark | safe }};
+var aspectToTip = {
+    crit: '{{ _("Focus on critical hits. Useful for characters that have spells/weapons that are much better on a critical hit.")|escapejs }}',
+    noncrit: '{{ _("Avoids critical hits. Useful to fight enemies with high critical resist.")|escapejs }}',
+    pvp: '{{ _("PVPers should check this. Increases importance of AP/MP resists, critical resist and initiative. Decreases importance of prospecting to 0.")|escapejs }}',
+    duel: '{{ _("1 vs. 1 Duelers should check this. Increases importance of initiative a lot. Enables shields.")|escapejs }}',
+    balanced: '{{ _("This will yield and all-around build.")|escapejs }}',
+    vit: '{{ _("Support and vitality based chars should check this. Increases importance of vitality, but will hurt the other stats.")|escapejs }}',
+    glasscannon: '{{ _("Hitters who want damage as high as possible ignoring defense should check this.")|escapejs }}',
+    res: '{{ _("Tankers that want very high resists. Increases importance of linear and percentage resists.")|escapejs }}',
+    dam: '{{ _("Chars that want +Damage over the main stat, for hitting with low base damage attacks. Increases importance of +Damage and +Elemental Damages.")|escapejs }}',
+    heal: '{{ _("Healers that prefer +Heals over intelligence for low base heals spells/weapons. For example, Enis should check this if they intend to heal primarily with Healing Word and Revitalizing Word rather than Word of Sacrifice and Word of Altruism.")|escapejs }}',
+    aprape: '{{ _("Disablers that want to focus on AP reduction rather than dealing damage should check this.")|escapejs }}',
+    mprape: '{{ _("Disablers that want to focus on MP reduction rather than dealing damage should check this.")|escapejs }}',
+    wis: '{{ _("Only leechers should check this. This will give very little importance to all stats except wisdom. Wisdom will be high, but the rest won't be pretty. Disables trophies and Dofus.")|escapejs }}',
+    pp: '{{ _("Check this to get a prospecting set, with mediocre stats but high prospecting.")|escapejs }}',
+    pods: '{{ _("Check this to get a pod set, pretty much ignoring the rest, primarily for professions.")|escapejs }}',
+    trap: '{{ _("Srams that focus on traps should check this, though there isn't much trap equipment. Importance of Power (Traps) and +Trap Damage will be increased.")|escapejs }}',
+    summon: '{{ _("Summon spammers should check this. It will increase the minimum summons by 1 and increase importance of summons.")|escapejs }}',
+    pushback: '{{ _("Chars that deal significant pushback damage should check this. This increases the +Pushback Damage importance.")|escapejs }}',
+};
+var aspectLayout = [['str', 'int', 'cha', 'agi', 'omni'],
+                    ['pvp', 'duel'],
+                    ['balanced', 'vit', 'glasscannon', 'dam', 'heal', 'aprape', 'mprape', 'crit'],
+                    ['res', 'wis', 'pp', 'pods', 'trap', 'summon', 'pushback', 'noncrit']];
+
+function get_questionmark_img()
+{
+    if ('{{theme}}' == 'auto'){
+        var now = new Date();
+        var h = now.getHours();
+        theme = 'lighttheme';
+        if (h < 6 || h >= 18 ) {
+            theme = 'darktheme';
+        }
+        return question[theme];
+    }
+    return question;
+}
+
+function createCheckbox(aspect, label, tip) {
+    var resultHtml = '<label><input type="checkbox" name="check_' + aspect + '" id="check_' + aspect + '" name="require_crits" class="change-modifies-state">' + label + '</label>';
+    if (tip) {
+        resultHtml += '<img class="build-boxes-tip" src=' + get_questionmark_img() + ' title="' + tip + '">';
+    }
+    resultHtml += '<br>';
+    return $(resultHtml);
+}
+
+function init(state) {
+    $("#input-proj-name").val(state["proj_name"]);
+    $("#input-char-name").val(state["char_name"]);
+    $("#input-char-level").val(state["char_level"]);
+    $("#select-char-class").val(state["char_class"]);
+    initAspectState(state["char_build_aspects"]);
+}
+
+function initAspectState(aspectState) {
+    $.each(aspectState, function(aspect, checked) {
+        var box = $("#check_" + aspect);
+        box.prop('checked', checked);
+    });
+    
+    var checkboxOmni = $("#check_omni");
+    var checkboxesElement = $("#check_str").add("#check_int").add("#check_cha").add("#check_agi");
+    if (checkboxOmni.prop('checked')) {
+        checkboxesElement.prop('checked', true)
+    } else {
+        var allChecked = true;
+        checkboxesElement.each(function() {
+            if (!$(this).prop('checked')) {
+                allChecked = false;
+            }
+        });
+        if (allChecked) {
+            checkboxOmni.prop('checked', true);
+        }
+    }
+}
+
+function setupCheckboxes() {
+    var checkboxOmni = $("#check_omni");
+    var checkboxesElement = $("#check_str").add("#check_int").add("#check_cha").add("#check_agi");
+    checkboxOmni.change(function() {
+        checkboxesElement.prop('checked', checkboxOmni.prop('checked'));
+    });
+    checkboxesElement.change(function() {
+        if (!$(this).prop('checked')) {
+            checkboxOmni.prop('checked', false);
+        } else {
+            var allChecked = true;
+            checkboxesElement.each(function() {
+                if (!$(this).prop('checked')) {
+                    allChecked = false;
+                }
+            });
+            if (allChecked) {
+                checkboxOmni.prop('checked', true);
+            }
+        }
+    });
+    
+    var checkboxCrit = $("#check_crit");
+    var checkboxNoncrit = $("#check_noncrit");
+    checkboxCrit.change(function() {
+        if ($(this).prop('checked')) {
+            checkboxNoncrit.prop('checked', false);
+        }
+    });
+    checkboxNoncrit.change(function() {
+        if ($(this).prop('checked')) {
+            checkboxCrit.prop('checked', false);
+        }
+    });
+    
+    var aspectElements = $();
+    $.each(aspectLayout[2].concat(aspectLayout[3]), function(i, aspect) {
+        if (aspect != "balanced") {
+            aspectElements = aspectElements.add("#check_" + aspect);
+        }
+    });
+    
+    var balancedElement = $("#check_balanced");
+
+    balancedElement.change(function(e) {
+        if ($(this).prop('checked')) {
+            aspectElements.prop('checked', false);
+        } else {
+            if (aspectElements.filter(":checked").length == 0) {
+                balancedElement.prop('checked', true);
+            }
+        }
+    });
+    
+    aspectElements.change(function() {
+        if ($(this).prop('checked')) {
+            balancedElement.prop('checked', false);
+        } else {
+            if (aspectElements.filter(":checked").length == 0) {
+                balancedElement.prop('checked', true);
+            }
+        }
+    });
+    
+    if (aspectElements.filter(":checked").length == 0) {
+        balancedElement.prop('checked', true);
+    }
+}
+
+function highlightAspectRules() {
+    var text = $("#aspect_limit_text");
+    text.addClass("red-text");
+    setTimeout(function() {
+        text.removeClass("red-text");
+    }, 1000);
+}
+
+function saveButtonClicked() {
+    if (!areAspectsValid()) { 
+        highlightAspectRules();
+        return null;
+    }
+    
+    return $('#main_form').serialize();
+};
+
+function areAspectsValid() {
+    var aspects = aspectLayout[2].slice().concat(aspectLayout[3]);
+    var numberOfAspects = 0;
+    $.each(aspects, function(i, aspect) {
+        if ($("#check_" + aspect).prop('checked')) {
+            numberOfAspects++;
+        }
+    });
+    return numberOfAspects <= 2;
+}
+
+function checkAndSubmit() {
+    if (!areAspectsValid()) {
+        highlightAspectRules();
+        return false;
+    }
+    return true;
+}
+
+$(document).ready(function() {
+
+    $.each(aspectLayout, function(columnIndex, column) {
+        $.each(column, function(i, aspect) {
+            var box = createCheckbox(aspect, aspectToName[aspect],
+                aspect in aspectToTip ? aspectToTip[aspect] : null);
+            $("#table-checkboxes-column-" + columnIndex).append(box);
+            box.find("input").prop('checked', initialState["char_build_aspects"][aspect]);
+            box.change(function() {
+                $("#reapply-cb").prop('checked', true);
+            });
+        });
+    });
+    
+    $("#input-char-level").change(function() {
+        $("#reapply-cb").prop('checked', true);
+    });
+    
+    setupCheckboxes();
+    
+    if (isNewChar) {
+        $("#save-mode").remove();
+        init(initialState);
+        $("#main_form").submit(checkAndSubmit);
+    } else {
+        $("#submit-mode").remove();
+        setupStateEngine(init,
+            "{% url 'chardata.create_project_view.save_project' char_id %}",
+             initialState,
+             saveButtonClicked);
+    }
+    
+    $("#input-char-name").change(function() {
+        $("#input-proj-name").val($("#input-char-name").val()+" "+$("#input-char-level").val()).change();
+    });
+    $("#input-char-level").change(function() {
+        $("#input-proj-name").val($("#input-char-name").val()+" "+$("#input-char-level").val()).change();
+    });
+    $("#input-proj-name").change(function() {
+        $("#proj-name-link").text($("#input-proj-name").val());
+    });
+    if ($("#input-proj-name").val() === ""){
+        $("#proj-name-link").text('{{ _("Project Details")|escapejs }}');
+    } else {
+        $("#proj-name-link").text($("#input-proj-name").val());
+    }
+    
+    $("#button-discard-changes").click(function() {
+        $("#reapply-cb").prop('checked', false);
+    });
+});
+
+</script>
+{% endblock %}

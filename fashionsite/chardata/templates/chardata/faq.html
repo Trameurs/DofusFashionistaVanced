@@ -1,0 +1,69 @@
+{% extends 'chardata/base.html' %}
+
+{% load static_s3 %}
+{% load i18n %}
+
+{% block title %}The Dofus Fashionista: {% trans "Frequently Asked Questions" %}{% endblock %}
+
+{% block main %}
+  {% load static_s3 %}
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+{% endblock %}
+
+    <h1 align="center"> {% trans "Frequently Asked Questions" %} </h1>
+    <table align="center">
+    <tr>
+    <td>
+    <p class='big-text'><b>{% trans "What are the numbers by the sliders? And why does each slider have a different range?" %}</b><br>
+{% trans "Each of those numbers indicate how many points each of the attributes is worth to you. The program will then choose the equipment that sum the most points in total. For example, suppose you have the following equipment:" %}
+
+    </p>
+    <table width="100%">
+    <tr>
+    <td align="center">
+    <div  class='big-text' align="left" style="display: inline-block; border: 1px solid; border-radius: 5px; padding: 5px;">
+    {% trans "Item A" %} <br>
++ 10 {% trans "intelligence" %}<br>
++ 200 {% trans "initiative" %}
+    </div>
+    </td>
+    <td align="center">
+    <div  class='big-text' align="left" style="display: inline-block; border: 1px solid; border-radius: 5px; padding: 5px;">
+    {% trans "Item B" %}<br>
++ 40 {% trans "intelligence" %}<br>
++ 100 {% trans "initiative" %}
+    </div>
+    </td
+    </tr>
+    </table>
+    
+<p class='big-text'>{% trans "If you say each intelligence is worth 10 points and each initiative is worth 10 points, equipment A will have a score of 2100 points, while equipment B will have a score of 1400 points, and the program will choose Item A." %}
+</p>
+</td>
+    <td><img src="{% static "chardata/designs/myFAQ.png" %}" style="margin-right: 30px;"></img>
+    </td>
+</tr>
+</table>
+<p class='big-text' style="margin-top: 0px;">{% trans "If you say each intelligence is worth 10 points and each initiative is worth 1 point, equipment A will have a score of 300 points, while equipment B will have a score of 500 points, and the program will choose Item B." %}
+</p>
+<p class='big-text'>{% trans "That is our way of telling the program what to optimize. The ranges you see on each slider is the range that is most effective for each attribute, based on our experience. If you wish to use values outside of the range we defined, you can go to the Characteristics Weights page (under More) and set them manually." %}
+</p><br>
+<p class='big-text'><b>{% trans "I asked for exos but I can’t find them on any item. Where are they?" %}</b><br>
+{% trans "We don’t assign the exos to any particular equipment because we think you are the best person to know where it is most convenient to have them. Maybe a particular item is cheaper to buy/mage in your server, or you already have an exo in a piece of equipment and want to use it. It is still important that you tell us whether or not you are gonna have exos, because otherwise we may use some items with AP conditions that make them unequipable if you get an extra AP on your set." %}</p>
+<br>
+<p class='big-text'><b>{% trans "I need a PVM set, but I only see PVP options. Is there a way to build a PVM set?" %}</b><br>
+{% trans "We assume that, if you don’t check either of the PVP options, the set you are building is a PVM set." %} 
+</p>
+<br>
+<p class='big-text'><b>{% trans "How does the site choose a weapon?" %}
+</b><br>
+{% trans "If you don’t lock a weapon, the site will disregard the weapon damages and treat it like any other item, so you don’t always get an option that hits well. You will usually get a weapon with good attributes to your build, which tend to hit the element you chose. It is common to get AP weapons that aren’t really for hitting with. Forbid them and run again to see the next better option. " %}
+</p>
+<br>
+<p class='big-text'><b>{% trans "Why can I focus on vitality and resists? Doesn't every char need them?" %}</b><br>
+{% trans "Those options are there for characters that need specially high vitality (or resists). For instance, Sacriers, Masqueraiders and Foggernauts may want a lot of vitality and not care much about their main element. Others, like Osamodas, may need a vit/res build with just a little bit of intelligence, and that's how they declare that defense is more important to them. Checking a focus box trades points in your main element (and other stats) for a boost on the focus you chose." %}</p>
+<p class='big-text'>{% trans "Not checking any focus boxes is fine and correct for a lot of cases. It will give you an all-around set." %}</p>
+{% endblock %}
+

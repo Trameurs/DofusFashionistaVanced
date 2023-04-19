@@ -1,0 +1,19 @@
+{% load i18n %}
+<div class="wizard-div min-stat-name" align="center">
+<table align="center">
+    <tr align="center">
+    <td align="center" width="100%">
+    <b>{% blocktrans %}Is there a weapon that you want this character to use?{% endblocktrans %}</b>
+    </td>
+    </tr>
+</table>
+{% include "chardata/inclusions_row.html" with select_name="weapon" %}
+<table>
+    <tr align="center">
+    <td align="center" width="100%" class="small-explain">
+    ({% blocktrans %}If you don't choose any, a weapon will be chosen only for its stats, no matter how it hits{% endblocktrans %})
+    </td>
+    </tr>
+</table>
+</div>
+

@@ -1,0 +1,27 @@
+{% extends 'chardata/base.html' %}
+
+{% load i18n %}
+{% load static_s3 %}
+
+{% block title %}The Dofus Fashionista: {% trans "Error" %}{% endblock %}
+
+{% block main %}
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+<h1 align="center"> {% trans "500 - Application Error" %} </h1>
+<table>
+<tr>
+<td>
+    <img src="{% static "chardata/designs/myDown.png" %}"></img>
+</td>
+<td>
+    <p class='text'>
+    {% url 'chardata.contact_view.contact' as contact_url %}
+    {% blocktrans %}The application threw an error. It's probably our fault.{% endblocktrans %}<br><br>
+    {% blocktrans %}Please return to the previous page and try again.{% endblocktrans %}<br><br>
+    {% blocktrans %}If that doesn't work, please contact us <a href="{{contact_url}}">here</a> and tell us all about this problem.{% endblocktrans %}
+    </p>
+</td>
+</tr>
+</table>
+{% endblock %}
+

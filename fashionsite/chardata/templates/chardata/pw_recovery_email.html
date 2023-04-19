@@ -1,0 +1,30 @@
+{% extends 'chardata/base.html' %}
+
+{% load i18n %}
+{% load static_s3 %}
+
+{% block title %}The Dofus Fashionista: {% trans "Password Recovery" %}{% endblock %}
+
+{% block main %}
+{% load static_s3 %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+
+    <h1 align="center"> {% trans "Password Recovery" %} </h1>
+    <table>
+    <tr>
+    <td><img src="{% static "chardata/designs/myKuyy.png" %}"></img>
+    </td>
+    <td align="center">
+        <form action="{% url 'chardata.login_view.recover_password_page'%}" method="post">
+        {% csrf_token %}
+            <div><span class="big-text" style="vertical-align: top;">{% trans "Please enter your registered email" %}: </span></div>
+            <br>
+            <div><input class="pretty-input" type="text" name="email" id="recover-pw-email" size="30"></div>
+            <br>
+            <input type='submit' class='button-generic' id="login-register" value='{{_("Send Email")|escapejs}}' />
+        </form>
+    </td>
+    </tr>
+    </table>
+{% endblock %}

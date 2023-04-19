@@ -1,0 +1,144 @@
+{% extends "chardata/base.html" %}
+
+{% load i18n %}
+{% load static_s3 %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+{% endblock %}
+
+{% block title %}The Dofus Fashionista: {% trans "Manage account" %}{% endblock %}
+
+{% block main %}
+
+<h1 align="center">{% trans "Manage account" %}</h1>
+<table width="100%">
+<tr>
+<td align="center">
+    <img src="{% static "chardata/designs/myManage.png" %}"></img>
+</td>
+<td>
+    <div id="c_form">
+        <form name="theform" method="post" id="main_form">
+            {% csrf_token %}
+                <h3 align="center" class='text'>{% trans "Set account details" %}</h1>
+                <table width="100%">
+                <tr>
+                <td align="right" class='input-stat-name' width="35%"> {% trans "Alias" %}:
+                </td>
+                <td align="left">
+                <input type="text" name="alias" class="pretty-input change-modifies-state" id="alias"/>
+                </td>
+                </tr>
+                <tr>
+                <td align="right" class='input-stat-name' width="35%"> {% trans "Email" %}:
+                </td>
+                <td align="left">
+                <input type="text" name="email" class="pretty-input change-modifies-state" id="email"/>
+                </td>
+                </tr>
+                </table>
+            <br>
+            <div align="center">
+                {% include "chardata/state_engine_all_buttons.html" %}
+            </div>
+        </form>
+        <br>
+        <hr class="hr">
+            <h3 align="center"  class='text'>{% trans "Change password" %}</h1>
+            <table width="100%">
+            <tr>
+            <td align="right" class='input-stat-name' style="vertical-align: top;"> {% trans "Old Password" %}:
+            </td>
+            <td align="left">
+            <input type="password" name="password" id="login-password" class="pretty-input"/> 
+            <br>
+            <label id="wrong-password-error"></label>
+            </td>
+            </tr>
+            <tr>
+            <td align="right" class='input-stat-name' style="vertical-align: top;"> {% trans "New Password" %}:
+            </td>
+            <td align="left">
+            <input type="password" name="password" id="password" class="pretty-input"/>
+            </td>
+            </tr>
+            <tr>
+            <td align="right" class='input-stat-name' style="vertical-align: top;"> {% trans "Confirm New Password" %}:
+            </td>
+            <td align="left">
+            <input type="password" name="password" id="password-confirm" class="pretty-input"/> 
+            <br>
+            <div style="width: 200px">
+            <label id="password-error"></label>
+            </div>
+            </td>
+            </tr>
+            </table>
+        <div align="center">
+        <br>
+        <button class='button-generic' id="login-register">{% trans "Change Password" %}</button> 
+        <br>
+        <br>
+        <label id="change-succesful"></label>
+        </div>
+            
+    </div>
+</td>
+</tr>
+</table>        
+
+
+<script src="{% static "chardata/stateengine.js" %}"></script>
+<script src="{% static "chardata/sha256.js" %}"></script>
+<script src="{% static "chardata/login.js" %}"></script>
+
+<script>
+$.ajaxSetup({
+         data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+       });
+       
+var alias = {{useraliasjson | safe}};
+var name = {{user_social_name | safe}};
+var email = "{{user.email}}";
+
+function manageInit(state) {
+    $("#email").val(state.email);
+    if (state.alias != null) {
+        $('#alias').val(state.alias);
+    } else {
+        if (state.name != null) {
+            $('#alias').val(state.name);
+        }
+    }
+}
+
+function setLoggedUserAlias(newState) {
+    $('#logged_user_alias').text(newState.alias);
+}
+
+$(document).ready(function() {
+    var state = {alias: alias, name: name, email: email};
+
+    $("#password-confirm").change(function() {
+        validate_password();
+    });
+    $("#password").change(function() {
+        validate_password();
+    });
+    $("#login-register").click(function() {
+        var username = "{{user.username}}";
+        var password = $("#login-password").val();
+        var newPassword = $("#password").val();
+        changePassword(username, password, newPassword);
+    });
+    setupStateEngine(manageInit,
+            "{% url 'chardata.manage_account_view.save_account' %}",
+            state,
+            null,
+            setLoggedUserAlias);
+});
+</script>       
+
+{% endblock %}

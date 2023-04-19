@@ -1,0 +1,103 @@
+{% extends 'chardata/base.html' %}
+
+{% load get_range %}
+{% load i18n %}
+{% load static_s3 %}
+
+{% block title %}The Dofus Fashionista: {% trans "Choose sets to compare" %}{% endblock %}
+
+{% block main %}
+<link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+<link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+
+<h1 align="center">{% trans "Choose sets to compare" %}</h1>
+
+<p class="text">{% blocktrans %}To compare projects that you own, type the project name or paste a link to the solution such as:{% endblocktrans %}<br>
+<span class="link-text">http://dofusfashionista.com/solution/12345/</span><br><br>
+{% blocktrans %}To compare other people's projects paste the sharing link, for example:{% endblocktrans %}<br>
+<span class="link-text">http://dofusfashionista.com/s/xxLegolasxx/AbCdEf_/</span></p>
+
+<div class="compare-link-div-outer">
+{% for i in 4|get_range %}
+    <div class="compare-link-div">
+    {% trans "Link to project" %} <input class="pretty-input compare-link-input" id="compare-link-input-{{i}}" 
+    {% if i == 0 and char0 %} value="{{char0}}" {% endif %}
+    {% if i == 1 and char1 %} value="{{char1}}" {% endif %}
+    {% if i == 2 and char2 %} value="{{char2}}" {% endif %}
+    {% if i == 3 and char3 %} value="{{char3}}" {% endif %}/>
+    </div>
+{% endfor %}
+</div>
+
+<div class="compare-link-button-div">
+    <button class="button-generic" id="compare-button">{% trans "Compare" %}</button>
+</div>
+<div class="compare-link-error-div">
+    <span id="error-text" class="error-message"></span>
+</div>
+{% include "chardata/jqueryui.html" %}
+
+<script>
+
+$.ajaxSetup({data: {csrfmiddlewaretoken: '{{ csrf_token }}'}});
+
+function setError(error) {
+    $("#error-text").text(error);
+}
+
+function onCompareClick() {
+    var links = [];
+    for (var i = 0; i < 4; i++) {
+        var link = $("#compare-link-input-" + i).val();
+        if (link) {
+            links.push(link);
+        }
+    }
+    $.ajax({type: "POST",
+           url: "{% url 'chardata.compare_sets_view.choose_compare_sets_post' %}",
+           data: {links: JSON.stringify(links)},
+           success: function (data) {
+               if (!data.match('^[eE]rror: ')) {
+                   window.location.href=data;
+                   setError('');
+               } else {
+                   setError(data.substring('error: '.length));
+               }
+           },
+           error: function(xhr, testStatus, error) {
+               setError(error);
+           }});
+}
+
+
+
+$(document).ready(function() {
+    $("#compare-button").click(onCompareClick);
+    
+    $(".compare-link-input").each(function() {
+    
+        function handleSetNameSearch(event, ui) {
+            event.preventDefault();
+            $(this).val("https://dofusfashionista.com/solution/" + ui.item.idx + "/"); 
+        }
+    
+        $(this).autocomplete({
+            source: function(request, response) {
+                $.post("/compare_set_search_proj_name/",
+                   {name: request},
+                   function (data) {
+                       response(data);
+                   });
+            },
+            open: function() { 
+                $('.compare-link-input').autocomplete("widget").width(250);
+            },
+            select: handleSetNameSearch
+        });
+    });
+    
+});
+
+</script>
+{% endblock %}
+

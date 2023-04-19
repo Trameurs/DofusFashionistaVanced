@@ -1,0 +1,24 @@
+{% load i18n %}
+<div class="wizard-div min-stat-name">
+<b>{% trans "Scrolling" %}:</b><br><br>
+
+
+<select id="scrolling" name="scrolling">
+  <option value="fully" id="fully-option">{% trans "Fully scroll my character" %}</option>
+  <option value="clean" id="clean-option">{% trans "Don't scroll any characteristics" %}</option>
+  <option value="leave" id="leave-option">{% trans "Leave scrolling at" %}</option>
+</select>
+
+<br><br>
+<table>
+    <tr align="center">
+    <td align="center" width="100%" class="small-explain">
+    {% url 'chardata.base_stats_view.setup_base_stats' char_id as base_stats_url %}
+    ({% blocktrans %}If you wish to set your base stats yourself, you can do it at the <i><a href="{{base_stats_url}}" target="_blank">Base Characteristics</a></i> page, under <i>More</i>{% endblocktrans %})
+    </td>
+    </tr>
+</td>
+</tr>
+</table>
+</div>
+

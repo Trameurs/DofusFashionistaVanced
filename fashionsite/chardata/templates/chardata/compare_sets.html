@@ -1,0 +1,389 @@
+{% extends 'chardata/base.html' %}
+
+{% load get_item %}
+{% load get_range %}
+{% load i18n %}
+{% load static_s3 %}
+
+{% block title %}The Dofus Fashionista: {% trans "Compare Sets" %}{% endblock %}
+
+{% block main %}
+  {% load static_s3 %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/solution.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/compare.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.solution %}" class="solution-css css-file">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.compare %}" class="compare-css css-file">
+    
+    <h1 align="center">{% trans "Compare Sets" %}</h1>
+    
+    
+    <p class="text">{% blocktrans %}This is a comparison between set suggestions. To share it, use the link below rather than the one in your browser.{% endblocktrans %}</p>
+    
+    <div align="center">
+        <div style="display: inline-block;">
+            <button id="link_sharing_button" class="button-generic"></button>
+        </div>
+        <div style="display: inline-block;">
+            <input class='pretty-input' type="text" id="link_sharing_url_text" value="" style="width: 600px; text-align: center;" readonly />
+        </div>
+    </div>
+    <br>
+    
+        <table align="center">
+            <tr>
+            <td style="vertical-align: top; padding: 15px;">
+                <table class="brown-table" width="100%">
+                    <tr align="left">
+                        <td align="left" class="text" colspan="{{chars|length}}">
+                            <div align="left" style="padding-left: 7px; padding-right: 7px;">
+                        {% for char in chars %}
+                            <b>{% blocktrans with n=forloop.counter %}Set {{n}}{% endblocktrans %}</b>: 
+                            <a 
+                            {% with guest=char_is_guest|get_item:char.id %}
+                               {% if guest %}
+                            href="{{ links|get_item:char.id }}"
+                               {% else %}
+                            href="{% url 'chardata.solution_view.solution' char.id %}"
+                               {% endif %}
+                            {% endwith %}>{{ char.name }}</a><br>
+                        {% endfor %}
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                        
+                            <div>
+                             <form id="compare_form" class="hidden-form" action="{% url 'chardata.compare_sets_view.choose_compare_sets' %}" method="post" style="display: none;">{% csrf_token %}
+                             {% for char in chars %}
+                             <input type="text" value="{{ links|get_item:char.id }}" name="char{{forloop.counter0}}"></input>
+                             {% endfor %}
+                             </form>
+                                <button id="link_add_set" class="button-generic">{% trans "Change Sets" %}</button>
+                            </div>
+                        </td>
+                        </tr>
+                </table>
+                <br><br>
+                <table class="brown-table" align="center" style="padding-left:10px;" width="100%">
+                    <tr>
+                        {% for char in chars %}
+                        <td align="center" class="text">
+                            <b>{% blocktrans with n=forloop.counter %}Set {{n}}{% endblocktrans %}</b>
+                        </td>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                    {% for char_id in char_ids %}
+                        <td align="center">
+                        {% with all_items=items_sorted|get_item:char_id %}
+                        {% for item in all_items %}
+                            <div class="solution-item-icon-container" align="center">
+                            {% if item %}
+                                <img src="{{ item.file }}" class="solution-items-icon"  title="{{item.localized_name}}" align="middle" id="{{item.id}}">
+                            {% endif %}
+                            </div>
+                        {% endfor %}
+                        {% endwith %}
+                        </td>
+                    {% endfor %}
+                    </tr>
+                </table>
+            </td>
+            <td style="vertical-align: top; padding: 15px;">
+            
+            <table class="solution-stat-table">
+            <tr><td colspan="3">
+                <div class="solution-stat-summary-mode-option-container">       
+                    <label>                    
+                        <input type="radio" name="total_mode" value="final" checked="checked"> <span class="checkbox-text">{% trans "Total" %}</span>
+                    </label>
+                </div>
+                <div class="solution-stat-summary-mode-option-container">
+                    <label>
+                        <input type="radio" name="total_mode" value="equip"><span class="checkbox-text">{% trans "Equip" %}</span>
+                    </label>
+                </div>
+            </td></tr>
+            <tr>
+                <td class="solution-stat-summary-icon-header"></td>
+                <td class="solution-stat-summary-name-header"></td>
+                <td class="solution-stat-summary-value-header"></td>
+            </tr>
+
+            <tr class="solution-stat-summary-line">
+                <td class="solution-stat-summary-icon-cell">
+                </td>
+                <td>
+                </td>
+                {% for char_id in char_ids_cols %}
+                <td align="center" width="60"><b>
+                    {% if char_id == 'diff' %}
+                        {% trans "Diff" %}
+                    {% else %}
+                        {% blocktrans with n=forloop.counter %}Set {{n}}{% endblocktrans %}
+                    {% endif %}
+                </b></td>
+                {% endfor %}
+            </tr>
+
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Health_Points.png" stat_name=_("HP") stat_key="hp" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Vitality.png" stat_name=_("Vitality") stat_key="vit" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Wisdom.png" stat_name=_("Wisdom") stat_key="wis" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Strength.png" stat_name=_("Strength") stat_key="str" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Intelligence.png" stat_name=_("Intelligence") stat_key="int" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Chance.png" stat_name=_("Chance") stat_key="cha" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Agility.png" stat_name=_("Agility") stat_key="agi" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with stat_name=_("Power") stat_key="pow" char_ids=char_ids_cols %}
+            <tr class="solution-stat-summary-line"><td style="height: 20px;"</td><td></td>
+    {% for char_id in char_ids_cols %}
+    <td></td>
+    {% endfor %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/AP.png" stat_name=_("AP") stat_key="ap" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/MP.png" stat_name=_("MP") stat_key="mp" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Range.png" stat_name=_("Range") stat_key="range" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Summon.png" stat_name=_("Summons") stat_key="summon" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with stat_name=_("Critical Hits") stat_key="ch" char_ids=char_ids_cols %}
+            <tr class="solution-stat-summary-line"><td style="height: 20px;"</td><td></td>
+    {% for char_id in char_ids_cols %}
+    <td></td>
+    {% endfor %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Initiative.png" stat_name=_("Initiative") stat_key="init" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Prospecting.png" stat_name=_("Prospecting") stat_key="pp" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Lock.png" stat_name=_("Lock") stat_key="lock" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Dodge.png" stat_name=_("Dodge") stat_key="dodge" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with stat_name=_("AP Reduction") stat_key="apred" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with stat_name=_("MP Reduction") stat_key="mpred" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with stat_name=_("AP Loss Resist") stat_key="apres" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with stat_name=_("MP Loss Resist") stat_key="mpres" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with stat_name=_("Pushback Resist") stat_key="pshres" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with stat_name=_("Critical Resist") stat_key="crires" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with stat_name=_("Pods") stat_key="pod" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with stat_name=_("Reflects") stat_key="ref" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with stat_name=_("Trap Damage") stat_key="trapdam" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with stat_name=_("% Trap Damage") stat_key="trapdamper" char_ids=char_ids_cols %}
+            <tr class="solution-stat-summary-line"><td style="height: 20px;"</td><td></td>
+    {% for char_id in char_ids_cols %}
+    <td></td>
+    {% endfor %}
+            {% include "chardata/compare_stat_line.html" with stat_name=_("Damage") stat_key="dam" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Neutral.png" stat_name=_("Neutral Damage") stat_key="neutdam" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Strength.png" stat_name=_("Earth Damage") stat_key="earthdam" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Intelligence.png" stat_name=_("Fire Damage") stat_key="firedam" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Chance.png" stat_name=_("Water Damage") stat_key="waterdam" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Agility.png" stat_name=_("Air Damage") stat_key="airdam" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with stat_name=_("Critical Damage") stat_key="cridam" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with stat_name=_("Pushback Damage") stat_key="pshdam" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with stat_name=_("Heals") stat_key="heals" char_ids=char_ids_cols %}
+            <tr class="solution-stat-summary-line"><td style="height: 20px;"</td><td></td>
+    {% for char_id in char_ids_cols %}
+    <td></td>
+    {% endfor %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Neutral.png" stat_name=_("Neutral Resist") stat_key="neutres" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Strength.png" stat_name=_("Earth Resist") stat_key="earthres" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Intelligence.png" stat_name=_("Fire Resist") stat_key="fireres" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Chance.png" stat_name=_("Water Resist") stat_key="waterres" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Agility.png" stat_name=_("Air Resist") stat_key="airres" char_ids=char_ids_cols %}
+            <tr class="solution-stat-summary-line"><td style="height: 20px;"</td><td></td>
+    {% for char_id in char_ids_cols %}
+    <td></td>
+    {% endfor %}    
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Neutral.png" stat_name=_("% Neutral Resist") stat_key="neutresper" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Strength.png" stat_name=_("% Earth Resist") stat_key="earthresper" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Intelligence.png" stat_name=_("% Fire Resist") stat_key="fireresper" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Chance.png" stat_name=_("% Water Resist") stat_key="waterresper" char_ids=char_ids_cols %}
+            {% include "chardata/compare_stat_line.html" with icon="chardata/Agility.png" stat_name=_("% Air Resist") stat_key="airresper" char_ids=char_ids_cols %}
+            
+        </table>
+    </td>
+    </tr></table>
+            
+            </td>
+            </tr>
+        </table>
+    <div id="blanket" style="display:none;"></div>
+    <div id="popUpDiv" style="display:none;">
+        <div class="item-stats"></div>
+    </div>
+    <script src="{% static "chardata/compare_sets_popup.js" %}"></script>
+<script>
+$.ajaxSetup({
+  data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+});
+
+
+var link = {% if compare_link_shared %}"{{compare_link_shared}}"{% else %}null{% endif %};
+var sharing = {% if compare_link_shared %}true{% else %}false{% endif %};
+function initLinkSharing() {
+    if (link) {
+        $("#link_sharing_button").hide();
+        $("#link_sharing_url_text").show();
+        $("#link_sharing_url_text").val(link);
+    } else {
+        $("#link_sharing_button").html("Get link to share");
+        $("#link_sharing_url_text").hide();
+        $("#link_sharing_url_text").val("");
+    }
+}
+
+function setLinkSharing() {
+    $.get('{{get_compare_link_url}}', {}, function(data) {
+        link = data;
+        initLinkSharing();
+        $("#link_sharing_url_text").select();
+    });
+}
+
+var allCharIds = [];
+var allStatTotals = {};
+var allStatGears = {};
+var allOptions = {};
+{% for char_id in char_ids %}
+{% with dict=solutions|get_item:char_id %}
+allCharIds.push({{char_id}});
+allStatTotals[{{char_id}}] = {{dict.stats_total_json | safe}};
+allStatGears[{{char_id}}] = {{dict.stats_gear_json | safe}};
+allOptions[{{char_id}}] = {{dict.options_json | safe}}
+{% endwith %}
+{% endfor %}
+
+function getAllStatsDict() {
+    var equipOnly = $("input[name='total_mode']:checked").val() == "equip";
+    var allStatDict;
+    if (equipOnly) {
+        return allStatGears;
+    } else {
+        return allStatTotals;
+    }
+}
+
+function getPvpStatToAdd(pvpResistsAdded, statKey) {
+    if (pvpResistsAdded
+        && statKey.match("(fire|water|air|neut|earth)res(per)?")) {
+        return pvpStatKey = "pvp" + statKey;
+    } else {
+        return null;
+    }
+}
+
+function updateDiffs(allCharIds) {
+    var newStatsDict = getAllStatsDict();
+
+    var pvpResistsAdded = $("input[name='pvp_resists_added']").is(':checked');
+    $.each(newStatsDict[allCharIds[0]], function(statKey) {
+        var positiveValue = newStatsDict[allCharIds[1]][statKey];
+        var negativeValue = newStatsDict[allCharIds[0]][statKey];
+        var valueToWrite;
+        if (positiveValue === '-') {
+            valueToWrite = '-';
+        } else {
+            var pvpStatKey = getPvpStatToAdd(pvpResistsAdded, statKey)
+            if (pvpStatKey) {
+                positiveValue += newStatsDict[allCharIds[1]][pvpStatKey];
+                negativeValue += newStatsDict[allCharIds[0]][pvpStatKey];
+            }
+            
+            var diffValue = positiveValue - negativeValue;
+            var diffValueString = diffValue.toString();
+            if (diffValue < 0) {
+                diffValueString = "<span class='red-text'>" + diffValueString + "</span>";
+            } else if (diffValue > 0) {
+                diffValueString = "<span class='green-text'>" + diffValueString + "</span>";
+            }
+            valueToWrite = diffValueString;
+        }
+        $("td[name=stat_value_" + statKey + "_diff]").html(valueToWrite);
+    });
+}
+
+function updateAllStats(allCharIds) {
+    var newStatsDict = getAllStatsDict();
+    
+    var pvpResistsAdded = $("input[name='pvp_resists_added']").is(':checked');
+    $.each(newStatsDict[allCharIds[0]], function(statKey) {
+        var bestChars = null;
+        var bestCharValue = Number.NEGATIVE_INFINITY;
+    
+        $.each(allCharIds, function(i, charId) {
+            var newStats = newStatsDict[charId];
+            var options = allOptions[charId];
+            var statValue = newStats[statKey];
+
+            var pvpStatKey = getPvpStatToAdd(pvpResistsAdded, statKey)
+            if (pvpStatKey) {
+                statValue += newStats[pvpStatKey];
+            }
+            
+            if (statValue > bestCharValue) {
+                bestCharValue = statValue;
+                bestChars = [charId];
+            } else if (statValue == bestCharValue) {
+                bestChars.push(charId);
+            }
+            
+            var statValueString;
+            if ((statKey === "ap" && options["ap_exo"] === true)
+                || (statKey === "mp" && options["mp_exo"] === true)
+                || (statKey === "range" && options["range_exo"] === true)) {
+                statValueString = (statValue - 1).toString() + "+1";
+            } else {
+                statValueString = statValue.toString();
+            }
+            if (statValue < 0) {
+                statValueString = "<span class='red-text'>" + statValueString + "</span>";
+            }
+            $("td[name=stat_value_" + statKey + "_" + charId + "]").html(statValueString);
+        });
+        
+        if (bestChars != null
+            && allCharIds.length > 2
+            && bestChars.length < allCharIds.length) {
+            $.each(bestChars, function(i, charId) {
+                $("td[name=stat_value_" + statKey + "_" + charId + "]").wrapInner("<b></b>");
+            });
+        }
+    });
+}
+
+function updateStatsTable() {
+    updateAllStats(allCharIds);
+    if (allCharIds.length == 2) {
+        updateDiffs(allCharIds);
+    }
+}
+
+$(document).ready(function() {
+    initLinkSharing();
+    $("#link_sharing_button").click(function(e) {
+        e.preventDefault();
+        setLinkSharing();
+    });
+    $("#link_sharing_url_text").click(function(e) {
+        this.select();
+    });
+
+    updateStatsTable();
+    $("input[name='total_mode']").change(updateStatsTable);
+    $("input[name='pvp_resists_added']").change(updateStatsTable);
+    $(".solution-items-icon").click(function() {
+        if ($(this).prop('id') != 'None') {
+            getItemStats($(this).prop('id'));
+        }
+    });
+
+    $("#blanket").click(function() {
+         top = $(window).scrollTop().pageYOffset + 10;
+         popupSeriously(top);
+    });
+    
+    $("#link_add_set").click(function() {               
+        $("#compare_form").submit();
+    });
+});
+
+</script>
+    
+{% endblock %}
+

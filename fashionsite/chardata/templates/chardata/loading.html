@@ -1,0 +1,66 @@
+{% load i18n %}
+{% load static_s3 %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'chardata/home.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static css_files.home %}" class="home-css css-file">
+<script src="{% static 'chardata/loading.js' %}"></script>
+<div class="loading">
+    {% include "chardata/main-header.html" with char=char %}
+    <br>
+    <h3 align="center" class="tailoring">
+        {% if char.char_name and char.char_name != '' %}
+            {% blocktrans with char_name=char.char_name %}Tailoring a set for {{char_name}}{% endblocktrans %}
+        {% else %}
+            {% blocktrans %}Tailoring a set{% endblocktrans %}
+        {% endif %}
+    </h3>
+    <br>
+    <div align="center">
+        <img id="loadingimg"></img>
+    </div>
+    <br>
+    <div class='marquee'>
+        <div class='marquee-text'>
+        </div>
+    </div>
+</div>
+
+<script>
+var language = '{{ language | safe }}';
+var marquee = $('div.marquee');
+
+marquee.each(function() {
+    var mar = $(this);
+    var indent = mar.width();
+    var width = mar.width();
+    
+    $(".marquee-text").text(getRandomSentence(language));
+    var textWidth = $(".marquee-text").width();
+    var middle = Math.floor(width/2 - textWidth/2);
+    var i = 0;
+    mar.marquee = function() {
+        mar.css('text-indent',indent);
+        if (indent < -1 * textWidth) {
+            indent = mar.width();
+            mar.css('text-indent',indent);
+            $(".marquee-text").text(getRandomSentence(language));
+            textWidth = $(".marquee-text").width();
+            Math.floor(middle = width/2 - textWidth/2);
+            i = 0;
+        }
+        var velocity = 15;
+        
+        if (indent === middle && i < 100) {
+            i++;
+        } else {
+            if (indent > middle && indent - velocity < middle){
+                indent = middle;
+            } else {
+                indent -= velocity;
+            }
+        }
+        
+    };
+    mar.data('interval',setInterval(mar.marquee,1000/60));
+});
+</script>

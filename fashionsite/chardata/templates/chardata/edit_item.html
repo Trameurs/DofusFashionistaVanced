@@ -1,0 +1,696 @@
+{% extends 'chardata/base.html' %}
+
+{% block title %}The Dofus Fashionista: Edit Item{% endblock %}
+
+{% load static_s3 %}
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+{% endblock %}
+
+{% block main %}
+<h1 align="center">Edit Item</h1>
+<div align="center" style="display: table-cell; width: 400px">
+
+        <table class='register'>
+          <tr class='register-line'>
+            <td class='input-name'>Item ID</td> 
+            <td align="left"><input class='input-value pretty-input change-modifies-state' id="input-item-id" type="number" name="item-id" min="0" maxlength="6" style="width: 64px;" /></td>
+          </tr>  
+          
+          <tr class='register-line'>
+            <td class='input-name'>Item Name<br><br><br></td> 
+            <td align="left"><input class='input-value pretty-input change-modifies-state edit-item-long-input' id="input-item-name" name="name" maxlength="50" />
+            <br><br><br></td>
+          </tr>  
+          
+          <tr class='register-line'>
+            <td class='input-name'>New Name</td> 
+            <td align="left"><input class='input-value pretty-input change-modifies-state edit-item-long-input' id="input-new-item-name" name="name" maxlength="50" /></td>
+          </tr>  
+          
+          <tr class='register-line'>
+            <td class='input-name'>Item Level</td> 
+            <td align="left" style="padding: 0px 3px;"><input class='input-value pretty-input change-modifies-state' id="input-item-level" type="number" name="level" min="1" max="200" required="required" style="width: 40px;"/></td>
+          </tr>  
+          
+          <tr class='register-line'>
+            <td class='input-name'>Ankama ID</td> 
+            <td align="left" style="padding: 0px 3px;"><input class='input-value pretty-input change-modifies-state' id="input-ankama-id" type="number" name="level" min="0" required="required" style="width: 60px;"/></td>
+          </tr>  
+          
+          <tr class='register-line'>
+            <td class='input-name'>Ankama Type</td> 
+            <td align="left" style="padding: 0px 3px;"><select name="class" class="change-modifies-state" id="input-ankama-type" required="required">
+                        <option value="equipment">Equipment</option>
+                        <option value="mounts">Mount</option>
+                </select>
+          </tr>  
+          
+          <tr class='register-line'>
+            <td class='input-name'>Item Type</td> 
+            <td align="left"> 
+            <select name="type" class="change-modifies-state" id="item_type" required="required">
+                {% for t in types %}
+                    <option value="{{t}}">{{t}}</option>
+                {% endfor %}
+            </select>
+            </td>
+          </tr>  
+          
+          
+          <tr class='register-line'>
+            <td class='input-name'>Dofus Touch</td> 
+            <td align="left"><input type="checkbox" id="checkbox-dofus-touch"></td>
+          </tr>  
+          
+          <tr class='register-line'>
+            <td class='input-name'>Item Set</td>
+            <td align="left"><input class='input-value pretty-input change-modifies-state' id="input-item-set" name="set" maxlength="50" required="required"/></td>
+          </tr>
+          
+          <tr class='register-line'>
+            <td class='input-name'>  </td> 
+            <td><br></td>
+          </tr>  
+        </table>
+
+    <div class='input-name' align="center" style="text-align: center;"> Item Stats </div>
+    <table align="center" id="form_container">
+    </table>
+    <br>
+    <div class='input-name' align="center" style="text-align: center;"> Item Conditions </div>
+    <table align="center" id="cond_container">
+    </table>
+    <br>
+    <div class='input-name' align="center" style="text-align: center;"> Item Weird Conditions </div>
+    <div class='input-name' align="center" style="text-align: center;"><label><input type="checkbox" id="checkbox-light-set">Light Set (Set bonus < 2)</label></div>
+    <br>
+    
+    {% for lang in languages %}
+    <div class='input-name' align="center" style="text-align: center;"> Extra Lines ({{lang}}) </div>
+    <table align="center" id="extra{{lang}}_container">
+    </table>
+    <br>
+    {% endfor %}
+    
+    <br>
+    <div id="weapon_stuff">
+        <br>
+        <table class='register'>
+              <tr class='register-line'>
+                <td class='input-name'>Weapon Type</td> 
+                <td align="left"> 
+                <select name="class" class="change-modifies-state" id="select-weapon-type" required="required">
+                        <option value="Axe">Axe</option>
+                        <option value="Bow">Bow</option>
+                        <option value="Dagger">Dagger</option>
+                        <option value="Hammer">Hammer</option>
+                        <option value="Pickaxe">Pickaxe</option>
+                        <option value="Scythe">Scythe</option>
+                        <option value="Shovel">Shovel</option>
+                        <option value="Staff">Staff</option>
+                        <option value="Sword">Sword</option>
+                        <option value="Tool">Tool</option>
+                        <option value="Wand">Wand</option>
+                </select>
+                </td>
+              </tr>  
+              
+              <tr class='register-line'>
+                <td class='input-name'>AP</td> 
+                <td align="left" style="padding: 0px 3px;"><input class='input-value pretty-input change-modifies-state' id="input-weapon-ap" type="number" name="level" style="width: 40px;"/></td>
+              </tr>  
+              
+              <tr class='register-line'>
+                <td class='input-name'>Critical Hit Rate</td> 
+                <td align="left" style="padding: 0px 3px;"><input class='input-value pretty-input change-modifies-state' id="input-weapon-chr" type="number" name="level" style="width: 40px;"/></td>
+              </tr>  
+              
+              <tr class='register-line'>
+                <td class='input-name'>Critical Hit Bonus</td> 
+                <td align="left" style="padding: 0px 3px;"><input class='input-value pretty-input change-modifies-state' id="input-weapon-chb" type="number" name="level" style="width: 40px;"/></td>
+              </tr>  
+            </table>
+            
+                  <label><input type="checkbox" class="click-modifies-state" name="onehanded" value="onehanded" id="weapon-one-handed"><span class='input-name'>One-handed</span></label>
+            <br>
+        <br>
+        <div class='input-name' align="center" style="text-align: center;"> Weapon Hits </div>
+        <table align="center" id="weapon_hits">
+        </table>
+        <br>
+    </div>
+    
+    <div id="or_item_stuff">
+    </div>
+    <label><input type="checkbox" class="click-modifies-state" name="removed-item" value="removed-item" id="removed-item"><span class='input-name'>Removed</span></label>
+            <br>
+    <table>
+    <tr>
+    <td colspan="2">
+        <span id="error-text" class="error-message"></span>
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <input type="button" class='button-generic' id="delete-button" value="Delete" />
+    </td>
+    <td>
+        <input type="button" class='button-generic' id="save-button" value="Save" />
+    </td>
+    </tr>
+    </table>
+
+</div>
+
+<div align="center" style="display: table-cell; width: 350px">
+    <table>
+        {% for lang in non_en_languages %}
+        <tr>
+            <td class='input-name' align="right">Name ({{lang}})<td>
+            <td align="left"><input class='input-value pretty-input change-modifies-state edit-item-long-input' id="input-translated-name-{{lang}}" name="name_{{lang}}" maxlength="50" /></td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% include "chardata/jqueryui.html" %}
+<script src="{% static "chardata/mousetrap.min.js" %}"></script>
+<script>
+$.ajaxSetup({
+  data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+});
+
+var all_stats = {{stats_order | safe}};
+var itemId = {{item_id | safe}};
+
+function addIfNeeded(type) {
+    var allselected = true;
+    if (type === 'stat') {
+        var selects = $('.stat_select');
+    } else if (type.indexOf('extra') == 0) {
+        var selects = $('.' + type + '-input');
+    } else if (type === 'condition') {
+        var selects = $('.cond_stat_select');
+    } else if (type === 'hit') {
+        var selects = $('.hit_stat_select');
+    }
+    $.each(selects, function(index, sel_box) {
+        if (!sel_box.value) {
+            allselected = false;
+        }
+    });
+    if (allselected == true) {
+       addFields(type);
+    }
+}
+
+function addFields(type) { 
+    if (type === 'hit') {
+        return addWeaponHit();
+    } else if (type.indexOf('extra') == 0) {
+        return addExtra(type);
+    }
+    
+    var line_container = $("<tr></tr>");
+    if (type === 'condition') {
+        $("#cond_container").append(line_container);
+    } else if (type === 'stat') {
+        $("#form_container").append(line_container);
+    }
+    line_container.append($("<td style='width: 30px'></td>"));
+    var cell_container = $("<td></td>");
+    var select = null;
+    line_container.append(cell_container);
+    if (type === 'condition') {
+        var select = $("<select class='cond_stat_select'></select>");
+        select.change(function() {
+            addIfNeeded('condition');
+        });
+    } else if (type === 'stat') {
+        var select = $("<select class='stat_select'></select>");
+        select.change(function() {
+            addIfNeeded('stat');
+        });
+    }
+    
+    select.append($("<option></option>"));
+    $.each(all_stats, function(index, value) {
+        select.append($("<option value='" + value + "'>" + value + "</option>"));
+     });
+    select.prop('selectedIndex', -1);
+
+    cell_container.append(select);
+
+    if (type === 'condition') {
+        var select2 = $("<select class='min_max_stat_select'></select>");
+        select2.append($("<option value='<'> < </option>"));
+        select2.append($("<option value='>'> > </option>"));
+        cell_container = $("<td align='center'></td>");
+        cell_container.append(select2);
+        line_container.append(cell_container);
+    }
+    
+    line_container.append($("<td style='width: 81px'><input name='min_Vitality' class='pretty-input' type='number' min='-9999' max='9999' autocomplete='off'></input></td>"));
+
+    appendRemoveButton(line_container);
+    
+    line_container.append($("<br>"));
+
+    var input = line_container.find("input");
+    select.change(function() {
+        input.attr('name', "min_" + this.value);
+    });
+    
+    return line_container;
+}
+
+function addExtra(type) {
+    var lineContainer = $("<tr class='extra-row " + type + "-row'></tr>");
+    
+    $("#" + type + "_container").append(lineContainer); 
+    
+    var cellContainer = $("<td></td>");
+    var input = $("<input class='pretty-input " + type + "-input edit-item-long-input' autocomplete='off'></input>");
+    cellContainer.append(input);
+    lineContainer.append(cellContainer);
+    
+    input.change(function() {
+        addIfNeeded(type);
+    });
+    
+    appendRemoveButton(lineContainer);
+    
+    return lineContainer;
+}
+
+function appendRemoveButton(lineContainer) {
+    var removeButton = $("<td style='width: 30px'><div style='padding-top: 3px'><img src='{% static "chardata/cross-icon.png" %}'></div></td>");
+    lineContainer.append(removeButton);
+
+    removeButton.click(function() {
+        $(this).parent().remove();
+    });
+}
+
+function addWeaponHit() {
+    var line_container = $("<tr></tr>");
+    
+    $("#weapon_hits").append(line_container); 
+     
+    line_container.append($("<td style='width: 30px'></td>"));
+    var cell_container = $("<td></td>");
+    
+    line_container.append(cell_container);
+    var select = $("<select class='hit_type_select'></select>");
+    select.append($("<option></option>"));
+    select.append($("<option value='Heals'> Heals </option>"));
+    select.append($("<option value='Steals'> Steals </option>"));
+    cell_container.append(select);
+    
+    
+    line_container.append($("<td><input name='min_Vitality' class='pretty-input min-hit' type='number' min='-999' max='999' autocomplete='off'></input></td>")); 
+    line_container.append($("<td><input name='min_Vitality' class='pretty-input max-hit' type='number' min='-999' max='999' autocomplete='off'></input></td>"));
+
+    cell_container = $("<td></td>");
+    line_container.append(cell_container);
+    var select = $("<select class='hit_stat_select'></select>");
+    select.change(function() {
+        addIfNeeded('hit');
+    });
+    select.append($("<option></option>"));
+    hit_stats = ['Neutral', 'Earth', 'Fire', 'Air', 'Water'];
+    $.each(hit_stats, function(index, value) {
+        select.append($("<option value='" + value + "'>" + value + "</option>"));
+     });
+    select.prop('selectedIndex', -1);
+    cell_container.append(select);
+    
+    appendRemoveButton(line_container);
+    
+    line_container.append($("<br>"));
+
+    var input = line_container.find("input");
+    select.change(function() {
+        input.attr('name', "min_" + this.value);
+    });
+    
+    return line_container;
+}
+
+function showWeaponStuff() {
+    if ($('#item_type').val() === 'Weapon') {
+        $('#weapon_stuff').show();
+    } else {
+        $('#weapon_stuff').hide();
+    }
+}
+
+function createItemObject() {
+    var item = {};
+    item.id = $("#input-item-id").val();
+    item.name = $("#input-new-item-name").val();
+    item.ankama_id = $('#input-ankama-id').val();
+    item.ankama_type = $('#input-ankama-type').val();
+    item.level = $('#input-item-level').val();
+    item.set = $('#input-item-set').val();
+    item.type = $('#item_type').val();
+    item.removed = $('#removed-item').is(":checked");
+    item.dofus_touch = $('#checkbox-dofus-touch').is(":checked");
+    item.weird_conditions = {};
+    item.weird_conditions['light_set'] = $('#checkbox-light-set').is(":checked");
+
+    var conditions = [];            
+    $.each($(".cond_stat_select"), function() {
+        var condition = {};
+        var condStatSelect = $(this);
+        condition.stat = condStatSelect.val();
+        var line = condStatSelect.parent().parent();
+        condition.min_max = line.find(".min_max_stat_select").val();
+        condition.value = line.find(".pretty-input").val();
+        conditions.push(condition);
+    });
+    item.conditions = conditions;
+ 
+    var stats = [];            
+    $.each($(".stat_select"), function() {
+        var statLine = {};
+        var statSelect = $(this);
+        statLine.stat = statSelect.val();
+        var line = statSelect.parent().parent();
+        statLine.value = line.find(".pretty-input").val();
+        stats.push(statLine);
+    });
+    item.stats = stats;
+    
+    item.extras = {};
+    var extras;
+    {% for lang in languages %}
+    extras = [];
+    $.each($(".extra{{lang}}-input"), function() {
+        extras.push($(this).val());
+    });
+    item.extras.{{lang}} = extras;
+    {% endfor %}
+    
+    {% for lang in non_en_languages %}
+    item.translated_name_{{lang}} = $('#input-translated-name-{{lang}}').val();
+    {% endfor %}
+    
+    if (item.type === 'Weapon') {
+        item.ap = $('#input-weapon-ap').val();
+        item.crit_chance = $('#input-weapon-chr').val();
+        item.crit_bonus = $('#input-weapon-chb').val();
+        item.one_handed = $('#weapon-one-handed').prop('checked');
+        item.weapon_type = $('#select-weapon-type').val();
+        
+        var hits = [];            
+        $.each($(".hit_type_select"), function(index) {
+            var hitLine = {};
+            hitSelect = $(this);
+            hitLine.type = hitSelect.val();
+            var line = hitSelect.parent().parent();
+            hitLine.min_hit = line.find(".min-hit").val();
+            hitLine.max_hit = line.find(".max-hit").val();
+            hitLine.stat = line.find(".hit_stat_select").val();
+            hitLine.index = index;
+            var hitType = line.find(".hit_type_select");
+            hitLine.steals = false;
+            if (hitType.val() === "Steals") {
+                hitLine.steals = true;
+            }
+            hitLine.heals = false;
+            if (hitType.val() === "Heals") {
+                hitLine.heals = true;
+            }
+            hits.push(hitLine);
+        });
+        item.hits = hits;            
+    }
+    return item;
+}
+
+function sendItemToModify() {
+    var new_item = createItemObject();
+    console.log(new_item);
+    $.post("/update_item/",
+        {item: JSON.stringify(new_item)},
+        handleEditResponse)
+}
+
+function handleEditResponse(data) {
+    console.log(data);
+    if (data == "ok") {
+        setError("");
+        window.location.href=window.location.href;
+    } else {
+        setError(data);
+    }
+}
+
+function clearFields() {
+    $('#input-item-id').val('');
+    $('#input-item-name').val('');
+    $('#input-new-item-name').val('');
+    $('#input-ankama-id').val('');
+    $('#input-ankama-type').val('');
+    $('#input-item-level').val('');
+    $('#input-item-set').val('');
+    $('#item_type').val('');
+    $('#removed-item').val('');
+    $('#checkbox-dofus-touch').prop('checked', false);
+    $('#checkbox-light-set').prop('checked', false);
+    showWeaponStuff();
+    $(".cond_stat_select").parent().parent().remove();
+    addFields('condition');
+    $(".stat_select").parent().parent().remove();
+    addFields('stat');
+    $(".extra-row").remove();
+    {% for lang in languages %}
+    addExtra("extra{{lang}}");
+    {% endfor %}
+    
+    {% for lang in non_en_languages %}
+    $('#input-translated-name-{{lang}}').val('');
+    {% endfor %}
+    
+    // Weapon stuff
+    $('#input-weapon-ap').val('');
+    $('#input-weapon-chr').val('');
+    $('#input-weapon-chb').val('');
+    $('#weapon-one-handed').prop('checked', false);
+    
+    $(".hit_type_select").parent().parent().remove();
+    addFields('hit');
+}
+
+function fillFieldsFromItem(data) {
+    $('#input-item-id').val(data.id);
+    $('#input-item-name').val(data.name);
+    $('#input-new-item-name').val(data.name);
+    $('#input-ankama-id').val(data.ankama_id);
+    $('#input-ankama-type').val(data.ankama_type);
+    $('#input-item-level').val(data.level);
+    $('#input-item-set').val(data.set);
+    $('#item_type').val(data.type);
+    $('#removed-item').prop('checked', data.removed);
+    $('#checkbox-dofus-touch').prop('checked', data.dofus_touch);
+    $('#checkbox-light-set').prop('checked', data.weird_conditions['light_set']);
+    showWeaponStuff();
+    
+    $(".cond_stat_select").parent().parent().remove();
+    $.each(data["conditions"], function(stat_name, stat_value) {
+        var line = addFields('condition');
+        line.find(".cond_stat_select").val(stat_name);
+        line.find(".min_max_stat_select").val(stat_value[0]);
+        line.find(".pretty-input").val(stat_value[1]);
+    });
+    addFields('condition');
+    
+    $(".stat_select").parent().parent().remove();
+    $.each(data.stats, function(stat_name, stat_value) {
+        var line = addFields('stat');
+        line.find(".stat_select").val(stat_value[0]);
+        line.find(".pretty-input").val(stat_value[1]);
+    });
+    addFields('stat');
+    
+    $(".extra-row").remove();
+    
+    $.each(data.extras, function(lang, extrasForLang) {
+        var extraLang = 'extra' + lang;
+        $.each(extrasForLang, function(i, extraLine) {
+            var line = addFields(extraLang);
+            line.find("." + extraLang + "-input").val(extraLine);
+        });
+    });
+    {% for lang in languages %}
+    addExtra("extra{{lang}}");
+    {% endfor %}
+    
+    {% for lang in non_en_languages %}
+    $('#input-translated-name-{{lang}}').val(data['translated_name_{{lang}}']);
+    {% endfor %}
+    
+    if (data.type === 'Weapon') {
+        $('#input-weapon-ap').val(data.ap);
+        $('#input-weapon-chr').val(data.crit_chance);
+        $('#input-weapon-chb').val(data.crit_bonus);
+        $('#weapon-one-handed').prop('checked', data.one_handed);
+        $('#select-weapon-type').val(data.weapon_type);
+        
+        $(".hit_type_select").parent().parent().remove();
+        $.each(data["hits"], function(stat_name, stat_value) {
+            var line = addWeaponHit();
+            line.find(".min-hit").val(stat_value[0]);
+            line.find(".max-hit").val(stat_value[1]);
+            line.find(".hit_stat_select").val(stat_value[2]);
+            var hitType = line.find(".hit_type_select");
+            if (stat_value[3]) {
+                hitType.val("Steals");
+            } else if (stat_value[4]) {
+                hitType.val("Heals");
+            }
+        });
+        addFields('hit');
+    }
+}
+
+function buildOrItems(orItems) {
+    var orItemStuff = $("#or_item_stuff");
+    orItemStuff.empty();
+    
+    if (orItems.length > 0) {
+        orItemStuff.append($("<div>Other Versions</div>"));
+        $.each(orItems, function(i, orItem) {
+            var option = $("<div><a href='#'>" + orItem.name + "</a></div>");
+            orItemStuff.append(option);
+            option.find("a").click(function(e) {
+                e.preventDefault();
+                loadItemWithId(orItem.id);
+            });
+        });
+    }
+}
+
+function loadItemWithId(id) {
+    $("#input-item-id").val(id);
+    handleItemIdSearch();
+}
+
+function deleteItem() {
+    var itemId = $("#input-item-id").val();
+    $.post("/delete_item/",
+           {itemId: itemId},
+           handleEditResponse)
+}
+
+function setError(error) {
+    $("#error-text").text(error);
+}
+
+function handleItemIdSearch() {
+    var idInput = $("#input-item-id");
+    var idValue = idInput.val();
+    if (idValue) {
+        $.post("/choose_item/",
+            {id: idValue},
+            function (data) {
+                if (!$.isEmptyObject(data)) {
+                    fillFieldsFromItem(data.item);
+                    buildOrItems(data.or_items);
+                } else {
+                    clearFields();
+                    $('#input-item-id').val(idValue);
+                }
+            });
+    } else {
+        clearFields();
+    }
+}
+
+function handleItemNameSearch(event, ui) {
+    var nameValue = ui.item.value;
+    if (nameValue) {
+        $.post("/choose_item/",
+            {name: nameValue},
+            function (data) {
+                if (!$.isEmptyObject(data)) { 
+                    fillFieldsFromItem(data.item);
+                    buildOrItems(data.or_items);
+                } else {
+                    clearFields();
+                    $('#input-item-name').val(nameValue);
+                }
+            });
+    } else {
+        clearFields();
+    }
+}
+
+$(document).ready(function() {
+    $("#save-button").click(function() {
+        sendItemToModify();
+    });
+    $("#delete-button").click(function() {
+        deleteItem();
+    });
+    
+    addIfNeeded('stat');
+    addIfNeeded('condition');
+    {% for lang in languages %}
+    addExtra("extra{{lang}}");
+    {% endfor %}
+    addWeaponHit();
+    $('#weapon_stuff').hide();
+    var select = $('#item_type');
+    select.change(function() {
+        showWeaponStuff();
+    });
+    
+    var nameInput = $("#input-item-name").autocomplete({
+        source: function(request, response) {
+            $.post("/edit_item_search_item/",
+               {name: request},
+               function (data) {
+                   response(data);
+               });
+        },
+        open: function() { 
+            $('#input-item-name').autocomplete("widget").width(250);
+        },
+        select: handleItemNameSearch
+    });
+    
+    var setInput = $("#input-item-set").autocomplete({
+        source: function(request, response) {
+            $.post("/edit_item_search_sets/",
+               {name: request},
+               function (data) {
+                   response(data);
+               });
+        },
+        open: function() { 
+            $('#input-item-set').autocomplete("widget").width(250);
+        }
+    });
+    
+    var idInput = $("#input-item-id");
+    idInput.change(handleItemIdSearch);
+    
+    if (itemId) {
+        loadItemWithId(itemId);
+    }
+    
+    Mousetrap.bind('mod+s', function(e) {
+        if (e.preventDefault) {
+            e.preventDefault();
+        } else {
+            // internet explorer
+            e.returnValue = false;
+        }
+        sendItemToModify();
+    });
+});
+</script>
+{% endblock %}

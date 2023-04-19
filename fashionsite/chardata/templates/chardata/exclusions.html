@@ -1,0 +1,183 @@
+{% extends 'chardata/base.html' %}
+
+{% load i18n %}
+{% load static_s3 %}
+
+{% block title %}The Dofus Fashionista: {% trans "Forbid Items" %}{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/exclusions.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.exclusions %}" class="exclusions-css css-file">
+{% endblock %}
+
+{% block main %}
+
+<link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+<link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+
+<h1 align="center">{% trans "Forbid Items" %}</h1>
+
+<p align="center" class='big-text'>{% trans "Declare items that cannot be used on your character's set. By doing this you can avoid items that are expensive, hard to obtain, require a dungeon to be complete, or are just plain ugly." %}</p>
+
+<form id="main_form" method="post">
+    {% csrf_token %}
+
+    <div align="center" id="form_container">
+        <input id="input-item-to-forbid">
+        <button id="button-forbid" class="button-generic">{% trans "Forbid" %}</button>
+    </div>  
+
+    <br>
+  <div align="center">
+    {% include "chardata/state_engine_all_buttons.html" with include_tailor=True %}
+    <br><br>
+    </div>
+</form>
+
+<div class="exclusions-types-section">
+    {% for types_in_column in type_columns %}
+    <div class="exclusions-types-column">
+        {% for item_type in types_in_column %}
+        <div id="div-forbidden-gear-{{item_type.id}}" class="exclusions-types-cell">
+            <div class="type-name-span" align="center">
+            {% if item_type.id == 'Dofus' %}
+                {% trans "Dofus or Trophy" %}
+            {% else %}
+                {{item_type.name}}
+            {% endif %}
+            </div>
+            <table id="table-forbidden-gear-{{item_type.id}}" class="excluded-items-for-type-container">
+            </table>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+
+{% include "chardata/jqueryui.html" %}
+
+<script src="{% static "chardata/stateengine.js" %}"></script>
+<script>
+    $.ajaxSetup({
+        data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+    });
+           
+    var allItems = {{all_items_json | safe}};
+    var allItemsNames = {{all_items_names_json | safe}};
+    var allSets = {{sets_with_items_json | safe}};
+    var excludedItemsInput = {{exclusions | safe}};
+
+    var itemSet;
+    var itemsNotExcludedSet;
+    var itemsExcludedSet;
+    var itemsExcludedSetByType;
+    var itemList;
+    
+    function init(excludedItems) {
+        itemSet = {};
+        itemsNotExcludedSet = {};
+        itemsExcludedSet = {};
+        itemsExcludedSetByType = {};
+        itemList = [];
+        $(".excluded-items-for-type-container").empty();
+        $.each(allItems, function (itemId, itemType) {
+            itemList.push(itemId);
+            itemSet[itemId] = true;
+            itemsNotExcludedSet[itemId] = true;
+        });
+        $.each(excludedItems, function (i, excludedItem) {
+            forbidItem(excludedItem, false);
+        });
+    }
+    
+    function onForbidButtonClick(event) {
+        event.preventDefault();
+        var itemName = $("#input-item-to-forbid").val();
+        if (allItemsNames[itemName] == null) {
+            items = allSets[itemName];
+            $.each(items, function (i, item) {
+                var item_to_forbid = {'id': allItemsNames[item], 'name': item}
+                forbidItem(item_to_forbid, true);
+            });
+        } else {
+            var item_to_forbid = {'id': allItemsNames[itemName], 'name': itemName}
+            forbidItem(item_to_forbid, true);
+        }
+    }
+
+    function forbidItem(item, changeState) {
+        if (item.id in itemSet && !(item.id in itemsExcludedSet)) {
+            var itemType = allItems[item.id];
+            delete itemsNotExcludedSet[item.id];
+            itemsExcludedSet[item.id] = true;
+            if (!(itemType in itemsExcludedSetByType)) {
+                itemsExcludedSetByType[itemType] = {};
+            }
+            itemsExcludedSetByType[itemType][item.id] = true;
+            $("#input-item-to-forbid").val("");
+            var newEntry = createForbiddenEntry(item);
+            $("#table-forbidden-gear-" + itemType).append(newEntry);
+            updateContainer(itemType);
+
+            if (changeState) {
+                setChangesPendingStateEngine(true);
+            }
+        }
+    }
+
+    function unforbidItem(item, changeState) {
+        var itemType = allItems[item.id];
+        itemsNotExcludedSet[item.id] = true;
+        delete itemsExcludedSet[item.id];
+        delete itemsExcludedSetByType[itemType][item.id];
+        updateContainer(itemType);
+        if (changeState) {
+            setChangesPendingStateEngine(true);
+        }
+    }
+    
+    function updateContainer(itemType) {
+        var header = $("#div-forbidden-gear-" + itemType).find(".type-name-span");
+        var table = $("#table-forbidden-gear-" + itemType);
+        if (Object.keys(itemsExcludedSetByType[itemType]).length > 0) {
+            header.css("border-radius", "10px 10px 0px 0px");
+        } else {
+            header.css("border-radius", "10px");
+            table.empty();
+        }
+    }
+
+    function createForbiddenEntry(item) {
+        var newDiv = $("<tr><td><img src='{% static "chardata/cross-icon.png" %}' class='button-unforbid'></td><td class='forbidden-item'> " + item.name + "</td></tr>");
+        newDiv.find(".button-unforbid").click(function() {
+            unforbidItem(item, true);
+            newDiv.remove();
+        });
+        return newDiv;
+    }
+
+    function postData() {
+        return {exclusions: JSON.stringify(Object.keys(itemsExcludedSet))};
+    }
+
+    $(document).ready(function() {
+        $("#button-forbid").click(onForbidButtonClick);
+        
+        setupStateEngine(init,
+            "{% url 'chardata.exclusions_view.exclusions_post' char_id %}",
+             excludedItemsInput,
+             postData);
+
+        var forbidInput = $("#input-item-to-forbid").autocomplete({
+            source: function(request, response) {
+                var results = $.ui.autocomplete.filter(Object.keys(allItemsNames), request.term);
+                response(results.slice(0, 10));
+            },
+            open: function() { 
+                $('#input-item-to-forbid').autocomplete("widget").width(250);
+            }
+        });
+    });
+</script>
+
+{% endblock %}

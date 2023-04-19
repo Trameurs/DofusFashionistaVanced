@@ -1,0 +1,312 @@
+{% extends 'chardata/base.html' %}
+
+{% block title %}The Dofus Fashionista: Edit Set{% endblock %}
+
+{% load static_s3 %}
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+{% endblock %}
+
+{% block main %}
+
+<h1 align="center">Edit Set</h1>
+    
+<div align="center" style="display: table-cell; width: 400px">
+        <table class='register'>
+          <tr class='register-line'>
+            <td class='input-name'>Set ID</td> 
+            <td align="left"><input class='input-value pretty-input change-modifies-state' id="input-set-id" type="number" min="0" maxlength="6" style="width: 64px;" /></td>
+          </tr>  
+          
+          <tr class='register-line'>
+            <td class='input-name'>Set Name<br><br><br></td> 
+            <td align="left"><input class='input-value pretty-input change-modifies-state' id="input-set-name" maxlength="50" />
+            <br><br><br></td>
+          </tr>  
+          
+          <tr class='register-line'>
+            <td class='input-name'>New Name</td> 
+            <td align="left"><input class='input-value pretty-input change-modifies-state' id="input-new-set-name" maxlength="50" /></td>
+          </tr>  
+          
+          <tr class='register-line'>
+            <td class='input-name'>Ankama ID</td> 
+            <td align="left" style="padding: 0px 3px;"><input class='input-value pretty-input change-modifies-state' id="input-ankama-id" type="number" name="id" min="0" required="required" style="width: 60px;"/></td>
+          </tr>  
+          
+          <tr class='register-line'>
+            <td class='input-name'></td> 
+            <td><br></td>
+          </tr>  
+        </table>
+</div>
+
+<div align="center" style="display: table-cell; width: 350px">
+    <table>
+        {% for lang in languages %}
+        <tr>
+            <td align="right">Name ({{lang}})<td>
+            <td align="left"><input class='input-value pretty-input change-modifies-state edit-item-long-input' id="input-translated-name-{{lang}}" name="name_{{lang}}" maxlength="50" /></td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div align="center">
+    <div class='input-name' align="center" style="text-align: center;"> Set Stats </div>
+    <table align="center" id="form_container">
+    </table>
+    <br>
+    <div id='items_stuff' align="center" style="text-align: center;"></div>
+    <br>
+
+    <table>
+    <tr>
+        <td colspan="2">
+            <span id="error-text" class="error-message"></span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" class='button-generic' id="delete-button" value="Delete" />
+        </td>
+        <td>
+            <input type="button" class='button-generic' id="save-button" value="Save" />
+        </td>
+    </tr>
+    </table>
+
+</div>
+{% include "chardata/jqueryui.html" %}
+
+<script>
+$.ajaxSetup({
+  data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+});
+
+var all_stats = {{stats_order | safe}};  
+
+function addIfNeeded(type) {
+    var allselected = true;
+    var selects = $('.stat_select');
+    $.each(selects, function(index, sel_box) {
+        if (!sel_box.value) {
+            allselected = false;
+        }
+    });
+    if (allselected == true) {
+       addFields(type);
+    }
+}
+
+function addFields(type) { 
+    var line_container = $("<tr></tr>");
+    $("#form_container").append(line_container);
+    line_container.append($("<td style='width: 30px'></td>"));
+    var cell_container = $("<td></td>");
+    line_container.append(cell_container);
+    var select = $("<select class='stat_select'></select>");
+    select.change(function() {
+        addIfNeeded('stat_set');
+    });
+    select.append($("<option></option>"));
+    $.each(all_stats, function(index, value) {
+        select.append($("<option value='" + value + "'>" + value + "</option>"));
+     });
+    select.prop('selectedIndex', -1);
+
+    cell_container.append(select);
+    
+    for (var i = 2; i <= 8; i++) {
+        line_container.append($("<td style='width: 81px'><input name='min_Vitality' id='stat-value-" + i + "' class='pretty-input' type='number' min='-9999' max='9999' autocomplete='off'></input></td>"));
+    }
+
+    var remove_button = $("<td style='width: 30px'><div style='padding-top: 3px'><img src='{% static "chardata/cross-icon.png" %}'></div></td>");
+    line_container.append(remove_button);
+
+    line_container.append($("<br>"));
+
+    var input = line_container.find("input");
+    select.change(function() {
+        input.attr('name', "min_" + this.value);
+    });
+    
+    remove_button.click(function() {
+        $(this).parent().remove();
+    });
+    
+    return line_container;
+}
+
+function createSetObject() {
+    var set = {};
+    set.id = $("#input-set-id").val();
+    set.name = $("#input-new-set-name").val();
+    set.ankamaId = $("#input-ankama-id").val();
+               
+    {% for lang in languages %}
+    set.translated_name_{{lang}} = $('#input-translated-name-{{lang}}').val();
+    {% endfor %}
+    
+    var stats = [];            
+    $.each($(".stat_select"), function() {
+        var statLine = {};
+        var statSelect = $(this);
+        var line = statSelect.parent().parent();
+        statLine.stat = statSelect.val();
+        statLine.values = [];
+        for (var i = 2; i <= 8; i++) {
+            statLine.values.push(line.find("#stat-value-" + i).val());
+        }
+        stats.push(statLine);
+    });
+    set.stats = stats;
+    
+    return set;
+}
+
+function sendSetToModify() {
+    var newSet = createSetObject();
+    $.post("/update_set/",
+        {set: JSON.stringify(newSet)},
+        handleEditResponse)
+}
+
+function handleEditResponse(data) {
+    console.log(data);
+    if (data == "ok") {
+        setError("");
+        window.location.href=window.location.href;
+    } else {
+        setError(data);
+    }
+}
+
+function buildItems(items) {
+    var itemsStuff = $("#items_stuff");
+    itemsStuff.empty();
+    
+    itemsStuff.append($("<div>Items</div>"));
+    $.each(items, function(i, item) {
+        var option = $("<div><a href='/edit_item/" + item.id + "'>" + item.name + "</a></div>");
+        itemsStuff.append(option);
+    });
+}
+
+function clearFields() {
+    $('#input-set-id').val('');
+    $('#input-set-name').val('');
+    $('#input-new-set-name').val('');
+    
+    {% for lang in languages %}
+    $('#input-translated-name-{{lang}}').val('');
+    {% endfor %}
+    
+    $(".stat_select").parent().parent().remove();
+    addFields('stat_set');
+}
+
+function handleSetIdSearch() {
+    var idInput = $("#input-set-id");
+    var idValue = idInput.val();
+    if (idValue) {
+        $.post("/choose_set/",
+            {id: idValue},
+            function (data) {
+                if (!$.isEmptyObject(data)) {
+                    fillFieldsFromSet(data.set);
+                    buildItems(data.items);
+                } else {
+                    clearFields();
+                    $('#input-set-id').val(idValue);
+                }
+            });
+    } else {
+        clearFields();
+    }
+}
+
+function handleSetNameSearch(event, ui) {
+    var nameValue = ui.item.value;
+    if (nameValue) {
+        $.post("/choose_set/",
+            {name: nameValue},
+            function (data) {
+                if (!$.isEmptyObject(data)) { 
+                    fillFieldsFromSet(data.set);
+                    buildItems(data.items);
+                } else {
+                    clearFields();
+                    $('#input-set-name').val(nameValue);
+                }
+            });
+    } else {
+        clearFields();
+    }
+}
+
+function fillFieldsFromSet(data) {
+    $('#input-set-id').val(data.id);
+    $('#input-set-name').val(data.name);
+    $('#input-new-set-name').val(data.name);
+    $('#input-ankama-id').val(data.ankama_id);
+    
+    {% for lang in languages %}
+    $('#input-translated-name-{{lang}}').val(data['translated_name_{{lang}}']);
+    {% endfor %}
+    
+    $(".stat_select").parent().parent().remove();
+    $.each(data.stats, function(index, statAndValues) {
+        var statName = statAndValues[0];
+        var statValues = statAndValues[1];
+        var line = addFields('stat_set');
+        line.find(".stat_select").val(statName);
+        for (var i = 2; i <= 8; i++) {
+            var value = (i in statValues) ? statValues[i] : '';
+            line.find("#stat-value-" + i).val(value);
+        }
+    });
+    addFields('stat_set');
+}
+
+function deleteSet() {
+    var setId = $("#input-set-id").val();
+    $.post("/delete_set/",
+           {setId: setId},
+           handleEditResponse)
+}
+
+function setError(error) {
+    $("#error-text").text(error);
+}
+
+$(document).ready(function() {
+    $("#save-button").click(function() {
+        sendSetToModify();
+    });
+    $("#delete-button").click(function() {
+        deleteSet();
+    });
+    
+    addIfNeeded('stat_set');
+    
+    var nameInput = $("#input-set-name").autocomplete({
+        source: function(request, response) {
+            $.post("/edit_item_search_sets/",
+               {name: request},
+               function (data) {
+                   response(data);
+               });
+        },
+        open: function() { 
+            $('#input-set-name').autocomplete("widget").width(250);
+        },
+        select: handleSetNameSearch
+    });
+    
+    var idInput = $("#input-set-id");
+    idInput.change(handleSetIdSearch);
+});
+</script>
+{% endblock %}

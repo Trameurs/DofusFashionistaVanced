@@ -1,0 +1,35 @@
+{% load i18n %}
+
+{% if char %}
+  <div class="proj_info">
+    <div style="display: table-cell; {% if is_guest or char_id and not user.is_anonymous %}width: 680px;{% else %}width: 840px;{% endif %}">
+    <table style="width: 100%;">
+      <tr>
+        <td><b>{% trans "Project Name" %}</b> {{char.name}}</td>
+        <td><b>{% trans "Build" %}</b> {{char.char_build}} {{wrapped_char.class_string}}</td>
+      </tr>
+      <tr>
+
+       {% if char.char_name and char.char_name != '' %}
+        <td><b>{% trans "Char" %}</b> {{char.char_name}}</td> 
+       {% else %}
+        <td></td> 
+       {% endif %}
+        <td><b>{% trans "Level" %}</b> {{char.level}}</td>
+      </tr>  
+    </table>
+    </div>
+  {% if is_guest %}
+  <div style="display: table-cell; vertical-align: middle; width: 200px;">
+    <a href="{% url 'chardata.projects_view.duplicate_someones_project' encoded_char_id %}" style='color: white; text-decoration: none;' class='submit-button button-generic copy-action-link'>{% trans "Copy this project" %}</a>
+  </div>
+  {% elif char_id %}
+  <div style="display: table-cell; vertical-align: middle; width: 200px; text-align: right; padding-right: 14px;">
+    <a href="{% url 'chardata.create_project_view.setup' char_id %}" style='color: white; text-decoration: none;' class='submit-button button-generic copy-action-link'>{% trans "Edit" %}</a>
+    {% if not user.is_anonymous %}
+    <a href="{% url 'chardata.projects_view.duplicate_my_project' char_id %}" style='color: white; text-decoration: none;' class='submit-button button-generic copy-action-link'>{% trans "Duplicate" %}</a>
+    {% endif %}
+  </div>
+  {% endif %}
+  </div>
+{% endif %}

@@ -1,0 +1,36 @@
+{% extends 'chardata/base.html' %}
+
+{% load i18n %}
+{% load static_s3 %}
+    
+{% block title %}The Dofus Fashionista: {% trans "No set suggestion found" %}{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+{% endblock %}
+
+{% block main %}
+<br><br>
+<table>
+    <tr>
+        <td>
+            <img src="{% static "chardata/designs/myCrying.png" %}"></img>
+        </td>
+        <td>
+            <div class='infeasible-title'>{% blocktrans %}We could not find a set that fits all your needs{% endblocktrans %}<div>
+            <div class='infeasible-body'>{% blocktrans %}Try one or more of the following tips and try again:{% endblocktrans %}
+                <ul>
+                    <li>{% blocktrans %}Remove or lower <a href={{mins_link}}>minimum characteristics</a> and raise their <a href={{weights_link}}>weights</a> instead{% endblocktrans %}</li>
+                    <li>{% blocktrans %}Check if you <a href={{lock_link}}>locked</a> an item with conditions that can't be met{% endblocktrans %}</li>
+                    <li>{% blocktrans %}<a href={{lock_link}}>Unlock</a> some items{% endblocktrans %}</li>
+                    <li>{% blocktrans %}Allow <a href={{exo_link}}>exo mages</a>{% endblocktrans %}</li>
+                    <li>{% blocktrans %}Check if you are asking for &#x00BD; crits on a char whose level is too low{% endblocktrans %}</li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+</table>
+
+{% endblock %}
+
