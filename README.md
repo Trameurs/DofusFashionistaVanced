@@ -3,7 +3,7 @@ The Dofus Fashionista, an equipment advisor for Dofus
 
 ## Install and Run Fashionista:
 
-$ git clone https://github.com/PiwiSlayer/DofusFashionista.git fashionista  
+$ git clone https://github.com/Trameurs/DofusFashionista.git fashionista  
 Add “export PYTHONPATH=/home/<\<user\>>/fashionista/fashionistapulp” at the end of ~/.bashrc  
 $ chmod 777 fashionista  
 $ chmod 777 fashionista/fashionistapulp/fashionistapulp  
