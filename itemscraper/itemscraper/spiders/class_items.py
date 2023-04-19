@@ -85,7 +85,7 @@ class ClassItemsSpider(scrapy.Spider):
         class_item['w_type'] = item_type
         item_level = e.xpath('.//div[@class=\'ak-level\']/text()')[0].extract().strip()
         class_item['level'] = int(item_level.split()[1])
-        print '%s - %s - %s' % (item_name, item_type, item_level)
+        print('%s - %s - %s' % (item_name, item_type, item_level))
         
         extra_lines = {}
         lang = 'en'
@@ -109,7 +109,7 @@ class ClassItemsSpider(scrapy.Spider):
         class_item['extra_lines'] = extra_lines
         yield class_item
         
-        print BASE_URLS
+        print(BASE_URLS)
         if '/en/' in response.request.url:
             for i in range(len(BASE_URLS)):
                 yield Request(BASE_URLS[i] % class_item['ankama_id'], callback = self.parse)

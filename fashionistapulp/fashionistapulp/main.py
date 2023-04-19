@@ -16,8 +16,8 @@
 # along with this program; if not, write to the Free Software Foundation,
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-from model import Model
-from model import ModelInput
+from .model import Model
+from .model import ModelInput
 import cProfile
 
 base_stats_by_attr = {}
@@ -172,10 +172,10 @@ def main():
                            {'AP': 10, 'MP': 4, 'Range': 2, 'Summon': 1},
                            {},
                            set(['Dofusteuse', 'Vulbis Dofus']),
-                           {key: 2*value for (key,value) in objective_values_3.iteritems()},
+                           {key: 2*value for (key,value) in objective_values_3.items()},
                            options_caso2))
     model.run(1)
-    print model.get_result_string()
+    print(model.get_result_string())
 
 #    model.setup(120, base_stats_by_attr, {'AP': 8, 'MP': 4, 'Range': 2},
 #                {'dofus1': 'Vagabond', 'shield': 'Stasili'}, set(['Dolmanax', 'Ochre Dofus']),

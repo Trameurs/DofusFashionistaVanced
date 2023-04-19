@@ -16,12 +16,12 @@
 # along with this program; if not, write to the Free Software Foundation,
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-from dofus_constants import TYPE_NAME_TO_SLOT_NUMBER, STAT_MAXIMUM, SOFT_CAPS
-from lpproblem import LpProblem2
-from modelresult import ModelResultMinimal
+from .dofus_constants import TYPE_NAME_TO_SLOT_NUMBER, STAT_MAXIMUM, SOFT_CAPS
+from .lpproblem import LpProblem2
+from .modelresult import ModelResultMinimal
 from pulp.solvers import PulpSolverError
-from restrictions import Restrictions
-from structure import get_structure
+from .restrictions import Restrictions
+from .structure import get_structure
 
 from collections import Counter
 
@@ -67,7 +67,7 @@ class Model:
      
         for item_set in self.sets_list:
             self.problem.setup_variable('s', item_set.id, 0, 9)
-            for slot_number in xrange(0, 10):
+            for slot_number in range(0, 10):
                 self.problem.setup_variable('ss', '%d_%d' % (item_set.id, slot_number), 0, 1)    
 
     def create_stat_total_variables(self):
@@ -83,9 +83,9 @@ class Model:
         self.stat_count = len(self.stats_list)
         
         for stat in self.main_stats_list:
-            for i in xrange(0, 6):
+            for i in range(0, 6):
                 self.problem.setup_variable('stat_point', 'statpoint_%d_%d' % (i, stat.id), 0, None)  
-            for i in xrange(0, 5):  
+            for i in range(0, 5):  
                 self.problem.setup_variable('stat_point_max', 'statpointmax_%d_%d' % (i, stat.id), 0, 1)  
     
     def create_light_set_variables(self):
@@ -340,13 +340,13 @@ class Model:
     def write_objective_function(self, objective_values, level):
         self.problem.init_objective_function()
 
-        for stat, value in objective_values.iteritems():
+        for stat, value in objective_values.items():
             if stat != 'meleeness':
                 stat_obj = self.structure.get_stat_by_key(stat)
                 if stat_obj:
                     self.problem.add_to_of('stat', stat_obj.id, value)
                 else:
-                    print 'Could not find stat %s' % stat
+                    print('Could not find stat %s' % stat)
         
         self.add_weird_item_weights_to_objective_funcion(objective_values, level)
 
@@ -445,14 +445,14 @@ class Model:
             self.restrictions.first_stats_points_constraints[stat.key] = {}
             self.restrictions.second_stats_points_constraints[stat.key] = {}
             self.restrictions.third_stats_points_constraints[stat.key] = {}
-            for i in xrange(1, 6):
+            for i in range(1, 6):
                 restriction = self.problem.restriction_lt_eq(1990, [(-1, 'stat_point', 'statpoint_%d_%d' % (i, stat.id)),
                                                                     (1990, 'stat_point_max', 'statpointmax_%d_%d' % (i-1, stat.id))])  
                 self.restrictions.first_stats_points_constraints[stat.key][i] = restriction
-            for i in xrange(0, 6):
+            for i in range(0, 6):
                 restriction = self.problem.restriction_lt_eq(0, [(1, 'stat_point', 'statpoint_%d_%d' % (i, stat.id))])  
                 self.restrictions.second_stats_points_constraints[stat.key][i] = restriction
-            for i in xrange(0, 5):
+            for i in range(0, 5):
                 restriction = self.problem.restriction_lt_eq(0, [(-1, 'stat_point', 'statpoint_%d_%d' % (i, stat.id)),
                                                               (-2000, 'stat_point_max', 'statpointmax_%d_%d' % (i, stat.id))]) 
                 self.restrictions.third_stats_points_constraints[stat.key][i] = restriction 
@@ -469,7 +469,7 @@ class Model:
 
     def modify_stats_points_constraints(self, char_class, stat_points):
         for stat in SOFT_CAPS[char_class]:
-            for i in xrange(0, 6):
+            for i in range(0, 6):
                 restrictions = self.restrictions.second_stats_points_constraints.get(stat, None)
                 restriction = restrictions.get(i, None)
                 if i >= 1 and (SOFT_CAPS[char_class][stat][i-1] is not None) and (SOFT_CAPS[char_class][stat][i] is not None):
@@ -478,7 +478,7 @@ class Model:
                     max_cap = SOFT_CAPS[char_class][stat][i]
                 restriction.changeRHS(max_cap if max_cap is not None else 1991)
               
-            for i in xrange(0, 5):  
+            for i in range(0, 5):  
                 restrictions = self.restrictions.third_stats_points_constraints.get(stat, None)
                 restriction = restrictions.get(i, None)
                 if i >= 1 and (SOFT_CAPS[char_class][stat][i-1] is not None) and (SOFT_CAPS[char_class][stat][i] is not None):
@@ -494,7 +494,7 @@ class Model:
         new_forbid_list = forbidden_equips
         
         or_items = self.structure.get_available_or_items()
-        for _, or_item_items in or_items.iteritems():
+        for _, or_item_items in or_items.items():
             for item in or_item_items:
                 if item.id in forbidden_equips:
                     for or_item in or_item_items:
@@ -542,16 +542,16 @@ class Model:
 
     def modify_locked_equip_constraints(self, locked_equips):
         locked_equip_values = []
-        for item in locked_equips.values():
+        for item in list(locked_equips.values()):
                 locked_equip_values.append(item)
         locked_dic = Counter(locked_equip_values)
-        locked_dic_names = Counter(locked_equips.values())
+        locked_dic_names = Counter(list(locked_equips.values()))
         or_items = self.structure.get_available_or_items()
-        for item_id, occurrences in locked_dic.iteritems():
+        for item_id, occurrences in locked_dic.items():
             if occurrences > 1 and item_id != '':
                 item = self.structure.get_item_by_id(item_id)
                 locked_dic[item_id] = 2 if self.structure.get_type_name_by_id(item.type) == 'Ring' and item.set == None else 1
-        for item_name, occurrences in locked_dic_names.iteritems():
+        for item_name, occurrences in locked_dic_names.items():
             if occurrences > 1 and item_name != '':
                 if item_name in or_items:
                     item = or_items[item_name].get(0)
@@ -563,7 +563,7 @@ class Model:
             restriction.changeRHS(-locked_dic[item.id] if item.id in locked_equip_values else 0)
         for item_name in or_items:
             restriction = self.restrictions.locked_equip_constraints[item_name]
-            restriction.changeRHS(-locked_dic_names[item_name] if item_name in locked_equips.values() else 0)
+            restriction.changeRHS(-locked_dic_names[item_name] if item_name in list(locked_equips.values()) else 0)
             
     def create_set_constraints(self):
         for item_set in self.sets_list:
@@ -579,18 +579,18 @@ class Model:
         
         for item_set in self.sets_list:
             restrictions_list = []
-            for slot in xrange (1, 9):
+            for slot in range (1, 9):
                 restriction = self.problem.restriction_lt_eq(0, [(slot, 'ss', '%d_%d' % (item_set.id, slot + 1)), (-1, 's', item_set.id)])   
                 restrictions_list.append(restriction)
             self.restrictions.second_presence_constraints[item_set.name] = restrictions_list
 
         for item_set in self.sets_list:
-            restriction = self.problem.restriction_eq(1, [(1, 'ss', '%d_%d' % (item_set.id, slot + 1)) for slot in xrange (0, 9)]) 
+            restriction = self.problem.restriction_eq(1, [(1, 'ss', '%d_%d' % (item_set.id, slot + 1)) for slot in range (0, 9)]) 
             self.restrictions.third_set_constraints[item_set.name] = restriction
         
         for item_set in self.sets_list:
             restrictions_list = []
-            for slot in xrange (0, 9):
+            for slot in range (0, 9):
                 restriction = self.problem.restriction_lt_eq(8 + slot,
                                                              [(8, 'ss', '%d_%d' % (item_set.id, slot + 1)),
                                                               (1, 's', item_set.id)])
@@ -609,7 +609,7 @@ class Model:
         self.restrictions.second_light_set_constraint = restriction
         
         plist = []
-        for slot in xrange(3, 9):
+        for slot in range(3, 9):
             plist.extend([(1, 'ss', '%d_%d' % (item_set.id, slot + 1)) for item_set in self.sets_list])
         plist.append((-MAX_SETS_ONE_CAN_EQUIP, 'ytrophy', 2))
         restriction = self.problem.restriction_lt_eq(0, plist)
@@ -658,7 +658,7 @@ class Model:
                     if stat_id == stat.id:
                         matrix.append((value, 'ss', '%d_%d' % (item_set.id, num_items + 1)))
             if stat in self.main_stats_list:
-                for i in xrange(0, 6):
+                for i in range(0, 6):
                     matrix.append((1, 'stat_point', 'statpoint_%d_%d' % (i, stat.id)))
             restriction = self.problem.restriction_eq(0, matrix)
             self.restrictions.stat_total_constraints[stat.name] = restriction
@@ -749,7 +749,7 @@ class Model:
         
         lp_vars = self.problem.get_result()
         grouped_vars = {}
-        for k, v in lp_vars.iteritems():
+        for k, v in lp_vars.items():
             prefix, suffix = k.split('_', 1)
             group = grouped_vars.setdefault(prefix, {})
             group[suffix] = v
@@ -757,7 +757,7 @@ class Model:
         result += ', '.join(grouped_vars) + '\n\n'
         
         result += 'Sets:\n'
-        for k, v in grouped_vars['ss'].iteritems():
+        for k, v in grouped_vars['ss'].items():
             if v > 0:
                 set_id, number_of_pieces = k.rsplit('_', 1)
                 set_id = int(set_id)
@@ -769,7 +769,7 @@ class Model:
             result += '%s: %d\n' % (stat.name, grouped_vars['stat'][str(stat.id)])
 
         result += '\nGear:\n'
-        for k, v in grouped_vars['x'].iteritems():
+        for k, v in grouped_vars['x'].items():
             for _ in range(int(v)):
                 result += self.structure.get_item_by_id(int(k)).name + '\n'
         return result
@@ -780,7 +780,7 @@ class Model:
         stats = {}
         for stat in self.main_stats_list: 
             stats[stat.key] = 0
-            for i in xrange(0,6):
+            for i in range(0,6):
                 stats[stat.key] += int(lp_vars['stat_point_statpoint_%d_%d' % (i, stat.id)])
                 #print '%s: tier %d - %d' % (stat.name, i, lp_vars['stat_point_statpoint_%d_%d' % (i, stat.id)])
                 #if i < 5:                
@@ -792,12 +792,12 @@ class Model:
    
         lp_vars = self.problem.get_result()
         grouped_vars = {}
-        for k, v in lp_vars.iteritems():
+        for k, v in lp_vars.items():
             prefix, suffix = k.split('_', 1)
             group = grouped_vars.setdefault(prefix, {})
             group[suffix] = v
         
-        for k, v in grouped_vars['x'].iteritems():
+        for k, v in grouped_vars['x'].items():
             for _ in range(int(v)):
                 item = int(k)
                 item_id_list.append(item)
@@ -837,7 +837,7 @@ class ModelInput(object):
     def __hash__(self, *args, **kwargs):
         return (self.char_level,
                 freeze(self.base_stats_by_attr),
-                frozenset([p for p in self.minimum_stats.items() if p[0] != 'adv_mins']),
+                frozenset([p for p in list(self.minimum_stats.items()) if p[0] != 'adv_mins']),
                 freeze(self.minimum_stats.get('adv_mins')),
                 freeze(self.locked_equips),
                 frozenset(self.forbidden_equips),
@@ -850,4 +850,4 @@ def freeze(d):
     if d is None:
         return None
     else:
-        return frozenset(d.items())
+        return frozenset(list(d.items()))

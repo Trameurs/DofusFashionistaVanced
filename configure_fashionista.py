@@ -17,11 +17,12 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 import getpass
+import platform
 from subprocess import call
 
 def main():
-    if getpass.getuser() == 'root':
-        print 'Run this script as a regular user, not as root.'
+    if getpass.getuser() == 'root' and platform.system() != 'Windows':
+        print('Run this script as a regular user, not as root.')
         return
 
     _print_header('Creating database')
@@ -30,14 +31,16 @@ def main():
     _print_header('Syncing db')
     call(['python', 'fashionsite/manage.py', 'syncdb'])
     call(['python', 'fashionsite/manage.py', 'migrate', 'chardata'])
-    call(['chmod', '777', 'fashionsite'])
+    
+    if platform.system() != 'Windows':
+        call(['chmod', '777', 'fashionsite'])
 
     _print_header('Done')
 
 def _print_header(header):
-    print '=' * 60
-    print header
-    print '=' * 60
+    print('=' * 60)
+    print(header)
+    print('=' * 60)
 
 if __name__ == '__main__':
     main()

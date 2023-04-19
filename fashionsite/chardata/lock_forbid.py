@@ -20,17 +20,17 @@ from fashionistapulp.dofus_constants import SLOTS
 from fashionistapulp.structure import get_structure
 
 
-DEFAULT_EXCLUSIONS_121_PLUS = [u'Vulbis Dofus',
-                               u'Dofusteuse',
-                               u'Ellie\'s Mental Amulet',
-                               u'Ellie\'s Deluxe Mental Amulet',]
+DEFAULT_EXCLUSIONS_121_PLUS = ['Vulbis Dofus',
+                               'Dofusteuse',
+                               'Ellie\'s Mental Amulet',
+                               'Ellie\'s Deluxe Mental Amulet',]
 DEFAULT_EXCLUSIONS_120_MINUS = (DEFAULT_EXCLUSIONS_121_PLUS
-                                + [u'Ice Dofus',
-                                   u'Ochre Dofus',
-                                   u'Ivory Dofus',
-                                   u'Emerald Dofus',
-                                   u'Crimson Dofus',
-                                   u'Dolmanax',])
+                                + ['Ice Dofus',
+                                   'Ochre Dofus',
+                                   'Ivory Dofus',
+                                   'Emerald Dofus',
+                                   'Crimson Dofus',
+                                   'Dolmanax',])
 
 def get_default_exclusions(char):
     if char.level > 120:
@@ -57,7 +57,7 @@ def set_inclusions_dict_and_check_exclusions(char, inclusions_dict):
 def get_all_inclusions_en_names(char):
     item_dict = get_inclusions_dict(char)
     return {key: _item_id_to_local_or_name(value, 'en')
-            for key, value in item_dict.items()}
+            for key, value in list(item_dict.items())}
 
 def get_inclusions_dict(char):
     inclusions = {}
@@ -78,13 +78,13 @@ def set_exclusions_list_by_name(char, excluded_items):
             item_id = item.id
             items.append(item_id)
         else:
-            print 'Item %s does not exist and cannot be excluded' % item_name
+            print('Item %s does not exist and cannot be excluded' % item_name)
     set_exclusions_list_and_check_inclusions(char, items)
     
 def remove_invalid_inclusions(char, level):
     structure = get_structure()
     inclusions = get_inclusions_dict(char)
-    for item_type, equip in inclusions.iteritems():
+    for item_type, equip in inclusions.items():
         if equip != '':
             item = structure.get_item_by_id(equip)
             if item is None or item.level > level:
@@ -131,7 +131,7 @@ def _item_id_to_local_or_name(item_id, language):
 
 def _save_inclusion_dict(char, inclusions):
     inclusions = {slot: int(value)
-                  for slot, value in inclusions.items() if value != ''}
+                  for slot, value in list(inclusions.items()) if value != ''}
     char.inclusions = pickle.dumps(inclusions)
     char.save()
 

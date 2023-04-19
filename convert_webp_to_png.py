@@ -24,14 +24,14 @@ import sys
 
 
 def convert_image(folder, item, new_folder):
-    print 'convert_image(%s, %s, %s)' % (folder, item, new_folder)
+    print('convert_image(%s, %s, %s)' % (folder, item, new_folder))
     file_path = os.path.join(folder, item)
     if os.path.isfile(file_path):
         file_name_without_ext, e = os.path.splitext(item)
         if e.lower() == '.webp':
             new_file_path = '%s/%s%s' % (new_folder, file_name_without_ext, '.png')
             command = ['dwebp', file_path, '-o', new_file_path]
-            print 'Writing %s' % new_file_path
+            print('Writing %s' % new_file_path)
             subprocess.call(command)
 
 def convert_file_list(file_list):

@@ -67,7 +67,7 @@ TYPE_NAME_TO_SLOT_NUMBER = {
     'Pet': 1,
 }
 
-TYPE_NAMES = TYPE_NAME_TO_SLOT.keys()
+TYPE_NAMES = list(TYPE_NAME_TO_SLOT.keys())
 
 SLOTS = []
 for type_name in TYPE_NAMES:
@@ -233,7 +233,7 @@ STAT_MAXIMUM = {
     '% Earth Resist': 53,
 }
 
-STAT_KEY_TO_NAME = {v: k for k, v in STAT_NAME_TO_KEY.iteritems()}
+STAT_KEY_TO_NAME = {v: k for k, v in STAT_NAME_TO_KEY.items()}
 
 # Stats still in projects (weights, minimums) but not used anymore.
 # Adding them here prevents crashes with legacy projects that still have them.
@@ -300,11 +300,11 @@ ELEMENT_KEY_TO_NAME = {
     'water': 'Water',
     'air': 'Air'
 }
-ELEMENT_NAME_TO_KEY = {v: k for k, v in ELEMENT_KEY_TO_NAME.iteritems()}
+ELEMENT_NAME_TO_KEY = {v: k for k, v in ELEMENT_KEY_TO_NAME.items()}
 
 WEIRD_CONDITION_FROM_ID = {1: 'light_set'}
-WEIRD_CONDITION_TO_ID = {v: k for k, v in WEIRD_CONDITION_FROM_ID.iteritems()}
-WEIRD_CONDITIONS = WEIRD_CONDITION_TO_ID.keys() 
+WEIRD_CONDITION_TO_ID = {v: k for k, v in WEIRD_CONDITION_FROM_ID.items()}
+WEIRD_CONDITIONS = list(WEIRD_CONDITION_TO_ID.keys()) 
 
 class Spell:
     def __init__(self, name, level_req, effects, aggregates=[], 

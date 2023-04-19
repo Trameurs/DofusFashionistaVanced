@@ -49,8 +49,8 @@ def check_saved_dump_hash():
         print_with_time('Last used db dump is null, wiping just to make sure.')
         return True, current_dump_hash
 
-    print('Last used db dump is %s' % saved_db_version.dump_hash)
-    print('That version was first used on %s' % saved_db_version.created_time)
+    print(('Last used db dump is %s' % saved_db_version.dump_hash))
+    print(('That version was first used on %s' % saved_db_version.created_time))
     if saved_db_version.dump_hash != current_dump_hash:
         print('Hashes do not match, wiping.')
         return True, current_dump_hash
@@ -77,7 +77,7 @@ def save_dump_hash(dump_hash):
     print_with_time('Done.')
 
 def print_with_time(s):
-    print '[%s] %s' % (datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), s)
+    print('[%s] %s' % (datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), s))
 
 if __name__ == '__main__':
     main()

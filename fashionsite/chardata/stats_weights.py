@@ -48,7 +48,7 @@ def get_stats_weights(char):
             weights[stat_key] = stan_w[stat_key]
     
     # Filter out all non-existent stats.
-    for stat_key in weights.keys():
+    for stat_key in list(weights.keys()):
         if stat_key in DEPRECATED_STATS:
             changed = True
             del weights[stat_key]
@@ -83,7 +83,7 @@ def _fill_defaults(char, weights):
         char.stats_weight = pickle.dumps(stan_w)
 
 def set_stats_weights(char, weights):
-    for stat_key, stat_weight in weights.iteritems():
+    for stat_key, stat_weight in weights.items():
         if stat_key in DEPRECATED_STATS:
             continue
         if stat_key == 'meleeness':

@@ -27,16 +27,24 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 import json
+import platform
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-with open('/etc/fashionista/gen_config.json', 'r') as f:
+# Define the paths for Linux and Windows
+if platform.system() == 'Windows':
+    CONFIG_DIR = os.path.join(os.environ['APPDATA'], 'fashionista')
+else:
+    CONFIG_DIR = '/etc/fashionista'
+
+# Use the appropriate paths for the current platform
+with open(os.path.join(CONFIG_DIR, 'gen_config.json'), 'r') as f:
     GEN_CONFIGS = json.loads(f.read())
     
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = GEN_CONFIGS['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-with open('/etc/fashionista/debug_mode') as f:
+with open(os.path.join(CONFIG_DIR, 'debug_mode')) as f:
     DEBUG = (f.read() == 'True')
 
 ALLOWED_HOSTS = []
@@ -172,7 +180,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_FILES_BUCKET = 'fash-static'
-with open('/etc/fashionista/serve_static') as f:
+with open(os.path.join(CONFIG_DIR, 'serve_static')) as f:
     serve_static = f.read().startswith('True')
     if not serve_static or not DEBUG:
         STATIC_URL = 'https://s3.amazonaws.com/%s/' % STATIC_FILES_BUCKET

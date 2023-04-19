@@ -40,7 +40,7 @@ DOFUS_OPTIONS = {'ochre': 'Ochre Dofus',
 def get_dofus_not_for_char(char):
     s = get_structure()
     dofus_for_char = {}
-    for (red, item) in DOFUS_OPTIONS.iteritems():
+    for (red, item) in DOFUS_OPTIONS.items():
         dofus = s.get_item_by_name(item)
         if dofus.level > char.level:
             dofus_for_char[red] = item
@@ -59,7 +59,7 @@ def get_options(char):
     
     exclusions = get_all_exclusions_en_names(char)
     dofus_opt = {}
-    for (red, item) in DOFUS_OPTIONS.iteritems():
+    for (red, item) in DOFUS_OPTIONS.items():
         dofus_opt[red] = item not in exclusions
 
     options['dofuses'] = dofus_opt

@@ -101,7 +101,7 @@ def _get_json_aspect_to_name():
     language = get_language()
     if language not in _memoized_aspect_to_name:
         _memoized_aspect_to_name[language] = \
-            json.dumps({k: unicode(v) for k, v in ASPECT_TO_NAME.iteritems()})
+            json.dumps({k: str(v) for k, v in ASPECT_TO_NAME.items()})
     return _memoized_aspect_to_name[language]
 
 _memoized_class_to_name = {}
@@ -109,7 +109,7 @@ def _get_class_to_name():
     language = get_language()
     if language not in _memoized_class_to_name:
         _memoized_class_to_name[language] = \
-            {unicode(v): k for k, v in LOCALIZED_CHARACTER_CLASSES.iteritems()}
+            {str(v): k for k, v in LOCALIZED_CHARACTER_CLASSES.items()}
     return _memoized_class_to_name[language]
 
 def save_project(request, char_id=0):

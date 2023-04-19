@@ -32,24 +32,24 @@ def main(json_file, names_table, entities_table):
     conn = sqlite3.connect(get_items_db_path())
     c = conn.cursor()
     
-    for ankama_profile, other_langs in ankama_profile_to_all_dict.iteritems():
+    for ankama_profile, other_langs in ankama_profile_to_all_dict.items():
         ankama_id, _ = ankama_profile
         if len(other_langs) != len(NON_EN_LANGUAGES):
-            print ('WARNING: item with ankama_id %d missing languages: %s'
-                   % (ankama_id, str(other_langs)))
+            print(('WARNING: item with ankama_id %d missing languages: %s'
+                   % (ankama_id, str(other_langs))))
         item_id, _ = get_item_id_and_name_for_ankama_profile(c, entities_table, ankama_profile)
         if item_id is not None:
             store_item_translations(c, names_table, item_id, other_langs)
 
-    for en_term, other_langs in en_to_all_dict.iteritems():
+    for en_term, other_langs in en_to_all_dict.items():
         if len(other_langs) != len(NON_EN_LANGUAGES):
-            print 'WARNING: %s missing languages: %s' % (en_term, str(other_langs))
+            print('WARNING: %s missing languages: %s' % (en_term, str(other_langs)))
         c.execute('SELECT id, ankama_id FROM %s WHERE name = ?' % entities_table, (en_term,))
         query_result = c.fetchone()
         if query_result is not None:
             ankama_id = query_result[1]
             if ankama_id is None:
-                print 'ankama_id of %s is None, using en name to update' % en_term
+                print('ankama_id of %s is None, using en name to update' % en_term)
                 item_id = query_result[0]
                 store_item_translations(c, names_table, item_id, other_langs)
                 ankama_id, ankama_type = en_name_to_ankama_id_and_type[en_term]
@@ -82,7 +82,7 @@ def store_item_translations(c, names_table, item_id, other_langs):
     if names_table == 'set_names':
         column_name = 'item_set'
     
-    for lang, term in other_langs.iteritems():
+    for lang, term in other_langs.items():
         c.execute('SELECT name FROM %s WHERE %s = ? AND language = ?' % (names_table, column_name),
                   (item_id, lang))
 
@@ -95,7 +95,7 @@ def store_item_translations(c, names_table, item_id, other_langs):
             if stored_term != term:
                 c.execute('UPDATE %s SET name = ? WHERE %s = ? AND language = ?' % (names_table, column_name),
                           (term, item_id, lang))
-                print 'Switching %s name for id %d from %s to %s' % (lang, item_id, stored_term, term)
+                print('Switching %s name for id %d from %s to %s' % (lang, item_id, stored_term, term))
 
 def read_id_to_terms(filename, table):
     id_to_terms_in_lang = {lang: {} for lang in LANGUAGES}
@@ -150,12 +150,12 @@ def get_ankama_type(lang, item_type):
 def convert_to_dicts(id_to_terms):
     ankama_profile_to_all_dict = {}
     en_to_all_dict = {}
-    for ankama_profile, en_term in id_to_terms['en'].iteritems():
+    for ankama_profile, en_term in id_to_terms['en'].items():
         entry = {}
         for lang in NON_EN_LANGUAGES:
             term_in_lang = id_to_terms[lang].get(ankama_profile)
             if term_in_lang is None:
-                print '%s %s does not exist in %s' % (ankama_profile, en_term, lang)
+                print('%s %s does not exist in %s' % (ankama_profile, en_term, lang))
             else:
                 entry[lang] = term_in_lang
         en_to_all_dict[en_term] = entry

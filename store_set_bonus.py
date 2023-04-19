@@ -31,9 +31,9 @@ def main(json_file):
     sets_dict = read_id_to_terms(json_file)
     
     load_items_db_from_dump()
-    for ankama_id, set_data in sets_dict.iteritems():
+    for ankama_id, set_data in sets_dict.items():
         set_name = set_data.get('name')
-        print set_name
+        print(set_name)
         if set_name:
             conn = sqlite3.connect(get_items_db_path())
             c = conn.cursor()
@@ -58,7 +58,7 @@ def store_set_data(item_id, ankama_id, set_data):
     else:
         new_set = _convert_json_item_to_item(set_data)
         old_set = get_structure().get_set_by_id(item_id)
-        print 'Checking %s' % new_set.name
+        print('Checking %s' % new_set.name)
 
         new_set.items = old_set.items
 
@@ -115,7 +115,7 @@ def _convert_json_item_to_item(json_set):
                     my_set.bonus.append((bonus_number, stat_id, stat_value))
                     my_set.bonus_per_num_items[bonus_number][stat_name] = stat_value
                 else:
-                    print 'COULD NOT FIND %s' % stat_name
+                    print('COULD NOT FIND %s' % stat_name)
     return my_set
 
 def read_id_to_terms(filename):

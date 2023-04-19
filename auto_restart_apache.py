@@ -18,12 +18,12 @@
 
 import datetime
 import socket
-import urllib2
+import urllib.request, urllib.error, urllib.parse
 from subprocess import call
 
 def is_localhost_down():
     try:
-        home_page = urllib2.urlopen('http://dofusfashionista.com', timeout=120)
+        home_page = urllib.request.urlopen('http://dofusfashionista.com', timeout=120)
         first_bytes = home_page.read(200)
         if first_bytes:
             # print_with_time('Home page ok.')
@@ -31,7 +31,7 @@ def is_localhost_down():
         else:
             print_with_time('Empty response.')
             return True
-    except (urllib2.URLError, socket.timeout, socket.error) as e:
+    except (urllib.error.URLError, socket.timeout, socket.error) as e:
         print_with_time(str(e))
         return True
 
@@ -42,8 +42,8 @@ def main():
         call(['/etc/init.d/apache2', 'restart'])
 
 def print_with_time(s):
-    print '[%s]' % datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")
-    print s
+    print('[%s]' % datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f"))
+    print(s)
 
 if __name__ == '__main__':
     main()

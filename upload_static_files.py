@@ -28,7 +28,7 @@ def main():
     with open('/etc/fashionista/serve_static') as f:
         serve_static = f.read().startswith('True')
         if not serve_static:
-            print 'Fashionista needs to be configured with serve_static=True'
+            print('Fashionista needs to be configured with serve_static=True')
             exit(1)
 
     call(['rm', '-rf', STATIC_ROOT])
@@ -70,19 +70,19 @@ def main():
             csvwriter.writerow([original_name, new_map[original_name]])
         
         bucket = s3_fashionista.get_s3_bucket(DBBACKUP_S3_BUCKET)
-        for (original_name, new_name) in new_map.iteritems():
+        for (original_name, new_name) in new_map.items():
             if original_name not in old_map:
-                print 'Uploading ' + original_name + ': not in original map'
+                print('Uploading ' + original_name + ': not in original map')
                 key = bucket.new_key(new_name)
                 key.set_contents_from_filename(new_name, cb=_update_progress, num_cb=1)
             else:
                 if old_map[original_name] != new_map[original_name]:
-                    print 'Uploading ' + original_name + ': Hash changed'
+                    print('Uploading ' + original_name + ': Hash changed')
                     key = bucket.new_key(new_name)
                     key.set_contents_from_filename(new_name, cb=_update_progress, num_cb=1)
 
 def _update_progress(so_far, total):
-   print '%d bytes transferred out of %d' % (so_far, total)
+   print('%d bytes transferred out of %d' % (so_far, total))
               
 if __name__ == '__main__':
     main()

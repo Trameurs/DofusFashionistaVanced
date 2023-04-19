@@ -157,7 +157,7 @@ for stat in tree.findall("S_Attribute")[0].findall("S_Attribute"):
     # Insert a row of data
     key = STAT_KEYS.get(stat.get("elem"), None)
     if key is None:
-        print 'Stat not known: %s' % stat.get("elem")
+        print('Stat not known: %s' % stat.get("elem"))
     else:
         c.execute("INSERT INTO stats (name, key) VALUES (?, ?)",
                   (stat.get("elem"), key))
@@ -165,7 +165,7 @@ for stat in PVP_STATS:
     # Insert a row of data
     key = STAT_KEYS.get(stat, None)
     if key is None:
-        print 'Stat not known: %s' % stat.get("elem")
+        print('Stat not known: %s' % stat.get("elem"))
     else:
         c.execute("INSERT INTO stats (name, key) VALUES (?, ?)",
                   (stat, key))
@@ -342,7 +342,7 @@ c.execute('''CREATE TABLE weapontype
 for stat in tree.findall("S_DEF_WeaponTypes")[0].findall("S_DEF_WeaponTypes"):
     key = WEAPON_TYPES.get(stat.get("elem"), None)
     if key is None:
-        print 'Weapon type not known: %s' % stat.get("elem")
+        print('Weapon type not known: %s' % stat.get("elem"))
     else:
         c.execute("INSERT INTO weapontype (name, key) VALUES (?, ?)",
                   (stat.get("elem"), key))
@@ -439,13 +439,13 @@ for item in tree.findall("Pe_HitElement")[0].findall("EQUIP"):
     itemid = c.fetchone()[0]
     
     hits = item.findall("HIT")
-    print item.get('elem')
+    print(item.get('elem'))
     for hit in hits:
         damages[itemid][HIT_NUMBER[hit.get("elem")]].element = hit.get("value")
 
-for itemid, raw_hits in damages.iteritems():
-    hits = filter(lambda x: x is not None, raw_hits)
-    print '%s %s' % (itemid, str(hits))
+for itemid, raw_hits in damages.items():
+    hits = [x for x in raw_hits if x is not None]
+    print('%s %s' % (itemid, str(hits)))
     for i, hit in enumerate(hits):
         c.execute("INSERT INTO weapon_hits (item, hit, min_value, max_value, steals, heals, element) VALUES (?,?,?,?,?,?,?)",
                   (itemid, i, hit.min, hit.max, hit.steals_int(), hit.heals_int(),

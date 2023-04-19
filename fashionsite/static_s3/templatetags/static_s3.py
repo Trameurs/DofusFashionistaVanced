@@ -34,6 +34,6 @@ def _get_mapped_file(path):
 
     new_path = file_map.get(path)
     if new_path == None:
-        print 'Static file path not found:'
-        print path
+        print('Static file path not found:')
+        print(path)
     return new_path

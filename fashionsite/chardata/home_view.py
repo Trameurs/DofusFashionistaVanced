@@ -29,9 +29,9 @@ from static_s3.templatetags.static_s3 import static
 
 def home(request, char_id=0):
     items = []
-    for unused in xrange(12):
+    for unused in range(12):
         item_row = []
-        for unused in xrange(13):
+        for unused in range(13):
             item_obj = get_structure().get_random_item()
             item = {}
             item['name'] = item_obj.localized_names[get_supported_language()]

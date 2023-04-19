@@ -17,7 +17,7 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 import scrapy
-from urlparse import urljoin
+from urllib.parse import urljoin
 from itemscraper.items import ItemscraperItemTouch
 from itemscraper.spiders.rosetta import ankama_id
 

@@ -37,7 +37,7 @@ def main(json_file):
     weapons = read_id_to_terms(json_file)
     
     load_items_db_from_dump()
-    for ankama_id, weapon_data in weapons.iteritems():
+    for ankama_id, weapon_data in weapons.items():
         ankama_profile = (ankama_id, 'equipment')
         conn = sqlite3.connect(get_items_db_path())
         c = conn.cursor()
@@ -61,7 +61,7 @@ def store_weapon_data(item_id, weapon_name, weapon_data):
 def store_weapon_data_field(c, item_id, weapon_name, weapon_data, table, weapon_data_field):
     new_value = weapon_data.get(weapon_data_field)
     if new_value is None:
-        print 'Warning: weapon [%d] %s does not have %s' % (item_id, weapon_name, weapon_data_field)
+        print('Warning: weapon [%d] %s does not have %s' % (item_id, weapon_name, weapon_data_field))
         return
 
     c.execute('SELECT value FROM %s WHERE item = ?' % table,
@@ -70,14 +70,14 @@ def store_weapon_data_field(c, item_id, weapon_name, weapon_data, table, weapon_
     if query_result is None:
         c.execute('INSERT INTO %s VALUES (?, ?)' % table,
                   (item_id, new_value))
-        print ('Added weapon [%d] %s %s as %s'
-               % (item_id, weapon_name, weapon_data_field, new_value))
+        print(('Added weapon [%d] %s %s as %s'
+               % (item_id, weapon_name, weapon_data_field, new_value)))
     else:
         if query_result[0] != new_value:
             c.execute('UPDATE %s SET value = ? WHERE item = ?' % table,
                       (new_value, item_id))
-            print ('Changed weapon [%d] %s %s from %s to %s'
-                   % (item_id, weapon_name, weapon_data_field, query_result[0], new_value))
+            print(('Changed weapon [%d] %s %s from %s to %s'
+                   % (item_id, weapon_name, weapon_data_field, query_result[0], new_value)))
 
 
 
@@ -110,12 +110,12 @@ def _convert_json_item_to_item(json_item):
         item.type = None
     
     weapon = Weapon()
-    print json_item['w_type']
+    print(json_item['w_type'])
     if item.type == structure.get_type_id_by_name('Weapon'):
         #print json_item['w_type']
         #print structure.get_type_name_by_id(item.type)
         #print item.name
-        print item.name
+        print(item.name)
         weapon.ap = int(json_item['ap'])
         weapon.crit_chance = int(json_item['crit_chance'])
         weapon.crit_bonus = int(json_item.get('crit_bonus')) if json_item.get('crit_bonus') else None
@@ -153,7 +153,7 @@ def _convert_json_item_to_item(json_item):
  
                 filetomod.write(item.name + ': ' + stat[2] + '\n') 
                  
-                print 'COULD NOT FIND STAT %s' % stat[2]
+                print('COULD NOT FIND STAT %s' % stat[2])
     
                 filetomod.close() 
     return item, weapon

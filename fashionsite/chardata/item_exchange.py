@@ -43,9 +43,8 @@ def _order_items(item_type, char, search_term):
     search_term = search_term.lower()
     search_term = strip_accents(search_term)
     if search_term is not None:
-        items = filter(lambda i: _item_contains_term(i, re.sub(r'\W+', '', search_term)),
-                       items)
-    items = filter(lambda i: _hide_removed_item(i), items)
+        items = [i for i in items if _item_contains_term(i, re.sub(r'\W+', '', search_term))]
+    items = [i for i in items if _hide_removed_item(i)]
     weights = pickle.loads(char.stats_weight)
     sorted_items = sorted(items, key=lambda item: _rate(structure, item, weights), reverse=True)
     return sorted_items
@@ -64,9 +63,8 @@ def _order_by_hits(item_type, char, search_term):
     search_term = search_term.lower()
     search_term = strip_accents(search_term)
     if search_term is not None and search_term is not '':
-        items = filter(lambda i: _item_contains_term(i, re.sub(r'\W+', '', search_term)),
-                       items)
-    items = filter(lambda i: _hide_removed_item(i), items)
+        items = [i for i in items if _item_contains_term(i, re.sub(r'\W+', '', search_term))]
+    items = [i for i in items if _hide_removed_item(i)]
     solution = get_solution(char)
     sorted_items = sorted(items, key=lambda item: _get_weapon_rate(item, char, solution), reverse=True)
     #print sorted_items[:5]
@@ -249,17 +247,17 @@ def _get_difference(item, slot, char):
     new_stats = result.stats_total.copy()
 
     difference = {}
-    for (stat, _) in current_stats.iteritems():
+    for (stat, _) in current_stats.items():
         if stat in new_stats:
             if (new_stats[stat] - current_stats[stat] != 0):
                 difference[stat] = new_stats[stat] - current_stats[stat]
         else:
             difference[stat] = 0 - current_stats[stat]
-    for (stat, _) in new_stats.iteritems():  
+    for (stat, _) in new_stats.items():  
         if stat not in current_stats:
             difference[stat] = new_stats[stat]
             
-    ordered_diff = sorted(difference.iteritems(),
+    ordered_diff = sorted(iter(difference.items()),
                           key=lambda x: STAT_ORDER[x[0]])
     
     stats_lines = []

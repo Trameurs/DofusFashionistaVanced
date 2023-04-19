@@ -21,7 +21,7 @@ from django.shortcuts import get_object_or_404
 from django.utils.translation import ugettext as _
 import json
 import jsonpickle
-from urlparse import urlparse
+from urllib.parse import urlparse
 
 from chardata.encoded_char_id import decode_char_id, encode_char_id
 from chardata.models import Char
@@ -50,7 +50,7 @@ TYPE_ORDER = [
 ]
 
 def _process_parameters(sets_params):
-    return filter(lambda x: x, sets_params.split('/'))
+    return [x for x in sets_params.split('/') if x]
 
 def compare_sets(request, sets_params):
     char_strs = _process_parameters(sets_params)
@@ -108,7 +108,7 @@ def _sort_items(solutions):
         if slot_number > 1:
             item_counter = Counter()
             slot_name = TYPE_NAME_TO_SLOT[type_name]
-            for _, solution in solutions.iteritems():
+            for _, solution in solutions.items():
                 for i in range(1, slot_number + 1):
                     slot_key = "%s%d" % (slot_name, i)
                     item = solution['item_per_slot'].get(slot_key)
@@ -117,7 +117,7 @@ def _sort_items(solutions):
             item_counters[type_name] = item_counter
 
     result = {}
-    for char_id, solution in solutions.iteritems():
+    for char_id, solution in solutions.items():
         result[char_id] = []
 
         for type_name in TYPE_ORDER:

@@ -17,12 +17,12 @@
 from collections import Counter
 from django.utils.translation import ugettext as _
 
-from dofus_constants import (TYPE_NAMES, TYPE_NAME_TO_SLOT, TYPE_NAME_TO_SLOT_NUMBER, SLOTS,
+from .dofus_constants import (TYPE_NAMES, TYPE_NAME_TO_SLOT, TYPE_NAME_TO_SLOT_NUMBER, SLOTS,
                              NEUTRAL, DAMAGE_TYPES, BASE_STATS, STAT_KEY_TO_NAME,
                              calculate_damage, SLOT_NAME_TO_TYPE)
-from structure import get_structure
-from translation import get_supported_language
-from violation import Violation
+from .structure import get_structure
+from .translation import get_supported_language
+from .violation import Violation
 from fashionistapulp.dofus_constants import STAT_NAME_TO_KEY
 
 RELEVANT_INPUT = ['options', 'base_stats_by_attr', 'char_level', 'origin']
@@ -42,7 +42,7 @@ class ModelResultMinimal():
         # the locked item is now removed, for example.
         locked_slots = {}
         item_id_list_left = list(item_id_list)
-        for locked_slot, locked_id in input_['locked_equips'].iteritems():
+        for locked_slot, locked_id in input_['locked_equips'].items():
             for variation in structure.get_items_by_or_id(locked_id):
                 if variation.id in item_id_list_left:
                     item_id_list_left.remove(variation.id)
@@ -80,7 +80,7 @@ class ModelResultMinimal():
     def from_model_result(cls, model_result):
         item_per_slot = {}
         for slot in SLOTS:
-            item_found = filter(lambda i: i.slot == slot, model_result.item_list)
+            item_found = [i for i in model_result.item_list if i.slot == slot]
             if item_found:
                 item_per_slot[slot] = item_found[0].id
             else:
@@ -116,7 +116,7 @@ def model_result_from_minimal(minimal):
     else:
         result = ModelResult(minimal.input)
         
-    for slot, item_id in minimal.item_per_slot.iteritems():
+    for slot, item_id in minimal.item_per_slot.items():
         if item_id is not None and structure.get_item_by_id(item_id):
             result.add_item_at_slot(structure.get_item_by_id(item_id), slot)
         else:
@@ -168,7 +168,7 @@ class ModelResult():
         for item in self.item_list:
             if item.item_added:
                 items_of_set[item.set] += 1
-        for set_number, number_of_items in items_of_set.iteritems():
+        for set_number, number_of_items in items_of_set.items():
             if set_number and number_of_items > 1:
                 self._add_set(structure.get_set_by_id(set_number), number_of_items)
         
@@ -193,10 +193,10 @@ class ModelResult():
                 self.stats_gear[stat.key] = 0
             for result_item in self.item_list:
                 if result_item.item_added:
-                    for stat_key, stat_value in result_item.stats.iteritems():
+                    for stat_key, stat_value in result_item.stats.items():
                         self.stats_gear[stat_key] += stat_value
             for result_set in self.sets:
-                for stat_key, stat_value in result_set.get_bonus().iteritems():
+                for stat_key, stat_value in result_set.get_bonus().items():
                     self.stats_gear[stat_key] += stat_value
             if self.input['options']['ap_exo']:
                 self.stats_gear['ap'] += 1
@@ -297,7 +297,7 @@ class ModelResult():
         if not item_result.item_added:
             return violations
         if item_result.min_stats_to_equip:
-            for stat_key, value in item_result.min_stats_to_equip.iteritems():
+            for stat_key, value in item_result.min_stats_to_equip.items():
                 if self.stats_total[stat_key] < value:
                     stat_name = _(s.get_stat_by_key(stat_key).name)
                     violation = Violation()
@@ -310,7 +310,7 @@ class ModelResult():
                     violations.append(violation)
                     
         if item_result.max_stats_to_equip:
-            for stat_key, value in item_result.max_stats_to_equip.iteritems():
+            for stat_key, value in item_result.max_stats_to_equip.items():
                 if self.stats_total[stat_key] > value:
                     stat_name = _(s.get_stat_by_key(stat_key).name)
                     violation = Violation()
@@ -333,7 +333,7 @@ class ModelResult():
                 if item.item_added:
                     or_name = s.get_or_item_name(item.name)
                     dict_names.setdefault(or_name, []).append(item.name)
-            for (name, occurrences) in dict_names.iteritems():
+            for (name, occurrences) in dict_names.items():
                 if len(occurrences) > 1:
                     item_name = occurrences[0]
                     if (s.get_item_by_name(item_name).type == s.get_type_id_by_name('Dofus')
@@ -349,7 +349,7 @@ class ModelResult():
     def _get_min_violations(self, min_stats):
         violations = []
         s = get_structure()
-        for stat_key, min_val in min_stats.iteritems():
+        for stat_key, min_val in min_stats.items():
             if stat_key != 'adv_mins':
                 if self.stats_total[stat_key] < min_val:
                     stat_name = _(s.get_stat_by_key(stat_key).name)
@@ -559,7 +559,7 @@ class ModelResultItem():
             if any([hit.heals for hit in self.non_crit_hits[NEUTRAL]]):
                 lowest_dam = 999999
                 element_chosen = None
-                for element, damage in calculated_damage.iteritems():
+                for element, damage in calculated_damage.items():
                     total_average_dam = sum([d.average() for d in damage])
                     if total_average_dam < lowest_dam:
                         lowest_dam = total_average_dam
@@ -568,7 +568,7 @@ class ModelResultItem():
             else:
                 highest_dam = -999999
                 element_chosen = None
-                for element, damage in calculated_damage.iteritems():
+                for element, damage in calculated_damage.items():
                     total_average_dam = sum([d.average() for d in damage])
                     if total_average_dam > highest_dam:
                         highest_dam = total_average_dam

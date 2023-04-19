@@ -34,9 +34,9 @@ def main():
                 
     # Check for items in more than one folder.
     intersection = items_in_dir['items'].intersection(items_in_dir['pets'])
-    print 'Intersection:'
+    print('Intersection:')
     pprint.pprint(intersection)
-    print
+    print()
     
     items_with_images = items_in_dir['items'].union(items_in_dir['pets'])
     
@@ -45,16 +45,16 @@ def main():
     
     # Check for items in db but not in images.
     items_in_db_without_images = items_in_db - items_with_images
-    print ('items_in_db_without_images: %d items '
-           % len(items_in_db_without_images))
+    print(('items_in_db_without_images: %d items '
+           % len(items_in_db_without_images)))
     pprint.pprint(items_in_db_without_images)
-    print
+    print()
     
     # Check for items that have imags but are not in db.
     items_with_images_not_in_db = items_with_images - items_in_db
-    print ('items_with_images_not_in_db: %d items '
-           % len(items_with_images_not_in_db))
+    print(('items_with_images_not_in_db: %d items '
+           % len(items_with_images_not_in_db)))
     pprint.pprint(items_with_images_not_in_db)
-    print
+    print()
     
 main()

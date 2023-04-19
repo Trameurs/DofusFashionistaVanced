@@ -142,7 +142,7 @@ def convert_aggregates(aggregates):
     for tup in aggregates:
         lis = []
         for ele in tup:
-            if isinstance(ele, basestring) and ele != '':
+            if isinstance(ele, str) and ele != '':
                 lis.append(_(ele))
             else:
                 lis.append(ele)

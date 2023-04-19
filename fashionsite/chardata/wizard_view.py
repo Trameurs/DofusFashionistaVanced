@@ -84,7 +84,7 @@ def wizard_post(request, char_id):
     options.update(parse_options_post(request))
     set_options(char, options)
     
-    for (red, item) in DOFUS_OPTIONS.iteritems():
+    for (red, item) in DOFUS_OPTIONS.items():
         forbidden = request.POST.get(red) is None  
         s = get_structure()
         item_id = s.get_item_by_name(item).id
@@ -111,7 +111,7 @@ def _get_third_scroll_option(char):
         stats_scroll_dict[basestats.stat] = basestats.scrolled_value
     all_scrolled = True
     all_empty = True
-    for _, scrolled_value in stats_scroll_dict.iteritems():
+    for _, scrolled_value in stats_scroll_dict.items():
         if scrolled_value > 0:
             all_empty = False
         if scrolled_value < 100:
@@ -166,7 +166,7 @@ def _clean_scroll_char(char):
 
 class Mins():
     def __init__(self, char):
-        self.mins = {k: v for (k, v) in get_min_stats(char).iteritems()
+        self.mins = {k: v for (k, v) in get_min_stats(char).items()
                      if (k in STATS_WITH_CONFIG_MINS)}
 
 
@@ -214,7 +214,7 @@ class ConstantInclusions():
         
 class ConstantOptions():
     def __init__(self, char):
-        self.turq_values = range(11, 20 + 1)
+        self.turq_values = list(range(11, 20 + 1))
 
 class ConstantData():
     def __init__(self, char):

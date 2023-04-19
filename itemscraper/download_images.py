@@ -17,7 +17,7 @@
 import json
 import os
 import time
-import urllib
+import urllib.request, urllib.parse, urllib.error
 
 
 JSON_TO_DIR = {
@@ -28,18 +28,18 @@ JSON_TO_DIR = {
 
 def main():
     i = 1
-    for json_file, folder_name in JSON_TO_DIR.iteritems():
+    for json_file, folder_name in JSON_TO_DIR.items():
         folder = '../fashionsite/chardata/static/chardata/%s' % folder_name
         with open(json_file) as f:
             for entry in json.load(f):
                 image_path = folder + '/' + entry['name'] + '.png'
                 if not os.path.isfile(image_path):
-                    print '[%d] Downloading %s' % (i, entry['name'])
-                    urllib.urlretrieve(entry['image_url'],
+                    print('[%d] Downloading %s' % (i, entry['name']))
+                    urllib.request.urlretrieve(entry['image_url'],
                                        image_path)
                     time.sleep(1)
                 else:
-                    print 'Skipping %s' % entry['name']
+                    print('Skipping %s' % entry['name'])
                 i += 1
 
 main()

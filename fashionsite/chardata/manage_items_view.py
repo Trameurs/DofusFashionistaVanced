@@ -209,7 +209,7 @@ def choose_item(request):
         item_stats['crit_bonus'] = weapon.crit_bonus
         item_stats['weapon_type'] = structure.get_weapon_type_by_id(weapon.weapon_type).name
         hits = {}
-        for key, value in weapon.hits_dict.iteritems():
+        for key, value in weapon.hits_dict.items():
             hits[key] = (value.min_dam, value.max_dam, ELEMENT_KEY_TO_NAME[value.element],
                          value.steals, value.heals)
         item_stats['hits'] = hits
@@ -259,7 +259,7 @@ def choose_set(request):
     
     stats_per_num_items = {}
     for num_items in range(2, 8 + 1):
-        for stat, value in s.bonus_per_num_items.get(num_items, {}).iteritems():
+        for stat, value in s.bonus_per_num_items.get(num_items, {}).items():
             stats_per_num_items.setdefault(STAT_KEY_TO_NAME[stat], {})[num_items] = value
     stats = []
     for stat_name in sorted(stats_per_num_items,
@@ -330,7 +330,7 @@ def _convert_json_item_to_item(json_item):
         else:
             set_reference = item_set.split(' ', 2)
             item.set = safe_int(set_reference[0])
-            print item.set
+            print(item.set)
     
     item.weird_conditions = json_item['weird_conditions']
     
@@ -345,7 +345,7 @@ def _convert_json_item_to_item(json_item):
         new_value = (int(cond['value']) - 1 if cond['min_max'] == '<' else int(cond['value']) + 1)
         _add_to_old_cond(item, structure.get_stat_by_name(cond['stat']).id, cond['min_max'] == '>', new_value)
 
-    for lang, extras in json_item['extras'].iteritems():
+    for lang, extras in json_item['extras'].items():
         for extra in extras:
             if extra == '':
                 continue
@@ -395,7 +395,7 @@ def _convert_json_set_to_set(json_set):
         if stat_name == '':
             continue
         
-        for num_items, stat_value_string in zip(range(2, 8 + 1), stat['values']):
+        for num_items, stat_value_string in zip(list(range(2, 8 + 1)), stat['values']):
             if not stat_value_string:
                 continue
             stat_id = structure.get_stat_by_name(stat_name).id

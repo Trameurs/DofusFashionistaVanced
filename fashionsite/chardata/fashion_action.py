@@ -60,7 +60,7 @@ def fashion(request, char_id, spells=False):
     if char.stats_weight:
         weights = get_stats_weights(char)
         load_error = True
-        for _, value in weights.iteritems():
+        for _, value in weights.items():
             if value != 0:
                 load_error = False
                 break

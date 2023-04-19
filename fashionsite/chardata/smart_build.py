@@ -756,7 +756,7 @@ def param_for_build(race, elements, param, policy='max'):
         elif policy == 'float_avg':
             return sum(values) / float(len(values))
         else:
-            print 'Policy unknown'
+            print('Policy unknown')
 
 def _param_for_profile_element(race, element, param, is_combination):
     profile = RACE_TO_BUILD_PROFILE[race]
@@ -831,7 +831,7 @@ def _set_minimums(char, aspects):
     
     # Convert mins keys
     mins_by_name = {}
-    for k, v in mins.iteritems():
+    for k, v in mins.items():
         mins_by_name[STAT_KEY_TO_NAME[k]] = int(v)
     
     # Set result in char
@@ -1056,7 +1056,7 @@ def _generate_build_line(aspects):
     if 'omni' in aspects:
         sections[0] = ['omni']
 
-    sections = filter(bool, sections)
+    sections = list(filter(bool, sections))
     for section in sections:
         section.sort(key=lambda x: ALL_ASPECTS_LIST.index(x))
         

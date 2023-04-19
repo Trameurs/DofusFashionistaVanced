@@ -24,7 +24,7 @@ from fashionistapulp.dofus_constants import NEUTRAL, STAT_ORDER,\
 from fashionistapulp.fashion_util import normalize_name
 from fashionistapulp.structure import get_structure
 from static_s3.templatetags.static_s3 import static
-from translation_util import LOCALIZED_ELEMENTS, LOCALIZED_WEAPON_TYPES
+from .translation_util import LOCALIZED_ELEMENTS, LOCALIZED_WEAPON_TYPES
 from chardata.official_site import get_item_link
 
 
@@ -84,7 +84,7 @@ class SolutionResult:
                 
         # TODO: Grafting this attribute is a hack.
         for result_set in r.sets:
-            stats_from_result_set = sorted(result_set.get_bonus().iteritems(),
+            stats_from_result_set = sorted(iter(result_set.get_bonus().items()),
                                            key=lambda x: STAT_ORDER[x[0]])
             
             result_set.stats_lines = []
@@ -134,9 +134,9 @@ def evolve_result_item(result_item, r=None):
         result_item.file = static('chardata/%s.png' % SLOT_NAME_TO_TYPE[result_item.slot])
     if not result_item.item_added:
         if not result_item.file:
-            print 'No item and no slot for picture.'
+            print('No item and no slot for picture.')
         return
-    stats_from_result_item = sorted(result_item.stats.iteritems(),
+    stats_from_result_item = sorted(iter(result_item.stats.items()),
                                     key=lambda x: STAT_ORDER[x[0]])
     
     result_item.stats_lines = []
@@ -149,14 +149,14 @@ def evolve_result_item(result_item, r=None):
     result_item.condition_lines = []
 
     if hasattr(result_item, 'min_stats_to_equip'):
-        min_from_result_item = sorted(result_item.min_stats_to_equip.iteritems(),
+        min_from_result_item = sorted(iter(result_item.min_stats_to_equip.items()),
                                       key=lambda x: STAT_ORDER[x[0]])
         for stat_key, stat_value in min_from_result_item:
             stat_name = get_structure().get_stat_by_key(stat_key).name
             result_item.condition_lines.append(MinConditionLine(stat_value, stat_name, r))
 
     if hasattr(result_item, 'max_stats_to_equip'):
-        max_from_result_item = sorted(result_item.max_stats_to_equip.iteritems(),
+        max_from_result_item = sorted(iter(result_item.max_stats_to_equip.items()),
                                       key=lambda x: STAT_ORDER[x[0]])
         for stat_key, stat_value in max_from_result_item:
             stat_name = get_structure().get_stat_by_key(stat_key).name

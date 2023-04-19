@@ -29,14 +29,14 @@ def convert_dict_index_name_to_key(mins):
     new_mins = {}
     if 'HP' in mins:
         new_mins['hp'] = mins['HP']
-    for min_stat, min_value in mins.iteritems():
+    for min_stat, min_value in mins.items():
         stat = s.get_stat_by_name(min_stat)
         if stat is not None:
             stat_key = stat.key
             new_mins[stat_key] = min_value
         elif min_stat == 'adv_mins':
             new_mins['adv_mins'] = {}
-            for adv_min_stat, adv_min_value in mins['adv_mins'].iteritems():
+            for adv_min_stat, adv_min_value in mins['adv_mins'].items():
                 stat = s.get_adv_min_stat_by_name(adv_min_stat)
                 if stat is not None:
                     stat_key = stat['key']
@@ -51,7 +51,7 @@ def set_min_stats(char, minimum_values):
     if 'Range' in minimum_values:
         if minimum_values['Range'] == 0:
             del minimum_values['Range']
-    for stat_name, stat_value in minimum_values.iteritems():
+    for stat_name, stat_value in minimum_values.items():
         if stat_name == 'AP':
             minimum_values['AP'] = min(12, stat_value)
         if stat_name == 'MP':
@@ -65,7 +65,7 @@ def set_min_stats(char, minimum_values):
 
 def get_min_stats_digested(char):
     min_stats = get_min_stats(char)
-    return {k: v for k, v in min_stats.iteritems() if v != '' and v is not None}
+    return {k: v for k, v in min_stats.items() if v != '' and v is not None}
 
 def get_min_stats_digested_by_key(char):
     return convert_dict_index_name_to_key(get_min_stats_digested(char))

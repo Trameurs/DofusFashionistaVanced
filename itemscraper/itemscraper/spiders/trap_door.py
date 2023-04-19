@@ -145,7 +145,7 @@ class TrapDoorSpider(scrapy.Spider):
         weapon['w_type'] = item_type
         item_level = response.xpath('.//div[@class=\'ak-encyclo-detail-level col-xs-6 text-right\']/text()')[0].extract().strip()
         weapon['level'] = int(item_level.split()[1])
-        print '%s - %s - %s' % (item_name, item_type, item_level)
+        print('%s - %s - %s' % (item_name, item_type, item_level))
             
         regex_pattern = re.compile('(-?\d+)?( to (-?\d+))? ?(\D+)')
         stats = []
@@ -157,7 +157,7 @@ class TrapDoorSpider(scrapy.Spider):
             match = regex_pattern.match(attr)
             if not match.group(4).startswith('('):
                 if (match.group(4) == 'AP') and (int(match.group(1)) < 0) and not is_stat:
-                    print 'Weapon %s with -AP' % title
+                    print('Weapon %s with -AP' % title)
                     is_hit = False
                 else:
                     is_stat = True

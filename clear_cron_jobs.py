@@ -19,14 +19,14 @@
 from subprocess import call
 
 def main():
-    print '== Cleaning user\'s cron jobs =='
+    print('== Cleaning user\'s cron jobs ==')
     call(['crontab', '-r'])
-    print '== Cleaning root\'s cron jobs =='
+    print('== Cleaning root\'s cron jobs ==')
     call(['sudo', 'crontab', '-r'])
     
-    print '== Printing user\'s cron jobs =='
+    print('== Printing user\'s cron jobs ==')
     call(['crontab', '-l'])
-    print '== Printing root\'s cron jobs =='
+    print('== Printing root\'s cron jobs ==')
     call(['sudo', 'crontab', '-l'])
     
 if __name__ == '__main__':

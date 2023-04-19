@@ -22,16 +22,16 @@ def main():
     call(['sudo', 'mkdir', '-p', '/var/log/fashionista'])
     call(['sudo', 'chmod', '777', '/var/log/fashionista'])
     
-    print '== Setting up backup job =='
-    print '== Setting up cleanup job =='
+    print('== Setting up backup job ==')
+    print('== Setting up cleanup job ==')
     call(['crontab', 'cronjobs_for_user.txt'])
     
-    print '== Setting up auto restart job =='
+    print('== Setting up auto restart job ==')
     call(['sudo', 'crontab', 'cronjobs_for_root.txt'])
 
-    print '== Printing user\'s cron jobs =='
+    print('== Printing user\'s cron jobs ==')
     call(['crontab', '-l'])
-    print '== Printing root\'s cron jobs =='
+    print('== Printing root\'s cron jobs ==')
     call(['sudo', 'crontab', '-l'])
     
 if __name__ == '__main__':

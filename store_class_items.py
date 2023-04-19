@@ -82,7 +82,7 @@ def store_weapon_data(item_id, weapon_name, weapon_data):
         if '(' in old_item.name:
             new_item.name = old_item.name
         
-        print 'Checking %s' % new_item.name
+        print('Checking %s' % new_item.name)
         
         update_item(old_item, new_item, None, False)
     

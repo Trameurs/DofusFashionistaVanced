@@ -22,7 +22,7 @@ from django.core.urlresolvers import reverse
 from chardata.models import ContactForm
 from django.core.mail import send_mail, BadHeaderError
 from chardata.util import set_response
-import urllib2
+import urllib.request, urllib.error, urllib.parse
 import json
 
 def contact(request):
@@ -40,7 +40,7 @@ def send_email(request):
     url = ("https://www.google.com/recaptcha/api/siteverify?secret=%s&response=%s" 
            % (settings.GEN_CONFIGS['url_captcha_secret'], g_recaptcha_response))
     
-    is_bot_json = urllib2.urlopen(url).read(1000)
+    is_bot_json = urllib.request.urlopen(url).read(1000)
     
     is_bot = json.loads(is_bot_json)
     if is_bot['success'] == 1:

@@ -149,18 +149,18 @@ class TouchVenom2Spider(scrapy.Spider):
             yield item
             return
         
-        print '------------------------------------------------------------'
-        print response.xpath('.//h1[@class=\'ak-return-link\']/text()').extract()[1].strip()
+        print('------------------------------------------------------------')
+        print(response.xpath('.//h1[@class=\'ak-return-link\']/text()').extract()[1].strip())
         item_name = response.xpath('.//h1[@class=\'ak-return-link\']/text()').extract()[1].strip()
         weapon['name'] = item_name
-        print response.xpath('.//div[@class=\'ak-encyclo-detail-type col-xs-6\']//span/text()')[0].extract().strip()
+        print(response.xpath('.//div[@class=\'ak-encyclo-detail-type col-xs-6\']//span/text()')[0].extract().strip())
         item_type = response.xpath('.//div[@class=\'ak-encyclo-detail-type col-xs-6\']//span/text()')[0].extract().strip()
         if item_type == 'Mounts':
             item_type = 'Pet'
         weapon['w_type'] = item_type
         item_level = response.xpath('.//div[@class=\'ak-encyclo-detail-level col-xs-6 text-right\']/text()')[0].extract().strip()
         weapon['level'] = int(item_level.split()[1])
-        print '%s - %s - %s' % (item_name, item_type, item_level)
+        print('%s - %s - %s' % (item_name, item_type, item_level))
         
         weapon['dofustouch'] = False
             
@@ -171,11 +171,11 @@ class TouchVenom2Spider(scrapy.Spider):
         
         xpath_str = '//div[@class=\'ak-container ak-content-list ak-displaymode-col\']//div[@class=\'ak-title\']'
             
-        print '------------------------------------------------------------------------------'
+        print('------------------------------------------------------------------------------')
         for element in response.xpath(xpath_str):
             title = element
             attr = title.xpath('./text()').extract()[0].strip()
-            print attr
+            print(attr)
             if attr not in ['AP:', 'Range:', 'CH:']:
                 if '>' in attr or '<' in attr:
                     weapon['conditions'] = [cond.extract().strip() for cond in title.xpath('./text()')]
@@ -183,7 +183,7 @@ class TouchVenom2Spider(scrapy.Spider):
                     match = regex_pattern.match(attr)
                     if not match.group(4).startswith('('):
                         if (match.group(4) == 'AP') and (int(match.group(1)) < 0) and not is_stat:
-                            print 'Weapon %s with -AP' % title
+                            print('Weapon %s with -AP' % title)
                             is_hit = False
                         else:
                             is_stat = True
@@ -198,29 +198,29 @@ class TouchVenom2Spider(scrapy.Spider):
                 if attr == 'AP:':
                     weapon['ap'] = int(weapon_value.split()[0])
                     weapon['uses_per_turn'] = int(weapon_value.split('(')[1].split()[0])
-                    print 'AP: %d' % weapon['ap']
-                    print 'Uses per turn: %d' % weapon['uses_per_turn']
+                    print('AP: %d' % weapon['ap'])
+                    print('Uses per turn: %d' % weapon['uses_per_turn'])
                 elif attr == 'Range:':
                     if ' to ' in weapon_value:
                         weapon['range'] = [int(x) for x in weapon_value.split(' to ')]
                     else:
                         weapon['range'] = [int(weapon_value), int(weapon_value)]
-                    print 'Range: ' 
-                    print weapon['range']
+                    print('Range: ') 
+                    print(weapon['range'])
                 elif attr == 'CH:':
-                    print 'tem CH'
+                    print('tem CH')
                     weapon['crit_chance'] = int(weapon_value.split()[0].split('/')[1])
                     if weapon['crit_chance'] != 0:
                         weapon['crit_bonus'] = int(weapon_value.split('(')[1].split(')')[0].split('+')[1])
-                        print 'CH: %d (+%d)' % (weapon['crit_chance'], weapon['crit_bonus'])
+                        print('CH: %d (+%d)' % (weapon['crit_chance'], weapon['crit_bonus']))
 
         weapon['stats'] = stats
         
-        print 'ELEMENTS'
+        print('ELEMENTS')
         weapon['has_conditions'] = False
         for element in response.xpath('.//div[@class=\'ak-container ak-panel no-padding\']'):
             title = element.xpath('.//div[@class=\'ak-panel-title\']/text()[last()]')
             if title.get().strip() == 'Conditions':
                 weapon['has_conditions'] = True
-        print 'END'
+        print('END')
         yield weapon

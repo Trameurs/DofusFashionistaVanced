@@ -19,7 +19,7 @@
 import scrapy
 from itemscraper.items import MissingNo, ItemscraperSetData
 
-UNDER_100_IDS = range(1, 601)
+UNDER_100_IDS = list(range(1, 601))
 
 
 
@@ -117,7 +117,7 @@ class TrapDoorSpider(scrapy.Spider):
         item = MissingNo()
         item['ankama_id'] = response.request.url.split('/')[-1]
         item['ankama_id'] = int(item['ankama_id'].split('-')[0])
-        print item['ankama_id'] #this part works
+        print(item['ankama_id']) #this part works
 
         e = response.xpath('//div[@class=\'ak-main-page\']')
         e = e.xpath('//div[@class=\'ak-title-container ak-backlink\']')
@@ -125,7 +125,7 @@ class TrapDoorSpider(scrapy.Spider):
         set_name = e.xpath('.//h1[@class=\'ak-return-link\']/text()')[1].extract().strip()
         set_data['name'] = set_name
         set_data['ankama_id'] = item['ankama_id']
-        print set_name
+        print(set_name)
         
         bonus_dict = {}
         for i in range(1, 9):

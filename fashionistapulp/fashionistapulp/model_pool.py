@@ -14,10 +14,10 @@
 # along with this program; if not, write to the Free Software Foundation,
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-from model import Model
+from .model import Model
 from threading import Lock
 
-from Queue import Queue
+from queue import Queue
 
 MAX_MODELS = 2
 lock = Lock()

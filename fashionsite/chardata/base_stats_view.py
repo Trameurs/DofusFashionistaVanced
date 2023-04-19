@@ -49,7 +49,7 @@ def _page(request, char_id, is_new_char):
     stats['distrib'] = char.allow_points_distribution  
 
     lower_soft_caps = {}
-    for stat, lis in SOFT_CAPS[char.char_class].iteritems():
+    for stat, lis in SOFT_CAPS[char.char_class].items():
         new_list = []
         for entry in lis:
             if entry is not None:

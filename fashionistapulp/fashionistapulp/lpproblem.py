@@ -16,7 +16,7 @@
 # along with this program; if not, write to the Free Software Foundation,
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-from fashionista_config import get_fashionista_path
+from .fashionista_config import get_fashionista_path
 from pulp import LpVariable, LpInteger, LpProblem, LpMaximize, LpStatus, value
 from pulp.solvers import COIN_CMD
 
@@ -39,14 +39,14 @@ class LpProblem2:
         problem_name = '/tmp/problem_%s' % str(uuid.uuid4())
         self.pulp_lp.name = problem_name
         self.pulp_lp.solve(SOLVER)
-        print 'Status: %s, Z = %g' % (LpStatus[self.pulp_lp.status], value(self.pulp_lp.objective))
+        print('Status: %s, Z = %g' % (LpStatus[self.pulp_lp.status], value(self.pulp_lp.objective)))
         
         tmpMps = os.path.join('%s-pulp.mps' % problem_name)
         tmpSol = os.path.join('%s-pulp.sol' % problem_name)
         try: os.remove(tmpMps)
-        except: print 'could not remove file %s' % tmpMps
+        except: print('could not remove file %s' % tmpMps)
         try: os.remove(tmpSol)
-        except: print 'could not remove file %s' % tmpSol
+        except: print('could not remove file %s' % tmpSol)
 
     def get_result(self):
         return {v.name: v.varValue for v in self.pulp_lp.variables()}
@@ -69,7 +69,7 @@ class LpProblem2:
 
     def finish_objective_function(self):
         self.pulp_lp += sum([value * self.pulp_vars[key] for key, value in
-                             self.obj_vars.iteritems()])
+                             self.obj_vars.items()])
         
     def restriction_lt_eq(self, max_bound, parcels):
         restriction = sum([parcel[0] * self.pulp_vars['%s_%s' % (parcel[1], str(parcel[2]))] 

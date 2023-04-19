@@ -52,9 +52,9 @@ def main():
             except:
                 pass
             size_after = os.path.getsize(f_path)
-            print ('[%s] Crushed from %d to %d bytes (%.2f%% reduction)'
+            print(('[%s] Crushed from %d to %d bytes (%.2f%% reduction)'
                    % (f_path, size_before, size_after,
-                      (size_before - size_after) / (float(size_before))))
+                      (size_before - size_after) / (float(size_before)))))
             processed_files[f_path] = get_md5_of_file(f_path)
 
     files_there.sort()

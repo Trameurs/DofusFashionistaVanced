@@ -110,7 +110,7 @@ START_URLS = [BASE_URL % item_id for item_id in UNDER_100_IDS]
 structure = get_structure()
 
 class TouchVenom2Spider(scrapy.Spider):
-    print UNDER_100_IDS
+    print(UNDER_100_IDS)
     name = "venom_touch_2"
     download_delay=1
     allowed_domains = ["dofus.com"]
@@ -143,7 +143,7 @@ class TouchVenom2Spider(scrapy.Spider):
         weapon['w_type'] = item_type
         item_level = e.xpath('.//div[@class=\'ak-level\']/text()')[0].extract().strip()
         weapon['level'] = int(item_level.split()[1])
-        print '%s - %s - %s' % (item_name, item_type, item_level)
+        print('%s - %s - %s' % (item_name, item_type, item_level))
         
         weapon['dofustouch'] = True
             
@@ -159,11 +159,11 @@ class TouchVenom2Spider(scrapy.Spider):
         for element in response.xpath(xpath_str):
             title = element.xpath('.//div[@class=\'ak-title\']')
             attr = title[0].xpath('./text()')[0].extract().strip()
-            print attr
+            print(attr)
             match = regex_pattern.match(attr)
             if not match.group(4).startswith('('):
                 if (match.group(4) == 'AP') and (int(match.group(1)) < 0) and not is_stat:
-                    print 'Weapon %s with -AP' % title
+                    print('Weapon %s with -AP' % title)
                     is_hit = False
                 else:
                     is_stat = True

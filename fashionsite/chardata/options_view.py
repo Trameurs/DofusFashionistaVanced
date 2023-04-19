@@ -45,7 +45,7 @@ def options_post(request, char_id):
     too_high = get_dofus_not_for_char(char)
     forbidden_dofus = []
     allowed_dofus = []
-    for (red, item) in DOFUS_OPTIONS.iteritems():
+    for (red, item) in DOFUS_OPTIONS.items():
         if red not in too_high:
             forbidden = request.POST.get(red) is None
             structure = get_structure()

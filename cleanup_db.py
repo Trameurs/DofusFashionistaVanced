@@ -105,7 +105,7 @@ def delete_cached_solutions(cs_ids_to_delete):
         SolutionMemory.objects.filter(pk__in=list(cs_ids_to_delete)).delete()
 
 def print_with_time(s):
-    print '[%s] %s' % (datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), s)
+    print('[%s] %s' % (datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), s))
 
 if __name__ == '__main__':
     main()

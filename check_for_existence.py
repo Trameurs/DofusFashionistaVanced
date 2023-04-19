@@ -31,7 +31,7 @@ def main(json_file):
     f= open("missing.txt","w+")
     f.write("[")
     for ankama_id in weapons:
-        print 'Checking %d %s' % (ankama_id, weapons[ankama_id])
+        print('Checking %d %s' % (ankama_id, weapons[ankama_id]))
         ankama_profile = (ankama_id, 'equipment')
         conn = sqlite3.connect(get_items_db_path())
         c = conn.cursor()
@@ -47,19 +47,19 @@ def get_item_id_and_name_for_ankama_profile(c, entities_table, ankama_profile, t
     if ankama_profile[1] == 'set':
         c.execute('SELECT id, name FROM %s WHERE ankama_id = ?' % entities_table,
                   (ankama_profile[0],))
-        print 'a'
+        print('a')
     else:
         if touch:
             c.execute('SELECT id, name FROM %s WHERE ankama_id = ? AND ankama_type = ? and dofustouch = ?' % entities_table,
                       (ankama_profile[0], ankama_profile[1], 1))
-            print 'b'
+            print('b')
         else:
             c.execute('SELECT id, name FROM %s WHERE ankama_id = ?' % entities_table,
                       (ankama_profile[0],))
-            print 'c'
+            print('c')
     query_result = c.fetchone()
-    print query_result
-    print '\n\n'
+    print(query_result)
+    print('\n\n')
     if query_result is not None:
         return query_result[0], query_result[1]
     else:
