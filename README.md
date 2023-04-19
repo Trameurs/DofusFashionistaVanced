@@ -1,3 +1,8 @@
+# Prerequisites
+
+Python 3   
+MySql
+
 # dofusfashionista
 The Dofus Fashionista, an equipment advisor for Dofus    
 This is a fork and an attempt at putting back up the website and update it to the latest version of Dofus
@@ -22,3 +27,7 @@ $ cd fashionista
 $ python configure_fashionista_root.py -i -s -d    
 $ python configure_fashionista.py    
 $ run_fashionista.bat    
+
+# Reference
+
+This is a fork of https://github.com/PiwiSlayer/DofusFashionista.git
