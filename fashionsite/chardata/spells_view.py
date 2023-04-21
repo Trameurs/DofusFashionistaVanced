@@ -24,7 +24,7 @@ from chardata.util import set_response, get_char_or_raise
 from django.core.exceptions import PermissionDenied, ValidationError
 from django.shortcuts import get_object_or_404
 from static_s3.templatetags.static_s3 import static
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 
 from fashionistapulp.dofus_constants import (DAMAGE_SPELLS, DAMAGE_TYPES, NEUTRAL)
 

@@ -20,8 +20,8 @@ from chardata.util import set_response
 from chardata.create_project_view import is_anon_cant_create, has_too_many_projects
 from chardata.views import user_has_projects
 
-from django.core.urlresolvers import reverse
-from django.utils.translation import ugettext as _
+from django.urls import reverse
+from django.utils.translation import gettext as _
 from fashionistapulp.structure import get_structure
 from fashionistapulp.translation import get_supported_language
 from chardata.image_store import get_image_url

@@ -18,7 +18,7 @@
 
 from social.apps.django_app.middleware import SocialAuthExceptionMiddleware
 from social.exceptions import AuthCanceled
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.http import HttpResponseRedirect
 
 class SocialAuthExceptionMiddleware(SocialAuthExceptionMiddleware):

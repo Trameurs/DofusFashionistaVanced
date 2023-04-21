@@ -19,7 +19,7 @@
 from .dofus_constants import TYPE_NAME_TO_SLOT_NUMBER, STAT_MAXIMUM, SOFT_CAPS
 from .lpproblem import LpProblem2
 from .modelresult import ModelResultMinimal
-from pulp.solvers import PulpSolverError
+import pulp
 from .restrictions import Restrictions
 from .structure import get_structure
 
@@ -735,7 +735,7 @@ class Model:
             self.write_objective_function(self.input['objective_values'], self.input['char_level'])
         try:
             self.problem.run()
-        except PulpSolverError:
+        except pulp.PulpSolverError:
             if retries > 0:            
                 self.run(retries-1, True)
             else:

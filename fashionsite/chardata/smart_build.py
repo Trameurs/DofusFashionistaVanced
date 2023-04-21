@@ -14,7 +14,7 @@
 # along with this program; if not, write to the Free Software Foundation,
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-from django.utils.translation import ugettext_lazy
+from django.utils.translation import gettext_lazy
 from itertools import product, combinations
 import pickle
 
@@ -33,29 +33,29 @@ ALL_ASPECTS_LIST = ['str', 'int', 'cha', 'agi',
 ALL_ASPECTS = set(ALL_ASPECTS_LIST)
 
 ASPECT_TO_NAME = {
-    'str': ugettext_lazy('Strength'),
-    'int': ugettext_lazy('Intelligence'),
-    'cha': ugettext_lazy('Chance'),
-    'agi': ugettext_lazy('Agility'),
-    'vit': ugettext_lazy('Vitality'),
-    'res': ugettext_lazy('Resists'),
-    'omni': ugettext_lazy('Omni-Elemental'),
-    'wis': ugettext_lazy('Leeching'),
-    'dam': ugettext_lazy('Linear Damage'),
-    'crit': ugettext_lazy('Critical Hits'),
-    'noncrit': ugettext_lazy('Avoid Critical Hits'),
-    'heal': ugettext_lazy('Linear Heals'),
-    'aprape': ugettext_lazy('AP Removal'),
-    'mprape': ugettext_lazy('MP Removal'),
-    'pvp': ugettext_lazy('Group PVP'),
-    'duel': ugettext_lazy('Duel PVP'),
-    'trap': ugettext_lazy('Traps'),
-    'summon': ugettext_lazy('Summons'),
-    'pushback': ugettext_lazy('Pushback'),
-    'pp': ugettext_lazy('Prospecting'),
-    'pods': ugettext_lazy('Pods'),
-    'balanced': ugettext_lazy('Balanced'),
-    'glasscannon': ugettext_lazy('Glass-Cannon'),
+    'str': gettext_lazy('Strength'),
+    'int': gettext_lazy('Intelligence'),
+    'cha': gettext_lazy('Chance'),
+    'agi': gettext_lazy('Agility'),
+    'vit': gettext_lazy('Vitality'),
+    'res': gettext_lazy('Resists'),
+    'omni': gettext_lazy('Omni-Elemental'),
+    'wis': gettext_lazy('Leeching'),
+    'dam': gettext_lazy('Linear Damage'),
+    'crit': gettext_lazy('Critical Hits'),
+    'noncrit': gettext_lazy('Avoid Critical Hits'),
+    'heal': gettext_lazy('Linear Heals'),
+    'aprape': gettext_lazy('AP Removal'),
+    'mprape': gettext_lazy('MP Removal'),
+    'pvp': gettext_lazy('Group PVP'),
+    'duel': gettext_lazy('Duel PVP'),
+    'trap': gettext_lazy('Traps'),
+    'summon': gettext_lazy('Summons'),
+    'pushback': gettext_lazy('Pushback'),
+    'pp': gettext_lazy('Prospecting'),
+    'pods': gettext_lazy('Pods'),
+    'balanced': gettext_lazy('Balanced'),
+    'glasscannon': gettext_lazy('Glass-Cannon'),
 }
 
 ASPECT_TO_SHORT_NAME = {

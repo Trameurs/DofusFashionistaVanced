@@ -15,7 +15,7 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 from collections import Counter
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 
 from .dofus_constants import (TYPE_NAMES, TYPE_NAME_TO_SLOT, TYPE_NAME_TO_SLOT_NUMBER, SLOTS,
                              NEUTRAL, DAMAGE_TYPES, BASE_STATS, STAT_KEY_TO_NAME,

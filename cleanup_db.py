@@ -24,6 +24,8 @@ sys.path.append('fashionsite')
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'fashionsite.settings')
 
 import django
+from django.utils.encoding import smart_str
+django.utils.encoding.smart_text = smart_str
 django.setup()
 
 from chardata.models import Char, SolutionCounter, SolutionMemory

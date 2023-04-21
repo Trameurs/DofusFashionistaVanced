@@ -21,7 +21,7 @@ from chardata.util import set_response, safe_int, get_char_or_raise, HttpRespons
 from fashionistapulp.dofus_constants import AGI_TARGETS, CRIT_TARGETS,\
     STAT_ORDER
 from fashionistapulp.structure import get_structure
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 
 def min_stats(request, char_id):
     char = get_char_or_raise(request, char_id)

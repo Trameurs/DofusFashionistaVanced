@@ -18,13 +18,13 @@
 
 from .fashionista_config import get_fashionista_path
 from pulp import LpVariable, LpInteger, LpProblem, LpMaximize, LpStatus, value
-from pulp.solvers import COIN_CMD
+import pulp
 
 import os
 import uuid
 
 
-SOLVER = COIN_CMD(path=get_fashionista_path() + '/fashionistapulp/fashionistapulp/cbc',
+SOLVER = pulp.COIN_CMD(path=get_fashionista_path() + '/fashionistapulp/fashionistapulp/cbc',
                   maxSeconds=90,
                   keepFiles=True)
 

@@ -15,7 +15,7 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 from django.utils.translation import pgettext
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 
 from chardata.smart_build import get_char_aspects, get_elements, param_for_build
 from chardata.stats_weights import get_stats_weights, set_stats_weights

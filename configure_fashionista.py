@@ -29,7 +29,7 @@ def main():
     call(['mysql', '-e', 'CREATE DATABASE IF NOT EXISTS fashionista;'])
 
     _print_header('Syncing db')
-    call(['python', 'fashionsite/manage.py', 'syncdb'])
+    call(['python', 'fashionsite/manage.py', 'migrate'])
     call(['python', 'fashionsite/manage.py', 'migrate', 'chardata'])
     
     if platform.system() != 'Windows':

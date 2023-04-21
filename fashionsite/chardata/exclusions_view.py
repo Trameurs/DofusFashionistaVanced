@@ -15,8 +15,8 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 from django.core.exceptions import ValidationError
-from django.utils.translation import ugettext as _
-from django.utils.translation import ugettext_lazy
+from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy
 
 import json
 
@@ -27,16 +27,16 @@ from fashionistapulp.translation import get_supported_language
 
 
 TYPE_COLUMNS = [
-    [{'id': 'Weapon', 'name': ugettext_lazy('Weapon')}, 
-     {'id': 'Shield', 'name': ugettext_lazy('Shield')},
-     {'id': 'Hat', 'name': ugettext_lazy('Hat')}, 
-     {'id': 'Cloak', 'name': ugettext_lazy('Cloak')},
-     {'id': 'Pet', 'name': ugettext_lazy('Pet')}],
-    [{'id': 'Amulet', 'name': ugettext_lazy('Amulet')}, 
-     {'id': 'Ring', 'name': ugettext_lazy('Ring')},
-     {'id': 'Boots', 'name': ugettext_lazy('Boots')}, 
-     {'id': 'Belt', 'name': ugettext_lazy('Belt')},
-     {'id': 'Dofus', 'name': ugettext_lazy('Dofus')}]
+    [{'id': 'Weapon', 'name': gettext_lazy('Weapon')}, 
+     {'id': 'Shield', 'name': gettext_lazy('Shield')},
+     {'id': 'Hat', 'name': gettext_lazy('Hat')}, 
+     {'id': 'Cloak', 'name': gettext_lazy('Cloak')},
+     {'id': 'Pet', 'name': gettext_lazy('Pet')}],
+    [{'id': 'Amulet', 'name': gettext_lazy('Amulet')}, 
+     {'id': 'Ring', 'name': gettext_lazy('Ring')},
+     {'id': 'Boots', 'name': gettext_lazy('Boots')}, 
+     {'id': 'Belt', 'name': gettext_lazy('Belt')},
+     {'id': 'Dofus', 'name': gettext_lazy('Dofus')}]
 ]
 
 def exclusions(request, char_id):

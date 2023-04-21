@@ -18,7 +18,7 @@
 
 from django.http import HttpResponse, HttpResponseRedirect
 from django.conf import settings
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from chardata.models import ContactForm
 from django.core.mail import send_mail, BadHeaderError
 from chardata.util import set_response

@@ -18,13 +18,12 @@
 
 import base64
 import hashlib
-from string import maketrans
 from django.conf import settings
 
 SECRET_PART_1 = settings.GEN_CONFIGS['char_id_SECRET_PART_1']
 SECRET_PART_2 = settings.GEN_CONFIGS['char_id_SECRET_PART_2']
-URL_SAFE_BASE_64_ENCODE = maketrans('+/=', '.-_')
-URL_SAFE_BASE_64_DECODE = maketrans('.-_', '+/=')
+URL_SAFE_BASE_64_ENCODE = str.maketrans('+/=', '.-_')
+URL_SAFE_BASE_64_DECODE = str.maketrans('.-_', '+/=')
 
 def _sign(char_id):
     return hashlib.sha1('%s%d%s' % (SECRET_PART_1, char_id, SECRET_PART_2)).digest()[:4]

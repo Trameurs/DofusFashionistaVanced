@@ -21,7 +21,7 @@ from django.forms.widgets import Textarea
 
 
 class Char(models.Model):
-    owner = models.ForeignKey(User, null=True)
+    owner = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
     created_time = models.DateField(auto_now_add=True, blank=True, null=True)
     modified_time = models.DateField(auto_now=True, blank=True, null=True)
     name = models.CharField(max_length=50)
@@ -51,7 +51,7 @@ class CharBaseStats(models.Model):
     scrolled_value = models.IntegerField(default=0)
 
 class UserAlias(models.Model):
-    user = models.ForeignKey(User, unique=True)
+    user = models.ForeignKey(User, unique=True, on_delete=models.CASCADE)
     alias = models.CharField(max_length=50, null=True, blank=True)
     
 class ContactForm(forms.Form):

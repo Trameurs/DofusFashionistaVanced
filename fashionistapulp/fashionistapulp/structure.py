@@ -33,7 +33,7 @@ from .set import Set
 from .translation import NON_EN_LANGUAGES
 from .weapon import Weapon, WeaponType
 from django.templatetags.i18n import language
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 
 
 

@@ -34,7 +34,7 @@ from fashionistapulp.dofus_constants import SLOTS, STAT_ORDER, SLOT_NAME_TO_TYPE
 from fashionistapulp.modelresult import ModelResultItem
 from fashionistapulp.structure import get_structure
 from fashionistapulp.translation import get_supported_language
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 
 
 def _order_items(item_type, char, search_term):
