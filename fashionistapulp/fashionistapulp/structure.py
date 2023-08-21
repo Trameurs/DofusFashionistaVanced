@@ -371,7 +371,10 @@ class Structure:
         c = self.conn.cursor()
         for entry in c.execute('SELECT item, line, language FROM extra_lines'):
             item_id = entry[0]         
-            lines = pickle.loads(str(entry[1]))
+            if isinstance(entry[1], str):
+                lines = pickle.loads(entry[1].encode())
+            else:
+                lines = pickle.loads(entry[1])
             language = entry[2]
             assert type(lines) is list
             item = self.get_item_by_id(item_id)

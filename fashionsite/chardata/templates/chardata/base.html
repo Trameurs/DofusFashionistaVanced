@@ -30,7 +30,7 @@
       ga('send', 'pageview');
 
     </script>
-    <script type="text/javascript" src="{% url 'django.views.i18n.javascript_catalog' %}"></script>
+    <script type="text/javascript" src="/jsi18n/"></script>
     <script>
     
     function confirmRun() {
@@ -93,26 +93,26 @@
          </div>
        {% else %}
           <div class="login">
-            <a href="{% url 'chardata.login_view.login_page' %}"> {% trans "Login" %} </a>
+            <a href="{% url 'login_page' %}"> {% trans "Login" %} </a>
           </div>
        {% endif %}
         </div>
         <div class="sidebar" background="#00ff00">
           <div class="mini-menu">
               <div><a class="menu_link menu_link_top" href="/">{% trans "Home" %}</a></div>
-              <div><a class="menu_link menu_link_middle"  href="{% url 'chardata.views.about' %}">{% trans "Help & About" %}</a></div>
-              <div><a class="menu_link menu_link_bottom"  href="{% url 'chardata.views.faq' %}">{% trans "FAQ" %}</a></div>
+              <div><a class="menu_link menu_link_middle"  href="{% url 'about' %}">{% trans "Help & About" %}</a></div>
+              <div><a class="menu_link menu_link_bottom"  href="{% url 'faq' %}">{% trans "FAQ" %}</a></div>
           </div>    
               <div class="space"></div>
           <div class="mini-menu">    
               <div>
-                <a class="menu_link menu_link_top" href="{% url 'chardata.create_project_view.setup' %}">{% trans "Create a project" %}</a>
+                <a class="menu_link menu_link_top" href="{% url 'setup' %}">{% trans "Create a project" %}</a>
               </div>
               <div>
-                <a class="menu_link menu_link_middle" href="{% url 'chardata.views.load_projects' %}">{% trans "Load a project" %}</a>
+                <a class="menu_link menu_link_middle" href="{% url 'load_projects' %}">{% trans "Load a project" %}</a>
               </div>
               <div>
-                <a class="menu_link menu_link_bottom" href="{% url 'chardata.compare_sets_view.choose_compare_sets' %}">{% trans "Compare sets" %}</a>
+                <a class="menu_link menu_link_bottom" href="{% url 'choose_compare_sets' %}">{% trans "Compare sets" %}</a>
               </div>
           </div>
           <div class="space"></div>
@@ -205,7 +205,7 @@
    
             <div align="center" class="footer">
         {% trans "Items up to update" %} 2.58
-            <br> <a href="{% url 'chardata.views.about' %}">{% trans "Help & About" %}</a> &ndash; <a href="{% url 'chardata.contact_view.contact' %}">{% trans "Contact us" %}</a> &ndash; <a href="{% url 'chardata.views.license_page' %}">{% trans "Copyright and License information" %}</a>
+            <br> <a href="{% url 'about' %}">{% trans "Help & About" %}</a> &ndash; <a href="{% url 'contact' %}">{% trans "Contact us" %}</a> &ndash; <a href="{% url 'license_page' %}">{% trans "Copyright and License information" %}</a>
             </div>
         </div>
      </div>

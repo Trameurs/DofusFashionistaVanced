@@ -44,7 +44,7 @@ def home(request, char_id=0):
         button = {}
         button['pic'] = static('chardata/LoadProj2.png')
         button['label'] = _('Create a Project')
-        button['link'] = reverse('chardata.create_project_view.setup')
+        button['link'] = reverse('setup')
         button['class'] = get_button_pos(buttons)
         buttons.append(button)
     if user_has_projects(request) and len(buttons) < 3:
@@ -54,18 +54,18 @@ def home(request, char_id=0):
         button['link'] = reverse('chardata.views.load_projects')
         button['class'] = get_button_pos(buttons)
         buttons.append(button)
-    if request.user.is_anonymous() and len(buttons) < 3:
+    if request.user.is_anonymous and len(buttons) < 3:
         button = {}
         button['pic'] = static('chardata/Login1.png')
         button['label'] = _('Login')
-        button['link'] = reverse('chardata.login_view.login_page')
+        button['link'] = reverse('login_page')
         button['class'] = get_button_pos(buttons)
         buttons.append(button)
     if len(buttons) < 3:
         button = {}
         button['pic'] = static('chardata/Faq2.png')
         button['label'] = _('FAQ')
-        button['link'] = reverse('chardata.views.faq')
+        button['link'] = reverse('faq')
         button['class'] = get_button_pos(buttons)
         buttons.append(button)
     if len(buttons) < 3:

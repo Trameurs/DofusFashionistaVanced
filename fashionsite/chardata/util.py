@@ -101,7 +101,7 @@ def on_off_to_bool(val):
     
 def get_alias(user):
     aliases = []
-    if user is not None and not user.is_anonymous():
+    if user is not None and not user.is_anonymous:
         aliases = UserAlias.objects.filter(user=user)
     alias = []
     if len(aliases) > 0:
@@ -143,10 +143,10 @@ TESTER_USERS = settings.GEN_CONFIGS['TESTER_USERS_EMAILS']
 SUPER_USERS = settings.GEN_CONFIGS['SUPER_USERS_EMAILS']
 
 def request_by_super_user(request):
-    return (not request.user.is_anonymous() and request.user.email in SUPER_USERS)
+    return (not request.user.is_anonymous and request.user.email in SUPER_USERS)
 
 def char_belongs_to_user(request, char):
-    if request.user.is_anonymous():
+    if request.user.is_anonymous:
         if 'char_id' in request.session and int(char.pk) == request.session['char_id']:
             return True
     if (not request_by_super_user(request) and

@@ -29,20 +29,16 @@ if platform.system() == 'Windows':
 else:
     CONFIG_DIR = '/etc/fashionista'
 
-APT_GET_PACKAGES_TO_INSTALL = [
-    'python-pip', # Package manager.
-    'sqlite3', # Database.
-    #'apache2', # Web server.
-    #'libapache2-mod-wsgi', # Apache-Django interface.
-    'pngcrush', # Image optimizer.
-    'imagemagick', # Image processing to resize assets.
-    'mysql-server',
-    'mysql-client',
-    'python-dev',
-    'libmysqlclient-dev',
-    'libevent-dev',
-    'memcached',
-]
+PACKAGES_TO_INSTALL = {
+    'apt-get': [
+        'python-pip', 'sqlite3', 'pngcrush', 'imagemagick', 'mysql-server',
+        'mysql-client', 'python-dev', 'libmysqlclient-dev', 'libevent-dev', 'memcached',
+    ],
+    'yum': [
+        'python-pip', 'sqlite', 'pngcrush', 'ImageMagick', 'mariadb-server',
+        'mariadb', 'python-devel', 'mariadb-devel', 'libevent-devel', 'memcached',
+    ]
+}
 
 PIP_PACKAGES_TO_INSTALL = [
     'Django==1.8.13.....', # Application server.
@@ -155,10 +151,25 @@ password=%s
         if platform.system() == 'Windows':
             check_call([sys.executable, '-m', 'pip', 'install'] + PIP_PACKAGES_TO_INSTALL)
         else:
-            call(['apt-get', 'install'] + APT_GET_PACKAGES_TO_INSTALL)
-            call(['python', '-m', 'pip', 'install'] + PIP_PACKAGES_TO_INSTALL)
+            package_manager = _get_package_manager()
+            if package_manager:
+                call([package_manager, 'install'] + PACKAGES_TO_INSTALL[package_manager])
+                call(['python', '-m', 'pip', 'install'] + PIP_PACKAGES_TO_INSTALL)
 
     _print_header('Done')
+
+def _get_package_manager():
+    """Identify the appropriate package manager (apt-get or yum) for the distribution."""
+    try:
+        with open('/etc/os-release', 'r') as f:
+            distro_name = f.readline().split('=')[1].strip().replace('"', '')
+        if 'ubuntu' in distro_name.lower() or 'debian' in distro_name.lower():
+            return 'apt-get'
+        elif 'amzn' in distro_name.lower() or 'centos' in distro_name.lower() or 'redhat' in distro_name.lower():
+            return 'yum'
+    except Exception as e:
+        print(f"Error determining package manager: {e}")
+        return None
 
 def _print_header(header):
     print('=' * 60)

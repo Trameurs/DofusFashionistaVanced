@@ -32,12 +32,12 @@ class Char(models.Model):
     minimum_stats = models.BinaryField()
     minimum_crits = models.BinaryField()
     stats_weight = models.BinaryField()
-    minimal_solution = models.BinaryField(default='')
+    minimal_solution = models.BinaryField(default=b'')
     link_shared = models.BooleanField()
     options = models.BinaryField()
     inclusions = models.BinaryField()
     exclusions = models.BinaryField()
-    aspects = models.BinaryField(default='')
+    aspects = models.BinaryField(default=b'')
     deleted = models.BooleanField(default=False)
     allow_points_distribution = models.BooleanField(default=True)
 
@@ -51,7 +51,7 @@ class CharBaseStats(models.Model):
     scrolled_value = models.IntegerField(default=0)
 
 class UserAlias(models.Model):
-    user = models.ForeignKey(User, unique=True, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     alias = models.CharField(max_length=50, null=True, blank=True)
     
 class ContactForm(forms.Form):

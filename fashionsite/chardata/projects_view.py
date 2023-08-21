@@ -40,7 +40,7 @@ def delete_projects(request):
     return HttpResponseText('ok')
         
 def duplicate_project(request):
-    if request.user is None or request.user.is_anonymous():
+    if request.user is None or request.user.is_anonymous:
         return HttpResponseText('error')
 
     proj_id_to_copy = json.loads(request.POST.get('project_id', None))
@@ -51,7 +51,7 @@ def duplicate_project(request):
         return HttpResponseText('too_many')
 
 def duplicate_my_project(request, char_id):
-    if request.user is None or request.user.is_anonymous():
+    if request.user is None or request.user.is_anonymous:
         raise PermissionDenied
 
     worked = _unchecked_duplicate_project(request, char_id)
@@ -78,7 +78,7 @@ def duplicate_someones_project(request, encoded_char_id):
                                             args=('too_many',)))
 
 def _unchecked_duplicate_project(request, proj_id_to_copy):
-    signed_out = (request.user is None or request.user.is_anonymous())
+    signed_out = (request.user is None or request.user.is_anonymous)
     
     if not signed_out:
         chars = Char.objects.filter(owner=request.user)

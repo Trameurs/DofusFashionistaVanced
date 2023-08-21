@@ -25,7 +25,7 @@ import uuid
 
 
 SOLVER = pulp.COIN_CMD(path=get_fashionista_path() + '/fashionistapulp/fashionistapulp/cbc',
-                  maxSeconds=90,
+                  timeLimit=90,
                   keepFiles=True)
 
 class LpProblem2:

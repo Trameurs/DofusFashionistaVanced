@@ -47,7 +47,7 @@ SECRET_KEY = GEN_CONFIGS['SECRET_KEY']
 with open(os.path.join(CONFIG_DIR, 'debug_mode')) as f:
     DEBUG = (f.read() == 'True')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 STATIC_URL = '/static/'
 
@@ -86,13 +86,15 @@ TEMPLATES = [
                 'django.template.context_processors.static',
                 'django.template.context_processors.tz',
                 'django.contrib.messages.context_processors.messages',
-                'social.apps.django_app.context_processors.backends',
-                'social.apps.django_app.context_processors.login_redirect',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
+                'django.template.context_processors.request',
             ],
         },
     },
 ]
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTHENTICATION_BACKENDS = (
    'social_core.backends.facebook.FacebookOAuth2',
@@ -101,7 +103,7 @@ AUTHENTICATION_BACKENDS = (
    'django.contrib.auth.backends.ModelBackend',
 )
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = [
     'django.middleware.gzip.GZipMiddleware',
     'htmlmin.middleware.HtmlMinifyMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -113,7 +115,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'social_django.middleware.SocialAuthExceptionMiddleware',
     'htmlmin.middleware.MarkRequestMiddleware',
-)
+]
 
 # Uncomment to minify even in DEBUG mode.
 # HTML_MINIFY = True
@@ -184,10 +186,10 @@ with open(os.path.join(CONFIG_DIR, 'serve_static')) as f:
     serve_static = f.read().startswith('True')
     if not serve_static or not DEBUG:
         STATIC_URL = 'https://s3.amazonaws.com/%s/' % STATIC_FILES_BUCKET
-        ALLOWED_HOSTS = ['dofusfashionista.com']
+        ALLOWED_HOSTS = ['dofusfashionistavanced.com']
     else:
         STATIC_ROOT = '/tmp/statictemp'
-        STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.CachedStaticFilesStorage'
+        STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 LOGGING = {
     'version': 1,
@@ -237,7 +239,7 @@ LOGGING = {
 
 CACHES = { 
   'default' : { 
-     'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache', 
+     'BACKEND': 'django.core.cache.backends.memcached.PyLibMCCache', 
      'LOCATION' : '127.0.0.1:11211',
      'TIMEOUT': 600,
      'CULL_FREQUENCY': 3

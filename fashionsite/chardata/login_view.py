@@ -25,7 +25,7 @@ from django.urls import reverse
 from django.http import HttpResponseRedirect
 import hashlib
 from smtplib import SMTPRecipientsRefused
-from social.apps.django_app.default.models import UserSocialAuth
+from social_django.models import UserSocialAuth
 
 from chardata.models import UserAlias
 from chardata.util import set_response, TESTER_USERS, HttpResponseText

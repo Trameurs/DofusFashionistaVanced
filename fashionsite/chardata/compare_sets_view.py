@@ -243,7 +243,7 @@ def get_item_stats(request):
 def compare_set_search_proj_name(request):
     name_piece = request.POST.get('name[term]', None)
     
-    if (request.user is not None and not request.user.is_anonymous()):
+    if (request.user is not None and not request.user.is_anonymous):
         chars = Char.objects.filter(owner=request.user)
         chars = chars.exclude(deleted=True)
         

@@ -44,7 +44,7 @@ def check_saved_dump_hash():
         print_with_time('Item db dump is %s' % current_dump_hash)
     
     try:
-        saved_db_version = ItemDbVersion.objects.latest(field_name='id')
+        saved_db_version = ItemDbVersion.objects.latest('id')
     except ItemDbVersion.DoesNotExist:
         print_with_time('Last used db dump is null, wiping just to make sure.')
         return True, current_dump_hash

@@ -20,6 +20,9 @@ import getpass
 import platform
 from subprocess import call
 
+# Determine the correct python command
+PYTHON_CMD = "python3" if platform.system() != "Windows" else "python"
+
 def main():
     if getpass.getuser() == 'root' and platform.system() != 'Windows':
         print('Run this script as a regular user, not as root.')
@@ -29,8 +32,8 @@ def main():
     call(['mysql', '-e', 'CREATE DATABASE IF NOT EXISTS fashionista;'])
 
     _print_header('Syncing db')
-    call(['python', 'fashionsite/manage.py', 'migrate'])
-    call(['python', 'fashionsite/manage.py', 'migrate', 'chardata'])
+    call([PYTHON_CMD, 'fashionsite/manage.py', 'migrate'])
+    call([PYTHON_CMD, 'fashionsite/manage.py', 'migrate', 'chardata'])
     
     if platform.system() != 'Windows':
         call(['chmod', '777', 'fashionsite'])

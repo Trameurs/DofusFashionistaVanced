@@ -58,7 +58,7 @@ def setup(request, char_id=0):
         login_problem = False
     if (is_new_char
         and request.user is not None 
-        and not request.user.is_anonymous()
+        and not request.user.is_anonymous
         and can_create):
         chars = Char.objects.filter(owner=request.user)
         chars = chars.exclude(deleted=True)
@@ -84,12 +84,12 @@ def setup(request, char_id=0):
                         char)
 
 def is_anon_cant_create(request):
-    return request.user.is_anonymous() and 'char_id' in request.session
+    return request.user.is_anonymous and 'char_id' in request.session
 
 def has_too_many_projects(request):
     too_many_projects_problem = False
     if (request.user is not None 
-        and not request.user.is_anonymous()):
+        and not request.user.is_anonymous):
         chars = Char.objects.filter(owner=request.user)
         chars = chars.exclude(deleted=True)
         if len(chars) >= MAXIMUM_NUMBER_OF_PROJECTS and request.user.email not in TESTER_USERS:
@@ -135,7 +135,7 @@ def create_project(request):
     state = _get_state_from_post(request)
 
     char = Char()
-    if not request.user.is_anonymous():
+    if not request.user.is_anonymous:
         char.owner = request.user
     char.minimum_stats = ''
     char.stats_weight = ''
@@ -164,7 +164,7 @@ def create_project(request):
         basestats.total_value = 100
         basestats.save()
     
-    if request.user.is_anonymous():
+    if request.user.is_anonymous:
         request.session['char_id'] = char.pk
     
     if state['where_to_go'] == 'wizard':
@@ -217,9 +217,9 @@ def understand_build_post(request):
     return HttpResponseJson(json.dumps(_get_aspect_checklist(aspects)))
 
 def save_project_to_user(request):
-    if 'char_id' in request.session and not request.user.is_anonymous():
+    if 'char_id' in request.session and not request.user.is_anonymous:
         char = get_object_or_404(Char, pk=request.session['char_id'])
-        if request.user is not None and not request.user.is_anonymous():
+        if request.user is not None and not request.user.is_anonymous:
             chars = Char.objects.filter(owner=request.user)
             chars = chars.exclude(deleted=True)
             if len(chars) < MAXIMUM_NUMBER_OF_PROJECTS or request.user.email in TESTER_USERS:

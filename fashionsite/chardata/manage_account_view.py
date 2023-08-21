@@ -32,7 +32,7 @@ def save_account(request):
     form_email = request.POST.get('email', '')
     
     aliases = []
-    if request.user is not None and not request.user.is_anonymous():
+    if request.user is not None and not request.user.is_anonymous:
         aliases = UserAlias.objects.filter(user=request.user)
     alias = None
     if len(aliases) > 0:

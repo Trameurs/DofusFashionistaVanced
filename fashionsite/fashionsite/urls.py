@@ -31,14 +31,14 @@ js_info_dict = {
 }
 
 urlpatterns = [
-    (r'^jsi18n/$', JavaScriptCatalog.as_view(), js_info_dict),
+    re_path(r'^jsi18n/$', JavaScriptCatalog.as_view(), name='javascript-catalog'),
 ]
 
 
 urlpatterns = [
     re_path(r'^jsi18n/$', JavaScriptCatalog.as_view(), js_info_dict),
     re_path(r'^$', home_view.home, name='home'),
-    re_path(r'^login_page/', login_view.login_page),
+    re_path(r'^login_page/', login_view.login_page, name='login_page'),
     re_path(r'^local_login/', login_view.local_login),
     re_path(r'^register/', login_view.register),
     re_path(r'^check_your_email/', login_view.check_your_email),
@@ -51,7 +51,7 @@ urlpatterns = [
     re_path(r'^do_recover_password/(?P<username>.+)/(?P<recover_token>.+)/', login_view.recover_password),
     re_path(r'^recover_password_email/', login_view.recover_password_email_page),
 
-    re_path(r'^loadprojects/', views.load_projects),
+    re_path(r'^loadprojects/', views.load_projects, name='load_projects'),
     re_path(r'^loadprojectserror/(?P<error>.+)/', views.load_projects_error),
     re_path(r'^loadproject/(?P<char_id>\d+)/', views.load_a_project),
     re_path(r'^deleteprojects/', projects_view.delete_projects),
@@ -64,7 +64,7 @@ urlpatterns = [
     re_path(r'^initbasestats/(?P<char_id>\d+)/', base_stats_view.init_base_stats),
     re_path(r'^initbasestatspost/(?P<char_id>\d+)/', base_stats_view.init_base_stats_post),
 
-    re_path(r'^setup/$', create_project_view.setup),
+    re_path(r'^setup/$', create_project_view.setup, name='setup'),
     re_path(r'^createproject/', create_project_view.create_project),
     re_path(r'^saveprojecttouser/', create_project_view.save_project_to_user),
     re_path(r'^project/(?P<char_id>\d+)/', create_project_view.setup),
@@ -109,9 +109,9 @@ urlpatterns = [
 
     re_path(r'^infeasible/(?P<char_id>\d+)/', views.infeasible),
     re_path(r'^error/(?P<char_id>\d+)/', util_views.error),
-    re_path(r'^about/', views.about),
-    re_path(r'^license/', views.license_page),
-    re_path(r'^faq/', views.faq),
+    re_path(r'^about/', views.about, name='about'),
+    re_path(r'^license/', views.license_page, name='license_page'),
+    re_path(r'^faq/', views.faq, name='faq'),
 
     re_path(r'^spells/(?P<char_id>\d+)/', spells_view.spells),
     re_path(r'^spells_linked/(?P<char_name>.*)/(?P<encoded_char_id>.+)/', spells_view.spells_linked),
@@ -121,7 +121,7 @@ urlpatterns = [
     re_path(r'^500/', views.app_error),
 
     re_path(r'^contact/thankyou/', contact_view.thankyou),
-    re_path(r'^contact/', contact_view.contact),
+    re_path(r'^contact/', contact_view.contact, name = 'contact'),
     re_path(r'^send/', contact_view.send_email),
 
     re_path(r'^manageaccount/', manage_account_view.manage_account),
@@ -131,7 +131,7 @@ urlpatterns = [
     re_path(r'^changeautotheme/', util.set_current_auto),
 
     re_path('', include('social_django.urls', namespace='social')),
-    re_path('', include('django.contrib.auth.urls', namespace='auth')),
+    re_path('', include(('django.contrib.auth.urls', 'auth'))),
 
     re_path(r'^robots\.txt$', TemplateView.as_view(template_name='chardata/robots.txt',
                                                content_type='text/plain')),
@@ -153,14 +153,13 @@ if settings.DEBUG:
         re_path(r'^choose_set/', manage_items_view.choose_set),
         re_path(r'^update_set/', manage_items_view.update_set_post),
         re_path(r'^delete_set/', manage_items_view.delete_set_post),
-        re_path(r'^admin/', include(admin.site.urls)),
+        re_path(r'^admin/', admin.site.urls),
     ]
-    urlpatterns += [re_path(r'^admin/', include(admin.site.urls))]
 
 if settings.EXPERIMENTS['COMPARE_SETS']:
     urlpatterns += [
                             re_path(r'^compare_sets/(?P<sets_params>.+)', compare_sets_view.compare_sets),
-                            re_path(r'^choose_compare_sets/$', compare_sets_view.choose_compare_sets),
+                            re_path(r'^choose_compare_sets/$', compare_sets_view.choose_compare_sets, name = 'choose_compare_sets'),
                             re_path(r'^choose_compare_sets_post/$', compare_sets_view.choose_compare_sets_post),
                             re_path(r'^get_compare_sharing_link/(?P<sets_params>.+)', compare_sets_view.get_sharing_link),
                             re_path(r'^get_item_stats_compare/$', compare_sets_view.get_item_stats),

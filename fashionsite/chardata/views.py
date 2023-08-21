@@ -34,13 +34,13 @@ def load_projects(request, char_id=0):
 
 def load_projects_error(request, error):
     chars = []
-    if request.user is not None and not request.user.is_anonymous():
+    if request.user is not None and not request.user.is_anonymous:
         chars = Char.objects.filter(owner=request.user)
         chars = chars.exclude(deleted=True)
     has_projects = False
     if len(chars) > 0:
         has_projects = True
-    if request.user.is_anonymous() and 'char_id' in request.session:
+    if request.user.is_anonymous and 'char_id' in request.session:
         char = get_object_or_404(Char, pk=request.session['char_id'])
         chars.append(char)
         has_projects = True
@@ -55,13 +55,13 @@ def load_projects_error(request, error):
 
 def user_has_projects(request):
     chars = []
-    if request.user is not None and not request.user.is_anonymous():
+    if request.user is not None and not request.user.is_anonymous:
         chars = Char.objects.filter(owner=request.user)
         chars = chars.exclude(deleted=True)
     has_projects = False
     if len(chars) > 0:
         has_projects = True
-    if request.user.is_anonymous() and 'char_id' in request.session:
+    if request.user.is_anonymous and 'char_id' in request.session:
         char = get_object_or_404(Char, pk=request.session['char_id'])
         chars.append(char)
         has_projects = True

@@ -34,7 +34,7 @@ class Migration(migrations.Migration):
                 ('aspects', models.BinaryField(default=b'')),
                 ('deleted', models.BooleanField(default=False)),
                 ('allow_points_distribution', models.BooleanField(default=True)),
-                ('owner', models.ForeignKey(to=settings.AUTH_USER_MODEL, null=True)),
+                ('owner', models.ForeignKey(to=settings.AUTH_USER_MODEL, null=True, on_delete=models.SET_NULL)),
             ],
         ),
         migrations.CreateModel(
@@ -44,7 +44,7 @@ class Migration(migrations.Migration):
                 ('stat', models.CharField(max_length=30)),
                 ('total_value', models.IntegerField(default=0)),
                 ('scrolled_value', models.IntegerField(default=0)),
-                ('char', models.ForeignKey(to='chardata.Char')),
+                ('char', models.ForeignKey(to='chardata.Char', on_delete=models.CASCADE)),
             ],
         ),
         migrations.CreateModel(
@@ -52,7 +52,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('alias', models.CharField(max_length=50, null=True, blank=True)),
-                ('user', models.ForeignKey(to=settings.AUTH_USER_MODEL, unique=True)),
+                ('user', models.OneToOneField(to=settings.AUTH_USER_MODEL, on_delete=models.CASCADE)),
             ],
         ),
     ]
