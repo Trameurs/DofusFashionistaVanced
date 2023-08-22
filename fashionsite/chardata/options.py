@@ -80,4 +80,6 @@ def set_options(char, options):
         char.options = pickle.dumps(old_options)
     else:
         char.options = pickle.dumps(options)
+
+    print(type(char.options))
     char.save()
