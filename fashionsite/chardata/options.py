@@ -72,8 +72,10 @@ def set_options(char, options):
     assert options.get('mp_exo') == 'gelano' or type(options.get('mp_exo', False)) == bool
     assert options.get('dofus') == 'lightset' or 'cawwot 'or type(options.get('dofus', False)) == bool
 
+    print(f"Type of char.options: {type(char.options)}")
+
     if char.options:
-        old_options = pickle.loads(char.options.tobytes())  # convert memoryview to bytes
+        old_options = pickle.loads(char.options)
         old_options.update(options)
         char.options = pickle.dumps(old_options)
     else:
