@@ -72,6 +72,8 @@ def set_options(char, options):
     assert options.get('mp_exo') == 'gelano' or type(options.get('mp_exo', False)) == bool
     assert options.get('dofus') == 'lightset' or 'cawwot 'or type(options.get('dofus', False)) == bool
 
+    print(type(char.options))
+
     if char.options:
         old_options = pickle.loads(char.options)
         old_options.update(options)
