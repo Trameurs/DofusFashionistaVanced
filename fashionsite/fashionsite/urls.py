@@ -27,16 +27,11 @@ from chardata import home_view, login_view, views, projects_view, base_stats_vie
 admin.autodiscover()
 
 js_info_dict = {
-    'packages': ('fashionsite',),
+    'packages': 'chardata',
 }
 
 urlpatterns = [
-    re_path(r'^jsi18n/$', JavaScriptCatalog.as_view(), name='javascript-catalog'),
-]
-
-
-urlpatterns = [
-    re_path(r'^jsi18n/$', JavaScriptCatalog.as_view(), js_info_dict),
+    re_path(r'^jsi18n/$', JavaScriptCatalog.as_view(), name='javascript-catalog', kwargs=js_info_dict),
     re_path(r'^$', home_view.home, name='home'),
     re_path(r'^login_page/', login_view.login_page, name='login_page'),
     re_path(r'^local_login/', login_view.local_login),

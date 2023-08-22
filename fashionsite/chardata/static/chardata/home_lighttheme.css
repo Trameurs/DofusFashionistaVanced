@@ -117,7 +117,7 @@ h2 {
 
 
 .home-pic-holder {
-    background: url('item-bg.png') center center no-repeat;
+    background: url('/static/chardata/item-bg.png') center center no-repeat;
 }
 
 

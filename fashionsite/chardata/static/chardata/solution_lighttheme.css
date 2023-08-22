@@ -62,7 +62,7 @@
 }
 
 .solution-item-icon-container, .solution-set-icon-container, .item-exchange-icon-container {
-    background: url('item-bg.png') center center no-repeat;
+    background: url('/static/chardata/item-bg.png') center center no-repeat;
     border-color: #999;
 }
 
