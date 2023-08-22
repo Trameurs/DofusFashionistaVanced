@@ -119,7 +119,7 @@
           <div class="mini-menu">
     {% if char_id and char_id != 0 and not is_guest %}
               <div>
-                <a class="menu_link menu_link_top" id="proj-name-link" href="{% url 'chardata.create_project_view.setup' char_id %}">{{char.name}}</a>
+                <a class="menu_link menu_link_top" id="proj-name-link" href="{% url 'setup' char_id %}">{{char.name}}</a>
               </div>
               <div>
                 <a class="menu_link menu_link_middle" href="{% url 'wizard' char_id %}">{% trans "Wizard" %}</a>
