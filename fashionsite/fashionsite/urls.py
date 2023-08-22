@@ -54,7 +54,7 @@ urlpatterns = [
     re_path(r'^duplicatemyproject/(?P<char_id>\d+)/', projects_view.duplicate_my_project),
     re_path(r'^duplicatesomeonesproject/(?P<encoded_char_id>.+)/', projects_view.duplicate_someones_project),
 
-    re_path(r'^setup/(?P<char_id>\d+)/', base_stats_view.setup_base_stats),
+    re_path(r'^setup/(?P<char_id>\d+)/', base_stats_view.setup_base_stats, name='setup_base_stats'),
     re_path(r'^save_char/(?P<char_id>\d+)/', base_stats_view.save_char),
     re_path(r'^initbasestats/(?P<char_id>\d+)/', base_stats_view.init_base_stats),
     re_path(r'^initbasestatspost/(?P<char_id>\d+)/', base_stats_view.init_base_stats_post),
@@ -68,20 +68,20 @@ urlpatterns = [
     re_path(r'^saveproject/(?P<char_id>\d+)/', create_project_view.save_project, name='save_project'),
     re_path(r'^understandbuild/', create_project_view.understand_build_post),
 
-    re_path(r'^stats/(?P<char_id>\d+)/', stats_weights_view.stats),
+    re_path(r'^stats/(?P<char_id>\d+)/', stats_weights_view.stats, name='stats'),
     re_path(r'^statspost/(?P<char_id>\d+)/', stats_weights_view.stats_post),
 
-    re_path(r'^min_stats/(?P<char_id>\d+)/', min_stats_view.min_stats),
+    re_path(r'^min_stats/(?P<char_id>\d+)/', min_stats_view.min_stats, name='min_stats'),
     re_path(r'^minstatspost/(?P<char_id>\d+)/', min_stats_view.min_stats_post),
 
-    re_path(r'^options/(?P<char_id>\d+)/', options_view.options),
+    re_path(r'^options/(?P<char_id>\d+)/', options_view.options, name='options'),
     re_path(r'^optionspost/(?P<char_id>\d+)/', options_view.options_post),
 
-    re_path(r'^inclusions/(?P<char_id>\d+)/', inclusions_view.inclusions),
+    re_path(r'^inclusions/(?P<char_id>\d+)/', inclusions_view.inclusions, name='inclusions'),
     re_path(r'^inclusionspost/(?P<char_id>\d+)/', inclusions_view.inclusions_post),
     re_path(r'^getitemdetails/', inclusions_view.get_item_details),
 
-    re_path(r'^exclusions/(?P<char_id>\d+)/', exclusions_view.exclusions),
+    re_path(r'^exclusions/(?P<char_id>\d+)/', exclusions_view.exclusions, name='exclusions'),
     re_path(r'^exclusionspost/(?P<char_id>\d+)/', exclusions_view.exclusions_post),
 
     re_path(r'^wizard/(?P<char_id>\d+)/', wizard_view.wizard, name='wizard'),
