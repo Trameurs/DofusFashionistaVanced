@@ -181,7 +181,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_FILES_BUCKET = 'fash-static'
+STATIC_FILES_BUCKET = 'fashionistavanced'
 with open(os.path.join(CONFIG_DIR, 'serve_static')) as f:
     serve_static = f.read().startswith('True')
     if not serve_static or not DEBUG:
