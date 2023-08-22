@@ -51,8 +51,8 @@ urlpatterns = [
     re_path(r'^loadproject/(?P<char_id>\d+)/', views.load_a_project),
     re_path(r'^deleteprojects/', projects_view.delete_projects),
     re_path(r'^duplicateproject/', projects_view.duplicate_project),
-    re_path(r'^duplicatemyproject/(?P<char_id>\d+)/', projects_view.duplicate_my_project),
-    re_path(r'^duplicatesomeonesproject/(?P<encoded_char_id>.+)/', projects_view.duplicate_someones_project),
+    re_path(r'^duplicatemyproject/(?P<char_id>\d+)/', projects_view.duplicate_my_project, name='duplicate_my_project'),
+    re_path(r'^duplicatesomeonesproject/(?P<encoded_char_id>.+)/', projects_view.duplicate_someones_project, name='duplicate_someones_project'),
 
     re_path(r'^setup/(?P<char_id>\d+)/', base_stats_view.setup_base_stats, name='setup_base_stats'),
     re_path(r'^save_char/(?P<char_id>\d+)/', base_stats_view.save_char),
