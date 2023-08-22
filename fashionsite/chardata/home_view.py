@@ -51,7 +51,7 @@ def home(request, char_id=0):
         button = {}
         button['pic'] = static('chardata/NewProj1.png')
         button['label'] = _('Load a Project')
-        button['link'] = reverse('chardata.views.load_projects')
+        button['link'] = reverse('load_projects')
         button['class'] = get_button_pos(buttons)
         buttons.append(button)
     if request.user.is_anonymous and len(buttons) < 3:
