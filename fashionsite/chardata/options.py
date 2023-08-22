@@ -73,10 +73,9 @@ def set_options(char, options):
     assert options.get('dofus') == 'lightset' or 'cawwot 'or type(options.get('dofus', False)) == bool
 
     if char.options:
-        old_options = pickle.loads(char.options)
+        old_options = pickle.loads(char.options.tobytes())  # convert memoryview to bytes
         old_options.update(options)
         char.options = pickle.dumps(old_options)
     else:
         char.options = pickle.dumps(options)
-    char_encoded = char.encode('utf-8')
-    char_encoded.save()
+    char.save()
