@@ -127,7 +127,7 @@ def fashion(request, char_id, spells=False):
     if spells:
         return HttpResponseRedirect(reverse('chardata.spells_view.spells', args=(char.id,)))
     
-    return HttpResponseRedirect(reverse('chardata.solution_view.solution', args=(char.id,)))
+    return HttpResponseRedirect(reverse('solution', args=(char.id,)))
 
 def set_stats(char, stats):
     for element_name, abr in STATS_NAMES:
