@@ -163,7 +163,7 @@
                     href="{% url 'chardata.solution_view.solution_linked' 'shared' encoded_char_id %}"
                     {% endif %}
                 {% else %}
-                href="{% url 'chardata.solution_view.solution' char_id %}"
+                href="{% url 'solution' char_id %}"
                 {% endif %}
                 id="solution-link">{% trans "Outfit Suggestion" %}</a>
               </div>
@@ -177,7 +177,7 @@
                     href="{% url 'chardata.spells_view.spells_linked' 'shared' encoded_char_id %}"
                     {% endif %}
                 {% else %}
-                href="{% url 'chardata.spells_view.spells' char_id %}"
+                href="{% url 'spells' char_id %}"
                 {% endif %}
                 id="spells-link">{% trans "Spells Damage" %}</a>
               </div>

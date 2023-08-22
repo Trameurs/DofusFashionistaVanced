@@ -108,7 +108,7 @@ urlpatterns = [
     re_path(r'^license/', views.license_page, name='license_page'),
     re_path(r'^faq/', views.faq, name='faq'),
 
-    re_path(r'^spells/(?P<char_id>\d+)/', spells_view.spells),
+    re_path(r'^spells/(?P<char_id>\d+)/', spells_view.spells, name='spells'),
     re_path(r'^spells_linked/(?P<char_name>.*)/(?P<encoded_char_id>.+)/', spells_view.spells_linked),
 
     re_path(r'^403/', views.forbidden),
