@@ -77,8 +77,8 @@ def set_options(char, options):
     if char.options:
         old_options = pickle.loads(base64.b64decode(char.options))
         old_options.update(options)
-        char.options = base64.b64encode(pickle.dumps(old_options)).decode('utf-8')
+        char.options = base64.b64encode(pickle.dumps(old_options))
     else:
-        char.options = base64.b64encode(pickle.dumps(options)).decode('utf-8')
+        char.options = base64.b64encode(pickle.dumps(options))
 
     char.save()
