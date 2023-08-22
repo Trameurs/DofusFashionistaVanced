@@ -220,11 +220,11 @@ def recover_password(request, username, recover_token):
 
 EMAIL_CONFIRMATION_SALT = settings.GEN_CONFIGS["EMAIL_CONFIRMATION_SALT"]
 def _generate_token_for_user(username):
-    return hashlib.sha256(EMAIL_CONFIRMATION_SALT + username).hexdigest()
+    return hashlib.sha256((EMAIL_CONFIRMATION_SALT + username).encode('utf-8')).hexdigest()
 
 PASSWORD_RESET_SALT = settings.GEN_CONFIGS["PASSWORD_RESET_SALT"]
 def _generate_token_for_password_reset(username, password):
-    return hashlib.sha256(EMAIL_CONFIRMATION_SALT + username + password).hexdigest()
+    return hashlib.sha256((EMAIL_CONFIRMATION_SALT + username + password).encode('utf-8')).hexdigest()
 
 def _get_non_social_users_for_email(email):
     non_social_users = []
