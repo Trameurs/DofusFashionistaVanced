@@ -80,6 +80,7 @@ def set_options(char, options):
         char.options = pickle.dumps(options)
 
     for field in char._meta.get_fields():
-        print(f"{field.name}: {getattr(char, field.name)}")
+        if hasattr(char, field.name):
+            print(f"{field.name}: {getattr(char, field.name)}")
 
     char.save()
