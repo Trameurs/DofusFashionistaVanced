@@ -70,8 +70,9 @@ def set_options(char, options):
     assert type(options.get('ap_exo', False)) == bool
     assert type(options.get('range_exo', False)) == bool
     assert options.get('mp_exo') == 'gelano' or type(options.get('mp_exo', False)) == bool
-    assert options.get('dofus') == 'lightset' or 'cawwot 'or type(options.get('dofus', False)) == bool
+    assert options.get('dofus') == 'lightset' or options.get('dofus') == 'cawwot' or type(options.get('dofus', False)) == bool
 
+    char.options = None
     print(type(char.options))
 
     if char.options:
@@ -82,5 +83,4 @@ def set_options(char, options):
         char.options = pickle.dumps(options)
 
     print(type(char.options))
-    char.options = None
     char.save()
