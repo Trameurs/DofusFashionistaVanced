@@ -91,7 +91,7 @@ function deleteProj() {
     $(".project-checkbox:checkbox:checked").each(function(){
         checkboxesList.push($(this).val());
     });
-    $.post("{% url 'chardata.projects_view.delete_projects' %}",
+    $.post("{% url 'delete_projects' %}",
            {projects: JSON.stringify(checkboxesList)},
            function (data) {
                 location.reload();
@@ -104,7 +104,7 @@ function duplicateProj() {
         checkboxesList.push($(this).val());
     });
     proj_id = checkboxesList[0];
-    $.post("{% url 'chardata.projects_view.duplicate_project' %}",
+    $.post("{% url 'duplicate_project' %}",
            {project_id: JSON.stringify(proj_id)},
            function (data) {
                 if (data === 'ok') {
