@@ -85,7 +85,7 @@ urlpatterns = [
     re_path(r'^exclusionspost/(?P<char_id>\d+)/', exclusions_view.exclusions_post),
 
     re_path(r'^wizard/(?P<char_id>\d+)/', wizard_view.wizard, name='wizard'),
-    re_path(r'^wizardpost/(?P<char_id>\d+)/', wizard_view.wizard_post),
+    re_path(r'^wizardpost/(?P<char_id>\d+)/', wizard_view.wizard_post, name='wizard_post'),
     re_path(r'^wizardgetsliders/(?P<char_id>\d+)/', wizard_view.get_resetted_sliders),
 
     re_path(r'^fashion/(?P<char_id>\d+)/', fashion_action.fashion, name='fashion'),
