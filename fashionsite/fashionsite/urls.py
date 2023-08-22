@@ -60,7 +60,7 @@ urlpatterns = [
     re_path(r'^initbasestatspost/(?P<char_id>\d+)/', base_stats_view.init_base_stats_post),
 
     re_path(r'^setup/$', create_project_view.setup, name='setup'),
-    re_path(r'^createproject/', create_project_view.create_project),
+    re_path(r'^createproject/', create_project_view.create_project, name='create_project'),
     re_path(r'^saveprojecttouser/', create_project_view.save_project_to_user, name='save_project_to_user'),
     re_path(r'^project/(?P<char_id>\d+)/', create_project_view.setup),
     re_path(r'^saveproject/(?P<char_id>\d+)/', create_project_view.save_project_to_user),
