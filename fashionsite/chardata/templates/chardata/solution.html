@@ -102,7 +102,7 @@
     
       
 
-    <a href="{% url 'chardata.fashion_action.fashion' char_id %}" style='color: white; text-decoration: none; margin:10px;' class='submit-button button-generic rerun-button'><img src="{% static 'chardata/1413454601_needle.png' %}" class="button-img">{% trans "Tailor a New Set" %}</a>
+    <a href="{% url 'fashion' char_id %}" style='color: white; text-decoration: none; margin:10px;' class='submit-button button-generic rerun-button'><img src="{% static 'chardata/1413454601_needle.png' %}" class="button-img">{% trans "Tailor a New Set" %}</a>
     
   
     
@@ -127,7 +127,7 @@
             <tr class="solution-stat-summary-line">
                 <td class="solution-stat-summary-icon-header"></td>
                 <td class="solution-stat-summary-name-header"></td>
-                <td class="solution-stat-summary-base-value-header solution-stat-summary-value-cell"><a href="{% url 'chardata.base_stats_view.setup_base_stats' char_id %}">{% trans "Base" %}</a></td>
+                <td class="solution-stat-summary-base-value-header solution-stat-summary-value-cell"><a href="{% url 'setup_base_stats' char_id %}">{% trans "Base" %}</a></td>
                 <td class="solution-stat-summary-value-header solution-stat-summary-value-cell">Total</td>
             </tr>
 
