@@ -49,7 +49,7 @@ urlpatterns = [
     re_path(r'^recover_password/', login_view.recover_password_page),
     re_path(r'^recover_password_from_register/(?P<email>.+)/', login_view.recover_password_page_from_register),
     re_path(r'^do_recover_password/(?P<username>.+)/(?P<recover_token>.+)/', login_view.recover_password),
-    re_path(r'^recover_password_email/', login_view.recover_password_email_page),
+    re_path(r'^recover_password_email/', login_view.recover_password_email_page, name='recover_password_email_page'),
 
     re_path(r'^loadprojects/', views.load_projects, name='load_projects'),
     re_path(r'^loadprojectserror/(?P<error>.+)/', views.load_projects_error),
