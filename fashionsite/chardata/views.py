@@ -70,7 +70,7 @@ def user_has_projects(request):
 def load_a_project(request, char_id):
     char = get_object_or_404(Char, pk=char_id)
     if get_solution(char) is not None:
-        return HttpResponseRedirect(reverse('solution', args=(char.id,)))
+        return HttpResponseRedirect(reverse('solution_2', args=(char.id,)))
     return HttpResponseRedirect(reverse('wizard', args=(char.id,)))
                                               
 def infeasible(request, char_id=0):
