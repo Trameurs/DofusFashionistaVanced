@@ -35,7 +35,7 @@ urlpatterns = [
     re_path(r'^$', home_view.home, name='home'),
     re_path(r'^login_page/', login_view.login_page, name='login_page'),
     re_path(r'^local_login/', login_view.local_login),
-    re_path(r'^register/', login_view.register),
+    re_path(r'^register/', login_view.register, name='register'),
     re_path(r'^check_your_email/', login_view.check_your_email),
     re_path(r'^confirm_email/(?P<username>.+)/(?P<confirmation_token>.+)/', login_view.confirm_email),
     re_path(r'^check_username/', login_view.check_if_taken),
@@ -61,7 +61,7 @@ urlpatterns = [
 
     re_path(r'^setup/$', create_project_view.setup, name='setup'),
     re_path(r'^createproject/', create_project_view.create_project),
-    re_path(r'^saveprojecttouser/', create_project_view.save_project_to_user),
+    re_path(r'^saveprojecttouser/', create_project_view.save_project_to_user, name='save_project_to_user'),
     re_path(r'^project/(?P<char_id>\d+)/', create_project_view.setup),
     re_path(r'^saveproject/(?P<char_id>\d+)/', create_project_view.save_project_to_user),
     re_path(r'^project/(?P<char_id>\d+)/', create_project_view.setup),
