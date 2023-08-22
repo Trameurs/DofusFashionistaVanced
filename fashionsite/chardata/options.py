@@ -69,8 +69,8 @@ def get_options(char):
 def set_options(char, options):
     assert type(options.get('ap_exo', False)) == bool
     assert type(options.get('range_exo', False)) == bool
-    assert options.get('mp_exo') in [True, False, 'gelano']
-    assert options.get('dofus') in [True, False, 'lightset', 'cawwot']
+    assert options.get('mp_exo') == 'gelano' or type(options.get('mp_exo', False)) == bool
+    assert options.get('dofus') == 'lightset' or 'cawwot 'or type(options.get('dofus', False)) == bool
 
     if char.options:
         old_options = pickle.loads(char.options.encode('utf-8'))
