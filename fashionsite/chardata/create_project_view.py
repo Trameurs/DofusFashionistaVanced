@@ -14,6 +14,7 @@
 # along with this program; if not, write to the Free Software Foundation,
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
+import pickle
 from django.urls import reverse
 from django.http import HttpResponseRedirect
 from django.shortcuts import get_object_or_404
@@ -137,9 +138,9 @@ def create_project(request):
     char = Char()
     if not request.user.is_anonymous:
         char.owner = request.user
-    char.minimum_stats = ''
-    char.stats_weight = ''
-    char.options = ''
+    char.minimum_stats = pickle.dumps({})
+    char.stats_weight = pickle.dumps({})
+    char.options = pickle.dumps({})
     char.link_shared = False
 
     _save_state_to_char(state, char)
