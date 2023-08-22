@@ -79,16 +79,5 @@ def set_options(char, options):
     else:
         char.options = pickle.dumps(options)
 
-    for field in char._meta.get_fields():
-        if hasattr(char, field.name):
-            print(f"{field.name}: {getattr(char, field.name)}")
-
-    try:
-        char.save()
-    except Exception as e:
-        print("Error during save:", e)
-        for field in char._meta.get_fields():
-            value = getattr(char, field.name, None)
-            print(f"Field: {field.name}, Value: {value}, Type: {type(value)}")
-        raise
+    char.save()
 

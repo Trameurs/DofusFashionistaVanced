@@ -84,13 +84,13 @@ urlpatterns = [
     re_path(r'^exclusions/(?P<char_id>\d+)/', exclusions_view.exclusions),
     re_path(r'^exclusionspost/(?P<char_id>\d+)/', exclusions_view.exclusions_post),
 
-    re_path(r'^wizard/(?P<char_id>\d+)/', wizard_view.wizard),
+    re_path(r'^wizard/(?P<char_id>\d+)/', wizard_view.wizard, name='wizard'),
     re_path(r'^wizardpost/(?P<char_id>\d+)/', wizard_view.wizard_post),
     re_path(r'^wizardgetsliders/(?P<char_id>\d+)/', wizard_view.get_resetted_sliders),
 
     re_path(r'^fashion/(?P<char_id>\d+)/', fashion_action.fashion),
 
-    re_path(r'^solution/(?P<char_id>\d+)/(?P<empty>.*)/', solution_view.solution),
+    re_path(r'^solution/(?P<char_id>\d+)/(?P<empty>.*)/', solution_view.solution, name='solution'),
     re_path(r'^solution/(?P<char_id>\d+)/', solution_view.solution),
     re_path(r'^getsharinglink/(?P<char_id>\d+)/', solution_view.get_sharing_link),
     re_path(r'^hidesharinglink/(?P<char_id>\d+)/', solution_view.hide_sharing_link),

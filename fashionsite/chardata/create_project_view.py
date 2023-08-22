@@ -169,10 +169,10 @@ def create_project(request):
         request.session['char_id'] = char.pk
     
     if state['where_to_go'] == 'wizard':
-        return HttpResponseRedirect(reverse('chardata.wizard_view.wizard',
+        return HttpResponseRedirect(reverse('wizard',
                                             args=(char.id,)))
     else:
-        return HttpResponseRedirect(reverse('chardata.solution_view.solution',
+        return HttpResponseRedirect(reverse('solution',
                                             args=(char.id, True,)))
 
 # TODO: This state should be a class.
