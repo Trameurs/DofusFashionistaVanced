@@ -14,7 +14,6 @@
 # along with this program; if not, write to the Free Software Foundation,
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-import base64
 from chardata.lock_forbid import get_all_exclusions_en_names
 
 import pickle
@@ -73,12 +72,14 @@ def set_options(char, options):
     assert options.get('mp_exo') == 'gelano' or type(options.get('mp_exo', False)) == bool
     assert options.get('dofus') == 'lightset' or options.get('dofus') == 'cawwot' or type(options.get('dofus', False)) == bool
 
-    # If there are existing options, decode and unpickle them
     if char.options:
-        old_options = pickle.loads(base64.b64decode(char.options))
+        old_options = pickle.loads(char.options)
         old_options.update(options)
-        char.options = bytes(base64.b64encode(pickle.dumps(old_options)))
+        char.options = pickle.dumps(old_options)
     else:
-        char.options = bytes(base64.b64encode(pickle.dumps(options)))
+        char.options = pickle.dumps(options)
+
+    for field in char._meta.get_fields():
+        print(f"{field.name}: {getattr(char, field.name)}")
 
     char.save()
