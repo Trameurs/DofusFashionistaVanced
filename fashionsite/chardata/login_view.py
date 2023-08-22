@@ -61,7 +61,7 @@ def register(request):
                     args=(email,)))
 
     link = request.build_absolute_uri(
-        reverse('chardata.login_view.confirm_email',
+        reverse('confirm_email',
                 args=(username, _generate_token_for_user(username))))
     try:
         send_mail(_('Welcome to The Dofus Fashionista!'),

@@ -37,7 +37,7 @@ urlpatterns = [
     re_path(r'^local_login/', login_view.local_login),
     re_path(r'^register/', login_view.register, name='register'),
     re_path(r'^check_your_email/', login_view.check_your_email),
-    re_path(r'^confirm_email/(?P<username>.+)/(?P<confirmation_token>.+)/', login_view.confirm_email),
+    re_path(r'^confirm_email/(?P<username>.+)/(?P<confirmation_token>.+)/', login_view.confirm_email, name='confirm_email'),
     re_path(r'^check_username/', login_view.check_if_taken),
     re_path(r'^change_password/', login_view.change_password),
     re_path(r'^email_confirmed/(?P<username>.+)/(?P<already_confirmed>.+)/', login_view.email_confirmed_page),
