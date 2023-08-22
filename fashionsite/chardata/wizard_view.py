@@ -98,7 +98,7 @@ def wizard_post(request, char_id):
     elif scroll == 'clean':
         _clean_scroll_char(char)
 
-    return HttpResponseRedirect(reverse('chardata.fashion_action.fashion', args=(char.id,)))
+    return HttpResponseRedirect(reverse('fashion', args=(char.id,)))
 
 def _get_third_scroll_option(char):
     stats_scroll_dict = {}
