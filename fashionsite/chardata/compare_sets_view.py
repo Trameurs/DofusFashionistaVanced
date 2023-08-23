@@ -189,7 +189,7 @@ def choose_compare_sets_post(request):
 
     compare_path = '/'.join(char_ids)
 
-    return HttpResponseText(reverse('chardata.compare_sets_view.compare_sets',
+    return HttpResponseText(reverse('compare_sets',
                                     args=(compare_path,)))
 
 def _process_link(l):
@@ -224,7 +224,7 @@ def get_sharing_link(request, sets_params):
 def _generate_share_compare_link(char_ids):
     params = '/'.join(['s%s' % encode_char_id(char_id) for char_id in char_ids])
     return ('https://dofusfashionistavanced.com'
-            + reverse('chardata.compare_sets_view.compare_sets', args=(params,)))
+            + reverse('compare_sets', args=(params,)))
 
 def get_item_stats(request):
     item_id = request.POST.get('itemId', None)
