@@ -20,7 +20,7 @@
 </td>
 <td>
     <div id="c_form">
-        <form name="theform" action="{% url 'chardata.contact_view.send_email'%}" method="post" id="theform">
+        <form name="theform" action="{% url 'send_email'%}" method="post" id="theform">
             {% csrf_token %}
             
             <table style="width: 450px;">
