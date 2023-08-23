@@ -26,16 +26,18 @@ URL_SAFE_BASE_64_ENCODE = str.maketrans('+/=', '.-_')
 URL_SAFE_BASE_64_DECODE = str.maketrans('.-_', '+/=')
 
 def _sign(char_id):
-    hashed_string = ('%s%d%s' % (SECRET_PART_1, char_id, SECRET_PART_2)).encode('utf-8')
-    return hashlib.sha1(hashed_string).digest()[:4]
+    data_to_sign = "{}{}{}".format(SECRET_PART_1, char_id, SECRET_PART_2).encode('utf-8')
+    return hashlib.sha1(data_to_sign).digest()[:4]
 
 def encode_char_id(char_id):
-    return base64.b64encode(str(char_id) + _sign(char_id)).translate(URL_SAFE_BASE_64_ENCODE)
+    combined_data = "{}{}".format(str(char_id), _sign(char_id).decode('utf-8'))
+    encoded_bytes = base64.b64encode(combined_data.encode('utf-8'))
+    return encoded_bytes.decode('utf-8').translate(URL_SAFE_BASE_64_ENCODE)
     
 def decode_char_id(encoded_char_id):
     half_decoded_id = base64.b64decode(str(encoded_char_id).translate(URL_SAFE_BASE_64_DECODE))
     try:
-        candidate_id = int(half_decoded_id[:-4])
+        candidate_id = int(half_decoded_id[:-4].decode('utf-8'))
     except ValueError:
         return None
     signature = half_decoded_id[-4:]
