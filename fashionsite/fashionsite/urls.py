@@ -94,7 +94,7 @@ urlpatterns = [
     re_path(r'^solution/(?P<char_id>\d+)/', solution_view.solution, name='solution_2'),
     re_path(r'^getsharinglink/(?P<char_id>\d+)/', solution_view.get_sharing_link, name='get_sharing_link'),
     re_path(r'^hidesharinglink/(?P<char_id>\d+)/', solution_view.hide_sharing_link),
-    re_path(r'^s/(?P<char_name>.*)/(?P<encoded_char_id>.+)/', solution_view.solution_linked),
+    re_path(r'^s/(?P<char_name>.*)/(?P<encoded_char_id>.+)/', solution_view.solution_linked, name='solution_linked'),
     re_path(r'^setitemlocked/(?P<char_id>\d+)/', solution_view.set_item_locked),
     re_path(r'^setitemforbidden/(?P<char_id>\d+)/', solution_view.set_item_forbidden),
     re_path(r'^itemexchange/(?P<char_id>\d+)/', item_exchange.get_items_to_exchange),

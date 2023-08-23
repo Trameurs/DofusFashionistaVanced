@@ -112,7 +112,7 @@ def generate_link(char):
     encoded_id = encode_char_id(int(char.id))
     char_name = char.char_name or 'shared'
     return ('https://dofusfashionistavanced.com'
-            + reverse('chardata.solution_view.solution_linked',
+            + reverse('solution_linked',
                       args=(char_name, encoded_id)))
 
 def set_item_locked(request, char_id):

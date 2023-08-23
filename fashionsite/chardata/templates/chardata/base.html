@@ -158,9 +158,9 @@
                 <a class="menu_link {% if is_guest %} menu_link_top {% else %} menu_link_middle {% endif %}{% if not char.solution %} rerun-button {% endif %}"
                 {% if is_guest %}
                     {% if char.char_name %}
-                    href="{% url 'chardata.solution_view.solution_linked' char.char_name encoded_char_id %}"
+                    href="{% url 'solution_linked' char.char_name encoded_char_id %}"
                     {% else %}
-                    href="{% url 'chardata.solution_view.solution_linked' 'shared' encoded_char_id %}"
+                    href="{% url 'solution_linked' 'shared' encoded_char_id %}"
                     {% endif %}
                 {% else %}
                 href="{% url 'solution_2' char_id %}"
