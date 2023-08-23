@@ -26,7 +26,8 @@ URL_SAFE_BASE_64_ENCODE = str.maketrans('+/=', '.-_')
 URL_SAFE_BASE_64_DECODE = str.maketrans('.-_', '+/=')
 
 def _sign(char_id):
-    return hashlib.sha1('%s%d%s' % (SECRET_PART_1, char_id, SECRET_PART_2)).digest()[:4]
+    hashed_string = ('%s%d%s' % (SECRET_PART_1, char_id, SECRET_PART_2)).encode('utf-8')
+    return hashlib.sha1(hashed_string).digest()[:4]
 
 def encode_char_id(char_id):
     return base64.b64encode(str(char_id) + _sign(char_id)).translate(URL_SAFE_BASE_64_ENCODE)
