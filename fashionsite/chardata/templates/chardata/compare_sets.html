@@ -45,7 +45,7 @@
                                {% if guest %}
                             href="{{ links|get_item:char.id }}"
                                {% else %}
-                            href="{% url 'chardata.solution_view.solution' char.id %}"
+                            href="{% url 'solution_2' char.id %}"
                                {% endif %}
                             {% endwith %}>{{ char.name }}</a><br>
                         {% endfor %}

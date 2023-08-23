@@ -69,7 +69,7 @@ def compare_sets(request, sets_params):
         if not char_belongs_to_user(request, char):
             links[char.pk] = generate_link(char)
         else:
-            links[char.pk] = request.build_absolute_uri(reverse('chardata.solution_view.solution',
+            links[char.pk] = request.build_absolute_uri(reverse('solution',
                                     args=(char.pk,)))
         all_chars_are_shared = all_chars_are_shared and char.link_shared
     
