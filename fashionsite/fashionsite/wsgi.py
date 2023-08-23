@@ -24,6 +24,9 @@ https://docs.djangoproject.com/en/1.6/howto/deployment/wsgi/
 """
 
 import os
+import sys
+
+sys.path.append('/var/www/DofusFashionistaVanced/fashionsite')
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "fashionsite.settings")
 
 from django.core.wsgi import get_wsgi_application
