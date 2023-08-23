@@ -155,7 +155,7 @@ if settings.EXPERIMENTS['COMPARE_SETS']:
     urlpatterns += [
                             re_path(r'^compare_sets/(?P<sets_params>.+)', compare_sets_view.compare_sets),
                             re_path(r'^choose_compare_sets/$', compare_sets_view.choose_compare_sets, name = 'choose_compare_sets'),
-                            re_path(r'^choose_compare_sets_post/$', compare_sets_view.choose_compare_sets_post),
+                            re_path(r'^choose_compare_sets_post/$', compare_sets_view.choose_compare_sets_post, name = 'choose_compare_sets_post'),
                             re_path(r'^get_compare_sharing_link/(?P<sets_params>.+)', compare_sets_view.get_sharing_link),
                             re_path(r'^get_item_stats_compare/$', compare_sets_view.get_item_stats),
                             re_path(r'^compare_set_search_proj_name/$', compare_sets_view.compare_set_search_proj_name),]

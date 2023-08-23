@@ -54,7 +54,7 @@ function onCompareClick() {
         }
     }
     $.ajax({type: "POST",
-           url: "{% url 'chardata.compare_sets_view.choose_compare_sets_post' %}",
+           url: "{% url 'choose_compare_sets_post' %}",
            data: {links: JSON.stringify(links)},
            success: function (data) {
                if (!data.match('^[eE]rror: ')) {
