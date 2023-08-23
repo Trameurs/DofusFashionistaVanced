@@ -83,7 +83,7 @@ def compare_sets(request, sets_params):
     if all_chars_are_shared:
         compare_link_shared = _generate_share_compare_link(char_ids)
 
-    get_compare_link_url = reverse('chardata.compare_sets_view.get_sharing_link',
+    get_compare_link_url = reverse('get_sharing_link',
                                     args=(sets_params,))
 
     params = {'chars': chars,

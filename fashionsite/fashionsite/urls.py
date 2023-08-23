@@ -92,7 +92,7 @@ urlpatterns = [
 
     re_path(r'^solution/(?P<char_id>\d+)/(?P<empty>.*)/', solution_view.solution, name='solution'),
     re_path(r'^solution/(?P<char_id>\d+)/', solution_view.solution, name='solution_2'),
-    re_path(r'^getsharinglink/(?P<char_id>\d+)/', solution_view.get_sharing_link),
+    re_path(r'^getsharinglink/(?P<char_id>\d+)/', solution_view.get_sharing_link, name='get_sharing_link'),
     re_path(r'^hidesharinglink/(?P<char_id>\d+)/', solution_view.hide_sharing_link),
     re_path(r'^s/(?P<char_name>.*)/(?P<encoded_char_id>.+)/', solution_view.solution_linked),
     re_path(r'^setitemlocked/(?P<char_id>\d+)/', solution_view.set_item_locked),
@@ -156,7 +156,7 @@ if settings.EXPERIMENTS['COMPARE_SETS']:
                             re_path(r'^compare_sets/(?P<sets_params>.+)', compare_sets_view.compare_sets, name = 'compare_sets'),
                             re_path(r'^choose_compare_sets/$', compare_sets_view.choose_compare_sets, name = 'choose_compare_sets'),
                             re_path(r'^choose_compare_sets_post/$', compare_sets_view.choose_compare_sets_post, name = 'choose_compare_sets_post'),
-                            re_path(r'^get_compare_sharing_link/(?P<sets_params>.+)', compare_sets_view.get_sharing_link),
+                            re_path(r'^get_compare_sharing_link/(?P<sets_params>.+)', compare_sets_view.get_sharing_link, name = 'get_compare_sharing_link'),
                             re_path(r'^get_item_stats_compare/$', compare_sets_view.get_item_stats),
                             re_path(r'^compare_set_search_proj_name/$', compare_sets_view.compare_set_search_proj_name),]
 
