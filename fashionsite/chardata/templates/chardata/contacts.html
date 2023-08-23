@@ -60,11 +60,11 @@
             </tr>
             </table>
             <div id="captcha" align="center" class="g-recaptcha" data-sitekey="6Le9YogUAAAAAFRe8QeII5JTi1NQogvL1fW7xjUU" data-theme="
-            {% ifnotequal theme "lighttheme" %}
+            {% if theme != "lighttheme" %}
                 dark
             {% else %}
                 light
-            {% endifnotequal %}
+            {% endif %}
             "></div>
             <div align="center">
                 <input type="submit" value='{{_("Send")|escapejs}}' class="button-generic">
