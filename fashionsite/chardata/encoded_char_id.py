@@ -30,8 +30,8 @@ def _sign(char_id):
     return hashlib.sha1(data_to_sign).digest()[:4]
 
 def encode_char_id(char_id):
-    combined_data = "{}{}".format(str(char_id), _sign(char_id).decode('utf-8'))
-    encoded_bytes = base64.b64encode(combined_data.encode('utf-8'))
+    combined_data = str(char_id).encode('utf-8') + _sign(char_id)
+    encoded_bytes = base64.b64encode(combined_data)
     return encoded_bytes.decode('utf-8').translate(URL_SAFE_BASE_64_ENCODE)
     
 def decode_char_id(encoded_char_id):
