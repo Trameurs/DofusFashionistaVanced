@@ -1,7 +1,11 @@
 import os
 import sys
 
-sys.path.append('/home/ec2-user/DofusFashionistaVanced')
+with open('/etc/fashionista/config') as f:
+    path = f.read()
+
+sys.path.append(path + '/fashionistapulp')
+sys.path.append(path + '/fashionsite')
 os.environ['DJANGO_SETTINGS_MODULE'] = 'fashionsite.settings'
 
 from django.core.wsgi import get_wsgi_application
