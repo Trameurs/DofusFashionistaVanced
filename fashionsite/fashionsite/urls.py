@@ -57,7 +57,7 @@ urlpatterns = [
     re_path(r'^setup/(?P<char_id>\d+)/', base_stats_view.setup_base_stats, name='setup_base_stats'),
     re_path(r'^save_char/(?P<char_id>\d+)/', base_stats_view.save_char),
     re_path(r'^initbasestats/(?P<char_id>\d+)/', base_stats_view.init_base_stats),
-    re_path(r'^initbasestatspost/(?P<char_id>\d+)/', base_stats_view.init_base_stats_post),
+    re_path(r'^initbasestatspost/(?P<char_id>\d+)/', base_stats_view.init_base_stats_post, name='init_base_stats_post'),
 
     re_path(r'^setup/$', create_project_view.setup, name='setup'),
     re_path(r'^createproject/', create_project_view.create_project, name='create_project'),
