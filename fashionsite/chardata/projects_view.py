@@ -56,9 +56,9 @@ def duplicate_my_project(request, char_id):
 
     worked = _unchecked_duplicate_project(request, char_id)
     if worked:
-        return HttpResponseRedirect(reverse('chardata.views.load_projects'))
+        return HttpResponseRedirect(reverse('load_projects'))
     else:
-        return HttpResponseRedirect(reverse('chardata.views.load_projects_error',
+        return HttpResponseRedirect(reverse('load_projects_error',
                                             args=('too_many',)))
 
 def duplicate_someones_project(request, encoded_char_id):
@@ -72,9 +72,9 @@ def duplicate_someones_project(request, encoded_char_id):
     
     worked = _unchecked_duplicate_project(request, char_id)
     if worked:
-        return HttpResponseRedirect(reverse('chardata.views.load_projects'))
+        return HttpResponseRedirect(reverse('load_projects'))
     else:
-        return HttpResponseRedirect(reverse('chardata.views.load_projects_error',
+        return HttpResponseRedirect(reverse('load_projects_error',
                                             args=('too_many',)))
 
 def _unchecked_duplicate_project(request, proj_id_to_copy):

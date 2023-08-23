@@ -15,7 +15,7 @@
     
     We understood that you care about these aspects from the build line. Please review if we got it right.<br><br>
     
-    <form action="{% url 'chardata.build_view.build_post' char_id %}" method="post">
+    <form action="{% url 'build_post' char_id %}" method="post">
     {% csrf_token %}
 
     <input class='input-value pretty-input' name="input_build" id="input-build" value="{{ initial_build }}" maxlength="50" />

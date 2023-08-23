@@ -248,7 +248,7 @@ var initialOptions = {{options | safe}};
 $(document).ready(function() {
 
     setupStateEngine(optionsInit,
-            "{% url 'chardata.options_view.options_post' char_id %}",
+            "{% url 'options_post' char_id %}",
             initialOptions);
     disableUnusableDofus(initialOptions.dofusnotforchar);
 });

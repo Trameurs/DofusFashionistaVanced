@@ -21,7 +21,7 @@
     <p>{% trans "The outfit suggestion might not be what you were looking for. You can find, for example, the HP too low despite the good Agility. Tweaking can be done by going back to the wizard and playing with the sliders, or going hardcore and fiddling directly with the value the attributed to each stat." %}</p>
     <p>{% trans "If items that are too expensive or not available to you are suggested, you can always forbid them and ask for a new set." %}</p>
     
-    {% url 'chardata.contact_view.contact' as contact_url %}
+    {% url 'contact' as contact_url %}
     
     <p>{% trans "The Dofus Fashionista is open source software. The code can be found in" %} <a href="https://github.com/PiwiSlayer/DofusFashionista">GitHub</a>.</p>
     <p>{% blocktrans %}To report problems, suggest new features, or rant about the lack of skill of your kolo team, <a href="{{contact_url}}">contact us</a>.{% endblocktrans %}</p>

@@ -52,7 +52,7 @@
           {% endif %}
        {% else %}
             <div align="center" class='text'>
-            {% url 'chardata.create_project_view.setup' as create_project_link %}
+            {% url 'setup' as create_project_link %}
             {% blocktrans %}You don't have any projects yet. Create one <a href="{{ create_project_link }}">here</a>.{% endblocktrans %}
             </div>
        {% endif %}

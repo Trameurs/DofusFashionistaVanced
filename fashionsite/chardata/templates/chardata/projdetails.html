@@ -94,14 +94,14 @@
         <td>
         {% if login_problem %}
         <p>
-            {% url 'chardata.login_view.login_page' as login_link%}
-            {% url 'chardata.views.load_projects' as load_proj_link%}
+            {% url 'login_page' as login_link%}
+            {% url 'load_projects' as load_proj_link%}
             {% blocktrans %} You need to <a href="{{login_link}}">login</a> before you can create another project. Your current project can be found <a href="{{load_proj_link}}">here</a>. {% endblocktrans %}<br>
         </p>
         {% else %}
             {% if too_many_projects_problem %}
             <p>
-            {% url 'chardata.views.load_projects' as load_proj_link%}
+            {% url 'load_projects' as load_proj_link%}
                 {% blocktrans %} You have reached the maximum number of projects allowed. To create a new project, please delete some old ones <a href="{{load_proj_link}}">here</a>.{% endblocktrans %}<br>
             </p>
             {% endif %}

@@ -341,7 +341,7 @@
         } else {
             $("#submit-mode").remove();
             setupStateEngine(initializeBaseStats,
-                    "{% url 'chardata.base_stats_view.save_char' char_id %}",
+                    "{% url 'save_char' char_id %}",
                     initialStats,
                     sendBaseStatsFunction);
         }

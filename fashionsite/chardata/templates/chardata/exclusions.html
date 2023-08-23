@@ -164,7 +164,7 @@
         $("#button-forbid").click(onForbidButtonClick);
         
         setupStateEngine(init,
-            "{% url 'chardata.exclusions_view.exclusions_post' char_id %}",
+            "{% url 'exclusions_post' char_id %}",
              excludedItemsInput,
              postData);
 

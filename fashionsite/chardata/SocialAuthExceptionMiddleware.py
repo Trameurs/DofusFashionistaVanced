@@ -24,6 +24,6 @@ from django.http import HttpResponseRedirect
 class SocialAuthExceptionMiddleware(SocialAuthExceptionMiddleware):
     def process_exception(self, request, exception):
         if type(exception) == AuthCanceled:
-            return HttpResponseRedirect(reverse('chardata.login_view.login_page'))
+            return HttpResponseRedirect(reverse('login_page'))
         else:
             pass

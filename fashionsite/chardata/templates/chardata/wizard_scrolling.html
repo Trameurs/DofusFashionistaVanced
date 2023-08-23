@@ -13,7 +13,7 @@
 <table>
     <tr align="center">
     <td align="center" width="100%" class="small-explain">
-    {% url 'chardata.base_stats_view.setup_base_stats' char_id as base_stats_url %}
+    {% url 'setup_base_stats' char_id as base_stats_url %}
     ({% blocktrans %}If you wish to set your base stats yourself, you can do it at the <i><a href="{{base_stats_url}}" target="_blank">Base Characteristics</a></i> page, under <i>More</i>{% endblocktrans %})
     </td>
     </tr>

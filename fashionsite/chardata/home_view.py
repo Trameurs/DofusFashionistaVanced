@@ -72,7 +72,7 @@ def home(request, char_id=0):
         button = {}
         button['pic'] = static('chardata/About2.png')
         button['label'] = _('Help & About')
-        button['link'] = reverse('chardata.views.about')
+        button['link'] = reverse('about')
         button['class'] = get_button_pos(buttons)
         buttons.append(button)
     
@@ -100,8 +100,8 @@ def _process_post(post):
 
 def _process_message(msg):
     return (msg.replace('[CREATE_PROJECT_LINK]',
-                       reverse('chardata.create_project_view.setup'))
+                       reverse('setup'))
                .replace('[LOGIN_LINK]',
-                       reverse('chardata.login_view.login_page'))
+                       reverse('login_page'))
                .replace('[CONTACT_LINK]',
-                       reverse('chardata.contact_view.contact')))
+                       reverse('contact')))

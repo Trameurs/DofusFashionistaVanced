@@ -185,7 +185,7 @@ function init(data) {
 
 $(document).ready(function() {
     setupStateEngine(init,
-         "{% url 'chardata.min_stats_view.min_stats_post' char_id %}",
+         "{% url 'min_stats_post' char_id %}",
          initialData);
     addIfNeeded();
 });

@@ -24,14 +24,14 @@
             </span>
             <br>
             <span class="big-text">
-            {% url 'chardata.manage_account_view.manage_account' as manage_account_url %}
+            {% url 'manage_account' as manage_account_url %}
             {% blocktrans %}You can change your alias, email and password <a href='{{manage_account_url}}'>here</a>.{% endblocktrans %}
             </span>
             <br>
             <br>
             <span class="big-text">
-            {% url 'chardata.create_project_view.setup' as create_project_url %}
-            {% url 'chardata.views.load_projects' as load_projects_url %}
+            {% url 'setup' as create_project_url %}
+            {% url 'load_projects' as load_projects_url %}
             {% blocktrans %}<a href='{{create_project_url}}'>Create</a> or <a href='{{load_projects_url}}'>load</a> a project to get started.{% endblocktrans %}
             </span>
         </td>

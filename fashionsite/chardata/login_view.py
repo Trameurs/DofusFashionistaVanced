@@ -57,7 +57,7 @@ def register(request):
     if _get_non_social_users_for_email(email):
     #if _get_non_social_users_for_email(email) and email not in TESTER_USERS:
         return HttpResponseRedirect(
-            reverse('chardata.login_view.recover_password_page_from_register',
+            reverse('recover_password_page_from_register',
                     args=(email,)))
 
     link = request.build_absolute_uri(
@@ -80,7 +80,7 @@ def register(request):
     alias.alias = username
     alias.save()
     
-    return HttpResponseRedirect(reverse('chardata.login_view.check_your_email'))
+    return HttpResponseRedirect(reverse('check_your_email'))
 
 def check_your_email(request):
     return set_response(request,
@@ -98,12 +98,12 @@ def confirm_email(request, username, confirmation_token):
     
     user = users[0]
     if user.is_active:
-        return HttpResponseRedirect(reverse('chardata.login_view.email_confirmed_page',
+        return HttpResponseRedirect(reverse('email_confirmed_page',
                                             args=(username, 'yes')))
     
     user.is_active = True
     user.save()
-    return HttpResponseRedirect(reverse('chardata.login_view.email_confirmed_page',
+    return HttpResponseRedirect(reverse('email_confirmed_page',
                                         args=(username, 'no')))
 
 def email_confirmed_page(request, username, already_confirmed):
@@ -164,7 +164,7 @@ def _recover_password_page(request, email, from_register):
     password = non_social_users[0].password
     
     link = request.build_absolute_uri(
-        reverse('chardata.login_view.recover_password',
+        reverse('recover_password',
                 args=(username, _generate_token_for_password_reset(username, password))))
     try:
         send_mail(_('Password change requested for The Dofus Fashionista'),

@@ -69,7 +69,7 @@ def fashion(request, char_id, spells=False):
     if load_error:
         return error(request,
                      'characteristics weights',
-                     reverse('chardata.stats_weights_view.stats', args=(char_id,)),
+                     reverse('stats', args=(char_id,)),
                      char_id,
                      char)
         
@@ -118,14 +118,14 @@ def fashion(request, char_id, spells=False):
         MEMORY.put(model_input, (model.get_solved_status(), stats, result))
 
     if result is None: 
-        return HttpResponseRedirect(reverse('chardata.views.infeasible', args=(char.id,)))
+        return HttpResponseRedirect(reverse('infeasible', args=(char.id,)))
 
     if char.allow_points_distribution:
         set_stats(char, stats)
     set_minimal_solution(char, result)
     
     if spells:
-        return HttpResponseRedirect(reverse('chardata.spells_view.spells', args=(char.id,)))
+        return HttpResponseRedirect(reverse('spells', args=(char.id,)))
     
     return HttpResponseRedirect(reverse('solution_2', args=(char.id,)))
 

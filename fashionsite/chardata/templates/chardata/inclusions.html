@@ -140,7 +140,7 @@ function get_loader_img()
 
 $(document).ready(function() {
     setupStateEngine(inclusionsInitStateEngine,
-            "{% url 'chardata.inclusions_view.inclusions_post' char_id %}",
+            "{% url 'inclusions_post' char_id %}",
              inclusionsInitial);
              
     $.each(inclusionsInitial, function(slot, equip) {

@@ -15,7 +15,7 @@
     <tr>
         <td>
             <p class="big-text">
-                {% url 'chardata.login_view.login_page' as login_link %}
+                {% url 'login_page' as login_link %}
                 {% blocktrans %}We have sent you a confirmation email. Please click the link in the email and then <a href='{{login_link}}'>login</a>.{% endblocktrans %}
             </p>
         </td>

@@ -134,7 +134,7 @@ $(document).ready(function() {
         changePassword(username, password, newPassword);
     });
     setupStateEngine(manageInit,
-            "{% url 'chardata.manage_account_view.save_account' %}",
+            "{% url 'save_account' %}",
             state,
             null,
             setLoggedUserAlias);

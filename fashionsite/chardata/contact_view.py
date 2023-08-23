@@ -52,9 +52,9 @@ def send_email(request):
                       ['thedofusfashionistavanced@gmail.com'])
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
-        return HttpResponseRedirect(reverse('chardata.contact_view.thankyou'))
+        return HttpResponseRedirect(reverse('thankyou'))
     else:
-        return HttpResponseRedirect(reverse('chardata.contact_view.nomessage'))
+        return HttpResponseRedirect(reverse('nomessage'))
         
 def thankyou(request):
     return set_response(request,

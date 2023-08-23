@@ -80,10 +80,10 @@ def infeasible(request, char_id=0):
                         {'request': request,
                          'user': request.user,
                          'char_id': char_id,
-                         'mins_link': reverse('chardata.min_stats_view.min_stats', args=(char_id,)),
-                         'weights_link': reverse('chardata.stats_weights_view.stats', args=(char_id,)),
-                         'lock_link': reverse('chardata.inclusions_view.inclusions', args=(char_id,)),
-                         'exo_link': reverse('chardata.options_view.options', args=(char_id,))},
+                         'mins_link': reverse('min_stats', args=(char_id,)),
+                         'weights_link': reverse('stats', args=(char_id,)),
+                         'lock_link': reverse('inclusions', args=(char_id,)),
+                         'exo_link': reverse('options', args=(char_id,))},
                         char)
                                                          
 def forbidden(request, char_id=0):

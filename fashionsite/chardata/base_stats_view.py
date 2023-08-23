@@ -40,7 +40,7 @@ def init_base_stats(request, char_id):
 
 def init_base_stats_post(request, char_id):
     char = _post(request, char_id)
-    return HttpResponseRedirect(reverse('chardata.wizard_view.wizard', args=(char.id,)))
+    return HttpResponseRedirect(reverse('wizard', args=(char.id,)))
 
 def _page(request, char_id, is_new_char):
     char = get_char_or_raise(request, char_id)

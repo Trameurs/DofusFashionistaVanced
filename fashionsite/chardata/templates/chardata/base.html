@@ -80,7 +80,7 @@
        {% if user and not user.is_anonymous %}
          <div class="login">
             {% if not is_super_user %}
-            {% url 'chardata.manage_account_view.manage_account' as manage_account_link %}
+            {% url 'manage_account' as manage_account_link %}
                 {% if useralias %}
                     {% blocktrans with useralias as user %}Welcome, <a id="logged_user_alias" href="{{manage_account_link}}">{{user}}</a>! {% endblocktrans %} 
                 {% else %}
@@ -172,9 +172,9 @@
                 {% if is_guest %}
                     {% if char.char_name %}
                     
-                    href="{% url 'chardata.spells_view.spells_linked' char.char_name encoded_char_id %}"
+                    href="{% url 'spells_linked' char.char_name encoded_char_id %}"
                     {% else %}
-                    href="{% url 'chardata.spells_view.spells_linked' 'shared' encoded_char_id %}"
+                    href="{% url 'spells_linked' 'shared' encoded_char_id %}"
                     {% endif %}
                 {% else %}
                 href="{% url 'spells' char_id %}"

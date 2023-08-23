@@ -16,7 +16,7 @@
     <td><img src="{% static "chardata/designs/myKuyy.png" %}"></img>
     </td>
     <td align="center">
-        <form action="{% url 'chardata.login_view.recover_password_page'%}" method="post">
+        <form action="{% url 'recover_password_page'%}" method="post">
         {% csrf_token %}
             <div><span class="big-text" style="vertical-align: top;">{% trans "Please enter your registered email" %}: </span></div>
             <br>
