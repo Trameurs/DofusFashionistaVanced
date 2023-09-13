@@ -19,6 +19,7 @@
 import scrapy
 import re
 import json
+import os
 from itemscraper.items import ItemscraperWeaponData, MissingNo
 from fashionistapulp.structure import get_structure
 
@@ -26,10 +27,14 @@ UNDER_100_IDS = []
 
 def get_ids():
     items = []
-    with open('myweapons.json') as f:
-        item_list = json.load(f)
-        for entry in item_list:
-            items.append(entry)
+    filename = 'myweapons.json'
+    if os.path.exists(filename):
+        with open(filename) as f:
+            item_list = json.load(f)
+            for entry in item_list:
+                items.append(entry)
+    else:
+        print(f"File {filename} does not exist.")
     return items
 
 BASE_URL = 'https://www.dofus.com/en/linker/item?l=en&id=%d'
