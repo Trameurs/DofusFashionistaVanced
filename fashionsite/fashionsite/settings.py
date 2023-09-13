@@ -186,7 +186,7 @@ with open(os.path.join(CONFIG_DIR, 'serve_static')) as f:
     serve_static = f.read().startswith('True')
     if not serve_static or not DEBUG:
         STATIC_URL = 'https://s3.amazonaws.com/%s/' % STATIC_FILES_BUCKET
-        ALLOWED_HOSTS = ['fashionistavanced.com']
+        ALLOWED_HOSTS = ['fashionistavanced.com', 'www.fashionistavanced.com']
     else:
         STATIC_ROOT = '/tmp/statictemp'
         STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
