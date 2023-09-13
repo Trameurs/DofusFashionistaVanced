@@ -49,7 +49,7 @@ PIP_PACKAGES_TO_INSTALL = [
     'Scrapy', # Web crawler.
     'jsonpickle', # Powerful json encoder for ajax.
     'django-htmlmin', # Minifier for HTML.
-    'boto', # S3 client for uploading db.
+    'boto3', # S3 client for uploading db.
     'pymysql',
     'python-memcached',
     'django-sslserver',

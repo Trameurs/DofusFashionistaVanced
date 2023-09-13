@@ -14,7 +14,7 @@
 # along with this program; if not, write to the Free Software Foundation,
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
-from boto.s3.connection import S3Connection
+import boto3
 import json
 
 with open('/etc/fashionista/gen_config.json', 'r') as f:
@@ -23,6 +23,10 @@ DBBACKUP_S3_ACCESS_KEY = GEN_CONFIGS['DBBACKUP_S3_ACCESS_KEY']
 DBBACKUP_S3_SECRET_KEY = GEN_CONFIGS['DBBACKUP_S3_SECRET_KEY']
 
 def get_s3_bucket(bucket):
-    conn = S3Connection(DBBACKUP_S3_ACCESS_KEY, DBBACKUP_S3_SECRET_KEY)
-    return conn.get_bucket(bucket)
+    session = boto3.Session(
+        aws_access_key_id=DBBACKUP_S3_ACCESS_KEY,
+        aws_secret_access_key=DBBACKUP_S3_SECRET_KEY
+    )
+    s3 = session.resource('s3')
+    return s3.Bucket(bucket)
 
