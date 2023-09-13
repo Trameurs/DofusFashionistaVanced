@@ -22,7 +22,7 @@ from subprocess import call
 import s3_fashionista
 
 STATIC_ROOT = '/tmp/statictemp'
-DBBACKUP_S3_BUCKET = 'fash-static'
+DBBACKUP_S3_BUCKET = 'fashionistavanced'
 
 def main():
     with open('/etc/fashionista/serve_static') as f:
