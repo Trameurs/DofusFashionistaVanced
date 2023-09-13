@@ -197,7 +197,7 @@ def recover_password(request, username, recover_token):
         
     username = user.username
     new_password = User.objects.make_random_password()
-    user.set_password(hashlib.sha256('dofusfashionista' + new_password).hexdigest())
+    user.set_password(hashlib.sha256(('dofusfashionista' + new_password).encode('utf-8')).hexdigest())
     user.save()
     
     try:
