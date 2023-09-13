@@ -34,7 +34,7 @@ def main():
     call(['rm', '-rf', STATIC_ROOT])
 
     old_map = {}
-    with open('static_file_map.csv', 'rb') as file_map_old:
+    with open('static_file_map.csv', 'r', newline='', encoding='utf-8') as file_map_old:
         csvreader = csv.reader(file_map_old)
         for row in csvreader:
             if len(row) > 0:
@@ -42,10 +42,10 @@ def main():
     
     new_map = {}
     keys = []
-    with open('static_file_map.csv', 'wb') as file_map:
+    with open('static_file_map.csv', 'w', newline='', encoding='utf-8') as file_map:
     
         os.chdir('fashionsite')
-        call(['python', 'manage.py', 'collectstatic'])
+        call(['python3', 'manage.py', 'collectstatic'])
         
         csvwriter = csv.writer(file_map)
     
