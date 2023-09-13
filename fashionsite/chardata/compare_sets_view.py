@@ -223,7 +223,7 @@ def get_sharing_link(request, sets_params):
 
 def _generate_share_compare_link(char_ids):
     params = '/'.join(['s%s' % encode_char_id(char_id) for char_id in char_ids])
-    return ('https://dofusfashionistavanced.com'
+    return ('https://fashionistavanced.com'
             + reverse('compare_sets', args=(params,)))
 
 def get_item_stats(request):

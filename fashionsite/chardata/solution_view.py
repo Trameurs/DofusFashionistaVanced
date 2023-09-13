@@ -111,7 +111,7 @@ def solution_linked(request, char_name, encoded_char_id):
 def generate_link(char):
     encoded_id = encode_char_id(int(char.id))
     char_name = char.char_name or 'shared'
-    return ('https://dofusfashionistavanced.com'
+    return ('https://fashionistavanced.com'
             + reverse('solution_linked',
                       args=(char_name, encoded_id)))
 
