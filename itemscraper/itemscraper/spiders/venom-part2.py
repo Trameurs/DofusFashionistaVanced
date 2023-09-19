@@ -25,14 +25,14 @@ from fashionistapulp.structure import get_structure
 UNDER_100_IDS = []
 def get_deleted_ids():
     items = []
-    with open('items.json') as f:
+    with open('itemsnew.json') as f:
         item_list = json.load(f)
         for entry in item_list:
             if 'removed' in entry:
                 items.append(entry)
     return items
 def get_ids():
-    with open('items.json') as f:
+    with open('itemsnew.json') as f:
         items = json.load(f)
     return items
 
