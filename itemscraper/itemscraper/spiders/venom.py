@@ -45,7 +45,8 @@ class VenomSpider(scrapy.Spider):
             if href_try:
                 href = href_try[0].extract()
                 yield scrapy.Request(urljoin(response.url, href),
-                                 callback=self.look_at_item_page)
+                                    callback=self.look_at_item_page,
+                                    meta={'dont_redirect': True})
             
     def look_at_item_page(self, response):
         try_item_name = response.xpath("//h1[@class='ak-return-link']/node()")
