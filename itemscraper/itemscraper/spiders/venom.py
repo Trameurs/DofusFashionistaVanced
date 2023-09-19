@@ -25,17 +25,17 @@ class VenomSpider(scrapy.Spider):
     DOWNLOAD_DELAY=1
     allowed_domains = ["dofus.com"]
     start_urls = [
-    #    'https://www.dofus.com/en/mmorpg/encyclopedia/equipment?page=%d' % page
-    #    for page in range(1, 124 + 1)
+        'https://www.dofus.com/en/mmorpg/encyclopedia/equipment?page=%d' % page
+        for page in range(1, 105 + 1)
     ] + [
         'https://www.dofus.com/en/mmorpg/encyclopedia/weapons?page=%d' % page
-        for page in range(1, 40 + 1)
+        for page in range(1, 30 + 1)
     ] + [
-        #'https://www.dofus.com/en/mmorpg/encyclopedia/pets?page=%d' % page
-        #for page in range(1, 7 + 1)
+        'https://www.dofus.com/en/mmorpg/encyclopedia/pets?page=%d' % page
+        for page in range(1, 7 + 1)
     ] + [
-        #'https://www.dofus.com/en/mmorpg/encyclopedia/mounts?page=%d' % page
-        #for page in range(1, 3 + 1)
+        'https://www.dofus.com/en/mmorpg/encyclopedia/mounts?page=%d' % page
+        for page in range(1, 7 + 1)
     ]
 
     def parse(self, response):
