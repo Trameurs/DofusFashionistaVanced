@@ -34,15 +34,9 @@ def get_deleted_ids():
 def get_ids():
     items = []
     with open('items.json') as f:
-        content = f.read()
-        print("Content read:", repr(content))
-        try:
-            item_list = json.loads(content)
-        except json.JSONDecodeError as e:
-            print(f"JSON Decode Error: {e}")
-        else:
-            for entry in item_list:
-                items.append(entry)
+        item_list = json.load(f)
+        for line in item_list:
+            items.append(json.loads(line))
     return items
 
 BASE_URL = 'https://www.dofus.com/en/mmorpg/encyclopedia/equipment/%d-age-old-amulet'
