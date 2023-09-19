@@ -35,6 +35,7 @@ def get_ids():
     items = []
     with open('items.json') as f:
         content = f.read()
+        print("Content read:", repr(content))
         try:
             item_list = json.loads(content)
         except json.JSONDecodeError as e:
