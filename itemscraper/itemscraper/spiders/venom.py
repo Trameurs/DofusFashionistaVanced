@@ -39,14 +39,17 @@ class VenomSpider(scrapy.Spider):
     ]
 
     def parse(self, response):
-        item_lines = response.xpath("//tbody/node()")
-        for item_line in item_lines:
-            href_try = item_line.xpath(".//a/@href")
-            if href_try:
-                href = href_try[0].extract()
-                yield scrapy.Request(urljoin(response.url, href),
-                                    callback=self.look_at_item_page,
-                                    meta={'dont_redirect': True})
+        if response.status == 302:
+            self.logger.info(f"Got 302 on {response.url}, handling it...")
+            redirect_url = response.headers.get('Location').decode("utf-8")
+            yield scrapy.Request(url=redirect_url, callback=self.parse)
+        else:
+            item_lines = response.xpath("//tbody/node()")
+            for item_line in item_lines:
+                href_try = item_line.xpath(".//a/@href")
+                if href_try:
+                    href = href_try[0].extract()
+                    yield scrapy.Request(url=urljoin(response.url, href), callback=self.look_at_item_page)
             
     def look_at_item_page(self, response):
         try_item_name = response.xpath("//h1[@class='ak-return-link']/node()")
