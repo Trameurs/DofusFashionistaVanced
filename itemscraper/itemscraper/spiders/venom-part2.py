@@ -34,8 +34,7 @@ def get_deleted_ids():
 def get_ids():
     items = []
     with open('items.json') as f:
-        item_list = json.load(f)
-        for line in item_list:
+        for line in f:
             items.append(json.loads(line))
     return items
 
