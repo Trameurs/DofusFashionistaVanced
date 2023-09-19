@@ -29,7 +29,7 @@ BOT_NAME = 'itemscraper'
 SPIDER_MODULES = ['itemscraper.spiders']
 NEWSPIDER_MODULE = 'itemscraper.spiders'
 
-DOWNLOAD_DELAY = 5
+DOWNLOAD_DELAY = 1
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.3"
 RETRY_TIMES = 1
 RETRY_HTTP_CODES = [500, 502, 503, 504, 400, 403, 404, 408, 429, 302]
