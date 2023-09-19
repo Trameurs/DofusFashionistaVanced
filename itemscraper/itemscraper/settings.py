@@ -39,6 +39,7 @@ AUTOTHROTTLE_ENABLED = True
 AUTOTHROTTLE_START_DELAY = 2.0
 AUTOTHROTTLE_MAX_DELAY = 60.0
 AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
+COOKIES_ENABLED = True
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'itemscraper (+http://www.yourdomain.com)'
