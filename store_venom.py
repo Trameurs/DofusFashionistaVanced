@@ -36,7 +36,6 @@ def main(json_file):
     weapons = read_id_to_terms(json_file)
     
     load_items_db_from_dump()
-    print(f"Database path is: {get_items_db_path()}")
     for ankama_id, weapon_data in weapons.items():
         ankama_profile = (ankama_id, 'equipment')
         conn = sqlite3.connect(get_items_db_path())
@@ -162,7 +161,7 @@ def get_item_id_and_name_for_ankama_profile(c, entities_table, ankama_profile, t
 
 def _convert_json_item_to_item(json_item):
     structure = get_structure()
-
+    print(f"Structure: {structure}")
     item = Item()
     item.removed = False
     item.name = json_item['name']
@@ -189,6 +188,7 @@ def _convert_json_item_to_item(json_item):
         weapon.crit_chance = int(json_item['crit_chance'])
         weapon.crit_bonus = int(json_item.get('crit_bonus')) if json_item.get('crit_bonus') else None
         wtype = structure.get_weapon_type_by_name(json_item['w_type'])
+        print(f"Fetched weapon type: {wtype}")
         if wtype:
             weapon.weapon_type = wtype.id
         else: 
