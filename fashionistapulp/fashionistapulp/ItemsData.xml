@@ -8957,7 +8957,7 @@
     <EQUIP elem="Guten Tak's Amulet">
       <ATTR elem="Power" value="30"/>
       <ATTR elem="AP" value="1"/>
-      <ATTR elem="Strength" value="30"/>
+      <ATTR elem="Strength" value="100"/>
       <ATTR elem="Neutral Damage" value="12"/>
       <ATTR elem="Earth Damage" value="12"/>
       <ATTR elem="Chance" value="30"/>
