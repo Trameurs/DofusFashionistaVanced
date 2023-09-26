@@ -36,6 +36,7 @@ def main(json_file):
     weapons = read_id_to_terms(json_file)
     
     load_items_db_from_dump()
+    print(f"Database path is: {get_items_db_path()}")
     for ankama_id, weapon_data in weapons.items():
         ankama_profile = (ankama_id, 'equipment')
         conn = sqlite3.connect(get_items_db_path())
