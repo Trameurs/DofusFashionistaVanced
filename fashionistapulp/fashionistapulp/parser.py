@@ -146,6 +146,7 @@ WEAPON_TYPES = {
     'Shovel': 'shovel',
     'Staff': 'staff',
     'Sword': 'sword',
+    'Lance': 'lance',
     'Dagger': 'dagger',
     'Bow': 'bow',
     'Wand': 'wand',
