@@ -46,7 +46,7 @@ def main(json_file):
                 filetomod = open('MissingSets.txt','a') 
  
                 name_to_print = set_name + '\n'
-                filetomod.write(name_to_print.encode('utf-8')) 
+                filetomod.write(name_to_print)
     
                 filetomod.close() 
     save_items_db_to_dump()
