@@ -1,7 +1,6 @@
 *.pyc
 *~
 .svn
-fashionistapulp/fashionistapulp/items.db
 *.mo
 toPNG/
 itemscraper/items246todos4.json
