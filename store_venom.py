@@ -196,8 +196,6 @@ def _convert_json_item_to_item(json_item):
     
     index = 0
     for stat in json_item['stats']:
-        # Remove "{~p}{~z}" from stat[2]
-        stat[2] = stat[2].replace("{~p}{~z}", "")
         if stat[2].startswith('(') and stat[2] != '(':
             hit_name = stat[2].strip('()')
             hit_element = hit_name.split()[0]
