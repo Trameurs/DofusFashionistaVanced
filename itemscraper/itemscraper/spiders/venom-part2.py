@@ -108,6 +108,7 @@ STAT_TRANSLATE = {
     '% Ranged Damage': '% Ranged Damage',
     '% Weapon Damage': '% Weapon Damage',
     '% Spell Damage': '% Spell Damage',
+    '% Weapon Resistance': '% Weapon Resist',
 }
 UNDER_100_IDS = [item['ankama_id'] for item in get_ids()]
 START_URLS = [BASE_URL % item_id for item_id in UNDER_100_IDS]

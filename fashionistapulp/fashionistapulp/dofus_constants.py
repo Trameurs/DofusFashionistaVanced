@@ -142,7 +142,8 @@ STAT_NAME_TO_KEY = {
     '% Spell Damage': 'perspedam',
     '% Melee Resist': 'respermee',
     '% Ranged Resist': 'resperran',
-    'HP': 'hp'
+    'HP': 'hp',
+    '% Weapon Resist': 'resperwea'
 }
 
 STAT_ORDER = {
@@ -220,6 +221,7 @@ STAT_ORDER = {
     'perspedam': 130,
     'respermee': 131,
     'resperran': 132,
+    'resperwea': 133,
 }
 
 STAT_MAXIMUM = {

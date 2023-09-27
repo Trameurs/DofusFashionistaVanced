@@ -68,6 +68,7 @@ STATS_TO_FILL_DEFAULT = {
     'perspedam',
     'resperran',
     'respermee',
+    'resperwea',
 }
 
 def _fill_defaults(char, weights):
