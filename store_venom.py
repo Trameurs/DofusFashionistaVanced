@@ -183,6 +183,7 @@ def _convert_json_item_to_item(json_item):
     weapon = None
     if item.type == structure.get_type_id_by_name('Weapon'):
         weapon = Weapon()
+        print('WEAPON: %s' % json_item['name'])
         weapon.ap = int(json_item['ap'])
         weapon.crit_chance = int(json_item['crit_chance'])
         weapon.crit_bonus = int(json_item.get('crit_bonus')) if json_item.get('crit_bonus') else None
