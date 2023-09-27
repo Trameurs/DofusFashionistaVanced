@@ -2,9 +2,4 @@
 *~
 .svn
 *.mo
-toPNG/
-itemscraper/items246todos4.json
-HPitems.txt
-MissingSets.txt
-itemscraper/sets.json
 *.bak
