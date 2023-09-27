@@ -187,7 +187,6 @@ def _convert_json_item_to_item(json_item):
         weapon.crit_chance = int(json_item['crit_chance'])
         weapon.crit_bonus = int(json_item.get('crit_bonus')) if json_item.get('crit_bonus') else None
         wtype = structure.get_weapon_type_by_name(json_item['w_type'])
-        print(f"Fetched weapon type: {wtype}")
         if wtype:
             weapon.weapon_type = wtype.id
         else: 
@@ -197,6 +196,8 @@ def _convert_json_item_to_item(json_item):
     
     index = 0
     for stat in json_item['stats']:
+        # Remove "{~p}{~z}" from stat[2]
+        stat[2] = stat[2].replace("{~p}{~z}", "")
         if stat[2].startswith('(') and stat[2] != '(':
             hit_name = stat[2].strip('()')
             hit_element = hit_name.split()[0]
