@@ -146,12 +146,12 @@ WEAPON_TYPES = {
     'Shovel': 'shovel',
     'Staff': 'staff',
     'Sword': 'sword',
-    'Lance': 'lance',
     'Dagger': 'dagger',
     'Bow': 'bow',
     'Wand': 'wand',
     'Pickaxe': 'pickaxe',
     'Scythe': 'scythe',
+    'Lance': 'lance',
 }
 
 for stat in tree.findall("S_Attribute")[0].findall("S_Attribute"):

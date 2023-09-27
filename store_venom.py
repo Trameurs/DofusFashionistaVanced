@@ -161,8 +161,6 @@ def get_item_id_and_name_for_ankama_profile(c, entities_table, ankama_profile, t
 
 def _convert_json_item_to_item(json_item):
     structure = get_structure()
-    print(f"Structure: {structure}")
-    print("All weapon types:", structure.weapon_type_dict)
     item = Item()
     item.removed = False
     item.name = json_item['name']
