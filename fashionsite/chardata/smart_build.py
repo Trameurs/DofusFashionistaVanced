@@ -996,6 +996,8 @@ def _set_weights(char, aspects, apply=True):
     
     w['meleeness'] = meleeness
 
+    w['resperwea'] = chance_of_melee_def * resper_w * 5
+
     # Discretize w
     for k in w:
         w[k] = int(round(w[k]))
