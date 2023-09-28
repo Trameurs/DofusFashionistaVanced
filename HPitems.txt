@@ -1,0 +1,2198 @@
+Ilyzaelle Daggers: Pushback Resistance{~p}{~z}
+Ilyzaelle Daggers: Earth Damage{~p}{~z}
+Ilyzaelle Daggers: Neutral Damage{~p}{~z}
+Ilyzaelle Daggers: Critical Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Air Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Neutral Damage{~p}{~z}
+Axel: Water Damage{~p}{~z}
+Axel: Summons{~p}{~z}
+Rubber Sword: Damage{~p}{~z}
+Woukuis Shovel: Earth Damage{~p}{~z}
+Woukuis Shovel: Neutral Damage{~p}{~z}
+Woukuis Shovel: Water Damage{~p}{~z}
+Craft Knife: Damage{~p}{~z}
+Terrord: Earth Damage{~p}{~z}
+Terrord: Neutral Damage{~p}{~z}
+Terrord: Water Damage{~p}{~z}
+Godswrath Daggers: Earth Damage{~p}{~z}
+Godswrath Daggers: Air Damage{~p}{~z}
+Godswrath Daggers: Critical Resistance{~p}{~z}
+Bitter Billhook: Earth Damage{~p}{~z}
+Bitter Billhook: Water Damage{~p}{~z}
+Stephammer: Summons{~p}{~z}
+Stephammer: Damage{~p}{~z}
+Stephammer: Heal{~ps}{~zs}
+Sternutatory Wand: Heal{~ps}{~zs}
+Sternutatory Wand: Fire Damage{~p}{~z}
+Sternutatory Wand: Water Damage{~p}{~z}
+Sternutatory Wand: Neutral Resistance{~p}{~z}
+Shovel Shattkitou: Damage{~p}{~z}
+Shovel Shattkitou: Air Resistance{~p}{~z}
+Ramougre's Setter: Trap Damage{~p}{~z}
+The Hagogue Root: Damage{~p}{~z}
+The Hagogue Root: Summons{~p}{~z}
+Grizmine Claw: Damage{~p}{~z}
+Hairy Wand: Heal{~ps}{~zs}
+Gobball Master Staff: Damage{~p}{~z}
+Gobball Master Staff: Summons{~p}{~z}
+Koolich Staff: Pushback Resistance{~p}{~z}
+Koolich Staff: Damage{~p}{~z}
+Koolich Staff: Heal{~ps}{~zs}
+Chakra Style: Water Damage{~p}{~z}
+Treechnid Splitter: Earth Damage{~p}{~z}
+Treechnid Splitter: Neutral Damage{~p}{~z}
+Hell's Wand: Fire Damage{~p}{~z}
+Slicing Fan: Damage{~p}{~z}
+Ilyzaelle Daggers: Pushback Resistance{~p}{~z}
+Ilyzaelle Daggers: Earth Damage{~p}{~z}
+Ilyzaelle Daggers: Neutral Damage{~p}{~z}
+Ilyzaelle Daggers: Critical Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Air Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Neutral Damage{~p}{~z}
+Axel: Water Damage{~p}{~z}
+Axel: Summons{~p}{~z}
+Rubber Sword: Damage{~p}{~z}
+Woukuis Shovel: Earth Damage{~p}{~z}
+Woukuis Shovel: Neutral Damage{~p}{~z}
+Woukuis Shovel: Water Damage{~p}{~z}
+Craft Knife: Damage{~p}{~z}
+Terrord: Earth Damage{~p}{~z}
+Terrord: Neutral Damage{~p}{~z}
+Terrord: Water Damage{~p}{~z}
+Godswrath Daggers: Earth Damage{~p}{~z}
+Godswrath Daggers: Air Damage{~p}{~z}
+Godswrath Daggers: Critical Resistance{~p}{~z}
+Bitter Billhook: Earth Damage{~p}{~z}
+Bitter Billhook: Water Damage{~p}{~z}
+Stephammer: Summons{~p}{~z}
+Stephammer: Damage{~p}{~z}
+Stephammer: Heal{~ps}{~zs}
+Sternutatory Wand: Heal{~ps}{~zs}
+Sternutatory Wand: Fire Damage{~p}{~z}
+Sternutatory Wand: Water Damage{~p}{~z}
+Sternutatory Wand: Neutral Resistance{~p}{~z}
+Shovel Shattkitou: Damage{~p}{~z}
+Shovel Shattkitou: Air Resistance{~p}{~z}
+Ramougre's Setter: Trap Damage{~p}{~z}
+The Hagogue Root: Damage{~p}{~z}
+The Hagogue Root: Summons{~p}{~z}
+Grizmine Claw: Damage{~p}{~z}
+Hairy Wand: Heal{~ps}{~zs}
+Gobball Master Staff: Damage{~p}{~z}
+Gobball Master Staff: Summons{~p}{~z}
+Koolich Staff: Pushback Resistance{~p}{~z}
+Koolich Staff: Damage{~p}{~z}
+Koolich Staff: Heal{~ps}{~zs}
+Chakra Style: Water Damage{~p}{~z}
+Treechnid Splitter: Earth Damage{~p}{~z}
+Treechnid Splitter: Neutral Damage{~p}{~z}
+Hell's Wand: Fire Damage{~p}{~z}
+Slicing Fan: Damage{~p}{~z}
+Ilyzaelle Daggers: Pushback Resistance{~p}{~z}
+Ilyzaelle Daggers: Earth Damage{~p}{~z}
+Ilyzaelle Daggers: Neutral Damage{~p}{~z}
+Ilyzaelle Daggers: Critical Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Air Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Neutral Damage{~p}{~z}
+Axel: Water Damage{~p}{~z}
+Axel: Summons{~p}{~z}
+Rubber Sword: Damage{~p}{~z}
+Woukuis Shovel: Earth Damage{~p}{~z}
+Woukuis Shovel: Neutral Damage{~p}{~z}
+Woukuis Shovel: Water Damage{~p}{~z}
+Craft Knife: Damage{~p}{~z}
+Terrord: Earth Damage{~p}{~z}
+Terrord: Neutral Damage{~p}{~z}
+Terrord: Water Damage{~p}{~z}
+Godswrath Daggers: Earth Damage{~p}{~z}
+Godswrath Daggers: Air Damage{~p}{~z}
+Godswrath Daggers: Critical Resistance{~p}{~z}
+Bitter Billhook: Earth Damage{~p}{~z}
+Bitter Billhook: Water Damage{~p}{~z}
+Stephammer: Summons{~p}{~z}
+Stephammer: Damage{~p}{~z}
+Stephammer: Heal{~ps}{~zs}
+Sternutatory Wand: Heal{~ps}{~zs}
+Sternutatory Wand: Fire Damage{~p}{~z}
+Sternutatory Wand: Water Damage{~p}{~z}
+Sternutatory Wand: Neutral Resistance{~p}{~z}
+Shovel Shattkitou: Damage{~p}{~z}
+Shovel Shattkitou: Air Resistance{~p}{~z}
+Ramougre's Setter: Trap Damage{~p}{~z}
+The Hagogue Root: Damage{~p}{~z}
+The Hagogue Root: Summons{~p}{~z}
+Grizmine Claw: Damage{~p}{~z}
+Hairy Wand: Heal{~ps}{~zs}
+Gobball Master Staff: Damage{~p}{~z}
+Gobball Master Staff: Summons{~p}{~z}
+Koolich Staff: Pushback Resistance{~p}{~z}
+Koolich Staff: Damage{~p}{~z}
+Koolich Staff: Heal{~ps}{~zs}
+Chakra Style: Water Damage{~p}{~z}
+Treechnid Splitter: Earth Damage{~p}{~z}
+Treechnid Splitter: Neutral Damage{~p}{~z}
+Hell's Wand: Fire Damage{~p}{~z}
+Slicing Fan: Damage{~p}{~z}
+Ilyzaelle Daggers: Pushback Resistance{~p}{~z}
+Ilyzaelle Daggers: Earth Damage{~p}{~z}
+Ilyzaelle Daggers: Neutral Damage{~p}{~z}
+Ilyzaelle Daggers: Critical Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Air Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Neutral Damage{~p}{~z}
+Axel: Water Damage{~p}{~z}
+Axel: Summons{~p}{~z}
+Rubber Sword: Damage{~p}{~z}
+Woukuis Shovel: Earth Damage{~p}{~z}
+Woukuis Shovel: Neutral Damage{~p}{~z}
+Woukuis Shovel: Water Damage{~p}{~z}
+Craft Knife: Damage{~p}{~z}
+Terrord: Earth Damage{~p}{~z}
+Terrord: Neutral Damage{~p}{~z}
+Terrord: Water Damage{~p}{~z}
+Godswrath Daggers: Earth Damage{~p}{~z}
+Godswrath Daggers: Air Damage{~p}{~z}
+Godswrath Daggers: Critical Resistance{~p}{~z}
+Bitter Billhook: Earth Damage{~p}{~z}
+Bitter Billhook: Water Damage{~p}{~z}
+Stephammer: Summons{~p}{~z}
+Stephammer: Damage{~p}{~z}
+Stephammer: Heal{~ps}{~zs}
+Sternutatory Wand: Heal{~ps}{~zs}
+Sternutatory Wand: Fire Damage{~p}{~z}
+Sternutatory Wand: Water Damage{~p}{~z}
+Sternutatory Wand: Neutral Resistance{~p}{~z}
+Shovel Shattkitou: Damage{~p}{~z}
+Shovel Shattkitou: Air Resistance{~p}{~z}
+Ramougre's Setter: Trap Damage{~p}{~z}
+The Hagogue Root: Damage{~p}{~z}
+The Hagogue Root: Summons{~p}{~z}
+Grizmine Claw: Damage{~p}{~z}
+Hairy Wand: Heal{~ps}{~zs}
+Gobball Master Staff: Damage{~p}{~z}
+Gobball Master Staff: Summons{~p}{~z}
+Koolich Staff: Pushback Resistance{~p}{~z}
+Koolich Staff: Damage{~p}{~z}
+Koolich Staff: Heal{~ps}{~zs}
+Chakra Style: Water Damage{~p}{~z}
+Treechnid Splitter: Earth Damage{~p}{~z}
+Treechnid Splitter: Neutral Damage{~p}{~z}
+Hell's Wand: Fire Damage{~p}{~z}
+Slicing Fan: Damage{~p}{~z}
+Ilyzaelle Daggers: Pushback Resistance{~p}{~z}
+Ilyzaelle Daggers: Earth Damage{~p}{~z}
+Ilyzaelle Daggers: Neutral Damage{~p}{~z}
+Ilyzaelle Daggers: Critical Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Air Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Neutral Damage{~p}{~z}
+Axel: Water Damage{~p}{~z}
+Axel: Summons{~p}{~z}
+Rubber Sword: Damage{~p}{~z}
+Woukuis Shovel: Earth Damage{~p}{~z}
+Woukuis Shovel: Neutral Damage{~p}{~z}
+Woukuis Shovel: Water Damage{~p}{~z}
+Craft Knife: Damage{~p}{~z}
+Terrord: Earth Damage{~p}{~z}
+Terrord: Neutral Damage{~p}{~z}
+Terrord: Water Damage{~p}{~z}
+Godswrath Daggers: Earth Damage{~p}{~z}
+Godswrath Daggers: Air Damage{~p}{~z}
+Godswrath Daggers: Critical Resistance{~p}{~z}
+Bitter Billhook: Earth Damage{~p}{~z}
+Bitter Billhook: Water Damage{~p}{~z}
+Stephammer: Summons{~p}{~z}
+Stephammer: Damage{~p}{~z}
+Stephammer: Heal{~ps}{~zs}
+Sternutatory Wand: Heal{~ps}{~zs}
+Sternutatory Wand: Fire Damage{~p}{~z}
+Sternutatory Wand: Water Damage{~p}{~z}
+Sternutatory Wand: Neutral Resistance{~p}{~z}
+Shovel Shattkitou: Damage{~p}{~z}
+Shovel Shattkitou: Air Resistance{~p}{~z}
+Ramougre's Setter: Trap Damage{~p}{~z}
+The Hagogue Root: Damage{~p}{~z}
+The Hagogue Root: Summons{~p}{~z}
+Grizmine Claw: Damage{~p}{~z}
+Hairy Wand: Heal{~ps}{~zs}
+Gobball Master Staff: Damage{~p}{~z}
+Gobball Master Staff: Summons{~p}{~z}
+Koolich Staff: Pushback Resistance{~p}{~z}
+Koolich Staff: Damage{~p}{~z}
+Koolich Staff: Heal{~ps}{~zs}
+Chakra Style: Water Damage{~p}{~z}
+Treechnid Splitter: Earth Damage{~p}{~z}
+Treechnid Splitter: Neutral Damage{~p}{~z}
+Hell's Wand: Fire Damage{~p}{~z}
+Slicing Fan: Damage{~p}{~z}
+Ilyzaelle Daggers: Pushback Resistance{~p}{~z}
+Ilyzaelle Daggers: Earth Damage{~p}{~z}
+Ilyzaelle Daggers: Neutral Damage{~p}{~z}
+Ilyzaelle Daggers: Critical Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Air Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Neutral Damage{~p}{~z}
+Axel: Water Damage{~p}{~z}
+Axel: Summons{~p}{~z}
+Rubber Sword: Damage{~p}{~z}
+Woukuis Shovel: Earth Damage{~p}{~z}
+Woukuis Shovel: Neutral Damage{~p}{~z}
+Woukuis Shovel: Water Damage{~p}{~z}
+Craft Knife: Damage{~p}{~z}
+Terrord: Earth Damage{~p}{~z}
+Terrord: Neutral Damage{~p}{~z}
+Terrord: Water Damage{~p}{~z}
+Godswrath Daggers: Earth Damage{~p}{~z}
+Godswrath Daggers: Air Damage{~p}{~z}
+Godswrath Daggers: Critical Resistance{~p}{~z}
+Bitter Billhook: Earth Damage{~p}{~z}
+Bitter Billhook: Water Damage{~p}{~z}
+Stephammer: Summons{~p}{~z}
+Stephammer: Damage{~p}{~z}
+Stephammer: Heal{~ps}{~zs}
+Sternutatory Wand: Heal{~ps}{~zs}
+Sternutatory Wand: Fire Damage{~p}{~z}
+Sternutatory Wand: Water Damage{~p}{~z}
+Sternutatory Wand: Neutral Resistance{~p}{~z}
+Shovel Shattkitou: Damage{~p}{~z}
+Shovel Shattkitou: Air Resistance{~p}{~z}
+Ramougre's Setter: Trap Damage{~p}{~z}
+The Hagogue Root: Damage{~p}{~z}
+The Hagogue Root: Summons{~p}{~z}
+Grizmine Claw: Damage{~p}{~z}
+Hairy Wand: Heal{~ps}{~zs}
+Gobball Master Staff: Damage{~p}{~z}
+Gobball Master Staff: Summons{~p}{~z}
+Koolich Staff: Pushback Resistance{~p}{~z}
+Koolich Staff: Damage{~p}{~z}
+Koolich Staff: Heal{~ps}{~zs}
+Chakra Style: Water Damage{~p}{~z}
+Treechnid Splitter: Earth Damage{~p}{~z}
+Treechnid Splitter: Neutral Damage{~p}{~z}
+Hell's Wand: Fire Damage{~p}{~z}
+Slicing Fan: Damage{~p}{~z}
+Ilyzaelle Daggers: Pushback Resistance{~p}{~z}
+Ilyzaelle Daggers: Earth Damage{~p}{~z}
+Ilyzaelle Daggers: Neutral Damage{~p}{~z}
+Ilyzaelle Daggers: Critical Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Air Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Neutral Damage{~p}{~z}
+Axel: Water Damage{~p}{~z}
+Axel: Summons{~p}{~z}
+Rubber Sword: Damage{~p}{~z}
+Woukuis Shovel: Earth Damage{~p}{~z}
+Woukuis Shovel: Neutral Damage{~p}{~z}
+Woukuis Shovel: Water Damage{~p}{~z}
+Craft Knife: Damage{~p}{~z}
+Terrord: Earth Damage{~p}{~z}
+Terrord: Neutral Damage{~p}{~z}
+Terrord: Water Damage{~p}{~z}
+Godswrath Daggers: Earth Damage{~p}{~z}
+Godswrath Daggers: Air Damage{~p}{~z}
+Godswrath Daggers: Critical Resistance{~p}{~z}
+Bitter Billhook: Earth Damage{~p}{~z}
+Bitter Billhook: Water Damage{~p}{~z}
+Stephammer: Summons{~p}{~z}
+Stephammer: Damage{~p}{~z}
+Stephammer: Heal{~ps}{~zs}
+Sternutatory Wand: Heal{~ps}{~zs}
+Sternutatory Wand: Fire Damage{~p}{~z}
+Sternutatory Wand: Water Damage{~p}{~z}
+Sternutatory Wand: Neutral Resistance{~p}{~z}
+Shovel Shattkitou: Damage{~p}{~z}
+Shovel Shattkitou: Air Resistance{~p}{~z}
+Ramougre's Setter: Trap Damage{~p}{~z}
+The Hagogue Root: Damage{~p}{~z}
+The Hagogue Root: Summons{~p}{~z}
+Grizmine Claw: Damage{~p}{~z}
+Hairy Wand: Heal{~ps}{~zs}
+Gobball Master Staff: Damage{~p}{~z}
+Gobball Master Staff: Summons{~p}{~z}
+Koolich Staff: Pushback Resistance{~p}{~z}
+Koolich Staff: Damage{~p}{~z}
+Koolich Staff: Heal{~ps}{~zs}
+Chakra Style: Water Damage{~p}{~z}
+Treechnid Splitter: Earth Damage{~p}{~z}
+Treechnid Splitter: Neutral Damage{~p}{~z}
+Hell's Wand: Fire Damage{~p}{~z}
+Slicing Fan: Damage{~p}{~z}
+Ilyzaelle Daggers: Pushback Resistance{~p}{~z}
+Ilyzaelle Daggers: Earth Damage{~p}{~z}
+Ilyzaelle Daggers: Neutral Damage{~p}{~z}
+Ilyzaelle Daggers: Critical Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Air Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Neutral Damage{~p}{~z}
+Axel: Water Damage{~p}{~z}
+Axel: Summons{~p}{~z}
+Rubber Sword: Damage{~p}{~z}
+Woukuis Shovel: Earth Damage{~p}{~z}
+Woukuis Shovel: Neutral Damage{~p}{~z}
+Woukuis Shovel: Water Damage{~p}{~z}
+Craft Knife: Damage{~p}{~z}
+Terrord: Earth Damage{~p}{~z}
+Terrord: Neutral Damage{~p}{~z}
+Terrord: Water Damage{~p}{~z}
+Godswrath Daggers: Earth Damage{~p}{~z}
+Godswrath Daggers: Air Damage{~p}{~z}
+Godswrath Daggers: Critical Resistance{~p}{~z}
+Bitter Billhook: Earth Damage{~p}{~z}
+Bitter Billhook: Water Damage{~p}{~z}
+Stephammer: Summons{~p}{~z}
+Stephammer: Damage{~p}{~z}
+Stephammer: Heal{~ps}{~zs}
+Sternutatory Wand: Heal{~ps}{~zs}
+Sternutatory Wand: Fire Damage{~p}{~z}
+Sternutatory Wand: Water Damage{~p}{~z}
+Sternutatory Wand: Neutral Resistance{~p}{~z}
+Shovel Shattkitou: Damage{~p}{~z}
+Shovel Shattkitou: Air Resistance{~p}{~z}
+Ramougre's Setter: Trap Damage{~p}{~z}
+The Hagogue Root: Damage{~p}{~z}
+The Hagogue Root: Summons{~p}{~z}
+Grizmine Claw: Damage{~p}{~z}
+Hairy Wand: Heal{~ps}{~zs}
+Gobball Master Staff: Damage{~p}{~z}
+Gobball Master Staff: Summons{~p}{~z}
+Koolich Staff: Pushback Resistance{~p}{~z}
+Koolich Staff: Damage{~p}{~z}
+Koolich Staff: Heal{~ps}{~zs}
+Chakra Style: Water Damage{~p}{~z}
+Treechnid Splitter: Earth Damage{~p}{~z}
+Treechnid Splitter: Neutral Damage{~p}{~z}
+Hell's Wand: Fire Damage{~p}{~z}
+Slicing Fan: Damage{~p}{~z}
+Ilyzaelle Daggers: Pushback Resistance{~p}{~z}
+Ilyzaelle Daggers: Earth Damage{~p}{~z}
+Ilyzaelle Daggers: Neutral Damage{~p}{~z}
+Ilyzaelle Daggers: Critical Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Air Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Neutral Damage{~p}{~z}
+Axel: Water Damage{~p}{~z}
+Axel: Summons{~p}{~z}
+Rubber Sword: Damage{~p}{~z}
+Woukuis Shovel: Earth Damage{~p}{~z}
+Woukuis Shovel: Neutral Damage{~p}{~z}
+Woukuis Shovel: Water Damage{~p}{~z}
+Craft Knife: Damage{~p}{~z}
+Terrord: Earth Damage{~p}{~z}
+Terrord: Neutral Damage{~p}{~z}
+Terrord: Water Damage{~p}{~z}
+Godswrath Daggers: Earth Damage{~p}{~z}
+Godswrath Daggers: Air Damage{~p}{~z}
+Godswrath Daggers: Critical Resistance{~p}{~z}
+Bitter Billhook: Earth Damage{~p}{~z}
+Bitter Billhook: Water Damage{~p}{~z}
+Stephammer: Summons{~p}{~z}
+Stephammer: Damage{~p}{~z}
+Stephammer: Heal{~ps}{~zs}
+Sternutatory Wand: Heal{~ps}{~zs}
+Sternutatory Wand: Fire Damage{~p}{~z}
+Sternutatory Wand: Water Damage{~p}{~z}
+Sternutatory Wand: Neutral Resistance{~p}{~z}
+Shovel Shattkitou: Damage{~p}{~z}
+Shovel Shattkitou: Air Resistance{~p}{~z}
+Ramougre's Setter: Trap Damage{~p}{~z}
+The Hagogue Root: Damage{~p}{~z}
+The Hagogue Root: Summons{~p}{~z}
+Grizmine Claw: Damage{~p}{~z}
+Hairy Wand: Heal{~ps}{~zs}
+Gobball Master Staff: Damage{~p}{~z}
+Gobball Master Staff: Summons{~p}{~z}
+Koolich Staff: Pushback Resistance{~p}{~z}
+Koolich Staff: Damage{~p}{~z}
+Koolich Staff: Heal{~ps}{~zs}
+Chakra Style: Water Damage{~p}{~z}
+Treechnid Splitter: Earth Damage{~p}{~z}
+Treechnid Splitter: Neutral Damage{~p}{~z}
+Hell's Wand: Fire Damage{~p}{~z}
+Slicing Fan: Damage{~p}{~z}
+Ilyzaelle Daggers: Pushback Resistance{~p}{~z}
+Ilyzaelle Daggers: Earth Damage{~p}{~z}
+Ilyzaelle Daggers: Neutral Damage{~p}{~z}
+Ilyzaelle Daggers: Critical Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Air Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Neutral Damage{~p}{~z}
+Axel: Water Damage{~p}{~z}
+Axel: Summons{~p}{~z}
+Rubber Sword: Damage{~p}{~z}
+Woukuis Shovel: Earth Damage{~p}{~z}
+Woukuis Shovel: Neutral Damage{~p}{~z}
+Woukuis Shovel: Water Damage{~p}{~z}
+Craft Knife: Damage{~p}{~z}
+Terrord: Earth Damage{~p}{~z}
+Terrord: Neutral Damage{~p}{~z}
+Terrord: Water Damage{~p}{~z}
+Godswrath Daggers: Earth Damage{~p}{~z}
+Godswrath Daggers: Air Damage{~p}{~z}
+Godswrath Daggers: Critical Resistance{~p}{~z}
+Bitter Billhook: Earth Damage{~p}{~z}
+Bitter Billhook: Water Damage{~p}{~z}
+Stephammer: Summons{~p}{~z}
+Stephammer: Damage{~p}{~z}
+Stephammer: Heal{~ps}{~zs}
+Sternutatory Wand: Heal{~ps}{~zs}
+Sternutatory Wand: Fire Damage{~p}{~z}
+Sternutatory Wand: Water Damage{~p}{~z}
+Sternutatory Wand: Neutral Resistance{~p}{~z}
+Shovel Shattkitou: Damage{~p}{~z}
+Shovel Shattkitou: Air Resistance{~p}{~z}
+Ramougre's Setter: Trap Damage{~p}{~z}
+The Hagogue Root: Damage{~p}{~z}
+The Hagogue Root: Summons{~p}{~z}
+Grizmine Claw: Damage{~p}{~z}
+Hairy Wand: Heal{~ps}{~zs}
+Gobball Master Staff: Damage{~p}{~z}
+Gobball Master Staff: Summons{~p}{~z}
+Koolich Staff: Pushback Resistance{~p}{~z}
+Koolich Staff: Damage{~p}{~z}
+Koolich Staff: Heal{~ps}{~zs}
+Chakra Style: Water Damage{~p}{~z}
+Treechnid Splitter: Earth Damage{~p}{~z}
+Treechnid Splitter: Neutral Damage{~p}{~z}
+Hell's Wand: Fire Damage{~p}{~z}
+Slicing Fan: Damage{~p}{~z}
+Ilyzaelle Daggers: Pushback Resistance{~p}{~z}
+Ilyzaelle Daggers: Earth Damage{~p}{~z}
+Ilyzaelle Daggers: Neutral Damage{~p}{~z}
+Ilyzaelle Daggers: Critical Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Air Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Neutral Damage{~p}{~z}
+Axel: Water Damage{~p}{~z}
+Axel: Summons{~p}{~z}
+Rubber Sword: Damage{~p}{~z}
+Woukuis Shovel: Earth Damage{~p}{~z}
+Woukuis Shovel: Neutral Damage{~p}{~z}
+Woukuis Shovel: Water Damage{~p}{~z}
+Craft Knife: Damage{~p}{~z}
+Terrord: Earth Damage{~p}{~z}
+Terrord: Neutral Damage{~p}{~z}
+Terrord: Water Damage{~p}{~z}
+Godswrath Daggers: Earth Damage{~p}{~z}
+Godswrath Daggers: Air Damage{~p}{~z}
+Godswrath Daggers: Critical Resistance{~p}{~z}
+Bitter Billhook: Earth Damage{~p}{~z}
+Bitter Billhook: Water Damage{~p}{~z}
+Stephammer: Summons{~p}{~z}
+Stephammer: Damage{~p}{~z}
+Stephammer: Heal{~ps}{~zs}
+Sternutatory Wand: Heal{~ps}{~zs}
+Sternutatory Wand: Fire Damage{~p}{~z}
+Sternutatory Wand: Water Damage{~p}{~z}
+Sternutatory Wand: Neutral Resistance{~p}{~z}
+Shovel Shattkitou: Damage{~p}{~z}
+Shovel Shattkitou: Air Resistance{~p}{~z}
+Ramougre's Setter: Trap Damage{~p}{~z}
+The Hagogue Root: Damage{~p}{~z}
+The Hagogue Root: Summons{~p}{~z}
+Grizmine Claw: Damage{~p}{~z}
+Hairy Wand: Heal{~ps}{~zs}
+Gobball Master Staff: Damage{~p}{~z}
+Gobball Master Staff: Summons{~p}{~z}
+Koolich Staff: Pushback Resistance{~p}{~z}
+Koolich Staff: Damage{~p}{~z}
+Koolich Staff: Heal{~ps}{~zs}
+Chakra Style: Water Damage{~p}{~z}
+Treechnid Splitter: Earth Damage{~p}{~z}
+Treechnid Splitter: Neutral Damage{~p}{~z}
+Hell's Wand: Fire Damage{~p}{~z}
+Slicing Fan: Damage{~p}{~z}
+Ilyzaelle Daggers: Pushback Resistance{~p}{~z}
+Ilyzaelle Daggers: Earth Damage{~p}{~z}
+Ilyzaelle Daggers: Neutral Damage{~p}{~z}
+Ilyzaelle Daggers: Critical Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Air Damage{~p}{~z}
+Ortimus Contrari's Bloody Blades: Neutral Damage{~p}{~z}
+Axel: Water Damage{~p}{~z}
+Axel: Summons{~p}{~z}
+Rubber Sword: Damage{~p}{~z}
+Woukuis Shovel: Earth Damage{~p}{~z}
+Woukuis Shovel: Neutral Damage{~p}{~z}
+Woukuis Shovel: Water Damage{~p}{~z}
+Craft Knife: Damage{~p}{~z}
+Terrord: Earth Damage{~p}{~z}
+Terrord: Neutral Damage{~p}{~z}
+Terrord: Water Damage{~p}{~z}
+Godswrath Daggers: Earth Damage{~p}{~z}
+Godswrath Daggers: Air Damage{~p}{~z}
+Godswrath Daggers: Critical Resistance{~p}{~z}
+Bitter Billhook: Earth Damage{~p}{~z}
+Bitter Billhook: Water Damage{~p}{~z}
+Stephammer: Summons{~p}{~z}
+Stephammer: Damage{~p}{~z}
+Stephammer: Heal{~ps}{~zs}
+Sternutatory Wand: Heal{~ps}{~zs}
+Sternutatory Wand: Fire Damage{~p}{~z}
+Sternutatory Wand: Water Damage{~p}{~z}
+Sternutatory Wand: Neutral Resistance{~p}{~z}
+Shovel Shattkitou: Damage{~p}{~z}
+Shovel Shattkitou: Air Resistance{~p}{~z}
+Ramougre's Setter: Trap Damage{~p}{~z}
+The Hagogue Root: Damage{~p}{~z}
+The Hagogue Root: Summons{~p}{~z}
+Grizmine Claw: Damage{~p}{~z}
+Hairy Wand: Heal{~ps}{~zs}
+Gobball Master Staff: Damage{~p}{~z}
+Gobball Master Staff: Summons{~p}{~z}
+Koolich Staff: Pushback Resistance{~p}{~z}
+Koolich Staff: Damage{~p}{~z}
+Koolich Staff: Heal{~ps}{~zs}
+Chakra Style: Water Damage{~p}{~z}
+Treechnid Splitter: Earth Damage{~p}{~z}
+Treechnid Splitter: Neutral Damage{~p}{~z}
+Hell's Wand: Fire Damage{~p}{~z}
+Slicing Fan: Damage{~p}{~z}
+Farle's Pitchfork: Damage{~p}{~z}
+Kidommer: Damage{~p}{~z}
+Kidommer: Summons{~p}{~z}
+Sandanwa Staff: Heal{~ps}{~zs}
+Militiaman Bardiche: Summons{~p}{~z}
+Bow Liwood: Damage{~p}{~z}
+Shika's Hoe: Damage{~p}{~z}
+Arch Bow: Damage{~p}{~z}
+Koss Axe: Damage{~p}{~z}
+Hischantes Daggers: Neutral Damage{~p}{~z}
+Hischantes Daggers: Heal{~ps}{~zs}
+Mantiscore Axe: Water Damage{~p}{~z}
+Mantiscore Axe: Heal{~ps}{~zs}
+Spykbal Mace: Fire Damage{~p}{~z}
+Spykbal Mace: Air Damage{~p}{~z}
+Spykbal Mace: Heal{~ps}{~zs}
+Spykbal Mace: Summons{~p}{~z}
+The Fat Shovel: Fire Damage{~p}{~z}
+The Fat Shovel: Water Damage{~p}{~z}
+Aga Dou's Lance: Summons{~p}{~z}
+Bushi'Bow: Damage{~p}{~z}
+Clever Axe: Damage{~p}{~z}
+Legendary Crackler Hammer: Damage{~p}{~z}
+Sparkly Wand: Fire Damage{~p}{~z}
+Sparkly Wand: Neutral Damage{~p}{~z}
+Sparkly Wand: Heal{~ps}{~zs}
+Fantal Hammer: Earth Damage{~p}{~z}
+Fantal Hammer: Neutral Damage{~p}{~z}
+Fantal Hammer: Summons{~p}{~z}
+Pog Hammer: Damage{~p}{~z}
+Kaiser: Damage{~p}{~z}
+Kaiser: Critical Damage{~p}{~z}
+Sandanwa Axe: Damage{~p}{~z}
+Sandanwa Sabre: Damage{~p}{~z}
+Limp Wand: Damage{~p}{~z}
+Dagger O'Hair: Damage{~p}{~z}
+Red Hammer: Heal{~ps}{~zs}
+Red Hammer: Summons{~p}{~z}
+Vaidaire Shovel: Damage{~p}{~z}
+The Migraine: Damage{~p}{~z}
+Pole Axe: Earth Damage{~p}{~z}
+Pole Axe: Neutral Damage{~p}{~z}
+Pole Axe: Pushback Damage{~p}{~z}
+Coralator Mace: Damage{~p}{~z}
+Tyse Pick: Damage{~p}{~z}
+Tyse Pick: Critical Damage{~p}{~z}
+Froot Root: Damage{~p}{~z}
+Froot Root: Heal{~ps}{~zs}
+Froot Root: Summons{~p}{~z}
+Helabete Shovel: Neutral Damage{~p}{~z}
+Helabete Shovel: Water Damage{~p}{~z}
+Disast Root: Damage{~p}{~z}
+Dark Treestaff: Damage{~p}{~z}
+Dark Treestaff: Summons{~p}{~z}
+Chiduc's Arc: Damage{~p}{~z}
+Pesc Axe: Damage{~p}{~z}
+Daggero's Staff: Earth Damage{~p}{~z}
+Daggero's Staff: Neutral Damage{~p}{~z}
+Travel Shovel: Fire Damage{~p}{~z}
+Travel Shovel: Neutral Damage{~p}{~z}
+Travel Shovel: Water Damage{~p}{~z}
+Travel Shovel: Summons{~p}{~z}
+Lady Root: Fire Damage{~p}{~z}
+Lady Root: Neutral Damage{~p}{~z}
+Lady Root: Heal{~ps}{~zs}
+Mairhe Shovel: Summons{~p}{~z}
+Sram Archer Bow: Air Damage{~p}{~z}
+Sram Archer Bow: Neutral Damage{~p}{~z}
+Dame Zel Axe: Pushback Resistance{~p}{~z}
+Dame Zel Axe: Critical Resistance{~p}{~z}
+Dame Zel Axe: Damage{~p}{~z}
+Dame Zel Axe: Summons{~p}{~z}
+Terps Hammer: Fire Damage{~p}{~z}
+Terps Hammer: Neutral Damage{~p}{~z}
+Terps Hammer: Summons{~p}{~z}
+Unreal Wand: Critical Resistance{~p}{~z}
+Daguiero's Daggers: Damage{~p}{~z}
+Yondanwa Sabre: Damage{~p}{~z}
+Ancestral Treechnid Splitter: Critical Damage{~p}{~z}
+Feca Staff: Pushback Resistance{~p}{~z}
+Feca Staff: Critical Resistance{~p}{~z}
+Hebuse Shovel: Neutral Damage{~p}{~z}
+Hebuse Shovel: Water Damage{~p}{~z}
+Fake Claw of Ceangal: Damage{~p}{~z}
+Arkanum Bow: Fire Damage{~p}{~z}
+Arkanum Bow: Neutral Damage{~p}{~z}
+Lookabeer Axe: Damage{~p}{~z}
+Lookabeer Axe: Critical Damage{~p}{~z}
+Dark Treeckler Branch: Damage{~p}{~z}
+Dark Treeckler Branch: Heal{~ps}{~zs}
+Granny Candy's Stick: Neutral Damage{~p}{~z}
+Granny Candy's Stick: Water Damage{~p}{~z}
+Yondanwa Axe: Damage{~p}{~z}
+Bards' Hall: Earth Damage{~p}{~z}
+Bards' Hall: Neutral Damage{~p}{~z}
+Bards' Hall: Heal{~ps}{~zs}
+Nine Tails: Critical Damage{~p}{~z}
+Pink Claw: Earth Damage{~p}{~z}
+Pink Claw: Neutral Damage{~p}{~z}
+Pink Claw: Pushback Damage{~p}{~z}
+Pink Claw: Summons{~p}{~z}
+Bwork Chief Blade: Damage{~p}{~z}
+Rehadaure Hammer: Damage{~p}{~z}
+Rehadaure Hammer: Summons{~p}{~z}
+Maydhyn China Daggers: Air Damage{~p}{~z}
+Maydhyn China Daggers: Neutral Damage{~p}{~z}
+Punkirake: Heal{~ps}{~zs}
+Punkirake: Water Damage{~p}{~z}
+Punkirake: Fire Damage{~p}{~z}
+Punkirake: Earth Resistance{~p}{~z}
+Kilih Wand Jaro: Heal{~ps}{~zs}
+Kilih Wand Jaro: Neutral Resistance{~p}{~z}
+Ambusher-Up: Earth Damage{~p}{~z}
+Ambusher-Up: Neutral Damage{~p}{~z}
+Ambusher-Up: Water Damage{~p}{~z}
+Ambusher-Up: Summons{~p}{~z}
+Black Mel Root: Damage{~p}{~z}
+Moon Hammer: Water Resistance{~p}{~z}
+Hammer Ican: Summons{~p}{~z}
+Bowfoon: Summons{~p}{~z}
+Bowfoon: Water Damage{~p}{~z}
+Bowfoon: Pushback Resistance{~p}{~z}
+Spanner's Wrench: Air Damage{~p}{~z}
+Spanner's Wrench: Pushback Damage{~p}{~z}
+Studded Staff: Heal{~ps}{~zs}
+Violet Arrow Bow: Heal{~ps}{~zs}
+Black Rat Daggers: Air Damage{~p}{~z}
+Black Rat Daggers: Earth Damage{~p}{~z}
+Black Rat Daggers: Neutral Damage{~p}{~z}
+Minotoror Axe: Damage{~p}{~z}
+Minotoror Axe: Summons{~p}{~z}
+White Rat Rapier: Fire Damage{~p}{~z}
+White Rat Rapier: Water Damage{~p}{~z}
+White Rat Rapier: Heal{~ps}{~zs}
+The Warf Axe: Neutral Resistance{~p}{~z}
+The Warf Axe: Fire Resistance{~p}{~z}
+Draught Bow: Damage{~p}{~z}
+Creizy-Stufh Wand: Heal{~ps}{~zs}
+Citrus Daggers: Heal{~ps}{~zs}
+Citrus Daggers: Damage{~p}{~z}
+Caribbean Staff: Summons{~p}{~z}
+Caribbean Staff: Heal{~ps}{~zs}
+Blarney Hammer: Earth Resistance{~p}{~z}
+Blarney Hammer: Neutral Resistance{~p}{~z}
+Chafer Archer Bow: Damage{~p}{~z}
+Cinati Root: Damage{~p}{~z}
+Axe of Lies: Damage{~p}{~z}
+Axe of Lies: Air Resistance{~p}{~z}
+Axe of Lies: Water Resistance{~p}{~z}
+Axe of Lies: Fire Resistance{~p}{~z}
+Axe of Lies: Neutral Resistance{~p}{~z}
+Axe of Lies: Earth Resistance{~p}{~z}
+Castr Hammer: Water Resistance{~p}{~z}
+Castr Hammer: Air Resistance{~p}{~z}
+Castr Hammer: Fire Resistance{~p}{~z}
+Elya Wood's Wand: Damage{~p}{~z}
+Dreggon Bow: Fire Resistance{~p}{~z}
+Dreggon Bow: Earth Damage{~p}{~z}
+Dreggon Bow: Summons{~p}{~z}
+Regah Daggers: Damage{~p}{~z}
+Rotaflor Stem: Heal{~ps}{~zs}
+Rock Katana: Earth Damage{~p}{~z}
+Doozi Bow: Damage{~p}{~z}
+Sangroku's Staff: Air Resistance{~p}{~z}
+Crick Hammer: Damage{~p}{~z}
+Crick Hammer: Summons{~p}{~z}
+Storm Katana: Air Damage{~p}{~z}
+Leaf Katana: Fire Damage{~p}{~z}
+Leaf Katana: Air Damage{~p}{~z}
+Leaf Katana: Earth Damage{~p}{~z}
+Leaf Katana: Water Damage{~p}{~z}
+Fire Katana: Fire Damage{~p}{~z}
+Web Bow: Damage{~p}{~z}
+Hikule Shovel: Damage{~p}{~z}
+Snailmet Bow: Neutral Resistance{~p}{~z}
+Snailmet Bow: Water Resistance{~p}{~z}
+Mastic Hammer: Earth Resistance{~p}{~z}
+Mastic Hammer: Fire Resistance{~p}{~z}
+Mastic Hammer: Critical Resistance{~p}{~z}
+Dreggon Hammer: Fire Damage{~p}{~z}
+Dreggon Hammer: Earth Damage{~p}{~z}
+Dreggon Hammer: Heal{~ps}{~zs}
+Runaway Bow: Damage{~p}{~z}
+Dreggon Wand: Water Resistance{~p}{~z}
+Dreggon Wand: Fire Resistance{~p}{~z}
+Dreggon Wand: Air Damage{~p}{~z}
+Dreggon Wand: Heal{~ps}{~zs}
+Dreggon Wand: Critical Damage{~p}{~z}
+Toll Hammer: Neutral Resistance{~p}{~z}
+Toll Hammer: Fire Resistance{~p}{~z}
+Sea Knife: Water Damage{~p}{~z}
+Sea Knife: Water Resistance{~p}{~z}
+Sea Knife: Critical Damage{~p}{~z}
+Dreggon Staff: Earth Damage{~p}{~z}
+Dreggon Staff: Air Damage{~p}{~z}
+Star Wand: Heal{~ps}{~zs}
+Great Coralator Mace: Damage{~p}{~z}
+Crashbang Staff: Water Damage{~p}{~z}
+Crashbang Staff: Critical Damage{~p}{~z}
+Crashbang Staff: Air Resistance{~p}{~z}
+Dreggon Axe: Fire Damage{~p}{~z}
+Dreggon Axe: Water Damage{~p}{~z}
+Nun-Charang: Air Resistance{~p}{~z}
+Nun-Charang: Air Damage{~p}{~z}
+Nun-Charang: Heal{~ps}{~zs}
+Nun-Charang: Critical Damage{~p}{~z}
+Nun-Charang: Summons{~p}{~z}
+Wand Heroff: Heal{~ps}{~zs}
+Dreggon Sword: Critical Resistance{~p}{~z}
+Dreggon Sword: Critical Damage{~p}{~z}
+Dreggon Shovel: Pushback Resistance{~p}{~z}
+Dreggon Shovel: Critical Damage{~p}{~z}
+Dreggon Shovel: Water Damage{~p}{~z}
+Dreggon Shovel: Air Resistance{~p}{~z}
+Dreggon Shovel: Earth Resistance{~p}{~z}
+Gyver Wand: Heal{~ps}{~zs}
+Dreggon Daggers: Earth Damage{~p}{~z}
+Dreggon Daggers: Fire Damage{~p}{~z}
+Dreggon Daggers: Air Damage{~p}{~z}
+Dreggon Daggers: Heal{~ps}{~zs}
+Kape Axe: Damage{~p}{~z}
+Kape Axe: Heal{~ps}{~zs}
+Hammer O'In: Damage{~p}{~z}
+Hammer O'In: Summons{~p}{~z}
+Chtelion Bow: Damage{~p}{~z}
+Earlik Branch: Damage{~p}{~z}
+Kwaxe: Water Resistance{~p}{~z}
+Kwaxe: Water Damage{~p}{~z}
+Kwaxe: Summons{~p}{~z}
+Castuc Daggers: Fire Damage{~p}{~z}
+Castuc Daggers: Water Damage{~p}{~z}
+Shaman Pingwin Staff: Heal{~ps}{~zs}
+Shaman Pingwin Staff: Fire Damage{~p}{~z}
+Shaman Pingwin Staff: Water Damage{~p}{~z}
+Shaman Pingwin Staff: Critical Resistance{~p}{~z}
+Placee Bow: Damage{~p}{~z}
+Cake Shovel: Damage{~p}{~z}
+Cake Shovel: Air Resistance{~p}{~z}
+Cake Shovel: Water Resistance{~p}{~z}
+Cake Shovel: Earth Resistance{~p}{~z}
+Zoth Girl Hammer: Damage{~p}{~z}
+Roasty Breadstick: Earth Resistance{~p}{~z}
+Roasty Breadstick: Water Resistance{~p}{~z}
+Roasty Breadstick: Earth Damage{~p}{~z}
+Roasty Breadstick: Water Damage{~p}{~z}
+Palm Cane: Damage{~p}{~z}
+Great Sweet Gum Wand: Heal{~ps}{~zs}
+Great Sweet Gum Wand: Summons{~p}{~z}
+Great Sweet Gum Wand: Water Damage{~p}{~z}
+Great Sweet Gum Wand: Air Damage{~p}{~z}
+Ostwogoth Daggers: Damage{~p}{~z}
+Ostwogoth Daggers: Neutral Resistance{~p}{~z}
+Ostwogoth Daggers: Air Resistance{~p}{~z}
+Cogito Hammer: Neutral Resistance{~p}{~z}
+Barkritter Root: Damage{~p}{~z}
+Barkritter Root: Summons{~p}{~z}
+Barkritter Root: Fire Resistance{~p}{~z}
+Barkritter Root: Water Resistance{~p}{~z}
+Iots Wand: Heal{~ps}{~zs}
+Iots Wand: Fire Resistance{~p}{~z}
+Iots Wand: Air Resistance{~p}{~z}
+Seestaff: Air Damage{~p}{~z}
+Seestaff: Water Damage{~p}{~z}
+Seestaff: Summons{~p}{~z}
+Seestaff: Fire Resistance{~p}{~z}
+Zoth Warrior Axe: Damage{~p}{~z}
+Dunb Hammer: Damage{~p}{~z}
+Soft Oak Staff: Fire Damage{~p}{~z}
+Soft Oak Staff: Earth Damage{~p}{~z}
+Soft Oak Staff: Neutral Damage{~p}{~z}
+Soft Oak Staff: Heal{~ps}{~zs}
+Trikidiki Hammer: Damage{~p}{~z}
+Hanshi Staff: Critical Resistance{~p}{~z}
+Hanshi Staff: Air Damage{~p}{~z}
+Hanshi Staff: Summons{~p}{~z}
+Shihan Fans: Air Damage{~p}{~z}
+Shihan Fans: Water Damage{~p}{~z}
+Shihan Fans: Critical Damage{~p}{~z}
+Marilyn Mun Bow: Damage{~p}{~z}
+Daggers Sives: Neutral Resistance{~p}{~z}
+Andy War Sword: Damage{~p}{~z}
+Andy War Sword: Neutral Resistance{~p}{~z}
+Floramor Root: Damage{~p}{~z}
+Sabre Aces: Neutral Damage{~p}{~z}
+Sabre Aces: Earth Damage{~p}{~z}
+Sabre Aces: Fire Damage{~p}{~z}
+Sabre Aces: Water Damage{~p}{~z}
+Sabre Aces: Air Damage{~p}{~z}
+Sabre Aces: Earth Resistance{~p}{~z}
+Sabre Aces: Air Resistance{~p}{~z}
+Sabre Aces: Pushback Damage{~p}{~z}
+Crimson Claw: Damage{~p}{~z}
+The Xyothine: Heal{~ps}{~zs}
+Rahm Bow: Damage{~p}{~z}
+Rahm Bow: Fire Resistance{~p}{~z}
+Rahm Bow: Air Resistance{~p}{~z}
+Shovel Tonjon: Neutral Damage{~p}{~z}
+Shovel Tonjon: Earth Damage{~p}{~z}
+Shovel Tonjon: Water Damage{~p}{~z}
+Shovel Tonjon: Neutral Resistance{~p}{~z}
+Shovel Tonjon: Earth Resistance{~p}{~z}
+Shovel Tonjon: Critical Resistance{~p}{~z}
+Kriss Tobal: Damage{~p}{~z}
+Kriss Tobal: Summons{~p}{~z}
+Kriss Tobal: Fire Resistance{~p}{~z}
+Kriss Tobal: Water Resistance{~p}{~z}
+Frigostine's Wand: Heal{~ps}{~zs}
+Frigostine's Wand: Neutral Damage{~p}{~z}
+Frigostine's Wand: Fire Damage{~p}{~z}
+Frigostine's Wand: Air Damage{~p}{~z}
+Frigostine's Wand: Critical Resistance{~p}{~z}
+Zatoishwan's Staff: Air Resistance{~p}{~z}
+Zatoishwan's Staff: Fire Resistance{~p}{~z}
+Zatoishwan's Staff: Water Damage{~p}{~z}
+Zatoishwan's Staff: Earth Damage{~p}{~z}
+Zatoishwan's Staff: Neutral Damage{~p}{~z}
+Zatoishwan's Staff: Critical Damage{~p}{~z}
+Hell Mina's Partisan: Fire Damage{~p}{~z}
+Hell Mina's Partisan: Pushback Damage{~p}{~z}
+Ice Daggers: Damage{~p}{~z}
+Ice Daggers: Trap Damage{~p}{~z}
+Judge Lou's Gavel: Water Damage{~p}{~z}
+Judge Lou's Gavel: Fire Resistance{~p}{~z}
+Judge Lou's Gavel: Critical Damage{~p}{~z}
+Minotot Sceptre: Heal{~ps}{~zs}
+Buck Anear's Sabre: Air Damage{~p}{~z}
+Buck Anear's Sabre: Fire Damage{~p}{~z}
+Buck Anear's Sabre: Critical Resistance{~p}{~z}
+Talklyka Pirate Axe: Neutral Damage{~p}{~z}
+Talklyka Pirate Axe: Air Damage{~p}{~z}
+Talklyka Pirate Axe: Earth Resistance{~p}{~z}
+Talklyka Pirate Axe: Water Resistance{~p}{~z}
+Talklyka Pirate Axe: Critical Resistance{~p}{~z}
+Harpy Pirate Lance: Heal{~ps}{~zs}
+Harpy Pirate Lance: Summons{~p}{~z}
+Harpy Pirate Lance: Air Damage{~p}{~z}
+Harpy Pirate Lance: Fire Damage{~p}{~z}
+Harpy Pirate Lance: Pushback Damage{~p}{~z}
+Axe Cidental: Heal{~ps}{~zs}
+Axe Cidental: Neutral Damage{~p}{~z}
+Axe Cidental: Fire Damage{~p}{~z}
+Axe Cidental: Air Resistance{~p}{~z}
+Axe Cidental: Water Resistance{~p}{~z}
+Axe Cidental: Critical Resistance{~p}{~z}
+Shovel Egant: Heal{~ps}{~zs}
+Shovel Egant: Summons{~p}{~z}
+Vigi Pirate Hammer: Neutral Damage{~p}{~z}
+Vigi Pirate Hammer: Fire Damage{~p}{~z}
+Vigi Pirate Hammer: Air Damage{~p}{~z}
+Vigi Pirate Hammer: Earth Resistance{~p}{~z}
+Vigi Pirate Hammer: Pushback Resistance{~p}{~z}
+Canni Blade: Damage{~p}{~z}
+Canni Blade: Earth Resistance{~p}{~z}
+Furritung: Damage{~p}{~z}
+Porkeez Daggers: Damage{~p}{~z}
+Porkeez Daggers: Neutral Resistance{~p}{~z}
+Zoth Master Staff: Damage{~p}{~z}
+Celestial Swashbuckler Sword: Critical Resistance{~p}{~z}
+Celestial Swashbuckler Sword: Neutral Resistance{~p}{~z}
+Celestial Swashbuckler Sword: Fire Damage{~p}{~z}
+Celestial Swashbuckler Sword: Air Damage{~p}{~z}
+Celestial Swashbuckler Sword: Critical Damage{~p}{~z}
+Slayspirit Katana: Critical Resistance{~p}{~z}
+Slayspirit Katana: Fire Damage{~p}{~z}
+Slayspirit Katana: Air Damage{~p}{~z}
+Slayspirit Katana: Earth Damage{~p}{~z}
+Slayspirit Katana: Neutral Damage{~p}{~z}
+Slayspirit Katana: Critical Damage{~p}{~z}
+Musamune: Neutral Resistance{~p}{~z}
+Musamune: Neutral Damage{~p}{~z}
+Unchewa Staff: Heal{~ps}{~zs}
+Unchewa Staff: Summons{~p}{~z}
+Unchewa Staff: Neutral Damage{~p}{~z}
+Unchewa Staff: Water Damage{~p}{~z}
+Unchewa Staff: Fire Resistance{~p}{~z}
+Unchewa Staff: Air Resistance{~p}{~z}
+Sick Axe: Damage{~p}{~z}
+Fuchsia: Heal{~ps}{~zs}
+Youyettes: Neutral Damage{~p}{~z}
+Youyettes: Earth Damage{~p}{~z}
+Youyettes: Air Damage{~p}{~z}
+Youyettes: Critical Resistance{~p}{~z}
+Split Splinter Sprinter: Heal{~ps}{~zs}
+Split Splinter Sprinter: Summons{~p}{~z}
+Split Splinter Sprinter: Earth Damage{~p}{~z}
+Split Splinter Sprinter: Fire Damage{~p}{~z}
+Split Splinter Sprinter: Water Damage{~p}{~z}
+Ush's Sword: Fire Damage{~p}{~z}
+Ush's Sword: Air Damage{~p}{~z}
+Ush's Sword: Pushback Damage{~p}{~z}
+Splinter Sprinter: Heal{~ps}{~zs}
+Splinter Sprinter: Summons{~p}{~z}
+Splinter Sprinter: Earth Damage{~p}{~z}
+Splinter Sprinter: Fire Damage{~p}{~z}
+Splinter Sprinter: Water Damage{~p}{~z}
+Splinter Sprinter: Critical Resistance{~p}{~z}
+Walloping Hammer: Heal{~ps}{~zs}
+Walloping Hammer: Fire Damage{~p}{~z}
+Walloping Hammer: Air Damage{~p}{~z}
+Walloping Hammer: Water Damage{~p}{~z}
+Walloping Hammer: Earth Resistance{~p}{~z}
+Walloping Hammer: Water Resistance{~p}{~z}
+Walloping Hammer: Critical Resistance{~p}{~z}
+Arctangent Bow: Earth Damage{~p}{~z}
+Arctangent Bow: Water Damage{~p}{~z}
+Arctangent Bow: Fire Damage{~p}{~z}
+Staff of the Prophets: Heal{~ps}{~zs}
+Staff of the Prophets: Fire Damage{~p}{~z}
+Staff of the Prophets: Water Damage{~p}{~z}
+Staff of the Prophets: Neutral Resistance{~p}{~z}
+Staff of the Prophets: Critical Resistance{~p}{~z}
+Killarity Sword: Damage{~p}{~z}
+Assinscrede Axe: Neutral Damage{~p}{~z}
+Assinscrede Axe: Earth Damage{~p}{~z}
+Assinscrede Axe: Air Damage{~p}{~z}
+Assinscrede Axe: Fire Damage{~p}{~z}
+Assinscrede Axe: Fire Resistance{~p}{~z}
+Assinscrede Axe: Pushback Damage{~p}{~z}
+Soft Oak Wand: Heal{~ps}{~zs}
+Gaga Daggers: Damage{~p}{~z}
+Gaga Daggers: Trap Damage{~p}{~z}
+Hickory Shovel: Damage{~p}{~z}
+Thanos's Staff: Heal{~ps}{~zs}
+Thanos's Staff: Summons{~p}{~z}
+Thanos's Staff: Fire Damage{~p}{~z}
+Thanos's Staff: Water Damage{~p}{~z}
+Thanos's Staff: Air Damage{~p}{~z}
+Thanos's Staff: Air Resistance{~p}{~z}
+Thanos's Staff: Pushback Damage{~p}{~z}
+Guten Tak's Bow: Neutral Damage{~p}{~z}
+Guten Tak's Bow: Earth Damage{~p}{~z}
+Guten Tak's Bow: Water Damage{~p}{~z}
+Guten Tak's Bow: Earth Resistance{~p}{~z}
+Guten Tak's Bow: Water Resistance{~p}{~z}
+Guten Tak's Bow: Critical Resistance{~p}{~z}
+Oracular Hammer: Neutral Damage{~p}{~z}
+Oracular Hammer: Earth Damage{~p}{~z}
+Oracular Hammer: Air Damage{~p}{~z}
+Oracular Hammer: Air Resistance{~p}{~z}
+Dagger Doo: Damage{~p}{~z}
+Dagger Doo: Air Resistance{~p}{~z}
+Dagger Doo: Fire Resistance{~p}{~z}
+Contemporary Bow: Neutral Damage{~p}{~z}
+Contemporary Bow: Fire Damage{~p}{~z}
+Contemporary Bow: Air Damage{~p}{~z}
+Contemporary Bow: Water Damage{~p}{~z}
+Contemporary Bow: Air Resistance{~p}{~z}
+Thrusty Staff: Damage{~p}{~z}
+Mallow Marsh Daggers: Heal{~ps}{~zs}
+Mallow Marsh Daggers: Summons{~p}{~z}
+Mallow Marsh Daggers: Neutral Damage{~p}{~z}
+Mallow Marsh Daggers: Fire Damage{~p}{~z}
+Sword Hikk: Neutral Resistance{~p}{~z}
+Sword Hikk: Earth Resistance{~p}{~z}
+Ethnologist Wand: Heal{~ps}{~zs}
+Ethnologist Wand: Summons{~p}{~z}
+Ethnologist Wand: Neutral Damage{~p}{~z}
+Ethnologist Wand: Earth Damage{~p}{~z}
+Ethnologist Wand: Fire Damage{~p}{~z}
+Peccadillo Blade: Heal{~ps}{~zs}
+Peccadillo Blade: Water Resistance{~p}{~z}
+Peccadillo Blade: Air Resistance{~p}{~z}
+Dorado Shovel: Summons{~p}{~z}
+Dorado Shovel: Neutral Damage{~p}{~z}
+Dorado Shovel: Water Damage{~p}{~z}
+Dorado Shovel: Fire Resistance{~p}{~z}
+Dorado Shovel: Air Resistance{~p}{~z}
+Dorado Shovel: Critical Resistance{~p}{~z}
+Kukri Kura: Damage{~p}{~z}
+Kukri Kura: Neutral Resistance{~p}{~z}
+Wanderelle: Damage{~p}{~z}
+Wanderelle: Heal{~ps}{~zs}
+Ougaammer: Damage{~p}{~z}
+Vetic Shovel: Neutral Damage{~p}{~z}
+Vetic Shovel: Earth Damage{~p}{~z}
+Vetic Shovel: Fire Damage{~p}{~z}
+Vetic Shovel: Air Damage{~p}{~z}
+Day'inda Knife: Damage{~p}{~z}
+Day'inda Knife: Air Resistance{~p}{~z}
+Beddy Bow: Damage{~p}{~z}
+Aggravating Daggers: Water Damage{~p}{~z}
+Aggravating Daggers: Earth Damage{~p}{~z}
+Aggravating Daggers: Water Resistance{~p}{~z}
+Sword Indinz: Damage{~p}{~z}
+Archetypal Bow: Heal{~ps}{~zs}
+Archetypal Bow: Neutral Damage{~p}{~z}
+Archetypal Bow: Air Resistance{~p}{~z}
+Projects Axe: Fire Damage{~p}{~z}
+Projects Axe: Air Damage{~p}{~z}
+Projects Axe: Earth Resistance{~p}{~z}
+Projects Axe: Water Resistance{~p}{~z}
+Little Bow Sleep: Damage{~p}{~z}
+Az'tech: Damage{~p}{~z}
+Tynril Rhizome: Heal{~ps}{~zs}
+Eternal Wand: Heal{~ps}{~zs}
+Eternal Wand: Neutral Damage{~p}{~z}
+Eternal Wand: Fire Damage{~p}{~z}
+Eternal Wand: Air Damage{~p}{~z}
+Eternal Wand: Earth Resistance{~p}{~z}
+Eternal Wand: Water Resistance{~p}{~z}
+Eternal Wand: Pushback Damage{~p}{~z}
+Thunderbuff Hammer: Neutral Damage{~p}{~z}
+Thunderbuff Hammer: Earth Damage{~p}{~z}
+Thunderbuff Hammer: Air Damage{~p}{~z}
+Mush Cuteers: Damage{~p}{~z}
+Sunshade Staff: Neutral Damage{~p}{~z}
+Sunshade Staff: Air Damage{~p}{~z}
+Sunshade Staff: Critical Resistance{~p}{~z}
+Korriander Axe: Air Damage{~p}{~z}
+Korriander Axe: Water Damage{~p}{~z}
+Korriander Axe: Critical Resistance{~p}{~z}
+Bitter Hammer: Earth Damage{~p}{~z}
+Bitter Hammer: Water Damage{~p}{~z}
+Professor Xa's Shovel: Neutral Damage{~p}{~z}
+Professor Xa's Shovel: Earth Damage{~p}{~z}
+Professor Xa's Shovel: Fire Damage{~p}{~z}
+Professor Xa's Shovel: Water Damage{~p}{~z}
+Shovel Emlaka: Damage{~p}{~z}
+Mush Mishish Staff: Damage{~p}{~z}
+Mush Mishish Staff: Summons{~p}{~z}
+Hail Sceptre: Damage{~p}{~z}
+Hail Sceptre: Neutral Resistance{~p}{~z}
+Slashen Axe: Water Damage{~p}{~z}
+Slashen Axe: Critical Damage{~p}{~z}
+Slashen Axe: Air Resistance{~p}{~z}
+Slashen Axe: Earth Resistance{~p}{~z}
+Henual's Hammer: Heal{~ps}{~zs}
+Henual's Hammer: Neutral Damage{~p}{~z}
+Henual's Hammer: Earth Damage{~p}{~z}
+Henual's Hammer: Fire Damage{~p}{~z}
+Henual's Hammer: Critical Resistance{~p}{~z}
+Ethical Wand: Heal{~ps}{~zs}
+Ethical Wand: Fire Damage{~p}{~z}
+Ethical Wand: Water Damage{~p}{~z}
+Aermyne's Rolling Pin: Critical Damage{~p}{~z}
+Berylbell's Tonfas: Water Damage{~p}{~z}
+Berylbell's Tonfas: Critical Damage{~p}{~z}
+Teroid Axe: Summons{~p}{~z}
+Teroid Axe: Neutral Resistance{~p}{~z}
+Teroid Axe: Earth Resistance{~p}{~z}
+Teroid Axe: Water Resistance{~p}{~z}
+Hunderp Cleavers: Air Damage{~p}{~z}
+Hunderp Cleavers: Pushback Damage{~p}{~z}
+Hunderp Cleavers: Critical Damage{~p}{~z}
+Rampant Bearbarian Hammer: Critical Resistance{~p}{~z}
+Rampant Bearbarian Hammer: Heal{~ps}{~zs}
+Rampant Bearbarian Hammer: Air Damage{~p}{~z}
+Rampant Bearbarian Hammer: Fire Damage{~p}{~z}
+Rampant Bearbarian Hammer: Water Damage{~p}{~z}
+Stormcloud Staff: Neutral Damage{~p}{~z}
+Stormcloud Staff: Fire Damage{~p}{~z}
+Stormcloud Staff: Pushback Resistance{~p}{~z}
+Archaic Bow: Summons{~p}{~z}
+Archaic Bow: Neutral Damage{~p}{~z}
+Archaic Bow: Air Damage{~p}{~z}
+Archaic Bow: Water Damage{~p}{~z}
+Archaic Bow: Neutral Resistance{~p}{~z}
+Archaic Bow: Air Resistance{~p}{~z}
+Archaic Bow: Critical Resistance{~p}{~z}
+Otomai's Sword: Summons{~p}{~z}
+Otomai's Sword: Fire Damage{~p}{~z}
+Otomai's Sword: Neutral Resistance{~p}{~z}
+Otomai's Sword: Water Resistance{~p}{~z}
+Copperbeard Mace: Fire Damage{~p}{~z}
+Copperbeard Mace: Air Damage{~p}{~z}
+Copperbeard Mace: Earth Damage{~p}{~z}
+Copperbeard Mace: Neutral Damage{~p}{~z}
+Copperbeard Mace: Pushback Damage{~p}{~z}
+Giger's Nightmare Blade: Neutral Damage{~p}{~z}
+Giger's Nightmare Blade: Earth Damage{~p}{~z}
+Giger's Nightmare Blade: Fire Damage{~p}{~z}
+Giger's Nightmare Blade: Water Resistance{~p}{~z}
+Stilted Shovel: Neutral Damage{~p}{~z}
+Stilted Shovel: Earth Damage{~p}{~z}
+Stilted Shovel: Critical Damage{~p}{~z}
+Elven Shovel: Summons{~p}{~z}
+Elven Shovel: Neutral Damage{~p}{~z}
+Elven Shovel: Water Damage{~p}{~z}
+Elven Shovel: Air Resistance{~p}{~z}
+Elven Shovel: Water Resistance{~p}{~z}
+Ancient Foggernaut Hammer: Water Damage{~p}{~z}
+Ancient Foggernaut Hammer: Air Damage{~p}{~z}
+Ancient Foggernaut Hammer: Fire Resistance{~p}{~z}
+Ancient Foggernaut Hammer: Pushback Resistance{~p}{~z}
+Gilbert G. Rapier: Water Damage{~p}{~z}
+Gilbert G. Rapier: Neutral Resistance{~p}{~z}
+Sepulchral Sceptre: Neutral Resistance{~p}{~z}
+Sepulchral Sceptre: Water Resistance{~p}{~z}
+Sepulchral Sceptre: Pushback Resistance{~p}{~z}
+Sepulchral Sceptre: Critical Damage{~p}{~z}
+Mallard's Mallet: Summons{~p}{~z}
+Mallard's Mallet: Fire Damage{~p}{~z}
+Mallard's Mallet: Air Damage{~p}{~z}
+Mallard's Mallet: Air Resistance{~p}{~z}
+Mallard's Mallet: Pushback Resistance{~p}{~z}
+Nerotic Wand: Heal{~ps}{~zs}
+Nerotic Wand: Summons{~p}{~z}
+Nerotic Wand: Water Damage{~p}{~z}
+Nerotic Wand: Air Damage{~p}{~z}
+Nerotic Wand: Fire Resistance{~p}{~z}
+Nerotic Wand: Water Resistance{~p}{~z}
+Joyous Seizers: Heal{~ps}{~zs}
+Joyous Seizers: Earth Damage{~p}{~z}
+Joyous Seizers: Fire Damage{~p}{~z}
+Joyous Seizers: Critical Damage{~p}{~z}
+Ground Dog: Heal{~ps}{~zs}
+Ground Dog: Fire Damage{~p}{~z}
+Ground Dog: Water Damage{~p}{~z}
+Ground Dog: Air Resistance{~p}{~z}
+Sanockout Stick: Heal{~ps}{~zs}
+Sanockout Stick: Fire Damage{~p}{~z}
+Sanockout Stick: Water Damage{~p}{~z}
+Sanockout Stick: Fire Resistance{~p}{~z}
+Sanockout Stick: Pushback Damage{~p}{~z}
+Bearbaric Sword: Neutral Resistance{~p}{~z}
+Bearbaric Sword: Earth Resistance{~p}{~z}
+Bearbaric Sword: Fire Resistance{~p}{~z}
+Bearbaric Sword: Water Resistance{~p}{~z}
+Bearbaric Sword: Air Resistance{~p}{~z}
+Bearbaric Sword: Critical Resistance{~p}{~z}
+Etymolowand: Fire Damage{~p}{~z}
+Etymolowand: Pushback Damage{~p}{~z}
+Etymolowand: Heal{~ps}{~zs}
+Etymolowand: Critical Damage{~p}{~z}
+Jobimcarl Bow: Water Damage{~p}{~z}
+Jobimcarl Bow: Summons{~p}{~z}
+Misery's Flail-Scale: Critical Damage{~p}{~z}
+Rhineetle Bow: Fire Damage{~p}{~z}
+Rhineetle Bow: Air Damage{~p}{~z}
+Rhineetle Bow: Neutral Damage{~p}{~z}
+Rhineetle Bow: Water Damage{~p}{~z}
+Rhineetle Bow: Earth Damage{~p}{~z}
+Steelymace: Fire Damage{~p}{~z}
+Steelymace: Heal{~ps}{~zs}
+Lavaxe: Neutral Damage{~p}{~z}
+Lavaxe: Earth Damage{~p}{~z}
+Lavaxe: Pushback Damage{~p}{~z}
+Lavaxe: Summons{~p}{~z}
+Hammerture: Pushback Resistance{~p}{~z}
+Hammerture: Earth Damage{~p}{~z}
+Hammerture: Neutral Damage{~p}{~z}
+Necrotick Bow: Fire Damage{~p}{~z}
+Necrotick Bow: Water Damage{~p}{~z}
+Necrotick Bow: Summons{~p}{~z}
+Drhossil Hammer: Summons{~p}{~z}
+Drhossil Hammer: Air Resistance{~p}{~z}
+Drhossil Hammer: Fire Damage{~p}{~z}
+Drhossil Hammer: Air Damage{~p}{~z}
+Bubotron Sword: Air Damage{~p}{~z}
+Bubotron Sword: Fire Resistance{~p}{~z}
+Bubotron Sword: Critical Resistance{~p}{~z}
+Pillar of Ephedrya: Critical Resistance{~p}{~z}
+Pillar of Ephedrya: Earth Damage{~p}{~z}
+Pillar of Ephedrya: Fire Damage{~p}{~z}
+Pillar of Ephedrya: Water Damage{~p}{~z}
+Pillar of Ephedrya: Air Damage{~p}{~z}
+Pandamonium Wand: Pushback Resistance{~p}{~z}
+Pandamonium Wand: Neutral Damage{~p}{~z}
+Pandamonium Wand: Earth Damage{~p}{~z}
+Pandamonium Wand: Heal{~ps}{~zs}
+Bledger: Pushback Resistance{~p}{~z}
+Bledger: Fire Damage{~p}{~z}
+Bledger: Summons{~p}{~z}
+Faux Netic Scythe: Pushback Resistance{~p}{~z}
+Faux Netic Scythe: Air Damage{~p}{~z}
+Faux Netic Scythe: Heal{~ps}{~zs}
+Faux Netic Scythe: Summons{~p}{~z}
+Turtelonia Wand: Air Damage{~p}{~z}
+Turtelonia Wand: Earth Damage{~p}{~z}
+Turtelonia Wand: Critical Damage{~p}{~z}
+Turtelonia Wand: Summons{~p}{~z}
+Turtelonia Wand: Earth Resistance{~p}{~z}
+Turtelonia Wand: Water Resistance{~p}{~z}
+Pyraring: Critical Resistance{~p}{~z}
+Pyraring: Fire Damage{~p}{~z}
+Pyraring: Water Damage{~p}{~z}
+Pyraring: Heal{~ps}{~zs}
+Catseye Bow: Earth Damage{~p}{~z}
+Catseye Bow: Neutral Damage{~p}{~z}
+Catseye Bow: Pushback Damage{~p}{~z}
+Fugitive Hammer: Fire Damage{~p}{~z}
+Fugitive Hammer: Air Damage{~p}{~z}
+Fugitive Hammer: Earth Damage{~p}{~z}
+Fugitive Hammer: Neutral Damage{~p}{~z}
+Fugitive Hammer: Water Damage{~p}{~z}
+Brutatax Wand: Heal{~ps}{~zs}
+Brutatax Wand: Pushback Resistance{~p}{~z}
+Archon's Bow: Fire Damage{~p}{~z}
+Archon's Bow: Water Damage{~p}{~z}
+Archon's Bow: Air Damage{~p}{~z}
+Tomahorse: Neutral Damage{~p}{~z}
+Tomahorse: Earth Damage{~p}{~z}
+Tomahorse: Water Damage{~p}{~z}
+Tomahorse: Neutral Resistance{~p}{~z}
+Tomahorse: Air Resistance{~p}{~z}
+Tomahorse: Pushback Damage{~p}{~z}
+Yaulbow: Pushback Resistance{~p}{~z}
+Yaulbow: Neutral Damage{~p}{~z}
+Yaulbow: Earth Damage{~p}{~z}
+Yaulbow: Fire Damage{~p}{~z}
+Yaulbow: Critical Damage{~p}{~z}
+Wulan's Bow: Earth Damage{~p}{~z}
+Wulan's Bow: Neutral Damage{~p}{~z}
+Wulan's Bow: Water Damage{~p}{~z}
+Wulan's Bow: Critical Damage{~p}{~z}
+Phonemenal Scythe: Pushback Resistance{~p}{~z}
+Phonemenal Scythe: Critical Resistance{~p}{~z}
+Phonemenal Scythe: Earth Damage{~p}{~z}
+Phonemenal Scythe: Air Damage{~p}{~z}
+Corruption's Spade: Earth Damage{~p}{~z}
+Corruption's Spade: Neutral Damage{~p}{~z}
+Corruption's Spade: Water Damage{~p}{~z}
+Ensorcel Lance: Pushback Resistance{~p}{~z}
+Ensorcel Lance: Air Damage{~p}{~z}
+Ensorcel Lance: Critical Damage{~p}{~z}
+Ensorcel Lance: Summons{~p}{~z}
+Soul-Blaze Sword: Fire Damage{~p}{~z}
+Soul-Blaze Sword: Water Damage{~p}{~z}
+Soul-Blaze Sword: Heal{~ps}{~zs}
+Soul-Blaze Sword: Critical Damage{~p}{~z}
+Forfut Hammer: Fire Damage{~p}{~z}
+Forfut Hammer: Air Damage{~p}{~z}
+Forfut Hammer: Earth Damage{~p}{~z}
+Forfut Hammer: Neutral Damage{~p}{~z}
+Daguanos: Water Damage{~p}{~z}
+Mantax: Critical Resistance{~p}{~z}
+Mantax: Air Damage{~p}{~z}
+Koutoulou Bow: Air Damage{~p}{~z}
+Koutoulou Bow: Water Damage{~p}{~z}
+Plumobile: Critical Resistance{~p}{~z}
+Plumobile: Fire Damage{~p}{~z}
+Plumobile: Heal{~ps}{~zs}
+Plumobile: Summons{~p}{~z}
+Nidas Shovel: Critical Resistance{~p}{~z}
+Nidas Shovel: Air Damage{~p}{~z}
+Nidas Shovel: Earth Damage{~p}{~z}
+Nidas Shovel: Neutral Damage{~p}{~z}
+Nidas Shovel: Water Damage{~p}{~z}
+Gallows of Ephedrya: Critical Resistance{~p}{~z}
+Gallows of Ephedrya: Earth Damage{~p}{~z}
+Gallows of Ephedrya: Fire Damage{~p}{~z}
+Gallows of Ephedrya: Water Damage{~p}{~z}
+Gallows of Ephedrya: Air Damage{~p}{~z}
+Claymomore: Pushback Resistance{~p}{~z}
+Claymomore: Earth Damage{~p}{~z}
+Claymomore: Water Damage{~p}{~z}
+Claymomore: Air Damage{~p}{~z}
+Claymomore: Fire Damage{~p}{~z}
+Destroyer Cleaver: Air Damage{~p}{~z}
+Destroyer Cleaver: Water Damage{~p}{~z}
+Destroyer Cleaver: Pushback Damage{~p}{~z}
+Possessed Hammer: Critical Resistance{~p}{~z}
+Possessed Hammer: Fire Damage{~p}{~z}
+Possessed Hammer: Heal{~ps}{~zs}
+Possessed Hammer: Summons{~p}{~z}
+Mishmash Wand: Pushback Resistance{~p}{~z}
+Mishmash Wand: Water Damage{~p}{~z}
+Mishmash Wand: Heal{~ps}{~zs}
+Vampiric Stake: Heal{~ps}{~zs}
+Vampiric Stake: Summons{~p}{~z}
+Limb Chopper: Damage{~p}{~z}
+Ragnarok: Summons{~p}{~z}
+Dark Treechnid Root Wand: Critical Damage{~p}{~z}
+Deceitful Daggers: Critical Damage{~p}{~z}
+The Sharp Claw: Damage{~p}{~z}
+Wand Else?: Heal{~ps}{~zs}
+Wand Else?: Critical Damage{~p}{~z}
+Shovel Minster: Damage{~p}{~z}
+Crocodyl Chief Blade: Damage{~p}{~z}
+Crocodyl Chief Blade: Summons{~p}{~z}
+Pospodrol Hammer: Pushback Resistance{~p}{~z}
+Pospodrol Hammer: Critical Resistance{~p}{~z}
+Pospodrol Hammer: Summons{~p}{~z}
+Truffle Shovel: Heal{~ps}{~zs}
+King of Borins Bow: Damage{~p}{~z}
+Forfut Shovel: Fire Damage{~p}{~z}
+Forfut Shovel: Water Damage{~p}{~z}
+Forfut Shovel: Heal{~ps}{~zs}
+Forfut Shovel: Summons{~p}{~z}
+Heqaxe: Air Damage{~p}{~z}
+Heqaxe: Earth Damage{~p}{~z}
+Heqaxe: Neutral Damage{~p}{~z}
+Heqaxe: Pushback Damage{~p}{~z}
+Heqaxe: Summons{~p}{~z}
+Shorpoon: Fire Damage{~p}{~z}
+Shorpoon: Heal{~ps}{~zs}
+Shorpoon: Critical Damage{~p}{~z}
+Strange Wand: Critical Resistance{~p}{~z}
+Strange Wand: Fire Damage{~p}{~z}
+Strange Wand: Air Damage{~p}{~z}
+Bitrydent: Fire Damage{~p}{~z}
+Bitrydent: Earth Damage{~p}{~z}
+Bitrydent: Neutral Damage{~p}{~z}
+Bitrydent: Heal{~ps}{~zs}
+Bitrydent: Summons{~p}{~z}
+Catseye Axe: Fire Damage{~p}{~z}
+Catseye Axe: Earth Damage{~p}{~z}
+Catseye Axe: Neutral Damage{~p}{~z}
+Catseye Axe: Water Damage{~p}{~z}
+Catseye Axe: Critical Damage{~p}{~z}
+Fugitive Wand: Pushback Resistance{~p}{~z}
+Fugitive Wand: Earth Damage{~p}{~z}
+Fugitive Wand: Neutral Damage{~p}{~z}
+Fugitive Wand: Water Damage{~p}{~z}
+Srambad Daggers: Critical Resistance{~p}{~z}
+Srambad Daggers: Earth Damage{~p}{~z}
+Srambad Daggers: Neutral Damage{~p}{~z}
+Srambad Daggers: Water Damage{~p}{~z}
+Flinty Daggers: Summons{~p}{~z}
+Flinty Daggers: Earth Damage{~p}{~z}
+Flinty Daggers: Fire Damage{~p}{~z}
+Flinty Daggers: Air Damage{~p}{~z}
+Flinty Daggers: Critical Resistance{~p}{~z}
+Chaotic Scythe: Fire Damage{~p}{~z}
+Chaotic Scythe: Water Damage{~p}{~z}
+Chaotic Scythe: Heal{~ps}{~zs}
+Chaotic Scythe: Critical Damage{~p}{~z}
+Imp Sword: Fire Damage{~p}{~z}
+Imp Sword: Heal{~ps}{~zs}
+Imp Sword: Critical Damage{~p}{~z}
+Imp Sword: Summons{~p}{~z}
+Seraphic Scythe: Water Damage{~p}{~z}
+Seraphic Scythe: Heal{~ps}{~zs}
+Seraphic Scythe: Critical Damage{~p}{~z}
+Seraphic Scythe: Summons{~p}{~z}
+War's Halbaxe: Fire Damage{~p}{~z}
+Foodie-Slicer Spatula: Earth Damage{~p}{~z}
+Foodie-Slicer Spatula: Air Damage{~p}{~z}
+Foodie-Slicer Spatula: Neutral Damage{~p}{~z}
+Buhorado Feather: Pushback Damage{~p}{~z}
+Crocobur: Air Damage{~p}{~z}
+Crocobur: Water Damage{~p}{~z}
+Crocobur: Fire Damage{~p}{~z}
+Crocobur: Earth Damage{~p}{~z}
+Crocobur: Neutral Damage{~p}{~z}
+Corrupted Bow: Critical Resistance{~p}{~z}
+Corrupted Bow: Fire Damage{~p}{~z}
+Corrupted Spear: Air Damage{~p}{~z}
+Corrupted Spear: Earth Damage{~p}{~z}
+Corrupted Spear: Neutral Damage{~p}{~z}
+Corrupted Spear: Pushback Damage{~p}{~z}
+King Playa’s Scepta: Water Damage{~p}{~z}
+King Playa’s Scepta: Critical Damage{~p}{~z}
+King Playa’s Scepta: Summons{~p}{~z}
+Atcham Sabres: Fire Damage{~p}{~z}
+Atcham Sabres: Air Damage{~p}{~z}
+Atcham Sabres: Water Damage{~p}{~z}
+Atcham Sabres: Critical Damage{~p}{~z}
+Queen of Thieves' Sword: Air Damage{~p}{~z}
+Queen of Thieves' Sword: Earth Damage{~p}{~z}
+Queen of Thieves' Sword: Neutral Damage{~p}{~z}
+Queen of Thieves' Sword: Critical Damage{~p}{~z}
+Dark Court Shovel: Pushback Resistance{~p}{~z}
+Dark Court Shovel: Air Damage{~p}{~z}
+Riff Hatchet: Neutral Damage{~p}{~z}
+Riff Hatchet: Earth Damage{~p}{~z}
+Riff Hatchet: Air Damage{~p}{~z}
+Riff Hatchet: Pushback Damage{~p}{~z}
+Polpullet Hammer: Heal{~ps}{~zs}
+Polpullet Hammer: Summons{~p}{~z}
+Rikiki Wand: Water Damage{~p}{~z}
+Bwork Blade: Air Damage{~p}{~z}
+Bwork Blade: Neutral Damage{~p}{~z}
+Hurrian Hammer: Earth Damage{~p}{~z}
+Scratcher Smith's Hammer: Water Damage{~p}{~z}
+Twiggy Daggers: Air Damage{~p}{~z}
+Twiggy Sword: Earth Damage{~p}{~z}
+Chestnut Tree Eater: Air Damage{~p}{~z}
+Twiggy Staff: Earth Damage{~p}{~z}
+Ice Wand: Fire Damage{~p}{~z}
+Smithy Daggers: Earth Damage{~p}{~z}
+The Tail: Air Damage{~p}{~z}
+Deflower Staff: Earth Damage{~p}{~z}
+Aclou Mallet: Water Damage{~p}{~z}
+Aclou Mallet: Earth Damage{~p}{~z}
+Aclou Mallet: Fire Damage{~p}{~z}
+Aclou Mallet: Neutral Damage{~p}{~z}
+Aclou Mallet: Air Damage{~p}{~z}
+Smithy Sword: Earth Damage{~p}{~z}
+Smithy Sword: Neutral Damage{~p}{~z}
+Damaged Farmer Scythe: Water Damage{~p}{~z}
+Ivory Hammer: Critical Resistance{~p}{~z}
+Ivory Hammer: Neutral Damage{~p}{~z}
+Ivory Hammer: Critical Damage{~p}{~z}
+Ice Knight Sword: Heal{~ps}{~zs}
+Bearman's Staff: Summons{~p}{~z}
+Bwork Archer Bow: Earth Damage{~p}{~z}
+Gobball Hammer: Summons{~p}{~z}
+Flatu Lance: Fire Damage{~p}{~z}
+The Infernal Tail: Pushback Damage{~p}{~z}
+Houze Shovel: Heal{~ps}{~zs}
+Infernal Sharp: Heal{~ps}{~zs}
+Ha Hammer: Pushback Damage{~p}{~z}
+Sargasse: Water Damage{~p}{~z}
+Strangly Wand: Heal{~ps}{~zs}
+The Arc de Triomphe: Air Damage{~p}{~z}
+The Arc de Triomphe: Water Damage{~p}{~z}
+Jon Lemon: Air Damage{~p}{~z}
+Arson Fire Lance: Water Damage{~p}{~z}
+Intelligence Wand: Heal{~ps}{~zs}
+R'Unique Hammer: Heal{~ps}{~zs}
+Penn Knives: Earth Damage{~p}{~z}
+Penn Knives: Neutral Damage{~p}{~z}
+Penn Knives: Summons{~p}{~z}
+Carnivorous Staff: Heal{~ps}{~zs}
+Ancestral Daggers: Summons{~p}{~z}
+Tabi Master Staff: Summons{~p}{~z}
+Toh'Lo Hammer: Summons{~p}{~z}
+Ivan Nowe String: Damage{~p}{~z}
+Shodanwa Axe: Heal{~ps}{~zs}
+Dakn Staff: Damage{~p}{~z}
+Director Grunob's Scythe: Pushback Damage{~p}{~z}
+Dasguised: Damage{~p}{~z}
+Bombu Cutter: Pushback Damage{~p}{~z}
+Treebow: Summons{~p}{~z}
+Hidsad Bow: Heal{~ps}{~zs}
+Larval Wand: Heal{~ps}{~zs}
+Larval Wand: Summons{~p}{~z}
+Elorie Entuwan's Cruel Daggers: Air Damage{~p}{~z}
+Shodanwa Sabre: Summons{~p}{~z}
+Stek Knife: Pushback Damage{~p}{~z}
+Gobkool Hammer: Summons{~p}{~z}
+Sawn-Off Pulley Bow: Fire Damage{~p}{~z}
+Wand Hering: Damage{~p}{~z}
+Wand Hering: Heal{~ps}{~zs}
+Sleeping Shovel: Pushback Resistance{~p}{~z}
+Sleeping Shovel: Critical Resistance{~p}{~z}
+Sleeping Shovel: Damage{~p}{~z}
+Sleeping Shovel: Heal{~ps}{~zs}
+Mace Tmosfer: Neutral Damage{~p}{~z}
+Draugur Chafer Hammer: Earth Damage{~p}{~z}
+Draugur Chafer Hammer: Neutral Damage{~p}{~z}
+Akwadala Staff: Damage{~p}{~z}
+Treestaff: Earth Damage{~p}{~z}
+Treestaff: Neutral Damage{~p}{~z}
+Croblade: Air Damage{~p}{~z}
+Croblade: Neutral Damage{~p}{~z}
+Croblade: Pushback Damage{~p}{~z}
+The Cardboard Twot: Fire Damage{~p}{~z}
+The Cardboard Twot: Air Damage{~p}{~z}
+The Cardboard Twot: Neutral Damage{~p}{~z}
+Shodanwa Staff: Neutral Damage{~p}{~z}
+Kanniball Andchain's Sceptre: Fire Damage{~p}{~z}
+The Hyldegarde: Fire Damage{~p}{~z}
+The Hyldegarde: Water Damage{~p}{~z}
+The Hyldegarde: Heal{~ps}{~zs}
+Outar Hammer: Damage{~p}{~z}
+Knuckle Rapping Hammer: Neutral Damage{~p}{~z}
+Efferves Sword: Earth Damage{~p}{~z}
+Efferves Sword: Neutral Damage{~p}{~z}
+Hickory Tree: Earth Resistance{~p}{~z}
+Hickory Tree: Neutral Resistance{~p}{~z}
+Pinambour Hammer: Summons{~p}{~z}
+Mishmashovel: Earth Damage{~p}{~z}
+Mishmashovel: Neutral Damage{~p}{~z}
+Mishmashovel: Water Damage{~p}{~z}
+Mishmashovel: Heal{~ps}{~zs}
+Albueran Warrior Lance: Neutral Damage{~p}{~z}
+Albueran Warrior Lance: Earth Damage{~p}{~z}
+Albueran Warrior Lance: Water Damage{~p}{~z}
+Albueran Trapper Lance: Heal{~ps}{~zs}
+Mushd Bow: Earth Damage{~p}{~z}
+Mushd Bow: Neutral Damage{~p}{~z}
+Mushd Bow: Water Damage{~p}{~z}
+Raccooper's Billhook: Earth Damage{~p}{~z}
+Raccooper's Billhook: Air Damage{~p}{~z}
+Doudish Shovel: Neutral Damage{~p}{~z}
+Doudish Shovel: Water Damage{~p}{~z}
+Doudish Shovel: Damage{~p}{~z}
+Doudish Shovel: Critical Damage{~p}{~z}
+Raziel: Air Damage{~p}{~z}
+Raziel: Earth Damage{~p}{~z}
+Raziel: Neutral Damage{~p}{~z}
+Cruel Trovel: Air Damage{~p}{~z}
+Savage Root: Damage{~p}{~z}
+Savage Root: Summons{~p}{~z}
+Crack Axe: Fire Damage{~p}{~z}
+Crack Axe: Earth Damage{~p}{~z}
+Crack Axe: Neutral Damage{~p}{~z}
+Tortoi Hammer: Air Damage{~p}{~z}
+Tortoi Hammer: Earth Damage{~p}{~z}
+Tortoi Hammer: Neutral Damage{~p}{~z}
+Tortoi Hammer: Water Damage{~p}{~z}
+Boowolf Axe: Earth Damage{~p}{~z}
+Boowolf Axe: Neutral Damage{~p}{~z}
+Kuri's Bow: Fire Damage{~p}{~z}
+Kuri's Bow: Heal{~ps}{~zs}
+Refactor Hammer: Summons{~p}{~z}
+Zebuth Shovel: Water Damage{~p}{~z}
+Zebuth Shovel: Critical Damage{~p}{~z}
+Rowler Blade: Air Damage{~p}{~z}
+Rowler Blade: Water Damage{~p}{~z}
+Kwakwa Blade: Pushback Resistance{~p}{~z}
+Kwakwa Blade: Fire Damage{~p}{~z}
+Kwakwa Blade: Air Damage{~p}{~z}
+Kwakwa Blade: Earth Damage{~p}{~z}
+Kwakwa Blade: Water Damage{~p}{~z}
+Kwakwa Blade: Pushback Damage{~p}{~z}
+Tofu Master Staff: Summons{~p}{~z}
+Crystal Bow: Heal{~ps}{~zs}
+Trunknydum: Damage{~p}{~z}
+Trunknydum: Summons{~p}{~z}
+Xaver: Damage{~p}{~z}
+Golden Scarabugly Wand: Heal{~ps}{~zs}
+Golden Scarabugly Wand: Summons{~p}{~z}
+Nidanwa Axe: Damage{~p}{~z}
+Wily Wand: Fire Damage{~p}{~z}
+Wobot Primitive Hedge-Trimmer: Air Damage{~p}{~z}
+Wobot Primitive Hedge-Trimmer: Earth Damage{~p}{~z}
+Wobot Primitive Hedge-Trimmer: Water Damage{~p}{~z}
+Pretty Blade: Air Damage{~p}{~z}
+Pretty Blade: Water Damage{~p}{~z}
+Mechba Shovel: Fire Damage{~p}{~z}
+Mechba Shovel: Water Damage{~p}{~z}
+Yench Cutting Sword: Earth Damage{~p}{~z}
+Yench Cutting Sword: Neutral Damage{~p}{~z}
+Yench Cutting Sword: Critical Damage{~p}{~z}
+Security Shovel: Neutral Damage{~p}{~z}
+Security Shovel: Water Damage{~p}{~z}
+Security Shovel: Summons{~p}{~z}
+Kings' Staff: Fire Damage{~p}{~z}
+Kings' Staff: Neutral Damage{~p}{~z}
+Kralove Cutting Sword: Damage{~p}{~z}
+Koalak Bow: Damage{~p}{~z}
+Koalak Bow: Critical Damage{~p}{~z}
+Purrin Axe: Neutral Damage{~p}{~z}
+Nidanwa Staff: Damage{~p}{~z}
+Pinted Wand: Fire Damage{~p}{~z}
+Pinted Wand: Neutral Damage{~p}{~z}
+Pinted Wand: Heal{~ps}{~zs}
+Ilyzaelle Daggers: Pushback Resistance
+Axel: Summons
+Godswrath Daggers: Critical Resistance
+Stephammer: Summons
+Stephammer: Heal{~ps}{~zs}
+Sternutatory Wand: Heal{~ps}{~zs}
+Sternutatory Wand: Neutral Resistance
+Shovel Shattkitou: Air Resistance
+The Hagogue Root: Summons
+Hairy Wand: Heal{~ps}{~zs}
+Gobball Master Staff: Summons
+Koolich Staff: Pushback Resistance
+Koolich Staff: Heal{~ps}{~zs}
+Kidommer: Summons
+Sandanwa Staff: Heal{~ps}{~zs}
+Militiaman Bardiche: Summons
+Hischantes Daggers: Heal{~ps}{~zs}
+Mantiscore Axe: Heal{~ps}{~zs}
+Spykbal Mace: Heal{~ps}{~zs}
+Spykbal Mace: Summons
+Aga Dou's Lance: Summons
+Sparkly Wand: Heal{~ps}{~zs}
+Fantal Hammer: Summons
+Red Hammer: Heal{~ps}{~zs}
+Red Hammer: Summons
+Froot Root: Heal{~ps}{~zs}
+Froot Root: Summons
+Dark Treestaff: Summons
+Travel Shovel: Summons
+Lady Root: Heal{~ps}{~zs}
+Mairhe Shovel: Summons
+Dame Zel Axe: Pushback Resistance
+Dame Zel Axe: Critical Resistance
+Dame Zel Axe: Summons
+Terps Hammer: Summons
+Unreal Wand: Critical Resistance
+Feca Staff: Pushback Resistance
+Feca Staff: Critical Resistance
+Dark Treeckler Branch: Heal{~ps}{~zs}
+Bards' Hall: Heal{~ps}{~zs}
+Pink Claw: Summons
+Rehadaure Hammer: Summons
+Punkirake: Heal{~ps}{~zs}
+Punkirake: Earth Resistance
+Kilih Wand Jaro: Heal{~ps}{~zs}
+Kilih Wand Jaro: Neutral Resistance
+Ambusher-Up: Summons
+Moon Hammer: Water Resistance
+Hammer Ican: Summons
+Bowfoon: Summons
+Bowfoon: Pushback Resistance
+Studded Staff: Heal{~ps}{~zs}
+Violet Arrow Bow: Heal{~ps}{~zs}
+Minotoror Axe: Summons
+White Rat Rapier: Heal{~ps}{~zs}
+The Warf Axe: Neutral Resistance
+The Warf Axe: Fire Resistance
+Creizy-Stufh Wand: Heal{~ps}{~zs}
+Citrus Daggers: Heal{~ps}{~zs}
+Caribbean Staff: Summons
+Caribbean Staff: Heal{~ps}{~zs}
+Blarney Hammer: Earth Resistance
+Blarney Hammer: Neutral Resistance
+Axe of Lies: Air Resistance
+Axe of Lies: Water Resistance
+Axe of Lies: Fire Resistance
+Axe of Lies: Neutral Resistance
+Axe of Lies: Earth Resistance
+Castr Hammer: Water Resistance
+Castr Hammer: Air Resistance
+Castr Hammer: Fire Resistance
+Dreggon Bow: Fire Resistance
+Dreggon Bow: Summons
+Rotaflor Stem: Heal{~ps}{~zs}
+Sangroku's Staff: Air Resistance
+Crick Hammer: Summons
+Snailmet Bow: Neutral Resistance
+Snailmet Bow: Water Resistance
+Mastic Hammer: Earth Resistance
+Mastic Hammer: Fire Resistance
+Mastic Hammer: Critical Resistance
+Dreggon Hammer: Heal{~ps}{~zs}
+Dreggon Wand: Water Resistance
+Dreggon Wand: Fire Resistance
+Dreggon Wand: Heal{~ps}{~zs}
+Toll Hammer: Neutral Resistance
+Toll Hammer: Fire Resistance
+Sea Knife: Water Resistance
+Star Wand: Heal{~ps}{~zs}
+Crashbang Staff: Air Resistance
+Nun-Charang: Air Resistance
+Nun-Charang: Heal{~ps}{~zs}
+Nun-Charang: Summons
+Wand Heroff: Heal{~ps}{~zs}
+Dreggon Sword: Critical Resistance
+Dreggon Shovel: Pushback Resistance
+Dreggon Shovel: Air Resistance
+Dreggon Shovel: Earth Resistance
+Gyver Wand: Heal{~ps}{~zs}
+Dreggon Daggers: Heal{~ps}{~zs}
+Kape Axe: Heal{~ps}{~zs}
+Hammer O'In: Summons
+Kwaxe: Water Resistance
+Kwaxe: Summons
+Shaman Pingwin Staff: Heal{~ps}{~zs}
+Shaman Pingwin Staff: Critical Resistance
+Cake Shovel: Air Resistance
+Cake Shovel: Water Resistance
+Cake Shovel: Earth Resistance
+Roasty Breadstick: Earth Resistance
+Roasty Breadstick: Water Resistance
+Great Sweet Gum Wand: Heal{~ps}{~zs}
+Great Sweet Gum Wand: Summons
+Ostwogoth Daggers: Neutral Resistance
+Ostwogoth Daggers: Air Resistance
+Cogito Hammer: Neutral Resistance
+Barkritter Root: Summons
+Barkritter Root: Fire Resistance
+Barkritter Root: Water Resistance
+Iots Wand: Heal{~ps}{~zs}
+Iots Wand: Fire Resistance
+Iots Wand: Air Resistance
+Seestaff: Summons
+Seestaff: Fire Resistance
+Soft Oak Staff: Heal{~ps}{~zs}
+Hanshi Staff: Critical Resistance
+Hanshi Staff: Summons
+Daggers Sives: Neutral Resistance
+Andy War Sword: Neutral Resistance
+Sabre Aces: Earth Resistance
+Sabre Aces: Air Resistance
+The Xyothine: Heal{~ps}{~zs}
+Rahm Bow: Fire Resistance
+Rahm Bow: Air Resistance
+Shovel Tonjon: Neutral Resistance
+Shovel Tonjon: Earth Resistance
+Shovel Tonjon: Critical Resistance
+Kriss Tobal: Summons
+Kriss Tobal: Fire Resistance
+Kriss Tobal: Water Resistance
+Frigostine's Wand: Heal{~ps}{~zs}
+Frigostine's Wand: Critical Resistance
+Zatoishwan's Staff: Air Resistance
+Zatoishwan's Staff: Fire Resistance
+Judge Lou's Gavel: Fire Resistance
+Minotot Sceptre: Heal{~ps}{~zs}
+Buck Anear's Sabre: Critical Resistance
+Talklyka Pirate Axe: Earth Resistance
+Talklyka Pirate Axe: Water Resistance
+Talklyka Pirate Axe: Critical Resistance
+Harpy Pirate Lance: Heal{~ps}{~zs}
+Harpy Pirate Lance: Summons
+Axe Cidental: Heal{~ps}{~zs}
+Axe Cidental: Air Resistance
+Axe Cidental: Water Resistance
+Axe Cidental: Critical Resistance
+Shovel Egant: Heal{~ps}{~zs}
+Shovel Egant: Summons
+Vigi Pirate Hammer: Earth Resistance
+Vigi Pirate Hammer: Pushback Resistance
+Canni Blade: Earth Resistance
+Porkeez Daggers: Neutral Resistance
+Celestial Swashbuckler Sword: Critical Resistance
+Celestial Swashbuckler Sword: Neutral Resistance
+Slayspirit Katana: Critical Resistance
+Musamune: Neutral Resistance
+Unchewa Staff: Heal{~ps}{~zs}
+Unchewa Staff: Summons
+Unchewa Staff: Fire Resistance
+Unchewa Staff: Air Resistance
+Fuchsia: Heal{~ps}{~zs}
+Youyettes: Critical Resistance
+Split Splinter Sprinter: Heal{~ps}{~zs}
+Split Splinter Sprinter: Summons
+Splinter Sprinter: Heal{~ps}{~zs}
+Splinter Sprinter: Summons
+Splinter Sprinter: Critical Resistance
+Walloping Hammer: Heal{~ps}{~zs}
+Walloping Hammer: Earth Resistance
+Walloping Hammer: Water Resistance
+Walloping Hammer: Critical Resistance
+Staff of the Prophets: Heal{~ps}{~zs}
+Staff of the Prophets: Neutral Resistance
+Staff of the Prophets: Critical Resistance
+Assinscrede Axe: Fire Resistance
+Soft Oak Wand: Heal{~ps}{~zs}
+Thanos's Staff: Heal{~ps}{~zs}
+Thanos's Staff: Summons
+Thanos's Staff: Air Resistance
+Guten Tak's Bow: Earth Resistance
+Guten Tak's Bow: Water Resistance
+Guten Tak's Bow: Critical Resistance
+Oracular Hammer: Air Resistance
+Dagger Doo: Air Resistance
+Dagger Doo: Fire Resistance
+Contemporary Bow: Air Resistance
+Mallow Marsh Daggers: Heal{~ps}{~zs}
+Mallow Marsh Daggers: Summons
+Sword Hikk: Neutral Resistance
+Sword Hikk: Earth Resistance
+Ethnologist Wand: Heal{~ps}{~zs}
+Ethnologist Wand: Summons
+Peccadillo Blade: Heal{~ps}{~zs}
+Peccadillo Blade: Water Resistance
+Peccadillo Blade: Air Resistance
+Dorado Shovel: Summons
+Dorado Shovel: Fire Resistance
+Dorado Shovel: Air Resistance
+Dorado Shovel: Critical Resistance
+Kukri Kura: Neutral Resistance
+Wanderelle: Heal{~ps}{~zs}
+Day'inda Knife: Air Resistance
+Aggravating Daggers: Water Resistance
+Archetypal Bow: Heal{~ps}{~zs}
+Archetypal Bow: Air Resistance
+Projects Axe: Earth Resistance
+Projects Axe: Water Resistance
+Tynril Rhizome: Heal{~ps}{~zs}
+Eternal Wand: Heal{~ps}{~zs}
+Eternal Wand: Earth Resistance
+Eternal Wand: Water Resistance
+Sunshade Staff: Critical Resistance
+Korriander Axe: Critical Resistance
+Mush Mishish Staff: Summons
+Hail Sceptre: Neutral Resistance
+Slashen Axe: Air Resistance
+Slashen Axe: Earth Resistance
+Henual's Hammer: Heal{~ps}{~zs}
+Henual's Hammer: Critical Resistance
+Ethical Wand: Heal{~ps}{~zs}
+Teroid Axe: Summons
+Teroid Axe: Neutral Resistance
+Teroid Axe: Earth Resistance
+Teroid Axe: Water Resistance
+Rampant Bearbarian Hammer: Critical Resistance
+Rampant Bearbarian Hammer: Heal{~ps}{~zs}
+Stormcloud Staff: Pushback Resistance
+Archaic Bow: Summons
+Archaic Bow: Neutral Resistance
+Archaic Bow: Air Resistance
+Archaic Bow: Critical Resistance
+Otomai's Sword: Summons
+Otomai's Sword: Neutral Resistance
+Otomai's Sword: Water Resistance
+Giger's Nightmare Blade: Water Resistance
+Elven Shovel: Summons
+Elven Shovel: Air Resistance
+Elven Shovel: Water Resistance
+Ancient Foggernaut Hammer: Fire Resistance
+Ancient Foggernaut Hammer: Pushback Resistance
+Gilbert G. Rapier: Neutral Resistance
+Sepulchral Sceptre: Neutral Resistance
+Sepulchral Sceptre: Water Resistance
+Sepulchral Sceptre: Pushback Resistance
+Mallard's Mallet: Summons
+Mallard's Mallet: Air Resistance
+Mallard's Mallet: Pushback Resistance
+Nerotic Wand: Heal{~ps}{~zs}
+Nerotic Wand: Summons
+Nerotic Wand: Fire Resistance
+Nerotic Wand: Water Resistance
+Joyous Seizers: Heal{~ps}{~zs}
+Ground Dog: Heal{~ps}{~zs}
+Ground Dog: Air Resistance
+Sanockout Stick: Heal{~ps}{~zs}
+Sanockout Stick: Fire Resistance
+Bearbaric Sword: Neutral Resistance
+Bearbaric Sword: Earth Resistance
+Bearbaric Sword: Fire Resistance
+Bearbaric Sword: Water Resistance
+Bearbaric Sword: Air Resistance
+Bearbaric Sword: Critical Resistance
+Etymolowand: Heal{~ps}{~zs}
+Jobimcarl Bow: Summons
+Steelymace: Heal{~ps}{~zs}
+Lavaxe: Summons
+Hammerture: Pushback Resistance
+Necrotick Bow: Summons
+Drhossil Hammer: Summons
+Drhossil Hammer: Air Resistance
+Bubotron Sword: Fire Resistance
+Bubotron Sword: Critical Resistance
+Pillar of Ephedrya: Critical Resistance
+Pandamonium Wand: Pushback Resistance
+Pandamonium Wand: Heal{~ps}{~zs}
+Bledger: Pushback Resistance
+Bledger: Summons
+Faux Netic Scythe: Pushback Resistance
+Faux Netic Scythe: Heal{~ps}{~zs}
+Faux Netic Scythe: Summons
+Turtelonia Wand: Summons
+Turtelonia Wand: Earth Resistance
+Turtelonia Wand: Water Resistance
+Pyraring: Critical Resistance
+Pyraring: Heal{~ps}{~zs}
+Brutatax Wand: Heal{~ps}{~zs}
+Brutatax Wand: Pushback Resistance
+Tomahorse: Neutral Resistance
+Tomahorse: Air Resistance
+Yaulbow: Pushback Resistance
+Phonemenal Scythe: Pushback Resistance
+Phonemenal Scythe: Critical Resistance
+Ensorcel Lance: Pushback Resistance
+Ensorcel Lance: Summons
+Soul-Blaze Sword: Heal{~ps}{~zs}
+Mantax: Critical Resistance
+Plumobile: Critical Resistance
+Plumobile: Heal{~ps}{~zs}
+Plumobile: Summons
+Nidas Shovel: Critical Resistance
+Gallows of Ephedrya: Critical Resistance
+Claymomore: Pushback Resistance
+Possessed Hammer: Critical Resistance
+Possessed Hammer: Heal{~ps}{~zs}
+Possessed Hammer: Summons
+Mishmash Wand: Pushback Resistance
+Mishmash Wand: Heal{~ps}{~zs}
+Vampiric Stake: Heal{~ps}{~zs}
+Vampiric Stake: Summons
+Ragnarok: Summons
+Wand Else?: Heal{~ps}{~zs}
+Crocodyl Chief Blade: Summons
+Pospodrol Hammer: Pushback Resistance
+Pospodrol Hammer: Critical Resistance
+Pospodrol Hammer: Summons
+Truffle Shovel: Heal{~ps}{~zs}
+Forfut Shovel: Heal{~ps}{~zs}
+Forfut Shovel: Summons
+Heqaxe: Summons
+Shorpoon: Heal{~ps}{~zs}
+Strange Wand: Critical Resistance
+Bitrydent: Heal{~ps}{~zs}
+Bitrydent: Summons
+Fugitive Wand: Pushback Resistance
+Srambad Daggers: Critical Resistance
+Flinty Daggers: Summons
+Flinty Daggers: Critical Resistance
+Chaotic Scythe: Heal{~ps}{~zs}
+Imp Sword: Heal{~ps}{~zs}
+Imp Sword: Summons
+Seraphic Scythe: Heal{~ps}{~zs}
+Seraphic Scythe: Summons
+Corrupted Bow: Critical Resistance
+King Playa’s Scepta: Summons
+Dark Court Shovel: Pushback Resistance
+Polpullet Hammer: Heal{~ps}{~zs}
+Polpullet Hammer: Summons
+Ivory Hammer: Critical Resistance
+Ice Knight Sword: Heal{~ps}{~zs}
+Bearman's Staff: Summons
+Gobball Hammer: Summons
+Houze Shovel: Heal{~ps}{~zs}
+Infernal Sharp: Heal{~ps}{~zs}
+Strangly Wand: Heal{~ps}{~zs}
+Intelligence Wand: Heal{~ps}{~zs}
+R'Unique Hammer: Heal{~ps}{~zs}
+Penn Knives: Summons
+Carnivorous Staff: Heal{~ps}{~zs}
+Ancestral Daggers: Summons
+Tabi Master Staff: Summons
+Toh'Lo Hammer: Summons
+Shodanwa Axe: Heal{~ps}{~zs}
+Treebow: Summons
+Hidsad Bow: Heal{~ps}{~zs}
+Larval Wand: Heal{~ps}{~zs}
+Larval Wand: Summons
+Shodanwa Sabre: Summons
+Gobkool Hammer: Summons
+Wand Hering: Heal{~ps}{~zs}
+Sleeping Shovel: Pushback Resistance
+Sleeping Shovel: Critical Resistance
+Sleeping Shovel: Heal{~ps}{~zs}
+The Hyldegarde: Heal{~ps}{~zs}
+Hickory Tree: Earth Resistance
+Hickory Tree: Neutral Resistance
+Pinambour Hammer: Summons
+Mishmashovel: Heal{~ps}{~zs}
+Albueran Trapper Lance: Heal{~ps}{~zs}
+Savage Root: Summons
+Kuri's Bow: Heal{~ps}{~zs}
+Refactor Hammer: Summons
+Kwakwa Blade: Pushback Resistance
+Tofu Master Staff: Summons
+Crystal Bow: Heal{~ps}{~zs}
+Trunknydum: Summons
+Golden Scarabugly Wand: Heal{~ps}{~zs}
+Golden Scarabugly Wand: Summons
+Security Shovel: Summons
+Pinted Wand: Heal{~ps}{~zs}
+Stephammer: Heal
+Sternutatory Wand: Heal
+Hairy Wand: Heal
+Koolich Staff: Heal
+Sandanwa Staff: Heal
+Hischantes Daggers: Heal
+Mantiscore Axe: Heal
+Spykbal Mace: Heal
+Sparkly Wand: Heal
+Red Hammer: Heal
+Froot Root: Heal
+Lady Root: Heal
+Dark Treeckler Branch: Heal
+Bards' Hall: Heal
+Punkirake: Heal
+Kilih Wand Jaro: Heal
+Studded Staff: Heal
+Violet Arrow Bow: Heal
+White Rat Rapier: Heal
+Creizy-Stufh Wand: Heal
+Citrus Daggers: Heal
+Caribbean Staff: Heal
+Rotaflor Stem: Heal
+Dreggon Hammer: Heal
+Dreggon Wand: Heal
+Star Wand: Heal
+Nun-Charang: Heal
+Wand Heroff: Heal
+Gyver Wand: Heal
+Dreggon Daggers: Heal
+Kape Axe: Heal
+Shaman Pingwin Staff: Heal
+Great Sweet Gum Wand: Heal
+Iots Wand: Heal
+Soft Oak Staff: Heal
+The Xyothine: Heal
+Frigostine's Wand: Heal
+Minotot Sceptre: Heal
+Harpy Pirate Lance: Heal
+Axe Cidental: Heal
+Shovel Egant: Heal
+Unchewa Staff: Heal
+Fuchsia: Heal
+Split Splinter Sprinter: Heal
+Splinter Sprinter: Heal
+Walloping Hammer: Heal
+Staff of the Prophets: Heal
+Soft Oak Wand: Heal
+Thanos's Staff: Heal
+Mallow Marsh Daggers: Heal
+Ethnologist Wand: Heal
+Peccadillo Blade: Heal
+Wanderelle: Heal
+Archetypal Bow: Heal
+Tynril Rhizome: Heal
+Eternal Wand: Heal
+Henual's Hammer: Heal
+Ethical Wand: Heal
+Rampant Bearbarian Hammer: Heal
+Nerotic Wand: Heal
+Joyous Seizers: Heal
+Ground Dog: Heal
+Sanockout Stick: Heal
+Etymolowand: Heal
+Steelymace: Heal
+Pandamonium Wand: Heal
+Faux Netic Scythe: Heal
+Pyraring: Heal
+Brutatax Wand: Heal
+Soul-Blaze Sword: Heal
+Plumobile: Heal
+Possessed Hammer: Heal
+Mishmash Wand: Heal
+Vampiric Stake: Heal
+Wand Else?: Heal
+Truffle Shovel: Heal
+Forfut Shovel: Heal
+Shorpoon: Heal
+Bitrydent: Heal
+Chaotic Scythe: Heal
+Imp Sword: Heal
+Seraphic Scythe: Heal
+Polpullet Hammer: Heal
+Ice Knight Sword: Heal
+Houze Shovel: Heal
+Infernal Sharp: Heal
+Strangly Wand: Heal
+Intelligence Wand: Heal
+R'Unique Hammer: Heal
+Carnivorous Staff: Heal
+Shodanwa Axe: Heal
+Hidsad Bow: Heal
+Larval Wand: Heal
+Wand Hering: Heal
+Sleeping Shovel: Heal
+The Hyldegarde: Heal
+Mishmashovel: Heal
+Albueran Trapper Lance: Heal
+Kuri's Bow: Heal
+Crystal Bow: Heal
+Golden Scarabugly Wand: Heal
+Pinted Wand: Heal
+Battleflag Amulet: Heal
+Mumystorque: Heal
+Kan-O-Mat Amulet: Heal
+Nomarow's Getas: Heal
+Unstable Belt: Heal
+Slothful Slippers: Heal
+Eculture Cape: Heal
+Gilded Choker: Heal
+Aermyne's Cape: Heal
+Cape of Pohdoog: Heal
+Otomai's Amulet: Heal
+Kan-O-Mat Headgear: Heal
+Celestial Bearbarian Cloak: Heal
+Count Razof's Helmet: Heal
+Bearbaric Band: Heal
+Bivalve: Heal
+Copperbeard Helm: Heal
+Nileza's Cloak: Heal
+Antyklime Ax's Cloak: Heal
+Missiz Freezz's Ring: Heal
+Nomarow's Helmet: Heal
+Lethaline's Boots: Heal
+Kringlove: Heal
+Lavaring: Heal
+Mumysring: Heal
+Horrifing: Heal
+Meno Cape: Heal
+Meno Boots: Heal
+Kroks: Heal
+Vortex Hood: Heal
+Hot Docs: Heal
+Bramble Wall: % Weapon Resist
+Lunar Boots: Heal
+Volcanic Clogs: Heal
+Burning Cape: Heal
+Boots of the Unsound Mind: Heal
+Ringaeus: Heal
+Meno Cap: Heal
+Vortex Clogs: Heal
+Rassler Mask: Heal
+Sinistrofu Cloak: Heal
+Age-Old Belt: Heal
+Freezammer Cloak: Heal
+Mumystiboots: Heal
+Merdiodon Cloak: Heal
+Belt of Wonders: Heal
+Crushed Velvet Cape: Heal
+Treadfast Belt: Heal
+Cryochrone Ring: Heal
+Creaking Tree Hat: Heal
+Burning Shoes: Heal
+Krosscape: Heal
+Nidas's Crown: Heal
+Pandamonium Amulet: Heal
+War's Gauntlet: Heal
+Volcanic Bag: Heal
+Burning Mask: Heal
+Mask of the Unsound Mind: Heal
+Cycloid Shield: Heal
+Unnamable Boots: Heal
+Hungry Pendant: Heal
+Count Razof's Belt: Heal
+Antyklime Ax's Boots: Heal
+Somnambulist's Nightcap: Heal
+Professor Xa's Amulet: Heal
+iKwest Amulet: Heal
+Vortex Belt: Heal
+Nidas's Ring: Heal
+Age-Old Helmet: Heal
+Dremoan Cape: Heal
+Bramble Wall: % Weapon Resist
+Bramble Wall: % Weapon Resist
+Autumnal Soft Oak G-String: Pod
+Minotot Belt: Pod
+Major Transporter: Pod
+Transporter: Pod
+Colousses Belt: Pod
+Dreggon Belt: Pod
+Koalak Chest Bag: Pod
+Moowolf Boots: Pod
+Lord of the Rats' Ceremonial Belt: Pod
+Minor Transporter: Pod
+Coco Blop Belt: Pod
+Pippin Blop Belt: Pod
+Morello Cherry Blop Belt: Pod
+Perfect Little Vulkanian Backpack: Pod
+Kloug's Belt: Pod
+Koalak Belt: Pod
+Cawwot-Bag: Pod
+Large Adventurer Bag: Pod
+Phero-Cape: Pod
+The Xerbo: Pod
+Koolich Bag: Pod
+Crocodyl Chief Schoolbag: Pod
+Golden Lady's Belt: Pod
+Farle's Cloak: Pod
+Legendary Crackler Belt: Pod
+Royal Coco Blop Belt: Pod
+Royal Pippin Blop Belt: Pod
+Royal Morello Cherry Blop Belt: Pod
+Royal Indigo Blop Belt: Pod
+Shika's Cape: Pod
+Gobbowl Ring: Pod
+Gobkool Belt: Pod
+Adventurer Bag: Pod
+Monarch Belt: Pod
+Stroud's Belt: Pod
+Akwadala Belt: Pod
+Vampyre Ring: Pod
+Treebelt: Pod
+Crackler Belt: Pod
+Terrdala Belt: Pod
+Gadjet's Ring: Pod
+Gadjet's Belt: Pod
+Indigo Blop Belt: Pod
+Small Gobbly Wool Bag: Pod
+Handbag: Pod
+Small Harvester Bag: Pod
+Reinforced Handbag: Pod
+Small Adventurer Bag: Pod
+Pocket Belt: Pod
+Harvester Bag: Pod
+Small Moskito Schoolbag: Pod
+Farmer Bag: Pod
+Gobball Belt: Pod
+Large Harvester Bag: Pod
+Cheeky Bag: Pod
+Staca Noviste's Rucksack: Pod
+Tofu Belt: Pod
+Father Kwismas Hat: Pod
+Improved Wooden Wings: Pod
+Royal Gobball's Belt: Pod
+Fosfor: Pod
+Kerubaby: Pod
+Borbat: Pod
+Bulbutting: Pod
+Bworky: Pod
