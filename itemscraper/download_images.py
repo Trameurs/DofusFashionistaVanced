@@ -35,10 +35,15 @@ def main():
             for entry in json.load(f):
                 image_path = folder + '/' + entry['name'] + '.png'
                 if not os.path.isfile(image_path):
-                    print('[%d] Downloading %s' % (i, entry['name']))
-                    urllib.request.urlretrieve(entry['image_url'],
-                                       image_path)
-                    time.sleep(1)
+                    image_url = entry.get('image_url')  # Safely fetch the image URL
+                    if image_url:  # Check if image_url exists
+                        image_path = os.path.join(folder, f"{name}.png")
+                        print('[%d] Downloading %s' % (i, entry['name']))
+                        urllib.request.urlretrieve(entry['image_url'],
+                                        image_path)
+                        time.sleep(1)
+                    else:
+                        print('[%d] You need to manually download %s' % (i, entry['name']))
                 else:
                     print('Skipping %s' % entry['name'])
                 i += 1
