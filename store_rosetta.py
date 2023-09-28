@@ -164,7 +164,7 @@ def convert_to_dicts(id_to_terms):
     return ankama_profile_to_all_dict, en_to_all_dict
 
 if __name__ == '__main__':
-    main('itemscraper/rosetta2.51.json', 'item_names', 'items')
+    main('itemscraper/rosetta269.json', 'item_names', 'items')
     # main('itemscraper/rosetta_16100_16400.json', 'item_names', 'items')
     # main('itemscraper/rosetta_mounts.json', 'item_names', 'items')
     #main('itemscraper/rosettahoy2.json', 'set_names', 'sets')
