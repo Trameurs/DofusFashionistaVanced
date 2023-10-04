@@ -59,6 +59,7 @@ class ItemscraperWeaponData(scrapy.Item):
     dofustouch = scrapy.Field()
     conditions = scrapy.Field()
     has_conditions = scrapy.Field()
+    image_url = scrapy.Field()
     
 class ItemscraperClassItemData(scrapy.Item):
     ankama_id = scrapy.Field()
