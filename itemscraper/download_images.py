@@ -22,7 +22,7 @@ import urllib.request, urllib.parse, urllib.error
 
 JSON_TO_DIR = {
     'dofusweap2.json': 'items',
-    'allitemsnew2.json': 'items',
+    'itemswithurl.json': 'items',
     #'pets.json': 'pets',
     #'mounts.json': 'mounts',
 }
