@@ -114,6 +114,7 @@ def _get_class_to_name():
     return _memoized_class_to_name[language]
 
 def save_project(request, char_id=0):
+    char_id = int(char_id)
     char = get_char_or_raise(request, char_id)
     
     state = _get_state_from_post(request)
