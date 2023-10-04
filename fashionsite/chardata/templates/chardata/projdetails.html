@@ -333,7 +333,7 @@ $(document).ready(function() {
     } else {
         $("#submit-mode").remove();
         setupStateEngine(init,
-            "{% url 'save_project_to_user' char_id %}",
+            "{% url 'save_project' char_id %}",
              initialState,
              saveButtonClicked);
     }
