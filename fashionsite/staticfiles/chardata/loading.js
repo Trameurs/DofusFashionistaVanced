@@ -464,10 +464,10 @@ function getRandomSentence(language) {
     let sentences;
 
     switch(language) {
-        case 'en':
+        case 'fr':
             sentences = carsen;
             break;
-        case 'fr':
+        case 'en':
             sentences = carsfr;
             break;
         case 'es':
