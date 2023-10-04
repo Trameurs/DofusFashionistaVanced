@@ -167,7 +167,7 @@ $(document).ready(function() {
         login(username, password);
     })
     $("#register-form").submit(registerSubmit)
-    $.post("{% url 'save_project_to_user' %}",
+    $.post("{% url 'save_project' %}",
            {},
            function (data) {
            });
