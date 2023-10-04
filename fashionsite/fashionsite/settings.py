@@ -243,7 +243,7 @@ CACHES = {
   'default' : { 
      'BACKEND': 'django.core.cache.backends.memcached.PyLibMCCache', 
      'LOCATION' : '127.0.0.1:11211',
-     'TIMEOUT': 600,
+     'TIMEOUT': 6000,
      'CULL_FREQUENCY': 3
   }
 }
