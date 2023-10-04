@@ -53,8 +53,8 @@ class LpProblem2:
 
     def setup_variable(self, category, id, min_bound, max_bound):
         name = '%s_%s' % (category, str(id))
+        print(f"Setting up variable: {name}")  # Debugging line
         pulpVar = LpVariable(name, min_bound, max_bound, LpInteger)
-        
         self.pulp_vars[name] = pulpVar
 
     def init_objective_function(self):
@@ -62,16 +62,15 @@ class LpProblem2:
 
     def add_to_of(self, category, id, weight):
         var_name = '%s_%s' % (category, str(id))
+        print(f"Adding to objective function: {var_name}")  # Debugging line
         if self.obj_vars.get(var_name) == None:
             self.obj_vars[var_name] = weight
         else:
             self.obj_vars[var_name] += weight
 
     def finish_objective_function(self):
-        print("Keys in pulp_vars:", self.pulp_vars.keys())
-        print("Keys in obj_vars:", self.obj_vars.keys())
         self.pulp_lp += sum([value * self.pulp_vars[key] for key, value in
-                         self.obj_vars.items()])
+                         self.obj_vars.items() if key in self.pulp_vars])
         
     def restriction_lt_eq(self, max_bound, parcels):
         restriction = sum([parcel[0] * self.pulp_vars['%s_%s' % (parcel[1], str(parcel[2]))] 
