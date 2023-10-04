@@ -17,7 +17,7 @@
 import json
 import os
 import time
-from urllib.request import Request, urlopen
+import requests
 
 
 JSON_TO_DIR = {
@@ -28,12 +28,13 @@ JSON_TO_DIR = {
 }
 
 def download_image(url, path):
-    req = Request(
-        url, 
-        headers={'User-Agent': 'Mozilla/5.0'}
-    )
-    with urlopen(req) as u, open(path, 'wb') as f:
-        f.write(u.read())
+    response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
+    if response.status_code == 200:  # OK
+        with open(path, 'wb') as f:
+            f.write(response.content)
+    else:
+        print(f"Failed to download {url}. Status code: {response.status_code}")
+
 
 def main():
     i = 1
