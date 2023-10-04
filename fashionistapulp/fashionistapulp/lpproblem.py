@@ -68,8 +68,10 @@ class LpProblem2:
             self.obj_vars[var_name] += weight
 
     def finish_objective_function(self):
+        print("Keys in pulp_vars:", self.pulp_vars.keys())
+        print("Keys in obj_vars:", self.obj_vars.keys())
         self.pulp_lp += sum([value * self.pulp_vars[key] for key, value in
-                             self.obj_vars.items()])
+                         self.obj_vars.items()])
         
     def restriction_lt_eq(self, max_bound, parcels):
         restriction = sum([parcel[0] * self.pulp_vars['%s_%s' % (parcel[1], str(parcel[2]))] 
