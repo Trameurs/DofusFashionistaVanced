@@ -17,7 +17,7 @@
 import json
 import os
 import time
-import urllib.request, urllib.parse, urllib.error
+from urllib.request import Request, urlopen
 
 
 JSON_TO_DIR = {
@@ -26,6 +26,14 @@ JSON_TO_DIR = {
     #'pets.json': 'pets',
     #'mounts.json': 'mounts',
 }
+
+def download_image(url, path):
+    req = Request(
+        url, 
+        headers={'User-Agent': 'Mozilla/5.0'}
+    )
+    with urlopen(req) as u, open(path, 'wb') as f:
+        f.write(u.read())
 
 def main():
     i = 1
@@ -43,8 +51,7 @@ def main():
                         if image_url:  # Check if image_url exists
                             image_path = os.path.join(folder, f"{name}.png")
                             print('[%d] Downloading %s' % (i, entry['name']))
-                            urllib.request.urlretrieve(entry['image_url'],
-                                            image_path)
+                            download_image(entry['image_url'], image_path)
                             time.sleep(1)
                         else:
                             print('[%d] You need to manually download %s' % (i, entry['name']))
