@@ -80,7 +80,10 @@ def _item_contains_term(item, search_term):
         item_name = item.accentless_local_names[get_supported_language()].lower()
     else:
         item_name = item.name.lower()
-    return search_term in re.sub(r'\W+', '', item_name)
+    
+    search_term = re.sub(r'\W+', '', search_term)
+    item_name = re.sub(r'\W+', ' ', item_name)  # replace special characters with space
+    return search_term in item_name
 
 def _rate(structure, item, weights):
     rating = 0
