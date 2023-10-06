@@ -250,4 +250,4 @@ def read_id_to_terms(filename):
     return weapons
 
 if __name__ == '__main__':
-    main('itemscraper/allitemsnew2.json')
+    main('itemscraper/transformed_items.json')
