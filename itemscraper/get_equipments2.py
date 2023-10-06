@@ -53,6 +53,7 @@ for item in original_data['items']:
         transformed_item["has_conditions"] = bool(item["conditions"])
     if "image_urls" in item:
         transformed_item["image_url"] = item["image_urls"]["sd"]
+    transformed_item["dofustouch"] = False
 
     new_data.append(transformed_item)
 
