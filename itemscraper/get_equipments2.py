@@ -29,6 +29,7 @@ for item in original_data['items']:
     transformed_item = {}
     if "ankama_id" in item:
         transformed_item["ankama_id"] = item["ankama_id"]
+    transformed_item["ankama_type"] = "equipment"
     if "name" in item:
         transformed_item["name"] = item["name"]
     if "type" in item:
@@ -67,15 +68,13 @@ with open('all_mounts.json', 'r', encoding='utf-8') as f:
 for item in original_data['mounts']:
     transformed_item = {}
     transformed_item["dofustouch"] = False
-    if "ankama_id" in item:
-        transformed_item["ankama_id"] = item["ankama_id"]
+    transformed_item["ankama_type"] = "mounts"
     if "name" in item:
         transformed_item["name"] = item["name"]
     transformed_item["w_type"] = "Pet"
     transformed_item["level"] = 60
     if "dofustouch" in item:
         transformed_item["dofustouch"] = item["dofustouch"]
-    transformed_item["ap"] = 0
     if "conditions" in item:
         transformed_item["conditions"] = [f"{cond['element']['name']} {cond['operator']} {cond['int_value']}" for cond in item["conditions"]]
     if "effects" in item:
