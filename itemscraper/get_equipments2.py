@@ -24,6 +24,8 @@ with open('all_items.json', 'r', encoding='utf-8') as f:
 new_data = []
 
 for item in original_data['items']:
+    if 'Certificate' in item['type']['name']:
+        continue
     transformed_item = {}
     if "ankama_id" in item:
         transformed_item["ankama_id"] = item["ankama_id"]
@@ -70,8 +72,7 @@ for item in original_data['mounts']:
     if "name" in item:
         transformed_item["name"] = item["name"]
     transformed_item["w_type"] = "Pet"
-    if "level" in item:
-        transformed_item["level"] = item["level"]
+    transformed_item["level"] = 60
     if "dofustouch" in item:
         transformed_item["dofustouch"] = item["dofustouch"]
     if "conditions" in item:
