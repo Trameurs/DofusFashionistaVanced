@@ -16,6 +16,78 @@
 
 import json
 
+STAT_TRANSLATE = {
+    '% Power': 'Power',
+    'Damage': 'Damage',
+    'Heals': 'Heals',
+    'AP': 'AP',
+    'MP': 'MP',
+    '% Critical': 'Critical Hits',
+    'Agility': 'Agility',
+    'Strength': 'Strength',
+    'Neutral Damage': 'Neutral Damage',
+    'Earth Damage': 'Earth Damage',
+    'Intelligence': 'Intelligence',
+    'Fire Damage': 'Fire Damage',
+    'Air Damage': 'Air Damage',
+    'Chance': 'Chance',
+    'Water Damage': 'Water Damage',
+    'Vitality': 'Vitality',
+    'Initiative': 'Initiative',
+    'Summons': 'Summon',
+    'Range': 'Range',
+    'Wisdom': 'Wisdom',
+    'Neutral Resistance': 'Neutral Resist',
+    'Water Resistance': 'Water Resist',
+    'Air Resistance': 'Air Resist',
+    'Fire Resistance': 'Fire Resist',
+    'Earth Resistance': 'Earth Resist',
+    '% Neutral Resistance': '% Neutral Resist',
+    '% Air Resistance': '% Air Resist',
+    '% Fire Resistance': '% Fire Resist',
+    '% Water Resistance': '% Water Resist',
+    '% Earth Resistance': '% Earth Resist',
+    'Neutral Resistance in PvP': 'Neutral Resist in PVP',
+    'Water Resistance in PvP': 'Water Resist in PVP',
+    'Air Resistance in PvP': 'Air Resist in PVP',
+    'Fire Resistance in PvP': 'Fire Resist in PVP',
+    'Earth Resistance in PvP': 'Earth Resist in PVP',
+    '% Neutral Resistance in PvP': '% Neutral Resist in PVP',
+    '% Air Resistance in PvP': '% Air Resist in PVP',
+    '% Fire Resistance in PvP': '% Fire Resist in PVP',
+    '% Water Resistance in PvP': '% Water Resist in PVP',
+    '% Earth Resistance in PvP': '% Earth Resist in PVP',
+    'Prospecting': 'Prospecting',
+    'pods': 'Pods',
+    'AP Reduction': 'AP Reduction',
+    'MP Reduction': 'MP Reduction',
+    'Lock': 'Lock',
+    'Dodge': 'Dodge',
+    'Reflects': 'Reflects',
+    'Reflects ': 'Reflects',
+    'Reflects  damage': 'Reflects',
+    'Pushback Damage': 'Pushback Damage',
+    'Trap Damage': 'Trap Damage',
+    'Power (traps)': '% Trap Damage',
+    'Critical Resistance': 'Critical Resist',
+    'Pushback Resistance': 'Pushback Resist',
+    'MP Loss Resistance': 'MP Loss Resist',
+    'AP Loss Resistance': 'AP Loss Resist',
+    'Critical Damage': 'Critical Damage',
+    'HP': 'HP',
+    'MP Dodge': 'MP Loss Resist',
+    '% Air Resist in PVP': '% Air Resist in PVP',
+    '% Water Resist in PVP': '% Water Resist in PVP',
+    'Fire Resist in PVP': 'Fire Resist in PVP',
+    '% Melee Resistance': '% Melee Resist',
+    '% Ranged Resistance': '% Ranged Resist',
+    'AP Dodge': 'AP Loss Resist',
+    '% Melee Damage': '% Melee Damage',
+    '% Ranged Damage': '% Ranged Damage',
+    '% Weapon Damage': '% Weapon Damage',
+    '% Spell Damage': '% Spell Damage',
+}
+
 # Read the original JSON file
 with open('all_items.json', 'r', encoding='utf-8') as f:
     original_data = json.load(f)
@@ -24,7 +96,7 @@ with open('all_items.json', 'r', encoding='utf-8') as f:
 new_data = []
 
 for item in original_data['items']:
-    if 'Certificate' in item['type']['name'] or 'Sidekick' in item['type']['name']:
+    if 'Certificate' in item['type']['name'] or 'Sidekick' in item['type']['name'] or 'Badge' in item['type']['name'] or '[!] [UNKNOWN_TEXT_ID_0]' in item['name']:
         continue
     transformed_item = {}
     if "ankama_id" in item:
@@ -101,6 +173,13 @@ for item in original_data['mounts']:
         transformed_item["image_url"] = item["image_urls"]["sd"]
 
     new_data.append(transformed_item)
+
+for item in new_data:
+    if "stats" in item:
+        for stat in item["stats"]:
+            original_stat_name = stat[-1]  # The original name is the last element in the stat list
+            translated_stat_name = STAT_TRANSLATE.get(original_stat_name, original_stat_name)  # Translate or keep as-is
+            stat[-1] = translated_stat_name  # Update the name in the stat list
 
 # Write the new JSON file
 with open('transformed_items.json', 'w', encoding='utf-8') as f:
