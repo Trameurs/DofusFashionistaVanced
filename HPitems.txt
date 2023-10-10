@@ -2196,3 +2196,167 @@ Kerubaby: Pod
 Borbat: Pod
 Bulbutting: Pod
 Bworky: Pod
+The Sad Blade: % Critical
+Twiggy Hammer: % Critical
+Power Belt: % Critical
+Sacred Staff: % Critical
+God Rod: % Critical
+Tot's Belt: % Critical
+Kryst O'Ball: % Critical
+Smithy Daggers: % Critical
+Bashers: % Critical
+Blessdags: % Critical
+Ivory Hammer: Critical Resistance
+Ragnarok: Summons
+Axel: Summons
+Xaver: % Critical
+The Chafer Hammer: % Critical
+Nomoon: % Critical
+Faillette Boots: % Critical
+Krokette Amulet: % Critical
+Deulegarnoulle Amulet: Summons
+Slash: % Critical
+The Arc de Triomphe: % Critical
+Liriel's Wand: % Critical
+Bwork Magus Staff: % Critical
+Gwandpa Wabbit's Staff: % Critical
+Chafer Blade: % Critical
+Birming Hammer: % Critical
+The Klebik: % Critical
+Treechnid Root Staff: % Critical
+Hammer of Dawn: % Critical
+Captain Chafer Amulet: % Critical
+Treechnid Root Wand: % Critical
+Pushn Shovel: % Critical
+Boulgourde of the Glades: % Earth Resistance
+Pirate Amulet: % Critical
+Gobball Master Staff: Summons
+Gobball Master Staff: % Critical
+Kralove Cutting Sword: % Critical
+Amulet of the Depths: % Critical
+Tofu Master Staff: Summons
+Tabi Master Staff: Summons
+Cherry Splitter: % Critical
+Maple Tree Eater: % Critical
+Crimson Dofus: emote
+Slob Headgear: % Critical
+Pandawa: Summons
+Kritter: % Critical
+Pilbocks Hat: % Critical
+Korko Klako: Summons
+Jouik Krampe: Summons
+Emerald Dofus: emote
+Turquoise Dofus: % Critical
+Turquoise Dofus: emote
+Vampire Cloak: % Water Resistance
+Vampire Cloak: % Air Resistance
+Vampire Cloak: % Fire Resistance
+Chogreloting Cheeken Cloak: % Earth Resistance
+Chogreloting Cheeken Cloak: % Neutral Resistance
+Chogreloting Cheeken Cloak: % Water Resistance
+Chogreloting Cheeken Cloak: % Air Resistance
+Chogreloting Cheeken Cloak: % Fire Resistance
+Ash Tree Eater: % Critical
+Cape Ability: % Critical
+Maj'Hic Cloak: % Water Resistance
+Maj'Hic Cloak: % Air Resistance
+Maj'Hic Cloak: % Fire Resistance
+Cape of Good Hope: % Critical
+Holy Sword: % Critical
+Dragolyre: Summons
+Concentration Boots: % Critical
+Dasguised: % Critical
+Hogmeiser's Boots: Summons
+Hogmeiser's Boots: % Critical
+Hogmeiser's Golden Boots: % Water Resistance
+Hogmeiser's Golden Boots: % Air Resistance
+Hogmeiser's Golden Boots: % Fire Resistance
+Hogmeiser's Golden Boots: Summons
+Silicate Amulet: % Earth Resistance
+Silicate Amulet: % Water Resistance
+Silicate Amulet: % Air Resistance
+Silicate Amulet: % Fire Resistance
+Silicate Amulet: % Critical
+Autumn Leaf: % Critical
+Ancestral Daggers: Summons
+Treechnid Splitter: % Critical
+Ancestral Treechnid Splitter: % Critical
+Farter: Neutral Resistance
+Farter: Earth Resistance
+Smoother: Water Resistance
+Smoother: Air Resistance
+Smoother: Fire Resistance
+Cape Rice: % Critical
+Dofusteuse: % Earth Resistance
+Dofusteuse: % Water Resistance
+Dofusteuse: % Fire Resistance
+Dofusteuse: % Neutral Resistance
+Dofusteuse: % Critical
+Dofusteuse: % Air Resistance
+Wa Wabbit's Crown: % Critical
+Pumpkwin: Neutral Resistance
+Pumpkwin: Earth Resistance
+Pumpkwin: Water Resistance
+Pumpkwin: Air Resistance
+Pumpkwin: Fire Resistance
+Wooden Wings: % Critical
+Rowler Blade: % Critical
+Deceitful Daggers: % Critical
+Ortimus Contrari's Bloody Blades: % Critical
+Sleeping Shovel: Pushback Resistance
+Sleeping Shovel: Critical Resistance
+Woukuis Shovel: % Critical
+Koutoulou's Shovel: % Critical
+Aj Taye Mace: % Critical
+Pospodrol Hammer: Pushback Resistance
+Pospodrol Hammer: Critical Resistance
+Pospodrol Hammer: Summons
+Hammer of Wrongs: % Critical
+Buzzard Bow: % Critical
+Eco Bow: % Critical
+Crystal Bow: % Earth Resistance
+Crystal Bow: % Neutral Resistance
+Crystal Bow: % Water Resistance
+Crystal Bow: % Air Resistance
+Crystal Bow: % Fire Resistance
+King of Borins Bow: % Critical
+Clergy Wand: % Critical
+Iron Wand: % Water Resistance
+Iron Wand: % Air Resistance
+Iron Wand: % Fire Resistance
+Dakn Staff: % Critical
+Kings' Staff: % Fire Resistance
+Kings' Staff: % Critical
+Oly Medal: % Critical
+Mushd Bow: % Critical
+Sawn-Off Pulley Bow: % Critical
+Hickory Tree: Earth Resistance
+Hickory Tree: Neutral Resistance
+Hidsad Bow: % Critical
+Wily Wand: % Critical
+Vampiric Stake: Summons
+Vampiric Stake: % Critical
+Forgetfulness Staff: % Critical
+Staff of Dina Mite: % Earth Resistance
+Staff of Dina Mite: % Neutral Resistance
+Table Knives: % Critical
+Ergot Mina: % Critical
+Eulasse Daggers: % Earth Resistance
+Eulasse Daggers: % Neutral Resistance
+Eulasse Daggers: % Water Resistance
+The Infernal Razor: % Critical
+Penn Knives: Summons
+Penn Knives: % Critical
+The Bhharnsheee Hammer: % Critical
+Toh'Lo Hammer: Summons
+Zebuth Shovel: % Critical
+Mechba Shovel: % Water Resistance
+Mechba Shovel: % Fire Resistance
+Security Shovel: Summons
+Xelor Amulet: % Critical
+Pretty Blade: % Critical
+Adelus: % Critical
+Liche Chain: Summons
+Soff Ring: % Critical
+Ecaflip's Luck: % Critical
+Carpet Cape: % Critical
