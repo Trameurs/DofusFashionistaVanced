@@ -12959,6 +12959,7 @@
         "name": "Wedding Ring",
         "w_type": "Ring",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/9027-200.png",
         "dofustouch": false
     },
@@ -15160,6 +15161,7 @@
         "name": "Brakmarian Cloak",
         "w_type": "Cloak",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/17020-200.png",
         "dofustouch": false
     },
@@ -15168,6 +15170,7 @@
         "name": "Bontarian Cloak",
         "w_type": "Cloak",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/17034-200.png",
         "dofustouch": false
     },
@@ -25459,6 +25462,7 @@
         "name": "Groom Hat",
         "w_type": "Hat",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/16053-200.png",
         "dofustouch": false
     },
@@ -25475,6 +25479,7 @@
         ],
         "crit_chance": 5,
         "crit_bonus": 0,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/20008-200.png",
         "dofustouch": false
     },
@@ -25483,6 +25488,7 @@
         "name": "Bride Hat",
         "w_type": "Hat",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/16054-200.png",
         "dofustouch": false
     },
@@ -28367,6 +28373,7 @@
         "name": "Astrub Mercenary Helmet",
         "w_type": "Hat",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/16072-200.png",
         "dofustouch": false
     },
@@ -28375,6 +28382,7 @@
         "name": "Astrub Mercenary Cloak",
         "w_type": "Cloak",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/17059-200.png",
         "dofustouch": false
     },
@@ -30318,6 +30326,7 @@
         "name": "Broken Mount Stinkky Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82001-200.png",
         "dofustouch": false
     },
@@ -31534,6 +31543,7 @@
         "name": "Smashed Sidimote Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82008-200.png",
         "dofustouch": false
     },
@@ -31542,6 +31552,7 @@
         "name": "Scratched Imp Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82009-200.png",
         "dofustouch": false
     },
@@ -31550,6 +31561,7 @@
         "name": "Cloven Lumberjack Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82004-200.png",
         "dofustouch": false
     },
@@ -31558,6 +31570,7 @@
         "name": "Torn Phtalmo",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82005-200.png",
         "dofustouch": false
     },
@@ -31566,6 +31579,7 @@
         "name": "Pierced Inn Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82006-200.png",
         "dofustouch": false
     },
@@ -31574,6 +31588,7 @@
         "name": "Wounded Heart Quarter",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82007-200.png",
         "dofustouch": false
     },
@@ -31582,6 +31597,7 @@
         "name": "Exploded Bawbawian Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82002-200.png",
         "dofustouch": false
     },
@@ -31590,6 +31606,7 @@
         "name": "Wizened Derma Tho",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82003-200.png",
         "dofustouch": false
     },
@@ -31598,6 +31615,7 @@
         "name": "Sponghield",
         "w_type": "Shield",
         "level": 20,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82010-200.png",
         "dofustouch": false
     },
@@ -31606,6 +31624,7 @@
         "name": "Crumpled Fan Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82011-200.png",
         "dofustouch": false
     },
@@ -31614,6 +31633,7 @@
         "name": "Exhausted Sadida Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82012-200.png",
         "dofustouch": false
     },
@@ -31622,6 +31642,7 @@
         "name": "Shield in Dirty Briefs",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82013-200.png",
         "dofustouch": false
     },
@@ -31630,6 +31651,7 @@
         "name": "Aged Captain Amakna Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82014-200.png",
         "dofustouch": false
     },
@@ -31638,6 +31660,7 @@
         "name": "Horned Kloome",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82015-200.png",
         "dofustouch": false
     },
@@ -31646,6 +31669,7 @@
         "name": "Vanished Asse Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82016-200.png",
         "dofustouch": false
     },
@@ -31654,6 +31678,7 @@
         "name": "Warped Flying Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82017-200.png",
         "dofustouch": false
     },
@@ -31662,6 +31687,7 @@
         "name": "Scuttled LeChouque's Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82018-200.png",
         "dofustouch": false
     },
@@ -31670,6 +31696,7 @@
         "name": "Mossy Treechnid Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82019-200.png",
         "dofustouch": false
     },
@@ -31678,6 +31705,7 @@
         "name": "Flea-ridden Gobball Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82020-200.png",
         "dofustouch": false
     },
@@ -31686,6 +31714,7 @@
         "name": "Abandoned Bowisse's Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82021-200.png",
         "dofustouch": false
     },
@@ -31694,6 +31723,7 @@
         "name": "Drunk Pandawa Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82022-200.png",
         "dofustouch": false
     },
@@ -31702,6 +31732,7 @@
         "name": "Cracked Crackler Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82023-200.png",
         "dofustouch": false
     },
@@ -31710,6 +31741,7 @@
         "name": "Wonky Fire Dial",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82024-200.png",
         "dofustouch": false
     },
@@ -31718,6 +31750,7 @@
         "name": "Wonky Air Dial",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82026-200.png",
         "dofustouch": false
     },
@@ -31726,6 +31759,7 @@
         "name": "Wonky Earth Dial",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82027-200.png",
         "dofustouch": false
     },
@@ -31734,6 +31768,7 @@
         "name": "Wonky Water Dial",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82025-200.png",
         "dofustouch": false
     },
@@ -36882,6 +36917,7 @@
         "name": "Swallowed Akwadala Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82031-200.png",
         "dofustouch": false
     },
@@ -36890,6 +36926,7 @@
         "name": "Buried Terrdala Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82032-200.png",
         "dofustouch": false
     },
@@ -36898,6 +36935,7 @@
         "name": "Burnt Feudala Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82033-200.png",
         "dofustouch": false
     },
@@ -36906,6 +36944,7 @@
         "name": "Vanished Aerdala Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82030-200.png",
         "dofustouch": false
     },
@@ -38716,6 +38755,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38728,6 +38768,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38740,6 +38781,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38752,6 +38794,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38764,6 +38807,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38776,6 +38820,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38788,6 +38833,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38800,6 +38846,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38812,6 +38859,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38824,6 +38872,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38836,6 +38885,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38848,6 +38898,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38860,6 +38911,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38872,6 +38924,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38884,6 +38937,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38896,6 +38950,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38908,6 +38963,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38920,6 +38976,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38932,6 +38989,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38944,6 +39002,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38956,6 +39015,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38968,6 +39028,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38980,6 +39041,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -38992,6 +39054,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39004,6 +39067,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39016,6 +39080,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39028,6 +39093,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39040,6 +39106,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39052,6 +39119,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39064,6 +39132,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39076,6 +39145,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39088,6 +39158,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39100,6 +39171,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39112,6 +39184,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39124,6 +39197,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39136,6 +39210,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39148,6 +39223,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39160,6 +39236,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39172,6 +39249,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39184,6 +39262,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39196,6 +39275,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39208,6 +39288,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39220,6 +39301,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39232,6 +39314,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39244,6 +39327,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39256,6 +39340,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39265,6 +39350,7 @@
         "name": "Indigo and Ginger Dragoturkey",
         "w_type": "Dragoturkey Certificate",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
     },
@@ -39273,6 +39359,7 @@
         "name": "Indigo and Turquoise Dragoturkey",
         "w_type": "Dragoturkey Certificate",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
     },
@@ -39281,6 +39368,7 @@
         "name": "Indigo and Orchid Dragoturkey",
         "w_type": "Dragoturkey Certificate",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
     },
@@ -39292,6 +39380,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39301,6 +39390,7 @@
         "name": "Ivory and Turquoise Dragoturkey",
         "w_type": "Dragoturkey Certificate",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
     },
@@ -39312,6 +39402,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39324,6 +39415,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39336,6 +39428,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39348,6 +39441,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39360,6 +39454,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39372,6 +39467,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39384,6 +39480,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39396,6 +39493,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39408,6 +39506,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39420,6 +39519,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39432,6 +39532,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39444,6 +39545,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39456,6 +39558,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39468,6 +39571,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39480,6 +39584,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39492,6 +39597,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39504,6 +39610,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39516,6 +39623,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39528,6 +39636,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -39540,6 +39649,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -40165,6 +40275,7 @@
         "name": "Animagi (GM)",
         "w_type": "Ring",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/9022-200.png",
         "dofustouch": false
     },
@@ -41123,6 +41234,7 @@
         ],
         "crit_chance": 5,
         "crit_bonus": 10,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/19038-200.png",
         "dofustouch": false
     },
@@ -54362,6 +54474,7 @@
         "name": "Cheeken Wig",
         "w_type": "Hat",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/16196-200.png",
         "dofustouch": false
     },
@@ -55572,6 +55685,7 @@
         "conditions": [
             "Set bonus > 800000"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82035-200.png",
         "dofustouch": false
@@ -56829,6 +56943,7 @@
         "name": "Improved Helmet",
         "w_type": "Hat",
         "level": 30,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/16025-200.png",
         "dofustouch": false
     },
@@ -58880,6 +58995,7 @@
         "name": "Sidimote Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82008-200.png",
         "dofustouch": false
     },
@@ -58888,6 +59004,7 @@
         "name": "Phtalmo",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82005-200.png",
         "dofustouch": false
     },
@@ -58896,6 +59013,7 @@
         "name": "Inn Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82006-200.png",
         "dofustouch": false
     },
@@ -58904,6 +59022,7 @@
         "name": "Akwadala Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82031-200.png",
         "dofustouch": false
     },
@@ -58912,6 +59031,7 @@
         "name": "Fan Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82011-200.png",
         "dofustouch": false
     },
@@ -58920,6 +59040,7 @@
         "name": "Sadida Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82012-200.png",
         "dofustouch": false
     },
@@ -58928,6 +59049,7 @@
         "name": "Shield in Briefs",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82013-200.png",
         "dofustouch": false
     },
@@ -58936,6 +59058,7 @@
         "name": "Asse Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82016-200.png",
         "dofustouch": false
     },
@@ -58944,6 +59067,7 @@
         "name": "Treechnid Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82019-200.png",
         "dofustouch": false
     },
@@ -58952,6 +59076,7 @@
         "name": "Pandawa Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82022-200.png",
         "dofustouch": false
     },
@@ -58960,6 +59085,7 @@
         "name": "Fire Dial",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82024-200.png",
         "dofustouch": false
     },
@@ -58968,6 +59094,7 @@
         "name": "Air Dial",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82026-200.png",
         "dofustouch": false
     },
@@ -58976,6 +59103,7 @@
         "name": "Earth Dial",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82027-200.png",
         "dofustouch": false
     },
@@ -58984,6 +59112,7 @@
         "name": "Water Dial",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82025-200.png",
         "dofustouch": false
     },
@@ -58992,6 +59121,7 @@
         "name": "Lumberjack Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82004-200.png",
         "dofustouch": false
     },
@@ -59000,6 +59130,7 @@
         "name": "Mount Stinkky Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82001-200.png",
         "dofustouch": false
     },
@@ -59008,6 +59139,7 @@
         "name": "Imp Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82009-200.png",
         "dofustouch": false
     },
@@ -59016,6 +59148,7 @@
         "name": "Heart Quarter",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82007-200.png",
         "dofustouch": false
     },
@@ -59024,6 +59157,7 @@
         "name": "Bawbawian Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82002-200.png",
         "dofustouch": false
     },
@@ -59032,6 +59166,7 @@
         "name": "Derma Tho",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82003-200.png",
         "dofustouch": false
     },
@@ -59040,6 +59175,7 @@
         "name": "Captain Amakna Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82014-200.png",
         "dofustouch": false
     },
@@ -59048,6 +59184,7 @@
         "name": "Kloome",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82015-200.png",
         "dofustouch": false
     },
@@ -59056,6 +59193,7 @@
         "name": "Flying Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82017-200.png",
         "dofustouch": false
     },
@@ -59064,6 +59202,7 @@
         "name": "LeChouque's Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82018-200.png",
         "dofustouch": false
     },
@@ -59072,6 +59211,7 @@
         "name": "Gobball Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82020-200.png",
         "dofustouch": false
     },
@@ -59080,6 +59220,7 @@
         "name": "Bowisse's Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82021-200.png",
         "dofustouch": false
     },
@@ -59088,6 +59229,7 @@
         "name": "Crackler Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82023-200.png",
         "dofustouch": false
     },
@@ -59096,6 +59238,7 @@
         "name": "Terrdala Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82032-200.png",
         "dofustouch": false
     },
@@ -59104,6 +59247,7 @@
         "name": "Feudala Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82033-200.png",
         "dofustouch": false
     },
@@ -59112,6 +59256,7 @@
         "name": "Aerdala Shield",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82030-200.png",
         "dofustouch": false
     },
@@ -63314,6 +63459,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -71132,6 +71278,7 @@
         "name": "Tatty Bim Bonnet",
         "w_type": "Hat",
         "level": 174,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/16276-200.png",
         "dofustouch": false
     },
@@ -71610,6 +71757,7 @@
         "name": "Badly-made Kanigloo Loincloth",
         "w_type": "Belt",
         "level": 138,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/10179-200.png",
         "dofustouch": false
     },
@@ -71758,6 +71906,7 @@
         "name": "Worn-out Indigenous Boots",
         "w_type": "Boots",
         "level": 138,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/11172-200.png",
         "dofustouch": false
     },
@@ -75685,6 +75834,7 @@
         "name": "Clogged-up Turbine Belt",
         "w_type": "Belt",
         "level": 183,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/10198-200.png",
         "dofustouch": false
     },
@@ -76838,6 +76988,7 @@
         ],
         "crit_chance": 25,
         "crit_bonus": 10,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/4101-200.png",
         "dofustouch": false
     },
@@ -78665,6 +78816,7 @@
         "conditions": [
             "Chance > 50"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/7078-200.png",
         "dofustouch": false
@@ -83523,6 +83675,7 @@
         "name": "Amourlet Ernal",
         "w_type": "Amulet",
         "level": 60,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/1196-200.png",
         "dofustouch": false
     },
@@ -83531,6 +83684,7 @@
         "name": "Amourlette Ernal",
         "w_type": "Amulet",
         "level": 60,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/1196-200.png",
         "dofustouch": false
     },
@@ -88086,6 +88240,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97001-200.png",
         "dofustouch": false
@@ -103694,6 +103849,7 @@
         "name": "Dragokart Cup",
         "w_type": "Shield",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/82084-200.png",
         "dofustouch": false
     },
@@ -112894,6 +113050,7 @@
         ],
         "crit_chance": 0,
         "crit_bonus": 0,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/5028-200.png",
         "dofustouch": false
     },
@@ -124633,6 +124790,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124645,6 +124803,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124657,6 +124816,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124669,6 +124829,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124681,6 +124842,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124693,6 +124855,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124705,6 +124868,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124717,6 +124881,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124729,6 +124894,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124741,6 +124907,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124753,6 +124920,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124765,6 +124933,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124777,6 +124946,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124789,6 +124959,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124801,6 +124972,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124813,6 +124985,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124825,6 +124998,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124837,6 +125011,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124849,6 +125024,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124861,6 +125037,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124873,6 +125050,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124885,6 +125063,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124897,6 +125076,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124909,6 +125089,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124921,6 +125102,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124933,6 +125115,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124945,6 +125128,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124957,6 +125141,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124969,6 +125154,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124981,6 +125167,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -124993,6 +125180,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125005,6 +125193,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125017,6 +125206,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125029,6 +125219,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125041,6 +125232,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125053,6 +125245,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125065,6 +125258,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125077,6 +125271,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125089,6 +125284,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125101,6 +125297,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125113,6 +125310,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125125,6 +125323,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125137,6 +125336,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125149,6 +125349,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125161,6 +125362,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125173,6 +125375,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125185,6 +125388,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125197,6 +125401,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125209,6 +125414,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125221,6 +125427,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125233,6 +125440,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125245,6 +125453,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125257,6 +125466,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125269,6 +125479,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125281,6 +125492,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125293,6 +125505,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125305,6 +125518,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125317,6 +125531,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125329,6 +125544,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125341,6 +125557,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125353,6 +125570,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125365,6 +125583,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125377,6 +125596,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125389,6 +125609,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125401,6 +125622,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125413,6 +125635,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125453,6 +125676,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125465,6 +125689,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125477,6 +125702,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125489,6 +125715,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -125501,6 +125728,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97003-200.png",
         "dofustouch": false
@@ -128239,6 +128467,7 @@
         "name": "Transparent Hat",
         "w_type": "Hat",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/16463-200.png",
         "dofustouch": false
     },
@@ -128247,6 +128476,7 @@
         "name": "Transparent Cloak",
         "w_type": "Cloak",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/17341-200.png",
         "dofustouch": false
     },
@@ -138962,6 +139192,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -138974,6 +139205,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -138986,6 +139218,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -138998,6 +139231,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139010,6 +139244,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139022,6 +139257,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139034,6 +139270,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139046,6 +139283,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139058,6 +139296,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139070,6 +139309,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139082,6 +139322,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139094,6 +139335,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139106,6 +139348,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139118,6 +139361,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139130,6 +139374,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139142,6 +139387,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139154,6 +139400,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139166,6 +139413,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139178,6 +139426,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139190,6 +139439,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139202,6 +139452,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139214,6 +139465,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139226,6 +139478,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139238,6 +139491,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139250,6 +139504,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139262,6 +139517,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139274,6 +139530,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139286,6 +139543,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139298,6 +139556,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139310,6 +139569,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139322,6 +139582,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139334,6 +139595,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139346,6 +139608,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139358,6 +139621,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139370,6 +139634,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139382,6 +139647,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139394,6 +139660,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139406,6 +139673,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139418,6 +139686,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139430,6 +139699,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139442,6 +139712,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139454,6 +139725,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139466,6 +139738,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139478,6 +139751,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139490,6 +139764,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139502,6 +139777,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139514,6 +139790,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139526,6 +139803,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139538,6 +139816,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139550,6 +139829,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139562,6 +139842,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139574,6 +139855,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139586,6 +139868,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139598,6 +139881,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139610,6 +139894,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139622,6 +139907,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139634,6 +139920,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139646,6 +139933,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139658,6 +139946,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139670,6 +139959,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139682,6 +139972,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139694,6 +139985,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139706,6 +139998,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139718,6 +140011,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139730,6 +140024,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139742,6 +140037,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139754,6 +140050,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139766,6 +140063,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139778,6 +140076,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139790,6 +140089,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139802,6 +140102,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139814,6 +140115,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139826,6 +140128,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139838,6 +140141,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139850,6 +140154,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139862,6 +140167,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139874,6 +140180,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139886,6 +140193,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139898,6 +140206,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139910,6 +140219,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139922,6 +140232,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139934,6 +140245,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139946,6 +140258,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139958,6 +140271,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139970,6 +140284,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139982,6 +140297,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -139994,6 +140310,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140006,6 +140323,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140018,6 +140336,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140030,6 +140349,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140042,6 +140362,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140054,6 +140375,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140066,6 +140388,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140078,6 +140401,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140090,6 +140414,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140102,6 +140427,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140114,6 +140440,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140126,6 +140453,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140138,6 +140466,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140150,6 +140479,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140162,6 +140492,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140174,6 +140505,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140186,6 +140518,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140198,6 +140531,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140210,6 +140544,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140222,6 +140557,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140234,6 +140570,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140246,6 +140583,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140258,6 +140596,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140270,6 +140609,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140282,6 +140622,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140294,6 +140635,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140306,6 +140648,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140318,6 +140661,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140330,6 +140674,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140342,6 +140687,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140354,6 +140700,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140366,6 +140713,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140378,6 +140726,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140390,6 +140739,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140402,6 +140752,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140414,6 +140765,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140426,6 +140778,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -140438,6 +140791,7 @@
         "conditions": [
             "Be level 60 or higher > 59"
         ],
+        "stats": [],
         "has_conditions": true,
         "image_url": "https://api.dofusdu.de/dofus2/img/item/97005-200.png",
         "dofustouch": false
@@ -145865,6 +146219,7 @@
         "name": "Pandawushuka Apprentice Headband",
         "w_type": "Hat",
         "level": 10,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/16626-200.png",
         "dofustouch": false
     },
@@ -153959,6 +154314,7 @@
         "name": "[!] [UNKNOWN_TEXT_ID_0]",
         "w_type": "",
         "level": 1,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/0-200.png",
         "dofustouch": false
     },
@@ -164666,6 +165022,7 @@
         "name": "Flamboyant Roarped",
         "w_type": "Petsmount",
         "level": 40,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/121126-200.png",
         "dofustouch": false
     },
@@ -164674,6 +165031,7 @@
         "name": "Earthy Roarped",
         "w_type": "Petsmount",
         "level": 40,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/121127-200.png",
         "dofustouch": false
     },
@@ -164682,6 +165040,7 @@
         "name": "Airy Roarped",
         "w_type": "Petsmount",
         "level": 40,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/121128-200.png",
         "dofustouch": false
     },
@@ -164690,6 +165049,7 @@
         "name": "Aquatic Roarped",
         "w_type": "Petsmount",
         "level": 40,
+        "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/item/121129-200.png",
         "dofustouch": false
     }
