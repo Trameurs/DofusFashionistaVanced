@@ -170,6 +170,8 @@ def _convert_json_item_to_item(json_item):
     item.dofus_touch = 1 if json_item['dofustouch'] else 0
     if json_item['w_type'] == 'Trophy':
         json_item['w_type'] = 'Dofus'
+    if json_item['w_type'] == 'Prysmaradite':
+        json_item['w_type'] = 'Dofus'
     if json_item['w_type'] == 'Backpack':
         json_item['w_type'] = 'Cloak'
     if json_item['w_type'] == 'Petsmount':

@@ -51,7 +51,13 @@ for item in original_data['items']:
     if "conditions" in item:
         transformed_item["conditions"] = [f"{cond['element']['name']} {cond['operator']} {cond['int_value']}" for cond in item["conditions"]]
     if "effects" in item:
-        transformed_item["stats"] = [[eff["int_minimum"], eff["int_maximum"], eff["type"]["name"]] for eff in item["effects"]]
+        transformed_item["stats"] = [
+            [
+                eff["int_minimum"] if not eff["ignore_int_min"] else None,
+                eff["int_maximum"] if not eff["ignore_int_max"] else None,
+                eff["type"]["name"]
+            ] for eff in item["effects"]
+        ]
     else:
         transformed_item["stats"] = []
     if "conditions" in item:
@@ -80,7 +86,13 @@ for item in original_data['mounts']:
     if "conditions" in item:
         transformed_item["conditions"] = [f"{cond['element']['name']} {cond['operator']} {cond['int_value']}" for cond in item["conditions"]]
     if "effects" in item:
-        transformed_item["stats"] = [[eff["int_minimum"], eff["int_maximum"], eff["type"]["name"]] for eff in item["effects"]]
+        transformed_item["stats"] = [
+            [
+                eff["int_minimum"] if not eff["ignore_int_min"] else None,
+                eff["int_maximum"] if not eff["ignore_int_max"] else None,
+                eff["type"]["name"]
+            ] for eff in item["effects"]
+        ]
     else:
         transformed_item["stats"] = []
     if "conditions" in item:
