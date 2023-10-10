@@ -96,7 +96,7 @@ with open('all_items.json', 'r', encoding='utf-8') as f:
 new_data = []
 
 for item in original_data['items']:
-    if 'Certificate' in item['type']['name'] or 'Sidekick' in item['type']['name'] or 'Badge' in item['type']['name'] or '[!] [UNKNOWN_TEXT_ID_0]' in item['name']:
+    if 'Certificate' in item['type']['name'] or 'Sidekick' in item['type']['name'] or 'Badge' in item['type']['name'] or '[!] [UNKNOWN_TEXT_ID_0]' in item['name'] or 'Perceptor' in item['type']['name']:
         continue
     transformed_item = {}
     if "ankama_id" in item:
