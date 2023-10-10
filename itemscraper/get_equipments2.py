@@ -59,6 +59,34 @@ for item in original_data['items']:
 
     new_data.append(transformed_item)
 
+with open('all_mounts.json', 'r', encoding='utf-8') as f:
+    original_data = json.load(f)
+
+for item in original_data['mounts']:
+    transformed_item = {}
+    transformed_item["dofustouch"] = False
+    if "ankama_id" in item:
+        transformed_item["ankama_id"] = item["ankama_id"]
+    if "name" in item:
+        transformed_item["name"] = item["name"]
+    transformed_item["w_type"] = "Pet"
+    if "level" in item:
+        transformed_item["level"] = item["level"]
+    if "dofustouch" in item:
+        transformed_item["dofustouch"] = item["dofustouch"]
+    if "conditions" in item:
+        transformed_item["conditions"] = [f"{cond['element']['name']} {cond['operator']} {cond['int_value']}" for cond in item["conditions"]]
+    if "effects" in item:
+        transformed_item["stats"] = [[eff["int_minimum"], eff["int_maximum"], eff["type"]["name"]] for eff in item["effects"]]
+    else:
+        transformed_item["stats"] = []
+    if "conditions" in item:
+        transformed_item["has_conditions"] = bool(item["conditions"])
+    if "image_urls" in item:
+        transformed_item["image_url"] = item["image_urls"]["sd"]
+
+    new_data.append(transformed_item)
+
 # Write the new JSON file
 with open('transformed_items.json', 'w', encoding='utf-8') as f:
     json.dump(new_data, f, ensure_ascii=False, indent=4)

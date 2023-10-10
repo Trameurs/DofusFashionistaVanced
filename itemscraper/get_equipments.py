@@ -19,6 +19,7 @@ import json
 
 # API endpoint
 api_endpoint = "https://api.dofusdu.de/dofus2/en/items/equipment/all"
+api_endpoint_mount = "https://api.dofusdu.de/dofus2/en/mounts/all"
 
 # Make the GET request
 response = requests.get(api_endpoint)
@@ -35,3 +36,20 @@ if response.status_code == 200:
 
 else:
     print(f"Failed to retrieve data. Status code: {response.status_code}")
+
+# Make the GET request
+response = requests.get(api_endpoint_mount)
+
+# Check for successful request
+if response.status_code == 200:
+    json_data = response.json()
+
+    # Save to a JSON file
+    with open('all_mounts.json', 'w', encoding='utf-8') as f:
+        json.dump(json_data, f, ensure_ascii=False, indent=4)
+
+    print("Successfully saved all mounts to 'all_mounts.json'")
+
+else:
+    print(f"Failed to retrieve data. Status code: {response.status_code}")
+
