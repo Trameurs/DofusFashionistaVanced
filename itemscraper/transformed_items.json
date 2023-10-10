@@ -2322,7 +2322,7 @@
     },
     {
         "ankama_id": 272,
-        "name": "Nomoon (bow)",
+        "name": "Nomoon",
         "w_type": "Bow",
         "level": 28,
         "ap": 3,
@@ -161591,6 +161591,7 @@
         "name": "Wild Almond Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/mount/1-200.png"
     },
@@ -161600,6 +161601,7 @@
         "name": "Ebony Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -161620,6 +161622,7 @@
         "name": "Wild Ginger Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/mount/6-200.png"
     },
@@ -161629,6 +161632,7 @@
         "name": "Ebony and Ivory Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -161654,6 +161658,7 @@
         "name": "Ginger Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -161674,6 +161679,7 @@
         "name": "Ivory and Ginger Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -161699,6 +161705,7 @@
         "name": "Ebony and Ginger Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -161724,6 +161731,7 @@
         "name": "Turquoise Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -161744,6 +161752,7 @@
         "name": "Ivory Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -161764,6 +161773,7 @@
         "name": "Indigo Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -161784,6 +161794,7 @@
         "name": "Golden Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -161804,6 +161815,7 @@
         "name": "Crimson Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -161824,6 +161836,7 @@
         "name": "Almond Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -161844,6 +161857,7 @@
         "name": "Emerald Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -161864,6 +161878,7 @@
         "name": "Orchid Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -161884,6 +161899,7 @@
         "name": "Plum Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -161904,6 +161920,7 @@
         "name": "Almond and Golden Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -161929,6 +161946,7 @@
         "name": "Almond and Ebony Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -161954,6 +161972,7 @@
         "name": "Almond and Emerald Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -161979,6 +161998,7 @@
         "name": "Almond and Indigo Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162004,6 +162024,7 @@
         "name": "Almond and Ivory Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162029,6 +162050,7 @@
         "name": "Almond and Ginger Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162054,6 +162076,7 @@
         "name": "Almond and Turquoise Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162079,6 +162102,7 @@
         "name": "Almond and Orchid Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162104,6 +162128,7 @@
         "name": "Almond and Crimson Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162129,6 +162154,7 @@
         "name": "Golden and Ebony Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162154,6 +162180,7 @@
         "name": "Golden and Emerald Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162179,6 +162206,7 @@
         "name": "Golden and Indigo Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162204,6 +162232,7 @@
         "name": "Golden and Ivory Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162229,6 +162258,7 @@
         "name": "Golden and Ginger Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162254,6 +162284,7 @@
         "name": "Golden and Turquoise Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162279,6 +162310,7 @@
         "name": "Golden and Orchid Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162304,6 +162336,7 @@
         "name": "Golden and Crimson Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162329,6 +162362,7 @@
         "name": "Ebony and Emerald Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162354,6 +162388,7 @@
         "name": "Ebony and Indigo Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162379,6 +162414,7 @@
         "name": "Ebony and Turquoise Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162404,6 +162440,7 @@
         "name": "Ebony and Orchid Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162429,6 +162466,7 @@
         "name": "Ebony and Crimson Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162454,6 +162492,7 @@
         "name": "Emerald and Indigo Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162479,6 +162518,7 @@
         "name": "Emerald and Ivory Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162504,6 +162544,7 @@
         "name": "Emerald and Ginger Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162529,6 +162570,7 @@
         "name": "Emerald and Turquoise Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162554,6 +162596,7 @@
         "name": "Emerald and Orchid Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162579,6 +162622,7 @@
         "name": "Emerald and Crimson Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162604,6 +162648,7 @@
         "name": "Indigo and Ivory Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162629,6 +162674,7 @@
         "name": "Indigo and Ginger Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162654,6 +162700,7 @@
         "name": "Indigo and Turquoise Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162679,6 +162726,7 @@
         "name": "Indigo and Orchid Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162704,6 +162752,7 @@
         "name": "Indigo and Crimson Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162729,6 +162778,7 @@
         "name": "Ivory and Turquoise Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162754,6 +162804,7 @@
         "name": "Ivory and Orchid Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162779,6 +162830,7 @@
         "name": "Ivory and Crimson Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162804,6 +162856,7 @@
         "name": "Turquoise and Ginger Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162829,6 +162882,7 @@
         "name": "Orchid and Ginger Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162854,6 +162908,7 @@
         "name": "Crimson and Ginger Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162879,6 +162934,7 @@
         "name": "Turquoise and Orchid Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162904,6 +162960,7 @@
         "name": "Turquoise and Crimson Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162929,6 +162986,7 @@
         "name": "Wild Golden Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/mount/74-200.png"
     },
@@ -162938,6 +162996,7 @@
         "name": "Orchid and Crimson Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162963,6 +163022,7 @@
         "name": "Plum and Almond Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -162988,6 +163048,7 @@
         "name": "Plum and Golden Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163013,6 +163074,7 @@
         "name": "Plum and Ebony Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163038,6 +163100,7 @@
         "name": "Plum and Emerald Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163063,6 +163126,7 @@
         "name": "Plum and Indigo Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163088,6 +163152,7 @@
         "name": "Plum and Ivory Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163113,6 +163178,7 @@
         "name": "Plum and Ginger Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163138,6 +163204,7 @@
         "name": "Plum and Turquoise Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163163,6 +163230,7 @@
         "name": "Plum and Orchid Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163188,6 +163256,7 @@
         "name": "Plum and Crimson Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163213,6 +163282,7 @@
         "name": "Armoured Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163253,6 +163323,7 @@
         "name": "Feathered Dragoturkey",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163273,6 +163344,7 @@
         "name": "Orchid Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163293,6 +163365,7 @@
         "name": "Ebony Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163313,6 +163386,7 @@
         "name": "Indigo Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163333,6 +163407,7 @@
         "name": "Crimson Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163353,6 +163428,7 @@
         "name": "Golden Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163373,6 +163449,7 @@
         "name": "Ginger Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163393,6 +163470,7 @@
         "name": "Almond Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163413,6 +163491,7 @@
         "name": "Ivory Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163433,6 +163512,7 @@
         "name": "Turquoise Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163453,6 +163533,7 @@
         "name": "Plum Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163473,6 +163554,7 @@
         "name": "Emerald Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163493,6 +163575,7 @@
         "name": "Golden and Crimson Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163518,6 +163601,7 @@
         "name": "Indigo and Crimson Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163543,6 +163627,7 @@
         "name": "Ebony and Crimson Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163568,6 +163653,7 @@
         "name": "Orchid and Crimson Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163593,6 +163679,7 @@
         "name": "Golden and Orchid Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163618,6 +163705,7 @@
         "name": "Indigo and Orchid Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163643,6 +163731,7 @@
         "name": "Ebony and Orchid Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163668,6 +163757,7 @@
         "name": "Golden and Indigo Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163693,6 +163783,7 @@
         "name": "Ebony and Indigo Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163718,6 +163809,7 @@
         "name": "Golden and Ebony Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163743,6 +163835,7 @@
         "name": "Ginger and Crimson Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163768,6 +163861,7 @@
         "name": "Ginger and Orchid Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163793,6 +163887,7 @@
         "name": "Ginger and Indigo Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163818,6 +163913,7 @@
         "name": "Ginger and Ebony Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163843,6 +163939,7 @@
         "name": "Ginger and Golden Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163868,6 +163965,7 @@
         "name": "Ginger and Almond Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163893,6 +163991,7 @@
         "name": "Crimson and Almond Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163918,6 +164017,7 @@
         "name": "Orchid and Almond Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163943,6 +164043,7 @@
         "name": "Indigo and Almond Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163968,6 +164069,7 @@
         "name": "Ebony and Almond Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -163993,6 +164095,7 @@
         "name": "Golden and Almond Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164018,6 +164121,7 @@
         "name": "Crimson and Ivory Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164043,6 +164147,7 @@
         "name": "Orchid and Ivory Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164068,6 +164173,7 @@
         "name": "Indigo and Ivory Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164093,6 +164199,7 @@
         "name": "Ebony and Ivory Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164118,6 +164225,7 @@
         "name": "Golden and Ivory Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164143,6 +164251,7 @@
         "name": "Ginger and Ivory Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164168,6 +164277,7 @@
         "name": "Almond and Ivory Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164193,6 +164303,7 @@
         "name": "Turquoise and Ivory Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164218,6 +164329,7 @@
         "name": "Turquoise and Crimson Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164243,6 +164355,7 @@
         "name": "Turquoise and Indigo Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164268,6 +164381,7 @@
         "name": "Turquoise and Ebony Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164293,6 +164407,7 @@
         "name": "Turquoise and Ginger Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164318,6 +164433,7 @@
         "name": "Turquoise and Almond Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164343,6 +164459,7 @@
         "name": "Turquoise and Golden Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164368,6 +164485,7 @@
         "name": "Plum and Crimson Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164393,6 +164511,7 @@
         "name": "Plum and Orchid Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164418,6 +164537,7 @@
         "name": "Plum and Indigo Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164443,6 +164563,7 @@
         "name": "Plum and Ebony Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164468,6 +164589,7 @@
         "name": "Plum and Golden Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164493,6 +164615,7 @@
         "name": "Plum and Ginger Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164518,6 +164641,7 @@
         "name": "Plum and Almond Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164543,6 +164667,7 @@
         "name": "Plum and Ivory Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164568,6 +164693,7 @@
         "name": "Plum and Turquoise Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164593,6 +164719,7 @@
         "name": "Plum and Emerald Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164618,6 +164745,7 @@
         "name": "Crimson and Emerald Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164643,6 +164771,7 @@
         "name": "Orchid and Emerald Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164668,6 +164797,7 @@
         "name": "Indigo and Emerald Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164693,6 +164823,7 @@
         "name": "Ebony and Emerald Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164718,6 +164849,7 @@
         "name": "Golden and Emerald Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164743,6 +164875,7 @@
         "name": "Ginger and Emerald Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164768,6 +164901,7 @@
         "name": "Almond and Emerald Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164793,6 +164927,7 @@
         "name": "Ivory and Emerald Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164818,6 +164953,7 @@
         "name": "Turquoise and Emerald Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164843,6 +164979,7 @@
         "name": "Turquoise and Orchid Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164868,6 +165005,7 @@
         "name": "Wild Golden Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/mount/167-200.png"
     },
@@ -164877,6 +165015,7 @@
         "name": "Wild Crimson Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164892,6 +165031,7 @@
         "name": "Wild Indigo Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164907,6 +165047,7 @@
         "name": "Wild Ebony Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164922,6 +165063,7 @@
         "name": "Wild Orchid Seemyool",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164937,6 +165079,7 @@
         "name": "Wild Crimson Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/mount/172-200.png"
     },
@@ -164946,6 +165089,7 @@
         "name": "Wild Orchid Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/mount/173-200.png"
     },
@@ -164955,6 +165099,7 @@
         "name": "Wild Indigo Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/mount/174-200.png"
     },
@@ -164964,6 +165109,7 @@
         "name": "Wild Ebony Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [],
         "image_url": "https://api.dofusdu.de/dofus2/img/mount/175-200.png"
     },
@@ -164973,6 +165119,7 @@
         "name": "Indigo Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -164993,6 +165140,7 @@
         "name": "Ebony Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165013,6 +165161,7 @@
         "name": "Crimson Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165033,6 +165182,7 @@
         "name": "Orchid Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165053,6 +165203,7 @@
         "name": "Ginger Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165073,6 +165224,7 @@
         "name": "Almond Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165093,6 +165245,7 @@
         "name": "Ivory Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165113,6 +165266,7 @@
         "name": "Turquoise Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165133,6 +165287,7 @@
         "name": "Plum Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165153,6 +165308,7 @@
         "name": "Emerald Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165173,6 +165329,7 @@
         "name": "Golden Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165193,6 +165350,7 @@
         "name": "Jade Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165213,6 +165371,7 @@
         "name": "Ruby Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165233,6 +165392,7 @@
         "name": "Sapphire Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165253,6 +165413,7 @@
         "name": "Amethyst Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165273,6 +165434,7 @@
         "name": "Crimson and Orchid Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165298,6 +165460,7 @@
         "name": "Crimson and Indigo Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165323,6 +165486,7 @@
         "name": "Crimson and Ebony Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165348,6 +165512,7 @@
         "name": "Orchid and Indigo Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165373,6 +165538,7 @@
         "name": "Orchid and Ebony Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165398,6 +165564,7 @@
         "name": "Indigo and Ebony Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165423,6 +165590,7 @@
         "name": "Almond and Crimson Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165448,6 +165616,7 @@
         "name": "Almond and Orchid Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165473,6 +165642,7 @@
         "name": "Almond and Indigo Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165498,6 +165668,7 @@
         "name": "Almond and Ebony Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165523,6 +165694,7 @@
         "name": "Almond and Ginger Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165548,6 +165720,7 @@
         "name": "Almond and Ivory Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165573,6 +165746,7 @@
         "name": "Almond and Turquoise Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165598,6 +165772,7 @@
         "name": "Ginger and Crimson Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165623,6 +165798,7 @@
         "name": "Ginger and Orchid Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165648,6 +165824,7 @@
         "name": "Ginger and Indigo Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165673,6 +165850,7 @@
         "name": "Ginger and Ebony Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165698,6 +165876,7 @@
         "name": "Ginger and Ivory Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165723,6 +165902,7 @@
         "name": "Ginger and Turquoise Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165748,6 +165928,7 @@
         "name": "Ivory and Crimson Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165773,6 +165954,7 @@
         "name": "Ivory and Orchid Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165798,6 +165980,7 @@
         "name": "Ivory and Indigo Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165823,6 +166006,7 @@
         "name": "Ivory and Ebony Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165848,6 +166032,7 @@
         "name": "Ivory and Turquoise Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165873,6 +166058,7 @@
         "name": "Turquoise and Crimson Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165898,6 +166084,7 @@
         "name": "Turquoise and Orchid Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165923,6 +166110,7 @@
         "name": "Turquoise and Indigo Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165948,6 +166136,7 @@
         "name": "Turquoise and Ebony Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165973,6 +166162,7 @@
         "name": "Plum and Crimson Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -165998,6 +166188,7 @@
         "name": "Plum and Orchid Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166023,6 +166214,7 @@
         "name": "Plum and Indigo Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166048,6 +166240,7 @@
         "name": "Plum and Ebony Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166073,6 +166266,7 @@
         "name": "Plum and Almond Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166098,6 +166292,7 @@
         "name": "Plum and Turquoise Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166123,6 +166318,7 @@
         "name": "Plum and Emerald Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166148,6 +166344,7 @@
         "name": "Emerald and Crimson Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166173,6 +166370,7 @@
         "name": "Emerald and Orchid Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166198,6 +166396,7 @@
         "name": "Emerald and Indigo Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166223,6 +166422,7 @@
         "name": "Emerald and Ebony Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166248,6 +166448,7 @@
         "name": "Emerald and Almond Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166273,6 +166474,7 @@
         "name": "Emerald and Ginger Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166298,6 +166500,7 @@
         "name": "Emerald and Ivory Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166323,6 +166526,7 @@
         "name": "Emerald and Turquoise Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166348,6 +166552,7 @@
         "name": "Golden and Crimson Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166373,6 +166578,7 @@
         "name": "Golden and Orchid Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166398,6 +166604,7 @@
         "name": "Golden and Indigo Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166423,6 +166630,7 @@
         "name": "Golden and Ebony Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166448,6 +166656,7 @@
         "name": "Jade and Crimson Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166473,6 +166682,7 @@
         "name": "Jade and Orchid Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166498,6 +166708,7 @@
         "name": "Jade and Indigo Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166523,6 +166734,7 @@
         "name": "Jade and Ebony Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166548,6 +166760,7 @@
         "name": "Jade and Almond Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166573,6 +166786,7 @@
         "name": "Jade and Ginger Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166598,6 +166812,7 @@
         "name": "Jade and Ivory Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166623,6 +166838,7 @@
         "name": "Jade and Turquoise Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166648,6 +166864,7 @@
         "name": "Jade and Plum Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166673,6 +166890,7 @@
         "name": "Jade and Emerald Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166698,6 +166916,7 @@
         "name": "Jade and Golden Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166723,6 +166942,7 @@
         "name": "Jade and Ruby Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166748,6 +166968,7 @@
         "name": "Jade and Sapphire Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166773,6 +166994,7 @@
         "name": "Jade and Amethyst Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166798,6 +167020,7 @@
         "name": "Ruby and Crimson Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166823,6 +167046,7 @@
         "name": "Ruby and Orchid Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166848,6 +167072,7 @@
         "name": "Ruby and Indigo Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166873,6 +167098,7 @@
         "name": "Ruby and Ebony Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166898,6 +167124,7 @@
         "name": "Ruby and Almond Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166923,6 +167150,7 @@
         "name": "Ruby and Ginger Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166948,6 +167176,7 @@
         "name": "Ruby and Ivory Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166973,6 +167202,7 @@
         "name": "Ruby and Turquoise Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -166998,6 +167228,7 @@
         "name": "Ruby and Plum Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167023,6 +167254,7 @@
         "name": "Ruby and Emerald Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167048,6 +167280,7 @@
         "name": "Ruby and Golden Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167073,6 +167306,7 @@
         "name": "Sapphire and Crimson Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167098,6 +167332,7 @@
         "name": "Sapphire and Orchid Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167123,6 +167358,7 @@
         "name": "Sapphire and Indigo Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167148,6 +167384,7 @@
         "name": "Sapphire and Ebony Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167173,6 +167410,7 @@
         "name": "Sapphire and Almond Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167198,6 +167436,7 @@
         "name": "Sapphire and Ginger Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167223,6 +167462,7 @@
         "name": "Sapphire and Ivory Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167248,6 +167488,7 @@
         "name": "Sapphire and Turquoise Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167273,6 +167514,7 @@
         "name": "Sapphire and Plum Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167298,6 +167540,7 @@
         "name": "Sapphire and Emerald Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167323,6 +167566,7 @@
         "name": "Sapphire and Golden Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167348,6 +167592,7 @@
         "name": "Sapphire and Amethyst Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167373,6 +167618,7 @@
         "name": "Amethyst and Crimson Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167398,6 +167644,7 @@
         "name": "Amethyst and Orchid Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167423,6 +167670,7 @@
         "name": "Amethyst and Indigo Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167448,6 +167696,7 @@
         "name": "Amethyst and Ebony Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167473,6 +167722,7 @@
         "name": "Amethyst and Almond Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167498,6 +167748,7 @@
         "name": "Amethyst and Ginger Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167523,6 +167774,7 @@
         "name": "Amethyst and Ivory Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167548,6 +167800,7 @@
         "name": "Amethyst and Turquoise Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167573,6 +167826,7 @@
         "name": "Amethyst and Plum Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167598,6 +167852,7 @@
         "name": "Amethyst and Emerald Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167623,6 +167878,7 @@
         "name": "Amethyst and Golden Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167648,6 +167904,7 @@
         "name": "Plum and Ginger Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167673,6 +167930,7 @@
         "name": "Plum and Ivory Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167698,6 +167956,7 @@
         "name": "Ruby and Sapphire Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167723,6 +167982,7 @@
         "name": "Ruby and Amethyst Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167748,6 +168008,7 @@
         "name": "Golden and Ginger Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167773,6 +168034,7 @@
         "name": "Golden and Almond Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167798,6 +168060,7 @@
         "name": "Golden and Ivory Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167823,6 +168086,7 @@
         "name": "Golden and Turquoise Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167848,6 +168112,7 @@
         "name": "Golden and Plum Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,
@@ -167873,6 +168138,7 @@
         "name": "Golden and Emerald Rhineetle",
         "w_type": "Pet",
         "level": 60,
+        "ap": 0,
         "stats": [
             [
                 0,

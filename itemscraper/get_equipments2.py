@@ -75,6 +75,7 @@ for item in original_data['mounts']:
     transformed_item["level"] = 60
     if "dofustouch" in item:
         transformed_item["dofustouch"] = item["dofustouch"]
+    transformed_item["ap"] = 0
     if "conditions" in item:
         transformed_item["conditions"] = [f"{cond['element']['name']} {cond['operator']} {cond['int_value']}" for cond in item["conditions"]]
     if "effects" in item:
