@@ -465,10 +465,10 @@ function getRandomSentence(language) {
 
     switch(language) {
         case 'fr':
-            sentences = carsen;
+            sentences = carsfr;
             break;
         case 'en':
-            sentences = carsfr;
+            sentences = carsen;
             break;
         case 'es':
             sentences = carses;
