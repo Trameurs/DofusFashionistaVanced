@@ -527,6 +527,7 @@ class Model:
         gelano1 = self.structure.get_item_by_name('Gelano (#1)')
         gelano2 = self.structure.get_item_by_name('Gelano (#2)')
         restriction = self.restrictions.forbidden_items_constraints.get(gelano2.id, None)
+        print(restriction)
         restriction.changeRHS(0 if options['mp_exo'] == 'gelano' else 1)
         restriction = self.restrictions.forbidden_items_constraints.get(gelano1.id, None)
         restriction.changeRHS(1 if options['mp_exo'] == 'gelano' else 0)
