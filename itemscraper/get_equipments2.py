@@ -68,6 +68,8 @@ with open('all_mounts.json', 'r', encoding='utf-8') as f:
 for item in original_data['mounts']:
     transformed_item = {}
     transformed_item["dofustouch"] = False
+    if "ankama_id" in item:
+        transformed_item["ankama_id"] = ""
     transformed_item["ankama_type"] = "mounts"
     if "name" in item:
         transformed_item["name"] = item["name"]
