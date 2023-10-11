@@ -1,0 +1,15 @@
+# .github/dependabot.yml
+
+version: 2
+updates:
+  # Python dependencies (assumes requirements.txt is at the root)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # JavaScript dependencies (assumes package.json is at the root)
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
