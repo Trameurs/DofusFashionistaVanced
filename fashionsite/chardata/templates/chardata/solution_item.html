@@ -10,7 +10,13 @@
         </td>
         <td class="solution-item-info">
             <div class="solution-item-name-div"><span id='item-name-{{item.slot}}'>{{item.localized_name}}</span></div>
-            {% if item.link %}<div class="solution-item-link-div"><a class="item-external-link" target="_blank" href="{{item.link}}"><img title='{{item.localized_name}}' class='item-external-image-link'></a></div>{% endif %}
+            {% if item.link %}
+            <div class="solution-item-link-div">
+                <a class="item-external-link" target="_blank" rel="noopener noreferrer" href="{{item.link}}">
+                    <img title='{{item.localized_name}}' class='item-external-image-link'>
+                </a>
+            </div>
+            {% endif %}
         
             <br>
             <span class="solution-item-level">{% if item.level %}{% trans "Lvl." %} {{item.level}}{% endif %}</span><br>
