@@ -185,8 +185,6 @@ def _recover_password_page(request, email, from_register):
 
 def recover_password(request, username, recover_token):
     users = User.objects.filter(username=username)
-    print(f"User.objects:" + str(User.objects.all()))
-    print(f"Users: {users}")
     
     if not users or len(users) != 1:
         raise PermissionDenied
@@ -194,8 +192,6 @@ def recover_password(request, username, recover_token):
     user = users[0]
     current_password = user.password
     correct_token = _generate_token_for_password_reset(username, current_password)
-    print(f"Correct Token: {correct_token}")
-    print(f"Received Token: {recover_token}")
     if correct_token != recover_token:
         raise PermissionDenied
         

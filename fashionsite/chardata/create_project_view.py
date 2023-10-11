@@ -219,7 +219,6 @@ def understand_build_post(request):
     return HttpResponseJson(json.dumps(_get_aspect_checklist(aspects)))
 
 def save_project_to_user(request, char_id=None):
-    print('save_project_to_user')
     char_id = char_id or request.session.get('char_id')
     if char_id and not request.user.is_anonymous:
         char = get_object_or_404(Char, pk=char_id)
