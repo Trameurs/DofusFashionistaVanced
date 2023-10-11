@@ -223,7 +223,7 @@ def _generate_token_for_user(username):
 
 PASSWORD_RESET_SALT = settings.GEN_CONFIGS["PASSWORD_RESET_SALT"]
 def _generate_token_for_password_reset(username, password):
-    hashed = make_password(EMAIL_CONFIRMATION_SALT + username + password)
+    hashed = make_password(PASSWORD_RESET_SALT + username + password)
     return hashed
 
 def _get_non_social_users_for_email(email):
