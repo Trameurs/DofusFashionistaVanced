@@ -191,6 +191,8 @@ def recover_password(request, username, recover_token):
     user = users[0]
     current_password = user.password
     correct_token = _generate_token_for_password_reset(username, current_password)
+    print(f"Correct Token: {correct_token}")
+    print(f"Received Token: {recover_token}")
     if correct_token != recover_token:
         raise PermissionDenied
         
