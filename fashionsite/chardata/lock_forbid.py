@@ -23,7 +23,12 @@ from fashionistapulp.structure import get_structure
 DEFAULT_EXCLUSIONS_121_PLUS = ['Vulbis Dofus',
                                'Dofusteuse',
                                'Ellie\'s Mental Amulet',
-                               'Ellie\'s Deluxe Mental Amulet',]
+                               'Ellie\'s Deluxe Mental Amulet',
+                               'Gore Master\'s Other Ring',
+                               'Gore Master\'s Ring (Gms Only)',
+                               'Ultra-powerful Combat Bow Meow (GM)',
+                               'Small Combat Bow Meow (GM)',
+                               'Jiva Necklace',]
 DEFAULT_EXCLUSIONS_120_MINUS = (DEFAULT_EXCLUSIONS_121_PLUS
                                 + ['Ice Dofus',
                                    'Ochre Dofus',
