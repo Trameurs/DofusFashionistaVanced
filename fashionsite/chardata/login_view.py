@@ -19,6 +19,7 @@
 from django.conf import settings
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
+from django.contrib.auth.hashers import make_password
 from django.core.exceptions import PermissionDenied, SuspiciousOperation
 from django.core.mail import send_mail, BadHeaderError
 from django.urls import reverse
@@ -197,7 +198,7 @@ def recover_password(request, username, recover_token):
         
     username = user.username
     new_password = User.objects.make_random_password()
-    user.set_password(hashlib.sha256(('dofusfashionista' + new_password).encode('utf-8')).hexdigest())
+    user.set_password('dofusfashionista' + new_password)
     user.save()
     
     try:
@@ -220,11 +221,12 @@ def recover_password(request, username, recover_token):
 
 EMAIL_CONFIRMATION_SALT = settings.GEN_CONFIGS["EMAIL_CONFIRMATION_SALT"]
 def _generate_token_for_user(username):
-    return hashlib.sha256((EMAIL_CONFIRMATION_SALT + username).encode('utf-8')).hexdigest()
+    return make_password(EMAIL_CONFIRMATION_SALT + username)
 
 PASSWORD_RESET_SALT = settings.GEN_CONFIGS["PASSWORD_RESET_SALT"]
 def _generate_token_for_password_reset(username, password):
-    return hashlib.sha256((EMAIL_CONFIRMATION_SALT + username + password).encode('utf-8')).hexdigest()
+    hashed = make_password(EMAIL_CONFIRMATION_SALT + username + password)
+    return hashed
 
 def _get_non_social_users_for_email(email):
     non_social_users = []
