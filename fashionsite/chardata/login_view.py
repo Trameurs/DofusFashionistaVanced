@@ -26,6 +26,7 @@ from django.urls import reverse
 from django.http import HttpResponseRedirect
 from smtplib import SMTPRecipientsRefused
 from social_django.models import UserSocialAuth
+import hashlib
 
 from chardata.models import UserAlias
 from chardata.util import set_response, TESTER_USERS, HttpResponseText
@@ -200,7 +201,7 @@ def recover_password(request, username, recover_token):
         
     username = user.username
     new_password = User.objects.make_random_password()
-    user.set_password('dofusfashionista' + new_password)
+    user.set_password(hashlib.sha256(('dofusfashionista' + new_password).encode('utf-8')).hexdigest())
     user.save()
     
     try:
@@ -223,12 +224,11 @@ def recover_password(request, username, recover_token):
 
 EMAIL_CONFIRMATION_SALT = settings.GEN_CONFIGS["EMAIL_CONFIRMATION_SALT"]
 def _generate_token_for_user(username):
-    return make_password(EMAIL_CONFIRMATION_SALT + username)
+    return hashlib.sha256((EMAIL_CONFIRMATION_SALT + username).encode('utf-8')).hexdigest()
 
 PASSWORD_RESET_SALT = settings.GEN_CONFIGS["PASSWORD_RESET_SALT"]
 def _generate_token_for_password_reset(username, password):
-    hashed = make_password(PASSWORD_RESET_SALT + username + password)
-    return hashed
+    return hashlib.sha256((PASSWORD_RESET_SALT + username + password).encode('utf-8')).hexdigest()
 
 def _get_non_social_users_for_email(email):
     non_social_users = []
