@@ -24,14 +24,12 @@ from django.core.exceptions import PermissionDenied, SuspiciousOperation
 from django.core.mail import send_mail, BadHeaderError
 from django.urls import reverse
 from django.http import HttpResponseRedirect
-import hashlib
 from smtplib import SMTPRecipientsRefused
 from social_django.models import UserSocialAuth
 
 from chardata.models import UserAlias
 from chardata.util import set_response, TESTER_USERS, HttpResponseText
 from django.utils.translation import gettext as _
-import json
 
 def login_page(request, char_id=0):
     return _login_page_generic(request, False, None, char_id, False)
