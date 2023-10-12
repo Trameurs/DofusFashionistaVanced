@@ -48,8 +48,8 @@ def send_email(request):
         try:
             send_mail("Fashionista Form: " + subject, 
                       message + "\n\nfrom: " + name + "\n" + from_email, 
-                      'thedofusfashionistavanced@gmail.com', 
-                      ['thedofusfashionistavanced@gmail.com'])
+                      'DofusFashionistaVanced@gmail.com', 
+                      ['DofusFashionistaVanced@gmail.com'])
         except BadHeaderError:
             return HttpResponse('Invalid header found.')
         return HttpResponseRedirect(reverse('thankyou'))

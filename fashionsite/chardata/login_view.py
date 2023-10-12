@@ -67,7 +67,7 @@ def register(request):
         send_mail(_('Welcome to The Dofus Fashionista!'),
                   _('Please click the link below to confirm your email and activate your '
                     'account.') + '\n' + link,
-                  'dofusfashionistavanced@gmail.com',
+                  'DofusFashionistaVanced@gmail.com',
                   [email])
     except (BadHeaderError, SMTPRecipientsRefused) as e:
         raise e
@@ -173,7 +173,7 @@ def _recover_password_page(request, email, from_register):
                     '{link}\n\n'
                     'If you don\'t want to reset your password, just ignore this email.').format(
                         link=link),
-                  'dofusfashionistavanced@gmail.com',
+                  'DofusFashionistaVanced@gmail.com',
                   [email])
     except (BadHeaderError, SMTPRecipientsRefused) as e:
         raise e
@@ -207,7 +207,7 @@ def recover_password(request, username, recover_token):
                     '{new_password}\n\n'
                     'Change it to a new one or just keep this email ;-)').format(
                         username=username, new_password=new_password),
-                  'dofusfashionistavanced@gmail.com',
+                  'DofusFashionistaVanced@gmail.com',
                   [user.email])
     except (BadHeaderError, SMTPRecipientsRefused) as e:
         raise e
