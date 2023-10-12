@@ -24,7 +24,9 @@ DEFAULT_EXCLUSIONS_121_PLUS = ['Gore Master\'s Other Ring',
                                'Gore Master\'s Ring (Gms Only)',
                                'Ultra-powerful Combat Bow Meow (GM)',
                                'Small Combat Bow Meow (GM)',
-                               'Jiva Necklace',]
+                               'Jiva Necklace',
+                               'Fiery Tongue Sword',
+                               'First Blood Staff',]
 DEFAULT_EXCLUSIONS_120_MINUS = (DEFAULT_EXCLUSIONS_121_PLUS
                                 + [])
 
