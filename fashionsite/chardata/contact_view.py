@@ -43,7 +43,7 @@ def send_email(request):
     is_bot_json = urllib.request.urlopen(url).read(1000)
     
     is_bot = json.loads(is_bot_json)
-    if is_bot['success'] == 1:
+    if is_bot['success'] == 0:
     
         try:
             send_mail("Fashionista Form: " + subject, 
