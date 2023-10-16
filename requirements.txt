@@ -92,7 +92,7 @@ s3transfer==0.6.2
 Scrapy==2.11.0
 selinux==3.4
 sepolicy==3.4
-service-identity==21.1.0
+service-identity==23.1.0
 setools==4.4.1
 six==1.16.0
 social-auth-app-django==5.2.0
