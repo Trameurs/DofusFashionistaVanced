@@ -107,6 +107,6 @@ tzdata==2023.3
 Unidecode==1.3.6
 urllib3==1.26.17
 w3lib==2.1.1
-wcwidth==0.2.5
+wcwidth==0.2.8
 webencodings==0.5.1
 zope.interface==6.0
