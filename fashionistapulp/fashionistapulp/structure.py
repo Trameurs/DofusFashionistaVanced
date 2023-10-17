@@ -246,7 +246,11 @@ class Structure:
         for value in range(11, 20 + 1):
             if ("Turquoise Dofus (#%d)" % value) not in self.dt_items_dict_name:
                 item = Item()
-                item.id = max(itertools.chain(list(self.dt_items_dict.keys()), list(self.items_dict.keys()))) + 1
+                keys = list(itertools.chain(list(self.dt_items_dict.keys()), list(self.items_dict.keys())))
+                if keys:
+                    item.id = max(keys) + 1
+                else:
+                    item.id = 1
                 item.name = ("Turquoise Dofus (#%d)" % value)
                 item.level = 6
                 item.dofus_touch = True
