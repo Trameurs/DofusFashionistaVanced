@@ -1,8 +1,8 @@
 # Prerequisites
 
-Python 3.9.16 or higher
-SQLite
-AWS EC2 instance
+Python 3.9.16 or higher     
+SQLite     
+AWS EC2 instance     
 
 ## Python Packages
 
@@ -84,11 +84,11 @@ run_fashionista.bat
 
 # Progress and Roadmap
 
-✅ Website is fully operational
-✅ All equipments and mounts updated to Dofus 2.69
-❌ Larger filter for Temporis items not done yet
-❌ Sets not done yet
-❌ Special items effects not added yet
+✅ Website is fully operational     
+✅ All equipments and mounts updated to Dofus 2.69     
+❌ Larger filter for Temporis items not done yet     
+❌ Sets not done yet     
+❌ Special items effects not added yet     
 
 # Reference
 
