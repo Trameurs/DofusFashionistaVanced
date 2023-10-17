@@ -285,7 +285,10 @@ class Structure:
         if "Gelano (#1)" not in self.items_dict_name:
             print('Gelano (#1) not there, inserting')
             item = Item()
-            item.id = max(self.items_dict.keys()) + 1
+            if self.items_dict.keys():
+                item.id = max(self.items_dict.keys()) + 1
+            else:
+                item.id = 1
             item.name = "Gelano (#1)"
             item.level = 60
             item.type = self.get_type_id_by_name('Ring')
@@ -320,7 +323,10 @@ class Structure:
         if "Gelano (#2)" not in self.items_dict_name:
             print('Gelano (#2) not there, inserting')
             item = Item()
-            item.id = max(self.items_dict.keys()) + 1
+            if self.items_dict.keys():
+                item.id = max(self.items_dict.keys()) + 1
+            else:
+                item.id = 1
             item.name = "Gelano (#2)"
             item.level = 60
             item.type = self.get_type_id_by_name('Ring')
