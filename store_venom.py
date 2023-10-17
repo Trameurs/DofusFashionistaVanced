@@ -36,13 +36,13 @@ def main(json_file):
     weapons = read_id_to_terms(json_file)
     
     load_items_db_from_dump()
-    for ankama_id, (weapon_data, ankama_type) in weapons.items():
+    for ankama_id, weapon_data in weapons.items():
+        ankama_type = weapon_data.get('ankama_type', 'default_type')
         ankama_profile = (ankama_id, ankama_type)
         conn = sqlite3.connect(get_items_db_path())
         c = conn.cursor()
         item_id, weapon_name = get_item_id_and_name_for_ankama_profile(c, 'items', ankama_profile, False)
         conn.close()
-        #print item_id
         store_weapon_data(item_id, weapon_name, weapon_data)
 
     save_items_db_to_dump()
