@@ -25130,3 +25130,873 @@ Gloves of the Great: Reduces the spell's AP cost by
 Gloves of the Great: Increases the spell's maximum range by
 Gloves of the Great: Reduces the spell's cooldown period by
 Gloves of the Great: Reduces the spell's AP cost by
+Indigo and Ginger Dragoturkey: Heal
+Orchid and Ginger Dragoturkey: Heal
+Plum and Ginger Dragoturkey: Heal
+Crimson Dofus: emote
+Emerald Dofus: emote
+Turquoise Dofus: emote
+Mech Riorraw's Bow: Remaining uses:/
+Mulic Bere's Bow: Remaining uses:/
+Sulik: Reflects damage
+Training Shield: Remaining uses:/
+Ebony Dofus: emote
+Ivory Dofus: emote
+Ochre Dofus: emote
+Koalak Boots: Heal
+Pink Piwi Ring: Heal
+Pink Piwi Belt: Heal
+Kwismas Sword: Remaining uses:/
+Hat Ariutokinabot: Reduces the spell's AP cost by
+Hat Ariutokinabot: Reduces the spell's AP cost by
+Hat Ariutokinabot: Increases the spell's maximum range by
+Hat Ariutokinabot: Increases the spell's maximum range by
+Hat Ariutokinabot: Increases the spell's maximum range by
+Hat Ariutokinabot: no longer requires a line of sight
+Hat Ariutokinabot: no longer requires a line of sight
+Hat Ariutokinabot: no longer requires a line of sight
+Sarr Ys's Flute: emote
+Ukando Hat: Increases the spell's maximum range by
+Ukando Hat: Increases the spell's Criticals by%
+Ukando Hat: Reduces the spell's AP cost by
+Ukando Hat: Increases the spell's maximum range by
+Ukando Hat: Increases the spell's maximum number of casts per target by
+Ukando Hat: Increases the spell's maximum range by
+Ukando Hat: is no longer linear
+Ukando Hat: no longer requires a line of sight
+Hat Tsokey: Increases the spell's maximum range by
+Hat Tsokey: Reduces the spell's AP cost by
+Hat Tsokey: Increases the spell's maximum number of casts per turn by
+Hat Tsokey: Increases the spell's maximum range by
+Hat Tsokey: Increases the spell's maximum range by
+Hat Tsokey: Reduces the spell's AP cost by
+Hat Tsokey: Increases the spell's fixed damage by
+Hat Tsokey: Increases the spell's maximum range by
+Hatter Lily: Reduces the spell's AP cost by
+Hatter Lily: Increases the spell's Criticals by%
+Hatter Lily: no longer requires a line of sight
+Hatter Lily: Increases the spell's maximum range by
+Hatter Lily: Reduces the spell's AP cost by
+Hatter Lily: Reduces the spell's AP cost by
+Hatter Lily: Increases the spell's Criticals by%
+Hatter Lily: Increases the spell's maximum range by
+Hat Wisholdoo: no longer requires a line of sight
+Hat Wisholdoo: no longer requires a line of sight
+Hat Wisholdoo: Reduces the spell's AP cost by
+Hat Wisholdoo: Increases the spell's maximum range by
+Hat Wisholdoo: no longer requires a line of sight
+Hat Wisholdoo: Reduces the spell's AP cost by
+Hat Wisholdoo: Reduces the spell's AP cost by
+Hat Wisholdoo: Makes the spell's range modifiable
+Cap Ricott: no longer requires a line of sight
+Cap Ricott: is no longer linear
+Cap Ricott: Reduces the spell's cooldown period by
+Cap Ricott: Reduces the spell's AP cost by
+Cap Ricott: Reduces the spell's cooldown period by
+Cap Ricott: Increases the spell's maximum range by
+Cap Ricott: Increases the spell's maximum number of casts per target by
+Cap Ricott: Increases the spell's maximum range by
+Cap Rayer: Increases the spell's maximum range by
+Cap Rayer: Reduces the spell's AP cost by
+Cap Rayer: Reduces the spell's AP cost by
+Cap Rayer: Reduces the spell's AP cost by
+Cap Rayer: Reduces the spell's AP cost by
+Cap Rayer: Increases the spell's maximum range by
+Cap Rayer: Increases the spell's Criticals by%
+Cap Rayer: Increases the spell's maximum range by
+Cool Hood: Increases the spell's maximum range by
+Cool Hood: no longer requires a line of sight
+Cool Hood: Increases the spell's Criticals by%
+Cool Hood: Increases the spell's maximum range by
+Cool Hood: Increases the spell's maximum range by
+Cool Hood: Increases the spell's fixed damage by
+Cool Hood: Increases the spell's maximum range by
+Cool Hood: Increases the spell's maximum range by
+Helmet Hicc: Increases the spell's maximum range by
+Helmet Hicc: Increases the spell's maximum range by
+Helmet Hicc: Increases the spell's Criticals by%
+Helmet Hicc: no longer requires a line of sight
+Helmet Hicc: Reduces the spell's cooldown period by
+Helmet Hicc: Reduces the spell's AP cost by
+Helmet Hicc: Increases the spell's maximum range by
+Helmet Hicc: Reduces the spell's AP cost by
+Robbie Hoodie Cap: Increases the spell's Criticals by%
+Robbie Hoodie Cap: Increases the spell's maximum number of casts per target by
+Robbie Hoodie Cap: Reduces the spell's AP cost by
+Robbie Hoodie Cap: Reduces the spell's AP cost by
+Robbie Hoodie Cap: Makes the spell's range modifiable
+Robbie Hoodie Cap: Increases the spell's maximum range by
+Robbie Hoodie Cap: Reduces the spell's AP cost by
+Robbie Hoodie Cap: Increases the spell's maximum range by
+Zinda Hood: Reduces the spell's AP cost by
+Zinda Hood: Increases the spell's maximum range by
+Zinda Hood: Reduces the spell's AP cost by
+Zinda Hood: no longer requires a line of sight
+Zinda Hood: is no longer linear
+Zinda Hood: Increases the spell's Criticals by%
+Zinda Hood: Increases the spell's Criticals by%
+Zinda Hood: Reduces the spell's cooldown period by
+Sthood: Increases the spell's maximum range by
+Sthood: Increases the spell's maximum range by
+Sthood: Increases the spell's maximum range by
+Sthood: Reduces the spell's cooldown period by
+Sthood: Increases the spell's fixed damage by
+Sthood: Reduces the spell's AP cost by
+Sthood: Reduces the spell's cooldown period by
+Sthood: Increases the spell's maximum number of casts per turn by
+Cloak Orporal: Reduces the spell's cooldown period by
+Cloak Orporal: no longer requires a line of sight
+Cloak Orporal: Reduces the spell's cooldown period by
+Cloak Orporal: Increases the spell's Criticals by%
+Cloak Orporal: Increases the spell's maximum range by
+Cloak Orporal: is no longer linear
+Cloak Orporal: Increases the spell's maximum range by
+Cloak Orporal: Makes the spell's range modifiable
+Cape of Spades: Reduces the spell's AP cost by
+Cape of Spades: Increases the spell's fixed damage by
+Cape of Spades: Reduces the spell's AP cost by
+Cape of Spades: Increases the spell's maximum range by
+Cape of Spades: no longer requires a line of sight
+Cape of Spades: Reduces the spell's cooldown period by
+Cape of Spades: Increases the spell's maximum range by
+Cape of Spades: Increases the spell's Criticals by%
+F-Ha(r)t: Reduces the spell's AP cost by
+F-Ha(r)t: Increases the spell's maximum range by
+F-Ha(r)t: Increases the spell's Criticals by%
+F-Ha(r)t: Reduces the spell's AP cost by
+F-Ha(r)t: Reduces the spell's AP cost by
+F-Ha(r)t: Reduces the spell's cooldown period by
+F-Ha(r)t: no longer requires a line of sight
+F-Ha(r)t: Reduces the spell's AP cost by
+Cap Cape: Increases the spell's Criticals by%
+Cap Cape: Increases the spell's Criticals by%
+Cap Cape: Increases the spell's maximum range by
+Cap Cape: Increases the spell's maximum range by
+Cap Cape: Increases the spell's maximum range by
+Cap Cape: Increases the spell's maximum range by
+Cap Cape: Increases the spell's maximum range by
+Cap Cape: Reduces the spell's AP cost by
+Cape Sulitis: no longer requires a line of sight
+Cape Sulitis: no longer requires a line of sight
+Cape Sulitis: Reduces the spell's AP cost by
+Cape Sulitis: Increases the spell's maximum number of casts per target by
+Cape Sulitis: Makes the spell's range modifiable
+Cape Sulitis: Increases the spell's maximum number of casts per turn by
+Cape Sulitis: Reduces the spell's AP cost by
+Cape Sulitis: Increases the spell's maximum number of casts per turn by
+Cape o'Tbelly: Reduces the spell's cooldown period by
+Cape o'Tbelly: Increases the spell's maximum number of casts per target by
+Cape o'Tbelly: Reduces the spell's AP cost by
+Cape o'Tbelly: Reduces the spell's cooldown period by
+Cape o'Tbelly: Reduces the spell's cooldown period by
+Cape o'Tbelly: Reduces the spell's AP cost by
+Cape o'Tbelly: Reduces the spell's cooldown period by
+Cape o'Tbelly: is no longer linear
+Cape Ytal: Increases the spell's maximum range by
+Cape Ytal: Increases the spell's maximum range by
+Cape Ytal: Increases the spell's maximum range by
+Cape Ytal: Reduces the spell's cooldown period by
+Cape Ytal: Increases the spell's maximum range by
+Cape Ytal: Reduces the spell's AP cost by
+Cape Ytal: Increases the spell's Criticals by%
+Cape Ytal: Increases the spell's Criticals by%
+Cape Anama: Increases the spell's maximum number of casts per turn by
+Cape Anama: Increases the spell's maximum range by
+Cape Anama: Increases the spell's maximum number of casts per target by
+Cape Anama: Increases the spell's maximum number of casts per target by
+Cape Anama: Increases the spell's maximum range by
+Cape Anama: Makes the spell's range modifiable
+Cape Anama: Increases the spell's maximum range by
+Cape Anama: Increases the spell's maximum range by
+Cape Wuera: Increases the spell's Criticals by%
+Cape Wuera: is no longer linear
+Cape Wuera: Increases the spell's Criticals by%
+Cape Wuera: Increases the spell's Criticals by%
+Cape Wuera: Increases the spell's Criticals by%
+Cape Wuera: Increases the spell's maximum number of casts per target by
+Cape Wuera: Increases the spell's maximum number of casts per turn by
+Cape Wuera: Increases the spell's maximum range by
+Cape Hulco: Reduces the spell's AP cost by
+Cape Hulco: Increases the spell's maximum range by
+Cape Hulco: Reduces the spell's cooldown period by
+Cape Hulco: no longer requires a line of sight
+Cape Hulco: Increases the spell's maximum number of casts per target by
+Cape Hulco: Increases the spell's maximum range by
+Cape Hulco: Increases the spell's maximum number of casts per target by
+Cape Hulco: Increases the spell's maximum range by
+Cape Adossia: Reduces the spell's cooldown period by
+Cape Adossia: Increases the spell's fixed damage by
+Cape Adossia: Increases the spell's maximum range by
+Cape Adossia: Increases the spell's maximum range by
+Cape Adossia: Increases the spell's maximum range by
+Cape Adossia: Increases the spell's maximum range by
+Cape Adossia: Increases the spell's maximum range by
+Cape Adossia: Increases the spell's Criticals by%
+Cape Hernaum: Increases the spell's fixed damage by
+Cape Hernaum: Increases the spell's maximum range by
+Cape Hernaum: Reduces the spell's cooldown period by
+Cape Hernaum: is no longer linear
+Cape Hernaum: Reduces the spell's AP cost by
+Cape Hernaum: Reduces the spell's AP cost by
+Cape Hernaum: Increases the spell's Criticals by%
+Cape Hernaum: Increases the spell's maximum range by
+Bloody Belt: Reduces the spell's cooldown period by
+Bloody Belt: Reduces the spell's AP cost by
+Bloody Belt: Reduces the spell's AP cost by
+Bloody Belt: Increases the spell's maximum range by
+Bloody Belt: Reduces the spell's AP cost by
+Bloody Belt: no longer requires a line of sight
+Bloody Belt: Reduces the spell's AP cost by
+Bloody Belt: Increases the spell's maximum range by
+Belt Sterous: no longer requires a line of sight
+Belt Sterous: Increases the spell's maximum range by
+Belt Sterous: Reduces the spell's AP cost by
+Belt Sterous: Increases the spell's maximum range by
+Belt Sterous: Increases the spell's Criticals by%
+Belt Sterous: Reduces the spell's AP cost by
+Belt Sterous: Increases the spell's maximum range by
+Belt Sterous: Increases the spell's maximum range by
+Clinkin Belt: Increases the spell's maximum range by
+Clinkin Belt: is no longer linear
+Clinkin Belt: Increases the spell's maximum range by
+Clinkin Belt: Increases the spell's Criticals by%
+Clinkin Belt: Reduces the spell's AP cost by
+Clinkin Belt: Increases the spell's Criticals by%
+Clinkin Belt: Increases the spell's maximum range by
+Clinkin Belt: Increases the spell's maximum range by
+Sleepless Belt: is no longer linear
+Sleepless Belt: Increases the spell's Criticals by%
+Sleepless Belt: Reduces the spell's AP cost by
+Sleepless Belt: Increases the spell's maximum range by
+Sleepless Belt: Increases the spell's maximum range by
+Sleepless Belt: Increases the spell's maximum range by
+Sleepless Belt: Reduces the spell's AP cost by
+Sleepless Belt: Increases the spell's maximum number of casts per turn by
+Blub Belt: no longer requires a line of sight
+Blub Belt: no longer requires a line of sight
+Blub Belt: Increases the spell's maximum number of casts per turn by
+Blub Belt: Reduces the spell's AP cost by
+Blub Belt: Reduces the spell's AP cost by
+Blub Belt: Reduces the spell's cooldown period by
+Blub Belt: no longer requires a line of sight
+Blub Belt: Makes the spell's range modifiable
+Belt Atio: Reduces the spell's AP cost by
+Belt Atio: Reduces the spell's cooldown period by
+Belt Atio: Increases the spell's maximum range by
+Belt Atio: no longer requires a line of sight
+Belt Atio: Reduces the spell's AP cost by
+Belt Atio: Reduces the spell's cooldown period by
+Belt Atio: Reduces the spell's AP cost by
+Belt Atio: no longer requires a line of sight
+Strap Pado: Increases the spell's Criticals by%
+Strap Pado: no longer requires a line of sight
+Strap Pado: Increases the spell's Criticals by%
+Strap Pado: Increases the spell's maximum range by
+Strap Pado: Increases the spell's maximum range by
+Strap Pado: Reduces the spell's AP cost by
+Strap Pado: Increases the spell's Criticals by%
+Strap Pado: Reduces the spell's cooldown period by
+Diezzle Belt: Increases the spell's maximum range by
+Diezzle Belt: Reduces the spell's cooldown period by
+Diezzle Belt: Increases the spell's maximum range by
+Diezzle Belt: Reduces the spell's cooldown period by
+Diezzle Belt: Increases the spell's maximum range by
+Diezzle Belt: Increases the spell's maximum range by
+Diezzle Belt: Increases the spell's maximum range by
+Diezzle Belt: Reduces the spell's AP cost by
+Sticky Strap: Increases the spell's maximum range by
+Sticky Strap: Increases the spell's maximum range by
+Sticky Strap: Reduces the spell's AP cost by
+Sticky Strap: Reduces the spell's AP cost by
+Sticky Strap: Makes the spell's range modifiable
+Sticky Strap: Reduces the spell's cooldown period by
+Sticky Strap: Reduces the spell's cooldown period by
+Sticky Strap: Increases the spell's fixed damage by
+Targ Belt: Reduces the spell's AP cost by
+Targ Belt: Increases the spell's Criticals by%
+Targ Belt: Increases the spell's Criticals by%
+Targ Belt: Increases the spell's maximum number of casts per turn by
+Targ Belt: Increases the spell's Criticals by%
+Targ Belt: Increases the spell's maximum range by
+Targ Belt: Increases the spell's maximum range by
+Targ Belt: is no longer linear
+Girdle Belt: Increases the spell's maximum range by
+Girdle Belt: Reduces the spell's AP cost by
+Girdle Belt: no longer requires a line of sight
+Girdle Belt: Increases the spell's maximum range by
+Girdle Belt: Increases the spell's maximum range by
+Girdle Belt: Increases the spell's maximum number of casts per turn by
+Girdle Belt: no longer requires a line of sight
+Girdle Belt: Increases the spell's Criticals by%
+Belt Urgid: Increases the spell's maximum number of casts per turn by
+Belt Urgid: Increases the spell's maximum range by
+Belt Urgid: Increases the spell's maximum range by
+Belt Urgid: Increases the spell's maximum range by
+Belt Urgid: Increases the spell's maximum range by
+Belt Urgid: Increases the spell's Criticals by%
+Belt Urgid: Reduces the spell's AP cost by
+Belt Urgid: Increases the spell's maximum range by
+Boot-a-Hoop: Increases the spell's maximum range by
+Boot-a-Hoop: Reduces the spell's cooldown period by
+Boot-a-Hoop: Increases the spell's maximum range by
+Boot-a-Hoop: Increases the spell's Criticals by%
+Boot-a-Hoop: Reduces the spell's cooldown period by
+Boot-a-Hoop: Deactivates casting of the spell on an occupied cell
+Boot-a-Hoop: Reduces the spell's AP cost by
+Boot-a-Hoop: Increases the spell's maximum range by
+Sleephairs: Reduces the spell's AP cost by
+Sleephairs: Reduces the spell's AP cost by
+Sleephairs: Increases the spell's maximum range by
+Sleephairs: Reduces the spell's AP cost by
+Sleephairs: Reduces the spell's cooldown period by
+Sleephairs: Reduces the spell's cooldown period by
+Sleephairs: Increases the spell's maximum range by
+Sleephairs: Reduces the spell's cooldown period by
+Boots Hox: Increases the spell's maximum range by
+Boots Hox: Increases the spell's Criticals by%
+Boots Hox: Increases the spell's Criticals by%
+Boots Hox: Increases the spell's maximum range by
+Boots Hox: Increases the spell's maximum range by
+Boots Hox: Increases the spell's maximum range by
+Boots Hox: Increases the spell's maximum range by
+Boots Hox: Increases the spell's fixed damage by
+Shal'Hal Boots: Increases the spell's Criticals by%
+Shal'Hal Boots: Increases the spell's maximum range by
+Shal'Hal Boots: Reduces the spell's AP cost by
+Shal'Hal Boots: is no longer linear
+Shal'Hal Boots: Reduces the spell's AP cost by
+Shal'Hal Boots: Reduces the spell's AP cost by
+Shal'Hal Boots: Makes the spell's range modifiable
+Shal'Hal Boots: no longer requires a line of sight
+Antibooties: no longer requires a line of sight
+Antibooties: no longer requires a line of sight
+Antibooties: Increases the spell's maximum range by
+Antibooties: Reduces the spell's AP cost by
+Antibooties: Reduces the spell's AP cost by
+Antibooties: is no longer linear
+Antibooties: Reduces the spell's AP cost by
+Antibooties: Makes the spell's range modifiable
+Boots Hanik: Increases the spell's maximum number of casts per turn by
+Boots Hanik: Reduces the spell's cooldown period by
+Boots Hanik: Reduces the spell's cooldown period by
+Boots Hanik: Increases the spell's maximum range by
+Boots Hanik: Increases the spell's Criticals by%
+Boots Hanik: Reduces the spell's cooldown period by
+Boots Hanik: Reduces the spell's AP cost by
+Boots Hanik: Increases the spell's maximum range by
+Nailed Thongs: Reduces the spell's cooldown period by
+Nailed Thongs: Increases the spell's Criticals by%
+Nailed Thongs: Increases the spell's Criticals by%
+Nailed Thongs: Increases the spell's Criticals by%
+Nailed Thongs: Reduces the spell's cooldown period by
+Nailed Thongs: Reduces the spell's cooldown period by
+Nailed Thongs: Increases the spell's maximum range by
+Nailed Thongs: Increases the spell's maximum number of casts per turn by
+Wawka Boots: Increases the spell's maximum range by
+Wawka Boots: is no longer linear
+Wawka Boots: Reduces the spell's AP cost by
+Wawka Boots: no longer requires a line of sight
+Wawka Boots: no longer requires a line of sight
+Wawka Boots: Increases the spell's maximum range by
+Wawka Boots: Increases the spell's maximum range by
+Wawka Boots: Increases the spell's maximum range by
+Geta Bernacle: Reduces the spell's AP cost by
+Geta Bernacle: Increases the spell's maximum range by
+Geta Bernacle: is no longer linear
+Geta Bernacle: Increases the spell's Criticals by%
+Geta Bernacle: Increases the spell's maximum range by
+Geta Bernacle: Reduces the spell's AP cost by
+Geta Bernacle: Reduces the spell's AP cost by
+Geta Bernacle: Increases the spell's Criticals by%
+Honoh Ring: Reduces the spell's AP cost by
+Honoh Ring: Increases the spell's Criticals by%
+Honoh Ring: Increases the spell's Criticals by%
+Honoh Ring: Reduces the spell's AP cost by
+Honoh Ring: Increases the spell's Criticals by%
+Honoh Ring: Increases the spell's fixed damage by
+Honoh Ring: Increases the spell's maximum range by
+Honoh Ring: Reduces the spell's cooldown period by
+Blaber Ring: Increases the spell's maximum range by
+Blaber Ring: Increases the spell's fixed damage by
+Blaber Ring: Reduces the spell's cooldown period by
+Blaber Ring: Reduces the spell's cooldown period by
+Blaber Ring: Increases the spell's maximum range by
+Blaber Ring: Increases the spell's maximum range by
+Blaber Ring: Reduces the spell's cooldown period by
+Blaber Ring: Increases the spell's maximum range by
+Lion Ring: Increases the spell's maximum number of casts per turn by
+Lion Ring: Increases the spell's maximum range by
+Lion Ring: Increases the spell's maximum range by
+Lion Ring: Reduces the spell's AP cost by
+Lion Ring: Increases the spell's maximum range by
+Lion Ring: Increases the spell's Criticals by%
+Lion Ring: Increases the spell's maximum range by
+Lion Ring: Makes the spell's range modifiable
+Ring Bellious: no longer requires a line of sight
+Ring Bellious: Increases the spell's Criticals by%
+Ring Bellious: Reduces the spell's AP cost by
+Ring Bellious: Reduces the spell's AP cost by
+Ring Bellious: no longer requires a line of sight
+Ring Bellious: Increases the spell's maximum range by
+Ring Bellious: is no longer linear
+Ring Bellious: Increases the spell's maximum range by
+Memo Ring: no longer requires a line of sight
+Memo Ring: is no longer linear
+Memo Ring: Increases the spell's maximum range by
+Memo Ring: Increases the spell's Criticals by%
+Memo Ring: Increases the spell's maximum range by
+Memo Ring: no longer requires a line of sight
+Memo Ring: Increases the spell's Criticals by%
+Memo Ring: Increases the spell's maximum range by
+Rememb Ring: Reduces the spell's AP cost by
+Rememb Ring: Reduces the spell's AP cost by
+Rememb Ring: Increases the spell's maximum range by
+Rememb Ring: Increases the spell's fixed damage by
+Rememb Ring: Increases the spell's maximum range by
+Rememb Ring: Reduces the spell's cooldown period by
+Rememb Ring: Reduces the spell's AP cost by
+Rememb Ring: Increases the spell's maximum range by
+Chee Ring: no longer requires a line of sight
+Chee Ring: Reduces the spell's cooldown period by
+Chee Ring: no longer requires a line of sight
+Chee Ring: no longer requires a line of sight
+Chee Ring: Increases the spell's maximum number of casts per target by
+Chee Ring: Increases the spell's maximum number of casts per turn by
+Chee Ring: Increases the spell's maximum number of casts per turn by
+Chee Ring: Reduces the spell's AP cost by
+Ear Ring: Increases the spell's maximum range by
+Ear Ring: Increases the spell's Criticals by%
+Ear Ring: Increases the spell's maximum range by
+Ear Ring: Increases the spell's maximum range by
+Ear Ring: Reduces the spell's cooldown period by
+Ear Ring: is no longer linear
+Ear Ring: is no longer linear
+Ear Ring: Reduces the spell's AP cost by
+Elkebi Ring: Increases the spell's maximum range by
+Elkebi Ring: Reduces the spell's AP cost by
+Elkebi Ring: Increases the spell's maximum number of casts per turn by
+Elkebi Ring: Increases the spell's maximum range by
+Elkebi Ring: Increases the spell's maximum range by
+Elkebi Ring: Increases the spell's Criticals by%
+Elkebi Ring: Increases the spell's maximum range by
+Elkebi Ring: Increases the spell's maximum range by
+Subma Ring: no longer requires a line of sight
+Subma Ring: Reduces the spell's AP cost by
+Subma Ring: Increases the spell's maximum range by
+Subma Ring: Makes the spell's range modifiable
+Subma Ring: Increases the spell's maximum range by
+Subma Ring: Increases the spell's Criticals by%
+Subma Ring: Increases the spell's maximum range by
+Subma Ring: Increases the spell's Criticals by%
+Hai Ring: is no longer linear
+Hai Ring: Reduces the spell's cooldown period by
+Hai Ring: is no longer linear
+Hai Ring: Reduces the spell's AP cost by
+Hai Ring: is no longer linear
+Hai Ring: Increases the spell's maximum number of casts per turn by
+Hai Ring: Increases the spell's fixed damage by
+Hai Ring: Reduces the spell's cooldown period by
+Ring Neinwonwon: Reduces the spell's AP cost by
+Ring Neinwonwon: Reduces the spell's cooldown period by
+Ring Neinwonwon: Reduces the spell's cooldown period by
+Ring Neinwonwon: no longer requires a line of sight
+Ring Neinwonwon: Increases the spell's Criticals by%
+Ring Neinwonwon: Reduces the spell's AP cost by
+Ring Neinwonwon: Increases the spell's Criticals by%
+Ring Neinwonwon: Increases the spell's maximum range by
+Crusuede Shoes: Increases the spell's Criticals by%
+Crusuede Shoes: Increases the spell's maximum range by
+Crusuede Shoes: Increases the spell's fixed damage by
+Crusuede Shoes: Reduces the spell's AP cost by
+Crusuede Shoes: Reduces the spell's AP cost by
+Crusuede Shoes: Increases the spell's maximum range by
+Crusuede Shoes: Increases the spell's Criticals by%
+Crusuede Shoes: Increases the spell's maximum range by
+Relief Boots: Increases the spell's maximum range by
+Relief Boots: Reduces the spell's cooldown period by
+Relief Boots: is no longer linear
+Relief Boots: Reduces the spell's AP cost by
+Relief Boots: Reduces the spell's AP cost by
+Relief Boots: Increases the spell's Criticals by%
+Relief Boots: no longer requires a line of sight
+Relief Boots: Increases the spell's maximum range by
+Veggie Boots: Reduces the spell's AP cost by
+Veggie Boots: Increases the spell's Criticals by%
+Veggie Boots: Reduces the spell's cooldown period by
+Veggie Boots: Increases the spell's maximum number of casts per turn by
+Veggie Boots: Increases the spell's maximum range by
+Veggie Boots: Increases the spell's maximum number of casts per turn by
+Veggie Boots: Reduces the spell's AP cost by
+Veggie Boots: Increases the spell's Criticals by%
+Slump Necklace: Heal
+Slait Ring: Heal
+Siks Wonn Ein Boots: Heal
+Vampyre Ring: Number of victims:
+Vampyre Amulet: Number of victims:
+Vampyre Belt: Number of victims:
+Vampyre Cape: Number of victims:
+Vampyre Boots: Number of victims:
+Vampyre Mask: Number of victims:
+Trophy Dark Vlad Shield: Title:
+Trophy Moon Shield: Title:
+Trophy Soft Oak Shield: Title:
+Trophy Dragon Pig Shield: Title:
+Trophy Minotoror Shield: Title:
+Trophy Kimbo Shield: Title:
+Trophy Wa Wabbit Shield: Title:
+Trophy Koolich Shield: Title:
+Trophy Sphincter Cell Shield: Title:
+Trophy Bworker Shield: Title:
+Oxo Ring: Heal
+Stroy Zemol's Amulet: Heal
+Stroy Zemol's Belt: Heal
+Ogrine Seeker: emote
+Ogrine Seeker: Title:
+Haks Or Ring: Heal
+Phero-Cape: Someone's following you!
+Grillian's Boots: Heal
+Grillian's Amulet: Heal
+Ellie's Mental Amulet: Title:
+Ellie's Deluxe Mental Amulet: Title:
+Sinuous Amulet: Title:
+Hoodwink Headgear: no longer requires a line of sight
+Hoodwink Headgear: no longer requires a line of sight
+Hoodwink Headgear: Increases the spell's maximum range by
+Hoodwink Headgear: Increases the spell's maximum range by
+Hoodwink Headgear: Reduces the spell's cooldown period by
+Hoodwink Headgear: Increases the spell's maximum range by
+Hoodwink Headgear: Reduces the spell's AP cost by
+Hoodwink Headgear: Makes the spell's range modifiable
+Arpone Mask: Makes the spell's range modifiable
+Arpone Mask: Makes the spell's range modifiable
+Arpone Mask: Increases the spell's maximum range by
+Arpone Mask: Increases the spell's maximum range by
+Arpone Mask: Increases the spell's maximum range by
+Arpone Mask: Makes the spell's range modifiable
+Arpone Mask: no longer requires a line of sight
+Arpone Mask: Makes the spell's range modifiable
+Hanging Cloak: no longer requires a line of sight
+Hanging Cloak: no longer requires a line of sight
+Hanging Cloak: Increases the spell's maximum range by
+Hanging Cloak: Increases the spell's maximum range by
+Hanging Cloak: Reduces the spell's cooldown period by
+Hanging Cloak: Increases the spell's maximum range by
+Hanging Cloak: Reduces the spell's AP cost by
+Hanging Cloak: Increases the spell's maximum number of casts per turn by
+Bangin' Cloak: Makes the spell's range modifiable
+Bangin' Cloak: Makes the spell's range modifiable
+Bangin' Cloak: Makes the spell's range modifiable
+Bangin' Cloak: Increases the spell's maximum range by
+Bangin' Cloak: Reduces the spell's AP cost by
+Bangin' Cloak: Makes the spell's range modifiable
+Bangin' Cloak: Reduces the spell's AP cost by
+Bangin' Cloak: Increases the spell's maximum number of casts per target by
+Doc Post-Martems: no longer requires a line of sight
+Doc Post-Martems: no longer requires a line of sight
+Doc Post-Martems: no longer requires a line of sight
+Doc Post-Martems: Increases the spell's maximum range by
+Doc Post-Martems: Increases the spell's maximum range by
+Doc Post-Martems: Increases the spell's maximum range by
+Doc Post-Martems: Reduces the spell's AP cost by
+Doc Post-Martems: Increases the spell's maximum range by
+Notts O'Clever Clogs: Makes the spell's range modifiable
+Notts O'Clever Clogs: Makes the spell's range modifiable
+Notts O'Clever Clogs: is no longer linear
+Notts O'Clever Clogs: no longer requires a line of sight
+Notts O'Clever Clogs: Increases the spell's maximum range by
+Notts O'Clever Clogs: no longer requires a line of sight
+Notts O'Clever Clogs: Reduces the spell's AP cost by
+Notts O'Clever Clogs: no longer requires a line of sight
+Glisserin Belt: no longer requires a line of sight
+Glisserin Belt: Increases the spell's maximum number of casts per turn by
+Glisserin Belt: Increases the spell's Criticals by%
+Glisserin Belt: Increases the spell's Criticals by%
+Glisserin Belt: is no longer linear
+Glisserin Belt: Increases the spell's Criticals by%
+Glisserin Belt: Increases the spell's maximum range by
+Glisserin Belt: no longer requires a line of sight
+Retchual Rope: is no longer linear
+Retchual Rope: Reduces the spell's AP cost by
+Retchual Rope: Makes the spell's range modifiable
+Retchual Rope: Makes the spell's range modifiable
+Retchual Rope: Increases the spell's maximum range by
+Retchual Rope: Reduces the spell's AP cost by
+Retchual Rope: Reduces the spell's AP cost by
+Retchual Rope: Increases the spell's maximum range by
+Enig Mittens: no longer requires a line of sight
+Enig Mittens: no longer requires a line of sight
+Enig Mittens: no longer requires a line of sight
+Enig Mittens: Increases the spell's maximum range by
+Enig Mittens: Increases the spell's Criticals by%
+Enig Mittens: Increases the spell's maximum range by
+Enig Mittens: Reduces the spell's cooldown period by
+Enig Mittens: Increases the spell's maximum range by
+Mithik Bracelet: Increases the spell's maximum range by
+Mithik Bracelet: Increases the spell's maximum range by
+Mithik Bracelet: Increases the spell's maximum range by
+Mithik Bracelet: no longer requires a line of sight
+Mithik Bracelet: Reduces the spell's AP cost by
+Mithik Bracelet: no longer requires a line of sight
+Mithik Bracelet: Increases the spell's maximum range by
+Mithik Bracelet: no longer requires a line of sight
+Rokwa Headband: Title:
+Metamunch Kin's Helmet: Title:
+Fleaster Amulet: Title:
+Karmeleon: emote
+Karmeleon: emote
+Mad Chatter: Title:
+Thermal Cloak: Title:
+Diving Bell End: Increases the spell's maximum range by
+Diving Bell End: no longer requires a line of sight
+Diving Bell End: Reduces the spell's AP cost by
+Diving Bell End: Increases the spell's maximum range by
+Diving Bell End: no longer requires a line of sight
+Diving Bell End: Increases the spell's maximum range by
+Diving Bell End: Makes the spell's range modifiable
+Diving Bell End: Increases the spell's Criticals by%
+Tanked Backpack: Reduces the spell's cooldown period by
+Tanked Backpack: no longer requires a line of sight
+Tanked Backpack: Reduces the spell's cooldown period by
+Tanked Backpack: no longer requires a line of sight
+Tanked Backpack: Reduces the spell's AP cost by
+Tanked Backpack: Reduces the spell's AP cost by
+Tanked Backpack: Increases the spell's Criticals by%
+Tanked Backpack: Reduces the spell's AP cost by
+Roboots: Increases the spell's maximum range by
+Roboots: no longer requires a line of sight
+Roboots: Increases the spell's maximum range by
+Roboots: no longer requires a line of sight
+Roboots: no longer requires a line of sight
+Roboots: Reduces the spell's AP cost by
+Roboots: Increases's basic damage by
+Roboots: Increases the spell's fixed damage by
+Buoy's Belt: Increases the spell's maximum range by
+Buoy's Belt: Makes the spell's range modifiable
+Buoy's Belt: no longer requires a line of sight
+Buoy's Belt: Increases the spell's maximum number of casts per turn by
+Buoy's Belt: Increases the spell's maximum range by
+Buoy's Belt: Increases the spell's maximum range by
+Buoy's Belt: Increases the spell's maximum number of casts per target by
+Buoy's Belt: Reduces the spell's AP cost by
+Pressure Ring: Increases the spell's maximum range by
+Pressure Ring: no longer requires a line of sight
+Pressure Ring: Increases the spell's maximum range by
+Pressure Ring: Reduces the spell's AP cost by
+Pressure Ring: Makes the spell's range modifiable
+Pressure Ring: Reduces the spell's AP cost by
+Pressure Ring: no longer requires a line of sight
+Pressure Ring: Increases the spell's Criticals by%
+Ol' John's Troma: emote
+Ol' John's Troma: emote
+Ol' John's Troma: Title:
+Ol' John's Troma: Remaining uses:/
+Hairy Arachelmet: Someone's following you!
+Great Sweet Gum Wand: Someone's following you!
+Koalak Chest Bag: Someone's following you!
+Crashbang Staff: Someone's following you!
+Iop Wig: Someone's following you!
+Judge Lou's Gavel: Someone's following you!
+Pink Quacoif: Someone's following you!
+Baahboh Insignia: Title:
+Kwyness: emote
+Kwyness: emote
+Sirocco: emote
+Sirocco: emote
+Dehluge: emote
+Dehluge: emote
+Kompost: emote
+Kompost: emote
+Brulay: emote
+Brulay: emote
+Questhead: Remaining uses:/
+Drhexler: emote
+Drhexler: emote
+Drhexler: emote
+Eliom: emote
+Eliom: emote
+Friendrake: emote
+Friendrake: emote
+Krosmetic Mask: Makes the spell's range modifiable
+Krosmetic Mask: Makes the spell's range modifiable
+Krosmetic Mask: Makes the spell's range modifiable
+Krosmetic Mask: Makes the spell's range modifiable
+Krosmetic Mask: Increases the spell's maximum range by
+Krosmetic Mask: Makes the spell's range modifiable
+Krosmetic Mask: Increases the spell's maximum range by
+Krosmetic Mask: Increases the spell's maximum range by
+Ortal Cloak: no longer requires a line of sight
+Ortal Cloak: Increases the spell's maximum number of casts per turn by
+Ortal Cloak: Increases the spell's maximum range by
+Ortal Cloak: Increases the spell's maximum number of casts per turn by
+Ortal Cloak: Reduces the spell's cooldown period by
+Ortal Cloak: Increases the spell's maximum range by
+Ortal Cloak: Increases the spell's maximum range by
+Ortal Cloak: Reduces the spell's cooldown period by
+Transit Boots: Increases the spell's maximum range by
+Transit Boots: no longer requires a line of sight
+Transit Boots: Reduces the spell's AP cost by
+Transit Boots: Increases the spell's maximum range by
+Transit Boots: Reduces the spell's AP cost by
+Transit Boots: Reduces the spell's AP cost by
+Transit Boots: Reduces the spell's cooldown period by
+Transit Boots: Reduces the spell's AP cost by
+Cyclone Belt: Reduces the spell's cooldown period by
+Cyclone Belt: Reduces the spell's cooldown period by
+Cyclone Belt: Increases the spell's maximum range by
+Cyclone Belt: Increases the spell's maximum range by
+Cyclone Belt: Makes the spell's range modifiable
+Cyclone Belt: Reduces the spell's AP cost by
+Cyclone Belt: Reduces the spell's AP cost by
+Cyclone Belt: Makes the spell's range modifiable
+Nova Ring: is no longer linear
+Nova Ring: Reduces the spell's AP cost by
+Nova Ring: Increases the spell's maximum range by
+Nova Ring: Makes the spell's range modifiable
+Nova Ring: Increases the spell's maximum range by
+Nova Ring: Makes the spell's range modifiable
+Nova Ring: Increases the spell's maximum range by
+Nova Ring: is no longer linear
+Fundamental Headdress: Reduces the spell's AP cost by
+Fundamental Headdress: no longer requires a line of sight
+Fundamental Headdress: Reduces the spell's AP cost by
+Fundamental Headdress: Increases the spell's maximum number of casts per turn by
+Fundamental Headdress: Increases the spell's Criticals by%
+Fundamental Headdress: is no longer linear
+Fundamental Headdress: Reduces the spell's AP cost by
+Fundamental Headdress: is no longer linear
+Fundamental Cape: Increases's basic damage by
+Fundamental Cape: Increases the spell's maximum range by
+Fundamental Cape: Increases the spell's maximum range by
+Fundamental Cape: Increases the spell's maximum number of casts per target by
+Fundamental Cape: Increases the spell's maximum range by
+Fundamental Cape: Increases the spell's maximum range by
+Fundamental Cape: Reduces the spell's AP cost by
+Fundamental Cape: Reduces the spell's cooldown period by
+Initial Boots: is no longer linear
+Initial Boots: no longer requires a line of sight
+Initial Boots: Makes the spell's range modifiable
+Initial Boots: is no longer linear
+Initial Boots: no longer requires a line of sight
+Initial Boots: Increases the spell's maximum number of casts per turn by
+Initial Boots: Increases the spell's maximum range by
+Initial Boots: no longer requires a line of sight
+The Elebelt: Increases the spell's maximum range by
+The Elebelt: Increases the spell's maximum number of casts per turn by
+The Elebelt: is no longer linear
+The Elebelt: Increases the spell's Criticals by%
+The Elebelt: no longer requires a line of sight
+The Elebelt: Increases the spell's maximum range by
+The Elebelt: no longer requires a line of sight
+The Elebelt: Increases the spell's maximum range by
+Oringinal: Reduces the spell's cooldown period by
+Oringinal: Reduces the spell's AP cost by
+Oringinal: Increases the spell's maximum range by
+Oringinal: no longer requires a line of sight
+Oringinal: Increases the spell's maximum range by
+Oringinal: Increases the spell's maximum range by
+Oringinal: Increases the spell's maximum range by
+Oringinal: Makes the spell's range modifiable
+Kwismas Ring: Heal
+Bone Band: Increases the spell's maximum number of casts per target by
+Bone Band: no longer requires a line of sight
+Bone Band: Increases the spell's maximum number of casts per target by
+Bone Band: no longer requires a line of sight
+Bone Band: Reduces the spell's AP cost by
+Bone Band: Reduces the spell's cooldown period by
+Bone Band: Reduces the spell's cooldown period by
+Bone Band: Reduces the spell's cooldown period by
+Bootarkies: no longer requires a line of sight
+Bootarkies: no longer requires a line of sight
+Bootarkies: is no longer linear
+Bootarkies: no longer requires a line of sight
+Bootarkies: Reduces the spell's AP cost by
+Bootarkies: Reduces the spell's AP cost by
+Bootarkies: Reduces the spell's AP cost by
+Bootarkies: is no longer linear
+Jusfur Wrap: Reduces the spell's AP cost by
+Jusfur Wrap: Increases the spell's maximum range by
+Jusfur Wrap: no longer requires a line of sight
+Jusfur Wrap: Increases the spell's maximum range by
+Jusfur Wrap: is no longer linear
+Jusfur Wrap: is no longer linear
+Jusfur Wrap: Reduces the spell's cooldown period by
+Jusfur Wrap: Increases the spell's maximum number of casts per turn by
+Helmeteo: Increases the spell's maximum range by
+Helmeteo: no longer requires a line of sight
+Helmeteo: Increases the spell's maximum number of casts per target by
+Helmeteo: Reduces the spell's AP cost by
+Helmeteo: no longer requires a line of sight
+Helmeteo: no longer requires a line of sight
+Helmeteo: is no longer linear
+Helmeteo: is no longer linear
+Belting Belt: Increases the spell's maximum number of casts per target by
+Belting Belt: Reduces the spell's AP cost by
+Belting Belt: Increases the spell's maximum range by
+Belting Belt: is no longer linear
+Belting Belt: Reduces the spell's AP cost by
+Belting Belt: Reduces the spell's AP cost by
+Belting Belt: Increases the spell's maximum number of casts per turn by
+Belting Belt: is no longer linear
+Dauge: emote
+Dauge: emote
+Gobbalator: emote
+Gobbalux: emote
+Necronyx Sword: Add a temporary spell
+Khardboard Celestial Brooch: Remaining uses:/
+Khardboard Moowolf Belt: Remaining uses:/
+Khardboard Dazzling Cloak: Remaining uses:/
+Khardboard Goultard: Remaining uses:/
+Khardboard Getas: Remaining uses:/
+Khardboard Bowisse's Shield: Remaining uses:/
+Khardboard Gobball Headgear: Remaining uses:/
+Khardboard Gelano: Remaining uses:/
+Bramble Wall: % Weapon Resistance
+Helm of the Heroes: Increases the spell's maximum range by
+Helm of the Heroes: Increases the spell's maximum number of casts per turn by
+Helm of the Heroes: Increases the spell's maximum range by
+Helm of the Heroes: Reduces the spell's AP cost by
+Helm of the Heroes: Increases the spell's maximum range by
+Helm of the Heroes: Reduces the spell's AP cost by
+Helm of the Heroes: Makes the spell's range modifiable
+Helm of the Heroes: Reduces the spell's AP cost by
+Cape of the Courageous: Increases the spell's maximum range by
+Cape of the Courageous: Reduces the spell's AP cost by
+Cape of the Courageous: Increases the spell's maximum number of casts per turn by
+Cape of the Courageous: Increases the spell's maximum number of casts per target by
+Cape of the Courageous: Reduces the spell's cooldown period by
+Cape of the Courageous: Increases the spell's maximum range by
+Cape of the Courageous: Reduces the spell's cooldown period by
+Cape of the Courageous: Reduces the spell's cooldown period by
+Sash of the Saviour: Increases the spell's maximum range by
+Sash of the Saviour: Increases the spell's maximum range by
+Sash of the Saviour: Reduces the spell's AP cost by
+Sash of the Saviour: Increases the spell's maximum number of casts per turn by
+Sash of the Saviour: Increases the spell's maximum number of casts per turn by
+Sash of the Saviour: Increases the spell's maximum range by
+Sash of the Saviour: Increases the spell's maximum range by
+Sash of the Saviour: Reduces the spell's AP cost by
+Leggings of the Legend: Increases the spell's maximum range by
+Leggings of the Legend: Increases the spell's maximum range by
+Leggings of the Legend: Increases the spell's maximum range by
+Leggings of the Legend: Increases the spell's maximum number of casts per turn by
+Leggings of the Legend: Increases the spell's maximum range by
+Leggings of the Legend: Reduces the spell's AP cost by
+Leggings of the Legend: Reduces the spell's AP cost by
+Leggings of the Legend: Increases the spell's maximum number of casts per target by
+Gloves of the Great: Reduces the spell's AP cost by
+Gloves of the Great: Reduces the spell's AP cost by
+Gloves of the Great: Increases the spell's maximum range by
+Gloves of the Great: Reduces the spell's AP cost by
+Gloves of the Great: Reduces the spell's AP cost by
+Gloves of the Great: Increases the spell's maximum range by
+Gloves of the Great: Reduces the spell's cooldown period by
+Gloves of the Great: Reduces the spell's AP cost by
+Ginger Dragoturkey: Heal
+Ivory and Ginger Dragoturkey: Heal
+Ebony and Ginger Dragoturkey: Heal
+Almond and Ginger Dragoturkey: Heal
+Golden and Ginger Dragoturkey: Heal
+Emerald and Ginger Dragoturkey: Heal
+Turquoise and Ginger Dragoturkey: Heal
+Crimson and Ginger Dragoturkey: Heal
+Feathered Dragoturkey: Reflects damage
