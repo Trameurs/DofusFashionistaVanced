@@ -92,5 +92,5 @@ run_fashionista.bat
 
 # Reference
 
-This is a fork of https://github.com/PiwiSlayer/DofusFashionista
+This is a fork of https://github.com/PiwiSlayer/DofusFashionista      
 The scraper now uses https://github.com/dofusdude/doduapi
