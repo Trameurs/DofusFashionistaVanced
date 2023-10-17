@@ -156606,7 +156606,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 1,
         "ankama_type": "mounts",
         "name": "Wild Almond Dragoturkey",
         "w_type": "Pet",
@@ -156616,7 +156616,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 3,
         "ankama_type": "mounts",
         "name": "Ebony Dragoturkey",
         "w_type": "Pet",
@@ -156637,7 +156637,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 6,
         "ankama_type": "mounts",
         "name": "Wild Ginger Dragoturkey",
         "w_type": "Pet",
@@ -156647,7 +156647,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 9,
         "ankama_type": "mounts",
         "name": "Ebony and Ivory Dragoturkey",
         "w_type": "Pet",
@@ -156673,7 +156673,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 10,
         "ankama_type": "mounts",
         "name": "Ginger Dragoturkey",
         "w_type": "Pet",
@@ -156694,7 +156694,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 11,
         "ankama_type": "mounts",
         "name": "Ivory and Ginger Dragoturkey",
         "w_type": "Pet",
@@ -156720,7 +156720,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 12,
         "ankama_type": "mounts",
         "name": "Ebony and Ginger Dragoturkey",
         "w_type": "Pet",
@@ -156746,7 +156746,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 15,
         "ankama_type": "mounts",
         "name": "Turquoise Dragoturkey",
         "w_type": "Pet",
@@ -156767,7 +156767,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 16,
         "ankama_type": "mounts",
         "name": "Ivory Dragoturkey",
         "w_type": "Pet",
@@ -156788,7 +156788,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 17,
         "ankama_type": "mounts",
         "name": "Indigo Dragoturkey",
         "w_type": "Pet",
@@ -156809,7 +156809,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 18,
         "ankama_type": "mounts",
         "name": "Golden Dragoturkey",
         "w_type": "Pet",
@@ -156830,7 +156830,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 19,
         "ankama_type": "mounts",
         "name": "Crimson Dragoturkey",
         "w_type": "Pet",
@@ -156851,7 +156851,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 20,
         "ankama_type": "mounts",
         "name": "Almond Dragoturkey",
         "w_type": "Pet",
@@ -156872,7 +156872,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 21,
         "ankama_type": "mounts",
         "name": "Emerald Dragoturkey",
         "w_type": "Pet",
@@ -156893,7 +156893,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 22,
         "ankama_type": "mounts",
         "name": "Orchid Dragoturkey",
         "w_type": "Pet",
@@ -156914,7 +156914,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 23,
         "ankama_type": "mounts",
         "name": "Plum Dragoturkey",
         "w_type": "Pet",
@@ -156935,7 +156935,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 33,
         "ankama_type": "mounts",
         "name": "Almond and Golden Dragoturkey",
         "w_type": "Pet",
@@ -156961,7 +156961,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 34,
         "ankama_type": "mounts",
         "name": "Almond and Ebony Dragoturkey",
         "w_type": "Pet",
@@ -156987,7 +156987,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 35,
         "ankama_type": "mounts",
         "name": "Almond and Emerald Dragoturkey",
         "w_type": "Pet",
@@ -157013,7 +157013,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 36,
         "ankama_type": "mounts",
         "name": "Almond and Indigo Dragoturkey",
         "w_type": "Pet",
@@ -157039,7 +157039,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 37,
         "ankama_type": "mounts",
         "name": "Almond and Ivory Dragoturkey",
         "w_type": "Pet",
@@ -157065,7 +157065,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 38,
         "ankama_type": "mounts",
         "name": "Almond and Ginger Dragoturkey",
         "w_type": "Pet",
@@ -157091,7 +157091,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 39,
         "ankama_type": "mounts",
         "name": "Almond and Turquoise Dragoturkey",
         "w_type": "Pet",
@@ -157117,7 +157117,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 40,
         "ankama_type": "mounts",
         "name": "Almond and Orchid Dragoturkey",
         "w_type": "Pet",
@@ -157143,7 +157143,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 41,
         "ankama_type": "mounts",
         "name": "Almond and Crimson Dragoturkey",
         "w_type": "Pet",
@@ -157169,7 +157169,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 42,
         "ankama_type": "mounts",
         "name": "Golden and Ebony Dragoturkey",
         "w_type": "Pet",
@@ -157195,7 +157195,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 43,
         "ankama_type": "mounts",
         "name": "Golden and Emerald Dragoturkey",
         "w_type": "Pet",
@@ -157221,7 +157221,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 44,
         "ankama_type": "mounts",
         "name": "Golden and Indigo Dragoturkey",
         "w_type": "Pet",
@@ -157247,7 +157247,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 45,
         "ankama_type": "mounts",
         "name": "Golden and Ivory Dragoturkey",
         "w_type": "Pet",
@@ -157273,7 +157273,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 46,
         "ankama_type": "mounts",
         "name": "Golden and Ginger Dragoturkey",
         "w_type": "Pet",
@@ -157299,7 +157299,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 47,
         "ankama_type": "mounts",
         "name": "Golden and Turquoise Dragoturkey",
         "w_type": "Pet",
@@ -157325,7 +157325,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 48,
         "ankama_type": "mounts",
         "name": "Golden and Orchid Dragoturkey",
         "w_type": "Pet",
@@ -157351,7 +157351,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 49,
         "ankama_type": "mounts",
         "name": "Golden and Crimson Dragoturkey",
         "w_type": "Pet",
@@ -157377,7 +157377,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 50,
         "ankama_type": "mounts",
         "name": "Ebony and Emerald Dragoturkey",
         "w_type": "Pet",
@@ -157403,7 +157403,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 51,
         "ankama_type": "mounts",
         "name": "Ebony and Indigo Dragoturkey",
         "w_type": "Pet",
@@ -157429,7 +157429,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 52,
         "ankama_type": "mounts",
         "name": "Ebony and Turquoise Dragoturkey",
         "w_type": "Pet",
@@ -157455,7 +157455,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 53,
         "ankama_type": "mounts",
         "name": "Ebony and Orchid Dragoturkey",
         "w_type": "Pet",
@@ -157481,7 +157481,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 54,
         "ankama_type": "mounts",
         "name": "Ebony and Crimson Dragoturkey",
         "w_type": "Pet",
@@ -157507,7 +157507,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 55,
         "ankama_type": "mounts",
         "name": "Emerald and Indigo Dragoturkey",
         "w_type": "Pet",
@@ -157533,7 +157533,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 56,
         "ankama_type": "mounts",
         "name": "Emerald and Ivory Dragoturkey",
         "w_type": "Pet",
@@ -157559,7 +157559,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 57,
         "ankama_type": "mounts",
         "name": "Emerald and Ginger Dragoturkey",
         "w_type": "Pet",
@@ -157585,7 +157585,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 58,
         "ankama_type": "mounts",
         "name": "Emerald and Turquoise Dragoturkey",
         "w_type": "Pet",
@@ -157611,7 +157611,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 59,
         "ankama_type": "mounts",
         "name": "Emerald and Orchid Dragoturkey",
         "w_type": "Pet",
@@ -157637,7 +157637,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 60,
         "ankama_type": "mounts",
         "name": "Emerald and Crimson Dragoturkey",
         "w_type": "Pet",
@@ -157663,7 +157663,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 61,
         "ankama_type": "mounts",
         "name": "Indigo and Ivory Dragoturkey",
         "w_type": "Pet",
@@ -157689,7 +157689,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 62,
         "ankama_type": "mounts",
         "name": "Indigo and Ginger Dragoturkey",
         "w_type": "Pet",
@@ -157715,7 +157715,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 63,
         "ankama_type": "mounts",
         "name": "Indigo and Turquoise Dragoturkey",
         "w_type": "Pet",
@@ -157741,7 +157741,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 64,
         "ankama_type": "mounts",
         "name": "Indigo and Orchid Dragoturkey",
         "w_type": "Pet",
@@ -157767,7 +157767,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 65,
         "ankama_type": "mounts",
         "name": "Indigo and Crimson Dragoturkey",
         "w_type": "Pet",
@@ -157793,7 +157793,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 66,
         "ankama_type": "mounts",
         "name": "Ivory and Turquoise Dragoturkey",
         "w_type": "Pet",
@@ -157819,7 +157819,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 67,
         "ankama_type": "mounts",
         "name": "Ivory and Orchid Dragoturkey",
         "w_type": "Pet",
@@ -157845,7 +157845,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 68,
         "ankama_type": "mounts",
         "name": "Ivory and Crimson Dragoturkey",
         "w_type": "Pet",
@@ -157871,7 +157871,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 69,
         "ankama_type": "mounts",
         "name": "Turquoise and Ginger Dragoturkey",
         "w_type": "Pet",
@@ -157897,7 +157897,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 70,
         "ankama_type": "mounts",
         "name": "Orchid and Ginger Dragoturkey",
         "w_type": "Pet",
@@ -157923,7 +157923,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 71,
         "ankama_type": "mounts",
         "name": "Crimson and Ginger Dragoturkey",
         "w_type": "Pet",
@@ -157949,7 +157949,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 72,
         "ankama_type": "mounts",
         "name": "Turquoise and Orchid Dragoturkey",
         "w_type": "Pet",
@@ -157975,7 +157975,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 73,
         "ankama_type": "mounts",
         "name": "Turquoise and Crimson Dragoturkey",
         "w_type": "Pet",
@@ -158001,7 +158001,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 74,
         "ankama_type": "mounts",
         "name": "Wild Golden Dragoturkey",
         "w_type": "Pet",
@@ -158011,7 +158011,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 76,
         "ankama_type": "mounts",
         "name": "Orchid and Crimson Dragoturkey",
         "w_type": "Pet",
@@ -158037,7 +158037,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 77,
         "ankama_type": "mounts",
         "name": "Plum and Almond Dragoturkey",
         "w_type": "Pet",
@@ -158063,7 +158063,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 78,
         "ankama_type": "mounts",
         "name": "Plum and Golden Dragoturkey",
         "w_type": "Pet",
@@ -158089,7 +158089,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 79,
         "ankama_type": "mounts",
         "name": "Plum and Ebony Dragoturkey",
         "w_type": "Pet",
@@ -158115,7 +158115,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 80,
         "ankama_type": "mounts",
         "name": "Plum and Emerald Dragoturkey",
         "w_type": "Pet",
@@ -158141,7 +158141,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 82,
         "ankama_type": "mounts",
         "name": "Plum and Indigo Dragoturkey",
         "w_type": "Pet",
@@ -158167,7 +158167,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 83,
         "ankama_type": "mounts",
         "name": "Plum and Ivory Dragoturkey",
         "w_type": "Pet",
@@ -158193,7 +158193,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 84,
         "ankama_type": "mounts",
         "name": "Plum and Ginger Dragoturkey",
         "w_type": "Pet",
@@ -158219,7 +158219,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 85,
         "ankama_type": "mounts",
         "name": "Plum and Turquoise Dragoturkey",
         "w_type": "Pet",
@@ -158245,7 +158245,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 86,
         "ankama_type": "mounts",
         "name": "Plum and Orchid Dragoturkey",
         "w_type": "Pet",
@@ -158271,7 +158271,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 87,
         "ankama_type": "mounts",
         "name": "Plum and Crimson Dragoturkey",
         "w_type": "Pet",
@@ -158297,7 +158297,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 88,
         "ankama_type": "mounts",
         "name": "Armoured Dragoturkey",
         "w_type": "Pet",
@@ -158338,7 +158338,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 89,
         "ankama_type": "mounts",
         "name": "Feathered Dragoturkey",
         "w_type": "Pet",
@@ -158359,7 +158359,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 90,
         "ankama_type": "mounts",
         "name": "Orchid Seemyool",
         "w_type": "Pet",
@@ -158380,7 +158380,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 91,
         "ankama_type": "mounts",
         "name": "Ebony Seemyool",
         "w_type": "Pet",
@@ -158401,7 +158401,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 92,
         "ankama_type": "mounts",
         "name": "Indigo Seemyool",
         "w_type": "Pet",
@@ -158422,7 +158422,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 93,
         "ankama_type": "mounts",
         "name": "Crimson Seemyool",
         "w_type": "Pet",
@@ -158443,7 +158443,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 94,
         "ankama_type": "mounts",
         "name": "Golden Seemyool",
         "w_type": "Pet",
@@ -158464,7 +158464,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 95,
         "ankama_type": "mounts",
         "name": "Ginger Seemyool",
         "w_type": "Pet",
@@ -158485,7 +158485,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 96,
         "ankama_type": "mounts",
         "name": "Almond Seemyool",
         "w_type": "Pet",
@@ -158506,7 +158506,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 97,
         "ankama_type": "mounts",
         "name": "Ivory Seemyool",
         "w_type": "Pet",
@@ -158527,7 +158527,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 98,
         "ankama_type": "mounts",
         "name": "Turquoise Seemyool",
         "w_type": "Pet",
@@ -158548,7 +158548,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 99,
         "ankama_type": "mounts",
         "name": "Plum Seemyool",
         "w_type": "Pet",
@@ -158569,7 +158569,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 100,
         "ankama_type": "mounts",
         "name": "Emerald Seemyool",
         "w_type": "Pet",
@@ -158590,7 +158590,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 101,
         "ankama_type": "mounts",
         "name": "Golden and Crimson Seemyool",
         "w_type": "Pet",
@@ -158616,7 +158616,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 102,
         "ankama_type": "mounts",
         "name": "Indigo and Crimson Seemyool",
         "w_type": "Pet",
@@ -158642,7 +158642,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 103,
         "ankama_type": "mounts",
         "name": "Ebony and Crimson Seemyool",
         "w_type": "Pet",
@@ -158668,7 +158668,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 104,
         "ankama_type": "mounts",
         "name": "Orchid and Crimson Seemyool",
         "w_type": "Pet",
@@ -158694,7 +158694,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 105,
         "ankama_type": "mounts",
         "name": "Golden and Orchid Seemyool",
         "w_type": "Pet",
@@ -158720,7 +158720,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 106,
         "ankama_type": "mounts",
         "name": "Indigo and Orchid Seemyool",
         "w_type": "Pet",
@@ -158746,7 +158746,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 107,
         "ankama_type": "mounts",
         "name": "Ebony and Orchid Seemyool",
         "w_type": "Pet",
@@ -158772,7 +158772,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 108,
         "ankama_type": "mounts",
         "name": "Golden and Indigo Seemyool",
         "w_type": "Pet",
@@ -158798,7 +158798,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 109,
         "ankama_type": "mounts",
         "name": "Ebony and Indigo Seemyool",
         "w_type": "Pet",
@@ -158824,7 +158824,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 110,
         "ankama_type": "mounts",
         "name": "Golden and Ebony Seemyool",
         "w_type": "Pet",
@@ -158850,7 +158850,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 111,
         "ankama_type": "mounts",
         "name": "Ginger and Crimson Seemyool",
         "w_type": "Pet",
@@ -158876,7 +158876,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 112,
         "ankama_type": "mounts",
         "name": "Ginger and Orchid Seemyool",
         "w_type": "Pet",
@@ -158902,7 +158902,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 113,
         "ankama_type": "mounts",
         "name": "Ginger and Indigo Seemyool",
         "w_type": "Pet",
@@ -158928,7 +158928,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 114,
         "ankama_type": "mounts",
         "name": "Ginger and Ebony Seemyool",
         "w_type": "Pet",
@@ -158954,7 +158954,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 115,
         "ankama_type": "mounts",
         "name": "Ginger and Golden Seemyool",
         "w_type": "Pet",
@@ -158980,7 +158980,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 116,
         "ankama_type": "mounts",
         "name": "Ginger and Almond Seemyool",
         "w_type": "Pet",
@@ -159006,7 +159006,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 117,
         "ankama_type": "mounts",
         "name": "Crimson and Almond Seemyool",
         "w_type": "Pet",
@@ -159032,7 +159032,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 118,
         "ankama_type": "mounts",
         "name": "Orchid and Almond Seemyool",
         "w_type": "Pet",
@@ -159058,7 +159058,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 119,
         "ankama_type": "mounts",
         "name": "Indigo and Almond Seemyool",
         "w_type": "Pet",
@@ -159084,7 +159084,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 120,
         "ankama_type": "mounts",
         "name": "Ebony and Almond Seemyool",
         "w_type": "Pet",
@@ -159110,7 +159110,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 121,
         "ankama_type": "mounts",
         "name": "Golden and Almond Seemyool",
         "w_type": "Pet",
@@ -159136,7 +159136,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 122,
         "ankama_type": "mounts",
         "name": "Crimson and Ivory Seemyool",
         "w_type": "Pet",
@@ -159162,7 +159162,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 123,
         "ankama_type": "mounts",
         "name": "Orchid and Ivory Seemyool",
         "w_type": "Pet",
@@ -159188,7 +159188,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 124,
         "ankama_type": "mounts",
         "name": "Indigo and Ivory Seemyool",
         "w_type": "Pet",
@@ -159214,7 +159214,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 125,
         "ankama_type": "mounts",
         "name": "Ebony and Ivory Seemyool",
         "w_type": "Pet",
@@ -159240,7 +159240,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 126,
         "ankama_type": "mounts",
         "name": "Golden and Ivory Seemyool",
         "w_type": "Pet",
@@ -159266,7 +159266,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 127,
         "ankama_type": "mounts",
         "name": "Ginger and Ivory Seemyool",
         "w_type": "Pet",
@@ -159292,7 +159292,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 138,
         "ankama_type": "mounts",
         "name": "Almond and Ivory Seemyool",
         "w_type": "Pet",
@@ -159318,7 +159318,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 139,
         "ankama_type": "mounts",
         "name": "Turquoise and Ivory Seemyool",
         "w_type": "Pet",
@@ -159344,7 +159344,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 140,
         "ankama_type": "mounts",
         "name": "Turquoise and Crimson Seemyool",
         "w_type": "Pet",
@@ -159370,7 +159370,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 141,
         "ankama_type": "mounts",
         "name": "Turquoise and Indigo Seemyool",
         "w_type": "Pet",
@@ -159396,7 +159396,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 142,
         "ankama_type": "mounts",
         "name": "Turquoise and Ebony Seemyool",
         "w_type": "Pet",
@@ -159422,7 +159422,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 143,
         "ankama_type": "mounts",
         "name": "Turquoise and Ginger Seemyool",
         "w_type": "Pet",
@@ -159448,7 +159448,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 144,
         "ankama_type": "mounts",
         "name": "Turquoise and Almond Seemyool",
         "w_type": "Pet",
@@ -159474,7 +159474,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 145,
         "ankama_type": "mounts",
         "name": "Turquoise and Golden Seemyool",
         "w_type": "Pet",
@@ -159500,7 +159500,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 146,
         "ankama_type": "mounts",
         "name": "Plum and Crimson Seemyool",
         "w_type": "Pet",
@@ -159526,7 +159526,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 147,
         "ankama_type": "mounts",
         "name": "Plum and Orchid Seemyool",
         "w_type": "Pet",
@@ -159552,7 +159552,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 148,
         "ankama_type": "mounts",
         "name": "Plum and Indigo Seemyool",
         "w_type": "Pet",
@@ -159578,7 +159578,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 149,
         "ankama_type": "mounts",
         "name": "Plum and Ebony Seemyool",
         "w_type": "Pet",
@@ -159604,7 +159604,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 150,
         "ankama_type": "mounts",
         "name": "Plum and Golden Seemyool",
         "w_type": "Pet",
@@ -159630,7 +159630,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 151,
         "ankama_type": "mounts",
         "name": "Plum and Ginger Seemyool",
         "w_type": "Pet",
@@ -159656,7 +159656,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 152,
         "ankama_type": "mounts",
         "name": "Plum and Almond Seemyool",
         "w_type": "Pet",
@@ -159682,7 +159682,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 153,
         "ankama_type": "mounts",
         "name": "Plum and Ivory Seemyool",
         "w_type": "Pet",
@@ -159708,7 +159708,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 154,
         "ankama_type": "mounts",
         "name": "Plum and Turquoise Seemyool",
         "w_type": "Pet",
@@ -159734,7 +159734,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 155,
         "ankama_type": "mounts",
         "name": "Plum and Emerald Seemyool",
         "w_type": "Pet",
@@ -159760,7 +159760,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 156,
         "ankama_type": "mounts",
         "name": "Crimson and Emerald Seemyool",
         "w_type": "Pet",
@@ -159786,7 +159786,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 157,
         "ankama_type": "mounts",
         "name": "Orchid and Emerald Seemyool",
         "w_type": "Pet",
@@ -159812,7 +159812,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 158,
         "ankama_type": "mounts",
         "name": "Indigo and Emerald Seemyool",
         "w_type": "Pet",
@@ -159838,7 +159838,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 159,
         "ankama_type": "mounts",
         "name": "Ebony and Emerald Seemyool",
         "w_type": "Pet",
@@ -159864,7 +159864,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 160,
         "ankama_type": "mounts",
         "name": "Golden and Emerald Seemyool",
         "w_type": "Pet",
@@ -159890,7 +159890,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 161,
         "ankama_type": "mounts",
         "name": "Ginger and Emerald Seemyool",
         "w_type": "Pet",
@@ -159916,7 +159916,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 162,
         "ankama_type": "mounts",
         "name": "Almond and Emerald Seemyool",
         "w_type": "Pet",
@@ -159942,7 +159942,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 163,
         "ankama_type": "mounts",
         "name": "Ivory and Emerald Seemyool",
         "w_type": "Pet",
@@ -159968,7 +159968,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 164,
         "ankama_type": "mounts",
         "name": "Turquoise and Emerald Seemyool",
         "w_type": "Pet",
@@ -159994,7 +159994,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 165,
         "ankama_type": "mounts",
         "name": "Turquoise and Orchid Seemyool",
         "w_type": "Pet",
@@ -160020,7 +160020,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 167,
         "ankama_type": "mounts",
         "name": "Wild Golden Seemyool",
         "w_type": "Pet",
@@ -160030,7 +160030,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 168,
         "ankama_type": "mounts",
         "name": "Wild Crimson Seemyool",
         "w_type": "Pet",
@@ -160046,7 +160046,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 169,
         "ankama_type": "mounts",
         "name": "Wild Indigo Seemyool",
         "w_type": "Pet",
@@ -160062,7 +160062,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 170,
         "ankama_type": "mounts",
         "name": "Wild Ebony Seemyool",
         "w_type": "Pet",
@@ -160078,7 +160078,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 171,
         "ankama_type": "mounts",
         "name": "Wild Orchid Seemyool",
         "w_type": "Pet",
@@ -160094,7 +160094,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 172,
         "ankama_type": "mounts",
         "name": "Wild Crimson Rhineetle",
         "w_type": "Pet",
@@ -160104,7 +160104,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 173,
         "ankama_type": "mounts",
         "name": "Wild Orchid Rhineetle",
         "w_type": "Pet",
@@ -160114,7 +160114,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 174,
         "ankama_type": "mounts",
         "name": "Wild Indigo Rhineetle",
         "w_type": "Pet",
@@ -160124,7 +160124,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 175,
         "ankama_type": "mounts",
         "name": "Wild Ebony Rhineetle",
         "w_type": "Pet",
@@ -160134,7 +160134,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 176,
         "ankama_type": "mounts",
         "name": "Indigo Rhineetle",
         "w_type": "Pet",
@@ -160155,7 +160155,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 177,
         "ankama_type": "mounts",
         "name": "Ebony Rhineetle",
         "w_type": "Pet",
@@ -160176,7 +160176,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 178,
         "ankama_type": "mounts",
         "name": "Crimson Rhineetle",
         "w_type": "Pet",
@@ -160197,7 +160197,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 179,
         "ankama_type": "mounts",
         "name": "Orchid Rhineetle",
         "w_type": "Pet",
@@ -160218,7 +160218,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 180,
         "ankama_type": "mounts",
         "name": "Ginger Rhineetle",
         "w_type": "Pet",
@@ -160239,7 +160239,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 181,
         "ankama_type": "mounts",
         "name": "Almond Rhineetle",
         "w_type": "Pet",
@@ -160260,7 +160260,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 182,
         "ankama_type": "mounts",
         "name": "Ivory Rhineetle",
         "w_type": "Pet",
@@ -160281,7 +160281,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 183,
         "ankama_type": "mounts",
         "name": "Turquoise Rhineetle",
         "w_type": "Pet",
@@ -160302,7 +160302,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 184,
         "ankama_type": "mounts",
         "name": "Plum Rhineetle",
         "w_type": "Pet",
@@ -160323,7 +160323,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 185,
         "ankama_type": "mounts",
         "name": "Emerald Rhineetle",
         "w_type": "Pet",
@@ -160344,7 +160344,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 186,
         "ankama_type": "mounts",
         "name": "Golden Rhineetle",
         "w_type": "Pet",
@@ -160365,7 +160365,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 187,
         "ankama_type": "mounts",
         "name": "Jade Rhineetle",
         "w_type": "Pet",
@@ -160386,7 +160386,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 188,
         "ankama_type": "mounts",
         "name": "Ruby Rhineetle",
         "w_type": "Pet",
@@ -160407,7 +160407,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 189,
         "ankama_type": "mounts",
         "name": "Sapphire Rhineetle",
         "w_type": "Pet",
@@ -160428,7 +160428,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 190,
         "ankama_type": "mounts",
         "name": "Amethyst Rhineetle",
         "w_type": "Pet",
@@ -160449,7 +160449,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 191,
         "ankama_type": "mounts",
         "name": "Crimson and Orchid Rhineetle",
         "w_type": "Pet",
@@ -160475,7 +160475,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 192,
         "ankama_type": "mounts",
         "name": "Crimson and Indigo Rhineetle",
         "w_type": "Pet",
@@ -160501,7 +160501,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 193,
         "ankama_type": "mounts",
         "name": "Crimson and Ebony Rhineetle",
         "w_type": "Pet",
@@ -160527,7 +160527,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 194,
         "ankama_type": "mounts",
         "name": "Orchid and Indigo Rhineetle",
         "w_type": "Pet",
@@ -160553,7 +160553,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 195,
         "ankama_type": "mounts",
         "name": "Orchid and Ebony Rhineetle",
         "w_type": "Pet",
@@ -160579,7 +160579,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 196,
         "ankama_type": "mounts",
         "name": "Indigo and Ebony Rhineetle",
         "w_type": "Pet",
@@ -160605,7 +160605,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 197,
         "ankama_type": "mounts",
         "name": "Almond and Crimson Rhineetle",
         "w_type": "Pet",
@@ -160631,7 +160631,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 198,
         "ankama_type": "mounts",
         "name": "Almond and Orchid Rhineetle",
         "w_type": "Pet",
@@ -160657,7 +160657,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 199,
         "ankama_type": "mounts",
         "name": "Almond and Indigo Rhineetle",
         "w_type": "Pet",
@@ -160683,7 +160683,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 200,
         "ankama_type": "mounts",
         "name": "Almond and Ebony Rhineetle",
         "w_type": "Pet",
@@ -160709,7 +160709,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 201,
         "ankama_type": "mounts",
         "name": "Almond and Ginger Rhineetle",
         "w_type": "Pet",
@@ -160735,7 +160735,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 202,
         "ankama_type": "mounts",
         "name": "Almond and Ivory Rhineetle",
         "w_type": "Pet",
@@ -160761,7 +160761,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 203,
         "ankama_type": "mounts",
         "name": "Almond and Turquoise Rhineetle",
         "w_type": "Pet",
@@ -160787,7 +160787,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 204,
         "ankama_type": "mounts",
         "name": "Ginger and Crimson Rhineetle",
         "w_type": "Pet",
@@ -160813,7 +160813,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 205,
         "ankama_type": "mounts",
         "name": "Ginger and Orchid Rhineetle",
         "w_type": "Pet",
@@ -160839,7 +160839,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 206,
         "ankama_type": "mounts",
         "name": "Ginger and Indigo Rhineetle",
         "w_type": "Pet",
@@ -160865,7 +160865,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 207,
         "ankama_type": "mounts",
         "name": "Ginger and Ebony Rhineetle",
         "w_type": "Pet",
@@ -160891,7 +160891,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 208,
         "ankama_type": "mounts",
         "name": "Ginger and Ivory Rhineetle",
         "w_type": "Pet",
@@ -160917,7 +160917,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 209,
         "ankama_type": "mounts",
         "name": "Ginger and Turquoise Rhineetle",
         "w_type": "Pet",
@@ -160943,7 +160943,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 210,
         "ankama_type": "mounts",
         "name": "Ivory and Crimson Rhineetle",
         "w_type": "Pet",
@@ -160969,7 +160969,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 211,
         "ankama_type": "mounts",
         "name": "Ivory and Orchid Rhineetle",
         "w_type": "Pet",
@@ -160995,7 +160995,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 212,
         "ankama_type": "mounts",
         "name": "Ivory and Indigo Rhineetle",
         "w_type": "Pet",
@@ -161021,7 +161021,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 213,
         "ankama_type": "mounts",
         "name": "Ivory and Ebony Rhineetle",
         "w_type": "Pet",
@@ -161047,7 +161047,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 214,
         "ankama_type": "mounts",
         "name": "Ivory and Turquoise Rhineetle",
         "w_type": "Pet",
@@ -161073,7 +161073,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 215,
         "ankama_type": "mounts",
         "name": "Turquoise and Crimson Rhineetle",
         "w_type": "Pet",
@@ -161099,7 +161099,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 216,
         "ankama_type": "mounts",
         "name": "Turquoise and Orchid Rhineetle",
         "w_type": "Pet",
@@ -161125,7 +161125,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 217,
         "ankama_type": "mounts",
         "name": "Turquoise and Indigo Rhineetle",
         "w_type": "Pet",
@@ -161151,7 +161151,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 218,
         "ankama_type": "mounts",
         "name": "Turquoise and Ebony Rhineetle",
         "w_type": "Pet",
@@ -161177,7 +161177,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 219,
         "ankama_type": "mounts",
         "name": "Plum and Crimson Rhineetle",
         "w_type": "Pet",
@@ -161203,7 +161203,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 220,
         "ankama_type": "mounts",
         "name": "Plum and Orchid Rhineetle",
         "w_type": "Pet",
@@ -161229,7 +161229,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 221,
         "ankama_type": "mounts",
         "name": "Plum and Indigo Rhineetle",
         "w_type": "Pet",
@@ -161255,7 +161255,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 222,
         "ankama_type": "mounts",
         "name": "Plum and Ebony Rhineetle",
         "w_type": "Pet",
@@ -161281,7 +161281,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 223,
         "ankama_type": "mounts",
         "name": "Plum and Almond Rhineetle",
         "w_type": "Pet",
@@ -161307,7 +161307,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 224,
         "ankama_type": "mounts",
         "name": "Plum and Turquoise Rhineetle",
         "w_type": "Pet",
@@ -161333,7 +161333,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 225,
         "ankama_type": "mounts",
         "name": "Plum and Emerald Rhineetle",
         "w_type": "Pet",
@@ -161359,7 +161359,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 226,
         "ankama_type": "mounts",
         "name": "Emerald and Crimson Rhineetle",
         "w_type": "Pet",
@@ -161385,7 +161385,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 227,
         "ankama_type": "mounts",
         "name": "Emerald and Orchid Rhineetle",
         "w_type": "Pet",
@@ -161411,7 +161411,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 228,
         "ankama_type": "mounts",
         "name": "Emerald and Indigo Rhineetle",
         "w_type": "Pet",
@@ -161437,7 +161437,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 229,
         "ankama_type": "mounts",
         "name": "Emerald and Ebony Rhineetle",
         "w_type": "Pet",
@@ -161463,7 +161463,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 230,
         "ankama_type": "mounts",
         "name": "Emerald and Almond Rhineetle",
         "w_type": "Pet",
@@ -161489,7 +161489,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 231,
         "ankama_type": "mounts",
         "name": "Emerald and Ginger Rhineetle",
         "w_type": "Pet",
@@ -161515,7 +161515,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 233,
         "ankama_type": "mounts",
         "name": "Emerald and Ivory Rhineetle",
         "w_type": "Pet",
@@ -161541,7 +161541,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 234,
         "ankama_type": "mounts",
         "name": "Emerald and Turquoise Rhineetle",
         "w_type": "Pet",
@@ -161567,7 +161567,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 235,
         "ankama_type": "mounts",
         "name": "Golden and Crimson Rhineetle",
         "w_type": "Pet",
@@ -161593,7 +161593,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 236,
         "ankama_type": "mounts",
         "name": "Golden and Orchid Rhineetle",
         "w_type": "Pet",
@@ -161619,7 +161619,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 237,
         "ankama_type": "mounts",
         "name": "Golden and Indigo Rhineetle",
         "w_type": "Pet",
@@ -161645,7 +161645,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 238,
         "ankama_type": "mounts",
         "name": "Golden and Ebony Rhineetle",
         "w_type": "Pet",
@@ -161671,7 +161671,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 239,
         "ankama_type": "mounts",
         "name": "Jade and Crimson Rhineetle",
         "w_type": "Pet",
@@ -161697,7 +161697,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 240,
         "ankama_type": "mounts",
         "name": "Jade and Orchid Rhineetle",
         "w_type": "Pet",
@@ -161723,7 +161723,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 241,
         "ankama_type": "mounts",
         "name": "Jade and Indigo Rhineetle",
         "w_type": "Pet",
@@ -161749,7 +161749,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 242,
         "ankama_type": "mounts",
         "name": "Jade and Ebony Rhineetle",
         "w_type": "Pet",
@@ -161775,7 +161775,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 243,
         "ankama_type": "mounts",
         "name": "Jade and Almond Rhineetle",
         "w_type": "Pet",
@@ -161801,7 +161801,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 244,
         "ankama_type": "mounts",
         "name": "Jade and Ginger Rhineetle",
         "w_type": "Pet",
@@ -161827,7 +161827,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 245,
         "ankama_type": "mounts",
         "name": "Jade and Ivory Rhineetle",
         "w_type": "Pet",
@@ -161853,7 +161853,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 246,
         "ankama_type": "mounts",
         "name": "Jade and Turquoise Rhineetle",
         "w_type": "Pet",
@@ -161879,7 +161879,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 247,
         "ankama_type": "mounts",
         "name": "Jade and Plum Rhineetle",
         "w_type": "Pet",
@@ -161905,7 +161905,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 248,
         "ankama_type": "mounts",
         "name": "Jade and Emerald Rhineetle",
         "w_type": "Pet",
@@ -161931,7 +161931,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 249,
         "ankama_type": "mounts",
         "name": "Jade and Golden Rhineetle",
         "w_type": "Pet",
@@ -161957,7 +161957,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 250,
         "ankama_type": "mounts",
         "name": "Jade and Ruby Rhineetle",
         "w_type": "Pet",
@@ -161983,7 +161983,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 251,
         "ankama_type": "mounts",
         "name": "Jade and Sapphire Rhineetle",
         "w_type": "Pet",
@@ -162009,7 +162009,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 252,
         "ankama_type": "mounts",
         "name": "Jade and Amethyst Rhineetle",
         "w_type": "Pet",
@@ -162035,7 +162035,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 253,
         "ankama_type": "mounts",
         "name": "Ruby and Crimson Rhineetle",
         "w_type": "Pet",
@@ -162061,7 +162061,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 254,
         "ankama_type": "mounts",
         "name": "Ruby and Orchid Rhineetle",
         "w_type": "Pet",
@@ -162087,7 +162087,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 255,
         "ankama_type": "mounts",
         "name": "Ruby and Indigo Rhineetle",
         "w_type": "Pet",
@@ -162113,7 +162113,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 256,
         "ankama_type": "mounts",
         "name": "Ruby and Ebony Rhineetle",
         "w_type": "Pet",
@@ -162139,7 +162139,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 257,
         "ankama_type": "mounts",
         "name": "Ruby and Almond Rhineetle",
         "w_type": "Pet",
@@ -162165,7 +162165,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 258,
         "ankama_type": "mounts",
         "name": "Ruby and Ginger Rhineetle",
         "w_type": "Pet",
@@ -162191,7 +162191,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 259,
         "ankama_type": "mounts",
         "name": "Ruby and Ivory Rhineetle",
         "w_type": "Pet",
@@ -162217,7 +162217,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 260,
         "ankama_type": "mounts",
         "name": "Ruby and Turquoise Rhineetle",
         "w_type": "Pet",
@@ -162243,7 +162243,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 261,
         "ankama_type": "mounts",
         "name": "Ruby and Plum Rhineetle",
         "w_type": "Pet",
@@ -162269,7 +162269,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 262,
         "ankama_type": "mounts",
         "name": "Ruby and Emerald Rhineetle",
         "w_type": "Pet",
@@ -162295,7 +162295,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 263,
         "ankama_type": "mounts",
         "name": "Ruby and Golden Rhineetle",
         "w_type": "Pet",
@@ -162321,7 +162321,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 264,
         "ankama_type": "mounts",
         "name": "Sapphire and Crimson Rhineetle",
         "w_type": "Pet",
@@ -162347,7 +162347,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 265,
         "ankama_type": "mounts",
         "name": "Sapphire and Orchid Rhineetle",
         "w_type": "Pet",
@@ -162373,7 +162373,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 266,
         "ankama_type": "mounts",
         "name": "Sapphire and Indigo Rhineetle",
         "w_type": "Pet",
@@ -162399,7 +162399,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 267,
         "ankama_type": "mounts",
         "name": "Sapphire and Ebony Rhineetle",
         "w_type": "Pet",
@@ -162425,7 +162425,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 268,
         "ankama_type": "mounts",
         "name": "Sapphire and Almond Rhineetle",
         "w_type": "Pet",
@@ -162451,7 +162451,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 269,
         "ankama_type": "mounts",
         "name": "Sapphire and Ginger Rhineetle",
         "w_type": "Pet",
@@ -162477,7 +162477,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 270,
         "ankama_type": "mounts",
         "name": "Sapphire and Ivory Rhineetle",
         "w_type": "Pet",
@@ -162503,7 +162503,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 271,
         "ankama_type": "mounts",
         "name": "Sapphire and Turquoise Rhineetle",
         "w_type": "Pet",
@@ -162529,7 +162529,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 272,
         "ankama_type": "mounts",
         "name": "Sapphire and Plum Rhineetle",
         "w_type": "Pet",
@@ -162555,7 +162555,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 273,
         "ankama_type": "mounts",
         "name": "Sapphire and Emerald Rhineetle",
         "w_type": "Pet",
@@ -162581,7 +162581,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 274,
         "ankama_type": "mounts",
         "name": "Sapphire and Golden Rhineetle",
         "w_type": "Pet",
@@ -162607,7 +162607,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 275,
         "ankama_type": "mounts",
         "name": "Sapphire and Amethyst Rhineetle",
         "w_type": "Pet",
@@ -162633,7 +162633,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 276,
         "ankama_type": "mounts",
         "name": "Amethyst and Crimson Rhineetle",
         "w_type": "Pet",
@@ -162659,7 +162659,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 277,
         "ankama_type": "mounts",
         "name": "Amethyst and Orchid Rhineetle",
         "w_type": "Pet",
@@ -162685,7 +162685,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 278,
         "ankama_type": "mounts",
         "name": "Amethyst and Indigo Rhineetle",
         "w_type": "Pet",
@@ -162711,7 +162711,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 279,
         "ankama_type": "mounts",
         "name": "Amethyst and Ebony Rhineetle",
         "w_type": "Pet",
@@ -162737,7 +162737,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 280,
         "ankama_type": "mounts",
         "name": "Amethyst and Almond Rhineetle",
         "w_type": "Pet",
@@ -162763,7 +162763,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 281,
         "ankama_type": "mounts",
         "name": "Amethyst and Ginger Rhineetle",
         "w_type": "Pet",
@@ -162789,7 +162789,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 282,
         "ankama_type": "mounts",
         "name": "Amethyst and Ivory Rhineetle",
         "w_type": "Pet",
@@ -162815,7 +162815,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 283,
         "ankama_type": "mounts",
         "name": "Amethyst and Turquoise Rhineetle",
         "w_type": "Pet",
@@ -162841,7 +162841,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 284,
         "ankama_type": "mounts",
         "name": "Amethyst and Plum Rhineetle",
         "w_type": "Pet",
@@ -162867,7 +162867,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 285,
         "ankama_type": "mounts",
         "name": "Amethyst and Emerald Rhineetle",
         "w_type": "Pet",
@@ -162893,7 +162893,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 286,
         "ankama_type": "mounts",
         "name": "Amethyst and Golden Rhineetle",
         "w_type": "Pet",
@@ -162919,7 +162919,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 287,
         "ankama_type": "mounts",
         "name": "Plum and Ginger Rhineetle",
         "w_type": "Pet",
@@ -162945,7 +162945,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 288,
         "ankama_type": "mounts",
         "name": "Plum and Ivory Rhineetle",
         "w_type": "Pet",
@@ -162971,7 +162971,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 289,
         "ankama_type": "mounts",
         "name": "Ruby and Sapphire Rhineetle",
         "w_type": "Pet",
@@ -162997,7 +162997,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 290,
         "ankama_type": "mounts",
         "name": "Ruby and Amethyst Rhineetle",
         "w_type": "Pet",
@@ -163023,7 +163023,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 291,
         "ankama_type": "mounts",
         "name": "Golden and Ginger Rhineetle",
         "w_type": "Pet",
@@ -163049,7 +163049,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 292,
         "ankama_type": "mounts",
         "name": "Golden and Almond Rhineetle",
         "w_type": "Pet",
@@ -163075,7 +163075,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 293,
         "ankama_type": "mounts",
         "name": "Golden and Ivory Rhineetle",
         "w_type": "Pet",
@@ -163101,7 +163101,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 294,
         "ankama_type": "mounts",
         "name": "Golden and Turquoise Rhineetle",
         "w_type": "Pet",
@@ -163127,7 +163127,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 295,
         "ankama_type": "mounts",
         "name": "Golden and Plum Rhineetle",
         "w_type": "Pet",
@@ -163153,7 +163153,7 @@
     },
     {
         "dofustouch": false,
-        "ankama_id": "",
+        "ankama_id": 296,
         "ankama_type": "mounts",
         "name": "Golden and Emerald Rhineetle",
         "w_type": "Pet",
