@@ -26,7 +26,9 @@ DEFAULT_EXCLUSIONS_121_PLUS = ['Gore Master\'s Other Ring',
                                'Small Combat Bow Meow (GM)',
                                'Jiva Necklace',
                                'Fiery Tongue Sword',
-                               'First Blood Staff',]
+                               'First Blood Staff',
+                               'Crack Sparrow\'s Own Withered Hat',
+                               'De Sendar\'s Ring',]
 DEFAULT_EXCLUSIONS_120_MINUS = (DEFAULT_EXCLUSIONS_121_PLUS
                                 + [])
 
