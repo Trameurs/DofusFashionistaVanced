@@ -276,7 +276,10 @@ class Structure:
             new_set = Set()
             new_set.name = 'Jellix Set'
             new_set.dofus_touch = False
-            new_set.id = max(self.sets_dict.keys()) + 1
+            if self.sets_dict.keys():
+                new_set.id = max(self.sets_dict.keys()) + 1
+            else:
+                new_set.id = 1
             self.sets_dict[new_set.id] = new_set
         
         if "Gelano (#1)" not in self.items_dict_name:
