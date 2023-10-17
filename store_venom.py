@@ -37,13 +37,15 @@ def main(json_file):
     
     load_items_db_from_dump()
     for ankama_id, weapon_data in weapons.items():
-        ankama_profile = (ankama_id, 'equipment')
-        conn = sqlite3.connect(get_items_db_path())
-        c = conn.cursor()
-        item_id, weapon_name = get_item_id_and_name_for_ankama_profile(c, 'items', ankama_profile, False)
-        conn.close()
-        #print item_id
-        store_weapon_data(item_id, weapon_name, weapon_data)
+        for type in ['equipment', 'mounts']:  # Now it will loop through both equipment and mounts
+            ankama_profile = (ankama_id, type)
+            conn = sqlite3.connect(get_items_db_path())
+            c = conn.cursor()
+            item_id, weapon_name = get_item_id_and_name_for_ankama_profile(c, 'items', ankama_profile, False)
+            conn.close()
+            if item_id is not None:  # Assuming get_item_id_and_name_for_ankama_profile returns None if not found
+                print(f"Storing {type}: {item_id}")
+                store_weapon_data(item_id, weapon_name, weapon_data)
 
     save_items_db_to_dump()
     print(removed)
