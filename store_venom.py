@@ -165,7 +165,7 @@ def _convert_json_item_to_item(json_item):
     item.removed = False
     item.name = json_item['name']
     item.ankama_id = json_item['ankama_id']
-    item.ankama_type = json_item['w_type']
+    item.ankama_type = json_item['ankama_type']
     item.level = json_item['level']
     item.dofus_touch = 1 if json_item['dofustouch'] else 0
     if json_item['w_type'] == 'Trophy':
