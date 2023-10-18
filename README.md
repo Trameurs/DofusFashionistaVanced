@@ -1,8 +1,6 @@
 # Prerequisites
 
-Python 3.9.16 or higher     
-SQLite     
-AWS EC2 instance     
+Python 3.9.16 or higher  
 
 ## Python Packages
 
