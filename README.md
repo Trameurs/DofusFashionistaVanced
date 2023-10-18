@@ -28,13 +28,13 @@ echo "export PYTHONPATH=/home/<\<user\>>/fashionista/fashionistapulp" >> ~/.bash
 chmod 777 fashionista  
 chmod 777 fashionista/fashionistapulp/fashionistapulp  
 cd fashionista  
-sudo ./configure_fashionista_root.py -i -s -d  
+sudo python3 ./configure_fashionista_root.py -i -s -d  
 ```
 
 Configure files in /etc/fashionista
 
 ```shell
-./configure_fashionista.py
+python3 ./configure_fashionista.py
 ```
 
 ## Windows

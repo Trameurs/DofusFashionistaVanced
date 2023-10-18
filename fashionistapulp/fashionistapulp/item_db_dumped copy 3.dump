@@ -163,6 +163,6 @@ DELETE FROM sqlite_sequence;
 INSERT INTO sqlite_sequence VALUES('item_types',10);
 INSERT INTO sqlite_sequence VALUES('stats',74);
 INSERT INTO sqlite_sequence VALUES('weapontype',10);
-INSERT INTO sqlite_sequence VALUES('items',1);
-INSERT INTO sqlite_sequence VALUES('sets',1);
+INSERT INTO sqlite_sequence VALUES('items',0);
+INSERT INTO sqlite_sequence VALUES('sets',0);
 COMMIT;
