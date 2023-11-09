@@ -1,0 +1,93 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE item_types
+             (id INTEGER PRIMARY KEY AUTOINCREMENT, name text);
+INSERT INTO item_types VALUES (1,'Weapon');
+INSERT INTO item_types VALUES (2,'Shield');
+INSERT INTO item_types VALUES (3,'Hat');
+INSERT INTO item_types VALUES (4,'Cloak');
+INSERT INTO item_types VALUES (5,'Amulet');
+INSERT INTO item_types VALUES (6,'Ring');
+INSERT INTO item_types VALUES (7,'Belt');
+INSERT INTO item_types VALUES (8,'Boots');
+INSERT INTO item_types VALUES (9,'Dofus');
+INSERT INTO item_types VALUES (10,'Pet');
+CREATE TABLE stats
+             (id INTEGER PRIMARY KEY AUTOINCREMENT, name text,
+             key text);
+INSERT INTO stats VALUES(1,'Power','pow');
+INSERT INTO stats VALUES(2,'Damage','dam');
+INSERT INTO stats VALUES(3,'Heals','heals');
+INSERT INTO stats VALUES(4,'AP','ap');
+INSERT INTO stats VALUES(5,'MP','mp');
+INSERT INTO stats VALUES(6,'Critical Hits','ch');
+INSERT INTO stats VALUES(7,'Agility','agi');
+INSERT INTO stats VALUES(8,'Strength','str');
+INSERT INTO stats VALUES(9,'Neutral Damage','neutdam');
+INSERT INTO stats VALUES(10,'Earth Damage','earthdam');
+INSERT INTO stats VALUES(11,'Intelligence','int');
+INSERT INTO stats VALUES(12,'Fire Damage','firedam');
+INSERT INTO stats VALUES(13,'Air Damage','airdam');
+INSERT INTO stats VALUES(14,'Chance','cha');
+INSERT INTO stats VALUES(15,'Water Damage','waterdam');
+INSERT INTO stats VALUES(16,'Vitality','vit');
+INSERT INTO stats VALUES(17,'Initiative','init');
+INSERT INTO stats VALUES(18,'Summon','summon');
+INSERT INTO stats VALUES(19,'Range','range');
+INSERT INTO stats VALUES(20,'Wisdom','wis');
+INSERT INTO stats VALUES(21,'Neutral Resist','neutres');
+INSERT INTO stats VALUES(22,'Water Resist','waterres');
+INSERT INTO stats VALUES(23,'Air Resist','airres');
+INSERT INTO stats VALUES(24,'Fire Resist','fireres');
+INSERT INTO stats VALUES(25,'Earth Resist','earthres');
+INSERT INTO stats VALUES(26,'% Neutral Resist','neutresper');
+INSERT INTO stats VALUES(27,'% Air Resist','airresper');
+INSERT INTO stats VALUES(28,'% Fire Resist','fireresper');
+INSERT INTO stats VALUES(29,'% Water Resist','waterresper');
+INSERT INTO stats VALUES(30,'% Earth Resist','earthresper');
+INSERT INTO stats VALUES(31,'Neutral Resist in PVP','pvpneutres');
+INSERT INTO stats VALUES(32,'Water Resist in PVP','pvpwaterres');
+INSERT INTO stats VALUES(33,'Air Resist in PVP','pvpairres');
+INSERT INTO stats VALUES(34,'Fire Resist in PVP','pvpfireres');
+INSERT INTO stats VALUES(35,'Earth Resist in PVP','pvpearthres');
+INSERT INTO stats VALUES(36,'% Neutral Resist in PVP','pvpneutresper');
+INSERT INTO stats VALUES(37,'% Air Resist in PVP','pvpairresper');
+INSERT INTO stats VALUES(38,'% Fire Resist in PVP','pvpfireresper');
+INSERT INTO stats VALUES(39,'% Water Resist in PVP','pvpwaterresper');
+INSERT INTO stats VALUES(40,'% Earth Resist in PVP','pvpearthresper');
+INSERT INTO stats VALUES(41,'Prospecting','pp');
+INSERT INTO stats VALUES(42,'Pods','pod');
+INSERT INTO stats VALUES(43,'AP Reduction','apred');
+INSERT INTO stats VALUES(44,'MP Reduction','mpred');
+INSERT INTO stats VALUES(45,'Lock','lock');
+INSERT INTO stats VALUES(46,'Dodge','dodge');
+INSERT INTO stats VALUES(47,'Reflects','ref');
+INSERT INTO stats VALUES(48,'Pushback Damage','pshdam');
+INSERT INTO stats VALUES(49,'Trap Damage','trapdam');
+INSERT INTO stats VALUES(50,'% Trap Damage','trapdamper');
+INSERT INTO stats VALUES(51,'Critical Resist','crires');
+INSERT INTO stats VALUES(52,'Pushback Resist','pshres');
+INSERT INTO stats VALUES(53,'MP Loss Resist','mpres');
+INSERT INTO stats VALUES(54,'AP Loss Resist','apres');
+INSERT INTO stats VALUES(55,'Critical Damage','cridam');
+INSERT INTO stats VALUES(56,'Critical Failure','cf');
+INSERT INTO stats VALUES(57,'% Melee Damage','permedam');
+INSERT INTO stats VALUES(58,'% Ranged Damage','perrandam');
+INSERT INTO stats VALUES(59,'% Weapon Damage','perweadam');
+INSERT INTO stats VALUES(60,'% Spell Damage','perspedam');
+INSERT INTO stats VALUES(61,'% Melee Resist','respermee');
+INSERT INTO stats VALUES(62,'% Ranged Resist','resperran');
+INSERT INTO stats VALUES(63,'HP','hp');
+CREATE TABLE "items" (
+        `id` INTEGER PRIMARY KEY AUTOINCREMENT,
+        `name` text,
+        `level` INTEGER,
+        `type` INTEGER,
+        `item_set` INTEGER,
+        `ankama_id` INTEGER,
+        `ankama_type` text,
+        `removed` INTEGER,
+        `dofustouch` INTEGER,
+        FOREIGN KEY(`type`) REFERENCES item_types (id),
+        FOREIGN KEY(`item_set`) REFERENCES sets (id)
+    );
