@@ -103,8 +103,7 @@ with open('item_db_dumped.dump', 'w', encoding='utf-8') as f:
     f.write("""CREATE TABLE stats_of_item
             (item INTEGER, stat INTEGER, value INTEGER,
             FOREIGN KEY(item) REFERENCES items(id),
-            FOREIGN KEY(stat) REFERENCES stats(id));
-            \n""")
+            FOREIGN KEY(stat) REFERENCES stats(id));\n""")
 
     # Write INSERT commands for stats_of_items
     for index, item in enumerate(original_data, start=1):
@@ -118,8 +117,7 @@ with open('item_db_dumped.dump', 'w', encoding='utf-8') as f:
     f.write("""CREATE TABLE set_bonus
              (item_set INTEGER, num_pieces_used INTEGER, stat INTEGER, value INTEGER,
               FOREIGN KEY(item_set) REFERENCES sets(id),
-              FOREIGN KEY(stat) REFERENCES stats(id));
-              \n""")
+              FOREIGN KEY(stat) REFERENCES stats(id));\n""")
     
     # Write INSERT commands for set_bonus
     for index, set in enumerate(original_sets, start=1):
@@ -129,3 +127,58 @@ with open('item_db_dumped.dump', 'w', encoding='utf-8') as f:
                     if bonus[2] not in STAT_NAME_TO_KEY:
                         continue
                     f.write(f"INSERT INTO set_bonus VALUES({index},{i},{bonus[0]},{list(STAT_NAME_TO_KEY).index(bonus[2]) + 1});\n")
+
+    # Write CREATE TABLE for min_stat_to_equip
+    f.write("""CREATE TABLE min_stat_to_equip
+             (item INTEGER, stat INTEGER, value INTEGER,
+              FOREIGN KEY(item) REFERENCES items(id),
+              FOREIGN KEY(stat) REFERENCES stats(id));\n""")
+    
+    # Write INSERT commands for min_stat_to_equip
+    for index, item in enumerate(original_data, start=1):
+        if 'conditions' in item:
+            for condition_string in item['conditions']:
+                parts = condition_string.split(' ')  # Split the string by spaces
+                if len(parts) == 3 and parts[0] in STAT_NAME_TO_KEY:
+                    stat_name = parts[0]  # The stat name, e.g., "Strength"
+                    operator = parts[1]  # The operator, e.g., ">"
+                    stat_value = parts[2]  # The value, e.g., "34"
+                    stat_index = list(STAT_NAME_TO_KEY).index(stat_name) + 1
+                    if operator == '>':
+                        f.write(f"INSERT INTO min_stat_to_equip VALUES({index},{stat_index},{int(stat_value)+1});\n")
+
+    # Write CREATE TABLE for max_stat_to_equip
+    f.write("""CREATE TABLE max_stat_to_equip
+             (item INTEGER, stat INTEGER, value INTEGER,
+              FOREIGN KEY(item) REFERENCES items(id),
+              FOREIGN KEY(stat) REFERENCES stats(id));\n""")
+    
+    # Write INSERT commands for max_stat_to_equip
+    for index, item in enumerate(original_data, start=1):
+        if 'conditions' in item:
+            for condition_string in item['conditions']:
+                parts = condition_string.split(' ')  # Split the string by spaces
+                if len(parts) == 3 and parts[0] in STAT_NAME_TO_KEY:
+                    stat_name = parts[0]  # The stat name, e.g., "Strength"
+                    operator = parts[1]
+                    stat_value = parts[2]  # The value, e.g., "34"
+                    stat_index = list(STAT_NAME_TO_KEY).index(stat_name) + 1
+                    if operator == '<':
+                        f.write(f"INSERT INTO max_stat_to_equip VALUES({index},{stat_index},{int(stat_value)-1});\n")
+
+    # Write CREATE TABLE for min_rank_to_equip
+    f.write("""CREATE TABLE min_rank_to_equip
+             (item INTEGER, value INTEGER,
+              FOREIGN KEY(item) REFERENCES items(id));\n""")
+    
+    f.write("""CREATE TABLE min_align_level_to_equip
+             (item INTEGER, value INTEGER,
+              FOREIGN KEY(item) REFERENCES items(id));\n""")
+    
+    f.write("""CREATE TABLE min_prof_level_to_equip
+             (item INTEGER, value INTEGER,
+              FOREIGN KEY(item) REFERENCES items(id));\n""")
+    
+    f.write("""CREATE TABLE weapon_is_onehanded
+             (item INTEGER, value INTEGER,
+              FOREIGN KEY(item) REFERENCES items(id));\n""")
