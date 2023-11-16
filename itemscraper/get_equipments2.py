@@ -188,7 +188,10 @@ with open('transformed_items.json', 'w', encoding='utf-8') as f:
 with open('all_sets.json', 'r', encoding='utf-8') as f:
     original_data = json.load(f)
 
+new_data = []
+
 for item in original_data["sets"]:
+
     if "effects" in item:
         for effect_group in item["effects"]:  # Iterate over each group of effects
             for effect in effect_group:  # Iterate over each effect in the group
@@ -197,6 +200,28 @@ for item in original_data["sets"]:
                     translated_type_name = STAT_TRANSLATE.get(original_type_name, original_type_name)  # Translate or keep as-is
                     effect["type"]["name"] = translated_type_name  # Update the name in the type
 
+    transformed_item = {}
+    if "ankama_id" in item:
+        transformed_item["ankama_id"] = item["ankama_id"]
+    if "name" in item:
+        transformed_item["name"] = item["name"]
+    if "items" in item:
+        transformed_item["items"] = item["items"]
+    if "effects" in item:
+        transformed_item["stats"] = []
+        for i, effect_group in enumerate(item["effects"]):  # Iterate over each group of effects
+            transformed_item["stats"].append([
+            [
+                eff["int_minimum"] if not eff["ignore_int_min"] else None,
+                eff["int_maximum"] if not eff["ignore_int_max"] else None,
+                eff["type"]["name"]
+            ] for eff in effect_group
+        ])
+    if "equipment_ids" in item:
+        transformed_item["equipment_ids"] = item["equipment_ids"]
+
+    new_data.append(transformed_item)            
+
 # Write the new JSON file
 with open('transformed_sets.json', 'w', encoding='utf-8') as f:
-    json.dump(original_data, f, ensure_ascii=False, indent=4)
+    json.dump(new_data, f, ensure_ascii=False, indent=4)
