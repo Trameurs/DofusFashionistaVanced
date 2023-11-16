@@ -99,6 +99,17 @@ with open('item_db_dumped.dump', 'w', encoding='utf-8') as f:
         
         f.write(f"INSERT INTO items VALUES({index},'{item['name']}',{item['level']},{list(TYPE_NAME_TO_SLOT.values()).index(item['w_type'].lower()) + 1},{set_id_or_null},{item['ankama_id']},{item['ankama_type']},NULL,NULL);\n")
 
-        # Write INSERT commands for stats_of_items
-        #for stat in item['stats']:
-        #    f.write(f"INSERT INTO stats_of_items VALUES({item['id']},{stat['stat']},{stat['value']});\n")
+    # Write CREATE TABLE for stats_of_items
+    f.write("""CREATE TABLE stats_of_item
+            (item INTEGER, stat INTEGER, value INTEGER,
+            FOREIGN KEY(item) REFERENCES items(id),
+            FOREIGN KEY(stat) REFERENCES stats(id));
+            \n""")
+
+    # Write INSERT commands for stats_of_items
+    for index, item in enumerate(original_data, start=1):
+        for stat in item['stats']:
+            if stat[2] not in STAT_NAME_TO_KEY:
+                continue
+            stat_value = stat[1] if stat[1] is not None else stat[0]
+            f.write(f"INSERT INTO stats_of_item VALUES({index},{list(STAT_NAME_TO_KEY).index(stat[2]) + 1},{stat_value});\n")
