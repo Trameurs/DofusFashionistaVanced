@@ -184,3 +184,19 @@ for item in new_data:
 # Write the new JSON file
 with open('transformed_items.json', 'w', encoding='utf-8') as f:
     json.dump(new_data, f, ensure_ascii=False, indent=4)
+
+with open('all_sets.json', 'r', encoding='utf-8') as f:
+    original_data = json.load(f)
+
+for item in original_data["sets"]:
+    if "effects" in item:
+        for effect_group in item["effects"]:  # Iterate over each group of effects
+            for effect in effect_group:  # Iterate over each effect in the group
+                if "type" in effect and "name" in effect["type"]:
+                    original_type_name = effect["type"]["name"]  # The original name in the type
+                    translated_type_name = STAT_TRANSLATE.get(original_type_name, original_type_name)  # Translate or keep as-is
+                    effect["type"]["name"] = translated_type_name  # Update the name in the type
+
+# Write the new JSON file
+with open('transformed_sets.json', 'w', encoding='utf-8') as f:
+    json.dump(original_data, f, ensure_ascii=False, indent=4)

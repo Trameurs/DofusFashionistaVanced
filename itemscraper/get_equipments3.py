@@ -21,6 +21,9 @@ from fashionistapulp.dofus_constants import STAT_NAME_TO_KEY, STAT_ORDER, TYPE_N
 with open('transformed_items.json', 'r', encoding='utf-8') as f:
     original_data = json.load(f)
 
+with open('transformed_sets.json', 'r', encoding='utf-8') as f:
+    original_sets = json.load(f)
+
 # Open the .dump file for writing
 with open('item_db_dumped.dump', 'w', encoding='utf-8') as f:
     # Write initial SQL commands
@@ -40,6 +43,19 @@ with open('item_db_dumped.dump', 'w', encoding='utf-8') as f:
     # Write CREATE TABLE for stats_of_items
     #f.write("CREATE TABLE stats_of_items\n             (item INTEGER, stat INTEGER, value INTEGER,\n             FOREIGN KEY(item) REFERENCES items(id),\n             FOREIGN KEY(stat) REFERENCES stats(id));\n")
 
+    # Write CREATE TABLE for sets
+    f.write("""CREATE TABLE "sets" (
+	    `id`	INTEGER PRIMARY KEY AUTOINCREMENT,
+	    `name`	text,
+	    `ankama_id`	INTEGER,
+	    `dofustouch`	INTEGER
+    );\n""")
+
+    #INSERT INTO sets VALUES(1,'Pink Piwi Set',70,NULL);
+
+    for index, item in enumerate(original_sets["sets"], start=1):
+        f.write(f"INSERT INTO sets VALUES({index},'{item['name']}',{item['ankama_id']},NULL);\n")
+
     # Write CREATE TABLE for items
     f.write("""CREATE TABLE "items" (
         `id` INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -54,10 +70,34 @@ with open('item_db_dumped.dump', 'w', encoding='utf-8') as f:
         FOREIGN KEY(`type`) REFERENCES item_types (id),
         FOREIGN KEY(`item_set`) REFERENCES sets (id)
     );\n""")
+
+    #INSERT INTO items VALUES(6854,'Leurnettes',12,1,NULL,340,'equipment',0,1);
     
-    for item in original_data:
+    for index, item in enumerate(original_data, start=1):
         # Write INSERT command for items
-        f.write(f"INSERT INTO items VALUES({item['id']},'{item['name']}',{item['level']},{item['type']});\n")
+        if item['w_type'] == 'Trophy':
+            item['w_type'] = 'Dofus'
+        if item['w_type'] == 'Prysmaradite':
+            item['w_type'] = 'Dofus'
+        if item['w_type'] == 'Backpack':
+            item['w_type'] = 'Cloak'
+        if item['w_type'] == 'Petsmount':
+            item['w_type'] = 'Pet'
+
+        if item['w_type'] not in TYPE_NAME_TO_SLOT:
+            item['w_type'] = 'Weapon'
+
+        set_id = None
+        
+        for set in original_sets['sets']:
+            if item['ankama_id'] in set['equipment_ids'] :
+                set_id = set['id']
+                break
+
+        # Use 'NULL' if set_id is None, otherwise use the set_id
+        set_id_or_null = 'NULL' if set_id is None else set_id
+        
+        f.write(f"INSERT INTO items VALUES({index},'{item['name']}',{item['level']},{list(TYPE_NAME_TO_SLOT.values()).index(item['w_type']) + 1},{set_id_or_null});\n")
 
         # Write INSERT commands for stats_of_items
         #for stat in item['stats']:
