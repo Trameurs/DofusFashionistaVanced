@@ -89,15 +89,15 @@ with open('item_db_dumped.dump', 'w', encoding='utf-8') as f:
 
         set_id = None
         
-        for set in original_sets['sets']:
-            if item['ankama_id'] in set['equipment_ids'] :
-                set_id = set['id']
+        for i, set in enumerate(original_sets['sets'], start=1):
+            if item['ankama_id'] in set['equipment_ids']:
+                set_id = i  # Using the index as the set ID
                 break
 
         # Use 'NULL' if set_id is None, otherwise use the set_id
         set_id_or_null = 'NULL' if set_id is None else set_id
         
-        f.write(f"INSERT INTO items VALUES({index},'{item['name']}',{item['level']},{list(TYPE_NAME_TO_SLOT.values()).index(item['w_type']) + 1},{set_id_or_null});\n")
+        f.write(f"INSERT INTO items VALUES({index},'{item['name']}',{item['level']},{list(TYPE_NAME_TO_SLOT.values()).index(item['w_type'].lower()) + 1},{set_id_or_null},{item['ankama_id']},{item['ankama_type']},NULL,NULL);\n")
 
         # Write INSERT commands for stats_of_items
         #for stat in item['stats']:
