@@ -145,7 +145,7 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
                 for bonus in effects:
                     if bonus[2] not in STAT_NAME_TO_KEY:
                         continue
-                    f.write(f"INSERT INTO set_bonus VALUES({index},{i},{bonus[0]},{list(STAT_NAME_TO_KEY).index(bonus[2]) + 1});\n")
+                    f.write(f"INSERT INTO set_bonus VALUES({index},{i},{list(STAT_NAME_TO_KEY).index(bonus[2]) + 1},{bonus[0]});\n")
 
     # Write CREATE TABLE for min_stat_to_equip
     f.write("""CREATE TABLE min_stat_to_equip
