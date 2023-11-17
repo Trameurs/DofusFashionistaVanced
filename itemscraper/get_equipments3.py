@@ -116,7 +116,7 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
         # Use 'NULL' if set_id is None, otherwise use the set_id
         set_id_or_null = 'NULL' if set_id is None else set_id
         
-        f.write(f"INSERT INTO items VALUES({index},'{escape_single_quotes(item['name'])}',{item['level']},{list(TYPE_NAME_TO_SLOT.values()).index(item['w_type'].lower()) + 1},{set_id_or_null},{item['ankama_id']},{item['ankama_type']},NULL,NULL);\n")
+        f.write(f"INSERT INTO items VALUES({index},'{escape_single_quotes(item['name'])}',{item['level']},{list(TYPE_NAME_TO_SLOT.values()).index(item['w_type'].lower()) + 1},{set_id_or_null},{item['ankama_id']},'{item['ankama_type']}',NULL,NULL);\n")
 
     # Write CREATE TABLE for stats_of_items
     f.write("""CREATE TABLE stats_of_item
