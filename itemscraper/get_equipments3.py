@@ -130,6 +130,7 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
             if stat[2] not in STAT_NAME_TO_KEY:
                 continue
             stat_value = stat[1] if stat[1] is not None else stat[0]
+            stat_value = stat[0] if stat[0] < 0 else stat_value
             f.write(f"INSERT INTO stats_of_item VALUES({index},{list(STAT_NAME_TO_KEY).index(stat[2]) + 1},{stat_value});\n")
 
     # Write CREATE TABLE for set_bonus
