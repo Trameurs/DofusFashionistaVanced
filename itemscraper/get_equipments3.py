@@ -249,6 +249,7 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
     
     for index, item in enumerate(original_data, start=1):
         if 'stats' in item:
+            i = 0
             for stat in item['stats']:
                 # Extract values and description
                 min_value, max_value, description = stat
@@ -275,7 +276,9 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
                     if element == 'neutral':
                         element = 'neut'
 
-                    f.write(f"INSERT INTO weapon_hits VALUES({index},{item['uses_per_turn']},{min_value},{max_value},{steals},{heals},'{element}');\n")
+                    f.write(f"INSERT INTO weapon_hits VALUES({index},{i},{min_value},{max_value},{steals},{heals},'{element}');\n")
+
+                    i += 1
 
     f.write("""CREATE TABLE extra_lines (item INTEGER, line text, language text, FOREIGN KEY(item) REFERENCES items(id));\n""")
 
