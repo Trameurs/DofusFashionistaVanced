@@ -32,6 +32,9 @@ WEAPON_TYPES = {
     'Lance': 'lance',
 }
 
+def escape_single_quotes(s):
+    return s.replace("'", "''")
+
 # Read the original JSON file
 with open('transformed_items.json', 'r', encoding='utf-8') as f:
     original_data = json.load(f)
@@ -69,7 +72,7 @@ with open('item_db_dumped.dump', 'w', encoding='utf-8') as f:
     #INSERT INTO sets VALUES(1,'Pink Piwi Set',70,NULL);
 
     for index, item in enumerate(original_sets, start=1):
-        f.write(f"INSERT INTO sets VALUES({index},'{item['name']}',{item['ankama_id']},NULL);\n")
+        f.write(f"INSERT INTO sets VALUES({index},'{escape_single_quotes(item['name'])}',{item['ankama_id']},NULL);\n")
 
     # Write CREATE TABLE for items
     f.write("""CREATE TABLE "items" (
@@ -113,7 +116,7 @@ with open('item_db_dumped.dump', 'w', encoding='utf-8') as f:
         # Use 'NULL' if set_id is None, otherwise use the set_id
         set_id_or_null = 'NULL' if set_id is None else set_id
         
-        f.write(f"INSERT INTO items VALUES({index},'{item['name']}',{item['level']},{list(TYPE_NAME_TO_SLOT.values()).index(item['w_type'].lower()) + 1},{set_id_or_null},{item['ankama_id']},{item['ankama_type']},NULL,NULL);\n")
+        f.write(f"INSERT INTO items VALUES({index},'{escape_single_quotes(item['name'])}',{item['level']},{list(TYPE_NAME_TO_SLOT.values()).index(item['w_type'].lower()) + 1},{set_id_or_null},{item['ankama_id']},{item['ankama_type']},NULL,NULL);\n")
 
     # Write CREATE TABLE for stats_of_items
     f.write("""CREATE TABLE stats_of_item
