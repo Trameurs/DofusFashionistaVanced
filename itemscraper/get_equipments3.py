@@ -253,6 +253,9 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
                 # Extract values and description
                 min_value, max_value, description = stat
 
+                if max_value is None:
+                    max_value = min_value
+
                 # Check if the description is a hit stat
                 if description.startswith("(") and description.endswith(")"):
                     # Remove parentheses from the description
