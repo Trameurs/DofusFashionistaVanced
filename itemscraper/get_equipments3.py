@@ -17,6 +17,21 @@
 import json
 from fashionistapulp.dofus_constants import STAT_NAME_TO_KEY, STAT_ORDER, TYPE_NAME_TO_SLOT
 
+
+WEAPON_TYPES = {
+    'Hammer': 'hammer',
+    'Axe': 'axe',
+    'Shovel': 'shovel',
+    'Staff': 'staff',
+    'Sword': 'sword',
+    'Dagger': 'dagger',
+    'Bow': 'bow',
+    'Wand': 'wand',
+    'Pickaxe': 'pickaxe',
+    'Scythe': 'scythe',
+    'Lance': 'lance',
+}
+
 # Read the original JSON file
 with open('transformed_items.json', 'r', encoding='utf-8') as f:
     original_data = json.load(f)
@@ -85,6 +100,7 @@ with open('item_db_dumped.dump', 'w', encoding='utf-8') as f:
             item['w_type'] = 'Pet'
 
         if item['w_type'] not in TYPE_NAME_TO_SLOT:
+            item['weapon_type'] = item['w_type']
             item['w_type'] = 'Weapon'
 
         set_id = None
@@ -182,3 +198,98 @@ with open('item_db_dumped.dump', 'w', encoding='utf-8') as f:
     f.write("""CREATE TABLE weapon_is_onehanded
              (item INTEGER, value INTEGER,
               FOREIGN KEY(item) REFERENCES items(id));\n""")
+    
+    f.write("""CREATE TABLE weapon_crit_hits
+             (item INTEGER, value INTEGER,
+              FOREIGN KEY(item) REFERENCES items(id));\n""")
+    
+    for index, item in enumerate(original_data, start=1):
+        if 'crit_chance' in item:
+            f.write(f"INSERT INTO weapon_crit_hits VALUES({index},{item['crit_chance']});\n")
+
+    f.write("""CREATE TABLE weapon_crit_bonus
+             (item INTEGER, value INTEGER,
+              FOREIGN KEY(item) REFERENCES items(id));\n""")
+    
+    for index, item in enumerate(original_data, start=1):
+        if 'crit_bonus' in item:
+            f.write(f"INSERT INTO weapon_crit_bonus VALUES({index},{item['crit_bonus']});\n")
+
+    f.write("""CREATE TABLE weapon_ap
+             (item INTEGER, value INTEGER,
+              FOREIGN KEY(item) REFERENCES items(id));\n""")
+    
+    for index, item in enumerate(original_data, start=1):
+        if 'ap' in item:
+            f.write(f"INSERT INTO weapon_ap VALUES({index},{item['ap']});\n")
+
+    f.write("""CREATE TABLE weapontype
+             (id INTEGER PRIMARY KEY AUTOINCREMENT, name text, key text);\n""")
+    
+    for index, item in enumerate(WEAPON_TYPES, start=1):
+        f.write(f"INSERT INTO weapontype VALUES({index},'{item}','{WEAPON_TYPES[item]}');\n")
+
+    f.write("""CREATE TABLE weapon_weapontype
+             (item INTEGER, weapontype INTEGER,
+              FOREIGN KEY(item) REFERENCES items(id),
+              FOREIGN KEY(weapontype) REFERENCES weapontype(id));\n""")
+    
+    for index, item in enumerate(original_data, start=1):
+        if 'weapon_type' in item:
+            if item['weapon_type'] in WEAPON_TYPES:
+                f.write(f"INSERT INTO weapon_weapontype VALUES({index},{list(WEAPON_TYPES).index(item['weapon_type']) + 1});\n")
+
+    f.write("""CREATE TABLE weapon_hits
+             (item INTEGER, hit INTEGER, min_value INTEGER, max_value INTEGER, steals INTEGER,
+              heals INTEGER, element text,
+              FOREIGN KEY(item) REFERENCES items(id));\n""")
+    
+    for index, item in enumerate(original_data, start=1):
+        if 'stats' in item:
+            for stat in item['stats']:
+                # Extract values and description
+                min_value, max_value, description = stat
+
+                # Check if the description is a hit stat
+                if description.startswith("(") and description.endswith(")"):
+                    # Remove parentheses from the description
+                    stat_description = description[1:-1].lower()
+
+                    element = stat_description.split(' ')[0].lower()
+                    damage_type = stat_description.split(' ')[1]
+
+                    steals = 0
+                    heals = 0
+
+                    if damage_type == 'steal':
+                        steals = 1
+                    elif damage_type == 'healing':
+                        heals = 1
+
+                    if element == 'neutral':
+                        element = 'neut'
+
+                    f.write(f"INSERT INTO weapon_hits VALUES({index},{item['uses_per_turn']},{min_value},{max_value},{steals},{heals}'{element}');\n")
+
+    f.write("""CREATE TABLE extra_lines (item INTEGER, line text, language text, FOREIGN KEY(item) REFERENCES items(id));\n""")
+
+    #todo: add extra lines
+
+    f.write("""CREATE TABLE item_names (item INTEGER, language text, name text, FOREIGN KEY(item) REFERENCES items(id));\n""")
+
+    #todo: add item names
+
+    f.write("""CREATE TABLE set_names (item_set INTEGER, language text, name text, FOREIGN KEY(item_set) REFERENCES sets(id));\n""")
+
+    #todo: add set names
+
+    f.write("""CREATE TABLE item_weird_conditions (item INTEGER, condition_id INTEGER, FOREIGN KEY(item) REFERENCES items(id));\n""")
+
+    f.write(f"""DELETE FROM sqlite_sequence;
+INSERT INTO sqlite_sequence VALUES('item_types',{len(TYPE_NAME_TO_SLOT)});
+INSERT INTO sqlite_sequence VALUES('stats',{len(STAT_NAME_TO_KEY)});
+INSERT INTO sqlite_sequence VALUES('weapontype',{len(WEAPON_TYPES)});
+INSERT INTO sqlite_sequence VALUES('items',{len(original_data)});
+INSERT INTO sqlite_sequence VALUES('sets',{len(original_sets)});
+COMMIT;\n""")
+    
