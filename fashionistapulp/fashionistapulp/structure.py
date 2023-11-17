@@ -579,6 +579,10 @@ class Structure:
                 print("SET %d NOT FOUND" % set_id)
                 return
             item_set.bonus.append((num_items, stat_id, value))
+            stat_key = self.get_stat_by_id(stat_id)
+            if stat_key is None:
+                print(f"Warning: No stat found for stat_id {stat_id}")
+                continue
             stat_key = self.get_stat_by_id(stat_id).key
             item_set.bonus_per_num_items.setdefault(num_items, {})[stat_key] = value
 
