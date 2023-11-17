@@ -43,7 +43,7 @@ with open('transformed_sets.json', 'r', encoding='utf-8') as f:
     original_sets = json.load(f)
 
 # Open the .dump file for writing
-with open('item_db_dumped.dump', 'w', encoding='utf-8') as f:
+with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encoding='utf-8') as f:
     # Write initial SQL commands
     f.write("PRAGMA foreign_keys=OFF;\nBEGIN TRANSACTION;\nCREATE TABLE item_types\n             (id INTEGER PRIMARY KEY AUTOINCREMENT, name text);\n")
 
