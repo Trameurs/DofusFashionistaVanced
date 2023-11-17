@@ -499,7 +499,11 @@ class Structure:
             if w.has_crits:
                 w.crit_base_hit = []
             for i in range(len(w.hits_dict)):
-                hit = w.hits_dict[i]
+                try:
+                    hit = w.hits_dict[i]
+                except KeyError:
+                    print('%s is missing hit %d' % (weapon_name, i))
+                    continue
                 w.base_hit.append(hit)
                 if w.has_crits:
                     w.crit_base_hit.append(DamageDigest(hit.min_dam + w.crit_bonus,
