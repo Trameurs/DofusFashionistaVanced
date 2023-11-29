@@ -289,12 +289,17 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
             for stat in item['stats']:
                 # Extract values and description
                 min_value, max_value, description = stat
-
                 if description.startswith("-special spell-"):
-                    modified_description = "(lp0\nV"
-                    modified_description += description.replace('-special spell-', '')
-                    if modified_description != "(lp0\nV":
-                        modified_description += "\np1\na."
+                    p = 1
+                    modified_description = "(lp0\n"
+                    description = description.replace("-special spell-", "")
+                    for part in description.split('\n'):
+                        if part == '':
+                            continue
+                        modified_description += f"V{part}\np{p}\na"
+                        p += 1
+                    if modified_description != "(lp0\n":
+                        modified_description += f"."
                         f.write(f"INSERT INTO extra_lines VALUES({index},'{escape_single_quotes(modified_description)}','en');\n")
 
     f.write("""CREATE TABLE item_names (item INTEGER, language text, name text, FOREIGN KEY(item) REFERENCES items(id));\n""")
