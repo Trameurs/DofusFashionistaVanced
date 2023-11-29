@@ -294,7 +294,10 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
                         if part:
                             modified_description += f"V{part}\np{p}\na"
                     modified_description += "."
-                    f.write(f"INSERT INTO extra_lines VALUES({index}, '{escape_single_quotes(modified_description)}', '{lang}');\n")
+                    modified_description = escape_single_quotes(modified_description)
+                    byte_data = modified_description.encode('utf-8')
+                    hex_data = byte_data.hex()
+                    f.write(f"INSERT INTO extra_lines VALUES({index}, 'X'{hex_data}', '{lang}');\n")
 
     f.write("""CREATE TABLE item_names (item INTEGER, language text, name text, FOREIGN KEY(item) REFERENCES items(id));\n""")
 
