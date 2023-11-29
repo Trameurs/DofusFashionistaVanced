@@ -88,14 +88,24 @@ STAT_TRANSLATE = {
     '% Spell Damage': '% Spell Damage',
 }
 
-# Read the original JSON file
-with open('all_items.json', 'r', encoding='utf-8') as f:
-    original_data = json.load(f)
+LANGUAGES = ['en', 'fr', 'es', 'pt', 'de', 'it']
+
+# Function to load data for each language
+def load_data_for_language(lang, data_type):
+    with open(f'all_{data_type}_{lang}.json', 'r', encoding='utf-8') as file:
+        return json.load(file)
+    
+# Load equipment data for all languages
+equipment_data = {lang: load_data_for_language(lang, 'equipment') for lang in LANGUAGES}
+
+mount_data = {lang: load_data_for_language(lang, 'mounts') for lang in LANGUAGES}
+
+set_data = {lang: load_data_for_language(lang, 'sets') for lang in LANGUAGES}
 
 # Create a list to store the new formatted items
 new_data = []
 
-for item in original_data['items']:
+for item in equipment_data['en']['items']:
     if 'Certificate' in item['type']['name'] or 'Sidekick' in item['type']['name'] or 'Badge' in item['type']['name'] or '[!] [UNKNOWN_TEXT_ID_0]' in item['name'] or 'Perceptor' in item['type']['name']:
         continue
     transformed_item = {}
@@ -103,7 +113,10 @@ for item in original_data['items']:
         transformed_item["ankama_id"] = item["ankama_id"]
     transformed_item["ankama_type"] = "equipment"
     if "name" in item:
-        transformed_item["name"] = item["name"]
+        for lang in LANGUAGES:
+            lang_name_key = f"name_{lang}"
+            lang_item = next((i for i in equipment_data[lang]['items'] if i['ankama_id'] == item['ankama_id']), None)
+            transformed_item[lang_name_key] = lang_item['name'] if lang_item else None
     if "type" in item:
         transformed_item["w_type"] = item["type"]["name"]
     if "level" in item:
@@ -127,9 +140,20 @@ for item in original_data['items']:
             [
                 eff["int_minimum"] if not eff["ignore_int_min"] else None,
                 eff["int_maximum"] if not eff["ignore_int_max"] else None,
-                eff["type"]["name"] if not "-special spell-" in eff["type"]["name"] else "-special spell-" + eff["formatted"],
+                eff["type"]["name"]
             ] for eff in item["effects"]
         ]
+        for eff in item["effects"]:
+            if eff["type"]["name"] == '-special spell-':
+                special_spell_effects = [eff for eff in item.get('effects', []) if eff['type']['name'] == '-special spell-']
+                for eff in special_spell_effects:
+                    # Add special spell descriptions in different languages
+                    for lang in LANGUAGES:
+                        lang_item = next((i for i in equipment_data[lang]['items'] if i['ankama_id'] == item['ankama_id']), None)
+                        if lang_item:
+                            lang_special_spell = next((e['formatted'] for e in lang_item.get('effects', []) if e['type']['name'] == '-special spell-'), None)
+                            if lang_special_spell:
+                                transformed_item[f"special_spell_{lang}"] = lang_special_spell
     else:
         transformed_item["stats"] = []
     if "conditions" in item:
@@ -140,17 +164,17 @@ for item in original_data['items']:
 
     new_data.append(transformed_item)
 
-with open('all_mounts.json', 'r', encoding='utf-8') as f:
-    original_data = json.load(f)
-
-for item in original_data['mounts']:
+for item in mount_data['en']['mounts']:
     transformed_item = {}
     transformed_item["dofustouch"] = False
     if "ankama_id" in item:
         transformed_item["ankama_id"] = item["ankama_id"]
     transformed_item["ankama_type"] = "mounts"
     if "name" in item:
-        transformed_item["name"] = item["name"]
+        for lang in LANGUAGES:
+            lang_name_key = f"name_{lang}"
+            lang_item = next((i for i in mount_data[lang]['mounts'] if i['ankama_id'] == item['ankama_id']), None)
+            transformed_item[lang_name_key] = lang_item['name'] if lang_item else None
     transformed_item["w_type"] = "Pet"
     transformed_item["level"] = 60
     if "dofustouch" in item:
@@ -182,15 +206,12 @@ for item in new_data:
             stat[-1] = translated_stat_name  # Update the name in the stat list
 
 # Write the new JSON file
-with open('transformed_items.json', 'w', encoding='utf-8') as f:
+with open('transformed_equipment.json', 'w', encoding='utf-8') as f:
     json.dump(new_data, f, ensure_ascii=False, indent=4)
-
-with open('all_sets.json', 'r', encoding='utf-8') as f:
-    original_data = json.load(f)
 
 new_data = []
 
-for item in original_data["sets"]:
+for item in set_data['en']["sets"]:
 
     if "effects" in item:
         for effect_group in item["effects"]:  # Iterate over each group of effects
@@ -204,7 +225,10 @@ for item in original_data["sets"]:
     if "ankama_id" in item:
         transformed_item["ankama_id"] = item["ankama_id"]
     if "name" in item:
-        transformed_item["name"] = item["name"]
+        for lang in LANGUAGES:
+            lang_name_key = f"name_{lang}"
+            lang_item = next((i for i in set_data[lang]['sets'] if i['ankama_id'] == item['ankama_id']), None)
+            transformed_item[lang_name_key] = lang_item['name'] if lang_item else None
     if "items" in item:
         transformed_item["items"] = item["items"]
     if "effects" in item:

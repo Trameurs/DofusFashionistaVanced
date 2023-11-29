@@ -17,56 +17,36 @@
 import requests
 import json
 
-# API endpoint
-api_endpoint = "https://api.dofusdu.de/dofus2/en/items/equipment/all"
-api_endpoint_mount = "https://api.dofusdu.de/dofus2/en/mounts/all"
-api_endpoint_sets = "https://api.dofusdu.de/dofus2/en/sets/all"
+LANGUAGES = ['en', 'fr', 'es', 'pt', 'de', 'it']
 
-# Make the GET request
-response = requests.get(api_endpoint)
+# API base URL
+api_base = "https://api.dofusdu.de/dofus2/"
 
-# Check for successful request
-if response.status_code == 200:
-    json_data = response.json()
+# Endpoints
+endpoints = {
+    "equipment": "/items/equipment/all",
+    "mounts": "/mounts/all",
+    "sets": "/sets/all"
+}
 
-    # Save to a JSON file
-    with open('all_items.json', 'w', encoding='utf-8') as f:
-        json.dump(json_data, f, ensure_ascii=False, indent=4)
+for lang in LANGUAGES:
+    for category, endpoint in endpoints.items():
+        # Construct the full API URL with language parameter
+        api_url = f"{api_base}{lang}{endpoint}"
 
-    print("Successfully saved all items to 'all_items.json'")
+        # Make the GET request
+        response = requests.get(api_url)
 
-else:
-    print(f"Failed to retrieve equipment data. Status code: {response.status_code}")
+        # Check for successful request
+        if response.status_code == 200:
+            json_data = response.json()
 
-# Make the GET request
-response = requests.get(api_endpoint_mount)
+            # Save to a JSON file
+            filename = f"all_{category}_{lang}.json"
+            with open(filename, 'w', encoding='utf-8') as f:
+                json.dump(json_data, f, ensure_ascii=False, indent=4)
 
-# Check for successful request
-if response.status_code == 200:
-    json_data = response.json()
+            print(f"Successfully saved all {category} data in {lang} to '{filename}'")
 
-    # Save to a JSON file
-    with open('all_mounts.json', 'w', encoding='utf-8') as f:
-        json.dump(json_data, f, ensure_ascii=False, indent=4)
-
-    print("Successfully saved all mounts to 'all_mounts.json'")
-
-else:
-    print(f"Failed to retrieve mounts data. Status code: {response.status_code}")
-
-# Make the GET request
-response = requests.get(api_endpoint_sets)
-
-# Check for successful request
-if response.status_code == 200:
-    json_data = response.json()
-
-    # Save to a JSON file
-    with open('all_sets.json', 'w', encoding='utf-8') as f:
-        json.dump(json_data, f, ensure_ascii=False, indent=4)
-
-    print("Successfully saved all sets to 'all_sets.json'")
-
-else:
-    print(f"Failed to retrieve sets data. Status code: {response.status_code}")
-
+        else:
+            print(f"Failed to retrieve {category} data for {lang}. Status code: {response.status_code}")

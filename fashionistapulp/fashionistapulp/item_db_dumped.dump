@@ -749,6 +749,7 @@ INSERT INTO sets VALUES(662,'Wayland Ceremonial Set',821,NULL);
 INSERT INTO sets VALUES(663,'Stack Anove Ceremonial Set',822,NULL);
 INSERT INTO sets VALUES(664,'Olivier Triste Ceremonial Set',823,NULL);
 INSERT INTO sets VALUES(665,'Santiagogo Ceremonial Set',824,NULL);
+INSERT INTO sets VALUES(666,'Sylvan Ceremonial Set',827,NULL);
 CREATE TABLE "items" (
         `id` INTEGER PRIMARY KEY AUTOINCREMENT,
         `name` text,
@@ -34242,77 +34243,425 @@ INSERT INTO weapon_hits VALUES(3388,0,25,30,0,0,'earth');
 INSERT INTO weapon_hits VALUES(3388,1,25,30,0,0,'fire');
 INSERT INTO weapon_hits VALUES(3389,0,51,80,0,0,'neut');
 CREATE TABLE extra_lines (item INTEGER, line text, language text, FOREIGN KEY(item) REFERENCES items(id));
-INSERT INTO extra_lines VALUES(127,'(lp0
+INSERT INTO extra_lines VALUES(127, '(lp0
 VFor each attack suffered, the final damage inflicted is increased by 1% for 1 turn.
 p1
 aVThe effects can stack 10 times.
 p2
-a.','en');
-INSERT INTO extra_lines VALUES(148,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(127, '(lp0
+VPour chaque attaque reçue, les dommages finaux occasionnés sont augmentés de 1% pendant 1 tour.
+p1
+aVLes effets peuvent se cumuler 10 fois.
+p2
+a.', 'fr');
+INSERT INTO extra_lines VALUES(127, '(lp0
+VPor cada ataque recibido, los daños finales que se ocasionan aumentan un 1% durante 1 turno.
+p1
+aVEste efecto puede acumularse 10 veces.
+p2
+a.', 'es');
+INSERT INTO extra_lines VALUES(127, '(lp0
+VPara cada ataque recebido, os danos finais infligidos aumentam em 1% durante 1 turno.
+p1
+aVOs efeitos podem ser acumulados 10 vezes.
+p2
+a.', 'pt');
+INSERT INTO extra_lines VALUES(127, '(lp0
+VFür jeden erlittenen Fernkampfangriff wird der verursachte Endschaden 1 Runde lang um 1 % erhöht.
+p1
+aVDie Wirkungen sind bis zu 10 Mal kumulierbar.
+p2
+a.', 'de');
+INSERT INTO extra_lines VALUES(127, '(lp0
+VPer ogni attacco a distanza ricevuto, i danni finali causati sono aumentati dell''1% per 1 turno.
+p1
+aVGli effetti possono accumularsi per 10 volte.
+p2
+a.', 'it');
+INSERT INTO extra_lines VALUES(148, '(lp0
 VAt the end of the turn, gives 100% of the owner''s level in shield points for each adjacent enemy.
 p1
 aVSummons are not counted.
 p2
-a.','en');
-INSERT INTO extra_lines VALUES(149,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(148, '(lp0
+VÀ la fin du tour, confère 100% du niveau du propriétaire en points de bouclier pour chaque ennemi au contact.
+p1
+aVLes invocations ne sont pas comptabilisées.
+p2
+a.', 'fr');
+INSERT INTO extra_lines VALUES(148, '(lp0
+VAl final del turno, confiere el 100% del nivel del propietario en puntos de escudo por cada enemigo en CaC.
+p1
+aVLas invocaciones no se tienen en cuenta.
+p2
+a.', 'es');
+INSERT INTO extra_lines VALUES(148, '(lp0
+VNo final do turno, dará pontos de escudo equivalentes a 100% do nível do proprietário por inimigo em contato.
+p1
+aVAs invocações não são contabilizadas.
+p2
+a.', 'pt');
+INSERT INTO extra_lines VALUES(148, '(lp0
+VVerleiht am Ende der Runde für jeden Gegner in Nahkampfentfernung 100 % der Stufe des Besitzers als Schildpunkte.
+p1
+aVBeschworene Kreaturen werden nicht mitgerechnet.
+p2
+a.', 'de');
+INSERT INTO extra_lines VALUES(148, '(lp0
+VAlla fine del turno, conferisce il 100% del livello del proprietario in punti scudo per ogni nemico in corpo a corpo.
+p1
+aVLe evocazioni non sono prese in considerazione.
+p2
+a.', 'it');
+INSERT INTO extra_lines VALUES(149, '(lp0
 VFor each Critical Hit inflicted, the final damage is increased by 1% for 3 turns. Can be stacked 10 times.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(231,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(149, '(lp0
+VPour chaque coup critique occasionné, les dommages finaux sont augmentés de 1% pendant 3 tours. Cumulable 10 fois.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(149, '(lp0
+VPor cada golpe crítico asestado, los daños finales aumentan un 1% durante 3 turnos. Acumulable 10 veces.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(149, '(lp0
+VPara cada golpe crítico infligido, os danos finais aumentam em 1% durante 3 turnos. Pode ser acumulado 10 vezes.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(149, '(lp0
+VErhöht 3 Runden lang bei jedem kritischen Schlag den endgültigen Schaden um 1 %. 10 Mal kumulierbar.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(149, '(lp0
+VPer ogni Colpo Critico causato, i danni finali sono aumentati dell''1% per 3 turni. Cumulabile 10 volte.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(231, '(lp0
 VIncreases one elemental characteristic per game turn: 300 to Chance, then 300 to Strength, then 300 to Agility, and then 300 to Intelligence.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(237,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(231, '(lp0
+VAugmente une caractéristique élémentaire par tour de jeu : 300 en chance puis 300 en force puis 300 en agilité puis 300 en intelligence.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(231, '(lp0
+VIncrementa una característica elemental por turno de juego: 300 de suerte, luego 300 de fuerza, luego 300 de agilidad y, por último, 300 de inteligencia.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(231, '(lp0
+VAumenta uma característica elementar a cada turno de jogo: 300 de sorte, depois 300 de força, em seguida 300 de agilidade e, por último, 300 de inteligência.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(231, '(lp0
+VErhöht ein Elementarattribut pro Runde: erst 300 Glück, dann 300 Kraft, dann 300 Flinkheit und schließlich 300 Intelligenz.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(231, '(lp0
+VAumenta una caratteristica elementale per ogni turno di gioco: 300 Fortuna, poi 300 Forza, poi 300 Agilità, poi 300 Intelligenza.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(237, '(lp0
 VGives 25 AP Parry if an AP penalty is suffered, or 25 MP Parry if an MP penalty is suffered. 
 p1
 aVThe two effects last 1 turn and do not stack.
 p2
-a.','en');
-INSERT INTO extra_lines VALUES(793,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(237, '(lp0
+VDonne 25 esquive PA si un malus de PA est subi, ou 25 esquive PM si un malus PM est subi. 
+p1
+aVLes deux effets ne sont pas cumulables et durent 1 tour.
+p2
+a.', 'fr');
+INSERT INTO extra_lines VALUES(237, '(lp0
+VDa 25 de esquiva de PA si se sufre un malus de PA, o 25 de esquiva de PM si se sufre un malus de PM. 
+p1
+aVLos dos efectos no son acumulables y duran 1 turno.
+p2
+a.', 'es');
+INSERT INTO extra_lines VALUES(237, '(lp0
+VConcede 25 de esquiva PA se sofrer penalidade de PA ou 25 de esquiva PM se sofrer penalidade de PM. 
+p1
+aVOs dois efeitos não são cumulativos e duram 1 turno.
+p2
+a.', 'pt');
+INSERT INTO extra_lines VALUES(237, '(lp0
+VVerleiht 25 Resistenz gegen AP-Entzug, wenn ein AP-Malus erlitten wurde, bzw. 25 Resistenz gegen BP-Entzug, wenn ein BP-Malus erlitten wurde. 
+p1
+aVDie beiden Wirkungen sind nicht kumulierbar und bleiben 1 Runde lang aufrecht.
+p2
+a.', 'de');
+INSERT INTO extra_lines VALUES(237, '(lp0
+VConferisce 25 Schivata PA se si subisce un malus PM o 25 Schivata PM se si subisce un malus PA. 
+p1
+aVI due effetti non sono cumulabili e durano 1 turno.
+p2
+a.', 'it');
+INSERT INTO extra_lines VALUES(793, '(lp0
 VIncreases damage inflicted by 10% for 1 turn if the bearer has suffered no damage from enemies since the last turn.
 p1
 aVOtherwise, gives 20 Lock.
 p2
-a.','en');
-INSERT INTO extra_lines VALUES(863,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(793, '(lp0
+VAugmente les dommages occasionnés de 10% pour 1 tour si le porteur n''a subi aucun dommages ennemis depuis le précédent tour de jeu.
+p1
+aVSinon, donne 20 Tacle.
+p2
+a.', 'fr');
+INSERT INTO extra_lines VALUES(793, '(lp0
+VAumenta un 10% los daños ocasionados durante 1 turno si el portador no ha sufrido ningún daño enemigo desde el turno anterior de juego.
+p1
+aVSi no, da 20 de placaje.
+p2
+a.', 'es');
+INSERT INTO extra_lines VALUES(793, '(lp0
+VAumenta os danos infligidos em 10% durante 1 turno se o carregador não tiver sofrido danos inimigos desde o turno anterior.
+p1
+aVCaso contrário, concede 20 de bloqueio.
+p2
+a.', 'pt');
+INSERT INTO extra_lines VALUES(793, '(lp0
+VErhöht den verursachten Schaden 1 Runde lang um 10 %, wenn der Träger seit der vorangegangenen Runde keinen Schaden durch Gegner erlitten hat.
+p1
+aVAndernfalls wird der Blockwert um 20 erhöht.
+p2
+a.', 'de');
+INSERT INTO extra_lines VALUES(793, '(lp0
+VI danni causati sono aumentati del 10% per 1 turno se non è stato subito nessun attacco che causa danni nel precedente turno di gioco.
+p1
+aVIl Contrasto è aumentato di 20 per 1 turno se un attacco che causa danni è stato subito dal turno precedente di gioco.
+p2
+a.', 'it');
+INSERT INTO extra_lines VALUES(863, '(lp0
 VIf the bearer inflicts damage during their turn, they and their allies carrying the Dorigami gain 20 damage for 1 turn.
 p1
 aVIf the bearer does not inflict damage, they and their allies carrying the Domakuro gain 150% of their respective levels in shield for 1 turn.
-p2
-a.','en');
-INSERT INTO extra_lines VALUES(865,'(lp0
+p3
+a.', 'en');
+INSERT INTO extra_lines VALUES(863, '(lp0
+VSi le porteur inflige des dommages pendant son tour de jeu, ses alliés porteurs du Dorigami et lui même gagnent 20 dommages pendant 1 tour.
+p1
+aVS''il n''inflige pas de dommages, ses alliés porteurs du Domakuro et lui même gagnent 150% de leur niveau en bouclier pendant 1 tour.
+p3
+a.', 'fr');
+INSERT INTO extra_lines VALUES(863, '(lp0
+VSi el portador inflige daños durante su turno de juego, sus aliados portadores del dorigami y él ganan 20 de daño durante 1 turno.
+p1
+aVSi no inflige daños, sus aliados portadores del domakuro y él ganan el 150% de su nivel en escudo durante 1 turno.
+p3
+a.', 'es');
+INSERT INTO extra_lines VALUES(863, '(lp0
+VSe o jogador infligir danos em seu turno, os aliados dele portadores do Dorigami e ele ganham 20 de dano durante 1 turno.
+p1
+aVSe ele não infligir danos, os aliados dele portadores do Domakuro e ele ganham 150% de seu nível em escudo durante 1 turno.
+p3
+a.', 'pt');
+INSERT INTO extra_lines VALUES(863, '(lp0
+VWenn der Träger während seiner Spielrunde Schaden verursacht, erhalten er und alle verbündeten Träger des Dorigami eine Runde lang 20 Schaden.
+p1
+aVWenn der Träger keinen Schaden verursacht, erhalten er und alle verbündeten Träger des Domakuro eine Runde lang 150 % ihrer Stufe als Schildpunkte.
+p3
+a.', 'de');
+INSERT INTO extra_lines VALUES(863, '(lp0
+VSe il portatore infligge danni durante il suo turno di gioco, i suoi alleati portatori del Dorigami e lui stesso ottengono 20 danni per 1 turno.
+p1
+aVSe non infligge danni, i suoi alleati portatori del Domakkuro e lui stesso ottengono il 150% del loro livello in scudo per 1 turno.
+p3
+a.', 'it');
+INSERT INTO extra_lines VALUES(865, '(lp0
 VInflicting ranged damage and close-combat damage during one''s turn triggers the Ebony Dofus''s power: the next attack during the same turn applies a poison (2 turns).
 p1
 aVThis attack takes 2 turns to recharge. The poison can be stacked 2 times.
 p2
-a.','en');
-INSERT INTO extra_lines VALUES(866,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(865, '(lp0
+VOccasionner des dommages à distance et en mêlée pendant son propre tour de jeu déclenche le pouvoir du Dofus Ébène : la prochaine attaque, toujours dans le même tour, applique un poison (2 tours).
+p1
+aVCette attaque a un temps de recharge de 2 tours. Le poison est cumulable 2 fois.
+p2
+a.', 'fr');
+INSERT INTO extra_lines VALUES(865, '(lp0
+VOcasionar daños a distancia y en cuerpo a cuerpo durante el turno de juego propio activa el poder del dofus Ébano: el próximo ataque, en el mismo turno, aplica un veneno (2 turnos).
+p1
+aVEste ataque tiene un tiempo de recarga de 2 turnos. El veneno se puede acumular 2 veces.
+p2
+a.', 'es');
+INSERT INTO extra_lines VALUES(865, '(lp0
+VInfligir danos a distância e no corpo a corpo em seu próprio turno de jogo aciona o poder do Dofus Ébano: no ataque seguinte, também no mesmo turno, aplica um veneno (acumula 2 turnos).
+p1
+aVEste ataque tem 2 turnos de recarga. O veneno pode acumular 2 vezes.
+p2
+a.', 'pt');
+INSERT INTO extra_lines VALUES(865, '(lp0
+VDie Macht des Ebenholz-Dofus wird ausgelöst, wenn während seiner eigenen Spielrunde Schaden im Fern- und Nahkampf verursacht wird: Beim nächsten Angriff in derselben Runde wird ein Gift angewendet (2 Runden).
+p1
+aVDieser Angriff hat einen Cooldown von 2 Runden. Dieses Gift ist 2 Mal kumulierbar.
+p2
+a.', 'de');
+INSERT INTO extra_lines VALUES(865, '(lp0
+VCausare danni a distanza e in mischia durante il proprio turno di gioco attiva il potere del Dofus Ebano: l''attacco successivo, sempre nello stesso turno, applica un veleno per 2 turni.
+p1
+aVQuesto attacco ha un tempo di ricarica di 2 turni. Il veleno è cumulabile 2 volte.
+p2
+a.', 'it');
+INSERT INTO extra_lines VALUES(866, '(lp0
 VThe bearer reduces damage from one out of five attacks by 50%. The reduction is lost if this one is sacrificed.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(1021,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(866, '(lp0
+VLe porteur réduit de 50% les dommages d''une attaque sur cinq. La réduction est perdue si celui-ci est sacrifié.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(866, '(lp0
+VEl portador reduce un 50% los daños de un ataque de cada cinco. La reducción se pierde si este se sacrifica.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(866, '(lp0
+VO portador reduz em 50% os danos de um ataque em cinco. A redução se perderá se ele for sacrificado.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(866, '(lp0
+VDer Träger reduziert den Schaden jedes fünften Angriffs um 50 %. Die Reduzierung wird aufgehoben, wenn dieser geopfert wird.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(866, '(lp0
+VIl portatore riduce del 50% i danni di 1 attacco su 5. La riduzione si perde se viene sacrificato.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(1021, '(lp0
 VGives 1 AP for 1 turn if the bearer has suffered no damage from enemies since the last turn.
 p1
 aVOtherwise, gives 20 Dodge.
 p2
-a.','en');
-INSERT INTO extra_lines VALUES(1313,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(1021, '(lp0
+VDonne 1 PA pour 1 tour si le porteur n''a subi aucun dommages ennemis depuis le précédent tour de jeu.
+p1
+aVSinon, donne 20 Fuite.
+p2
+a.', 'fr');
+INSERT INTO extra_lines VALUES(1021, '(lp0
+VDa 1 PA durante 1 turno si el portador no ha sufrido ningún daño enemigo desde el turno anterior de juego.
+p1
+aVSi no, da 20 de fuga.
+p2
+a.', 'es');
+INSERT INTO extra_lines VALUES(1021, '(lp0
+VConcede 1 PA durante 1 turno se o carregador não tiver sofrido danos inimigos desde o turno anterior.
+p1
+aVCaso contrário, concede 20 de fuga.
+p2
+a.', 'pt');
+INSERT INTO extra_lines VALUES(1021, '(lp0
+VVerleiht 1 Runde lang 1 AP, wenn der Träger seit der vorangegangenen Runde keinen Schaden durch Gegner erlitten hat.
+p1
+aVAndernfalls wird der Ausweichwert um 20 erhöht.
+p2
+a.', 'de');
+INSERT INTO extra_lines VALUES(1021, '(lp0
+VDà 1 PA se non è stato subito nessun attacco che causa danni nel precedente turno di gioco.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(1313, '(lp0
 VOn odd turns, increases damage by 20%. On even turns, decreases damage by 10%.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(2635,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(1313, '(lp0
+VLes tours impairs, augmente de 20% les dommages. Les tours pairs, réduit de 10% les dommages.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(1313, '(lp0
+VEn los turnos impares, aumenta un 20% los daños. En los turnos pares, reduce un 10% los daños.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(1313, '(lp0
+VNos turnos ímpares, os danos aumentam em 20%. Nos turnos pares, os danos são reduzidos em 10%.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(1313, '(lp0
+VErhöht in den ungeraden Runden den Schaden um 20 %. Verringert in den geraden Runden den Schaden um 10 %.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(1313, '(lp0
+VNei turni dispari, aumenta del 20% i danni. Nei turni pari, riduce del 10% i danni.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(2635, '(lp0
 VAt the end of the turn, returns 7% HP to aligned allies.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(2760,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(2635, '(lp0
+VEn fin de tour, rend 7% de points de vie aux alliés alignés.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(2635, '(lp0
+VAl final del turno, devuelve el 7% de los puntos de vida a los aliados alineados.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(2635, '(lp0
+VNo fim do turno, devolve 7% dos pontos de vida aos aliados que estiverem alinhados.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(2635, '(lp0
+VAm Ende der Runde werden den in einer Linie stehenden Verbündeten 7 % der Lebenspunkte zurückgegeben.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(2635, '(lp0
+VAll''inizio del turno cura il 7% dei Punti Vita agli alleati allineati.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(2760, '(lp0
 VEvery 3 turns starting on turn 3, returns 10% of their maximum health points.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(2897,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(2760, '(lp0
+VTous les 3 tours à partir du tour 3, rend 10% de ses points de vie maximum.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(2760, '(lp0
+VCada 3 turnos a partir del turno 3, devuelve un 10% de los puntos de vida máximos.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(2760, '(lp0
+VA cada 3 turnos a partir do 3º turno, devolve 10% do máximo de seus pontos de vida.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(2760, '(lp0
+VAb Runde 3 werden jede 3. Runde 10 % der maximalen Lebenspunkte zurückgegeben.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(2760, '(lp0
+VOgni 3 turni, partendo dal turno n°4, restituisce il 10% dei suoi Punti Vita massimi.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(2897, '(lp0
 VAt the start of each turn, if there are no enemies in close combat, gives 1 MP. Otherwise, gives 1 AP.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3072,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(2897, '(lp0
+VÀ chaque début de tour, si aucun ennemi n''est au contact, donne 1 PM. Sinon, donne 1 PA.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(2897, '(lp0
+VAl principio de cada turno, si no hay ningún enemigo en contacto, da 1 PM. En caso contrario, da 1 PA.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(2897, '(lp0
+VNo início do turno, se não houver nenhum inimigo no corpo a corpo, dá 1 PM. Caso contrário, dá 1 PA.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(2897, '(lp0
+VZu Beginn jeder Runde wird 1 BP ausgegeben, wenn kein Feindkontakt besteht. Andernfalls wird 1 AP ausgegeben.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(2897, '(lp0
+VAll''inizio del turno, se non c''è nessun nemico in corpo a corpo, dà 1 PM. Altrimenti, dà 1 PA.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3072, '(lp0
 VApplies 100% of level as shield points to its bearer, 1 time max per turn for pushback damage and 1 time for each type of movement: 
 p1
 aV- pushback damage
@@ -34324,250 +34673,1530 @@ p4
 aV- carried by a Pandawa
 p5
 aVThe effect can only be triggered by enemies.
-p6
-a.','en');
-INSERT INTO extra_lines VALUES(3101,'(lp0
+p7
+a.', 'en');
+INSERT INTO extra_lines VALUES(3072, '(lp0
+VConfère 100% du niveau en points de bouclier à son porteur, 1 fois maximum par tour pour les dommages de poussée et 1 fois pour chaque type de déplacement : 
+p1
+aV- Dommages de poussée
+p2
+aV- Poussée / Attirance
+p3
+aV- Échange de positions / Téléportation / Portail Eliotrope
+p4
+aV- Portage Pandawa
+p5
+aVL''effet ne peut être déclenché que par les ennemis.
+p7
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3072, '(lp0
+VConfiere a su portador un 100% del nivel en puntos de escudo, 1 vez como máximo por turno para los daños de empuje y 1 vez por cada tipo de desplazamiento: 
+p1
+aV- Daños de empuje
+p2
+aV- Empuje / Atracción
+p3
+aV- Intercambio de posición / Teletransportación / Portal selotrop
+p4
+aV- Porteo pandawa
+p5
+aVEl efecto solo lo pueden activar los enemigos.
+p7
+a.', 'es');
+INSERT INTO extra_lines VALUES(3072, '(lp0
+VConfere 100% do nível em pontos de escudo ao portador, até 1 vez por turno para danos de empurrão e 1 vez para cada tipo de deslocamento: 
+p1
+aV- Danos de empurrão
+p2
+aV- Empurrão/atração
+p3
+aV- Troca de lugar/teletransporte/portal Eliotrope
+p4
+aV- Carregamento Pandawa
+p5
+aVO efeito só pode ser acionado pelos inimigos.
+p7
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3072, '(lp0
+VVerschafft seinem Träger 100 % seiner Stufe als Schild – höchstens 1-mal pro Runde gegen Schubsschaden und 1-mal gegen jede Art von Bewegung: 
+p1
+aV- Schubsschaden
+p2
+aV- Schubser/Anziehung
+p3
+aV- Positionstausch/Teleportation/Eliotrop-Portal
+p4
+aV- Tragen durch Pandawa
+p5
+aVDie Wirkung kann nur von Gegnern ausgelöst werden.
+p7
+a.', 'de');
+INSERT INTO extra_lines VALUES(3072, '(lp0
+VConferisce al suo portatore il 100% del livello in Punti Scudo, al massimo 1 volta per turno per i danni da spinta e 1 volta per ogni tipo di spostamento: 
+p1
+aV- Danni da spinta
+p2
+aV- Spinta / Attrazione
+p3
+aV- Scambio di posizioni / Teletrasporto / Portale Eliotrop
+p4
+aV- Trasporto Pandawa (Karcham)
+p5
+aVL''effetto può essere attivato solo dai nemici.
+p7
+a.', 'it');
+INSERT INTO extra_lines VALUES(3101, '(lp0
 VAs soon as the bearer falls below 20% of their health points, the Dofus''s effect is triggered.
 p1
 aVAt the start of their next turn: heals 20% HP (once per fight).
 p2
-a.','en');
-INSERT INTO extra_lines VALUES(3120,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3101, '(lp0
+VDès que le porteur descend en dessous de 20% de ses points de vie, il déclenche l''effet du Dofus.
+p1
+aVAu début de son prochain tour : soigne 20% de la vie (1 fois par combat).
+p2
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3101, '(lp0
+VEn cuanto el portador baja del 20% de sus puntos de vida, activa el efecto del dofus.
+p1
+aVAl principio de su próximo turno: cura un 20% de la vida (1 vez por combate).
+p2
+a.', 'es');
+INSERT INTO extra_lines VALUES(3101, '(lp0
+VAssim que o portador fica com menos de 20% dos pontos de vida, ele aciona o efeito do Dofus.
+p1
+aVNo início de seu próximo turno: cura 20% da vida (1 vez por combate).
+p2
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3101, '(lp0
+VSobald der Träger weniger als 20 % seiner Lebenspunkte erreicht, wird der Dofus-Effekt ausgelöst.
+p1
+aVZu Beginn seiner nächsten Runde: Heilt 20 % der Lebenspunkte (1-mal pro Kampf).
+p2
+a.', 'de');
+INSERT INTO extra_lines VALUES(3101, '(lp0
+VNon appena il portatore scende al di sotto del 20% dei Punti Vita, attiva l''effetto del Dofus.
+p1
+aVAll''inizio del suo prossimo turno: cura il 20% dei Punti Vita (1 volta per combattimento).
+p2
+a.', 'it');
+INSERT INTO extra_lines VALUES(3120, '(lp0
 VAs soon as the bearer falls below 20% of their health points, the Dofus''s effect is triggered.
 p1
 aVAt the start of their next turn: heals 30% HP and gives 20% final damage for 1 turn (once per fight).
 p2
-a.','en');
-INSERT INTO extra_lines VALUES(3121,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3120, '(lp0
+VDès que le porteur descend en dessous de 20% de ses points de vie, il déclenche l''effet du Dofus.
+p1
+aVAu début de son prochain tour : soigne 30% de la vie et donne 20% de dommages finaux pour 1 tour (1 fois par combat).
+p2
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3120, '(lp0
+VEn cuanto el portador baja del 20% de sus puntos de vida, activa el efecto del dofus.
+p1
+aVAl principio de su próximo turno: cura un 30% de la vida y da un 20% de daños finales durante 1 turno (1 vez por combate).
+p2
+a.', 'es');
+INSERT INTO extra_lines VALUES(3120, '(lp0
+VAssim que o portador fica com menos de 20% dos pontos de vida, ele aciona o efeito do Dofus.
+p1
+aVNo início de seu próximo turno: cura 30% da vida e concede 20% de danos finais por 1 turno (1 turno por combate).
+p2
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3120, '(lp0
+VSobald der Träger weniger als 20 % seiner Lebenspunkte erreicht, wird der Dofus-Effekt ausgelöst.
+p1
+aVZu Beginn seiner nächsten Runde: Heilt 30 % der Lebenspunkte und erteilt 20 % Endschaden für 1 Runde (1-mal pro Kampf).
+p2
+a.', 'de');
+INSERT INTO extra_lines VALUES(3120, '(lp0
+VNon appena il portatore scende al di sotto del 20% dei Punti Vita, attiva l''effetto del Dofus.
+p1
+aVAll''inizio del suo prossimo turno: cura il 30% dei Punti Vita e dà il 20% dei danni finali per 1 turno (1 volta per combattimento).
+p2
+a.', 'it');
+INSERT INTO extra_lines VALUES(3121, '(lp0
 VAt the start of each turn, the bearer inflicts damage on themself in their best attack element to steal health from adjacent entities at the end of the caster''s turn.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3122,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3121, '(lp0
+VÀ chaque début de tour, le porteur s''inflige des dommages dans son meilleur élément d''attaque pour voler de la vie aux entités à son contact à la fin de son tour.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3121, '(lp0
+VAl principio de cada turno, el portador se inflige daños en su mejor elemento de ataque para robarle vida a las entidades en contacto con él al final de su turno.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3121, '(lp0
+VNo início de cada turno, o portador inflige a si mesmo danos de seu melhor elemento de ataque, para roubar vida de todas as entidades em contato no final do turno.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3121, '(lp0
+VZu Rundenbeginn fügt sich der Träger selbst Schaden in seinem besten Angriffselement zu, um Einheiten in Reichweite am Ende seiner Runde Leben zu entziehen.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3121, '(lp0
+VIl portatore ruba PV nel suo miglior elemento di attacco alla fine del turno alle entità a contatto con lui.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3122, '(lp0
 VWhenever the bearer inflicts Critical Hits, they gain pushback damage for 2 turns, stackable 5 times.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3123,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3122, '(lp0
+VQuand le porteur occasionne un coup critique, il gagne des dommages de poussée pour 2 tours, cumulable 5 fois.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3122, '(lp0
+VCuando el portador ocasiona un golpe crítico, gana daños de empuje durante 2 turnos, acumulable 5 veces.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3122, '(lp0
+VQuando o portador causa um golpe crítico, ele ganha danos de empurrão por 2 turnos. Acumula até 5 vezes.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3122, '(lp0
+VWenn der Träger einen kritischen Treffer landet, gewinnt er 2 Runden lang Schubsschaden, der bis zu 5 Mal kumulierbar ist.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3122, '(lp0
+VQuando il portatore causa un Colpo Critico, ottiene danni da spinta per 2 turni, cumulabile 5 volte.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3123, '(lp0
 VIf the bearer ends their turn with a line of sight to at least one opponent, they earn a 10% damage suffered reduction for 1 turn as long as they haven''t been pushed, attracted, carried, teleported or transposed.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3124,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3123, '(lp0
+VSi le porteur termine son tour en ligne de vue avec au moins un adversaire, il gagne une réduction de dommages subis de 10% pendant 1 tour tant qu''il n''a pas été poussé, attiré, porté, téléporté ou transposé.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3123, '(lp0
+VSi el portador termina su turno en la línea de visión de al menos un adversario, gana una reducción de daños recibidos del 10% durante 1 turno mientras no lo hayan empujado, atraído, portado, teletransportado o transposicionado.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3123, '(lp0
+VSe o portador terminar o turno dele com pelo menos um adversário na linha de visão, ele ganha uma redução de 10% nos danos sofridos durante 1 turno se não tiver sido empurrado, atraído, carregado, teletransportado nem transposto.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3123, '(lp0
+VWenn der Träger seinen Zug in der Sichtlinie von mindestens einem Gegner beendet, wird sein erlittener Schaden 1 Runde lang um 10 % gemindert, solange er nicht geschubst, angezogen, getragen, teleportiert oder versetzt wurde.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3123, '(lp0
+VSe il portatore termina il suo turno in Linea di Tiro con almeno un avversario, ottiene una riduzione del 10% dei danni subiti per 1 turno, fino a quando non viene spinto, attirato, portato, teletrasportato o trasposto.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3124, '(lp0
 VDamage suffered by the bearer is increased by 15% whenever they have more than 50% HP, but damage suffered is reduced by 20% whenever they have less than 50% HP.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3125,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3124, '(lp0
+VLes dommages subis par le porteur sont augmentés de 15% lorsqu''il a plus de 50% de ses PV, mais les dommages subis sont réduits de 20% lorsqu''il a moins de 50% de ses PV.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3124, '(lp0
+VLos daños que sufre el portador aumentan un 15% cuando tiene más del 50% de sus PdV, pero se reducen un 20% cuando tiene menos del 50% de sus PdV.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3124, '(lp0
+VOs danos sofridos pelo portador aumentam em 15% quando ele está com mais de 50% dos PV, mas são reduzidos em 20% quando ele está com menos de 50% dos PV.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3124, '(lp0
+VDer vom Träger erlittene Schaden erhöht sich um 15 %, wenn er über mehr als 50 % seiner LP verfügt, aber der erlittene Schaden verringert sich um 20 % wenn er weniger als 50 % seiner LP besitzt.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3124, '(lp0
+VI danni subiti dal portatore sono aumentati del 15% se ha oltre il 50% dei suoi PV, mentre diminuiscono del 20% se ha meno del 50% dei suoi PV.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3125, '(lp0
 VWhen the bearer suffers an AP, MP or Range removal, they gain 3% weapon damage for 2 turns, stackable 5 times.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3126,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3125, '(lp0
+VQuand le porteur subit un retrait de PA, de PM ou de PO, il gagne 3% de dommages d''armes pour 2 tours, cumulable 5 fois.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3125, '(lp0
+VCuando el portador sufre una retirada de PA, de PM o de AL, gana un 3% de daños de arma durante 2 turnos, acumulable 5 veces.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3125, '(lp0
+VQuando alguém retira PA, PM ou AL do portador, ele ganha 3% de danos de arma por 2 turnos. Acumula até 5 vezes.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3125, '(lp0
+VWenn der Träger AP-, BP- oder RW-Entzug erleidet, erhält er 2 Runden lang 3 % Waffenschäden, die maximal 5 Mal kumulierbar sind.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3125, '(lp0
+VQuando il portatore subisce una sottrazione PA, PM o PO, ottiene il 3% di danni dalle armi per 2 turni, cumulabile 5 volte.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3126, '(lp0
 VThe bearer gains 2 AP on even turns and loses 1 AP on odd turns.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3127,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3126, '(lp0
+VLe porteur gagne 2 PA les tours pairs, et perd 1 PA les tours impairs.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3126, '(lp0
+VEl portador gana 2 PA los turnos pares y pierde 1 PA los turnos impares.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3126, '(lp0
+VO portador ganha 2 PA nos turnos pares e perde 1 PA nos turnos ímpares.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3126, '(lp0
+VDer Träger erhält 2 AP in geraden Runden und verliert 1 AP in ungeraden Runden.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3126, '(lp0
+VIl portatore ottiene 2 PA nei turni pari e perde 1 PA nei turni dispari.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3127, '(lp0
 VFor each distance attack suffered, the bearer gains shield and loses ranged damage for 1 turn; stackable up to 5 times maximum. The damage penalty and shield values vary according to the distance between the bearer and their attacker.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3128,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3127, '(lp0
+VPour chaque attaque à distance subie, le porteur gagne du bouclier et perd des dommages à distance pour 1 tour, cumulable 5 fois maximum. La valeur du bouclier et du malus de dommages varie selon la distance entre le porteur et son attaquant.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3127, '(lp0
+VPor cada ataque a distancia sufrido, el portador gana escudo y pierde daños a distancia durante 1 turno, acumulable 5 veces como máximo. El valor del escudo y del malus de daños varía según la distancia entre el portador y su atacante.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3127, '(lp0
+VA cada ataque à distância sofrido, o portador ganha escudo e perde danos à distância por 1 turno. Acumula até 5 vezes. O valor do escudo e da penalidade de danos varia em função da distância entre o portador e o atacante dele.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3127, '(lp0
+VJedes Mal, wenn der Träger im Fernkampf Schaden erleidet, erhält er 1 Runde lang Schildpunkte und verliert Fernschaden; maximal 5 Mal kumulierbar. Schildwert und Schadensmalus variieren je nach Entfernung zwischen Träger und Angreifer.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3127, '(lp0
+VPer ogni attacco a distanza subito, il portatore ottiene punti scudo e perde dei danni a distanza per 1 turno, cumulabile 5 volte al massimo. Il valore dello scudo e il malus ai danni variano a seconda della distanza fra il portatore e il suo attaccante.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3128, '(lp0
 VWhen the bearer suffers damage in an element, they gain 3% resistance in that element for 2 turns, stackable 5 times.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3129,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3128, '(lp0
+VQuand le porteur reçoit des dommages dans un élément, il gagne 3% de résistance dans cet élément pour 2 tours, cumulable 5 fois.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3128, '(lp0
+VCuando el portador recibe daños con un elemento, gana un 3% de resistencia en este elemento durante 2 turnos, acumulable 5 veces.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3128, '(lp0
+VQuando o portador sofrer danos em um elemento, ele ganhará 3% de resistência nesse elemento por 2 turnos. Acumula até 5 vezes.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3128, '(lp0
+VWenn ein Träger Schaden in einem Element erleidet, erhält er 2 Runden lang 3 % Resistenz in diesem Element, die maximal 5 Mal kumulierbar sind.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3128, '(lp0
+VQuando il portatore subisce danni in un elemento, ottiene il 3% di Resistenza in quell''elemento per 2 turni, cumulabile 5 volte.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3129, '(lp0
 VThe bearer gains 2 MP on odd turns and loses 1 MP on even turns.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3130,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3129, '(lp0
+VLe porteur gagne 2 PM les tours impairs, et perd 1 PM les tours pairs.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3129, '(lp0
+VEl portador gana 2 PM en los turnos impares y pierde 1 PM en los turnos pares.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3129, '(lp0
+VO portador ganha 2 PM nos turnos ímpares e perde 1 PM nos turnos pares.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3129, '(lp0
+VDer Träger gewinnt bei ungeraden Runden 2 BP und verliert bei geraden 1 BP.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3129, '(lp0
+VIl portatore ottiene 2 PM nei turni dispari e perde 1 PM nei turni pari.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3130, '(lp0
 VAt the start of each turn, the bearer pushes entities in close combat back 2 cells.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3131,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3130, '(lp0
+VA chaque début de tour, le porteur repousse de 2 cases les entités en mêlée.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3130, '(lp0
+VEn cada inicio de turno, el portador empuja a las entidades cuerpo a cuerpo 2 casillas.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3130, '(lp0
+VNo começo de cada turno, o portador empurra as entidades à distância de corpo a corpo por 2 células.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3130, '(lp0
+VZu Beginn jeder Runde stößt der Träger alle Gegner in Nahkampf-Reichweite um 2 Felder zurück.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3130, '(lp0
+VAll''inizio di ogni turno, il portatore respinge di 2 caselle le entità in mischia.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3131, '(lp0
 VAt the start of each turn, the caster randomly teleports to an adjacent cell. If the move is impossible, they earn a +10% chance of critical hits and +80 Pushback Damage for 1 turn.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3132,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3131, '(lp0
+VÀ chaque début de tour, le lanceur se téléporte aléatoirement sur une case adjacente à sa position. Si le déplacement est impossible, il gagne 10% de chances de Critique et 80 Dommages de poussée pour 1 tour.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3131, '(lp0
+VEn cada inicio de turno, el lanzador se teletransporta aleatoriamente a una casilla adyacente a su posición. Si el desplazamiento es imposible, gana un 10% de posibilidades de crítico y 80 de daños de empuje durante 1 turno.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3131, '(lp0
+VNo começo de cada turno, o lançador se teletransporta aleatoriamente para uma célula adjacente à sua posição. Se o deslocamento não for possível, ele ganhará 10% de chances de crítico e 80 danos de empurrão por 1 turno.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3131, '(lp0
+VZu Beginn jeder Runde teleportiert sich der Zaubernde auf ein zufälliges benachbartes Feld. Sollte die Fortbewegung nicht möglich sein, erhält er 1 Runde lang 10 % Chance auf kritische Treffer und 80 Schubsschaden.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3131, '(lp0
+VAll''inizio di ogni turno, il lanciatore si teletrasporta in maniera casuale su una casella adiacente alla sua posizione. Se lo spostamento è impossibile, ottiene il 10% di possibilità di Critico e 80 danni da Spinta per 1 turno.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3132, '(lp0
 VAt end of their turn, the bearer removes 100 Dodge from adjacent enemies for 1 turn.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3150,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3132, '(lp0
+VÀ la fin de son tour, le porteur retire 100 de Fuite pour 1 tour aux ennemis au contact.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3132, '(lp0
+VAl final de su turno, el portador retira 100 de huida durante 1 turno a los enemigos en cuerpo a cuerpo.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3132, '(lp0
+VNo final do turno dele, o portador retira 100 de fuga dos inimigos em contato por 1 turno.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3132, '(lp0
+VAm Ende seines Zuges entzieht der Träger den Feinden in unmittelbarer Umgebung 1 Runde lang 100 Flucht.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3132, '(lp0
+VAlla fine del suo turno, il portatore sottrae 100 Fuga per 1 turno ai nemici a contatto.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3150, '(lp0
 VEach ranged attack suffered while you are in close combat with an enemy grants a chocolate mark.
 p1
 aVThese marks are consumed at the end of your turn; each one gives 25% of your level in shield for 1 turn.
-p2
-a.','en');
-INSERT INTO extra_lines VALUES(3163,'(lp0
+p3
+a.', 'en');
+INSERT INTO extra_lines VALUES(3150, '(lp0
+VChaque attaque à distance subie lorsque vous êtes au corps à corps d''un ennemi confère une marque chocolatée.
+p1
+aVCes marques sont consommées à la fin de votre tour et donnent chacune 25% de votre niveau en bouclier pendant 1 tour.
+p3
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3150, '(lp0
+VCada ataque a distancia sufrido mientras estás en cuerpo a cuerpo con un enemigo confiere una marca de chocolate.
+p1
+aVEstas marcas se consumen al final de tu turno y dan cada una un 25% de tu nivel en escudo durante 1 turno.
+p3
+a.', 'es');
+INSERT INTO extra_lines VALUES(3150, '(lp0
+VCada ataque a distância sofrido quando você está em uma célula adjacente a um inimigo concede uma marca achocolatada.
+p1
+aVEssas marcas são consumidas ao fim do seu turno, e cada uma delas dá um escudo equivalente a 25% do seu nível durante 1 turno.
+p3
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3150, '(lp0
+VFür jeden Fernangriff, der bei euch Schaden verursacht, während ihr euch im Nahkampf mit einem Gegner befindet, gibt es einen Schokomarker.
+p1
+aVDiese Abzeichen werden am Ende eures Zugs verbraucht und verleihen für die Dauer von 1 Runde je 25 % eurer Schildstufe.
+p3
+a.', 'de');
+INSERT INTO extra_lines VALUES(3150, '(lp0
+VOgni attacco a distanza subito mentre sei in corpo a corpo con un nemico ti conferisce un marchio di cioccolato.
+p1
+aVI marchi sono consumati alla fine del tuo turno e conferiscono ognuno il 25% del tuo livello in Punti Scudo per 1 turno.
+p3
+a.', 'it');
+INSERT INTO extra_lines VALUES(3163, '(lp0
 VThe bearer gains 20% of its current life in shield points on the first turn, 15% on the second turn and 10% on the third.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3164,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3163, '(lp0
+VLe porteur gagne 20% de sa vie actuelle en points de bouclier au premier tour, 15% au deuxième tour et 10% au troisième.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3163, '(lp0
+VEl portador gana un 20% de su vida actual en puntos de escudo en el primer turno, un 15% en el segundo turno y un 10% en el tercero.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3163, '(lp0
+VO portador ganha 20% da vida atual em pontos de escudo no primeiro turno, 15% no segundo e 10% no terceiro.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3163, '(lp0
+VDer Träger gewinnt während seiner ersten Spielrunde 20 % seiner aktuellen Lebenspunkte als Schildpunkte hinzu, 15 % bei der zweiten Runde und 10 % bei der dritten.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3163, '(lp0
+VIl portatore ottiene il 20% dei suoi PV attuali in Punti Scudo al primo turno, 15% al secondo turno e il 10% al terzo.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3164, '(lp0
 VThe bearer gains 15% of its current life in shield points on the first turn, 15% on the second turn and 15% on the third.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3165,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3164, '(lp0
+VLe porteur gagne 15% de sa vie actuelle en points de bouclier au premier tour, 15% au deuxième tour et 15% au troisième.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3164, '(lp0
+VEl portador gana un 15% de su vida actual en puntos de escudo en el primer turno, un 15% en el segundo turno y un 15% en el tercero.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3164, '(lp0
+VO portador ganha 15% da vida atual em pontos de escudo no primeiro turno, 15% no segundo e 15% no terceiro.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3164, '(lp0
+VDer Träger gewinnt während seiner ersten Spielrunde 15 % seiner aktuellen Lebenspunkte als Schildpunkte hinzu, 15 % bei der zweiten Runde und 15 % bei der dritten.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3164, '(lp0
+VIl portatore ottiene il 15% dei suoi PV attuali in Punti Scudo al primo turno, 15% al secondo turno e il 15% al terzo.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3165, '(lp0
 VThe bearer gains 10% of its current life in shield points on the first turn, 15% on the second turn and 20% on the third.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3174,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3165, '(lp0
+VLe porteur gagne 10% de sa vie actuelle en points de bouclier au premier tour, 15% au deuxième tour et 20% au troisième.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3165, '(lp0
+VEl portador gana un 10% de su vida actual en puntos de escudo en el primer turno, un 15% en el segundo turno y un 20% en el tercero.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3165, '(lp0
+VO portador ganha 10% da vida atual em pontos de escudo no primeiro turno, 15% no segundo e 20% no terceiro.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3165, '(lp0
+VDer Träger gewinnt während seiner ersten Spielrunde 10 % seiner aktuellen Lebenspunkte als Schildpunkte hinzu, 15 % bei der zweiten Runde und 20 % bei der dritten.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3165, '(lp0
+VIl portatore ottiene il 10% dei suoi PV attuali in Punti Scudo al primo turno, 15% al secondo turno e il 20% al terzo.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3174, '(lp0
 VThe bearer gains 1 AP for 3 turns but inflicts -10% damage.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3175,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3174, '(lp0
+VLe porteur gagne 1PA pendant 3 tours mais occasionne -10% de dommages.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3174, '(lp0
+VEl portador gana 1 PA durante 3 turnos, pero ocasiona -10% de daño.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3174, '(lp0
+VO portador ganha 1 PA durante 3 turnos, mas inflige -10% de danos.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3174, '(lp0
+VDer Träger erhält 3 Runden lang 1 AP zusätzlich, verursacht dafür aber -10 % Schaden.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3174, '(lp0
+VIl portatore ottiene 1 PA per 3 turni ma causa il 10% dei danni in meno.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3175, '(lp0
 VThe bearer gains 2 AP for 2 turns but inflicts -35% damage.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3176,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3175, '(lp0
+VLe porteur gagne 2PA pendant 2 tours mais occasionne -35% de dommages.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3175, '(lp0
+VEl portador gana 2 PA durante 2 turnos, pero ocasiona -35% de daño.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3175, '(lp0
+VO portador ganha 2 PA durante 2 turnos, mas inflige -35% de danos.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3175, '(lp0
+VDer Träger erhält 2 Runden lang 2 AP zusätzlich, verursacht dafür aber -35 % Schaden.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3175, '(lp0
+VIl portatore ottiene 2 PA per 2 turni ma causa il 35% dei danni in meno.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3176, '(lp0
 VThe bearer gains 4 AP for 1 turn but inflicts -50% damage.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3177,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3176, '(lp0
+VLe porteur gagne 4PA pendant 1 tour mais occasionne -50% de dommages.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3176, '(lp0
+VEl portador gana 4 PA durante 1 turno, pero ocasiona -50% de daño.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3176, '(lp0
+VO portador ganha 4 PA durante 1 turno, mas inflige -50% de danos.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3176, '(lp0
+VDer Träger erhält 1 Runde lang 4 AP zusätzlich, verursacht dafür aber -50 % Schaden.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3176, '(lp0
+VIl portatore ottiene 4 PA per 1 turno ma causa il 50% dei danni in meno.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3177, '(lp0
 VThe bearer gains 8 Critical for 3 turns.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3178,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3177, '(lp0
+VLe porteur gagne 8 Critique pendant 3 tours.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3177, '(lp0
+VEl portador gana 8 de crítico durante 3 turnos.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3177, '(lp0
+VO portador ganha 8 de crítico durante 3 turnos.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3177, '(lp0
+VDer Träger erhält 3 Runden lang 8 kritische Treffer zusätzlich.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3177, '(lp0
+VIl portatore ottiene 8 Critici per 3 turni.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3178, '(lp0
 VThe bearer gains 20 Critical for 2 turns.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3179,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3178, '(lp0
+VLe porteur gagne 20 Critique pendant 2 tours.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3178, '(lp0
+VEl portador gana 20 de crítico durante 2 turnos.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3178, '(lp0
+VO portador ganha 20 de crítico durante 2 turnos.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3178, '(lp0
+VDer Träger erhält 2 Runden lang 20 kritische Treffer zusätzlich.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3178, '(lp0
+VIl portatore ottiene 20 Critici per 2 turni.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3179, '(lp0
 VThe bearer gains 50 Critical for 1 turn.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3180,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3179, '(lp0
+VLe porteur gagne 50 Critique pendant 1 tour.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3179, '(lp0
+VEl portador gana 50 de crítico durante 1 turno.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3179, '(lp0
+VO portador ganha 50 de crítico durante 1 turno.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3179, '(lp0
+VDer Träger erhält 1 Runde lang 50 kritische Treffer zusätzlich.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3179, '(lp0
+VIl portatore ottiene 50 Critici per 1 turno.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3180, '(lp0
 VThe bearer gains 100 Power (3 turns) if they suffer an enemy hit before playing.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3181,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3180, '(lp0
+VLe porteur gagne 100 Puissance (3 tours) si un coup ennemi est reçu avant d''avoir joué.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3180, '(lp0
+VEl portador gana 100 de potencia (3 turnos) si recibe un golpe enemigo antes de haber jugado.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3180, '(lp0
+VO portador ganha 100 de potência (3 turnos) quando recebe um golpe inimigo antes de jogar.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3180, '(lp0
+VDer Träger erhält 100 Schlagkraft (3 Runden) zusätzlich, wenn er einen gegnerischen Schlag abbekommt, bevor er gespielt hat.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3180, '(lp0
+VIl portatore ottiene 100 Potenza per 3 turni se riceve un colpo nemico prima di aver giocato.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3181, '(lp0
 VThe bearer gains 200 Power (2 turns) if they suffer an enemy hit before playing.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3182,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3181, '(lp0
+VLe porteur gagne 200 Puissance (2 tours) si un coup ennemi est reçu avant d''avoir joué.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3181, '(lp0
+VEl portador gana 200 de potencia (2 turnos) si recibe un golpe enemigo antes de haber jugado.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3181, '(lp0
+VO portador ganha 200 de potência (2 turnos) quando recebe um golpe inimigo antes de jogar.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3181, '(lp0
+VDer Träger erhält 200 Schlagkraft (2 Runden) zusätzlich, wenn er einen gegnerischen Schlag abbekommt, bevor er gespielt hat.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3181, '(lp0
+VIl portatore ottiene 200 Potenza per 2 turni se riceve un colpo nemico prima di aver giocato.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3182, '(lp0
 VThe bearer gains 300 Power (1 turn) if they suffer an enemy hit before playing.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3183,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3182, '(lp0
+VLe porteur gagne 300 Puissance (1 tour) si un coup ennemi est reçu avant d''avoir joué.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3182, '(lp0
+VEl portador gana 300 de potencia (1 turno) si recibe un golpe enemigo antes de haber jugado.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3182, '(lp0
+VO portador ganha 300 de potência (1 turno) quando recebe um golpe inimigo antes de jogar.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3182, '(lp0
+VDer Träger erhält 300 Schlagkraft (1 Runde) zusätzlich, wenn er einen gegnerischen Schlag abbekommt, bevor er gespielt hat.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3182, '(lp0
+VIl portatore ottiene 300 Potenza per 1 turno se riceve un colpo nemico prima di aver giocato.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3183, '(lp0
 VThe bearer gains 1 MP (2 turns) per enemy more than 15 cells away.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3184,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3183, '(lp0
+VLe porteur gagne 1PM (2 tours) par ennemi à plus de 15 cases.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3183, '(lp0
+VEl portador gana 1 PM (2 turnos) por enemigo a más de 15 casillas.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3183, '(lp0
+VO portador ganha 1 PM (2 turnos) por inimigo a mais de 15 células de distância.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3183, '(lp0
+VDer Träger erhält 1 BP (2 Runden) für jeden Gegner, der mehr als 15 Felder entfernt steht.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3183, '(lp0
+VIl portatore ottiene 1 PM per 2 turni per ogni nemico a più di 15 caselle.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3184, '(lp0
 VThe bearer gains 1 MP (2 turns) per enemy more than 12 cells away and loses 1 AP (2 turns) per enemy within 12 cells.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3185,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3184, '(lp0
+VLe porteur gagne 1PM (2 tours) par ennemi à plus de 12 cases et perd 1PA (2 tours) par ennemi à 12 cases ou moins.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3184, '(lp0
+VEl portador gana 1 PM (2 turnos) por enemigo a más de 12 casillas y pierde 1 PA (2 turnos) por enemigo a 12 casillas o menos.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3184, '(lp0
+VO portador ganha 1 PM (2 turnos) por inimigo a mais de 12 células de distância e perde 1 PA (2 turnos) por inimigo a até 12 células.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3184, '(lp0
+VDer Träger erhält 1 BP (2 Runden) für jeden Gegner, der mehr als 12 Felder entfernt steht, und verliert 1 AP (2 Runden) für jeden Gegner, der 12 Felder oder weniger entfernt steht.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3184, '(lp0
+VIl portatore ottiene 1 PM per 2 turni per ogni nemico a più di 12 caselle e perde 1 PA per 2 turni per ogni nemico a 12 caselle o meno.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3185, '(lp0
 VThe bearer gains 1 MP (2 turns) per enemy more than 9 cells away and loses 2 AP (2 turns) per enemy within 9 cells.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3186,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3185, '(lp0
+VLe porteur gagne 1PM (2 tours) par ennemi à plus de 9 cases et perd 2PA (2 tours) par ennemi à 9 cases ou moins.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3185, '(lp0
+VEl portador gana 1 PM (2 turnos) por enemigo a más de 9 casillas y pierde 2 PA (2 turnos) por enemigo a 9 casillas o menos.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3185, '(lp0
+VO portador ganha 1 PM (2 turnos) por inimigo a mais de 9 células de distância e perde 2 PA (2 turnos) por inimigo a até 9 células.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3185, '(lp0
+VDer Träger erhält 1 BP (2 Runden) für jeden Gegner, der mehr als 9 Felder entfernt steht, und verliert 2 AP (2 Runden) für jeden Gegner, der 9 Felder oder weniger entfernt steht.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3185, '(lp0
+VIl portatore ottiene 1 PM per 2 turni per ogni nemico a più di 9 caselle e perde 1 PA per 2 turni per ogni nemico a 9 caselle o meno.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3186, '(lp0
 VHeals 15% of enemy damage suffered until the end of the third turn.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3187,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3186, '(lp0
+VSoigne 15% des dommages ennemis subis jusqu''à la fin du troisième tour.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3186, '(lp0
+VCura un 15% de los daños enemigos sufridos hasta el final del tercer turno.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3186, '(lp0
+VCura 15% dos danos inimigos sofridos até o fim do terceiro turno.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3186, '(lp0
+VHeilt 15 % des bis zum Ende der dritten Runde erlittenen gegnerischen Schadens.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3186, '(lp0
+VCura il 15% dei danni nemici subiti fino alla fine del terzo turno.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3187, '(lp0
 VHeals 30% of enemy damage suffered until the end of the second turn.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3188,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3187, '(lp0
+VSoigne 30% des dommages ennemis subis jusqu''à la fin du deuxième tour.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3187, '(lp0
+VCura un 30% de los daños enemigos sufridos hasta el final del segundo turno.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3187, '(lp0
+VCura 30% dos danos inimigos sofridos até o fim do segundo turno.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3187, '(lp0
+VHeilt 30 % des bis zum Ende der zweiten Runde erlittenen gegnerischen Schadens.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3187, '(lp0
+VCura il 30% dei danni nemici subiti fino alla fine del secondo turno.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3188, '(lp0
 VHeals 100% of enemy damage suffered until the end of the first turn.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3189,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3188, '(lp0
+VSoigne 100% des dommages ennemis subis jusqu''à la fin du premier tour.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3188, '(lp0
+VCura un 100% de los daños enemigos sufridos hasta el final del primer turno.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3188, '(lp0
+VCura 100% dos danos inimigos sofridos até o fim do primeiro turno.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3188, '(lp0
+VHeilt 100 % des bis zum Ende der ersten Runde erlittenen gegnerischen Schadens.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3188, '(lp0
+VCura il 100% dei danni nemici subiti fino alla fine del primo turno.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3189, '(lp0
 VThe bearer gains +2 AP for their first round.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3190,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3189, '(lp0
+VLe porteur gagne +2 PA pendant son premier tour de jeu.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3189, '(lp0
+VEl portador gana +2 PA durante su primer turno de juego.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3189, '(lp0
+VO portador ganha +2 PA durante seu primeiro turno de jogo.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3189, '(lp0
+VDer Träger erhält während seiner ersten Spielrunde +2 AP zusätzlich.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3189, '(lp0
+VIl portatore ottiene 2 PA durante il suo primo turno di gioco.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3190, '(lp0
 VThe bearer gains +3 AP for their first round but also loses 2 MP.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3191,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3190, '(lp0
+VLe porteur gagne +3 PA pendant son premier tour mais aussi -2 PM.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3190, '(lp0
+VEl portador gana +3 PA durante su primer turno, pero también -2 PM.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3190, '(lp0
+VO portador ganha +3 PA durante seu primeiro turno, mas também -2 PM.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3190, '(lp0
+VDer Träger erhält während seiner ersten Spielrunde +3 AP zusätzlich, verliert aber auch -2 BP.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3190, '(lp0
+VIl portatore ottiene 3 PA durante il suo primo turno di gioco ma perde 2 PM.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3191, '(lp0
 VThe bearer gains +4 AP for their first round but also loses 4 MP.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3192,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3191, '(lp0
+VLe porteur gagne +4 PA pendant son premier tour mais aussi -4 PM.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3191, '(lp0
+VEl portador gana +4 PA durante su primer turno, pero también -4 PM.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3191, '(lp0
+VO portador ganha +4 PA durante seu primeiro turno, mas também -4 PM.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3191, '(lp0
+VDer Träger erhält während seiner ersten Spielrunde +4 AP zusätzlich, verliert aber auch -4 BP.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3191, '(lp0
+VIl portatore ottiene 4 PA durante il suo primo turno di gioco ma perde 4 PM.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3192, '(lp0
 VThe bearer gains 250 AP Parry before playing, then 50 AP Parry for 1 turn.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3193,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3192, '(lp0
+VLe porteur gagne 250 Esquive PA avant d''avoir joué, puis 50 Esquive PA pendant 1 tour.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3192, '(lp0
+VEl portador gana 250 de esquiva de PA antes de jugar y, después, 50 de esquiva de PA durante 1 turno.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3192, '(lp0
+VO portador ganha 250 de Esquiva PA antes de jogar e, depois, 50 de Esquiva PA durante 1 turno.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3192, '(lp0
+VDer Träger erhält, bevor er gespielt hat, 250 Resist. AP-Entzug und anschließend 1 Runde lang 50 Resist. AP-Entzug.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3192, '(lp0
+VIl portatore ottiene 250 Schivata PA prima di giocare, poi 50 Schivata PA per 1 turno.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3193, '(lp0
 VThe bearer gains 250 MP Parry before playing, then 50 MP Parry for 1 turn.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3194,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3193, '(lp0
+VLe porteur gagne 250 Esquive PM avant d''avoir joué, puis 50 Esquive PM pendant 1 tour.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3193, '(lp0
+VEl portador gana 250 de esquiva de PM antes de jugar y, después, 50 de esquiva de PM durante 1 turno.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3193, '(lp0
+VO portador ganha 250 de Esquiva PM antes de jogar e, depois, 50 de Esquiva PM durante 1 turno.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3193, '(lp0
+VDer Träger erhält, bevor er gespielt hat, 250 Resist. BP-Entzug und anschließend 1 Runde lang 50 Resist. BP-Entzug.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3193, '(lp0
+VIl portatore ottiene 250 Schivata PM prima di giocare, poi 50 Schivata PM per 1 turno.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3194, '(lp0
 VAt the end of their first turn, the bearer reduces damage by 5% (3 turns) for each enemy within 2 cells.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3195,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3194, '(lp0
+VÀ la fin de son premier tour, le porteur réduit les dommages de 5% (3 tours) pour chaque ennemi à 2 cases ou moins.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3194, '(lp0
+VAl final de su primer turno, el portador reduce los daños un 5% (3 turnos) por cada enemigo a 2 casillas o menos.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3194, '(lp0
+VNo fim do primeiro turno dele, o portador reduz em 5% os danos (3 turnos) por inimigo a até 2 células de distância.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3194, '(lp0
+VAm Ende seiner ersten Spielrunde verringert sich der Schaden des Trägers um 5 % (3 Runden) für jeden Gegner, der 2 Felder oder weniger entfernt steht.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3194, '(lp0
+VAlla fine del suo primo turno, il portatore riduce i danni del 5% per 3 turni per ogni nemico a 2 caselle o meno.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3195, '(lp0
 VAt the end of their first turn, the bearer reduces damage by 10% (2 turns) for each enemy within 2 cells.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3196,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3195, '(lp0
+VÀ la fin de son premier tour, le porteur réduit les dommages de 10% (2 tours) pour chaque ennemi à 2 cases ou moins.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3195, '(lp0
+VAl final de su primer turno, el portador reduce los daños un 10% (2 turnos) por cada enemigo a 2 casillas o menos.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3195, '(lp0
+VNo fim do primeiro turno dele, o portador reduz em 10% os danos (2 turnos) por inimigo a até 2 células de distância.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3195, '(lp0
+VAm Ende seiner ersten Spielrunde verringert sich der Schaden des Trägers um 10 % (2 Runden) für jeden Gegner, der 2 Felder oder weniger entfernt steht.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3195, '(lp0
+VAlla fine del suo primo turno, il portatore riduce i danni del 10% per 2 turni per ogni nemico a 2 caselle o meno.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3196, '(lp0
 VAt the end of their first turn, the bearer reduces damage by 20% (1 turn) for each enemy within 2 cells.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3197,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3196, '(lp0
+VÀ la fin de son premier tour, le porteur réduit les dommages de 20% (1 tour) pour chaque ennemi à 2 cases ou moins.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3196, '(lp0
+VAl final de su primer turno, el portador reduce los daños un 20% (1 turno) por cada enemigo a 2 casillas o menos.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3196, '(lp0
+VNo fim do primeiro turno dele, o portador reduz em 20% os danos (1 turno) por inimigo a até 2 células de distância.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3196, '(lp0
+VAm Ende seiner ersten Spielrunde verringert sich der Schaden des Trägers um 20 % (1 Runde) für jeden Gegner, der 2 Felder oder weniger entfernt steht.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3196, '(lp0
+VAlla fine del suo primo turno, il portatore riduce i danni del 20% per 1 turno per ogni nemico a 2 caselle o meno.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3197, '(lp0
 VThe bearer becomes invisible (1 turn) at the start of their first round.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3198,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3197, '(lp0
+VLe porteur devient invisible (1 tour) au début de son premier tour de jeu.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3197, '(lp0
+VEl portador se vuelve invisible (1 turno) al principio de su primer turno de juego.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3197, '(lp0
+VO portador fica invisível (1 turno) no início do primeiro turno de jogo dele.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3197, '(lp0
+VDer Träger wird zu Beginn seiner ersten Spielrunde unsichtbar (1 Runde).
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3197, '(lp0
+VIl portatore diventa invisibile per 1 turno all''inizio del suo primo turno di gioco.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3198, '(lp0
 VReduces the duration of active effects on the bearer by 4 at the start of their first round.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3199,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3198, '(lp0
+VRéduit de 4 la durée des effets actifs sur le porteur au début de son premier tour de jeu.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3198, '(lp0
+VReduce en 4 la duración de los efectos activos en el portador al principio de su primer turno de juego.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3198, '(lp0
+VReduz em 4 a duração dos efeitos ativos no portador no início do primeiro turno de jogo dele.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3198, '(lp0
+VVerringert die Wirkungsdauer der beim Träger aktiven Wirkungen zu Beginn seiner ersten Spielrunde um 4.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3198, '(lp0
+VRiduce di 4 turni la durata degli effetti attivi sul portatore all''inizio del suo primo turno di gioco.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3199, '(lp0
 VThe bearer gains 100% of their level in shield points (infinite) for each opponent (excluding Summons) that plays before them.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3200,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3199, '(lp0
+VLe porteur gagne 100% de son niveau en points de bouclier (infini) pour chaque adversaire (hors invocation) qui joue avant lui.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3199, '(lp0
+VEl portador gana el 100% de su nivel en puntos de escudo (infinito) por cada adversario (salvo invocación) que juegue antes que él.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3199, '(lp0
+VO portador ganha 100% do nível em pontos de escudo (infinito) por adversário (fora invocações) que joga antes dele.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3199, '(lp0
+VDer Träger erhält für jeden Gegner (außer Beschwörungen), der vor ihm spielt, 100 % seiner Stufe als Schildpunkte (unendlich).
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3199, '(lp0
+VIl portatore ottiene il 100% del suo livello in punti scudo (infinito) per ogni nemico, che non sia un''evocazione, che gioca prima di lui.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3200, '(lp0
 VAt the start of their first round, the bearer gains 200% of their level in shield (infinite) for each enemy within 2 cells.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3201,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3200, '(lp0
+VAu début de son premier tour de jeu, le porteur gagne 200% de son niveau en bouclier (infini) pour chaque ennemi à 2 cases ou moins.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3200, '(lp0
+VAl principio de su primer turno de juego, el portador gana el 200% de su nivel en escudo (infinito) por cada enemigo a 2 casillas o menos.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3200, '(lp0
+VNo começo de seu primeiro turno de jogo, o portador ganha 200% do nível em escudo (infinito) por inimigo a até 2 células.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3200, '(lp0
+VDer Träger erhält zu Beginn seiner ersten Spielrunde für jeden Gegner, der 2 Felder oder weniger entfernt steht, 200 % seiner Stufe als Schildpunkte (unendlich).
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3200, '(lp0
+VAll''inizio del suo primo turno di gioco, il portatore ottiene il 200% dei suo livello in punti scudo (infinito) per ogni nemico a 2 caselle o meno.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3201, '(lp0
 VThe bearer reduces damage suffered by 80% before playing.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3202,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3201, '(lp0
+VLe porteur réduit les dommages subis de 80% avant d''avoir joué.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3201, '(lp0
+VEl portador reduce los daños sufridos un 80% antes de haber jugado.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3201, '(lp0
+VO portador reduz os danos sofridos em 80% antes de jogar.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3201, '(lp0
+VDer erlittene Schaden des Trägers verringert sich um 80 %, bevor er gespielt hat.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3201, '(lp0
+VIl portatore riduce i danni subiti del 80% prima di giocare.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3202, '(lp0
 VThe bearer gains the Gravity state as long as they have not suffered any damage.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3221,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3202, '(lp0
+VLe porteur gagne l''état Pesanteur tant qu''il n''a pas subi de dommages.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3202, '(lp0
+VEl portador gana el estado Pesante mientras no haya sufrido daños.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3202, '(lp0
+VO portador ganha o estado Gravidade se não tiver sofrido danos.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3202, '(lp0
+VDer Träger wird in den Zustand „Schwerkraft“ versetzt, solange er keinen Schaden erleidet.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3202, '(lp0
+VIl portatore viene affetto dallo stato Pesantezza fino a quando non subisce danni.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3221, '(lp0
 VIf the bearer is in close contact with an enemy at the start of their turn, they gain 20 MP Reduction for 1 turn; if not, they gain 30 Lock. When the bearer kills an opponent (excluding summons) with direct damage, they gain 1 MP until the end of the fight, stackable max. 3 times.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3222,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3221, '(lp0
+VSi le porteur est au contact d''un ennemi au début de son tour, il gagne 20 Retrait PM pour 1 tour, sinon, il gagne 30 Tacle. Quand le porteur tue un adversaire (hors invocations) avec des dommages directs, il gagne 1 PM jusqu''à la fin du combat, cumulable 3 fois maximum.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3221, '(lp0
+VSi el portador está en contacto con un enemigo al principio de su turno, gana 20 de retirada de PM durante 1 turno, si no, gana 30 de placaje. Cuando el portador mata a un adversario (salvo invocaciones) con daños directos, gana 1 PM hasta el final del combate, acumulable un máximo de 3 veces.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3221, '(lp0
+VSe o portador estiver em contato com um inimigo no começo de seu turno, ele ganha 20 de retirada de PM durante 1 turno. Do contrário, ganha 30 de bloqueio. Quando o portador mata um adversário (exceto invocações) com danos diretos, ele ganha 1 PM até o fim do combate. Acumula até 3 vezes.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3221, '(lp0
+VSteht der Träger zu Beginn seiner Runde in Nahkampfentfernung zu einem Gegner, erhält er 1 Runde lang 20 BP-Entzug. Falls nicht, erhält er 30 Blocken. Tötet der Träger einen Gegner durch direkten Schaden (Beschwörungen ausgenommen), erhält er bis zum Ende des Kampfes 1 BP, der maximal 3 Mal kumulierbar ist.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3221, '(lp0
+VSe il portatore è a contatto con un nemico all''inizio del suo turno, ottiene 20 Sottrazione PM per 1 turno, altrimenti ottiene 30 Contrasto. Quando il portatore uccide un avversario (tranne le evocazioni) con danni diretti, ottiene 1 PM fino alla fine del combattimento, cumulabile al massimo 3 volte.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3222, '(lp0
 VWhen the caster returns to 100% HP via healing or a health steal, they apply a start-of-turn poison in their best element on entities two cells away or less. The poison lasts 2 turns, cannot be unbewitched, and can be stacked a maximum of 1 time.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3223,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3222, '(lp0
+VQuand le lanceur remonte à 100% de sa vie via du soin ou du vol de vie, il applique un poison de début de tour dans son meilleur élément aux entités à deux cases ou moins de lui. Le poison dure 2 tours, ne peut pas être désenvoûté et peut être cumulé 1 fois maximum.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3222, '(lp0
+VCuando el lanzador llega al 100% de su vida de cura o de robo de vida, aplica un veneno de inicio de turno con su mejor elemento a las entidades a dos casillas o menos de sí. El veneno dura 2 turnos, no puede ser desembrujado y puede ser acumulado 1 vez como máximo.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3222, '(lp0
+VQuando o lançador fica com 100% da vida por meio de cura ou de roubo de vida, ele aplica um veneno de começo de turno em seu melhor elemento às entidades a até duas células dele. O veneno dura 2 turnos, não pode ser dissipado e acumula até 1 vez.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3222, '(lp0
+VWenn der Zaubernde wieder 100 % seiner Lebenspunkte über Heilung oder Leben entziehen hat, vergiftet er zu Rundenbeginn im Umkreis von zwei Feldern in seinem besten Element Einheiten um ihn herum. Die Vergiftung hält 2 Runden an, kann nicht aufgehoben und maximal 1 Mal kumuliert werden.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3222, '(lp0
+VQuando il lanciatore torna ad avere il 100% dei suoi PV grazie alla Cura o al Furto di Vita, all''inizio di ogni turno applica un veleno nel suo elemento migliore alle entità a 2 caselle o meno da lui. Il veleno dura 2 turni, non può essere rimosso e può essere accumulato al massimo 1 volta.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3223, '(lp0
 VAt the end of each turn, the bearer attracts entities in a 3-cell cross around themself by 2 cells. If the bearer has no entities next to them at the end of their turn, they enter the Unmovable state until the start of their next turn. The state is removed if they suffer damage.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3224,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3223, '(lp0
+VÀ chaque fin de tour, le porteur attire de 2 cases les entités en Croix 3 autour de lui. Si à la fin de son tour le porteur n''a aucune entité à son contact, alors il rentre dans l''état Indéplaçable jusqu''au début de son prochain tour. L''état est retiré s''il subit des dommages.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3223, '(lp0
+VAl final de cada turno, el portador atrae 2 casillas a las entidades en cruz 3 a su alrededor. Si al final de su turno el portador no tiene ninguna entidad en cuerpo a cuerpo, pasa al estado Indesplazable hasta que comience su próximo turno. El estado se retira si sufre daños.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3223, '(lp0
+VA cada fim de turno, o portador atrai por 2 células as entidades em cruz de 3. Se no fim do turno ele não estiver em contato com nenhuma entidade, ele entrará no estado Irremovível até o início do próximo turno dele. O estado será retirado se ele sofrer danos.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3223, '(lp0
+VAm Ende einer jeden Runde zieht der Träger 2 Felder kreuzförmig um ihn befindliche Einheiten um 3 Felder heran. Wenn der Träger am Ende seiner Spielrunde keinen Kontakt zu einer Einheit hat, geht er bis zum Beginn der nächsten Runde in den Zustand Unverrückbar über. Der Zustand wird rückgängig gemacht, wenn er Schaden erleidet.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3223, '(lp0
+VAlla fine di ogni turno, il portatore attira di 2 caselle le entità a croce di taglia 3 attorno a sé. Se alla fine del suo turno il portatore non ha nessuna entità a contatto con sé, allora entra nello stato Irremovibile fino all''inizio del suo prossimo turno. Lo stato viene rimosso se subisce danni.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3224, '(lp0
 VWhen the bearer suffers an AP, MP or Range reduction, the damage they suffer is reduced by 4% for 2 turns. Damage suffered by the attacker is increased by 4% for 2 turns. Stackable max. 3 times.
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3226,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3224, '(lp0
+VQuand le porteur subit du retrait PA, PM ou PO, les dommages qu''il subit sont réduits de 4% pour 2 tours. Les dommages subis par l''attaquant sont augmentés de 4% pour 2 tours. Cumulable 3 fois maximum.
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3224, '(lp0
+VCuando el portador sufre una retirada de PA, PM o AL, los daños que sufre se reducen un 4% durante 2 turnos. Los daños sufridos por el atacante aumentan un 4% durante 2 turnos. Acumulable 3 veces como máximo.
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3224, '(lp0
+VQuando o portador sofre retirada de PA, PM ou AL, os danos que ele sofre são reduzidos em 4% por 2 turnos. Os danos sofridos pelo atacante aumentam em 4% por 2 turnos. Acumula até 3 vezes.
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3224, '(lp0
+VWerden dem Träger AP, BP oder RW entzogen, wird der erlittene Schaden 2 Runden lang um 4 % reduziert. Der vom Angreifer erlittene Schaden wird 2 Runden lang um 4 % erhöht. Maximal 3 Mal kumulierbar.
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3224, '(lp0
+VQuando il portatore subisce sottrazione PA, PM o PO, i danni che subisce sono ridotti del 4% per 2 turni. I danni subiti dall''attaccante sono aumentati del 4% per 2 turni. Cumulabile al massimo 3 volte.
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3226, '(lp0
 VStarting on the 5th turn, the caster gains up to 64 damage for the rest of the fight.
 p1
 aVThis bonus is reduced each time the caster inflicts damage on an opponent during their turn for each of the first 4 turns of the fight:
 p2
 aVNo attacks: 16 damage.
-p3
-aV1 attack: 8 damage.
 p4
-aV2+ attacks: 0 damage.
+aV1 attack: 8 damage.
 p5
-a.','en');
-INSERT INTO extra_lines VALUES(3255,'(lp0
+aV2+ attacks: 0 damage.
+p6
+a.', 'en');
+INSERT INTO extra_lines VALUES(3226, '(lp0
+VÀ partir du tour 5, le lanceur gagne jusqu''à 64 dommages pour le reste du combat.
+p1
+aVCe bonus est réduit à chaque fois que le lanceur occasionne des dommages pendant son tour à un adversaire pour chacun des 4 premiers tours du combat :
+p2
+aVAucune attaque : 16 dommages
+p4
+aV1 attaque : 8 dommages.
+p5
+aV2 attaques et + : 0 dommage.
+p6
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3226, '(lp0
+VA partir del turno 5, el lanzador gana hasta 64 de daño durante el resto del combate.
+p1
+aVEste bonus se reduce cada vez que el lanzador ocasione daños durante su turno a un contrincante en cada uno de los 4 primeros turnos del combate:
+p2
+aVNingún ataque: 16 de daño.
+p4
+aV1 ataque: 8 de daño.
+p5
+aV2 o más ataques: 0 de daño.
+p6
+a.', 'es');
+INSERT INTO extra_lines VALUES(3226, '(lp0
+VA partir do turno 5, o lançador recebe até 64 danos durante o resto do combate.
+p1
+aVEsse bônus diminui toda vez que o lançador causa danos diretos em um adversário durante seu turno, a cada um dos primeiros 4 turnos do combate:
+p2
+aVNenhum ataque: 16 de danos.
+p4
+aV1 ataque: 8 de danos.
+p5
+aV2 ou + ataques: 0 de danos.
+p6
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3226, '(lp0
+VAb Runde 5 erhält der Zaubernde bis zu 64 Schaden für den Rest des Kampfes.
+p1
+aVJedes Mal, wenn der Zaubernde einem Gegner während der ersten 4 Kampfrunden Schaden zufügt, verringert sich der Bonus:
+p2
+aVKein Angriff: 16 Schaden.
+p4
+aV1 Angriff: 8 Schaden.
+p5
+aV2 oder mehr Angriffe: 0 Schaden.
+p6
+a.', 'de');
+INSERT INTO extra_lines VALUES(3226, '(lp0
+VA partire dal turno 5, il lanciatore ottiene fino a 64 danni per la restante parte del combattimento.
+p1
+aVIl bonus è ridotto ogni volta in cui il lanciatore infligge danni a un avversario durante il proprio turno per ognuno dei primi 4 turni del combattimento:
+p2
+aVNessun attacco: 16 danni.
+p4
+aV1 attacco: 8 danni.
+p5
+aV2 e + attacchi: 0 danni.
+p6
+a.', 'it');
+INSERT INTO extra_lines VALUES(3255, '(lp0
 VApplies 100% of level as Shield at the start of each turn for the first 5 turns. 
 p1
 aVDuring each of these 5 turns, if the caster kills a summons, the caster gains 100% of their level as Shield for 1 turn (max. 4 times), and 300% (max. 2 times) for a monster or player.
 p2
 aVShields are only obtained during the caster''s turn.
 p3
-a.','en');
-INSERT INTO extra_lines VALUES(3306,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3255, '(lp0
+VApplique 100% du niveau en bouclier à chaque début de tour pendant les 5 premiers tours. 
+p1
+aVPendant ces 5 tours, si le lanceur tue une invocation, il gagne 100% de son niveau en bouclier pour 1 tour (4 fois max), et 300% (2 fois max) pour un monstre ou un joueur.
+p2
+aVLes boucliers ne s''obtiennent que pendant le tour de jeu du lanceur.
+p3
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3255, '(lp0
+VAplica el 100% del nivel en escudo en cada inicio de turno durante los 5 primeros turnos. 
+p1
+aVDurante estos 5 turnos, si el lanzador mata a una invocación, gana el 100% de su nivel en escudo durante 1 turno (4 veces máx.), y el 300% (2 veces máx.) para un monstruo o un jugador.
+p2
+aVLos escudos se obtienen solo durante el turno de juego del lanzador.
+p3
+a.', 'es');
+INSERT INTO extra_lines VALUES(3255, '(lp0
+VAplica 100% do nível em escudo a cada início de turno durante os primeiros 5 turnos. 
+p1
+aVNesses 5 turnos, se o lançador matar uma invocação, ele ganha 100% de seu nível em escudo durante 1 turno (4 vezes no máximo) e 300% (2 vezes no máximo) se for um monstro ou um jogador.
+p2
+aVOs escudos só podem ser obtidos durante o turno do lançador.
+p3
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3255, '(lp0
+VVerleiht während der ersten 5 Runden zu Rundenbeginn 100 % der Schildstufe. 
+p1
+aVWährend dieser 5 Runden erhält der Zaubernde 1 Runde lang 100 % seiner Schildstufe (max. 4 Mal), wenn er eine Beschwörung tötet, und 300 % (max. 2 Mal), wenn er ein Monster oder einen Spieler tötet.
+p2
+aVDie Schilde werden nur in der Spielrunde des Zaubernden verliehen.
+p3
+a.', 'de');
+INSERT INTO extra_lines VALUES(3255, '(lp0
+VApplica il 100% del livello in scudo all''inizio di ogni turno per i primi 5 turni. 
+p1
+aVDurante questi 5 turni, se il lanciatore uccide un''evocazione ottiene il 100% del suo livello in scudo per 1 turno (max 4 volte). Se uccide un mostro o un altro giocatore, ottiene il 300% (max 2 volte).
+p2
+aVGli scudi si ottengono solo durante il turno di gioco del lanciatore.
+p3
+a.', 'it');
+INSERT INTO extra_lines VALUES(3306, '(lp0
 V[!] Déclenche le combat tactique "Boufbowl"
 p1
-a.','en');
-INSERT INTO extra_lines VALUES(3320,'(lp0
+a.', 'en');
+INSERT INTO extra_lines VALUES(3306, '(lp0
+VDéclenche le combat tactique "Boufbowl"
+p1
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3306, '(lp0
+V[!] Déclenche le combat tactique "Boufbowl"
+p1
+a.', 'es');
+INSERT INTO extra_lines VALUES(3306, '(lp0
+V[!] Déclenche le combat tactique "Boufbowl"
+p1
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3306, '(lp0
+V[!] Déclenche le combat tactique "Boufbowl"
+p1
+a.', 'de');
+INSERT INTO extra_lines VALUES(3306, '(lp0
+V[!] Déclenche le combat tactique "Boufbowl"
+p1
+a.', 'it');
+INSERT INTO extra_lines VALUES(3320, '(lp0
 VIf the bearer applies or receives a shield, allies within 3 cells or less of the bearer are healed by 7% of their HP. 
 p1
 aVIf the bearer unbewitches a target, allies within 3 cells or less gain 150 Power for 1 turn (stacks 1 time, cannot be dissipated). 
 p2
 aVEach effect can only be triggered once per turn, but if both are triggered in the same turn, the bearer receives 10% additional damage for 1 turn (cannot be dissipated).
 p3
-a.','en');
+a.', 'en');
+INSERT INTO extra_lines VALUES(3320, '(lp0
+VSi le porteur applique ou reçoit un bouclier, les alliés à 3 cases ou moins de lui sont soignés de 7% de leurs PV. 
+p1
+aVS''il désenvoûte une cible, les alliés à 3 cases ou moins gagnent 150 Puissance pour 1 tour (cumul 1, non dissipable). 
+p2
+aVChaque effet ne peut être déclenché qu''une fois par tour, mais si les deux le sont dans le même tour, le porteur subit 10% de dommages supplémentaires pendant 1 tour (non dissipable).
+p3
+a.', 'fr');
+INSERT INTO extra_lines VALUES(3320, '(lp0
+VSi el portador aplica o recibe un escudo, los aliados a 3 casillas o menos de él se curan un 7% de sus PdV. 
+p1
+aVSi desembruja a un objetivo, los aliados a 3 casillas o menos ganan 150 de potencia durante 1 turno (acumulación de 1, no disipable). 
+p2
+aVCada efecto solo puede activarse una vez por turno, pero, si los dos se activan en el mismo turno, el portador sufre un 10% de daño adicional durante 1 turno (no disipable).
+p3
+a.', 'es');
+INSERT INTO extra_lines VALUES(3320, '(lp0
+VSe o portador aplica ou recebe um escudo, os aliados a até 3 células dele são curados em 7% dos PV. 
+p1
+aVSe ele desencantar um alvo, os aliados a até 3 células ganharão 150 de potência por 1 turno (1 acúmulo, não dissipável). 
+p2
+aVCada efeito só pode ser acionado uma vez por turno, mas se os dois forem no mesmo turno, o portador sofrerá 10% de danos extras durante 1 turno (não dissipável).
+p3
+a.', 'pt');
+INSERT INTO extra_lines VALUES(3320, '(lp0
+VWenn der Träger einen Schild anwendet oder erhält, bekommen Verbündete im Umkreis von höchstens 3 Feldern 7 % ihrer LP zurück. 
+p1
+aVWenn er einen Gegner entzaubert, erhalten die Verbündeten im Umkreis von 3 Feldern für 1 Runde zusätzlich 150 Schlagkraft (Kumulierung = 1, nicht zerstreubar). 
+p2
+aVJeder Effekt kann pro Runde nur einmal ausgelöst werden. Wenn beide während derselben Runde ausgelöst werden, erleidet der Träger 1 Runde lang 10 % zusätzlichen Schaden (nicht zerstreubar).
+p3
+a.', 'de');
+INSERT INTO extra_lines VALUES(3320, '(lp0
+VSe il portatore applica o riceve uno scudo, gli alleati che si trovano a 3 caselle o meno da lui sono curati del 7% dei loro PV. 
+p1
+aVSe rimuove gli effetti da un bersaglio, gli alleati che si trovano a 3 caselle o meno ottengono 150 Potenza per 1 turno (cumulo 1, non dissipabile). 
+p2
+aVOgni effetto può essere attivato una sola volta per turno, ma se entrambi vengono attivati nello stesso turno, il portatore subisce il 10% dei danni supplementari per 1 turno (non dissipabile).
+p3
+a.', 'it');
 CREATE TABLE item_names (item INTEGER, language text, name text, FOREIGN KEY(item) REFERENCES items(id));
 CREATE TABLE set_names (item_set INTEGER, language text, name text, FOREIGN KEY(item_set) REFERENCES sets(id));
 CREATE TABLE item_weird_conditions (item INTEGER, condition_id INTEGER, FOREIGN KEY(item) REFERENCES items(id));
@@ -34576,5 +36205,5 @@ INSERT INTO sqlite_sequence VALUES('item_types',10);
 INSERT INTO sqlite_sequence VALUES('stats',63);
 INSERT INTO sqlite_sequence VALUES('weapontype',11);
 INSERT INTO sqlite_sequence VALUES('items',3669);
-INSERT INTO sqlite_sequence VALUES('sets',665);
+INSERT INTO sqlite_sequence VALUES('sets',666);
 COMMIT;

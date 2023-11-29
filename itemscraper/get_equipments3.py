@@ -17,6 +17,7 @@
 import json
 from fashionistapulp.dofus_constants import STAT_NAME_TO_KEY, STAT_ORDER, TYPE_NAME_TO_SLOT
 
+LANGUAGES = ['en', 'fr', 'es', 'pt', 'de', 'it']
 
 WEAPON_TYPES = {
     'Hammer': 'hammer',
@@ -36,7 +37,7 @@ def escape_single_quotes(s):
     return s.replace("'", "''")
 
 # Read the original JSON file
-with open('transformed_items.json', 'r', encoding='utf-8') as f:
+with open('transformed_equipment.json', 'r', encoding='utf-8') as f:
     original_data = json.load(f)
 
 with open('transformed_sets.json', 'r', encoding='utf-8') as f:
@@ -72,7 +73,7 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
     #INSERT INTO sets VALUES(1,'Pink Piwi Set',70,NULL);
 
     for index, item in enumerate(original_sets, start=1):
-        f.write(f"INSERT INTO sets VALUES({index},'{escape_single_quotes(item['name'])}',{item['ankama_id']},NULL);\n")
+        f.write(f"INSERT INTO sets VALUES({index},'{escape_single_quotes(item['name_en'])}',{item['ankama_id']},NULL);\n")
 
     # Write CREATE TABLE for items
     f.write("""CREATE TABLE "items" (
@@ -115,8 +116,7 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
 
         # Use 'NULL' if set_id is None, otherwise use the set_id
         set_id_or_null = 'NULL' if set_id is None else set_id
-        
-        f.write(f"INSERT INTO items VALUES({index},'{escape_single_quotes(item['name'])}',{item['level']},{list(TYPE_NAME_TO_SLOT.values()).index(item['w_type'].lower()) + 1},{set_id_or_null},{item['ankama_id']},'{item['ankama_type']}',NULL,NULL);\n")
+        f.write(f"INSERT INTO items VALUES({index},'{escape_single_quotes(item['name_en'])}',{item['level']},{list(TYPE_NAME_TO_SLOT.values()).index(item['w_type'].lower()) + 1},{set_id_or_null},{item['ankama_id']},'{item['ankama_type']}',NULL,NULL);\n")
 
     # Write CREATE TABLE for stats_of_items
     f.write("""CREATE TABLE stats_of_item
@@ -284,23 +284,17 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
     f.write("""CREATE TABLE extra_lines (item INTEGER, line text, language text, FOREIGN KEY(item) REFERENCES items(id));\n""")
 
     for index, item in enumerate(original_data, start=1):
-        if 'stats' in item:
-            i = 0
-            for stat in item['stats']:
-                # Extract values and description
-                min_value, max_value, description = stat
-                if description.startswith("-special spell-"):
-                    p = 1
+        if 'special_spell_en' in item:
+            for lang in LANGUAGES:
+                special_spell_key = f'special_spell_{lang}'
+                if special_spell_key in item:
+                    description = item[special_spell_key]
                     modified_description = "(lp0\n"
-                    description = description.replace("-special spell-", "")
-                    for part in description.split('\n'):
-                        if part == '':
-                            continue
-                        modified_description += f"V{part}\np{p}\na"
-                        p += 1
-                    if modified_description != "(lp0\n":
-                        modified_description += f"."
-                        f.write(f"INSERT INTO extra_lines VALUES({index},'{escape_single_quotes(modified_description)}','en');\n")
+                    for p, part in enumerate(description.split('\n'), start=1):
+                        if part:
+                            modified_description += f"V{part}\np{p}\na"
+                    modified_description += "."
+                    f.write(f"INSERT INTO extra_lines VALUES({index}, '{escape_single_quotes(modified_description)}', '{lang}');\n")
 
     f.write("""CREATE TABLE item_names (item INTEGER, language text, name text, FOREIGN KEY(item) REFERENCES items(id));\n""")
 
