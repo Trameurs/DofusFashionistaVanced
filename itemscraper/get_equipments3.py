@@ -292,7 +292,7 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
 
                 if description.startswith("-special spell-"):
                     modified_description = "(lp0\nV"
-                    modified_description += description.replace('-special spell-', '').replace('\n', ' ')
+                    modified_description += description.replace('-special spell-', '')
                     if modified_description != "(lp0\nV":
                         modified_description += "\np1\na."
                         f.write(f"INSERT INTO extra_lines VALUES({index},'{escape_single_quotes(modified_description)}','en');\n")
