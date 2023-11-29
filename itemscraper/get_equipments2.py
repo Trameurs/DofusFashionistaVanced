@@ -127,7 +127,7 @@ for item in original_data['items']:
             [
                 eff["int_minimum"] if not eff["ignore_int_min"] else None,
                 eff["int_maximum"] if not eff["ignore_int_max"] else None,
-                eff["type"]["name"]
+                eff["type"]["name"] if not "-special spell-" in eff["type"]["name"] else "-special spell-" + eff["formatted"],
             ] for eff in item["effects"]
         ]
     else:
@@ -214,7 +214,7 @@ for item in original_data["sets"]:
             [
                 eff["int_minimum"] if not eff["ignore_int_min"] else None,
                 eff["int_maximum"] if not eff["ignore_int_max"] else None,
-                eff["type"]["name"]
+                eff["type"]["name"] 
             ] for eff in effect_group
         ])
     if "equipment_ids" in item:

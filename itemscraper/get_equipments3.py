@@ -283,7 +283,17 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
 
     f.write("""CREATE TABLE extra_lines (item INTEGER, line text, language text, FOREIGN KEY(item) REFERENCES items(id));\n""")
 
-    #todo: add extra lines
+    for index, item in enumerate(original_data, start=1):
+        if 'stats' in item:
+            i = 0
+            for stat in item['stats']:
+                # Extract values and description
+                min_value, max_value, description = stat
+
+                if description.startswith("-special spell-"):
+                    modified_description = description.replace('-special spell-', '').replace('\n', ' ')
+                    if modified_description != '':
+                        f.write(f"INSERT INTO extra_lines VALUES({index},'{escape_single_quotes(modified_description)}','en');\n")
 
     f.write("""CREATE TABLE item_names (item INTEGER, language text, name text, FOREIGN KEY(item) REFERENCES items(id));\n""")
 
