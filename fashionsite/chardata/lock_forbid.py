@@ -27,7 +27,12 @@ DEFAULT_EXCLUSIONS_121_PLUS = ['Gore Master\'s Ring (Gms Only)',
                                'Fiery Tongue Sword',
                                'First Blood Staff',
                                'Crack Sparrow\'s Own Withered Hat',
-                               'De Sendar\'s Ring',]
+                               'De Sendar\'s Ring',
+                               'Skewer-Happy Yakitoro',
+                               'Hard-Charging Yakitoro',
+                               'Slugger Yakitoro',
+                               'Horned Yakitoro',
+                               ]
 DEFAULT_EXCLUSIONS_120_MINUS = (DEFAULT_EXCLUSIONS_121_PLUS
                                 + [])
 
