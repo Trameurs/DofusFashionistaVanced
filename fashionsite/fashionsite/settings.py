@@ -190,7 +190,7 @@ with open(os.path.join(CONFIG_DIR, 'serve_static')) as f:
         STATIC_URL = 'https://fashionistavanced.s3.eu-north-1.amazonaws.com/'
         ALLOWED_HOSTS = ['fashionistavanced.com', 'www.fashionistavanced.com']
     else:
-        STATIC_ROOT = '/tmp/statictemp'
+        STATIC_ROOT = '/fashionsite/chardata/static/chardata'
         STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 LOGGING = {
