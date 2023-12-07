@@ -187,7 +187,7 @@ STATIC_FILES_BUCKET = 'fashionistavanced'
 with open(os.path.join(CONFIG_DIR, 'serve_static')) as f:
     serve_static = False #f.read().startswith('True')
     if not serve_static or not DEBUG:
-        STATIC_URL = 'https://fashionistavanced.s3.eu-north-1.amazonaws.com/'
+        STATIC_URL = 'https://fashionistavanced.s3.eu-north-1.amazonaws.com/test/'
         ALLOWED_HOSTS = ['fashionistavanced.com', 'www.fashionistavanced.com']
     else:
         STATIC_ROOT = '/tmp/statictemp'
