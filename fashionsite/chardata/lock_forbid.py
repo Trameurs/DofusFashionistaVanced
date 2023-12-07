@@ -72,7 +72,11 @@ def set_exclusions_list_by_name(char, excluded_items):
     for item_name in excluded_items:
         item = s.get_item_by_name(item_name)
         if item is None:
-            item = s.get_or_item_by_name(item_name)[0]
+            result = s.get_or_item_by_name(item_name)
+            if result:
+                item = result[0]
+            else:
+                print('Item %s does not exist and cannot be excluded' % item_name)
 
         if item is not None:
             item_id = item.id
