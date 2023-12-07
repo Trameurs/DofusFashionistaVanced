@@ -78,6 +78,7 @@ INSERT INTO stats VALUES(60,'% Spell Damage','perspedam');
 INSERT INTO stats VALUES(61,'% Melee Resist','respermee');
 INSERT INTO stats VALUES(62,'% Ranged Resist','resperran');
 INSERT INTO stats VALUES(63,'HP','hp');
+INSERT INTO stats VALUES(64,'% Weapon Resist','resperwea');
 CREATE TABLE "sets" (
 	    `id`	INTEGER PRIMARY KEY AUTOINCREMENT,
 	    `name`	text,
@@ -56978,7 +56979,7 @@ INSERT INTO set_names VALUES(671, 'it', '[!] Gift Wrapper Ceremonial Set');
 CREATE TABLE item_weird_conditions (item INTEGER, condition_id INTEGER, FOREIGN KEY(item) REFERENCES items(id));
 DELETE FROM sqlite_sequence;
 INSERT INTO sqlite_sequence VALUES('item_types',10);
-INSERT INTO sqlite_sequence VALUES('stats',63);
+INSERT INTO sqlite_sequence VALUES('stats',64);
 INSERT INTO sqlite_sequence VALUES('weapontype',11);
 INSERT INTO sqlite_sequence VALUES('items',3670);
 INSERT INTO sqlite_sequence VALUES('sets',671);

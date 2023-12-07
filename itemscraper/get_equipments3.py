@@ -33,6 +33,73 @@ WEAPON_TYPES = {
     'Lance': 'lance',
 }
 
+STAT_NAME_TO_KEY_LOCAL = {
+    'Power': 'pow',
+    'Damage': 'dam',
+    'Heals': 'heals',
+    'AP': 'ap',
+    'MP': 'mp',
+    'Critical Hits': 'ch',
+    'Agility': 'agi',
+    'Strength': 'str',
+    'Neutral Damage': 'neutdam',
+    'Earth Damage': 'earthdam',
+    'Intelligence': 'int',
+    'Fire Damage': 'firedam',
+    'Air Damage': 'airdam',
+    'Chance': 'cha',
+    'Water Damage': 'waterdam',
+    'Vitality': 'vit',
+    'Initiative': 'init',
+    'Summon': 'summon',
+    'Range': 'range',
+    'Wisdom': 'wis',
+    'Neutral Resist': 'neutres',
+    'Water Resist': 'waterres',
+    'Air Resist': 'airres',
+    'Fire Resist': 'fireres',
+    'Earth Resist': 'earthres',
+    '% Neutral Resist': 'neutresper',
+    '% Air Resist': 'airresper',
+    '% Fire Resist': 'fireresper',
+    '% Water Resist': 'waterresper',
+    '% Earth Resist': 'earthresper',
+    'Neutral Resist in PVP': 'pvpneutres',
+    'Water Resist in PVP': 'pvpwaterres',
+    'Air Resist in PVP': 'pvpairres',
+    'Fire Resist in PVP': 'pvpfireres',
+    'Earth Resist in PVP': 'pvpearthres',
+    '% Neutral Resist in PVP': 'pvpneutresper',
+    '% Air Resist in PVP': 'pvpairresper',
+    '% Fire Resist in PVP': 'pvpfireresper',
+    '% Water Resist in PVP': 'pvpwaterresper',
+    '% Earth Resist in PVP': 'pvpearthresper',
+    'Prospecting': 'pp',
+    'Pods': 'pod',
+    'AP Reduction': 'apred',
+    'MP Reduction': 'mpred',
+    'Lock': 'lock',
+    'Dodge': 'dodge',
+    'Reflects': 'ref',
+    'Pushback Damage': 'pshdam',
+    'Trap Damage': 'trapdam',
+    '% Trap Damage': 'trapdamper',
+    'Critical Resist': 'crires',
+    'Pushback Resist': 'pshres',
+    'MP Loss Resist': 'mpres',
+    'AP Loss Resist': 'apres',
+    'Critical Damage': 'cridam',
+    'Critical Failure': 'cf',
+    '% Melee Damage': 'permedam',
+    '% Ranged Damage': 'perrandam',
+    '% Weapon Damage': 'perweadam',
+    '% Spell Damage': 'perspedam',
+    '% Melee Resist': 'respermee',
+    '% Ranged Resist': 'resperran',
+    'HP': 'hp',
+    '% Weapon Resist': 'resperwea'
+}
+
 def escape_single_quotes(s):
     return s.replace("'", "''")
 
@@ -56,8 +123,8 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
     f.write("CREATE TABLE stats\n             (id INTEGER PRIMARY KEY AUTOINCREMENT, name text,\n             key text);\n")
 
     # Write stats INSERT commands
-    for index, item in enumerate(STAT_NAME_TO_KEY, start=1):
-        f.write(f"INSERT INTO stats VALUES({index},'{item}','{STAT_NAME_TO_KEY[item]}');\n")
+    for index, item in enumerate(STAT_NAME_TO_KEY_LOCAL, start=1):
+        f.write(f"INSERT INTO stats VALUES({index},'{item}','{STAT_NAME_TO_KEY_LOCAL[item]}');\n")
 
     # Write CREATE TABLE for stats_of_items
     #f.write("CREATE TABLE stats_of_items\n             (item INTEGER, stat INTEGER, value INTEGER,\n             FOREIGN KEY(item) REFERENCES items(id),\n             FOREIGN KEY(stat) REFERENCES stats(id));\n")
@@ -127,11 +194,11 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
     # Write INSERT commands for stats_of_items
     for index, item in enumerate(original_data, start=1):
         for stat in item['stats']:
-            if stat[2] not in STAT_NAME_TO_KEY:
+            if stat[2] not in STAT_NAME_TO_KEY_LOCAL:
                 continue
             stat_value = stat[1] if stat[1] is not None else stat[0]
             stat_value = stat[0] if stat[0] < 0 else stat_value
-            f.write(f"INSERT INTO stats_of_item VALUES({index},{list(STAT_NAME_TO_KEY).index(stat[2]) + 1},{stat_value});\n")
+            f.write(f"INSERT INTO stats_of_item VALUES({index},{list(STAT_NAME_TO_KEY_LOCAL).index(stat[2]) + 1},{stat_value});\n")
 
     # Write CREATE TABLE for set_bonus
     f.write("""CREATE TABLE set_bonus
@@ -144,9 +211,9 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
         if 'stats' in set:
             for i, effects in enumerate(set['stats'], start=2):
                 for bonus in effects:
-                    if bonus[2] not in STAT_NAME_TO_KEY:
+                    if bonus[2] not in STAT_NAME_TO_KEY_LOCAL:
                         continue
-                    f.write(f"INSERT INTO set_bonus VALUES({index},{i},{list(STAT_NAME_TO_KEY).index(bonus[2]) + 1},{bonus[0]});\n")
+                    f.write(f"INSERT INTO set_bonus VALUES({index},{i},{list(STAT_NAME_TO_KEY_LOCAL).index(bonus[2]) + 1},{bonus[0]});\n")
 
     # Write CREATE TABLE for min_stat_to_equip
     f.write("""CREATE TABLE min_stat_to_equip
@@ -159,11 +226,11 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
         if 'conditions' in item:
             for condition_string in item['conditions']:
                 parts = condition_string.split(' ')  # Split the string by spaces
-                if len(parts) == 3 and parts[0] in STAT_NAME_TO_KEY:
+                if len(parts) == 3 and parts[0] in STAT_NAME_TO_KEY_LOCAL:
                     stat_name = parts[0]  # The stat name, e.g., "Strength"
                     operator = parts[1]  # The operator, e.g., ">"
                     stat_value = parts[2]  # The value, e.g., "34"
-                    stat_index = list(STAT_NAME_TO_KEY).index(stat_name) + 1
+                    stat_index = list(STAT_NAME_TO_KEY_LOCAL).index(stat_name) + 1
                     if operator == '>':
                         f.write(f"INSERT INTO min_stat_to_equip VALUES({index},{stat_index},{int(stat_value)+1});\n")
 
@@ -178,11 +245,11 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
         if 'conditions' in item:
             for condition_string in item['conditions']:
                 parts = condition_string.split(' ')  # Split the string by spaces
-                if len(parts) == 3 and parts[0] in STAT_NAME_TO_KEY:
+                if len(parts) == 3 and parts[0] in STAT_NAME_TO_KEY_LOCAL:
                     stat_name = parts[0]  # The stat name, e.g., "Strength"
                     operator = parts[1]
                     stat_value = parts[2]  # The value, e.g., "34"
-                    stat_index = list(STAT_NAME_TO_KEY).index(stat_name) + 1
+                    stat_index = list(STAT_NAME_TO_KEY_LOCAL).index(stat_name) + 1
                     if operator == '<':
                         f.write(f"INSERT INTO max_stat_to_equip VALUES({index},{stat_index},{int(stat_value)-1});\n")
 
@@ -324,7 +391,7 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
 
     f.write(f"""DELETE FROM sqlite_sequence;
 INSERT INTO sqlite_sequence VALUES('item_types',{len(TYPE_NAME_TO_SLOT)});
-INSERT INTO sqlite_sequence VALUES('stats',{len(STAT_NAME_TO_KEY)});
+INSERT INTO sqlite_sequence VALUES('stats',{len(STAT_NAME_TO_KEY_LOCAL)});
 INSERT INTO sqlite_sequence VALUES('weapontype',{len(WEAPON_TYPES)});
 INSERT INTO sqlite_sequence VALUES('items',{len(original_data)});
 INSERT INTO sqlite_sequence VALUES('sets',{len(original_sets)});

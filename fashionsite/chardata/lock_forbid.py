@@ -20,8 +20,7 @@ from fashionistapulp.dofus_constants import SLOTS
 from fashionistapulp.structure import get_structure
 
 
-DEFAULT_EXCLUSIONS_121_PLUS = ['Gore Master\'s Other Ring',
-                               'Gore Master\'s Ring (Gms Only)',
+DEFAULT_EXCLUSIONS_121_PLUS = ['Gore Master\'s Ring (Gms Only)',
                                'Ultra-powerful Combat Bow Meow (GM)',
                                'Small Combat Bow Meow (GM)',
                                'Jiva Necklace',
