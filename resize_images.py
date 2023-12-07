@@ -19,8 +19,6 @@
 from PIL import Image
 import argparse
 import os
-import subprocess
-import sys
 
 FOLDERS = [
     'fashionsite/chardata/static/chardata/items/',
@@ -37,11 +35,12 @@ def resize_image(folder, item, new_folder):
     if os.path.isfile(file_path):
         file_name_without_ext, e = os.path.splitext(item)
         if e.lower() == '.png' and SUFFIX not in file_name_without_ext:
-            new_file_path = '%s%s%s%s' % (new_folder, file_name_without_ext, SUFFIX, e)
-            command = ['convert', file_path, '-resize', '%dx%d' % (W, H), '-sharpen', '1.0',
-                       new_file_path]
+            im = Image.open(file_path)
+            im_resized = im.resize((W, H))
+            new_file_name = '%s%s%s' % (file_name_without_ext, SUFFIX, e)
+            new_file_path = os.path.join(new_folder, new_file_name)
+            im_resized.save(new_file_path)
             print('Writing %s' % new_file_path)
-            subprocess.call(command)
 
 def resize_file_list(file_list):
     for file_path in file_list:
@@ -57,8 +56,8 @@ def resize_all():
             resize_image(folder, item, new_folder)
 
 def get_new_folder_that_exists(folder):
-    new_folder = os.path.join(folder, '%dx%d/' % (W, H))
-    subprocess.call(['mkdir', '-p', new_folder])
+    new_folder = os.path.join(folder, '%dx%d' % (W, H))
+    os.makedirs(new_folder, exist_ok=True)
     return new_folder
 
 def main():
@@ -74,4 +73,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

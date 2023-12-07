@@ -21,8 +21,8 @@ import requests
 
 
 JSON_TO_DIR = {
-    'dofusweap2.json': 'items',
-    'itemswithurl.json': 'items',
+    'transformed_equipment.json': 'items',
+    #'itemswithurl.json': 'items',
     #'pets.json': 'pets',
     #'mounts.json': 'mounts',
 }
