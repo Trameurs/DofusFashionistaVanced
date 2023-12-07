@@ -300,11 +300,25 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
 
     f.write("""CREATE TABLE item_names (item INTEGER, language text, name text, FOREIGN KEY(item) REFERENCES items(id));\n""")
 
-    #todo: add item names
+    for index, item in enumerate(original_data, start=1):
+        for lang in LANGUAGES:
+            if lang == 'en':
+                continue
+            name_key = f'name_{lang}'
+            if name_key in item:
+                name = item[name_key]
+                f.write(f"INSERT INTO item_names VALUES({index}, '{lang}', '{escape_single_quotes(name)}');\n")
 
     f.write("""CREATE TABLE set_names (item_set INTEGER, language text, name text, FOREIGN KEY(item_set) REFERENCES sets(id));\n""")
 
-    #todo: add set names
+    for index, item in enumerate(original_sets, start=1):
+        for lang in LANGUAGES:
+            if lang == 'en':
+                continue
+            name_key = f'name_{lang}'
+            if name_key in item:
+                name = item[name_key]
+                f.write(f"INSERT INTO set_names VALUES({index}, '{lang}', '{escape_single_quotes(name)}');\n")
 
     f.write("""CREATE TABLE item_weird_conditions (item INTEGER, condition_id INTEGER, FOREIGN KEY(item) REFERENCES items(id));\n""")
 
