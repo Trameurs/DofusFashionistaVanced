@@ -83,10 +83,11 @@ run_fashionista.bat
 # Progress and Roadmap
 
 ✅ Website is fully operational     
-✅ All equipments and mounts updated to Dofus 2.69     
-❌ Larger filter for Temporis items not done yet     
-❌ Sets not done yet     
-❌ Special items effects not added yet     
+✅ All equipments and mounts updated to Dofus 2.70     
+✅ Larger filter for Temporis items done   
+✅ Sets done     
+✅ Special items effects added    
+❌ Details before release
 
 # Reference
 
