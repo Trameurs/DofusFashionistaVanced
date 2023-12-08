@@ -59,17 +59,18 @@
             </td>
             </tr>
             </table>
-            <button class="g-recaptcha" 
-                data-sitekey="6LckESspAAAAAATetjumgWbl4RRpKQ3rGFjD6ZOt" 
-                data-callback='onSubmit' 
-                data-action='submit'
-                align="center" 
-                data-theme="
-                {% if theme != "lighttheme" %}
-                    dark
-                {% else %}
-                    light
-                {% endif %}">Submit</button>
+            <div align="center" 
+            data-theme="
+            {% if theme != "lighttheme" %}
+                dark
+            {% else %}
+                light
+            {% endif %}">
+                <button class="g-recaptcha" 
+                    data-sitekey="6LckESspAAAAAATetjumgWbl4RRpKQ3rGFjD6ZOt" 
+                    data-callback='onSubmit' 
+                    data-action='submit'>Submit</button>
+            </div>
         </form>
     </div>
 </td>
