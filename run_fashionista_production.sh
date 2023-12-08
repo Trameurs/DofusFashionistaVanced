@@ -4,5 +4,5 @@ bash -c './wipe_solution_cache.py'
 cd fashionsite
 bash -c 'django-admin compilemessages'
 cd ..
-export DJANGO_SETTINGS_MODULE=fashionsite.settings
+export DJANGO_SETTINGS_MODULE=fashionsite.fashionsite.settings
 gunicorn fashionsite.fashionsite.wsgi:application --bind 0.0.0.0:8000
