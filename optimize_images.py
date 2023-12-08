@@ -58,13 +58,13 @@ def main():
             processed_files[f_path] = get_md5_of_file(f_path)
 
     files_there.sort()
-    with open(PROCESSED_FILE, 'wb') as processed_file:
+    with open(PROCESSED_FILE, 'w', newline='') as processed_file:  # Open in text mode
         writer = csv.writer(processed_file)
         for file_there in files_there:
             writer.writerow([file_there, processed_files[file_there]])
 
 def get_md5_of_file(file_name):
-    with open(file_name) as f:
+    with open(file_name, 'rb') as f:  # Open in binary mode
         file_contents = f.read()
         return hashlib.md5(file_contents).hexdigest()
 
