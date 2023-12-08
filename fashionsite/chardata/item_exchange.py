@@ -292,7 +292,10 @@ def _get_weapon_rate(weapon, char, result):
             total_damage -= (damage.min_dam + damage.max_dam)/2
         else:
             total_damage += (damage.min_dam + damage.max_dam)/2
-    rating_non_crit = total_damage / float(weapon_obj.ap)
+    if weapon_obj.ap == 0:
+        rating_non_crit = 0
+    else:
+        rating_non_crit = total_damage / float(weapon_obj.ap)
     
     
     if weapon_obj.has_crits:
