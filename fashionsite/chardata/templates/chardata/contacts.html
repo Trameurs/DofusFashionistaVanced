@@ -63,7 +63,13 @@
                 data-sitekey="6LckESspAAAAAATetjumgWbl4RRpKQ3rGFjD6ZOt" 
                 data-callback='onSubmit' 
                 data-action='submit'
-                align="center">Submit</button>
+                align="center" 
+                data-theme="
+                {% if theme != "lighttheme" %}
+                    dark
+                {% else %}
+                    light
+                {% endif %}">Submit</button>
         </form>
     </div>
 </td>
