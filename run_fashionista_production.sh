@@ -1,5 +1,7 @@
-PYTHONPATH=$PYTHONPATH:~/fashionista/fashionistapulp bash -c './wipe_solution_cache.py'
+export PYTHONPATH=$PYTHONPATH:~/DofusFashionistaVanced
+cd ~/DofusFashionistaVanced
+bash -c './wipe_solution_cache.py'
 cd fashionsite
 bash -c 'django-admin compilemessages'
 cd ..
-PYTHONPATH=$PYTHONPATH:~/fashionista/fashionistapulp bash -c 'gunicorn fashionsite.wsgi:application --bind 0.0.0.0:8000'
+gunicorn fashionsite.fashionsite.wsgi:application --bind 0.0.0.0:8000
