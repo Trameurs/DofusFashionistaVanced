@@ -3173,9 +3173,9 @@ SOFT_CAPS = {'Cra' : DEFAULT_SOFT_CAPS,
              'Ouginak' : DEFAULT_SOFT_CAPS}
 
 def get_best_element(char_stats):
-    best_element = 'str'
-    best_element_val = char_stats['str']
-    for element in ['int', 'agi', 'cha']:
+    best_element = 'earth'
+    best_element_val = char_stats['earth']
+    for element in ['fire', 'water', 'air']:
         if char_stats[element] > best_element_val:
             best_element = element
             best_element_val = char_stats[element]
