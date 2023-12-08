@@ -19,6 +19,7 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.conf import settings
 from django.urls import reverse
+import requests
 from chardata.models import ContactForm
 from django.core.mail import send_mail, BadHeaderError
 from chardata.util import set_response
@@ -37,13 +38,16 @@ def send_email(request):
     name = request.POST.get('name', '')
     g_recaptcha_response = request.POST.get('g-recaptcha-response', '')
     
-    url = ("https://www.google.com/recaptcha/api/siteverify?secret=%s&response=%s" 
-           % (settings.GEN_CONFIGS['url_captcha_secret'], g_recaptcha_response))
+    url = "https://www.google.com/recaptcha/api/siteverify"
+    data = {
+        'secret': settings.GEN_CONFIGS['url_captcha_secret'],
+        'response': g_recaptcha_response
+    }
     
-    is_bot_json = urllib.request.urlopen(url).read(1000)
+    response = requests.post(url, data=data)
+    recaptcha_result = response.json()
     
-    is_bot = json.loads(is_bot_json)
-    if is_bot['success'] == 0:
+    if recaptcha_result.get('success'):
     
         try:
             send_mail("Fashionista Form: " + subject, 
