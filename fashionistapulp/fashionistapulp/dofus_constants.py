@@ -3181,7 +3181,6 @@ ATTRIBUTE_TO_ELEMENT = {
 
 def get_best_element(char_stats):
     best_element = 'str'
-    print(char_stats)
     best_element_val = char_stats['str']
     for element in ['int', 'cha', 'agi']:
         if char_stats[element] > best_element_val:

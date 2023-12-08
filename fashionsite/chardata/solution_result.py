@@ -167,9 +167,17 @@ def evolve_result_item(result_item, r=None):
 
     if hasattr(result_item, 'non_crit_hits'):
         damage_lines = []
+        weapon_type_key = result_item.weapon_type
+        if weapon_type_key not in LOCALIZED_WEAPON_TYPES:
+            # Handle the missing key case
+            # e.g., use a default value or log an error
+            localized_weapon_type = "Unknown Weapon Type"  # replace with an appropriate default
+        else:
+            localized_weapon_type = LOCALIZED_WEAPON_TYPES[weapon_type_key]
+
         if result_item.crit_chance is not None and result_item.crit_bonus is not None:
             damage_lines.append(_('(%(weapon_type)s) AP: %(AP)d / CH: %(crit_chance)d%% (+%(crit_bonus)d)')
-                                  % {'weapon_type': LOCALIZED_WEAPON_TYPES[result_item.weapon_type],
+                                  % {'weapon_type': localized_weapon_type,
                                      'AP': result_item.ap,
                                      'crit_chance': result_item.crit_chance,
                                      'crit_bonus': result_item.crit_bonus})
