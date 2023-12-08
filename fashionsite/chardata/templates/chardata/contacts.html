@@ -59,16 +59,10 @@
             </td>
             </tr>
             </table>
-            <div id="captcha" align="center" class="g-recaptcha" data-sitekey="6LfGEyspAAAAAFjW0hx5Uk2Sq_6m-TAxZSOCbfib" data-theme="
-            {% if theme != "lighttheme" %}
-                dark
-            {% else %}
-                light
-            {% endif %}
-            "></div>
-            <div align="center">
-                <input type="submit" value='{{_("Send")|escapejs}}' class="button-generic">
-            </div>
+            <button class="g-recaptcha" 
+                data-sitekey="your_reCAPTCHA_site_key" 
+                data-callback='onSubmit' 
+                data-action='submit'>Submit</button>
         </form>
     </div>
 </td>
