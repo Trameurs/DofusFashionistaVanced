@@ -45,7 +45,7 @@ SECRET_KEY = GEN_CONFIGS['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 with open(os.path.join(CONFIG_DIR, 'debug_mode')) as f:
-    DEBUG = False #(f.read() == 'True')
+    DEBUG = True #(f.read() == 'True')
 
 ALLOWED_HOSTS = ['*']
 
@@ -190,7 +190,7 @@ with open(os.path.join(CONFIG_DIR, 'serve_static')) as f:
         STATIC_URL = 'https://fashionistavanced.s3.eu-north-1.amazonaws.com/'
         ALLOWED_HOSTS = ['fashionistavanced.com', 'www.fashionistavanced.com']
     else:
-        STATIC_ROOT = '/home/ec2-user/DofusFashionistaVanced/fashionsite/staticfiles'
+        STATIC_ROOT = '/tmp/statictemp'
         STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 LOGGING = {
