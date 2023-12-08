@@ -838,6 +838,8 @@ class Structure:
         return self.stat_dict_name.get(name)
         
     def get_weapon_type_by_id(self, id):
+        if id is None:
+            return None
         return self.weapon_type_dict[id]
         
     def get_weapon_type_by_key(self, key):
