@@ -3181,6 +3181,7 @@ def calculate_damage(base_damage, char_stats, critical_hit, is_spell):
                                ['air', 'water', 'fire', 'earth']])
         else:
             element_val = max(char_stats[DAMAGE_TYPE_TO_MAIN_STAT[dam.element]], 0)
+        print(element_val)
         if not dam.heals:
             element_val = element_val + max(char_stats['pow'], 0)
             element_dam = char_stats[dam.element.lower() + "dam"]
