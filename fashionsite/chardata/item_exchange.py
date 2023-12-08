@@ -295,6 +295,7 @@ def _get_weapon_rate(weapon, char, result):
     if float(weapon_obj.ap) == 0:
         rating_non_crit = 0
     else:
+        print(weapon_obj.ap)
         rating_non_crit = total_damage / float(weapon_obj.ap)
     
     
