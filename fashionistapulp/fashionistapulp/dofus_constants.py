@@ -3172,16 +3172,21 @@ SOFT_CAPS = {'Cra' : DEFAULT_SOFT_CAPS,
              'Huppermage' : DEFAULT_SOFT_CAPS,
              'Ouginak' : DEFAULT_SOFT_CAPS}
 
+def get_best_element(char_stats):
+    best_element = 'str'
+    best_element_val = char_stats['str']
+    for element in ['int', 'agi', 'cha']:
+        if char_stats[element] > best_element_val:
+            best_element = element
+            best_element_val = char_stats[element]
+    return best_element
+
 def calculate_damage(base_damage, char_stats, critical_hit, is_spell):
     damage_instances = []
     for dam in base_damage:
-        print(dam)
         if dam.element == 'best':
-            element_val = max([char_stats[DAMAGE_TYPE_TO_MAIN_STAT[el]] for el in 
-                               ['air', 'water', 'fire', 'earth']])
-        else:
-            element_val = max(char_stats[DAMAGE_TYPE_TO_MAIN_STAT[dam.element]], 0)
-        print(element_val)
+            dam.element = get_best_element(char_stats)
+        element_val = max(char_stats[DAMAGE_TYPE_TO_MAIN_STAT[dam.element]], 0)
         if not dam.heals:
             element_val = element_val + max(char_stats['pow'], 0)
             element_dam = char_stats[dam.element.lower() + "dam"]
