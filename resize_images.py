@@ -21,8 +21,8 @@ import argparse
 import os
 
 FOLDERS = [
-    'fashionsite/chardata/static/chardata/items/',
-    'fashionsite/chardata/static/chardata/pets/',
+    'fashionsite/staticfiles/chardata/items/',
+    'fashionsite/staticfiles/chardata/pets/',
 ]
 
 W = 60

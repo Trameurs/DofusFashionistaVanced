@@ -31,13 +31,13 @@ def download_image(url, filename):
         with open(filename, 'wb') as file:
             file.write(response.content)
 
-target_directory = '../fashionsite/chardata/static/chardata/'
+target_directory = '../fashionsite/staticfiles/chardata/'
 
 for item in data:
     image_url = item.get('image_url')
     if image_url:
         # You can modify the filename as per your requirement
-        if item['w_type'] == 'Petsmounth' or item['w_type'] == 'Pet':
+        if item['w_type'] == 'Petsmount' or item['w_type'] == 'Pet':
             filename = os.path.join(target_directory, "pets/", sanitize_filename(f"{item['name_en']}.png"))
         else:
             filename = os.path.join(target_directory, "items/", sanitize_filename(f"{item['name_en']}.png"))
