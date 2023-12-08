@@ -1,8 +1,7 @@
-export PYTHONPATH=$PYTHONPATH:/home/ec2-user/DofusFashionistaVanced
 cd ~/DofusFashionistaVanced
+export PYTHONPATH=$PYTHONPATH:$(pwd)
 bash -c './wipe_solution_cache.py'
 cd fashionsite
 bash -c 'django-admin compilemessages'
 cd ..
-export DJANGO_SETTINGS_MODULE=fashionsite.fashionsite.settings
-gunicorn fashionsite.fashionsite.wsgi:application --bind 0.0.0.0:8000
+gunicorn fashionsite.wsgi:application --bind 0.0.0.0:8000
