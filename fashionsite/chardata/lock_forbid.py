@@ -32,6 +32,11 @@ DEFAULT_EXCLUSIONS_121_PLUS = ['Gore Master\'s Ring (Gms Only)',
                                'Hard-Charging Yakitoro',
                                'Slugger Yakitoro',
                                'Horned Yakitoro',
+                               'Ruminant Yakitoro',
+                               'Naive Yakitoro',
+                               'Innocent Yakitoro',
+                               'Carefree Yakitoro',
+                               'Docile Yakitoro',
                                ]
 DEFAULT_EXCLUSIONS_120_MINUS = (DEFAULT_EXCLUSIONS_121_PLUS
                                 + [])
