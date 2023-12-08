@@ -59,9 +59,11 @@ The old scraper is still in the folder itemscraper, it uses the Dofus website En
 ```shell
 cd itemscraper  
 python3 get_equipments.py  
-python3 get_equipments2.py  
+python3 get_equipments2.py
+python3 get_equipments3.py
+python3 get_equipments4.py  
 cd ..
-python3 store_venom.py
+python3 resize_images.py
 ```
 
 # Run Dofus Fashionista

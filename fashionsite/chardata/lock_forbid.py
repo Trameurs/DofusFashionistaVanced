@@ -37,6 +37,14 @@ DEFAULT_EXCLUSIONS_121_PLUS = ['Gore Master\'s Ring (Gms Only)',
                                'Innocent Yakitoro',
                                'Carefree Yakitoro',
                                'Docile Yakitoro',
+                               'Basic Broom',
+                               'Pellet Sling',
+                               'Catmeleon Louz',
+                               'Louz',
+                               'Crackling Garudania',
+                               'Hatched Garudania',
+                               'Incubated Garudania',
+                               'Reincarnated Garudania',
                                ]
 DEFAULT_EXCLUSIONS_120_MINUS = (DEFAULT_EXCLUSIONS_121_PLUS
                                 + [])
