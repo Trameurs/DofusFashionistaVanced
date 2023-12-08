@@ -383,12 +383,24 @@ class Structure:
     def read_extra_lines_table(self):
         c = self.conn.cursor()
         for entry in c.execute('SELECT item, line, language FROM extra_lines'):
-            item_id = entry[0]         
-            if isinstance(entry[1], str):
-                lines = pickle.loads(entry[1].encode())
-            else:
-                lines = pickle.loads(entry[1])
+            item_id = entry[0]
+            line_data = entry[1]
             language = entry[2]
+
+            # Debugging: Print type and content of line_data
+            print(f"Type of line_data: {type(line_data)}, Content: {line_data}")
+
+            try:
+                # Check if line_data is a string, if so, encode to bytes
+                if isinstance(line_data, str):
+                    line_data = line_data.encode()
+                
+                # Deserialize with pickle
+                lines = pickle.loads(line_data)
+            except Exception as e:
+                print(f"Error deserializing data: {e}")
+                continue
+
             assert type(lines) is list
             item = self.get_item_by_id(item_id)
             item.localized_extras[language] = lines
