@@ -356,15 +356,14 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
                 special_spell_key = f'special_spell_{lang}'
                 if special_spell_key in item:
                     description = item[special_spell_key]
-                    #modified_description = "(lp0\n"
-                    #for p, part in enumerate(description.split('\n'), start=1):
-                    #    if part:
-                            #modified_description += f"V{part}\np{p}\na"
-                    #modified_description += "."
-                    #byte_data = modified_description.encode('utf-8')
-                    #byte_data = description.encode('utf-8')
-                    #hex_data = byte_data.hex()
-                    f.write(f"INSERT INTO extra_lines VALUES({index}, '{description}', '{lang}');\n")
+                    modified_description = "(lp0\n"
+                    for p, part in enumerate(description.split('\n'), start=1):
+                        if part:
+                            modified_description += f"V{part}\np{p}\na"
+                    modified_description += "."
+                    byte_data = modified_description.encode('utf-8')
+                    hex_data = byte_data.hex()
+                    f.write(f"INSERT INTO extra_lines VALUES({index}, X'{hex_data}', '{lang}');\n")
 
     f.write("""CREATE TABLE item_names (item INTEGER, language text, name text, FOREIGN KEY(item) REFERENCES items(id));\n""")
 
