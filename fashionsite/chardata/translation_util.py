@@ -37,6 +37,7 @@ LOCALIZED_CHARACTER_CLASSES = {
     'Eliotrope': gettext_lazy('Eliotrope'),
     'Huppermage': gettext_lazy('Huppermage'),
     'Ouginak': gettext_lazy('Ouginak'),
+    'Forgelance': gettext_lazy('Forgelance'),
 }
 
 LOCALIZED_ELEMENTS = {

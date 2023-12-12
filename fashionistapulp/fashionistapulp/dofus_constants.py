@@ -20,7 +20,7 @@ from copy import copy
 CHARACTER_CLASSES = sorted(['Eniripsa', 'Iop', 'Xelor', 'Osamodas', 'Feca',
                      'Sacrier', 'Ecaflip', 'Enutrof', 'Sram', 'Sadida',
                      'Cra', 'Pandawa', 'Rogue', 'Masqueraider', 'Foggernaut',
-                     'Eliotrope', 'Huppermage', 'Ouginak'])
+                     'Eliotrope', 'Huppermage', 'Ouginak', 'Forgelance'])
 
 TYPE_NAME_TO_SLOT = {
     'Weapon': 'weapon',
@@ -3170,7 +3170,8 @@ SOFT_CAPS = {'Cra' : DEFAULT_SOFT_CAPS,
              'Eliotrope' : DEFAULT_SOFT_CAPS,
              'Masqueraider' : DEFAULT_SOFT_CAPS,
              'Huppermage' : DEFAULT_SOFT_CAPS,
-             'Ouginak' : DEFAULT_SOFT_CAPS}
+             'Ouginak' : DEFAULT_SOFT_CAPS,
+             'Forgelance' : DEFAULT_SOFT_CAPS}
 
 ATTRIBUTE_TO_ELEMENT = {
     'int': 'fire',

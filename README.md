@@ -88,11 +88,11 @@ run_fashionista.bat
 ✅ All equipments and mounts updated to Dofus 2.70     
 ✅ Sets 2.70 done  
 ✅ Updated all special effects to 2.70     
-✅ Special items effects updated including prytek         
+✅ Special items effects updated including Prytek         
 ❌ Update UI to reflect new Dofus and Prytek       
 ❌ Add Forgelance          
 ❌ Update all spells to 2.70          
-❌ Update weights of special items including prytek          
+❌ Update weights of special items including Dofus and Prytek          
 ❌ Details before release           
 
 # Reference

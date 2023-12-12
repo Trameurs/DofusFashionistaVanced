@@ -723,6 +723,37 @@ RACE_TO_BUILD_PROFILE = {
             'airdam': 1.4,
         },
     },
+    #TODO: forgelance is placeholder
+    'Forgelance': {
+        'all': {
+            'meleeness': 0.5,
+            'range_importance': 0.5,
+            'dodge_importance': 0.5,
+            'lock_importance': 0.5,
+            'mpred_importance': 0.2,
+            'vit_importance': 0.6,
+        },
+        'str': {
+            'earthdam': 1.6,
+            'vit_importance': 0.6,
+            'lock_importance': 0.6,
+        },
+        'int': {
+            'firedam': 1.6,
+            'vit_importance': 0.6,
+            'dodge_importance': 0.6,
+        },
+        'cha': {
+            'waterdam': 1.6,
+            'vit_importance': 0.6,
+            'lock_importance': 0.6,
+        },
+        'agi': {
+            'airdam': 1.6,
+            'vit_importance': 0.6,
+            'dodge_importance': 0.6,
+        },
+    },
 }
 
 RACES_WITH_HYBRID_PROFILES = ['Huppermage']
