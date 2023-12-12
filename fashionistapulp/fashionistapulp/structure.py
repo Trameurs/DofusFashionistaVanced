@@ -387,12 +387,18 @@ class Structure:
             line_data = entry[1]
             language = entry[2]
 
-            print(line_data)
-
             try:
+                # Deserialize with pickle (line_data is a byte string)
+                lines = line_data
+                print(lines)
+                # Decode each line in the list from bytes to string
+                lines = [line.decode('utf-8') if isinstance(line, bytes) else line for line in lines]
+
+                #print(lines)
+
                 # Get the item by ID and update its localized extras
                 item = self.get_item_by_id(item_id)
-                item.localized_extras[language] = line_data
+                item.localized_extras[language] = line_data.decode('utf-8')
 
             except Exception as e:
                 print(f"Error in processing data: {e}")
