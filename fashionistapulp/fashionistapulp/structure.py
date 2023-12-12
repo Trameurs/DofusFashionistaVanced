@@ -392,7 +392,7 @@ class Structure:
                 lines = line_data
                 print(lines)
                 # Decode each line in the list from bytes to string
-                lines = [line.decode('utf-8') if isinstance(line, bytes) else line.decode('utf-8') for line in lines]
+                lines = [line.decode('utf-8') if isinstance(line, bytes) else line for line in lines]
 
                 #print(lines)
 
