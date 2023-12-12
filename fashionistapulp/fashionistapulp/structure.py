@@ -389,6 +389,7 @@ class Structure:
 
             # Debugging: Print type and content of line_data
             decoded_line_data = line_data.decode('utf-8')
+            line_data = line_data.decode('utf-8')
             print(f"Type of line_data: {type(line_data)}, Decoded Content: {decoded_line_data}")
 
             try:
