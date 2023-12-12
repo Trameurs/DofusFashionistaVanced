@@ -2254,13 +2254,20 @@ DAMAGE_SPELLS = {
             [['26-30', '31-35']] * 4,
             [['31-35', '36-40']] * 4,
             [EARTH, FIRE, WATER, AIR],
-        ), aggregates=[('Hit in Best Element', [0])],
+        ), aggregates=[('Hit in Best Element', [0]), 
+                       ([1]),
+                       ([2]),
+                       ([3])],
         is_linked=(1, 'Bloodthirsty Madness')),
         Spell('Bloodthirsty Madness', [200], Effects(
             [['24-28']] * 4,
             None,
             [EARTH, FIRE, WATER, AIR],
-        ), is_linked=(2, 'Retribution')),
+        ), aggregates=[('Hit in Best Element', [0]),
+                          ([1]),
+                          ([2]),
+                          ([3])],
+        is_linked=(2, 'Retribution')),
     ],
     'Sadida': [
         Spell('Bramble', [1, 25, 52], Effects(
