@@ -3142,7 +3142,18 @@ DAMAGE_SPELLS = {
             [['35-39']],
             [AIR],
         ), is_linked=(2, 'Tetanisation')),
-    ]
+    ],
+    'Forgelance': [
+        Spell('Lance of the Lake', [1, 66, 132], Effects(
+            [['13-15', '17-20', '22-25']],
+            [['16-18', '21-23', '26-30']],
+            [WATER],
+        ), is_linked=(1, 'Seismic Pike')),
+        Spell('Seismic Pike', [95, 162], Effects(
+            [['21-24', '26-29']],
+            [['25-29', '31-36']],
+            [EARTH],
+        ), is_linked=(2, 'Lance of the Lake')),
 }
 
 DEFAULT_SOFT_CAPS = {
