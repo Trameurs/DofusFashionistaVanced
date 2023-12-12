@@ -397,8 +397,11 @@ class Structure:
                 
                 # Deserialize with pickle
                 lines = pickle.loads(line_data)
+
+                # Decode each line in the list from bytes to string
+                lines = [line.decode('utf-8') if isinstance(line, bytes) else line for line in lines]
             except Exception as e:
-                print(f"Error deserializing data: {e}")
+                print(f"Error deserializing or decoding data: {e}")
                 continue
 
             assert type(lines) is list
