@@ -2254,7 +2254,8 @@ DAMAGE_SPELLS = {
             [['26-30', '31-35']] * 4,
             [['31-35', '36-40']] * 4,
             [EARTH, FIRE, WATER, AIR],
-        ), is_linked=(1, 'Bloodthirsty Madness')),
+        ), aggregates=[('Hit in Best Element', [0])],
+        is_linked=(1, 'Bloodthirsty Madness')),
         Spell('Bloodthirsty Madness', [200], Effects(
             [['24-28']] * 4,
             None,
@@ -3154,6 +3155,16 @@ DAMAGE_SPELLS = {
             [['25-29', '31-36']],
             [EARTH],
         ), is_linked=(2, 'Lance of the Lake')),
+        Spell('Slingshot', [1, 67, 133], Effects(
+            [['15-17', '19-21', '25-28']],
+            [['18-20', '22-25', '30-34']],
+            [EARTH],
+        ), is_linked=(1, 'Lightning-Javelin')),
+        Spell('Lightning-Javelin', [100, 167], Effects(
+            [['23-26', '28-32']],
+            [['28-31', '35-39']],
+            [WATER],
+        ), is_linked=(2, 'Slingshot')),
     ]
 }
 
