@@ -3154,6 +3154,7 @@ DAMAGE_SPELLS = {
             [['25-29', '31-36']],
             [EARTH],
         ), is_linked=(2, 'Lance of the Lake')),
+    ]
 }
 
 DEFAULT_SOFT_CAPS = {
