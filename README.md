@@ -89,7 +89,7 @@ run_fashionista.bat
 ✅ Sets 2.70 done  
 ✅ Updated all special effects to 2.70     
 ✅ Special items effects updated including prytek         
-❌ Update UI to reflect new Dofus        
+❌ Update UI to reflect new Dofus and Prytek       
 ❌ Add Forgelance          
 ❌ Update all spells to 2.70          
 ❌ Update weights of special items including prytek          
