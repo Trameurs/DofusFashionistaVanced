@@ -388,7 +388,8 @@ class Structure:
             language = entry[2]
 
             # Debugging: Print type and content of line_data
-            print(f"Type of line_data: {type(line_data)}, Content: {line_data}")
+            decoded_line_data = line_data.decode('utf-8')
+            print(f"Type of line_data: {type(line_data)}, Decoded Content: {decoded_line_data}")
 
             try:
                 # Check if line_data is a string, if so, encode to bytes
