@@ -200,8 +200,6 @@ def choose_item(request):
     item_stats['conditions'] = conditions
     
     item_stats['extras'] = {lang: item.localized_extras.get(lang, []) for lang in LANGUAGES}
-
-    print(item_stats['extras'])
     
     if item_stats['type'] == 'Weapon':
         weapon = structure.get_weapon_by_name(item.name, dofus_touch)
