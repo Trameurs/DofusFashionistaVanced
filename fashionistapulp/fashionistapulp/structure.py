@@ -400,17 +400,13 @@ class Structure:
                 # Ensure lines is a list
                 assert type(lines) is list
 
-                # Process the lines as needed
-                # For example, you can manipulate lines, display them, or save them
-                # ...
-
                 # Example: Print each line
                 for line in lines:
                     print(line)
 
                 # Get the item by ID and update its localized extras
                 item = self.get_item_by_id(item_id)
-                item.localized_extras[language] = lines
+                item.localized_extras[language] = lines.encode('utf-8')
 
             except Exception as e:
                 print(f"Error in processing data: {e}")
