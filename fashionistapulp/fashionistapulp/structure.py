@@ -387,28 +387,35 @@ class Structure:
             line_data = entry[1]
             language = entry[2]
 
-            # Debugging: Print type and content of line_data
-            decoded_line_data = line_data.decode('utf-8')
-            line_data = line_data.decode('utf-8')
-            print(f"Type of line_data: {type(line_data)}, Decoded Content: {decoded_line_data}")
-
             try:
-                # Check if line_data is a string, if so, encode to bytes
-                if isinstance(line_data, str):
-                    line_data = line_data.encode()
-                
-                # Deserialize with pickle
-                lines = pickle.loads(line_data)
+                # Decode the byte string to a regular string
+                decoded_line_data = line_data.decode('utf-8')
 
-                # Decode each line in the list from bytes to string
-                lines = [line.decode('utf-8') if isinstance(line, bytes) else line for line in lines]
+                # Now use decoded_line_data for further processing
+                print(f"Decoded line data: {decoded_line_data}")
+
+                # Deserialize with pickle
+                lines = pickle.loads(decoded_line_data)
+
+                # Ensure lines is a list
+                assert type(lines) is list
+
+                # Process the lines as needed
+                # For example, you can manipulate lines, display them, or save them
+                # ...
+
+                # Example: Print each line
+                for line in lines:
+                    print(line)
+
+                # Get the item by ID and update its localized extras
+                item = self.get_item_by_id(item_id)
+                item.localized_extras[language] = lines
+
             except Exception as e:
-                print(f"Error deserializing or decoding data: {e}")
+                print(f"Error in processing data: {e}")
                 continue
 
-            assert type(lines) is list
-            item = self.get_item_by_id(item_id)
-            item.localized_extras[language] = lines
     
 #     def read_weapon_is_onehanded_table(self):
 #         c = self.conn.cursor()
