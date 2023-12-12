@@ -388,31 +388,24 @@ class Structure:
             language = entry[2]
 
             try:
-                # Decode the byte string to a regular string
-                decoded_line_data = line_data.decode('utf-8')
+                # Deserialize with pickle (line_data is a byte string)
+                lines = pickle.loads(line_data)
 
-                # Now use decoded_line_data for further processing
-                print(f"Decoded line data: {decoded_line_data}")
+                # Decode each line in the list from bytes to string
+                lines = [line.decode('utf-8') if isinstance(line, bytes) else line for line in lines]
 
-                # Deserialize with pickle
-                lines = pickle.loads(decoded_line_data)
-
-                # Ensure lines is a list
-                assert type(lines) is list
-
-                # Example: Print each line
+                # Now use lines for further processing
                 for line in lines:
                     print(line)
 
                 # Get the item by ID and update its localized extras
                 item = self.get_item_by_id(item_id)
-                item.localized_extras[language] = lines.encode('utf-8')
+                item.localized_extras[language] = lines
 
             except Exception as e:
                 print(f"Error in processing data: {e}")
                 continue
 
-    
 #     def read_weapon_is_onehanded_table(self):
 #         c = self.conn.cursor()
 #         for entry in c.execute('SELECT item FROM weapon_is_onehanded'):
