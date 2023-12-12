@@ -383,27 +383,16 @@ class Structure:
     def read_extra_lines_table(self):
         c = self.conn.cursor()
         for entry in c.execute('SELECT item, line, language FROM extra_lines'):
-            item_id = entry[0]
-            line_data = entry[1]
+            item_id = entry[0]         
+            if isinstance(entry[1], str):
+                lines = pickle.loads(entry[1].encode())
+            else:
+                lines = pickle.loads(entry[1])
             language = entry[2]
-
-            try:
-                # Deserialize with pickle (line_data is a byte string)
-                lines = line_data
-                print(lines)
-                # Decode each line in the list from bytes to string
-                lines = [line.decode('utf-8') if isinstance(line, bytes) else line for line in lines]
-
-                #print(lines)
-
-                # Get the item by ID and update its localized extras
-                item = self.get_item_by_id(item_id)
-                item.localized_extras[language] = line_data.decode('utf-8')
-
-            except Exception as e:
-                print(f"Error in processing data: {e}")
-                continue
-
+            assert type(lines) is list
+            item = self.get_item_by_id(item_id)
+            item.localized_extras[language] = lines
+    
 #     def read_weapon_is_onehanded_table(self):
 #         c = self.conn.cursor()
 #         for entry in c.execute('SELECT item FROM weapon_is_onehanded'):
