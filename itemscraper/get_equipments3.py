@@ -15,6 +15,7 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 import json
+import pickle
 from fashionistapulp.dofus_constants import STAT_NAME_TO_KEY, STAT_ORDER, TYPE_NAME_TO_SLOT
 
 LANGUAGES = ['en', 'fr', 'es', 'pt', 'de', 'it']
@@ -356,13 +357,16 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
                 special_spell_key = f'special_spell_{lang}'
                 if special_spell_key in item:
                     description = item[special_spell_key]
-                    modified_description = "(lp0\n"
-                    for p, part in enumerate(description.split('\n'), start=1):
-                        if part:
-                            modified_description += f"V{part}\np{p}\na"
-                    modified_description += "."
-                    byte_data = modified_description.encode('utf-8')
-                    hex_data = byte_data.hex()
+                    
+                    # Split the description into lines and store in a list
+                    description_lines = description.split('\n')
+
+                    # Serialize the list using pickle
+                    pickled_data = pickle.dumps(description_lines)
+
+                    # Convert the pickled data to a hexadecimal string
+                    hex_data = pickled_data.hex()
+
                     f.write(f"INSERT INTO extra_lines VALUES({index}, X'{hex_data}', '{lang}');\n")
 
     f.write("""CREATE TABLE item_names (item INTEGER, language text, name text, FOREIGN KEY(item) REFERENCES items(id));\n""")
