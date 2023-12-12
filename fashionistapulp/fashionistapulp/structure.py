@@ -398,7 +398,7 @@ class Structure:
 
                 # Get the item by ID and update its localized extras
                 item = self.get_item_by_id(item_id)
-                item.localized_extras[language] = line_data
+                item.localized_extras[language] = line_data.decode('utf-8')
 
             except Exception as e:
                 print(f"Error in processing data: {e}")
