@@ -86,9 +86,13 @@ run_fashionista.bat
 
 ✅ Website is fully operational     
 ✅ All equipments and mounts updated to Dofus 2.70     
-✅ Larger filter for Temporis items done   
-✅ Sets done     
-✅ Special items effects added    
+✅ Sets 2.70 done  
+✅ Updated all special effects to 2.70     
+✅ Special items effects updated including prytek
+❌ Update UI to reflect new Dofus
+❌ Add Forgelance
+❌ Update all spells to 2.70
+❌ Update weights of special items including prytek
 ❌ Details before release
 
 # Reference
