@@ -389,12 +389,12 @@ class Structure:
 
             try:
                 # Deserialize with pickle (line_data is a byte string)
-                lines = pickle.loads(line_data)
-
+                lines = line_data
+                print(lines)
                 # Decode each line in the list from bytes to string
                 lines = [line.decode('utf-8') if isinstance(line, bytes) else line for line in lines]
 
-                print(lines)
+                
 
                 # Get the item by ID and update its localized extras
                 item = self.get_item_by_id(item_id)
