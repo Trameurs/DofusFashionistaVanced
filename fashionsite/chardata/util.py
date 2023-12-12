@@ -198,7 +198,7 @@ def get_char_id_possibly_encoded(char_id_possibly_encoded):
 
 class HttpResponseText(HttpResponse):
     def __init__(self, text, **kwargs):
-        return HttpResponse.__init__(self, text, content_type='text/plain', **kwargs)
+        return HttpResponse.__init__(self, text, content_type='text/plain; charset=utf-8', **kwargs)
 
 class HttpResponseJson(HttpResponse):
     def __init__(self, text, **kwargs):
