@@ -3178,7 +3178,8 @@ DAMAGE_SPELLS = {
         ), aggregates=[('Hit in best element', [0]), 
                        ('', [1]),
                        ('', [2]),
-                       ('', [3])]),
+                       ('', [3])],
+        ),
     ]
 }
 
