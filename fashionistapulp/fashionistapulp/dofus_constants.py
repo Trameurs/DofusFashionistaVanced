@@ -3179,8 +3179,55 @@ DAMAGE_SPELLS = {
         ), aggregates=[('Hit in best element', [0]), 
                        ('', [1]),
                        ('', [2]),
-                       ('', [3])]
-        ),
+                       ('', [3])]),
+        Spell('Fire Lance', [3, 69, 136], Effects(
+            [['12-13', '16-19', '21-24']],
+            [['15-17', '20-22', '25-29']],
+            [FIRE],
+        ), is_linked=(1, 'Disengaging')),
+        Spell('Disengaging', [110, 177], Effects(
+            [['23-26', '29-32']],
+            [['28-31', '35-38']],
+            [AIR],
+        ), is_linked=(2, 'Fire Lance')),
+        Spell('No Myr Javelin', [6, 71, 138], Effects(
+            [['16-18', '21-24', '26-30']],
+            [['19-21', '25-29', '31-36']],
+            [AIR],
+        ), is_linked=(1, 'Hot Iron')),
+        Spell('Hot Iron', [115, 182], Effects(
+            [['17-20', '20-23']],
+            [['20-23', '24-28']],
+            [FIRE],
+        ), is_linked=(2, 'No Myr Javelin')),
+        Spell('Heroic Charge', [10, 77, 144], Effects(
+            [['20', '27', '33']] * 4,
+            [['24', '32', '40']] * 4,
+            [EARTH, FIRE, WATER, AIR],
+        ), aggregates=[('Hit in best element', [0]),
+                        ('', [1]),
+                        ('', [2]),
+                        ('', [3])],),
+        Spell('Collapse', [15, 82, 149], Effects(
+            [['13-15', '16-18', '20-22']],
+            [['15-17', '19-21', '24-26']],
+            [EARTH],
+        ), is_linked=(1, 'Brass Rain')),
+        Spell('Brass Rain', [125, 192], Effects(
+            [['16-18', '19-21']],
+            [['20-22', '23-25']],
+            [AIR],
+        ), is_linked=(2, 'Collapse')),
+        Spell('Biting Trident', [20, 87, 154], Effects(
+            [['13-15', '17-19', '21-24']],
+            [['16-18', '20-23', '25-29']],
+            [WATER],
+        ), is_linked=(1, 'Spicy Mill')),
+        Spell('Spicy Mill', [130, 197], Effects(
+            [['25-29', '28-32']],
+            [['30-34', '34-38']],
+            [FIRE],
+        ), is_linked=(2, 'Biting Trident')),
     ]
 }
 
