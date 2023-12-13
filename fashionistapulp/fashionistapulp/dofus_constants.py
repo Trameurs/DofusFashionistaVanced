@@ -3172,6 +3172,14 @@ DAMAGE_SPELLS = {
             [['28-31', '35-39']],
             [WATER],
         ), is_linked=(2, 'Slingshot')),
+        Spell('Parry', [105, 172], Effects(
+            [['24', '30']] * 4,
+            [EARTH, FIRE, WATER, AIR],
+        ), aggregates=[('Hit in best element', [0]), 
+                       ('', [1]),
+                       ('', [2]),
+                       ('', [3])]
+        ),
     ]
 }
 
