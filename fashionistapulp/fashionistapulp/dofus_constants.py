@@ -2254,7 +2254,7 @@ DAMAGE_SPELLS = {
             [['26-30', '31-35']] * 4,
             [['31-35', '36-40']] * 4,
             [EARTH, FIRE, WATER, AIR],
-        ), aggregates=[('Hit in Best Element', [0]), 
+        ), aggregates=[('Hit in best element', [0]), 
                        ('', [1]),
                        ('', [2]),
                        ('', [3])],
@@ -2263,7 +2263,7 @@ DAMAGE_SPELLS = {
             [['24-28']] * 4,
             None,
             [EARTH, FIRE, WATER, AIR],
-        ), aggregates=[('Hit in Best Element', [0]),
+        ), aggregates=[('Hit in best element', [0]),
                           ('', [1]),
                           ('', [2]),
                           ('', [3])],
@@ -3172,6 +3172,13 @@ DAMAGE_SPELLS = {
             [['28-31', '35-39']],
             [WATER],
         ), is_linked=(2, 'Slingshot')),
+        Spell('Parry', [105, 172], Effects(
+            [['24', '30']],
+            [EARTH, FIRE, WATER, AIR],
+        ), aggregates=[('Hit in best element', [0]), 
+                       ('', [1]),
+                       ('', [2]),
+                       ('', [3])]),
     ]
 }
 
