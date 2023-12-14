@@ -3316,7 +3316,7 @@ DAMAGE_SPELLS = {
             [['29-33', '36-41']],
             [['21-24', '26-30']],
             [['25-29', '31-36']],
-            [WATER],
+            [WATER, WATER, WATER, WATER],
         ), aggregates=[('On ennemy', [0]),
                        ('', [1]),
                        ('On caster', [2]),
