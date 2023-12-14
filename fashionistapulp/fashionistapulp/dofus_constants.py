@@ -601,9 +601,9 @@ DAMAGE_SPELLS = {
             [['36-41']],
             [FIRE]
         ), is_linked=(2, "Bat's Eye")),
-        Spell('Piercing Shot', [60], Effects(
-            create_stacking_values(((25-28),), 4, 12),
-            create_stacking_values(((30-33),), 4, 12),
+        Spell('Piercing Shot', [60, 127, 194], Effects(
+            create_stacking_values(((25, 28), (30, 34), (34, 38),), 4, 12),
+            create_stacking_values(((30, 33), (36, 41), (41, 46),), 4, 12),
             [AIR]*12
         ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(12)],), 
         # Spell('Magic Arrow', [1, 66, 132], Effects(
