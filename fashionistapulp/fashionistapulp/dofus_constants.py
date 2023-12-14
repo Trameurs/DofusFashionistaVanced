@@ -3268,6 +3268,26 @@ DAMAGE_SPELLS = {
             [['14-17']],
             [FIRE],
         ), is_linked=(2, 'Earthen Weakness')),
+        Spell('Kyrja', [50, 117, 184], Effects(
+            [['18-20', '24-27', '28-32']],
+            [['21-24', '29-33', '34-38']],
+            [EARTH, FIRE, WATER, AIR],
+        ), aggregates=[('Steal in best element', [0]),
+                        ('', [1]),
+                        ('', [2]),
+                        ('', [3])],
+        steals=[True, True, True, True], 
+        is_linked=(1, 'Vajra')),
+        Spell('Vajra', [160], Effects(
+            [['39-44']],
+            [['47-53']],
+            [EARTH, FIRE, WATER, AIR],
+        ), aggregates=[('Steal in best element', [0]),
+                        ('', [1]),
+                        ('', [2]),
+                        ('', [3])],
+        steals=[True, True, True, True],
+        is_linked=(2, 'Kyrja')),
     ]
 }
 
