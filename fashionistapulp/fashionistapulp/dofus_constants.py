@@ -625,9 +625,9 @@ DAMAGE_SPELLS = {
         ), aggregates=[('Not charged', [0]),
                         ('Charged once', [1]),
                         ('Charged twice', [2]),
-                        ('Shock:\nNot charged', [3]),
-                        ('Charged once', [4]),
-                        ('Charged twice', [5])],
+                        ('Shock Not charged', [3]),
+                        ('Shock Charged once', [4]),
+                        ('Shock Charged twice', [5])],
         is_linked=(2, 'Piercing Shot')),
 
         # Spell('Magic Arrow', [1, 66, 132], Effects(
