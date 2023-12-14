@@ -601,6 +601,24 @@ DAMAGE_SPELLS = {
             [['36-41']],
             [FIRE]
         ), is_linked=(2, "Bat's Eye")),
+        Spell('Piercing Shot', [60, 127, 194], Effects(
+            create_stacking_values(((25-28), (30-34), (34-38)), 4, 12),
+            create_stacking_values(((30-33), (36-41), (41-46)), 4, 12),
+            [AIR]
+        ), is_linked=(1, 'Devouring Arrow')),
+        Spell('Devouring Arrow', [170], Effects(
+            [['11-13'],
+                ['23-27'],
+                ['34-38'],
+                ['52-56'],
+                ['70-74']],
+            [['13-15'],
+                ['26-30'],
+                ['39-43'],
+                ['60-64'],
+                ['81-85']],
+            [AIR, AIR, AIR, AIR, AIR]
+        ), is_linked=(2, 'Piercing Shot')),
         # Spell('Magic Arrow', [1, 66, 132], Effects(
         #     [['11-13', '15-17', '19-21']],
         #     [['13-15', '18-20', '23-25']],
