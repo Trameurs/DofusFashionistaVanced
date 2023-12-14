@@ -3331,7 +3331,7 @@ DAMAGE_SPELLS = {
         Spell('Noa', [195], Effects(
             [['20-23'], ['23-26']],
             [['24-28'], ['28-31']],
-            [AIR],
+            [AIR, AIR],
         ), aggregates=[('Noa state', [0])], 
         is_linked=(2, 'Middle Earth')),
     ]
