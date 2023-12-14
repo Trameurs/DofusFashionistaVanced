@@ -3323,6 +3323,17 @@ DAMAGE_SPELLS = {
             [['38-42']],
             [FIRE],
         ), is_linked=(2, 'Jormun')),
+        Spell('Middle Earth', [85, 152], Effects(
+            [['24-27', '30-34'], ['30', '50']],
+            [['29-33', '36-41'], ['30', '50']],
+            [EARTH, 'buff_pow'],
+        ), is_linked=(1, 'Noa')),
+        Spell('Noa', [195], Effects(
+            [['20-23'], ['23-26']],
+            [['24-28'], ['28-31']],
+            [AIR],
+        ), aggregates=[('Noa state', [0])], 
+        is_linked=(2, 'Middle Earth')),
     ]
 }
 
