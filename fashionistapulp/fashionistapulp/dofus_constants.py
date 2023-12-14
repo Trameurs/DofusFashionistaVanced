@@ -560,13 +560,13 @@ DAMAGE_SPELLS = {
             [['4-6', '6-8', '7-10'], ['12-13', '14-16', '19-23']],
             [['7-9', '9-11', '11-14'], ['14-16', '17-20', '24-28']],
             [FIRE, FIRE]
-        ), aggregates=[('', [0, 1])],
+        ),
         is_linked=(1, 'Tormenting Arrow')),
         Spell('Tormenting Arrow', [140], Effects(
             [['25-27'], ['14-16']],
             [['30-32'], ['17-19']],
             [AIR, AIR]
-        ), aggregates=['', [0, 1]], 
+        ), 
         is_linked=(2, 'Exploding Arrow')),
         # Spell('Magic Arrow', [1, 66, 132], Effects(
         #     [['11-13', '15-17', '19-21']],
