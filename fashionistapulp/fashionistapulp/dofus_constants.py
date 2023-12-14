@@ -3286,6 +3286,16 @@ DAMAGE_SPELLS = {
                         ('', [2]),
                         ('', [3])],
         is_linked=(2, 'Kyrja')),
+        Spell('Maelstrom', [55, 122, 189], Effects(
+            [['11-13', '16-18', '18-20']],
+            [['14-16', '19-21', '22-24']],
+            [FIRE],
+        ), is_linked=(1, 'Ydra')),
+        Spell('Ydra', [165], Effects(
+            [['25-28']],
+            [['30-34']],
+            [EARTH],
+        ), is_linked=(2, 'Maelstrom')),
     ]
 }
 
