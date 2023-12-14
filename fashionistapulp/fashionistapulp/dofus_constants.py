@@ -3296,11 +3296,6 @@ DAMAGE_SPELLS = {
             [['30-34']],
             [EARTH],
         ), is_linked=(2, 'Maelstrom')),
-        Spell('Iron Prelude', [60, 127, 194], Effects(
-            [['100'], ['150'], ['200']],
-            None,
-            ['buff_pow'],
-        )),
     ]
 }
 
