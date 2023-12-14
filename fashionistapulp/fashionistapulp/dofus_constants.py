@@ -3302,9 +3302,31 @@ DAMAGE_SPELLS = {
              ['200']],
             None,
             ['buff_pow','buff_pow','buff_pow']
-        ), aggregates=[('Option 1', [0]),
-                       ('Option 2', [1]),
-                       ('Option 3', [2])]), 
+        ),),
+        Spell('Cyclone Lancer', [65, 131, 198], Effects(
+            [['23-25', '28-30', '31-33']],
+            [['28-30', '33-35', '37-40']],
+            [AIR],
+        ), is_linked=(1, 'Elding')),
+        Spell('Elding', [175], Effects(
+            [['32-36']],
+            [['38-43']],
+            [WATER],
+        ), is_linked=(2, 'Cyclone Lancer')),
+        Spell('Jormun', [75, 142], Effects(
+            [['24-27', '30-34']],
+            [['29-33', '36-41']],
+            [['21-24', '26-30']],
+            [['25-29', '31-36']],
+            [WATER],
+        ), aggregates=[('On ennemy', [0, 1]),
+                        ('On caster', [2, 3])],
+        is_linked=(1, 'Muspel')),
+        Spell('Muspel', [185], Effects(
+            [['32-36']],
+            [['38-42']],
+            [FIRE],
+        ), is_linked=(2, 'Jormun')),
     ]
 }
 
