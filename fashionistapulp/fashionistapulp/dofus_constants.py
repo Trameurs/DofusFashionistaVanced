@@ -491,217 +491,267 @@ DAMAGE_SPELLS = {
         )),
     ],
     'Cra': [
-        Spell('Magic Arrow', [1, 66, 132], Effects(
-            [['11-13', '15-17', '19-21']],
-            [['13-15', '18-20', '23-25']],
+        Spell('Optical Arrow', [1, 66, 132], Effects(
+            [['14-16', '18-21', '23-27']],
+            [['16-19', '21-25', '28-32']],
             [AIR]
-        ), is_linked=(1, 'Concentration Arrow')),
-        Spell('Concentration Arrow', [95, 162], Effects(
-            [['18-21', '22-26']],
-            [['21-25', '26-31']],
+        ), is_linked=(1, 'Raining Arrows')),
+        Spell('Raining Arrows', [95, 162], Effects(
+            [['19-21', '24-26']],
+            [['23-25', '29-31']],
             [AIR]
-        ), is_linked=(2, 'Magic Arrow')),
-        Spell('Retreat Arrow', [1, 67, 133], Effects(
-            [['15-17', '20-22', '25-28']],
-            [['18-20', '23-26', '30-34']],
-            [AIR]
-        ), is_linked=(1, 'Erosive Arrow')),
-        Spell('Erosive Arrow', [100, 167], Effects(
-            [['20-23', '25-29']],
-            [['24-28', '30-35']],
-            [EARTH]
-        ), is_linked=(2, 'Retreat Arrow')),
-        Spell('Frozen Arrow', [3, 69, 136], Effects(
-            [['10-12', '13-15', '17-19']],
-            [['12-14', '16-18', '20-23']],
-            [FIRE]
-        ), is_linked=(1, 'Paralysing Arrow')),
-        Spell('Paralysing Arrow', [110, 177], Effects(
-            [['31-34', '39-42']],
-            [['38-40', '47-50']],
-            [FIRE]
-        ), is_linked=(2, 'Frozen Arrow')),
-        Spell('Burning Arrow', [6, 71, 138], Effects(
-            [['19-21', '26-28', '33-35']],
-            [['23-25', '32-34', '40-42']],
-            [FIRE]
-        ), is_linked=(1, 'Repulsive Arrow')),
-        Spell('Repulsive Arrow', [115, 182], Effects(
-            [['24-27', '28-32']],
-            [['29-33', '34-38']],
-            [FIRE]
-        ), is_linked=(2, 'Burning Arrow')),
-        Spell('Atonement Arrow', [15, 82, 149], Effects(
-            create_level_based_stacking_values(((22, 24), (28, 30), (35, 37)), 
-                                               (23, 29, 36), 3),
-            create_level_based_stacking_values(((26, 28), (34, 36), (42, 44)), 
-                                               (27, 35, 43), 3),
-            [WATER, WATER, WATER],
-        ), aggregates=[("Not charged", [0]),
-                       ("Charged once", [1]),
-                       ("Charged twice", [2])],
-        is_linked=(1, 'Redemption Arrow')),
-        Spell('Redemption Arrow', [125, 192], Effects(
-            create_level_based_stacking_values(((17, 19), (19, 22)), 
-                                               (10, 12), 2),
-            create_level_based_stacking_values(((20, 23), (23, 26)), 
-                                               (10, 35), 2),
-            [WATER]*2,
-        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)],
-        is_linked=(2, 'Atonement Arrow')),
-        Spell("Bat's Eye", [20, 87, 154], Effects(
-            [['10-12', '13-15', '16-18']],
-            [['12-14', '15-17', '19-22']],
+        ), is_linked=(2, 'Optical Arrow')),
+        Spell('Frozen Arrow', [1, 67, 133], Effects(
+            [['14-17', '19-22', '24-28']],
+            [['28-21', '23-26', '29-34']],
             [WATER]
-        ), is_linked=(1, 'Crushing Arrow')),
-        Spell('Crushing Arrow', [130, 197], Effects(
-            [['30-34', '34-38']],
-            [['36-41', '41-46']],
+        ), is_linked=(1, 'Slow Down Arrow')),
+        Spell('Slow Down Arrow', [100, 167], Effects(
+            [['27-29', '34-36']],
+            [['33-35', '41-43']],
+            [WATER]
+        ), is_linked=(2, 'Frozen Arrow')),
+        Spell('Repulsive Shot', [3, 69, 136], Effects(
+            [['17-19', '22-25', '28-32']],
+            [['20-23', '26-30', '34-38']],
             [FIRE]
-        ), is_linked=(2, "Bat's Eye")),
-        Spell('Critical Shooting', [25, 92, 159], Effects(
-            [['0', '0', '0']],
-            [['10', '30', '50']],
-            ['buff_pow']
-        )),
-        Spell('Immobilising Arrow', [30, 97, 164], Effects(
-            [['6-7', '8-9', '10-11']],
-            [['7-8', '10-11', '12-13']],
+        ), is_linked=(1, 'Burning Arrows')),
+        Spell('Burning Arrows', [110, 177], Effects(
+            [['27-29', '33-36']],
+            [['32-35', '40-43']],
+            [FIRE]
+        ), is_linked=(2, 'Repulsive Shot')),
+        Spell('Erosive Arrow', [6, 71, 138], Effects(
+            [['15-17', '20-23', '25-29']],
+            [['18-21', '24-28', '30-35']],
+            [EARTH]
+        ), is_linked=(1, 'Covering Fire')),
+        Spell('Covering Fire', [115, 182], Effects(
+            [['32-36', '38-42']],
+            [['39-43', '46-50']],
+            [EARTH]
+        ), is_linked=(2, 'Erosive Arrow')),
+        Spell('Immobilising Arrow', [15, 82, 149], Effects(
+            [['7-9', '9-11', '11-13']],
+            [['8-10', '10-12', '13-16']],
             [WATER]
         ), is_linked=(1, 'Assailing Arrow')),
-        Spell('Assailing Arrow', [140], Effects(
-            [['33-37'],
-             ['100']],
-            [['40-44'],
-             ['100']],
+        Spell('Assailing Arrow', [125, 192], Effects(
+            [['29-32', '33-37'], ['100', '100']],
+            [['35-39', '40-44'], ['100', '100']],
             [WATER, 'buff_pow']
         ), stacks=3, is_linked=(2, 'Immobilising Arrow')),
-        Spell('Punitive Arrow', [35, 102, 169], Effects(
-            create_level_based_stacking_values(((18, 20), (23, 25), (29, 31)), 
-                                               (19, 24, 30), 3),
-            create_level_based_stacking_values(((22, 24), (28, 30), (35, 37)), 
-                                               (23, 29, 36), 3),
-            [EARTH, EARTH, EARTH]
-        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(3)],
-        is_linked=(1, 'Arrow of Judgement')),
-        Spell('Arrow of Judgement', [145], Effects(
-            [['39-45']],
-            [['47-54']],
-            [EARTH]
-        ), is_linked=('Punitive Arrow')),
-        Spell('Powerful Shooting', [40, 107, 174], Effects(
-            [['150', '200', '250']],
-            [['170', '230', '290']],
-            ['buff_pow_spell']
-        )),
-        Spell('Plaguing Arrow', [45, 112, 179], Effects(
-            [['8-10', '11-13', '13-15']],
-            [['10-12', '13-15', '16-18']],
-            [AIR]
-        ), is_linked=(1, 'Slaughtering Arrow')),
-        Spell('Slaughtering Arrow', [155], Effects(
-            create_stacking_values(((34, 38),), 18, 2),
-            create_stacking_values(((41, 46),), 22, 2),
-            [AIR]*2,
-        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)],
-        is_linked=(2, 'Plaguing Arrow')),
-        Spell('Poisoned Arrow', [50, 117, 184], Effects(
-            [['10-11', '14-15', '17-18']],
-            [['13-14', '17-18', '20-21']],
-            [NEUTRAL]
-        )),
-        Spell('Tormenting Arrow', [55, 122, 189], Effects(
-            [['7-9', '9-11', '11-13'],
-             ['7-9', '9-11', '11-13']],
-            [['8-10', '12-14', '13-16'],
-             ['8-10', '12-14', '13-16']],
-            [FIRE, AIR],
-        ), aggregates=[('', [0, 1])],
-        is_linked=(1, 'Tyrannical Arrow')),
-        Spell('Tyrannical Arrow', [165], Effects(
-            [['15'],
-             ['15']],
-            None,
-            [FIRE, AIR],
-        ), aggregates=[("If the target is pushed", [1]),
-                       ("If the target suffers pushback damage", [0])],
-        is_linked=(2, 'Tormenting Arrow')),
-        Spell('Destructive Arrow', [60, 127, 194], Effects(
-            [['21-23', '27-29', '30-32']],
-            [['26-28', '32-34', '36-38']],
-            [EARTH]
-        ), is_linked=(1, 'Barricade Shot')),
-        Spell('Barricade Shot', [170], Effects(
-            [['29-33']],
-            [['35-40']],
-            [EARTH]
-        ), is_linked=(2, 'Destructive Arrow')),
-        Spell('Absorptive Arrow', [65, 131, 198], Effects(
-            [['21-23', '26-28', '29-31']],
-            [['26-28', '31-33', '35-37']],
-            [AIR],
-            steals=[True],
-        ), is_linked=(1, 'Devouring Arrow')),
-        Spell('Devouring Arrow', [175], Effects(
-            [['11-13'],
-             ['23-27'],
-             ['34-38'],
-             ['52-56'],
-             ['70-74']],
-            [['13-15'],
-             ['26-30'],
-             ['39-43'],
-             ['60-64'],
-             ['81-85']],
-            [AIR, AIR, AIR, AIR, AIR]
-        ), is_linked=(2, 'Absorptive Arrow')),
-        Spell('Slow Down Arrow', [75, 142], Effects(
-            [['29-31', '36-38']],
-            [['35-37', '43-46']],
-            [WATER]
-        ), is_linked=(1, 'Striking Arrow')),
-        Spell('Striking Arrow', [185], Effects(
-            [['7-10']],
-            [['8-12']],
-            [WATER]
-        ), is_linked=(2, 'Slow Down Arrow')),
-        Spell('Conniving Arrow', [80, 147], Effects(
-            [['31-34', '38-42']],
-            [['37-40', '46-50']],
-            [EARTH]
-        ), is_linked=(1, 'Abolition Arrow')),
-        Spell('Abolition Arrow', [190], Effects(
-            [['34-38'],
-             ['44-50']],
-            [['41-46'],
-             ['53-60']],
-            [AIR, AIR]
-        ), aggregates=[("Summons", [1]),
-                       ("Others", [0])], 
-        is_linked=(2, 'Conniving Arrow')),
-        Spell('Explosive Arrow', [85, 152], Effects(
-            [['24-27', '30-34']],
-            [['29-33', '36-41']],
-            [FIRE]
-        ), is_linked=(1, 'Fulminating Arrow')),
-        Spell('Fulminating Arrow', [195], Effects(
-            [['38-42'],
-             ['48-52']],
-            None,
-            [FIRE, FIRE]
-        ), aggregates=[("Regular shot", [0]),
-                       ("After bouncing once", [1])], 
-        is_linked=(2, 'Explosive Arrow')),
-        Spell('Bow Skill', [90, 157], Effects(
-            [['40', '60']],
-            [['50', '70']],
-            ['buff_dam']
-        ), is_linked=(1, 'Sentinel')),
-        Spell('Sentinel', [200], Effects(
-            [['30']],
-            None,
-            ['buff_pow_spell']
-        ), is_linked=(2, 'Bow Skill')),
+        # Spell('Magic Arrow', [1, 66, 132], Effects(
+        #     [['11-13', '15-17', '19-21']],
+        #     [['13-15', '18-20', '23-25']],
+        #     [AIR]
+        # ), is_linked=(1, 'Concentration Arrow')),
+        # Spell('Concentration Arrow', [95, 162], Effects(
+        #     [['18-21', '22-26']],
+        #     [['21-25', '26-31']],
+        #     [AIR]
+        # ), is_linked=(2, 'Magic Arrow')),
+        # Spell('Retreat Arrow', [1, 67, 133], Effects(
+        #     [['15-17', '20-22', '25-28']],
+        #     [['18-20', '23-26', '30-34']],
+        #     [AIR]
+        # ), is_linked=(1, 'Erosive Arrow')),
+        # Spell('Erosive Arrow', [100, 167], Effects(
+        #     [['20-23', '25-29']],
+        #     [['24-28', '30-35']],
+        #     [EARTH]
+        # ), is_linked=(2, 'Retreat Arrow')),
+        # Spell('Frozen Arrow', [3, 69, 136], Effects(
+        #     [['10-12', '13-15', '17-19']],
+        #     [['12-14', '16-18', '20-23']],
+        #     [FIRE]
+        # ), is_linked=(1, 'Paralysing Arrow')),
+        # Spell('Paralysing Arrow', [110, 177], Effects(
+        #     [['31-34', '39-42']],
+        #     [['38-40', '47-50']],
+        #     [FIRE]
+        # ), is_linked=(2, 'Frozen Arrow')),
+        # Spell('Burning Arrow', [6, 71, 138], Effects(
+        #     [['19-21', '26-28', '33-35']],
+        #     [['23-25', '32-34', '40-42']],
+        #     [FIRE]
+        # ), is_linked=(1, 'Repulsive Arrow')),
+        # Spell('Repulsive Arrow', [115, 182], Effects(
+        #     [['24-27', '28-32']],
+        #     [['29-33', '34-38']],
+        #     [FIRE]
+        # ), is_linked=(2, 'Burning Arrow')),
+        # Spell('Atonement Arrow', [15, 82, 149], Effects(
+        #     create_level_based_stacking_values(((22, 24), (28, 30), (35, 37)), 
+        #                                        (23, 29, 36), 3),
+        #     create_level_based_stacking_values(((26, 28), (34, 36), (42, 44)), 
+        #                                        (27, 35, 43), 3),
+        #     [WATER, WATER, WATER],
+        # ), aggregates=[("Not charged", [0]),
+        #                ("Charged once", [1]),
+        #                ("Charged twice", [2])],
+        # is_linked=(1, 'Redemption Arrow')),
+        # Spell('Redemption Arrow', [125, 192], Effects(
+        #     create_level_based_stacking_values(((17, 19), (19, 22)), 
+        #                                        (10, 12), 2),
+        #     create_level_based_stacking_values(((20, 23), (23, 26)), 
+        #                                        (10, 35), 2),
+        #     [WATER]*2,
+        # ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)],
+        # is_linked=(2, 'Atonement Arrow')),
+        # Spell("Bat's Eye", [20, 87, 154], Effects(
+        #     [['10-12', '13-15', '16-18']],
+        #     [['12-14', '15-17', '19-22']],
+        #     [WATER]
+        # ), is_linked=(1, 'Crushing Arrow')),
+        # Spell('Crushing Arrow', [130, 197], Effects(
+        #     [['30-34', '34-38']],
+        #     [['36-41', '41-46']],
+        #     [FIRE]
+        # ), is_linked=(2, "Bat's Eye")),
+        # Spell('Critical Shooting', [25, 92, 159], Effects(
+        #     [['0', '0', '0']],
+        #     [['10', '30', '50']],
+        #     ['buff_pow']
+        # )),
+        # Spell('Immobilising Arrow', [30, 97, 164], Effects(
+        #     [['6-7', '8-9', '10-11']],
+        #     [['7-8', '10-11', '12-13']],
+        #     [WATER]
+        # ), is_linked=(1, 'Assailing Arrow')),
+        # Spell('Assailing Arrow', [140], Effects(
+        #     [['33-37'],
+        #      ['100']],
+        #     [['40-44'],
+        #      ['100']],
+        #     [WATER, 'buff_pow']
+        # ), stacks=3, is_linked=(2, 'Immobilising Arrow')),
+        # Spell('Punitive Arrow', [35, 102, 169], Effects(
+        #     create_level_based_stacking_values(((18, 20), (23, 25), (29, 31)), 
+        #                                        (19, 24, 30), 3),
+        #     create_level_based_stacking_values(((22, 24), (28, 30), (35, 37)), 
+        #                                        (23, 29, 36), 3),
+        #     [EARTH, EARTH, EARTH]
+        # ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(3)],
+        # is_linked=(1, 'Arrow of Judgement')),
+        # Spell('Arrow of Judgement', [145], Effects(
+        #     [['39-45']],
+        #     [['47-54']],
+        #     [EARTH]
+        # ), is_linked=('Punitive Arrow')),
+        # Spell('Powerful Shooting', [40, 107, 174], Effects(
+        #     [['150', '200', '250']],
+        #     [['170', '230', '290']],
+        #     ['buff_pow_spell']
+        # )),
+        # Spell('Plaguing Arrow', [45, 112, 179], Effects(
+        #     [['8-10', '11-13', '13-15']],
+        #     [['10-12', '13-15', '16-18']],
+        #     [AIR]
+        # ), is_linked=(1, 'Slaughtering Arrow')),
+        # Spell('Slaughtering Arrow', [155], Effects(
+        #     create_stacking_values(((34, 38),), 18, 2),
+        #     create_stacking_values(((41, 46),), 22, 2),
+        #     [AIR]*2,
+        # ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)],
+        # is_linked=(2, 'Plaguing Arrow')),
+        # Spell('Poisoned Arrow', [50, 117, 184], Effects(
+        #     [['10-11', '14-15', '17-18']],
+        #     [['13-14', '17-18', '20-21']],
+        #     [NEUTRAL]
+        # )),
+        # Spell('Tormenting Arrow', [55, 122, 189], Effects(
+        #     [['7-9', '9-11', '11-13'],
+        #      ['7-9', '9-11', '11-13']],
+        #     [['8-10', '12-14', '13-16'],
+        #      ['8-10', '12-14', '13-16']],
+        #     [FIRE, AIR],
+        # ), aggregates=[('', [0, 1])],
+        # is_linked=(1, 'Tyrannical Arrow')),
+        # Spell('Tyrannical Arrow', [165], Effects(
+        #     [['15'],
+        #      ['15']],
+        #     None,
+        #     [FIRE, AIR],
+        # ), aggregates=[("If the target is pushed", [1]),
+        #                ("If the target suffers pushback damage", [0])],
+        # is_linked=(2, 'Tormenting Arrow')),
+        # Spell('Destructive Arrow', [60, 127, 194], Effects(
+        #     [['21-23', '27-29', '30-32']],
+        #     [['26-28', '32-34', '36-38']],
+        #     [EARTH]
+        # ), is_linked=(1, 'Barricade Shot')),
+        # Spell('Barricade Shot', [170], Effects(
+        #     [['29-33']],
+        #     [['35-40']],
+        #     [EARTH]
+        # ), is_linked=(2, 'Destructive Arrow')),
+        # Spell('Absorptive Arrow', [65, 131, 198], Effects(
+        #     [['21-23', '26-28', '29-31']],
+        #     [['26-28', '31-33', '35-37']],
+        #     [AIR],
+        #     steals=[True],
+        # ), is_linked=(1, 'Devouring Arrow')),
+        # Spell('Devouring Arrow', [175], Effects(
+        #     [['11-13'],
+        #      ['23-27'],
+        #      ['34-38'],
+        #      ['52-56'],
+        #      ['70-74']],
+        #     [['13-15'],
+        #      ['26-30'],
+        #      ['39-43'],
+        #      ['60-64'],
+        #      ['81-85']],
+        #     [AIR, AIR, AIR, AIR, AIR]
+        # ), is_linked=(2, 'Absorptive Arrow')),
+        # Spell('Slow Down Arrow', [75, 142], Effects(
+        #     [['29-31', '36-38']],
+        #     [['35-37', '43-46']],
+        #     [WATER]
+        # ), is_linked=(1, 'Striking Arrow')),
+        # Spell('Striking Arrow', [185], Effects(
+        #     [['7-10']],
+        #     [['8-12']],
+        #     [WATER]
+        # ), is_linked=(2, 'Slow Down Arrow')),
+        # Spell('Conniving Arrow', [80, 147], Effects(
+        #     [['31-34', '38-42']],
+        #     [['37-40', '46-50']],
+        #     [EARTH]
+        # ), is_linked=(1, 'Abolition Arrow')),
+        # Spell('Abolition Arrow', [190], Effects(
+        #     [['34-38'],
+        #      ['44-50']],
+        #     [['41-46'],
+        #      ['53-60']],
+        #     [AIR, AIR]
+        # ), aggregates=[("Summons", [1]),
+        #                ("Others", [0])], 
+        # is_linked=(2, 'Conniving Arrow')),
+        # Spell('Explosive Arrow', [85, 152], Effects(
+        #     [['24-27', '30-34']],
+        #     [['29-33', '36-41']],
+        #     [FIRE]
+        # ), is_linked=(1, 'Fulminating Arrow')),
+        # Spell('Fulminating Arrow', [195], Effects(
+        #     [['38-42'],
+        #      ['48-52']],
+        #     None,
+        #     [FIRE, FIRE]
+        # ), aggregates=[("Regular shot", [0]),
+        #                ("After bouncing once", [1])], 
+        # is_linked=(2, 'Explosive Arrow')),
+        # Spell('Bow Skill', [90, 157], Effects(
+        #     [['40', '60']],
+        #     [['50', '70']],
+        #     ['buff_dam']
+        # ), is_linked=(1, 'Sentinel')),
+        # Spell('Sentinel', [200], Effects(
+        #     [['30']],
+        #     None,
+        #     ['buff_pow_spell']
+        # ), is_linked=(2, 'Bow Skill')),
     ],
     'Ecaflip': [
         Spell('Heads or Tails', [1, 66, 132], Effects(
