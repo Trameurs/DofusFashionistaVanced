@@ -656,6 +656,16 @@ DAMAGE_SPELLS = {
             [WATER]*9,
         ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(9)],
         is_linked=(2, 'Atonement Arrow')),
+        Spell('Explosive Arrow', [80, 147], Effects(
+            [['24-27', '30-34']],
+            [['29-33', '36-41']],
+            [FIRE]
+        ), is_linked=(1, 'Fulminating Arrow')),
+        Spell('Fulminating Arrow', [190], Effects(
+            create_stacking_values(((38, 42),), 10, 10),
+            [FIRE] * 10,
+        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(10)], 
+        is_linked=(2, 'Explosive Arrow')),
         # Spell('Magic Arrow', [1, 66, 132], Effects(
         #     [['11-13', '15-17', '19-21']],
         #     [['13-15', '18-20', '23-25']],
