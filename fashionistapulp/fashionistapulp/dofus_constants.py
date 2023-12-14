@@ -3318,7 +3318,7 @@ DAMAGE_SPELLS = {
             [['25-29', '31-36']],
             [WATER, WATER],
         ), aggregates=[('On ennemy', [0]),
-                       ('On caster', [1]),]),
+                       ('On caster', [1]),],
         is_linked=(1, 'Muspel')),
         Spell('Muspel', [185], Effects(
             [['32-36']],
