@@ -663,6 +663,7 @@ DAMAGE_SPELLS = {
         ), is_linked=(1, 'Fulminating Arrow')),
         Spell('Fulminating Arrow', [190], Effects(
             create_stacking_values(((38, 42),), 10, 10),
+            None,
             [FIRE] * 10,
         ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(10)], 
         is_linked=(2, 'Explosive Arrow')),
