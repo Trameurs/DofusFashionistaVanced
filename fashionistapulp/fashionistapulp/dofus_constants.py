@@ -601,11 +601,29 @@ DAMAGE_SPELLS = {
             [['36-41']],
             [FIRE]
         ), is_linked=(2, "Bat's Eye")),
+        #TODO: figure out how to modify uppder limit to 12 (crash if I put higher value than 10)
         Spell('Piercing Shot', [60, 127, 194], Effects(
             create_stacking_values(((25, 28), (30, 34), (34, 38),), 4, 10),
             create_stacking_values(((30, 33), (36, 41), (41, 46),), 4, 10),
             [AIR]*10,
-        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(10)],), 
+        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(10)],
+        is_linked=(1, 'Devouring Arrow')), 
+        Spell('Devouring Arrow', [170], Effects(
+            [['11-13'],
+             ['23-27'],
+             ['34-38'],
+             ['34-38'],
+             ['52-56'],
+             ['70-74']],
+            [['13-15'],
+             ['26-30'],
+             ['39-43'],
+             ['39-43'],
+             ['60-64'],
+             ['81-85']],
+            [AIR, AIR, AIR, AIR, AIR], steals=[False, False, False, True, True, True]
+        ), is_linked=(2, 'Piercing Shot')),
+
         # Spell('Magic Arrow', [1, 66, 132], Effects(
         #     [['11-13', '15-17', '19-21']],
         #     [['13-15', '18-20', '23-25']],
