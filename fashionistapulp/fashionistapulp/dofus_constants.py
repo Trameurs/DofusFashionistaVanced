@@ -622,7 +622,12 @@ DAMAGE_SPELLS = {
              ['60-64'],
              ['81-85']],
             [AIR, AIR, AIR, AIR, AIR, AIR], steals=[False, False, False, True, True, True]
-        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(6)],
+        ), aggregates=['Not charged', [0],
+                        'Charged once', [1],
+                        'Charged twice', [2],
+                        'Shock:\nNot charged', [3],
+                        'Charged once', [4],
+                        'Charged twice', [5]],
         is_linked=(2, 'Piercing Shot')),
 
         # Spell('Magic Arrow', [1, 66, 132], Effects(
