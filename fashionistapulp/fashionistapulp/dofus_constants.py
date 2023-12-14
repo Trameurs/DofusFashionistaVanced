@@ -3332,7 +3332,8 @@ DAMAGE_SPELLS = {
             [['20-23'], ['23-26']],
             [['24-28'], ['28-31']],
             [AIR, AIR],
-        ), aggregates=[('Noa state', [0])], 
+        ), aggregates=[('', [0]),
+                       ('Noa state', [1])], 
         is_linked=(2, 'Middle Earth')),
     ]
 }
