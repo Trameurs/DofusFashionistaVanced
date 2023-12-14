@@ -539,8 +539,23 @@ DAMAGE_SPELLS = {
         Spell('Assailing Arrow', [125, 192], Effects(
             [['29-32', '33-37'], ['100', '100']],
             [['35-39', '40-44'], ['100', '100']],
-            [WATER, 'buff_pow']
+            [FIRE, 'buff_pow']
         ), stacks=3, is_linked=(2, 'Immobilising Arrow')),
+        Spell('Retreating Shot', [20, 87, 154], Effects(
+            [['15-17', '20-22', '25-28']],
+            [['18-20', '23-26', '30-34']],
+            [AIR]
+        ), is_linked=(1, 'Barricade Shot')),
+        Spell('Barricade Shot', [130, 197], Effects(
+            [['23-27', '26-30']],
+            [['28-32', '31-36']],
+            [EARTH]
+        ), is_linked=(2, 'Retreating Shot')),
+        Spell('Piercing Shots', [25, 92, 159], Effects(
+            [['10', '40', '60']],
+            [['15', '50', '70']],
+            ['buff_dam']
+        )),
         # Spell('Magic Arrow', [1, 66, 132], Effects(
         #     [['11-13', '15-17', '19-21']],
         #     [['13-15', '18-20', '23-25']],
