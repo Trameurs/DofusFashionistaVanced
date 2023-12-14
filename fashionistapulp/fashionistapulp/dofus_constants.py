@@ -604,7 +604,7 @@ DAMAGE_SPELLS = {
         Spell('Piercing Shot', [60, 127, 194], Effects(
             create_stacking_values(((25-28), (30-34), (34-38)), 4, 12),
             create_stacking_values(((30-33), (36-41), (41-46)), 4, 12),
-            [AIR]
+            [AIR]*12
         ),) 
         # Spell('Magic Arrow', [1, 66, 132], Effects(
         #     [['11-13', '15-17', '19-21']],
