@@ -3301,7 +3301,7 @@ DAMAGE_SPELLS = {
              ['150'],
              ['200']],
             None,
-            ['buff_pow','buff_pow','buff_pow']
+            ['buff_pow']
         ),),
         Spell('Cyclone Lancer', [65, 131, 198], Effects(
             [['23-25', '28-30', '31-33']],
