@@ -3335,6 +3335,7 @@ DAMAGE_SPELLS = {
         ), aggregates=[('', [0]),
                        ('Noa state', [1])], 
         is_linked=(2, 'Middle Earth')),
+        #TODO figure out effects of Eclipse, Helmgang and Surtr Spark
     ]
 }
 
