@@ -560,14 +560,47 @@ DAMAGE_SPELLS = {
             [['4-6', '6-8', '7-10'], ['12-13', '14-16', '19-23']],
             [['7-9', '9-11', '11-14'], ['14-16', '17-20', '24-28']],
             [FIRE, FIRE]
-        ),
-        is_linked=(1, 'Tormenting Arrow')),
+        ), is_linked=(1, 'Tormenting Arrow')),
         Spell('Tormenting Arrow', [140], Effects(
             [['25-27'], ['14-16']],
             [['30-32'], ['17-19']],
             [AIR, AIR]
-        ), 
-        is_linked=(2, 'Exploding Arrow')),
+        ), is_linked=(2, 'Exploding Arrow')),
+        Spell('Poisoned Arrow', [35, 102, 169], Effects(
+            [['10-12', '13-15', '17-18']],
+            [['12-14', '16-18', '20-21']],
+            [NEUTRAL]
+        ), is_linked=(1, 'Paralysing Arrow')),
+        Spell('Paralysing Arrow', [145], Effects(
+            [['37-39']],
+            [['44-47']],
+            [WATER]
+        ), is_linked=(2, 'Poisoned Arrow')),
+        Spell('Powerful Shots', [40, 107, 174], Effects(
+            [['150', '200', '250']],
+            [['170', '230', '290']],
+            ['buff_pow_spell']
+        )),
+        Spell('Concentration Arrow', [45, 112, 179], Effects(
+            [['14-16', '19-22', '23-26']],
+            [['17-20', '23-26', '28-31']],
+            [AIR]
+        ), is_linked=(1, 'Destructive Bolts')),
+        Spell('Destructive Bolts', [155], Effects(
+            [['36-38']],
+            [['43-46']],
+            [EARTH]
+        ), is_linked=(2, 'Concentration Arrow')),
+        Spell("Bat's Eye", [50, 117, 184], Effects(
+            [['13-15', '18-20', '21-24']],
+            [['16-18', '21-24', '25-29']],
+            [WATER], steals=[True]
+        ), is_linked=(1, 'Crushing Arrow')),
+        Spell('Crushing Arrow', [160], Effects(
+            [['30-34']],
+            [['36-41']],
+            [FIRE]
+        ), is_linked=(2, "Bat's Eye")),
         # Spell('Magic Arrow', [1, 66, 132], Effects(
         #     [['11-13', '15-17', '19-21']],
         #     [['13-15', '18-20', '23-25']],
