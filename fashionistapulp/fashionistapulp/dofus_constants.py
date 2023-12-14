@@ -642,6 +642,20 @@ DAMAGE_SPELLS = {
             [['16-18'], ['37-42']],
             [EARTH, EARTH], steals=[True, False]
         ), is_linked=(2, 'Punitive Arrow')),
+        Spell('Atonement Arrow', [75, 142], Effects(
+            create_level_based_stacking_values(((28, 30), (35, 37)), 
+                                               (35, 43), 3),
+            create_level_based_stacking_values(((34, 36), (42, 44)), 
+                                               (35, 43), 3),
+            [WATER, WATER, WATER],
+        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(3)],
+        is_linked=(1, 'Redemption Arrow')),
+        Spell('Redemption Arrow', [185], Effects(
+            create_stacking_values(((23, 26),), 7, 9),
+            create_stacking_values(((28, 31),), 7, 9),
+            [WATER]*9,
+        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(9)],
+        is_linked=(2, 'Atonement Arrow')),
         # Spell('Magic Arrow', [1, 66, 132], Effects(
         #     [['11-13', '15-17', '19-21']],
         #     [['13-15', '18-20', '23-25']],
