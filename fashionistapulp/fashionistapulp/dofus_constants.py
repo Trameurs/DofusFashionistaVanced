@@ -629,7 +629,19 @@ DAMAGE_SPELLS = {
                         ('Shock Charged once', [4]),
                         ('Shock Charged twice', [5])],
         is_linked=(2, 'Piercing Shot')),
-
+        Spell('Punitive Arrow', [65, 131, 198], Effects(
+            create_level_based_stacking_values(((21, 23), (26, 28), (29, 31)), 
+                                               (23, 29, 36), 3),
+            create_level_based_stacking_values(((26, 28), (31, 33), (35, 37)), 
+                                               (23, 29, 36), 3),
+            [EARTH, EARTH, EARTH]
+        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(3)],
+        is_linked=(1, 'Arrow of Judgement')),
+        Spell('Arrow of Judgement', [175], Effects(
+            [['14-15'], ['31-35']],
+            [['16-18'], ['37-42']],
+            [EARTH, EARTH], steals=[True, False]
+        ), is_linked=(2, 'Punitive Arrow')),
         # Spell('Magic Arrow', [1, 66, 132], Effects(
         #     [['11-13', '15-17', '19-21']],
         #     [['13-15', '18-20', '23-25']],
