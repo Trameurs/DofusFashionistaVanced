@@ -510,7 +510,16 @@ DAMAGE_SPELLS = {
             [['27-32', '30-36']],
             [EARTH]
         ), is_linked=(2, 'Mantiscroc')),
-
+        Spell('Moon Hammer', [80, 147], Effects(
+            [['15-19', '19-24']],
+            [['19-24', '23-29']],
+            [AIR]
+        ), is_linked=(1, 'Darkli Moon Hammer')),
+        Spell('Darkli Moon Hammer', [80, 147], Effects(
+            [['21-26', '26-33']],
+            [['25-32', '31-40']],
+            [AIR]
+        ), is_linked=(2, 'Moon Hammer')),
 
 
         Spell('Perfidious Boomerang', [1], Effects(
