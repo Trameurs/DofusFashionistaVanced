@@ -3688,5 +3688,5 @@ if get_equiped_weapon() == 'Crocobur':
                        ('', [1]),
                         ('', [2]),
                         ('', [3]),
-                        ('', [4])],)
+                        ('', [4])],),
     #DAMAGE_SPELLS['default'].append(crocobur_spell)
