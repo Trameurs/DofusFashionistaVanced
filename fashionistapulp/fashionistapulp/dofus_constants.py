@@ -547,10 +547,10 @@ DAMAGE_SPELLS = {
             None,
             [NEUTRAL, EARTH, FIRE, WATER, AIR], steals=[True, True, True, True, True]
         ), aggregates=[("Hit in best element", [0]),
-                        ('', [1]),
-                            ('', [2]),
-                            ('', [3]),
-                            ('', [4])],),
+                    ('', [1]),
+                    ('', [2]),
+                    ('', [3]),
+                    ('', [4])]),
         Spell('Weapon Skill', [1], Effects(
             [['300']],
             [['350']],
