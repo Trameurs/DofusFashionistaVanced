@@ -915,9 +915,9 @@ DAMAGE_SPELLS = {
             [['13-15', '17-19'], ['20-22', '26-28'], ['26-30', '34-38']] * 4,
             None,
             [FIRE, EARTH, AIR, WATER] * 4,
-        ), aggregates=[('1 turn', [0-3]),
-                        ('2 turns', [4-7]),
-                        ('3 turns', [8-11])],
+        ), aggregates=[('1 turn', list(range(0, 4))),
+                        ('2 turns', list(range(4, 8))),
+                        ('3 turns', list(range(8, 12)))],
         is_linked=(1, 'Trickery')),
         Spell('Trickery', [195], Effects(
             [['58-62'],
