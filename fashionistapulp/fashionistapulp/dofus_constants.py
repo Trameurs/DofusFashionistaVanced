@@ -537,6 +537,11 @@ DAMAGE_SPELLS = {
                        ("25% chance of", [2]),
                        ("25% chance of", [3])],
         is_linked=(2, 'Perfidious Boomerang')),
+        Spell('Weapon Skill', [1], Effects(
+            [['300']],
+            [['350']],
+            ['buff_pow_weapon']
+        )),
         Spell('Ebony Dofus', [180], Effects(
             [['14-16']] * 4,
             None,
@@ -560,11 +565,15 @@ DAMAGE_SPELLS = {
                     ('', [2]),
                     ('', [3]),
                     ('', [4])]),
-        Spell('Weapon Skill', [1], Effects(
-            [['300']],
-            [['350']],
-            ['buff_pow_weapon']
-        )),
+        Spell('Scurvion Toxicity', [200], Effects(
+            [['6-8']] * 5,
+            None,
+            [NEUTRAL, EARTH, FIRE, WATER, AIR]
+        ), aggregates=[("Hit in best element", [0]),
+                    ('', [1]),
+                    ('', [2]),
+                    ('', [3]),
+                    ('', [4])]),
     ],
     'Cra': [
         Spell('Optical Arrow', [1, 66, 132], Effects(
