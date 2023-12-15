@@ -543,6 +543,13 @@ DAMAGE_SPELLS = {
             [EARTH, FIRE, WATER, AIR]
         )),
 
+        if(get_equiped_weapon == 'Crocobur'):
+            Spell("Crocobur's Appetite", [200], Effects(
+                [['11-15']] * 5,
+                None,
+                [NEUTRAL, EARTH, FIRE, WATER, AIR], steals=[True, True, True, True, True]
+            )),
+
         Spell('Weapon Skill', [1], Effects(
             [['300']],
             [['350']],
