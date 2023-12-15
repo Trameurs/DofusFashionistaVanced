@@ -490,8 +490,20 @@ DAMAGE_SPELLS = {
                         ('', [3]),
                         ('', [4])],
         is_linked=(2, 'Burnt Pie')),
+        Spell('Kannibubble', [40, 107, 174], Effects(
+            [['12-15', '15-19', '19-23']],
+            [['14-17', '18-22', '23-28']],
+            [WATER]
+        ), is_linked=(1, 'Kanniboil')),
+        Spell('Kanniboil', [107, 174], Effects(
+            [['21-24', '26-30']],
+            [['25-29', '31-36']],
+            [WATER]
+        ), is_linked=(2, 'Kannibubble')),
 
 
+
+        
 
         Spell('Perfidious Boomerang', [1], Effects(
             [['31-40'] for i in range(4)],
