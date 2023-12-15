@@ -500,10 +500,18 @@ DAMAGE_SPELLS = {
             [['25-29', '31-36']],
             [WATER]
         ), is_linked=(2, 'Kannibubble')),
+        Spell('Mantiscroc', [60, 127, 194], Effects(
+            [['14-17', '18-22', '20-24']],
+            [['17-21', '21-26', '24-29']],
+            [EARTH]
+        ), is_linked=(1, 'Dart Mocles')),
+        Spell('Dart Mocles', [127, 194], Effects(
+            [['22-27', '25-30']],
+            [['27-32', '30-36']],
+            [EARTH]
+        ), is_linked=(2, 'Mantiscroc')),
 
 
-
-        
 
         Spell('Perfidious Boomerang', [1], Effects(
             [['31-40'] for i in range(4)],
