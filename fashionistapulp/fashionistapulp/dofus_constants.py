@@ -560,8 +560,8 @@ DAMAGE_SPELLS = {
             [['4-6', '6-8', '7-10'], ['12-13', '14-16', '19-23']],
             [['7-9', '9-11', '11-14'], ['14-16', '17-20', '24-28']],
             [FIRE, FIRE]
-        ), is_linked=(1, 'Tormenting Arrow')),
-        Spell('Tormenting Arrow', [140], Effects(
+        ), is_linked=(1, 'Tormenting Arrow 1')),
+        Spell('Tormenting Arrow 1', [140], Effects(
             [['25-27'], ['14-16']],
             [['30-32'], ['17-19']],
             [AIR, AIR]
@@ -667,6 +667,20 @@ DAMAGE_SPELLS = {
             [FIRE] * 10,
         ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(10)], 
         is_linked=(2, 'Explosive Arrow')),
+        Spell('Tormenting Arrow 2', [85, 152], Effects(
+            [['10-12', '13-15'], ['10-12', '13-15']],
+            [['13-15', '16-18'], ['13-15', '16-18']],
+            [EARTH, WATER]
+        ), is_linked=(1, 'Tyrannical Arrow')),
+        Spell('Tyrannical Arrow', [195], Effects(
+            [['13-15'], ['13-15'], ['7-10'], ['7-10']],
+            [['16-18'], ['16-18'], ['7-10'], ['7-10']],
+            [FIRE, AIR, FIRE, AIR]
+        ), aggregates=[('', [0]),
+                        ('', [1]),
+                        ('After pushback damage', [2]),
+                        ('If pushed or attracted', [3])], 
+        is_linked=(2, 'Tormenting Arrow 2')),
         # Spell('Magic Arrow', [1, 66, 132], Effects(
         #     [['11-13', '15-17', '19-21']],
         #     [['13-15', '18-20', '23-25']],
