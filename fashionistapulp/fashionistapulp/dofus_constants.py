@@ -912,12 +912,12 @@ DAMAGE_SPELLS = {
             [WATER],
         ), is_linked=(2, 'Claw of Ceangal')),
         Spell('Rekop', [85, 152], Effects(
-            [['13-15', '17-19'], ['20-22', '26-28'], ['26-30', '34-38']] * 3,
+            [['13-15', '17-19'], ['20-22', '26-28'], ['26-30', '34-38']] * 4,
             None,
-            [FIRE, EARTH, AIR, WATER],
-        ), aggregates=[('1 turn', [0-2]),
-                        ('2 turns', [3-5]),
-                        ('3 turns', [6-8])],
+            [FIRE, EARTH, AIR, WATER] * 4,
+        ), aggregates=[('1 turn', [0-3]),
+                        ('2 turns', [4-7]),
+                        ('3 turns', [8-11])],
         is_linked=(1, 'Trickery')),
         Spell('Trickery', [195], Effects(
             [['58-62'],
