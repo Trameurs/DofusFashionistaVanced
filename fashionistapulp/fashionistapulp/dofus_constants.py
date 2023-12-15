@@ -520,32 +520,17 @@ DAMAGE_SPELLS = {
             [['25-32', '31-40']],
             [AIR]
         ), is_linked=(2, 'Moon Hammer')),
-
-
-        Spell('Perfidious Boomerang', [1], Effects(
-            [['31-40'] for i in range(4)],
-            [['41-50'] for i in range(4)],
+        Spell('Perfidious Boomerang', [100, 200], Effects(
+            [['21-23', '26-29'] for i in range(4)],
+            [['25-28', '31-35'] for i in range(4)],
             [EARTH, FIRE, WATER, AIR],
             steals=[True for i in range(4)],
         ), aggregates=[("25% chance of", [0]),
                        ("25% chance of", [1]),
                        ("25% chance of", [2]),
                        ("25% chance of", [3])]),
-        Spell('Leek Pie', [1], Effects(
-            [['8-10']],
-            [['11-13']],
-            [FIRE]
-        )),
-        Spell('Moon Hammer', [1], Effects(
-            [['38-47']],
-            [['49']],
-            [AIR]
-        )),
-        Spell('Lightning Strike', [1], Effects(
-            [['26-30']],
-            [['31-35']],
-            [FIRE]
-        )),
+
+
         Spell('Weapon Skill', [1], Effects(
             [['300']],
             [['350']],
