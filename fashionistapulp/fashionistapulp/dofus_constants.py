@@ -3684,5 +3684,9 @@ if get_equiped_weapon() == 'Crocobur':
         [['11-15']] * 5,
         None,
         [NEUTRAL, EARTH, FIRE, WATER, AIR], steals=[True, True, True, True, True]
-    ))
+    ), aggregates=[("Hit in best element", [0]),
+                       ('', [1]),
+                        ('', [2]),
+                        ('', [3]),
+                        ('', [4])],)
     #DAMAGE_SPELLS['default'].append(crocobur_spell)
