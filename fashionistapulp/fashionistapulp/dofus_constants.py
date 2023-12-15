@@ -470,6 +470,29 @@ DAMAGE_SPELLS = {
             None,
             [FIRE]
         ), is_linked=(2, "Grunob's Lightning Strike")),
+        Spell('Burnt Pie', [30, 97, 164], Effects(
+            [['5-7', '6-8', '8-10']] * 5,
+            [['6-8', '8-10', '10-12']] * 5,
+            [NEUTRAL, EARTH, FIRE, WATER, AIR]
+        ), aggregates=[("Hit in worst element", [0]),
+                       ('', [1]),
+                        ('', [2]),
+                        ('', [3]),
+                        ('', [4])],
+        is_linked=(1, 'Leek Pie')),
+        Spell('Leek Pie', [97, 164], Effects(
+            [['6-8', '8-10']] * 5,
+            [['8-10', '10-12']] * 5,
+            [NEUTRAL, EARTH, FIRE, WATER, AIR]
+        ), aggregates=[("Hit in best element", [0]),
+                       ('', [1]),
+                        ('', [2]),
+                        ('', [3]),
+                        ('', [4])],
+        is_linked=(2, 'Burnt Pie')),
+
+
+
         Spell('Perfidious Boomerang', [1], Effects(
             [['31-40'] for i in range(4)],
             [['41-50'] for i in range(4)],
