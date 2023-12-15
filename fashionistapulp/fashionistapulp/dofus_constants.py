@@ -473,22 +473,20 @@ DAMAGE_SPELLS = {
         Spell('Burnt Pie', [30, 97, 164], Effects(
             [['5-7', '6-8', '8-10']] * 5,
             [['6-8', '8-10', '10-12']] * 5,
-            [NEUTRAL, EARTH, FIRE, WATER, AIR]
+            [EARTH, FIRE, WATER, AIR]
         ), aggregates=[("Hit in worst element", [0]),
                        ('', [1]),
                         ('', [2]),
-                        ('', [3]),
-                        ('', [4])],
+                        ('', [3])],
         is_linked=(1, 'Leek Pie')),
         Spell('Leek Pie', [97, 164], Effects(
             [['6-8', '8-10']] * 5,
             [['8-10', '10-12']] * 5,
-            [NEUTRAL, EARTH, FIRE, WATER, AIR]
+            [EARTH, FIRE, WATER, AIR]
         ), aggregates=[("Hit in best element", [0]),
                        ('', [1]),
                         ('', [2]),
-                        ('', [3]),
-                        ('', [4])],
+                        ('', [3])],
         is_linked=(2, 'Burnt Pie')),
         Spell('Kannibubble', [40, 107, 174], Effects(
             [['12-15', '15-19', '19-23']],
@@ -528,8 +526,18 @@ DAMAGE_SPELLS = {
         ), aggregates=[("25% chance of", [0]),
                        ("25% chance of", [1]),
                        ("25% chance of", [2]),
-                       ("25% chance of", [3])]),
-
+                       ("25% chance of", [3])],
+        is_linked=(1, 'Diamondine Boomerang')),
+        Spell('Diamondine Boomerang', [100, 200], Effects(
+            [['21-23', '26-29'] for i in range(4)],
+            [['25-28', '31-35'] for i in range(4)],
+            [EARTH, FIRE, WATER, AIR],
+            steals=[True for i in range(4)],
+        ), aggregates=[("25% chance of", [0]),
+                       ("25% chance of", [1]),
+                       ("25% chance of", [2]),
+                       ("25% chance of", [3])],
+        is_linked=(2, 'Perfidious Boomerang')),
 
         Spell('Weapon Skill', [1], Effects(
             [['300']],
