@@ -542,6 +542,15 @@ DAMAGE_SPELLS = {
             None,
             [EARTH, FIRE, WATER, AIR]
         )),
+        Spell("Crocobur's Appetite", [200], Effects(
+            [['11-15']] * 5,
+            None,
+            [NEUTRAL, EARTH, FIRE, WATER, AIR], steals=[True, True, True, True, True]
+        ), aggregates=[("Hit in best element", [0]),
+                        ('', [1]),
+                            ('', [2]),
+                            ('', [3]),
+                            ('', [4])],),
         Spell('Weapon Skill', [1], Effects(
             [['300']],
             [['350']],
@@ -3679,14 +3688,14 @@ class CalculatedDamage(BaseDamage):
 class BuffEffect(BaseDamage):
     pass
 
-if get_equiped_weapon() == 'Crocobur':
-    crocobur_spell = Spell("Crocobur's Appetite", [200], Effects(
-        [['11-15']] * 5,
-        None * 5,
-        [NEUTRAL, EARTH, FIRE, WATER, AIR], steals=[True, True, True, True, True]
-    ), aggregates=[("Hit in best element", [0]),
-                       ('', [1]),
-                        ('', [2]),
-                        ('', [3]),
-                        ('', [4])],),
+# if get_equiped_weapon() == 'Crocobur':
+#     crocobur_spell = Spell("Crocobur's Appetite", [200], Effects(
+#         [['11-15']] * 5,
+#         None,
+#         [NEUTRAL, EARTH, FIRE, WATER, AIR], steals=[True, True, True, True, True]
+#     ), aggregates=[("Hit in best element", [0]),
+#                        ('', [1]),
+#                         ('', [2]),
+#                         ('', [3]),
+#                         ('', [4])],),
     #DAMAGE_SPELLS['default'].append(crocobur_spell)
