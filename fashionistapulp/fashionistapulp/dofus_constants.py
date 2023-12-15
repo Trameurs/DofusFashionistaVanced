@@ -532,12 +532,16 @@ DAMAGE_SPELLS = {
             [['21-23', '26-29'] for i in range(4)],
             [['25-28', '31-35'] for i in range(4)],
             [EARTH, FIRE, WATER, AIR],
-            steals=[True for i in range(4)],
         ), aggregates=[("25% chance of", [0]),
                        ("25% chance of", [1]),
                        ("25% chance of", [2]),
                        ("25% chance of", [3])],
         is_linked=(2, 'Perfidious Boomerang')),
+        Spell('Ebony Dofus', [180], Effects(
+            [['14-16']] * 4,
+            None,
+            [EARTH, FIRE, WATER, AIR]
+        )),
 
         Spell('Weapon Skill', [1], Effects(
             [['300']],
@@ -3627,6 +3631,14 @@ def get_best_element(char_stats):
             best_element = element
             best_element_val = char_stats[element]
     return best_element
+
+def get_equiped_weapon(char_stats):
+    weapon = None
+    for item in char_stats['items']:
+        if item.slot == 'weapon':
+            weapon = item
+            break
+    return weapon
 
 def calculate_damage(base_damage, char_stats, critical_hit, is_spell):
     damage_instances = []
