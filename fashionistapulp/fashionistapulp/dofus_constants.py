@@ -3679,8 +3679,6 @@ class CalculatedDamage(BaseDamage):
 class BuffEffect(BaseDamage):
     pass
 
-print (DAMAGE_SPELLS['default'])
-
 if get_equiped_weapon() == 'Crocobur':
     print (DAMAGE_SPELLS['default'])
     crocobur_spell = Spell("Crocobur's Appetite", [200], Effects(
