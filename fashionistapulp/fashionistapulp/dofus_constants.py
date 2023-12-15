@@ -3679,10 +3679,10 @@ class CalculatedDamage(BaseDamage):
 class BuffEffect(BaseDamage):
     pass
 
-if get_equiped_weapon() == 'Crocobur':
-    crocobur_spell = Spell("Crocobur's Appetite", [200], Effects(
-        [['11-15']] * 5,
-        None,
-        [NEUTRAL, EARTH, FIRE, WATER, AIR], steals=[True, True, True, True, True]
-    ))
-    DAMAGE_SPELLS['default'].append(crocobur_spell)
+# if get_equiped_weapon() == 'Crocobur':
+#     crocobur_spell = Spell("Crocobur's Appetite", [200], Effects(
+#         [['11-15']] * 5,
+#         None,
+#         [NEUTRAL, EARTH, FIRE, WATER, AIR], steals=[True, True, True, True, True]
+#     ))
+#     DAMAGE_SPELLS['default'].append(crocobur_spell)
