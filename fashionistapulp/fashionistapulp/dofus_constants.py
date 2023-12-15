@@ -464,7 +464,12 @@ DAMAGE_SPELLS = {
             [['13-16', '17-21', '21-26']],
             [['16-22', '20-25', '25-31']],
             [FIRE]
-        )),
+        ), is_linked=(1, "Grunob's Lesson")),
+        Spell("Grunob's Lesson", [87, 154], Effects(
+            [['19-22', '23-37']],
+            None,
+            [FIRE]
+        ), is_linked=(2, "Grunob's Lightning Strike")),
         Spell('Perfidious Boomerang', [1], Effects(
             [['31-40'] for i in range(4)],
             [['41-50'] for i in range(4)],
