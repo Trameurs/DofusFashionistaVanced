@@ -822,7 +822,7 @@ DAMAGE_SPELLS = {
             ['buff_pow']
         )),
         Spell('All or Nothing', [25, 92, 159], Effects(
-            [['20-29', '34-37', '42-46']] * 4,
+            [['27-29', '34-37', '42-46']] * 4,
             [['32-35', '40-44', '50-55']] * 4,
             [WATER, FIRE, FIRE, WATER],
             heals=[False, True, True, False],
@@ -853,7 +853,7 @@ DAMAGE_SPELLS = {
         ), is_linked=(2, 'Rough Tongue')),
         Spell('Wheel of Fortune', [45, 112, 179], Effects(
             [['100', '175', '250']],
-            [['240', '245', '350']],
+            [['140', '245', '350']],
             ['buff_pow_spell']
         )),
         Spell('Feline Spirit', [50, 117, 184], Effects(
@@ -862,8 +862,8 @@ DAMAGE_SPELLS = {
             [EARTH]
         ), is_linked=(1, 'Pawpads')),
         Spell('Pawpads', [160], Effects(
-            [['26-30']],
-            [['32-36']],
+            [['25-28']],
+            [['30-34']],
             [FIRE],
         ), is_linked=(2, 'Feline Spirit')),
         Spell('Reflex', [65, 131, 198], Effects(
@@ -878,16 +878,18 @@ DAMAGE_SPELLS = {
         ), is_linked=(2, 'Reflex')),
         Spell('Playful Claw', [70, 137], Effects(
             [['27-30', '35-39']],
-            None,
+            [['37-41', '47-53']],
             [WATER],
         ), is_linked=(1, 'Misadventure')),
         Spell('Misadventure', [180], Effects(
-            [['37-41']],
-            [['44-49'],
-             ['44-49']],
-            [EARTH,EARTH],
-            steals=[False, True]
-        ), is_linked=(2, 'Playful Claw')),
+            [['37-41']] * 3,
+            [['44-49']] * 3,
+            [EARTH, EARTH, EARTH],
+            steals=[False, False, True]
+        ), aggregates=[('', [0]),
+                        ('If previous casting was a critical hit', [1]),
+                        ('', [2])],
+        is_linked=(2, 'Playful Claw')),
         Spell('Felintion', [75, 142], Effects(
             [['27-29', '33-36']],
             [['32-35', '40-43']],
