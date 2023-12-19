@@ -1102,6 +1102,16 @@ DAMAGE_SPELLS = {
         ), aggregates=[('Ennemies', [0]),
                        ('Allies', [1])],
         is_linked=(2, 'War Cry')),
+        Spell('Forbidden Word', [55, 122, 189], Effects(
+            [['30-33', '40-44', '46-50']],
+            [['36-39', '48-52', '55-60']],
+            [WATER]
+        ), is_linked=(1, 'Bloodless Word')),
+        Spell('Bloodless Word', [165], Effects(
+            [['37-40']] * 2,
+            [['41-45']] * 2,
+            [WATER] * 2, heals=[False, True]
+        ), is_linked=(2, 'Forbidden Word')),
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
