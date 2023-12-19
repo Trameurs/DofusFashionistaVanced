@@ -1266,10 +1266,10 @@ DAMAGE_SPELLS = {
             [AIR],
         ), is_linked=(1, 'Peat Bog')),
         Spell('Peat Bog', [155], Effects(
-            create_stacking_values(((22, 25),), 5, 10),
-            create_stacking_values(((26, 30),), 5, 10),
-            [EARTH] * 10,
-        ), aggregates=[(str(n) + " MP used this turn", [n]) for n in range(10)],
+            create_stacking_values(((22, 25),), 5, 11),
+            create_stacking_values(((26, 30),), 5, 11),
+            [EARTH] * 11,
+        ), aggregates=[(str(n) + " MP used this turn", [n]) for n in range(11)],
         is_linked=(2, 'Loafylactic'))
 
         # Spell('Hard Cash', [101], Effects(
