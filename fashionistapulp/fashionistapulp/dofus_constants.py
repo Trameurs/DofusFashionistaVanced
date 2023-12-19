@@ -1159,10 +1159,17 @@ DAMAGE_SPELLS = {
             [['11-13', '14-16']] * 3,
             [['13-15', '17-19']] * 3,
             [WATER] * 3, heals=[False, True, False]
-        ), aggregates=[('Enemies', [0]),
+        ), aggregates=[('Target', [0]),
                        ('After target loses state:<br>Allies around the target', [1]),
                        ('Enemies around the target', [2])],
-        is_linked=(1, 'Pandawa Spirit')),
+        is_linked=(1, 'Murmur')),
+        Spell('Murmur', [195], Effects(
+            [['16-18']] * 2,
+            [['19-22']] * 2,
+            [AIR] * 2, heals=[False, True]
+        ), aggregates=[('Enemies', [0]),
+                       ('Allies', [1])],
+        is_linked=(2, 'Cryotherapy')),
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
