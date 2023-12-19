@@ -1245,6 +1245,23 @@ DAMAGE_SPELLS = {
             [['32-36', '35-39']],
             [FIRE]
         ), is_linked=(2, 'Mound')),
+        Spell('Auriferous Shovel', [30, 97, 164], Effects(
+            [['20-23', '26-29', '32-36']],
+            [['24-27', '31-35', '38-43']],
+            [WATER],
+        ), is_linked=(1, 'Shovel Throwing')),
+        Spell('Shovel Throwing', [140], Effects(
+            [['32-35']],
+            [['38-42']],
+            [EARTH],
+        ), is_linked=(2, 'Auriferous Shovel')),
+        Spell('Greed', [40, 107, 174], Effects(
+            create_level_based_stacking_values(((10), (25), (40)),
+                                                (10, 25, 40), 10),
+            create_level_based_stacking_values(((15), (30), (45)),
+                                                (15, 30, 45), 10),
+            ['buff_pow']
+        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(10)],),
 
         # Spell('Hard Cash', [101], Effects(
         #     [['19-23']],
