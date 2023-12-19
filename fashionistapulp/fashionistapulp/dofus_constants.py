@@ -1019,14 +1019,10 @@ DAMAGE_SPELLS = {
                     ('', [7]),
                     ('', [9])],),
         Spell('Lamentations', [20, 87, 154], Effects(
-            [['18-20', '23-26', '29-32'],
-             ['9-10', '11-13', '14-16']],
-            [['22-24', '28-31', '35-38'],
-             ['11-12', '14-15', '17-19']],
-            [WATER, WATER], steals=[True, False],
-        ), aggregates=[('Enemies', [0]),
-                       ('Allies are healed by 50% of the damage inflicted on each ennemies', [1])],
-        is_linked=(1, 'Commotion')),
+            [['18-20', '23-26', '29-32']],
+            [['22-24', '28-31', '35-38']],
+            [WATER], steals=[True],
+        ), is_linked=(1, 'Commotion')),
         Spell('Commotion', [130, 197], Effects(
             [['30-33', '33-37'],
              ['30-33', '33-37']],
