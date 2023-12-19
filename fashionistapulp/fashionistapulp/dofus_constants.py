@@ -1215,10 +1215,26 @@ DAMAGE_SPELLS = {
             [['23-26', '29-32']] * 2,
             [['28-31', '35-38']] * 2,
             [FIRE] * 2, heals=[False, True]
-        ), aggregates=[('Ennemies', [0]),
+        ), aggregates=[('Ennemies at the end of their turns', [0]),
                        ('Allies at the end of their turns', [1])],
         is_linked=(2, 'Shovel Kiss')),
-
+        Spell('Opportuneness', [6, 71, 138], Effects(
+            [['8-10', '11-13', '14-16'], ['50', '60', '75']],
+            [['10-12', '13-15', '17-19'], ['55', '65', '85']],
+            [AIR, 'buff_pow']
+        ), is_linked=(1, 'Hard Cash')),
+        Spell('Hard Cash', [115, 182], Effects(
+            [['9', '11'], 
+             ['9', '11'], 
+             ['7-10', '9-12'], 
+             ['3-12', '5-14']],
+            None,
+            [AIR] * 4,
+        ), aggregates=[('', [0]),
+                       ('For 2 turns when target suffers an attempted AP reduction:<br>Not charged', [1]),
+                       ('Charged once', [2]),
+                       ('Charged twice', [3])],
+        is_linked=(2, 'Opportuneness')),
         # Spell('Hard Cash', [101], Effects(
         #     [['19-23']],
         #     [['22-26']],
