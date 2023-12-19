@@ -981,12 +981,12 @@ DAMAGE_SPELLS = {
         ), is_linked=(1, 'Sobs')),
         Spell('Sobs', [110, 177], Effects(
             [['19-21', '23-26'],
-             ['38-42', '46-50']],
+             ['19-21', '23-26']],
             [['22-24', '28-31'],
-             ['44-48', '53-58']],
-            [WATER, WATER], heals=[False, True],
+             ['22-24', '28-31']],
+            [WATER, WATER]
         ), aggregates=[('Target', [0]),
-                       ('Allies around target', [1])],
+                       ('Allies around target are healed by', [1])],
         is_linked=(2, 'Vampiric Word')),
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
