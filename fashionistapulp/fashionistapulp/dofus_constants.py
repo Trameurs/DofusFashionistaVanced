@@ -1270,7 +1270,42 @@ DAMAGE_SPELLS = {
             create_stacking_values(((26, 30),), 5, 11),
             [EARTH] * 11,
         ), aggregates=[(str(n) + " MP used this turn", [n]) for n in range(11)],
-        is_linked=(2, 'Loafylactic'))
+        is_linked=(2, 'Loafylactic')),
+        Spell('Golden Age', [160], Effects(
+            [['200']],
+            None,
+            ['buff_pow']
+        )),
+        Spell('Ghostly Shovel', [55, 122, 189], Effects(
+            [['17-19', '23-25', '26-28']],
+            [['20-22', '27-29', '31-34']],
+            [FIRE],
+        ), is_linked=(1, 'Spade of the Ancients')),
+        Spell('Spade of the Ancients', [165], Effects(
+            [['32-36']],
+            [['38-43']],
+            [AIR],
+        ), is_linked=(2, 'Ghostly Shovel')),
+        Spell('Bankruptcy', [60, 127, 194], Effects(
+            [['26-29', '32-36', '36-40']],
+            [['31-35', '39-44', '43-48']],
+            [AIR],
+        ), is_linked=(1, 'Obsolescence')),
+        Spell('Obsolescence', [170], Effects(
+            [['26-30']],
+            [['31-36']],
+            [WATER],
+        ), is_linked=(2, 'Bankruptcy')),
+        Spell('Shovel of the Ancients', [70, 137], Effects(
+            [['30-33', '38-42']],
+            [['36-39', '46-50']],
+            [WATER],
+        ), is_linked=(1, 'Sieving')),
+        Spell('Sieving', [180], Effects(
+            [['25-29']],
+            [['30-35']],
+            [WATER],
+        ), is_linked=(2, 'Shovel of the Ancients')),
 
         # Spell('Hard Cash', [101], Effects(
         #     [['19-23']],
