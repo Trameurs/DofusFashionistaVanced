@@ -1321,7 +1321,19 @@ DAMAGE_SPELLS = {
             [FIRE] * 3,
         ), aggregates=[('', [0]),
                         ('On summons', list([1, 2]))],
-        is_linked=(1, 'Dowsing')),
+        is_linked=(1, 'Firedamp Explosion')),
+        Spell('Firedamp Explosion', [195], Effects(
+            [['14'], 
+             ['14'], 
+             ['12-15'], 
+             ['8-17']],
+            None,
+            [FIRE] * 4,
+        ), aggregates=[('', [0]),
+                       ('For 2 turns when target is healed:<br>Not charged', [1]),
+                       ('Charged once', [2]),
+                       ('Charged twice', [3])],
+        is_linked=(2, 'Unsummoning')),
 
         # Spell('Hard Cash', [101], Effects(
         #     [['19-23']],
