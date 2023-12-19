@@ -1147,8 +1147,7 @@ DAMAGE_SPELLS = {
             create_stacking_values(((19, 22), (23, 26)), 10, 8),
             [EARTH] * 10
         ), aggregates=[('Allies', [0]),
-                       ('Ennemies', [1]),
-                       (CHARGED_LABELS[n], [n + 2]) for n in range(8)],),
+                       ('Ennemies', [1]),] + [(CHARGED_LABELS[n], [n+2]) for n in range(10)],),
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
