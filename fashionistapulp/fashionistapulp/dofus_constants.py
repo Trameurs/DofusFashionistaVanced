@@ -1155,7 +1155,14 @@ DAMAGE_SPELLS = {
             [FIRE] * 10
         ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(10)],
         is_linked=(2, 'Tribal Paintbrush')),
-
+        Spell('Cryotherapy', [85, 152], Effects(
+            [['11-13', '14-16']] * 3,
+            [['13-15', '17-19']] * 3,
+            [WATER] * 3, heals=[False, True, False]
+        ), aggregates=[('Enemies', [0]),
+                       ('After target loses state:\nAllies around the target', [1]),
+                       ('Enemies around the target', [2])],
+        is_linked=(1, 'Pandawa Spirit')),
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
