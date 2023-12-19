@@ -1160,7 +1160,7 @@ DAMAGE_SPELLS = {
             [['13-15', '17-19']] * 3,
             [WATER] * 3, heals=[False, True, False]
         ), aggregates=[('Enemies', [0]),
-                       ('After target loses state:\nAllies around the target', [1]),
+                       ('After target loses state:\n\nAllies around the target', [1]),
                        ('Enemies around the target', [2])],
         is_linked=(1, 'Pandawa Spirit')),
         # Spell('Wounding Word', [1, 68, 134], Effects(
