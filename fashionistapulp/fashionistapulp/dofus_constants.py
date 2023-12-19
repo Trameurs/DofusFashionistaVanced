@@ -999,7 +999,7 @@ DAMAGE_SPELLS = {
             [['34-37', '40-44'],
              ['34-37', '40-44']],
             [EARTH, EARTH], heals=[False, True]
-        ), aggregates=[('Ennemies', [0]),
+        ), aggregates=[('Enemies', [0]),
                        ('Allies', [1])],
         is_linked=(2, 'Profanity')),
         Spell('Scalpel', [125, 192], Effects(
@@ -1025,7 +1025,7 @@ DAMAGE_SPELLS = {
              ['22-24', '28-31', '35-38']],
             [WATER, WATER], steals=[True, False],
         ), aggregates=[('Enemies', [0]),
-                       ('Allies are healed by 50% of the damage inflicted on each ennemies', [1])],
+                       ('Allies are healed by 50% of the damage inflicted on each enemies', [1])],
         is_linked=(1, 'Commotion')),
         Spell('Commotion', [130, 197], Effects(
             [['30-33', '33-37'],
@@ -1034,7 +1034,7 @@ DAMAGE_SPELLS = {
              ['35-39', '40-44']],
             [FIRE, FIRE], heals=[True, False]
         ), aggregates=[('Allies', [0]),
-                       ('Ennemies', [1])],
+                       ('Enemies', [1])],
         is_linked=(2, 'Lamentations')),
         Spell('Turbulent Word', [25, 92, 159], Effects(
             [['23-26', '29-33', '36-41'],
@@ -1043,7 +1043,7 @@ DAMAGE_SPELLS = {
              ['27-31', '35-39', '43-49']],
             [FIRE, FIRE], heals=[True, False]
         ), aggregates=[('Allies', [0]),
-                       ('Ennemies', [1])],
+                       ('Enemies', [1])],
         is_linked=(1, 'Furious Word')),
         Spell('Furious Word', [135], Effects(
             [['32-36']],
@@ -1099,7 +1099,7 @@ DAMAGE_SPELLS = {
             [['28-32']] * 2,
             [['34-38']] * 2,
             [EARTH] * 2, heals=[False, True]
-        ), aggregates=[('Ennemies', [0]),
+        ), aggregates=[('Enemies', [0]),
                        ('Allies', [1])],
         is_linked=(2, 'War Cry')),
         Spell('Forbidden Word', [55, 122, 189], Effects(
@@ -1111,7 +1111,7 @@ DAMAGE_SPELLS = {
             [['37-40']] * 2,
             [['41-45']] * 2,
             [WATER] * 2, heals=[False, True]
-        ), aggregates=[('Ennemies', [0]),
+        ), aggregates=[('Enemies', [0]),
                        ('Allies', [1])],
         is_linked=(2, 'Forbidden Word')),
         Spell('Pilfering', [65, 131, 198], Effects(
@@ -1124,30 +1124,30 @@ DAMAGE_SPELLS = {
             [['28-32']] * 2,
             [FIRE] * 2, heals=[True, False]
         ), aggregates=[('Allies', [0]),
-                       ('Ennemies', [1])],
+                       ('Enemies', [1])],
         is_linked=(2, 'Pilfering')),
         Spell('Flowery Word', [70, 137], Effects(
             [['26-29', '33-37']] * 2,
             [['31-35', '40-44']] * 2,
             [AIR] * 2, heals=[False, True]
-        ), aggregates=[('Ennemies', [0]),
-                       ('Allies around ennemies are healed at the end of ennemies turns', [1])],
+        ), aggregates=[('Enemies', [0]),
+                       ('Allies around enemies are healed at the end of enemies turns', [1])],
         is_linked=(1, 'Enchanted Thicket')),
         Spell('Enchanted Thicket', [180], Effects(
             [['39-43']] * 2,
             [['45-50']] * 2,
             [AIR] * 2, heals=[True, False]
         ), aggregates=[('Allies', [0]),
-                       ('Ennemies', [1])],
+                       ('Enemies', [1])],
         is_linked=(2, 'Flowery Word')),
         Spell('Tribal Paintbrush', [80, 147], Effects(
-            [['15-18', '19-22']] * 2,
-            create_stacking_values(((15, 18), (19, 22)), 10, 10),
-            [['19-22', '23-26']] * 2,
+            [['15-18', '19-22']] * 2 +
+            create_stacking_values(((15, 18), (19, 22)), 10, 10) +
+            [['19-22', '23-26']] * 2 +
             create_stacking_values(((19, 22), (23, 26)), 10, 10),
             [EARTH] * 12, 
         ), aggregates=[('Allies', [0]),
-                       ('Ennemies', [1]),] + [(CHARGED_LABELS[n], [n+2]) for n in range(10)],),
+                    ('Enemies', [1])] + [(CHARGED_LABELS[n], [n+2]) for n in range(10)])
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
