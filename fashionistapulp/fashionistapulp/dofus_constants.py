@@ -1743,6 +1743,19 @@ DAMAGE_SPELLS = {
             [FIRE] * 5,
         ), aggregates=[(str(n+1) + " targets", [n]) for n in range(5)],
         is_linked=(2, 'Strengthstorm')),
+        Spell('Celestial Sword', [50, 117, 184], Effects(
+            [['28-31', '31-35', '36-40']],
+            [['34-37', '38-42', '43-48']],
+            [AIR],
+        ), is_linked=(1, 'Zenith')),
+        Spell('Zenith', [160], Effects(
+            [['27-29'], 
+             ['52-58']],
+            [['31-35'],
+             ['64-70']],
+            [AIR] * 2,
+        ), aggregates=[('', [0, 1])],
+        is_linked=(2, 'Celestial Sword')),
 
 
         
@@ -1792,16 +1805,7 @@ DAMAGE_SPELLS = {
             ['buff_depow']
         ), is_linked=(2, 'Power')),
         
-        Spell('Celestial Sword', [65, 131, 198], Effects(
-            [['28-31', '31-35', '36-40']],
-            [['34-37', '38-42', '43-48']],
-            [AIR],
-        ), is_linked=(1, 'Zenith')),
-        Spell('Zenith', [175], Effects(
-            [['86-94']],
-            [['103-113']],
-            [AIR],
-        ), is_linked=(2, 'Celestial Sword')),
+        
         
         Spell('Endurance', [180], Effects(
             [['34-38']],
