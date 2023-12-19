@@ -1636,16 +1636,21 @@ DAMAGE_SPELLS = {
         ), is_linked=(2, 'Trident')),
     ],
     'Iop': [
+        Spell('Pressure', [1, 66, 132], Effects(
+            [['16-18', '20-23', '26-30']],
+            [['19-21', '24-28', '31-36']],
+            [EARTH],
+        ), is_linked=(1, 'Fracture')),
+        Spell('Fracture', [95, 162], Effects(
+            [['26-29', '32-36']],
+            [['31-35', '38-43']],
+            [AIR],
+        ), is_linked=(2, 'Pressure')),
         Spell('Intimidation', [1, 67, 133], Effects(
             [['6-8', '8-10', '11-13']],
             [['8-10', '10-12', '13-16']],
             [NEUTRAL],
         )),
-        Spell('Pressure', [1, 68, 134], Effects(
-            [['14-18', '19-22', '24-28']],
-            [['17-20', '22-26', '29-34']],
-            [EARTH],
-        ), is_linked=(1, 'Pounding')),
         Spell('Pounding', [105, 172], Effects(
             [['24-27','30-34']],
             [['29-33','36-41']],
