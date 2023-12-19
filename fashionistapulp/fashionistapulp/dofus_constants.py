@@ -1235,6 +1235,17 @@ DAMAGE_SPELLS = {
                        ('Charged once', [2]),
                        ('Charged twice', [3])],
         is_linked=(2, 'Opportuneness')),
+        Spell('Mound', [20, 87, 154], Effects(
+            [['12-14', '16-18', '20-22']],
+            [['15-17', '19-21', '24-26']],
+            [EARTH],
+        ), is_linked=(1, 'Mine Fire')),
+        Spell('Mine Fire', [130, 197], Effects(
+            [['27-30', '30-34']],
+            [['32-36', '35-39']],
+            [FIRE]
+        ), is_linked=(2, 'Mound')),
+
         # Spell('Hard Cash', [101], Effects(
         #     [['19-23']],
         #     [['22-26']],
