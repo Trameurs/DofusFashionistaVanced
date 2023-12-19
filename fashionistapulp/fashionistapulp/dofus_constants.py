@@ -1004,9 +1004,9 @@ DAMAGE_SPELLS = {
         is_linked=(2, 'Profanity')),
         Spell('Scalpel', [125, 192], Effects(
             [['52', '60'],
-            ['63', '72']] * 5,
-            [['47-52', '54-60'],
-            ['57-63', '65-72']] * 5,
+             ['47-52', '54-60']] * 5,
+            [['63', '72'],
+             ['57-63', '65-72']] * 5,
             [NEUTRAL, EARTH, FIRE, WATER, AIR] * 2, heals=[False, False, False, False, False, True, True, True, True, True],
         ), aggregates=[("Hit in best element", [0]),
                     ('', [1]),
