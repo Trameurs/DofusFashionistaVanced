@@ -1667,7 +1667,7 @@ DAMAGE_SPELLS = {
             [['19-22', '23-27']],
             [['22-26', '28-32']],
             [FIRE],
-        ), is_linked=(1, 'Divine Sword')),
+        ), is_linked=(2, 'Divine Sword')),
         Spell('Destructive Sword', [6, 71, 138], Effects(
             [['19-22', '26-29', '32-36']],
             [['23-26', '31-35', '38-43']],
@@ -1688,7 +1688,7 @@ DAMAGE_SPELLS = {
                         ('', [2]),
                         ('', [3]),
                         ('', [4])],),
-        Spell('Violence', [15, 82, 149], Effects(
+        Spell('Violence', [125, 192], Effects(
             [['40', '50']],
             None,
             ['buff_pshdam'],
@@ -1710,7 +1710,7 @@ DAMAGE_SPELLS = {
             [WATER, WATER],
         ), aggregates=[('', [0]),
                        ('In 2 turns', [1])],
-        is_linked=(1, 'Condemnation')),
+        is_linked=(2, 'Concentration')),
 
 
         
