@@ -1256,8 +1256,8 @@ DAMAGE_SPELLS = {
             [EARTH],
         ), is_linked=(2, 'Auriferous Shovel')),
         Spell('Greed', [40, 107, 174], Effects(
-            ['10', '25', '40'],
-            ['15', '30', '45'],
+            [['10', '25', '40']],
+            [['15', '30', '45']],
             ['buff_pow'],
         ), stacks=3,),
 
