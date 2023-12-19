@@ -1256,12 +1256,10 @@ DAMAGE_SPELLS = {
             [EARTH],
         ), is_linked=(2, 'Auriferous Shovel')),
         Spell('Greed', [40, 107, 174], Effects(
-            create_level_based_stacking_values(((10,10), (25,25), (40,40)),
-                                                (10, 25, 40), 10),
-            create_level_based_stacking_values(((15,15), (30,30), (45,45)),
-                                                (15, 30, 45), 10),
-            ['buff_pow'] * 10,
-        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(10)]),
+            ['10', '25', '40'],
+            ['15', '30', '45'],
+            ['buff_pow'],
+        ), stacks=3,),
 
         # Spell('Hard Cash', [101], Effects(
         #     [['19-23']],
