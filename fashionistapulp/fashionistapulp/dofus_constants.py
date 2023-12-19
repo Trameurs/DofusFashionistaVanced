@@ -984,7 +984,7 @@ DAMAGE_SPELLS = {
              ['38-42', '46-50']],
             [['22-24', '28-31'],
              ['44-48', '53-58']],
-            [WATER]
+            [WATER, WATER], heals=[False, True],
         ), aggregates=[('Target', [0]),
                        ('Allies around target', [1])],
         is_linked=(2, 'Vampiric Word')),
