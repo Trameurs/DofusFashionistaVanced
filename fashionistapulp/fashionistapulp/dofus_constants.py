@@ -964,6 +964,30 @@ DAMAGE_SPELLS = {
             [['25-29', '32-36']],
             [FIRE]
         ), is_linked=(2, 'Raucous Word')),
+        Spell('Mischievous Word', [1, 66, 132], Effects(
+            [['12-14', '16-19', '21-24']],
+            [['15-17', '20-22', '25-29']],
+            [AIR]
+        ), is_linked=(1, 'Malicious Word')),
+        Spell('Malicious Word', [95, 162], Effects(
+            [['24-27', '30-34']],
+            [['29-33', '36-41']],
+            [AIR]
+        ), is_linked=(2, 'Mischievous Word')),
+        Spell('Vampiric Word', [3, 69, 136], Effects(
+            [['16-18', '21-23', '27-30']],
+            [['19-21', '25-28', '32-36']],
+            [WATER]
+        ), is_linked=(1, 'Sobs')),
+        Spell('Sobs', [110, 177], Effects(
+            [['19-21', '23-26'],
+             ['38-42', '46-50']],
+            [['22-24', '28-31'],
+             ['44-48', '53-58']],
+            [WATER]
+        ), aggregates=[('Target', [0]),
+                       ('Allies around target', [1])],
+        is_linked=(2, 'Vampiric Word')),
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
