@@ -1148,7 +1148,7 @@ DAMAGE_SPELLS = {
             [EARTH] * 12, heals=[True, False] + [False] * 10
         ), aggregates=[('Allies', [0]),
                     ('Enemies', [1]),
-                    ('Caster', [2])] + [(CHARGED_LABELS[n], [n+3]) for n in range(10)])
+                    ('Enemies when the target is the caster', [2])] + [(CHARGED_LABELS[n], [n+3]) for n in range(10)])
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
