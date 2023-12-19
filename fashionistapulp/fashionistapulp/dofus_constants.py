@@ -1023,9 +1023,9 @@ DAMAGE_SPELLS = {
              ['9-10', '11-13', '14-16']],
             [['22-24', '28-31', '35-38'],
              ['11-12', '14-15', '17-19']],
-            [WATER, WATER], steals=[True, False], heals=[False, True],
+            [WATER, WATER], steals=[True, False],
         ), aggregates=[('Enemies', [0]),
-                       ('Allies are healed by 50% of the damage on each ennemies', [1])],
+                       ('Allies are healed by 50% of the damage inflicted on each ennemies', [1])],
         is_linked=(1, 'Commotion')),
         Spell('Commotion', [130, 197], Effects(
             [['30-33', '33-37'],
