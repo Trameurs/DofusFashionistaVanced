@@ -1139,6 +1139,7 @@ DAMAGE_SPELLS = {
             [AIR] * 2, heals=[True, False]
         ), aggregates=[('Allies', [0]),
                        ('Ennemies', [1])],
+        is_linked=(2, 'Flowery Word')),
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
