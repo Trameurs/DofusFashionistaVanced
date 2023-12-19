@@ -1310,7 +1310,7 @@ DAMAGE_SPELLS = {
             [['20']] * 5,
             None,
             [NEUTRAL, EARTH, FIRE, WATER, AIR],
-        ), aggregates=[('Hit in best element', [0]),
+        ), aggregates=[('Hit in best element on enemy that kills Lucky Shovel', [0]),
                         ('', [1]),
                         ('', [2]),
                         ('', [3]),
