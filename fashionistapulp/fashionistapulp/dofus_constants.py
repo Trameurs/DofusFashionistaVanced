@@ -1147,7 +1147,15 @@ DAMAGE_SPELLS = {
             create_stacking_values(((19, 22), (23, 26)), 10, 10),
             [EARTH] * 12, heals=[True, False] + [False] * 10
         ), aggregates=[('Allies', [0]),
-                    ('Enemies', [1])] + [(CHARGED_LABELS[n], [n+2]) for n in range(10)])
+                    ('Enemies', [1])] + [(CHARGED_LABELS[n], [n+2]) for n in range(10)],
+        is_linked=(1, 'Shrill Choir')),
+        Spell('Shrill Choir', [190], Effects(
+            create_stacking_values(((40, 44),), 7, 10),
+            create_stacking_values(((48, 53),), 7, 10),
+            [FIRE] * 10
+        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(10)],
+        is_linked=(2, 'Tribal Paintbrush')),
+
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
