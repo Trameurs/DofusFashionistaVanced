@@ -1308,7 +1308,7 @@ DAMAGE_SPELLS = {
         ), is_linked=(2, 'Shovel of the Ancients')),
         Spell('Lucky Shovel', [185], Effects(
             [['20']] * 5,
-            None,
+            None * 5,
             [NEUTRAL, EARTH, FIRE, WATER, AIR],
         ), aggregates=[('Hit in best element', [0]),
                         ('', [1]),
