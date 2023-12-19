@@ -1731,6 +1731,12 @@ DAMAGE_SPELLS = {
                        ('Second target not charged', [1, 2]),
                        ('Second target charged', [3, 4])],
         is_linked=(1, 'Tumult')),
+        Spell('Tumult', [155], Effects(
+            create_stacking_values(((19, 21),), 20, 5),
+            create_stacking_values(((23, 25),), 20, 5),
+            [FIRE] * 5,
+        ), aggregates=[(str(n) + " targets", [n]) for n in range(5)],
+        is_linked=(2, 'Strengthstorm')),
 
 
         
