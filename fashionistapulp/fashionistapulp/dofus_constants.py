@@ -1172,122 +1172,132 @@ DAMAGE_SPELLS = {
         is_linked=(2, 'Cryotherapy')),
     ],
     'Enutrof': [
-        Spell('Coins Throwing', [1, 20, 40], Effects(
-            [['7-9', '9-11', '11-13']],
-            [['10', '12', '14']],
+        Spell('Coin Throwing', [1, 66, 132], Effects(
+            [['7-9', '10-12', '13-15']],
+            [['9-11', '12-14', '16-18']],
             [WATER],
-        ), is_linked=(1, 'Hard Cash')), 
-        Spell('Hard Cash', [101], Effects(
-            [['19-23']],
-            [['22-26']],
-            [WATER],
-            steals=[True],
-        ), is_linked=(2, 'Coins Throwing')), 
-        Spell('Shovel Throwing', [1, 25, 52], Effects(
-            [['25-31', '31-37', '37-43']],
-            [['30-36', '36-42', '42-48']],
-            [EARTH],
-        ), is_linked=(1, 'Spade Throw')), 
-        Spell('Spade Throw', [105], Effects(
-            [['26-30']],
-            [['30-34']],
-            [EARTH],
-        ), is_linked=(2, 'Shovel Throwing')), 
-        Spell('Ghostly Shovel', [3, 35, 67], Effects(
-            [['16-18', '21-23', '26-28']],
-            [['19-21', '24-26', '29-31']],
-            [FIRE],
-        ), is_linked=(1, 'Ghostly Spade')), 
-        Spell('Ghostly Spade', [115], Effects(
-            [['30-34']],
-            [['35-39']],
-            [AIR],
-        ), is_linked=(2, 'Ghostly Shovel')), 
-        Spell('Mound', [13, 54, 94], Effects(
-            [['12-15', '15-18', '18-21']],
-            [['18', '21', '24']],
-            [EARTH],
-        ), is_linked=(1, 'Peat Bog')), 
-        Spell('Peat Bog', [130], Effects(
-            [['48-54']],
-            [['58-64']],
-            [EARTH],
-        ), is_linked=(2, 'Mound')), 
-        Spell('Prime of Life', [22, 65, 108], Effects(
-            [['28-32', '33-37', '38-42']],
-            [['33-37', '38-42', '43-47']],
-            [EARTH],
-        ), is_linked=(1, 'Obsolescence')), 
-        Spell('Obsolescence', [140], Effects(
-            [['19-23']],
-            [['22-26']],
-            [EARTH],
-        ), is_linked=(2, 'Prime of Life')), 
-        Spell('Greed', [32, 81, 124], Effects(
-            [['50', '100', '150']],
-            [['60', '110', '160']],
-            ['buff_pow']
-        )),
-        Spell('Shovel Kiss', [38, 90, 132], Effects(
-            [['9-11', '12-14', '15-17']],
-            [['13', '16', '19']],
-            [FIRE],
-        ), is_linked=(1, 'Spade Kiss')), 
-        Spell('Spade Kiss', [155], Effects(
-            [['14-16']],
+        ), is_linked=(1, 'Placer Mining')), 
+        Spell('Placer Mining', [95, 162], Effects(
+            [['8', '10'], ['8', '10'], ['6-9', '8-11'], ['2-10', '4-13']],
             None,
-            [FIRE],
-        ), is_linked=(2, 'Shovel Kiss')), 
-        Spell('Loafylactic', [165], Effects(
-            [['17-19']],
-            [['19-21']],
-            [AIR],
-        )), 
-        Spell('Fortune', [56, 112, 147], Effects(
-            [['100', '200', '300']],
-            None,
-            ['buff_pow']
-        ), is_linked=(1, 'Opportuneness')), 
-        Spell('Opportuneness', [170], Effects(
-            [['11-13'],
-             ['75']],
-            [['12-14'],
-             ['80']],
-            [AIR, 'buff_pow'],
-        ), stacks=2, is_linked=(2, 'Fortune')), 
-        Spell('Shovel of Judgement', [62, 116, 153], Effects(
-            [['18-22', '21-25', '24-28']],
-            [['22-26', '25-29', '28-32']],
-            [WATER],
-        ), is_linked=(1, 'Spade of Judgement')), 
-        Spell('Spade of Judgement', [175], Effects(
-            [['38-42']],
-            [['46-50']],
-            [AIR],
-        ), is_linked=(2, 'Shovel of Judgement')), 
-        Spell('Slaughtering Shovel', [69, 122, 162], Effects(
-            [['32-37', '39-44', '46-51']],
-            [['39-44', '46-51', '53-58']],
-            [WATER],
-        ), is_linked=(1, 'Carnivore Spade')), 
-        Spell('Carnivore Spade', [180], Effects(
-            [['16-18']],
-            None,
-            [WATER],
-            steals=[True],
-        ), is_linked=(2, 'Slaughtering Shovel')), 
-        Spell('Unsummoning', [92, 141, 187], Effects(
-            [['27-30', '33-36', '39-42']] * 3,
-            [['32-35', '38-41', '44-47']] * 3,
-            [FIRE, FIRE, FIRE],
-        ), aggregates=[('Non-summons', [0]),
-                       ('Summons', [1, 2])],
-        is_linked=(1, 'Correction')), 
-        Spell('Correction', [195], Effects(
-            [['48-52']],
-            [['58-62']],
-            [FIRE],
-        ), is_linked=(2, 'Unsummoning')), 
+            [WATER] * 4,
+        ), aggregates=[('', [0]),
+                       ('For 2 turns when target suffers an attempted MP reduction<br>Not charged', [1]),
+                       ('Charged once', [2]),
+                       ('Charged twice', [3])],
+        is_linked=(2, 'Coin Throwing')),
+
+        # Spell('Hard Cash', [101], Effects(
+        #     [['19-23']],
+        #     [['22-26']],
+        #     [WATER],
+        #     steals=[True],
+        # ), is_linked=(2, 'Coins Throwing')), 
+        # Spell('Shovel Throwing', [1, 25, 52], Effects(
+        #     [['25-31', '31-37', '37-43']],
+        #     [['30-36', '36-42', '42-48']],
+        #     [EARTH],
+        # ), is_linked=(1, 'Spade Throw')), 
+        # Spell('Spade Throw', [105], Effects(
+        #     [['26-30']],
+        #     [['30-34']],
+        #     [EARTH],
+        # ), is_linked=(2, 'Shovel Throwing')), 
+        # Spell('Ghostly Shovel', [3, 35, 67], Effects(
+        #     [['16-18', '21-23', '26-28']],
+        #     [['19-21', '24-26', '29-31']],
+        #     [FIRE],
+        # ), is_linked=(1, 'Ghostly Spade')), 
+        # Spell('Ghostly Spade', [115], Effects(
+        #     [['30-34']],
+        #     [['35-39']],
+        #     [AIR],
+        # ), is_linked=(2, 'Ghostly Shovel')), 
+        # Spell('Mound', [13, 54, 94], Effects(
+        #     [['12-15', '15-18', '18-21']],
+        #     [['18', '21', '24']],
+        #     [EARTH],
+        # ), is_linked=(1, 'Peat Bog')), 
+        # Spell('Peat Bog', [130], Effects(
+        #     [['48-54']],
+        #     [['58-64']],
+        #     [EARTH],
+        # ), is_linked=(2, 'Mound')), 
+        # Spell('Prime of Life', [22, 65, 108], Effects(
+        #     [['28-32', '33-37', '38-42']],
+        #     [['33-37', '38-42', '43-47']],
+        #     [EARTH],
+        # ), is_linked=(1, 'Obsolescence')), 
+        # Spell('Obsolescence', [140], Effects(
+        #     [['19-23']],
+        #     [['22-26']],
+        #     [EARTH],
+        # ), is_linked=(2, 'Prime of Life')), 
+        # Spell('Greed', [32, 81, 124], Effects(
+        #     [['50', '100', '150']],
+        #     [['60', '110', '160']],
+        #     ['buff_pow']
+        # )),
+        # Spell('Shovel Kiss', [38, 90, 132], Effects(
+        #     [['9-11', '12-14', '15-17']],
+        #     [['13', '16', '19']],
+        #     [FIRE],
+        # ), is_linked=(1, 'Spade Kiss')), 
+        # Spell('Spade Kiss', [155], Effects(
+        #     [['14-16']],
+        #     None,
+        #     [FIRE],
+        # ), is_linked=(2, 'Shovel Kiss')), 
+        # Spell('Loafylactic', [165], Effects(
+        #     [['17-19']],
+        #     [['19-21']],
+        #     [AIR],
+        # )), 
+        # Spell('Fortune', [56, 112, 147], Effects(
+        #     [['100', '200', '300']],
+        #     None,
+        #     ['buff_pow']
+        # ), is_linked=(1, 'Opportuneness')), 
+        # Spell('Opportuneness', [170], Effects(
+        #     [['11-13'],
+        #      ['75']],
+        #     [['12-14'],
+        #      ['80']],
+        #     [AIR, 'buff_pow'],
+        # ), stacks=2, is_linked=(2, 'Fortune')), 
+        # Spell('Shovel of Judgement', [62, 116, 153], Effects(
+        #     [['18-22', '21-25', '24-28']],
+        #     [['22-26', '25-29', '28-32']],
+        #     [WATER],
+        # ), is_linked=(1, 'Spade of Judgement')), 
+        # Spell('Spade of Judgement', [175], Effects(
+        #     [['38-42']],
+        #     [['46-50']],
+        #     [AIR],
+        # ), is_linked=(2, 'Shovel of Judgement')), 
+        # Spell('Slaughtering Shovel', [69, 122, 162], Effects(
+        #     [['32-37', '39-44', '46-51']],
+        #     [['39-44', '46-51', '53-58']],
+        #     [WATER],
+        # ), is_linked=(1, 'Carnivore Spade')), 
+        # Spell('Carnivore Spade', [180], Effects(
+        #     [['16-18']],
+        #     None,
+        #     [WATER],
+        #     steals=[True],
+        # ), is_linked=(2, 'Slaughtering Shovel')), 
+        # Spell('Unsummoning', [92, 141, 187], Effects(
+        #     [['27-30', '33-36', '39-42']] * 3,
+        #     [['32-35', '38-41', '44-47']] * 3,
+        #     [FIRE, FIRE, FIRE],
+        # ), aggregates=[('Non-summons', [0]),
+        #                ('Summons', [1, 2])],
+        # is_linked=(1, 'Correction')), 
+        # Spell('Correction', [195], Effects(
+        #     [['48-52']],
+        #     [['58-62']],
+        #     [FIRE],
+        # ), is_linked=(2, 'Unsummoning')), 
     ],
     'Feca': [
         Spell('Natural Attack', [1, 67, 133], Effects(
