@@ -1050,7 +1050,25 @@ DAMAGE_SPELLS = {
             [['38-43']],
             [EARTH]
         ), is_linked=(2, 'Turbulent Word')),
-
+        Spell('Galvanising Word', [140], Effects(
+            [['200']],
+            None,
+            ['buff_pow']
+        )),
+        Spell("Prankster's Word", [35, 102, 169], Effects(
+            [['15-17', '18-20', '22-24'],
+             ['15-17', '18-20', '22-24']],
+            [['17-19', '21-23', '26-28'],
+             ['17-19', '21-23', '26-28']],
+            [AIR, AIR], heals=[False, True]
+        ), aggregates=[('Enemies', [0]),
+                       ('Allies', [1])],
+        is_linked=(1, 'Defensive Word')),
+        Spell('Defensive Word', [145], Effects(
+            [['28-31']],
+            [['34-37']],
+            [WATER], steals=[True]
+        ), is_linked=(2, "Prankster's Word")),
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
