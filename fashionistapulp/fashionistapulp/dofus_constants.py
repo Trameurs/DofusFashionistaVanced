@@ -1099,7 +1099,9 @@ DAMAGE_SPELLS = {
             [['28-32']] * 2,
             [['34-38']] * 2,
             [EARTH] * 2, heals=[False, True]
-        ), is_linked=(2, 'War Cry')),
+        ), aggregates=[('Ennemies', [0]),
+                       ('Allies', [1])],
+        is_linked=(2, 'War Cry')),
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
