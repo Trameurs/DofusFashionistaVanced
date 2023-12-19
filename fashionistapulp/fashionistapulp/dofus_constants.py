@@ -1345,8 +1345,8 @@ DAMAGE_SPELLS = {
         ), stacks=3,
         is_linked=(1, 'Natural Attraction')), 
         Spell('Natural Attraction', [100, 167], Effects(
-            [['24-27', '30-34']],
-            [['29-33', '36-41']],
+            [['19-22', '24-27']],
+            [['23-26', '29-32']],
             [FIRE],
         ), is_linked=(2, 'Natural Attack')), 
         Spell('Blindness', [1, 68, 134], Effects(
@@ -1380,10 +1380,9 @@ DAMAGE_SPELLS = {
             [['32-36', '38-42']],
             [['39-43', '46-50']],
             [AIR],
-        ), is_linked=(2, 'Bubble')), 
-        #TODO: find out Aggressive Glyph's damages
+        ), is_linked=(2, 'Bubble')),
         Spell('Aggressive Glyph', [15, 82, 149], Effects(
-            [['24-26', '28-30', '32-34']],
+            [['20-22', '26-28', '32-34']],
             None,
             [AIR],
         ), special='glyph', is_linked=(1, 'Fulminating Glyph')), 
@@ -1433,9 +1432,8 @@ DAMAGE_SPELLS = {
             [['41-46']],
             [NEUTRAL],
         ), is_linked=(2, 'Backlash')),
-        #TODO: find out Repulsion Glyph's damages
         Spell('Repulsion Glyph', [45, 112, 179], Effects(
-            [['11-12', '16-17', '21-22']] * 4,
+            [['13-14', '17-18', '21-22']] * 4,
             None,
             [FIRE, WATER, EARTH, AIR],
         ), aggregates=[('', [0, 1, 2, 3])], special='glyph',
@@ -1446,9 +1444,8 @@ DAMAGE_SPELLS = {
             [FIRE, WATER, EARTH, AIR],
         ), aggregates=[('', [0, 1, 2, 3])], special='glyph',
         is_linked=(2, 'Repulsion Glyph')),
-        #TODO: find out Blinding Glyph's damages
         Spell('Blinding Glyph', [55, 122, 189], Effects(
-            [['21-24', '26-29', '31-34']],
+            [['20-22', '27-30', '31-34']],
             None,
             [EARTH],
         ), special='glyph', is_linked=(1, 'Protective Glyph')),
@@ -1469,7 +1466,7 @@ DAMAGE_SPELLS = {
         ), is_linked=(2, 'Shiver')),
         #TODO: find out Paralysing Glyph's damages
         Spell('Paralysing Glyph', [65, 131, 198], Effects(
-            [['21-23', '26-28', '31-33']],
+            [['22-25', '27-30', '30-34']],
             None,
             [WATER],
         ), special='glyph', is_linked=(1, 'Roaming Glyph')),
@@ -1494,15 +1491,14 @@ DAMAGE_SPELLS = {
             None,
             ['buff_pow_nonglyph', 'buff_pow_glyph'],
         )),
-        #TODO: find out Burning Glyph's damages
         Spell('Burning Glyph', [85, 152], Effects(
-            [['23-27', '28-32']],
+            [['27-30', '33-37']],
             None,
             [FIRE],
         ), special='glyph', is_linked=(1, 'Perception Glyph')),
         Spell('Perception Glyph', [195], Effects(
-            [['37-41']],
-            [['44-49']],
+            [['30-34']],
+            [['36-41']],
             [FIRE],
         ), special='glyph', is_linked=(2, 'Burning Glyph')),
     ],
