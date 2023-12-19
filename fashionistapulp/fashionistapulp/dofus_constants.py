@@ -1320,8 +1320,7 @@ DAMAGE_SPELLS = {
             [['38-40', '47-50', '19-21']] * 3,
             [FIRE] * 3,
         ), aggregates=[('', [0]),
-                        ('On summons', [1]),
-                        ('', [2])], 
+                        ('On summons', list(range(1, 2)))], 
         is_linked=(1, 'Dowsing')),
 
         # Spell('Hard Cash', [101], Effects(
