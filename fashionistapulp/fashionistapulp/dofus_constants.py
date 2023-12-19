@@ -1260,7 +1260,7 @@ DAMAGE_SPELLS = {
                                                 (10, 25, 40), 10),
             create_level_based_stacking_values(((15,15), (30,30), (45,45)),
                                                 (15, 30, 45), 10),
-            [AIR] * 10,
+            ['buff_pow'] * 10,
         ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(10)]),
 
         # Spell('Hard Cash', [101], Effects(
