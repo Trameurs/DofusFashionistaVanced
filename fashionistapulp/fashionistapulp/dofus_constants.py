@@ -988,6 +988,20 @@ DAMAGE_SPELLS = {
         ), aggregates=[('Target', [0]),
                        ('Allies around target are healed by', [1])],
         is_linked=(2, 'Vampiric Word')),
+        Spell('Profanity', [6, 71, 138], Effects(
+            [['14-16', '18-20', '22-25']],
+            [['17-19', '21-24', '26-30']],
+            [EARTH]
+        ), is_linked=(1, 'Ancestral Ointment')),
+        Spell('Ancestral Ointment', [115, 182], Effects(
+            [['31-33', '35-38'],
+             ['31-33', '35-38']],
+            [['34-37', '40-44'],
+             ['34-37', '40-44']],
+            [EARTH, EARTH], heals=[False, True]
+        ), aggregates=[('Ennemies', [0]),
+                       ('Allies', [1])],
+        is_linked=(2, 'Profanity')),
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
