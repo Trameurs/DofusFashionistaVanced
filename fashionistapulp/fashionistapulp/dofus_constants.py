@@ -1269,8 +1269,8 @@ DAMAGE_SPELLS = {
             create_stacking_values(((22, 25),), 5, 10),
             create_stacking_values(((26, 30),), 5, 10),
             [EARTH] * 10,
-        ), aggregates=[([n] + "MP used this turn", [n]) for n in range(10)],
-        is_linked=(2, 'Loafylactic')),
+        ), aggregates=[(str(n) + " MP used this turn", [n]) for n in range(10)],
+        is_linked=(2, 'Loafylactic'))
 
         # Spell('Hard Cash', [101], Effects(
         #     [['19-23']],
