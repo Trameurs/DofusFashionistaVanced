@@ -1503,9 +1503,9 @@ DAMAGE_SPELLS = {
         ), special='glyph', is_linked=(2, 'Burning Glyph')),
     ],
     'Foggernaut': [
-        Spell('Anchor', [1, 25, 52], Effects(
-            [['12-14', '16-18', '20-22']],
-            [['16-18', '20-22', '24-26']],
+        Spell('Anchor', [1, 67, 133], Effects(
+            [['14-16', '19-21', '24-27']],
+            [['17-19', '22-25', '29-32']],
             [EARTH],
         ), is_linked=(1, 'Mooring')),
         Spell('Mooring', [105], Effects(
