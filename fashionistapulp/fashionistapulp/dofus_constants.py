@@ -1259,7 +1259,18 @@ DAMAGE_SPELLS = {
             [['10', '25', '40']],
             [['15', '30', '45']],
             ['buff_pow'],
-        ), stacks=3,),
+        ), stacks=15,),
+        Spell('Loafylactic', [45, 112, 179], Effects(
+            [['12-14', '16-18', '19-21']],
+            [['14-16', '19-21', '23-25']],
+            [AIR],
+        ), is_linked=(1, 'Peat Bog')),
+        Spell('Peat Bog', [155], Effects(
+            create_stacking_values(((22, 25),), 5, 10),
+            create_stacking_values(((26, 30),), 5, 10),
+            [EARTH] * 10,
+        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(10)],
+        is_linked=(2, 'Loafylactic')),
 
         # Spell('Hard Cash', [101], Effects(
         #     [['19-23']],
