@@ -1079,7 +1079,17 @@ DAMAGE_SPELLS = {
             [EARTH, EARTH, EARTH], heals=[True, False, True]
         ), aggregates=[('Allies', [0]),
                        ('Enemies', [1]),
-                       ('Allies at the start of their turn', [2])],),
+                       ('Allies at the start of their turn', [2])],
+        is_linked=(1, 'Secret Word')),
+        Spell('Secret Word', [150], Effects(
+            [['28-32'], ['28-32'], ['58-62'], ['58-62']],
+            [['34-38'], ['34-38'], ['64-68'], ['64-68']],
+            [AIR] * 4, heals=[True, False, True, False]
+        ), aggregates=[('Allies, not charged', [0]),
+                       ('Enemies, not charged', [1]),
+                       ('Allies, charged once', [2]),
+                       ('Enemies, charged once', [3])],
+        is_linked=(2, 'Warpaint')),
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
