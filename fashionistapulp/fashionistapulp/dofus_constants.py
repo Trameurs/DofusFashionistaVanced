@@ -1036,7 +1036,20 @@ DAMAGE_SPELLS = {
         ), aggregates=[('Allies', [0]),
                        ('Ennemies', [1])],
         is_linked=(2, 'Lamentations')),
-
+        Spell('Turbulent Word', [25, 92, 159], Effects(
+            [['23-26', '29-33', '36-41'],
+             ['23-26', '29-33', '36-41']],
+            [['27-31', '35-39', '43-49'],
+             ['27-31', '35-39', '43-49']],
+            [FIRE, FIRE], heals=[True, False]
+        ), aggregates=[('Allies', [0]),
+                       ('Ennemies', [1])],
+        is_linked=(1, 'Furious Word')),
+        Spell('Furious Word', [135], Effects(
+            [['32-36']],
+            [['38-43']],
+            [EARTH]
+        ), is_linked=(2, 'Turbulent Word')),
 
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
