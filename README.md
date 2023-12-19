@@ -92,7 +92,14 @@ run_fashionista.bat
 ❌ Update UI to reflect new Dofus and Prytek       
 ✅ Add Forgelance          
 🚧(40%) Update all spells to 2.70          
-❌ Update weights of special items including Dofus and Prytek          
+❌ Update weights of special items including Dofus and Prytek   
+❌ Translate new content
+    ❌ French
+    ❌ Spanish
+    ❌ Portuguese
+❌ Add support for new languages
+    ❌ Deutsche
+    ❌ Italian   
 ❌ Details before release           
 
 # Reference
