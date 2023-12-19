@@ -986,7 +986,7 @@ DAMAGE_SPELLS = {
              ['22-24', '28-31']],
             [WATER, WATER]
         ), aggregates=[('Target', [0]),
-                       ('Allies around target are healed by', [1])],
+                       ('Allies around target are healed by 100% of damage', [1])],
         is_linked=(2, 'Vampiric Word')),
         Spell('Profanity', [6, 71, 138], Effects(
             [['14-16', '18-20', '22-25']],
@@ -1018,6 +1018,26 @@ DAMAGE_SPELLS = {
                     ('', [5]),
                     ('', [7]),
                     ('', [9])],),
+        Spell('Lamentations', [20, 87, 154], Effects(
+            [['18-20', '23-26', '29-32'],
+             ['9-10', '11-13', '14-16']],
+            [['22-24', '28-31', '35-38'],
+             ['11-12', '14-15', '17-19']],
+            [WATER, WATER], steals=[True, False], heals=[False, True],
+        ), aggregates=[('Enemies', [0]),
+                       ('Allies are healed by 50% of the damage on each ennemies', [1])],
+        is_linked=(1, 'Commotion')),
+        Spell('Commotion', [130, 197], Effects(
+            [['30-33', '33-37'],
+             ['30-33', '33-37']],
+            [['35-39', '40-44'],
+             ['35-39', '40-44']],
+            [FIRE, FIRE], heals=[True, False]
+        ), aggregates=[('Allies', [0]),
+                       ('Ennemies', [1])],
+        is_linked=(2, 'Lamentations')),
+
+
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
