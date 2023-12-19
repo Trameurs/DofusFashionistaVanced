@@ -1824,53 +1824,7 @@ DAMAGE_SPELLS = {
             [EARTH] * 2,
         ), aggregates=[('Not Charged', [0]),
                         ('Charged', [1])],
-        is_linked=(2, 'Fit of Rage')),
-        
-
-
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Spell('Fracture', [140], Effects(
-            [['34-38']],
-            [['41-46']],
-            [AIR],
-        ), is_linked=(2, 'Chopper')),
-        
-        Spell('Condemnation', [155], Effects(
-            [['25-29'],
-             ['25-29'],
-             ['41-45']],
-            None,
-            [AIR, FIRE, FIRE],
-        ), aggregates=[('', [0]),
-                       ('When it is cast on another target', [1]),
-                       ('If cast a second time on the first target', [2])],
-        is_linked=(2, 'Sword of Judgement')),
-        
-        Spell('Virtue', [160], Effects(
-            [['150']],
-            None,
-            ['buff_depow']
-        ), is_linked=(2, 'Power')),
-        
-        
-        
-        
-        
-        
-        
-        
+        is_linked=(2, 'Fit of Rage')), 
     ],
     'Masqueraider': [
         Spell('Picada', [1, 25, 52], Effects(
