@@ -1069,6 +1069,17 @@ DAMAGE_SPELLS = {
             [['34-37']],
             [WATER], steals=[True]
         ), is_linked=(2, "Prankster's Word")),
+        Spell('Warpaint', [40, 107, 174], Effects(
+            [['6-7', '7-9', '9-11'],
+             ['6-7', '7-9', '9-11'],
+             ['6-7', '7-9', '9-11']],
+            [['6-7', '7-9', '9-11'],
+             ['8-9', '10-12', '12-14'],
+             ['8-9', '10-12', '12-14']],
+            [EARTH, EARTH, EARTH], heals=[True, False, True]
+        ), aggregates=[('Allies', [0]),
+                       ('Enemies', [1]),
+                       ('Allies at the start of their turn', [2])],),
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
