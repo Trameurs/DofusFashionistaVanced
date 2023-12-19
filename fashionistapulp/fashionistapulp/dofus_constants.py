@@ -1756,6 +1756,33 @@ DAMAGE_SPELLS = {
             [AIR] * 2,
         ), aggregates=[('', [0, 1])],
         is_linked=(2, 'Celestial Sword')),
+        Spell('Power', [55, 122, 189], Effects(
+            [['100', '200', '300']],
+            [['120', '240', '350']],
+            ['buff_pow']
+        ),),
+        Spell('Endurance', [65, 131, 198], Effects(
+            [['22-25', '27-30', '30-34']],
+            [['27-30', '32-36', '36-41']],
+            [WATER],
+        ), is_linked=(1, 'Castigation')),
+        Spell('Castigation', [175], Effects(
+            [['34-38']],
+            [['41-46']],
+            [WATER],
+        ), is_linked=(2, 'Endurance')),
+        Spell('Sword of Iop', [70, 137], Effects(
+            [['30-33', '37-41']],
+            [['36-39', '44-49']],
+            [EARTH],
+        ), is_linked=(1, 'Pygmachia')),
+        Spell('Pygmachia', [180], Effects(
+            create_stacking_values(((9, 11),), 18, 4),
+            create_stacking_values(((11, 13),), 18, 4),
+            [EARTH]*4,
+        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(4)],
+        is_linked=(2, 'Sword of Iop')),
+
 
 
         
@@ -1794,11 +1821,7 @@ DAMAGE_SPELLS = {
                        ('When it is cast on another target', [1]),
                        ('If cast a second time on the first target', [2])],
         is_linked=(2, 'Sword of Judgement')),
-        Spell('Power', [50, 117, 184], Effects(
-            [['100', '200', '300']],
-            [['120', '240', '350']],
-            ['buff_pow']
-        ), is_linked=(1, 'Virtue')),
+        
         Spell('Virtue', [160], Effects(
             [['150']],
             None,
@@ -1807,22 +1830,8 @@ DAMAGE_SPELLS = {
         
         
         
-        Spell('Endurance', [180], Effects(
-            [['34-38']],
-            [['41-46']],
-            [WATER],
-        ), is_linked=(2, 'Fervour')),
-        Spell('Sword of Iop', [80, 147], Effects(
-            [['30-33', '37-41']],
-            [['36-39', '44-49']],
-            [EARTH],
-        ), is_linked=(1, 'Pygmachia')),
-        Spell('Pygmachia', [190], Effects(
-            create_stacking_values(((9, 11),), 15, 2),
-            create_stacking_values(((11, 13),), 18, 2),
-            [EARTH]*2,
-        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)],
-        is_linked=(2, 'Sword of Iop')),
+        
+        
         Spell('Sword of Fate', [85, 152], Effects(
             [['31-34', '38-42'],
              ['61-64', '78-82']],
