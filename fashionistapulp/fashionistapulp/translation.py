@@ -20,7 +20,7 @@ from django.utils import translation
 
 NON_EN_LANGUAGES = ['fr', 'pt', 'it', 'es', 'de']
 LANGUAGES = ['en'] + NON_EN_LANGUAGES
-SUPPORTED_LANGUAGES = ['en', 'fr', 'es', 'pt']
+SUPPORTED_LANGUAGES = ['en', 'fr', 'es', 'pt', 'de', 'it']
 
 
 def get_supported_language():
