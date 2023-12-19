@@ -1520,8 +1520,8 @@ DAMAGE_SPELLS = {
             steals=[True],
         ), is_linked=(1, 'Scuttle')),
         Spell('Scuttle', [95, 162], Effects(
-            [['38-43']],
-            [['46-52']],
+            [['38-43', '47-54']],
+            [['46-52', '57-65']],
             [FIRE],
         ), is_linked=(2, 'Pilfer')),
         Spell('Torrent', [6, 71, 138], Effects(
