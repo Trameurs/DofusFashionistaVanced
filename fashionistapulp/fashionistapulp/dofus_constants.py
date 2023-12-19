@@ -1679,15 +1679,41 @@ DAMAGE_SPELLS = {
             [EARTH]*2,
         ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)],
         is_linked=(2, 'Destructive Sword')),
+        Spell('Intimidation', [10, 77, 144], Effects(
+            [['6', '8', '10']] * 5,
+            [['7', '10', '12']] * 5,
+            [NEUTRAL, EARTH, FIRE, WATER, AIR],
+        ), aggregates=[('Hit in best element', [0]),
+                        ('', [1]),
+                        ('', [2]),
+                        ('', [3]),
+                        ('', [4])],),
+        Spell('Violence', [15, 82, 149], Effects(
+            [['40', '50']],
+            None,
+            ['buff_pshdam'],
+        ), stacks=4,),        
+        Spell('Concentration', [25, 92, 159], Effects(
+            [['19-21', '24-27', '30-34'],
+             ['13-15', '16-19', '20-24']],
+            [['23-26', '29-33', '36-41'],
+             ['15-18', '19-23', '24-29']],
+            [EARTH, EARTH],
+        ), aggregates=[('Summons', [0]),
+                        ('Others', [1])],
+        is_linked=(1, 'Sword of Judgement')),
+        Spell('Sword of Judgement', [135], Effects(
+            [['31-35'],
+             ['48-52']],
+            [['37-42'],
+             ['58-62']],
+            [WATER, WATER],
+        ), aggregates=[('', [0]),
+                       ('In 2 turns', [1])],
+        is_linked=(1, 'Condemnation')),
 
 
-
-
-        Spell('Intimidation', [1, 67, 133], Effects(
-            [['6-8', '8-10', '11-13']],
-            [['8-10', '10-12', '13-16']],
-            [NEUTRAL],
-        )),
+        
         Spell('Pounding', [105, 172], Effects(
             [['24-27','30-34']],
             [['29-33','36-41']],
@@ -1707,15 +1733,7 @@ DAMAGE_SPELLS = {
         ), is_linked=(2, 'Divine Sword')),
         
         
-        Spell('Concentration', [25, 92, 159], Effects(
-            [['19-21', '24-27', '30-34'],
-             ['13-15', '16-19', '20-24']],
-            [['23-26', '29-33', '36-41'],
-             ['15-18', '19-23', '24-29']],
-            [EARTH, EARTH],
-        ), aggregates=[('Summons', [0]),
-                        ('Others', [1])],
-        is_linked=(1, 'Accumulation')),
+        
         
         
         Spell('Fracture', [140], Effects(
@@ -1723,14 +1741,7 @@ DAMAGE_SPELLS = {
             [['41-46']],
             [AIR],
         ), is_linked=(2, 'Chopper')),
-        Spell('Sword of Judgement', [45, 112, 179], Effects(
-            [['12-14', '16-18', '19-21'],
-             ['12-14', '16-18', '19-21']],
-            [['14-16', '19-21', '23-25'],
-             ['14-16', '19-21', '23-25']],
-            [AIR, FIRE],
-        ), aggregates=[('', [0, 1])],
-        is_linked=(1, 'Condemnation')),
+        
         Spell('Condemnation', [155], Effects(
             [['25-29'],
              ['25-29'],
