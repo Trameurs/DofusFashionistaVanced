@@ -1090,6 +1090,16 @@ DAMAGE_SPELLS = {
                        ('Allies, charged once', [2]),
                        ('Enemies, charged once', [3])],
         is_linked=(2, 'Warpaint')),
+        Spell('War Cry', [50, 117, 184], Effects(
+            [['23-26', '31-35', '37-41']],
+            [['28-31', '38-42', '44-49']],
+            [EARTH]
+        ), is_linked=(1, 'Ritual Word')),
+        Spell('Ritual Word', [160], Effects(
+            [['28-32']] * 2,
+            [['34-38']] * 2,
+            [EARTH] * 2, heals=[False, True]
+        ), is_linked=(2, 'War Cry')),
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
