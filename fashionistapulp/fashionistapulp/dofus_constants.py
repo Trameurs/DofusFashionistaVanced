@@ -1711,6 +1711,31 @@ DAMAGE_SPELLS = {
         ), aggregates=[('', [0]),
                        ('In 2 turns', [1])],
         is_linked=(2, 'Concentration')),
+        Spell('Fervour', [30, 97, 164], Effects(
+            [['15-17', '19-22','24-27']],
+            [['18-20', '23-26','29-32']],
+            [WATER],
+        ), is_linked=(1, 'Threat')),
+        Spell('Threat', [140], Effects(
+            [['26-28']],
+            [['31-34']],
+            [WATER],
+        ), is_linked=(2, 'Fervour')),
+        Spell('Strengthstorm', [45, 112, 179], Effects(
+            [['17-20', '22-26', '27-31'] * 3,
+             ['21-25', '31-35', '41-45']],
+            [['20-23', '27-31', '32-37'] * 3,
+             ['21-25', '31-35', '41-45']],
+            [FIRE] * 4,
+        ), aggregates=[('First target', [0]),
+                       ('Second target not charged', [1, 2]),
+                       ('Second target charged', [3, 4])],
+        is_linked=(1, 'Tumult')),
+        Spell('Tumult', [155], Effects(
+            create_stacking_values(((19, 21),), 20, 5),
+            [FIRE] * 5,
+        ), aggregates=[(str(n) + " targets", [n]) for n in range(5)],
+        is_linked=(2, 'Strengthstorm')),
 
 
         
@@ -1720,17 +1745,14 @@ DAMAGE_SPELLS = {
             [AIR],
         ), is_linked=(2, 'Pressure')),
         
-        Spell('Threat', [110, 177], Effects(
-            [['21-23', '26-28']],
-            [['25-27', '31-34']],
-            [WATER],
-        ), is_linked=(2, 'Outpouring')),
+        
         
         Spell('Cleaver', [115, 182], Effects(
             [['40-45', '47-53']],
             [['48-54', '56-54']],
             [WATER],
         ), is_linked=(2, 'Divine Sword')),
+        
         
         
         
@@ -1762,16 +1784,7 @@ DAMAGE_SPELLS = {
             None,
             ['buff_depow']
         ), is_linked=(2, 'Power')),
-        Spell('Strengthstorm', [60, 127, 194], Effects(
-            [['24-28', '30-34', '34-38']],
-            [['30-33', '36-41', '41-46']],
-            [FIRE],
-        ), is_linked=(1, 'Tumult')),
-        Spell('Tumult', [170], Effects(
-            [['19-21']],
-            [['23-25']],
-            [FIRE],
-        ), is_linked=(2, 'Strengthstorm')),
+        
         Spell('Celestial Sword', [65, 131, 198], Effects(
             [['28-31', '31-35', '36-40']],
             [['34-37', '38-42', '43-48']],
@@ -1782,11 +1795,7 @@ DAMAGE_SPELLS = {
             [['103-113']],
             [AIR],
         ), is_linked=(2, 'Celestial Sword')),
-        Spell('Fervour', [70, 137], Effects(
-            [['19-21','24-27']],
-            [['22-25','29-32']],
-            [WATER],
-        ), is_linked=(1, 'Endurance')),
+        
         Spell('Endurance', [180], Effects(
             [['34-38']],
             [['41-46']],
