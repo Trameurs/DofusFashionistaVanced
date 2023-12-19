@@ -1007,7 +1007,7 @@ DAMAGE_SPELLS = {
              ['47-52', '54-60']] * 5,
             [['63', '72'],
              ['57-63', '65-72']] * 5,
-            [NEUTRAL, EARTH, FIRE, WATER, AIR] * 2, heals=[False, False, False, False, False, True, True, True, True, True],
+            [NEUTRAL, EARTH, FIRE, WATER, AIR] * 2, heals=[False, True, False, True, False, True, False, True, False, True],
         ), aggregates=[("Hit in best element", [0]),
                     ('', [2]),
                     ('', [4]),
