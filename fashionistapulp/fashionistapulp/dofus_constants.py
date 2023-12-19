@@ -1123,7 +1123,22 @@ DAMAGE_SPELLS = {
             [['23-27']] * 2,
             [['28-32']] * 2,
             [FIRE] * 2, heals=[True, False]
-        ), is_linked=(2, 'Pilfering')),
+        ), aggregates=[('Allies', [0]),
+                       ('Ennemies', [1])],
+        is_linked=(2, 'Pilfering')),
+        Spell('Flowery Word', [70, 137], Effects(
+            [['26-29', '33-37']] * 2,
+            [['31-35', '40-44']] * 2,
+            [AIR] * 2, heals=[False, True]
+        ), aggregates=[('Ennemies', [0]),
+                       ('Allies around ennemies are healed at the end of ennemies turns', [1])],
+        is_linked=(1, 'Enchanted Thicket')),
+        Spell('Enchanted Thicket', [180], Effects(
+            [['39-43']] * 2,
+            [['45-50']] * 2,
+            [AIR] * 2, heals=[True, False]
+        ), aggregates=[('Allies', [0]),
+                       ('Ennemies', [1])],
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
