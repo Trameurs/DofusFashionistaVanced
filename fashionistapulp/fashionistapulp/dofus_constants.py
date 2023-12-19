@@ -1142,12 +1142,12 @@ DAMAGE_SPELLS = {
         is_linked=(2, 'Flowery Word')),
         Spell('Tribal Paintbrush', [80, 147], Effects(
             [['15-18', '19-22']] * 2 +
-            create_stacking_values(((15, 18), (19, 22)), 10, 8),
+            create_stacking_values(((15, 18), (19, 22)), 10, 10),
             [['19-22', '23-26']] * 2 +
-            create_stacking_values(((19, 22), (23, 26)), 10, 8),
-            [EARTH] * 10, 
+            create_stacking_values(((19, 22), (23, 26)), 10, 10),
+            [EARTH] * 12, 
         ), aggregates=[('Allies', [0]),
-                    ('Enemies', [1])] + [(CHARGED_LABELS[n], [n+2]) for n in range(8)])
+                    ('Enemies', [1])] + [(CHARGED_LABELS[n], [n+2]) for n in range(10)])
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
