@@ -1315,6 +1315,14 @@ DAMAGE_SPELLS = {
                         ('', [2]),
                         ('', [3]),
                         ('', [4])],),
+        Spell('Unsummoning', [85, 152], Effects(
+            [['31-34', '39-42', '16-18']] * 3,
+            [['38-40', '47-50', '19-21']] * 3,
+            [FIRE] * 3,
+        ), aggregates=[('', [0]),
+                        ('On summons', [1]),
+                        ('', [2])], 
+        is_linked=(1, 'Dowsing')),
 
         # Spell('Hard Cash', [101], Effects(
         #     [['19-23']],
