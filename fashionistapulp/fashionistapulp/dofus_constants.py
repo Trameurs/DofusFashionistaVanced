@@ -1308,14 +1308,13 @@ DAMAGE_SPELLS = {
         ), is_linked=(2, 'Shovel of the Ancients')),
         Spell('Lucky Shovel', [185], Effects(
             [['20']] * 5,
-            [None] * 5,
+            None,
             [NEUTRAL, EARTH, FIRE, WATER, AIR],
         ), aggregates=[('Hit in best element', [0]),
                         ('', [1]),
                         ('', [2]),
                         ('', [3]),
-                        ('', [4])],
-        ),
+                        ('', [4])],),
 
         # Spell('Hard Cash', [101], Effects(
         #     [['19-23']],
