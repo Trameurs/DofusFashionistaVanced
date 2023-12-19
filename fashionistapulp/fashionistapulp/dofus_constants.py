@@ -1142,7 +1142,7 @@ DAMAGE_SPELLS = {
         is_linked=(2, 'Flowery Word')),
         Spell('Tribal Paintbrush', [80, 147], Effects(
             [['15-18', '19-22']] * 2 +
-            create_stacking_values(((15, 18), (19, 22)), 10, 8) +
+            create_stacking_values(((15, 18), (19, 22)), 10, 8),
             [['19-22', '23-26']] * 2 +
             create_stacking_values(((19, 22), (23, 26)), 10, 8),
             [EARTH] * 10, 
