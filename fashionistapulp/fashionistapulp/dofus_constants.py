@@ -1508,111 +1508,111 @@ DAMAGE_SPELLS = {
             [['17-19', '22-25', '29-32']],
             [EARTH],
         ), is_linked=(1, 'Mooring')),
-        Spell('Mooring', [105], Effects(
-            [['17-21']],
-            [['21-25']],
+        Spell('Mooring', [100, 167], Effects(
+            [['14-16', '17-20']],
+            [['17-20', '21-25']],
             [EARTH],
         ), is_linked=(2, 'Anchor')),
-        Spell('Pilfer', [1, 30, 60], Effects(
-            [['11-13', '14-16', '17-19']],
-            [['14-16', '17-19', '20-22']],
+        Spell('Pilfer', [1, 66, 132], Effects(
+            [['13-15', '17-20', '22-25']],
+            [['16-18', '21-24', '26-30']],
             [FIRE],
             steals=[True],
         ), is_linked=(1, 'Scuttle')),
-        Spell('Scuttle', [110], Effects(
-            [['47-53']],
-            [['52-58']],
+        Spell('Scuttle', [95, 162], Effects(
+            [['38-43']],
+            [['46-52']],
             [FIRE],
         ), is_linked=(2, 'Pilfer')),
-        Spell('Torrent', [6, 42, 74], Effects(
-            [['15-19', '19-23', '23-27']],
-            [['18-22', '22-26', '26-30']],
+        Spell('Torrent', [6, 71, 138], Effects(
+            [['15-19', '20-23', '25-28']],
+            [['19-22', '24-27', '29-33']],
             [WATER],
         ), is_linked=(1, 'Harmattan')),
-        Spell('Harmattan', [120], Effects(
-            [['28-32']],
-            [['34-38']],
+        Spell('Harmattan', [115, 182], Effects(
+            [['24-27', '28-32']],
+            [['29-33', '34-38']],
             [AIR],
         ), is_linked=(2, 'Torrent')),
-        Spell('Scaphander', [13, 54, 94], Effects(
+        Spell('Scaphander', [15, 82, 149], Effects(
             [['12', '19', '25'],
-             ['28', '34', '40']],
+             ['25', '35', '40']],
             [['16', '23', '30'],
-             ['32', '36', '50']],
+             ['30', '40', '50']],
             ['buff_dam', 'buff_pshdam']
         )),
-        Spell('Backwash', [22, 65, 108], Effects(
-            [['13-17', '17-21', '21-25']],
-            [['16-20', '20-24', '24-28']],
+        Spell('Backwash', [25, 92, 159], Effects(
+            [['12-15', '17-20', '22-26']],
+            [['16-20', '21-25', '27-32']],
             [EARTH],
-        ), is_linked=(1, 'Torpedo')),
-        Spell('Torpedo', [140], Effects(
-            [['25-29']],
-            [['29-33']],
-            [AIR],
+        ), is_linked=(1, 'Surge')),
+        Spell('Surge', [135], Effects(
+            [['30-34']],
+            [['36-41']],
+            [FIRE],
         ), is_linked=(2, 'Backwash')),
-        Spell('Tide', [27, 72, 118], Effects(
-            [['20-24', '24-28', '28-32']],
-            [['26-30', '30-34', '34-38']],
+        Spell('Tide', [30, 97, 164], Effects(
+            [['18-20', '23-26', '28-32']],
+            [['21-24', '27-31', '34-38']],
             [AIR],
         ), is_linked=(1, 'Corrosion')),
-        Spell('Corrosion', [145], Effects(
+        Spell('Corrosion', [140], Effects(
             [['34-38']],
-            [['39-43']],
+            [['41-46']],
             [AIR],
         ), is_linked=(2, 'Tide')),
-        Spell('Vapour', [32, 81, 124], Effects(
-            [['23-27', '27-31', '31-35']],
-            [['28-32', '32-36', '36-40']],
+        Spell('Vapour', [35, 102, 169], Effects(
+            [['16-18', '22-25', '28-32']],
+            [['20-22', '27-31', '34-39']],
             [FIRE],
         ), is_linked=(1, 'Valve')),
-        Spell('Valve', [150], Effects(
-            [['16-18'],
+        Spell('Valve', [145], Effects(
+            [['18-21'],
              ['30']],
-            [['19-21'],
+            [['22-25'],
              ['30']],
             [FIRE, 'buff_heals'],
         ), is_linked=(2, 'Vapour')),
-        Spell('Periscope 1', [50, 103, 143], Effects(
-            [['21-25', '26-30', '31-35']],
-            [['25-29', '30-34', '35-39']],
+        Spell('Spyglass', [50, 117, 184], Effects(
+            [['20-22', '26-30', '31-35']],
+            [['23-27', '32-36', '37-42']],
             [WATER],
-        ), is_linked=(1, 'Periscope 2')),
-        Spell('Periscope 2', [165], Effects(
+        ), is_linked=(1, 'Periscope')),
+        Spell('Periscope 2', [160], Effects(
             [['30-34']],
-            [['36-40']],
+            [['36-41']],
             [WATER],
         ), is_linked=(2, 'Periscope 1')),
-        Spell('First Aid', [56, 112, 147], Effects(
-            [['19-23', '24-28', '29-33']],
-            [['25-29', '30-34', '35-39']],
+        Spell('First Aid', [55, 122, 189], Effects(
+            [['18-21', '22-26', '25-29']],
+            [['22-25', '27-31', '30-35']],
             [FIRE],
             heals=[True]
         ), is_linked=(1, 'Rescue')),
-        Spell('Rescue', [170], Effects(
-            [['19-21']],
+        Spell('Rescue', [165], Effects(
             [['23-25']],
+            [['27-30']],
             [FIRE],
             heals=[True]
         ), is_linked=(2, 'First Aid')),
-        Spell('Surge', [62, 116, 153], Effects(
-            [['20-24', '25-29', '30-34']],
-            [['25-29', '30-34', '35-39']],
-            [FIRE],
-        ), is_linked=(1, 'Short-Circuit')),
-        Spell('Short-Circuit', [175], Effects(
-            [['38-42']],
-            None,
+        Spell('Torpedo', [60, 127, 194], Effects(
+            [['18-21', '22-26', '25-29']],
+            [['22-25', '27-31', '30-35']],
             [AIR],
-        ), is_linked=(2, 'Surge')),
-        Spell('Ambush ', [69, 122, 162], Effects(
-            [['8-10', '11-13', '14-16']] * 4,
-            [['11-13', '14-16', '17-19']] * 4,
+        ), is_linked=(1, 'Short-Circuit')),
+        Spell('Short-Circuit', [170], Effects(
+            [['38-42']],
+            [['44-49']],
+            [AIR],
+        ), is_linked=(2, 'Torpedo')),
+        Spell('Ambush ', [65, 131, 198], Effects(
+            [['7-9', '9-11', '10-12']] * 4,
+            [['9-11', '11-13', '12-14']] * 4,
             [FIRE, WATER, EARTH, AIR],
          ), aggregates=[('', [0, 1, 2, 3])]),
-        Spell('Froth', [84, 134, 178], Effects(
-            [['28-32', '33-37', '38-42']],
-            [['33-37', '38-42', '43-47']],
+        Spell('Froth', [80, 147], Effects(
+            [['30-34', '38-43']],
+            [['36-40', '45-51']],
             [WATER],
         ), is_linked=(1, 'Nautilus')),
         Spell('Nautilus', [190], Effects(
@@ -1620,18 +1620,18 @@ DAMAGE_SPELLS = {
             [['28-32']],
             [WATER],
         ), is_linked=(2, 'Froth')),
-        Spell('Trident', [92, 141, 187], Effects(
-            [['21-25', '26-30', '31-35'],
-             ['7-8', '9-10', '11-12']],
-            [['26-30', '31-35', '36-40'],
-             ['7-8', '9-10', '11-12']],
+        Spell('Trident', [85, 152], Effects(
+            [['25-28', '31-35'],
+             ['9-11', '13-15']],
+            [['30-34', '37-42'],
+             ['9-11', '13-15']],
             [EARTH, EARTH],
          ), aggregates=[('Hit', [0]),
                         ('Pushback Poison', [1])],
         is_linked=(1, 'Seizing')),
         Spell('Seizing', [195], Effects(
-            [['30-34']],
-            [['35-39']],
+            [['32-36']],
+            [['38-43']],
             [EARTH],
         ), is_linked=(2, 'Trident')),
     ],
