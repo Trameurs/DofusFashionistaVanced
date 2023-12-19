@@ -1111,7 +1111,19 @@ DAMAGE_SPELLS = {
             [['37-40']] * 2,
             [['41-45']] * 2,
             [WATER] * 2, heals=[False, True]
-        ), is_linked=(2, 'Forbidden Word')),
+        ), aggregates=[('Ennemies', [0]),
+                       ('Allies', [1])],
+        is_linked=(2, 'Forbidden Word')),
+        Spell('Pilfering', [65, 131, 198], Effects(
+            [['14-16', '17-19', '19-21']],
+            [['17-19', '20-22', '22-25']],
+            [FIRE], steals=[True]
+        ), is_linked=(1, 'Distracting Word')),
+        Spell('Distracting Word', [175], Effects(
+            [['23-27']] * 2,
+            [['28-32']] * 2,
+            [FIRE] * 2, heals=[True, False]
+        ), is_linked=(2, 'Pilfering')),
         # Spell('Wounding Word', [1, 68, 134], Effects(
         #     [['12-14', '15-17', '20-22']],
         #     [['14-16', '19-21', '24-26']],
