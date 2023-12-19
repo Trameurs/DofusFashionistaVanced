@@ -1646,6 +1646,43 @@ DAMAGE_SPELLS = {
             [['31-35', '38-43']],
             [AIR],
         ), is_linked=(2, 'Pressure')),
+        Spell('Outpouring', [1, 68, 134], Effects(
+            [['23-25', '30-33', '38-42']],
+            [['27-30', '36-39', '46-50']],
+            [WATER],
+        ), is_linked=(1, 'Destructive Ring')),
+        Spell('Destructive Ring', [105, 172], Effects(
+            [['19-23', '24-28']],
+            [['23-27', '29-34']],
+            [AIR],
+        ), is_linked=(2, 'Outpouring')),
+        Spell('Divine Sword', [3, 69, 136], Effects(
+            [['16-18', '20-23', '26-30'],
+             ['10', '20', '30']],
+            [['19-21', '24-28', '31-36'],
+             ['10', '20', '30']],
+            [AIR, 'buff_dam'],
+        ), is_linked=(1, 'Chopper')),
+        Spell('Chopper', [110, 177], Effects(
+            [['19-22', '23-27']],
+            [['22-26', '28-32']],
+            [FIRE],
+        ), is_linked=(1, 'Divine Sword')),
+        Spell('Destructive Sword', [6, 71, 138], Effects(
+            [['19-22', '26-29', '32-36']],
+            [['23-26', '31-35', '38-43']],
+            [FIRE],
+        ), is_linked=(1, 'Accumulation')),
+        Spell('Accumulation', [115, 182], Effects(
+            create_level_based_stacking_values(((19, 22), (22, 26),), (20, 24), 2),
+            create_level_based_stacking_values(((22, 27), (26, 31),), (24, 24), 2),
+            [EARTH]*2,
+        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)],
+        is_linked=(2, 'Destructive Sword')),
+
+
+
+
         Spell('Intimidation', [1, 67, 133], Effects(
             [['6-8', '8-10', '11-13']],
             [['8-10', '10-12', '13-16']],
@@ -1656,38 +1693,20 @@ DAMAGE_SPELLS = {
             [['29-33','36-41']],
             [AIR],
         ), is_linked=(2, 'Pressure')),
-        Spell('Outpouring', [3, 39, 136], Effects(
-            [['23-25', '30-33', '38-42']],
-            [['27-30', '36-39', '46-50']],
-            [WATER],
-        ), is_linked=(1, 'Threat')),
+        
         Spell('Threat', [110, 177], Effects(
             [['21-23', '26-28']],
             [['25-27', '31-34']],
             [WATER],
         ), is_linked=(2, 'Outpouring')),
-        Spell('Divine Sword', [6, 71, 138], Effects(
-            [['12-14', '17-19', '21-23'],
-             ['10', '15', '20']],
-            [['15-17', '20-22', '25-28'],
-             ['13', '18', '23']],
-            [AIR, 'buff_dam'],
-        ), is_linked=(1, 'Cleaver')),
+        
         Spell('Cleaver', [115, 182], Effects(
             [['40-45', '47-53']],
             [['48-54', '56-54']],
             [WATER],
         ), is_linked=(2, 'Divine Sword')),
-        Spell('Destructive Sword', [10, 77, 144], Effects(
-            [['19-22', '26-29', '32-36']],
-            [['23-26', '31-35', '38-43']],
-            [FIRE],
-        ), is_linked=(1, 'Destructive Ring')),
-        Spell('Destructive Ring', [120, 187], Effects(
-            [['23-26', '26-30']],
-            [['27-31', '31-36']],
-            [AIR],
-        ), is_linked=(2, 'Destructive Sword')),
+        
+        
         Spell('Concentration', [25, 92, 159], Effects(
             [['19-21', '24-27', '30-34'],
              ['13-15', '16-19', '20-24']],
@@ -1697,17 +1716,8 @@ DAMAGE_SPELLS = {
         ), aggregates=[('Summons', [0]),
                         ('Others', [1])],
         is_linked=(1, 'Accumulation')),
-        Spell('Accumulation', [135], Effects(
-            create_stacking_values(((22, 26),), 20, 2),
-            create_stacking_values(((26, 31),), 24, 2),
-            [EARTH]*2,
-        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)],
-        is_linked=(2, 'Concentration')),
-        Spell('Chopper', [30, 97, 164], Effects(
-            [['11-14', '14-18', '18-22']],
-            [['14-17', '17-21', '22-26']],
-            [FIRE],
-        ), is_linked=(1, 'Fracture')),
+        
+        
         Spell('Fracture', [140], Effects(
             [['34-38']],
             [['41-46']],
