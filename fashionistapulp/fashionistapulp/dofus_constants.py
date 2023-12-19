@@ -1206,6 +1206,19 @@ DAMAGE_SPELLS = {
                        ('Charged once', [2]),
                        ('Charged twice', [3])],
         is_linked=(2, 'Prime of Life')),
+        Spell('Shovel Kiss', [3, 69, 136], Effects(
+            [['11-14', '15-18', '19-23']],
+            [['14-16', '18-21', '23-28']],
+            [FIRE],
+        ), is_linked=(1, 'Deposit')),
+        Spell('Deposit', [110, 177], Effects(
+            [['23-26', '29-32']] * 2,
+            [['28-31', '35-38']] * 2,
+            [FIRE] * 2, heals=[False, True]
+        ), aggregates=[('Ennemies', [0]),
+                       ('Allies at the end of their turns', [1])],
+        is_linked=(2, 'Shovel Kiss')),
+
         # Spell('Hard Cash', [101], Effects(
         #     [['19-23']],
         #     [['22-26']],
