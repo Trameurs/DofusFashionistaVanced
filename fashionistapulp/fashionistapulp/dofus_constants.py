@@ -1782,23 +1782,59 @@ DAMAGE_SPELLS = {
             [EARTH]*4,
         ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(4)],
         is_linked=(2, 'Sword of Iop')),
-
-
-
-        
-        Spell('Pounding', [105, 172], Effects(
-            [['24-27','30-34']],
-            [['29-33','36-41']],
+        Spell('Sword of Fate', [80, 147], Effects(
+            [['31-34', '38-42'],
+             ['61-64', '78-82']],
+            [['37-40', '46-50'],
+             ['67-70', '86-90']],
+            [FIRE, FIRE],
+         ), aggregates=[('Not Charged', [0]),
+                        ('Charged', [1])],
+        is_linked=(1, 'Pounding')),
+        Spell('Pounding', [190], Effects(
+            [['30-34']],
+            [['36-41']],
             [AIR],
-        ), is_linked=(2, 'Pressure')),
-        
-        
-        
-        Spell('Cleaver', [115, 182], Effects(
+        ), is_linked=(2, 'Sword of Fate')),
+        Spell('Cleaver', [85, 152], Effects(
             [['40-45', '47-53']],
-            [['48-54', '56-54']],
+            [['48-54', '56-64']],
             [WATER],
-        ), is_linked=(2, 'Divine Sword')),
+        ), is_linked=(1, 'Sentence')),
+        Spell('Sentence', [195], Effects(
+            [['13-16'],
+             ['26-30']],
+            [['16-19'],
+             ['32-36']],
+            [FIRE, FIRE],
+        ), aggregates=[('Target', [0]),
+                        ('Enemies near target', [1])]
+        , is_linked=(2, 'Cleaver')),
+        Spell('Fit of Rage', [90, 157], Effects(
+            create_stacking_values(((23, 25), (28, 32),), 20, 3),
+            create_stacking_values(((27, 29), (34, 38),), 20, 3),
+            [EARTH] * 3,
+        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(3)],
+        is_linked=(1, 'Iop\'s Wrath')),
+        Spell('Iop\'s Wrath', [200], Effects(
+            [['81-100'],
+             ['191-210']],
+            [['97-120'],
+             ['207-230']],
+            [EARTH] * 2,
+        ), aggregates=[('Not Charged', [0]),
+                        ('Charged', [1])],
+        is_linked=(2, 'Fit of Rage')),
+        
+
+
+
+        
+        
+        
+        
+        
+        
         
         
         
@@ -1832,42 +1868,9 @@ DAMAGE_SPELLS = {
         
         
         
-        Spell('Sword of Fate', [85, 152], Effects(
-            [['31-34', '38-42'],
-             ['61-64', '78-82']],
-            [['37-40', '46-50'],
-             ['72-75', '91-95']],
-            [FIRE, FIRE],
-         ), aggregates=[('Not Charged', [0]),
-                        ('Charged', [1])],
-        is_linked=(1, 'Sentence')),
-        Spell('Sentence', [195], Effects(
-            [['13-16'],
-             ['28-32']],
-            [['16-19'],
-             ['28-32']],
-            [FIRE, FIRE],
-        ), aggregates=[('Target', [0]),
-                        ('Enemies near target', [1])]
-        , is_linked=(2, 'Sword of Fate')),
-        Spell('Iop\'s Wrath', [90, 157], Effects(
-            [['65-80', '81-100'],
-             ['155-170', '191-210']],
-            [['78-96', '97-120'],
-             ['178-196', '217-230']],
-            [EARTH, EARTH],
-        ), aggregates=[('Not Charged', [0]),
-                        ('Charged', [1])],
-        is_linked=(1, 'Fit of Rage')),
-        Spell('Fit of Rage', [200], Effects(
-            [['28-32'],
-             ['58-62']],
-            [['34-38'],
-             ['70-74']],
-            [EARTH, EARTH],
-        ), aggregates=[('Not Charged', [0]),
-                        ('Charged', [1])],
-        is_linked=(2, 'Iop\'s Wrath')),
+        
+        
+        
     ],
     'Masqueraider': [
         Spell('Picada', [1, 25, 52], Effects(
