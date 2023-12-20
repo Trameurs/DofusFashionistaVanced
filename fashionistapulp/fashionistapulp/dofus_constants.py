@@ -458,6 +458,12 @@ CHARGED_LABELS = [
     'Charged twice',
 ] + ['Charged %d times' % n for n in range(3, 10)]
 
+BOMB_LABELS = [
+    '',
+    '1 bomb',
+] + ['%d bombs' % n for n in range(2, 10)]
+
+
 DAMAGE_SPELLS = {
     'default': [
         Spell("Grunob's Lightning Strike", [20, 87, 154], Effects(
@@ -2307,7 +2313,47 @@ DAMAGE_SPELLS = {
                         ('Wall during caster turn', [1]),
                         ('Wall after caster turn', [2])],
         is_linked=(2, 'Explobomb')),
-
+        Spell('Grenado', [1, 68, 134], Effects(
+            [['9-10', '13-14', '17-19'],
+             ['15-18', '18-21', '24-27'],
+             ['8-9', '9-10', '12-14']],
+            None,
+            [AIR] * 3,
+        ), aggregates=[('Explosion', [0]),
+                        ('Wall during caster turn', [1]),
+                        ('Wall after caster turn', [2])],
+        is_linked=(1, 'Resilient Grenado')),
+        Spell('Resilient Grenado', [105, 172], Effects(
+            [['13-14', '17-19'],
+             ['18-21', '24-27'],
+             ['9-10', '12-14']],
+            None,
+            [AIR] * 3,
+        ), aggregates=[('Explosion', [0]),
+                        ('Wall during caster turn', [1]),
+                        ('Wall after caster turn', [2])],
+        is_linked=(2, 'Grenado')),
+        Spell('Pulsar', [6, 71, 138], Effects(
+            [['13-15', '18-20', '23-25']],
+            [['16-18', '22-24', '28-30']],
+            [FIRE],
+        ), is_linked=(1, 'Shrapnel')),
+        Spell('Shrapnel', [115, 182], Effects(
+            [['14-16', '17-19']],
+            [['17-19', '20-23']],
+            [WATER],
+        ), is_linked=(2, 'Pulsar')),
+        Spell('Carbine', [15, 82, 149], Effects(
+            [['14-16', '18-20', '23-25']],
+            [['17-19', '22-24', '28-30']],
+            [AIR],
+        ), is_linked=(1, 'Obliteration')),
+        Spell('Obliteration', [125, 192], Effects(
+            create_level_based_stacking_values(((29, 32), (33, 37)), (7, 10), 6),
+            create_level_based_stacking_values(((35, 39), (40, 44)), (7, 10), 6),
+            [EARTH] * 6,
+        ), aggregates=[(BOMB_LABELS[n], [n]) for n in range(6)],
+        is_linked=(2, 'Carbine')),
 
 
 
@@ -2323,20 +2369,11 @@ DAMAGE_SPELLS = {
             [FIRE],
             steals=[True],
         ), is_linked=(1, 'Obliteration')),
-        Spell('Obliteration', [110], Effects(
-            [['37-43']],
-            [['41-47']],
-            [FIRE],
-        ), is_linked=(2, 'Extraction')),
+        
         Spell('Musket', [120], Effects(
             [['19-21']],
             [['23-25']],
             [EARTH],
-        )),
-        Spell('Grenado', [9, 47, 87], Effects(
-            [['9-10', '13-14', '17-19']],
-            None,
-            [AIR],
         )),
         Spell('Boomerang Daggers', [17, 58, 102], Effects(
             [['15-17', '19-21', '23-25']],
@@ -2364,11 +2401,7 @@ DAMAGE_SPELLS = {
             None,
             [WATER],
         )),
-        Spell('Pulsar', [38, 90, 132], Effects(
-            [['38-42', '47-51', '56-60']],
-            [['44-48', '55-59', '66-70']],
-            [FIRE],
-        ), is_linked=(1, 'Gluing Explobomb')),
+        
         Spell('Gluing Explobomb', [155], Effects(
             [['30-34']],
             None,
@@ -2379,11 +2412,7 @@ DAMAGE_SPELLS = {
             [['46-50']],
             [EARTH],
         )),
-        Spell('Carbine', [56, 112, 147], Effects(
-            [['17-19', '22-24', '27-29']],
-            [['21-23', '26-28', '31-33']],
-            [AIR],
-        ), is_linked=(1, 'Machine Gun')),
+        
         Spell('Machine Gun', [170], Effects(
             [['43-47']],
             [['48-52']],
