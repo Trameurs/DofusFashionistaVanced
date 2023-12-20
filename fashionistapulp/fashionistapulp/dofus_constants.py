@@ -2448,52 +2448,30 @@ DAMAGE_SPELLS = {
                         ('', [1]),
                         ('', [2]),
                         ('', [3])]),
-
-
-
-
-
-
-
-
-
-
-        
-        
-        Spell('Musket', [120], Effects(
-            [['19-21']],
-            [['23-25']],
+        Spell('Musket', [75, 142], Effects(
+            [['15-17', '19-21']],
+            [['18-20', '23-25']],
             [EARTH],
-        )),
-        
-        
-        Spell('Deception', [27, 72, 118], Effects(
-            [['25-29', '30-34', '35-39']],
-            [['29-33', '34-38', '39-43']],
+        ), is_linked=(1, 'Shot Pellets')),
+        Spell('Shot Pellets', [185], Effects(
+            [['30-34'],
+             ['15-17']],
+            [['34-40'],
+             ['18-20']],
+            [FIRE] * 2, steals=[True, True],
+        ), aggregates=[('Enemies', [0]),
+                        ('Allies', [1])],
+        is_linked=(2, 'Musket')),
+        Spell('Deception', [85, 152], Effects(
+            [['27-30', '33-37']],
+            [['32-36', '40-44']],
             [WATER],
-        ), is_linked=(1, 'Stolen Goods')),
-        
-        
-        Spell('Gluing Explobomb', [155], Effects(
-            [['30-34']],
-            None,
-            [FIRE],
-        ), is_linked=(2, 'Pulsar')),
-        Spell('Arquebus', [165], Effects(
-            [['43-47']],
-            [['46-50']],
+        ), is_linked=(1, 'Arquebus')),
+        Spell('Arquebus', [190], Effects(
+            [['35-39']],
+            [['42-47']],
             [EARTH],
-        )),
-        
-        
-        Spell('Last Breath', [62, 116, 153], Effects(
-            [['70', '110', '150']],
-            [['90', '130', '170']],
-            ['buff_pow']
-        )),
-        
-        
-        
+        ), is_linked=(2, 'Deception')),  
     ],
     'Sacrier': [
         Spell('Hemorrhage', [1, 66, 132], Effects(
