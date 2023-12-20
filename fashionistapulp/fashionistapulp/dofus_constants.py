@@ -2063,7 +2063,17 @@ DAMAGE_SPELLS = {
                        ('Three Tofus', [3]),
                        ('Four Tofus', [4]),
                        ('Five Tofus', [5])],
-        is_linked=(1, 'Plucking')),
+        is_linked=(1, 'Dragon Heart')),
+        Spell('Dragon Heart', [160], Effects(
+            [['22-24'],
+             ['11-12'],
+             ['22-24']],
+            None,
+            [FIRE] * 3, heals=[True, True, False],
+        ), aggregates=[('Allies', [0]),
+                       ('Caster', [1]),
+                       ('Enemies', [2])],
+        is_linked=(2, 'Duster')),
 
 
 
