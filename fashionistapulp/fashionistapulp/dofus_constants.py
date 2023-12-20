@@ -2439,7 +2439,7 @@ DAMAGE_SPELLS = {
             [['35-39']],
             [['42-47']],
             [WATER],
-        ), is_linked=(1, 'Boomerang Daggers')),
+        ), is_linked=(2, 'Boomerang Daggers')),
 
 
 
