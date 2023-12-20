@@ -2233,48 +2233,6 @@ DAMAGE_SPELLS = {
         ), aggregates=[('Sober', [0]),
                        ('Drunk', [1])], 
         is_linked=(2, 'Eviction')),
-        Spell('Explosive Flask', [65, 131, 198], Effects(
-            [['13-15', '16-18', '18-20'],
-             ['16-19', '20-22', '22-25']],
-            [['16-18', '19-21', '22-24'],
-             ['20-22', '24-27', '26-30']],
-            [FIRE] * 2,
-        ), aggregates=[('Sober', [0]),
-                        ('Drunk', [1])],
-        is_linked=(1, 'Pandatak')),
-        Spell('Pandatak', [175], Effects(
-            [['38-42'],
-             ['46-50']],
-            [['46-50'],
-             ['54-58']],
-            [EARTH] * 2,
-        ), aggregates=[('Sober', [0]),
-                        ('Drunk', [1])],
-        is_linked=(2, 'Explosive Flask')),
-        Spell('Alcoholic Breath', [75, 142], Effects(
-            [['23-26', '28-32']],
-            [['27-31', '34-38']],
-            [AIR],
-        ), is_linked=(1, 'Waterfall')),
-        Spell('Waterfall', [185], Effects(
-            [['24-28']],
-            [['29-34']],
-            [WATER],
-        ), is_linked=(2, 'Alcoholic Breath')),
-        Spell('Melancholy', [80, 147], Effects(
-            [['29-32', '36-40'],
-             ['35-38', '41-45']],
-            [['35-39', '43-48'],
-             ['44-48', '51-556']],
-            [WATER] * 2,
-        ), aggregates=[('Sober', [0]),
-                       ('Drunk', [1])],
-        is_linked=(1, 'Pandjiu')),
-        Spell('Pandjiu', [190], Effects(
-            [['28-32']],
-            [['34-38']],
-            [FIRE],
-        ), is_linked=(2, 'Melancholy')),
 
 
 
