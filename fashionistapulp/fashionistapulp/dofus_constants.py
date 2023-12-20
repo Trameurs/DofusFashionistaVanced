@@ -2354,6 +2354,47 @@ DAMAGE_SPELLS = {
             [EARTH] * 6,
         ), aggregates=[(BOMB_LABELS[n], [n]) for n in range(6)],
         is_linked=(2, 'Carbine')),
+        Spell('Seismobomb', [25, 92, 159], Effects(
+            [['12-13', '16-17', '20-22'],
+             ['15-18', '18-21', '24-27'],
+             ['8-9', '9-10', '12-14']],
+            None,
+            [EARTH] * 3,
+        ), aggregates=[('Explosion', [0]),
+                        ('Wall during caster turn', [1]),
+                        ('Wall after caster turn', [2])],
+        is_linked=(1, 'Resilient Seismobomb')),
+        Spell('Resilient Seismobomb', [135], Effects(
+            [['20-22'],
+             ['24-27'],
+             ['12-14']],
+            None,
+            [EARTH] * 3,
+        ), aggregates=[('Explosion', [0]),
+                        ('Wall during caster turn', [1]),
+                        ('Wall after caster turn', [2])],
+        is_linked=(2, 'Seismobomb')),
+        Spell('Water Bomb', [30, 97, 164], Effects(
+            [['9-10', '13-14', '17-19'],
+             ['15-18', '18-21', '24-27'],
+             ['8-9', '9-10', '12-14']],
+            None,
+            [WATER] * 3,
+        ), aggregates=[('Explosion', [0]),
+                        ('Wall during caster turn', [1]),
+                        ('Wall after caster turn', [2])],
+        is_linked=(1, 'Resilient Water Bomb')),
+        Spell('Resilient Water Bomb', [140], Effects(
+            [['17-19'],
+             ['24-27'],
+             ['12-14']],
+            None,
+            [WATER] * 3,
+        ), aggregates=[('Explosion', [0]),
+                        ('Wall during caster turn', [1]),
+                        ('Wall after caster turn', [2])],
+        is_linked=(2, 'Water Bomb')),
+
 
 
 
@@ -2396,11 +2437,6 @@ DAMAGE_SPELLS = {
             [['27-31']],
             [WATER],
         ), is_linked=(2, 'Deception')),
-        Spell('Water Bomb', [32, 81, 124], Effects(
-            [['9-10', '13-14', '17-19']],
-            None,
-            [WATER],
-        )),
         
         Spell('Gluing Explobomb', [155], Effects(
             [['30-34']],
@@ -2423,11 +2459,7 @@ DAMAGE_SPELLS = {
             [['90', '130', '170']],
             ['buff_pow']
         )),
-        Spell('Seismobomb', [69, 122, 162], Effects(
-            [['9-10', '13-14', '17-18']],
-            None,
-            [EARTH],
-        )),
+        
         Spell('Blunderbuss', [92, 141, 187], Effects(
             [['31-35', '35-39', '39-43']],
             [['35-39', '39-43', '43-47']],
