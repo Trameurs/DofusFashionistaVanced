@@ -2635,7 +2635,7 @@ DAMAGE_SPELLS = {
         Spell('Bloodthirsty Madness', [200], Effects(
             [['24-28'], ['48-56']] * 4,
             None,
-            [EARTH, FIRE, WATER, AIR], steals=[True],
+            [EARTH, FIRE, WATER, AIR], steals=[True] * 4,
         ), aggregates=[('Hit in best element', [0]),
                           ('', [1]),
                           ('', [2]),
