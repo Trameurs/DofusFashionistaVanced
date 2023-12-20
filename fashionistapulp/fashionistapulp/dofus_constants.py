@@ -2100,51 +2100,21 @@ DAMAGE_SPELLS = {
             [WATER] * 2,
         ), aggregates=[('', [0, 1])],
         is_linked=(2, 'Crackler Punch')),
-
-
-
-
-
-
-
-        
-        
-        
-        
-        
-        
-        Spell('Whip', [22, 65, 108], Effects(
-            ([['7-8', '9-10', '11-12']] * 4
-             + [['11', '18', '25']]),
-            ([['9-10', '11-12', '13-14']] * 4
-             + [['12', '20', '28']]),
-            [AIR, EARTH, WATER, FIRE, FIRE],
-            heals=[False, False, False, False, True],
-        ), aggregates=[('Tofu', [0]),
-                       ('Gobball', [1]),
-                       ('Toad', [2]),
-                       ('Wyrmling (enemies)', [3]),
-                       ('Wyrmling (allies)', [4])]
-        ),
-        
-        Spell('Plucking', [145], Effects(
-            [['38-42']],
-            None,
+        Spell('Whirlwind', [70, 134], Effects(
+            [['23-26', '29-32']],
+            [['28-31', '35-38']],
+            [WATER],
+        ), is_linked=(1, 'Plucking')),
+        Spell('Plucking', [180], Effects(
+            [['23-26']],
+            [['28-31']],
             [AIR],
         ), is_linked=(2, 'Duster')),
-        Spell('Dragon\'s Breath', [44, 97, 137], Effects(
-            [['15-18', '21-24', '27-30']],
-            [['20-23', '26-29', '32-35']],
-            [FIRE],
-        )),
-        
-        
-        
-        Spell('Whirlwind', [180], Effects(
-            [['38-42']],
-            [['44-48']],
-            [WATER],
-        )),
+        Spell('Animal Tandem', [80, 147], Effects(
+            [['110', '150']],
+            None,
+            ['buff_pow'],
+        )),    
     ],
     'Pandawa': [
         Spell('Blazing Fist', [1, 25, 52], Effects(
