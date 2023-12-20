@@ -2394,49 +2394,77 @@ DAMAGE_SPELLS = {
                         ('Wall during caster turn', [1]),
                         ('Wall after caster turn', [2])],
         is_linked=(2, 'Water Bomb')),
-
-
-
-
-
-
-
-
-
-
-        Spell('Extraction', [1, 30, 60], Effects(
-            [['16-18', '21-23', '26-28']],
-            [['19-21', '24-26', '29-31']],
+        Spell('Bombard', [40, 107, 174], Effects(
+            [['14-16', '18-20', '23-25']],
+            [['17-19', '22-24', '28-30']],
+            [EARTH],
+        ), is_linked=(1, 'Machine Gun')),
+        Spell('Machine Gun', [150], Effects(
+            [['34-38']],
+            [['41-46']],
+            [AIR],
+        ), is_linked=(2, 'Bombard')),
+        Spell('Stolen Goods', [45, 112, 179], Effects(
+            [['17-19', '23-25', '28-30']],
+            [['21-23', '28-30', '34-36']],
+            [WATER],
+        ), is_linked=(1, 'Weigh Down')),
+        Spell('Weigh Down', [155], Effects(
+            [['30-34']],
+            [['37-42']],
             [FIRE],
-            steals=[True],
-        ), is_linked=(1, 'Obliteration')),
+        ), is_linked=(2, 'Stolen Goods')),
+        Spell('Extraction', [55, 122, 184], Effects(
+            [['16-18', '22-24', '28-30'],
+             ['8-9', '11-12', '14-15']],
+            [['20-22', '26-28', '32-36'],
+             ['10-11', '13-14', '16-18']],
+            [FIRE] * 2,
+            steals=[True, True],
+        ), aggregates=[('Enemies', [0]),
+                        ('Allies', [1])],
+        is_linked=(1, 'Cadence')),
+        Spell('Cadence', [165], Effects(
+            [['26-28']],
+            [['31-34']],
+            [AIR],
+        ), is_linked=(2, 'Extraction')),
+        Spell('Boomerang Daggers', [65, 131, 198], Effects(
+            [['12-14', '14-16', '16-18']] * 2,
+            [['14-16', '17-19', '19-21']] * 2,
+            [AIR, AIR],
+        ), aggregates=[('', [0, 1])],
+        is_linked=(1, 'Blunderbuss')),
+        Spell('Blunderbuss', [175], Effects(
+            [['35-39']],
+            [['42-47']],
+            [WATER],
+        ), is_linked=(1, 'Boomerang Daggers')),
+
+
+
+
+
+
+
+
+
+
+        
         
         Spell('Musket', [120], Effects(
             [['19-21']],
             [['23-25']],
             [EARTH],
         )),
-        Spell('Boomerang Daggers', [17, 58, 102], Effects(
-            [['15-17', '19-21', '23-25']],
-            [['7-9', '9-11', '11-13']] * 2,
-            [AIR, AIR],
-        ), aggregates=[('', [0, 1])],
-        is_linked=(1, 'Cadence')),
-        Spell('Cadence', [135], Effects(
-            [['17-19']],
-            [['21-23']],
-            [AIR],
-        ), is_linked=(2, 'Boomerang Daggers')),
+        
+        
         Spell('Deception', [27, 72, 118], Effects(
             [['25-29', '30-34', '35-39']],
             [['29-33', '34-38', '39-43']],
             [WATER],
         ), is_linked=(1, 'Stolen Goods')),
-        Spell('Stolen Goods', [145], Effects(
-            [['22-26']],
-            [['27-31']],
-            [WATER],
-        ), is_linked=(2, 'Deception')),
+        
         
         Spell('Gluing Explobomb', [155], Effects(
             [['30-34']],
@@ -2449,27 +2477,15 @@ DAMAGE_SPELLS = {
             [EARTH],
         )),
         
-        Spell('Machine Gun', [170], Effects(
-            [['43-47']],
-            [['48-52']],
-            [AIR],
-        ), is_linked=(2, 'Carbine')),
+        
         Spell('Last Breath', [62, 116, 153], Effects(
             [['70', '110', '150']],
             [['90', '130', '170']],
             ['buff_pow']
         )),
         
-        Spell('Blunderbuss', [92, 141, 187], Effects(
-            [['31-35', '35-39', '39-43']],
-            [['35-39', '39-43', '43-47']],
-            [WATER],
-        ), is_linked=(1, 'Weigh Down')),
-        Spell('Weigh Down', [195], Effects(
-            [['48']],
-            None,
-            [EARTH],
-        ), is_linked=(2, 'Blunderbuss'))
+        
+        
     ],
     'Sacrier': [
         Spell('Hemorrhage', [1, 66, 132], Effects(
