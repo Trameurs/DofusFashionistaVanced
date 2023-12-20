@@ -2586,7 +2586,7 @@ DAMAGE_SPELLS = {
             [['16-17', '19-22', '22-24'],
              ['26-29', '32-36', '36-40']],
             [['19-21', '22-26', '26-29'],
-             ['31-35', '39-43', '43-48']]
+             ['31-35', '39-43', '43-48']],
             [EARTH] * 2,
         ), aggregates=[('Suffering 1', [0]),
                         ('Suffering 10', [1])],
@@ -2597,6 +2597,54 @@ DAMAGE_SPELLS = {
             [AIR],
             steals=[True],
         ), is_linked=(2, 'Decimation')),
+        Spell('Fury', [70, 137], Effects(
+            [['18-20', '23-26'],
+             ['30-34', '39-43']],
+            [['22-24', '28-31'],
+             ['36-40', '47-52']]
+            [AIR] * 2,
+        ), aggregates=[('Suffering 1', [0]),
+                        ('Suffering 10', [1])],
+        is_linked=(1, 'Gash')),
+        Spell('Gash', [180], Effects(
+            [['47-51']],
+            [['56-61']],
+            [EARTH],
+        ), is_linked=(2, 'Fury')),
+        Spell('Stase', [75, 142], Effects(
+            [['16-19', '20-24']],
+            [['19-23', '24-29']],
+            [WATER],
+            steals=[True]
+        ), is_linked=(1, 'Dissolution')),
+        Spell('Dissolution', [185], Effects(
+            [['25-29']],
+            [['30-35']],
+            [WATER],
+            steals=[True]
+        ), is_linked=(2, 'Stase')),
+        Spell('Retribution', [90, 157], Effects(
+            [['28', '35']] * 4,
+            [['34', '42']] * 4,
+            [EARTH, FIRE, WATER, AIR],
+        ), aggregates=[('Hit in best element', [0]), 
+                       ('', [1]),
+                       ('', [2]),
+                       ('', [3])],
+        is_linked=(1, 'Bloodthirsty Madness')),
+        Spell('Bloodthirsty Madness', [200], Effects(
+            [['24-28'], ['48-56']] * 4,
+            None,
+            [EARTH, FIRE, WATER, AIR], steals=[True],
+        ), aggregates=[('Hit in best element', [0]),
+                          ('', [1]),
+                          ('', [2]),
+                          ('', [3]),
+                        ('Hit in best element on caster\'s Swords', [4]),
+                          ('', [5]),
+                          ('', [6]),
+                          ('', [7])],
+        is_linked=(2, 'Retribution')), 
     ],
     'Sadida': [
         Spell('Bramble', [1, 25, 52], Effects(
