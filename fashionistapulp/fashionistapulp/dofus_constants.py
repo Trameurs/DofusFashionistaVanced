@@ -2261,15 +2261,6 @@ DAMAGE_SPELLS = {
             [['29-34']],
             [WATER],
         ), is_linked=(2, 'Alcoholic Breath')),
-        Spell('Melancholy', [80, 147], Effects(
-            [['29-32', '36-40'],
-             ['35-38', '41-45']],
-            [['35-39', '43-48'],
-             ['44-48', '51-556']],
-            [WATER] * 2,
-        ), aggregates=[('Sober', [0]),
-                       ('Drunk', [1])],
-        is_linked=(1, 'Pandjiu')),
 
 
 
