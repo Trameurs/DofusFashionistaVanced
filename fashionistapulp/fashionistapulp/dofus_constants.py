@@ -2275,16 +2275,6 @@ DAMAGE_SPELLS = {
             [['34-38']],
             [FIRE],
         ), is_linked=(2, 'Melancholy')),
-        Spell('Pandawa\'s Hand', [200], Effects(
-            [['50']] * 5 + [['5']] * 5,
-            [['100']] * 5 + [['10']] * 5,
-            [NEUTRAL, EARTH, FIRE, WATER, AIR] * 2,
-        ), aggregates=[('Sober:<br>Hit in best element', [0]),
-                        ('', [1]),
-                        ('', [2]),
-                        ('', [3]),
-                        ('', [4]),
-                        ('Drunk', [5, 6, 7, 8, 9])]),
 
 
 
