@@ -1827,11 +1827,23 @@ DAMAGE_SPELLS = {
         is_linked=(2, 'Fit of Rage')), 
     ],
     'Masqueraider': [
-        Spell('Picada', [1, 25, 52], Effects(
-            [['13-15', '16-18', '20-22']],
-            [['18-20', '21-23', '24-26']],
+        Spell('Brincaderia', [1, 67, 133], Effects(
+            [['7-9', '10-12', '13-15']],
+            [['10-12', '13-15', '16-18']],
+            [FIRE],
+        ), is_linked=(1, 'Picada')),
+        Spell('Picada', [100, 167], Effects(
+            [['20-22', '25-28']],
+            [['23-26', '30-33']],
             [AIR],
-        ), is_linked=(1, 'Agular')),
+        ), is_linked=(1, 'Brincaderia')),
+
+
+
+
+
+
+        
         Spell('Agular', [105], Effects(
             [['30-34']],
             [['36-40']],
@@ -1927,11 +1939,6 @@ DAMAGE_SPELLS = {
             [['19-23', '22-26', '25-29']],
             [FIRE],
         ), is_linked=(1, 'Brincaderia')),
-        Spell('Brincaderia', [185], Effects(
-            [['13-15']],
-            [['16-18']],
-            [FIRE],
-        ), is_linked=(2, 'Apostasy')),
         Spell('Apathy', [84, 134, 178], Effects(
             [['17-21', '21-25', '25-29']],
             [['20-24', '24-28', '28-32']],
