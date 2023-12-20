@@ -2611,66 +2611,6 @@ DAMAGE_SPELLS = {
             [['56-61']],
             [EARTH],
         ), is_linked=(2, 'Fury')),
-        Spell('Stase', [75, 142], Effects(
-            [['16-19', '20-24']],
-            [['19-23', '24-29']],
-            [WATER],
-            steals=[True]
-        ), is_linked=(1, 'Dissolution')),
-        Spell('Dissolution', [185], Effects(
-            [['25-29']],
-            [['30-35']],
-            [WATER],
-            steals=[True]
-        ), is_linked=(2, 'Stase')),
-        Spell('Retribution', [90, 157], Effects(
-            [['28', '35']] * 4,
-            [['34', '42']] * 4,
-            [EARTH, FIRE, WATER, AIR],
-        ), aggregates=[('Hit in best element', [0]), 
-                       ('', [1]),
-                       ('', [2]),
-                       ('', [3])],
-        is_linked=(1, 'Bloodthirsty Madness')),
-        Spell('Bloodthirsty Madness', [200], Effects(
-            [['24-28'], ['48-56']] * 4,
-            None,
-            [EARTH, FIRE, WATER, AIR], steals=[True],
-        ), aggregates=[('Hit in best element', [0]),
-                          ('', [1]),
-                          ('', [2]),
-                          ('', [3]),
-                        ('Hit in best element on caster\'s Swords', [4]),
-                          ('', [5]),
-                          ('', [6]),
-                          ('', [7])],
-        is_linked=(2, 'Retribution')),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        
-        
-        
-
-        
-        
-        
-        #TODO: The following spells should only display the best element
-        
     ],
     'Sadida': [
         Spell('Bramble', [1, 25, 52], Effects(
