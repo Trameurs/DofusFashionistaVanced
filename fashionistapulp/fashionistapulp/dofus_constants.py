@@ -1963,6 +1963,18 @@ DAMAGE_SPELLS = {
         ), aggregates=[('Enemies', [0]), 
                        ('Allies', [1])],
         is_linked=(2, 'Dragonic')),
+        Spell('Geyser', [1, 67, 133], Effects(
+            [['15-17', '20-22', '25-28']],
+            [['18-20', '23-26', '30-33']],
+            [WATER]
+        ), is_linked=(1, 'Aquaculture')),
+        Spell('Aquaculture', [100, 167], Effects(
+            [['25-28', '28-31'],
+             ['100', '150']],
+            [['30-34', '33-37'],
+             ['100', '150']],
+            [WATER, 'buff_pow'],
+        ), is_linked=(2, 'Geyser')),
 
 
 
@@ -2045,13 +2057,7 @@ DAMAGE_SPELLS = {
             [EARTH],
             steals=[True],
         ), is_linked=(2, 'Crackler Punch')),
-        Spell('Geyser', [62, 116, 153], Effects(
-            [['17-19', '20-22', '23-35'],
-             ['70', '110', '150']],
-            [['22-24', '25-27', '28-30'],
-             ['70', '110', '150']],
-            [WATER, 'buff_pow'],
-        )),
+        
         Spell('Whirlwind', [180], Effects(
             [['38-42']],
             [['44-48']],
