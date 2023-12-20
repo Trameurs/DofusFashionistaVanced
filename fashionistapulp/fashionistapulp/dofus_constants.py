@@ -2233,6 +2233,24 @@ DAMAGE_SPELLS = {
         ), aggregates=[('Sober', [0]),
                        ('Drunk', [1])], 
         is_linked=(2, 'Eviction')),
+        Spell('Explosive Flask', [65, 131, 198], Effects(
+            [['13-15', '16-18', '18-20'],
+             ['16-19', '20-22', '22-25']],
+            [['16-18', '19-21', '22-24'],
+             ['20-22', '24-27', '26-30']],
+            [FIRE] * 2,
+        ), aggregates=[('Sober', [0]),
+                        ('Drunk', [1])],
+        is_linked=(1, 'Pandatak')),
+        Spell('Pandatak', [175], Effects(
+            [['38-42'],
+             ['46-50']],
+            [['46-50'],
+             ['54-58']],
+            [EARTH] * 2,
+        ), aggregates=[('Sober', [0]),
+                        ('Drunk', [1])],
+        is_linked=(2, 'Explosive Flask')),
 
 
 
