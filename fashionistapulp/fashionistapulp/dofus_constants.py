@@ -2024,27 +2024,59 @@ DAMAGE_SPELLS = {
                     ('Charged once:<br>Enemies', [2]),
                     ('Allies', [3]),
                     ('Charged twice:<br>Enemies', [4]),
-                    ('Allies', [5])]),
-
-
-
-
-
-
-        
-        Spell('Repulsive Fang', [105], Effects(
-            [['38-42']],
-            [['46-50']],
+                    ('Allies', [5])],
+        is_linked=(1, 'Cross Scale')),
+        Spell('Cross Scale', [135], Effects(
+            [['33-36']] * 2,
+            [['38-42']] * 2,
+            [FIRE] * 2,
+        ), aggregates=[('Allies', [0]),
+                       ('Enemies', [1])],
+        is_linked=(2, 'Flaming Crow')),
+        Spell('Repulsive Fang', [35, 102, 169], Effects(
+            [['11-13', '13-15', '15-17']],
+            [['14-16', '16-18', '18-21']],
             [AIR],
-        ), is_linked=(2, 'Canine')),
-        
-        
-        
-        Spell('Takeoff', [135], Effects(
-            [['30']],
-            None,
+        ), is_linked=(1, 'Takeoff')),
+        Spell('Takeoff', [145], Effects(
+            [['33-37']],
+            [['38-43']],
             [AIR],
-        )),
+        ), is_linked=(2, 'Repulsive Fang')),
+        Spell('Woolly Sledgehammer', [40, 107, 174], Effects(
+            [['13-15', '16-18', '18-20']],
+            [['16-18', '19-21', '21-23']],
+            [EARTH],
+        ), is_linked=(1, 'Gobball Fleece')),
+        Spell('Gobball Fleece', [150], Effects(
+            [['32-36']],
+            [['38-43']],
+            [EARTH],
+        ), is_linked=(2, 'Woolly Sledgehammer')),
+        Spell('Duster', [50, 117, 184], Effects(
+            create_level_based_stacking_values(((21, 24), (24, 27), (29, 33)), (3, 4, 5), 5),
+            create_level_based_stacking_values(((25, 28), (29, 32), (35, 40)), (3, 4, 5), 5),
+            [AIR, AIR, AIR, AIR, AIR, AIR]
+        ), aggregates=[('No Tofus', [0]),
+                       ('One Tofu', [1]),
+                       ('Two Tofus', [2]),
+                       ('Three Tofus', [3]),
+                       ('Four Tofus', [4]),
+                       ('Five Tofus', [5])],
+        is_linked=(1, 'Plucking')),
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
         Spell('Whip', [22, 65, 108], Effects(
             ([['7-8', '9-10', '11-12']] * 4
              + [['11', '18', '25']]),
@@ -2058,17 +2090,7 @@ DAMAGE_SPELLS = {
                        ('Wyrmling (enemies)', [3]),
                        ('Wyrmling (allies)', [4])]
         ),
-        Spell('Duster', [27, 72, 118], Effects(
-            create_duster_values(((17, 19), (22, 24), (27, 29)), 6, 5),
-            create_duster_values(((22, 24), (27, 29), (32, 34)), 6, 5),
-            [AIR, AIR, AIR, AIR, AIR, AIR]
-        ), aggregates=[('No Tofus', [0]),
-                       ('One Tofu', [1]),
-                       ('Two Tofus', [2]),
-                       ('Three Tofus', [3]),
-                       ('Four Tofus', [4]),
-                       ('Five Tofus', [5])],
-        is_linked=(1, 'Plucking')),
+        
         Spell('Plucking', [145], Effects(
             [['38-42']],
             None,
