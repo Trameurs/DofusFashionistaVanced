@@ -1836,131 +1836,117 @@ DAMAGE_SPELLS = {
             [['20-22', '25-28']],
             [['23-26', '30-33']],
             [AIR],
-        ), is_linked=(1, 'Brincaderia')),
-
-
-
-
-
-
-        
-        Spell('Agular', [105], Effects(
-            [['30-34']],
-            [['36-40']],
-            [AIR],
-        ), is_linked=(2, 'Picada')),
-        Spell('Martelo', [1, 30, 60], Effects(
-            [['16-18', '19-21', '22-24']],
-            [['18-20', '21-23', '24-26']],
+        ), is_linked=(2, 'Brincaderia')),
+        Spell('Catalepsy', [3, 69, 136], Effects(
+            [['13-15', '18-20', '23-25']],
+            [['16-18', '22-24', '28-30']],
             [EARTH],
             steals=[True],
-        ), is_linked=(1, 'Parafuso')),
-        Spell('Parafuso', [110], Effects(
-            [['22-26']],
-            [['26-30']],
+        ), is_linked=(1, 'Decoy')),
+        Spell('Decoy', [110, 177], Effects(
+            [['20-23', '24-28']],
+            [['24-28', '29-33']],
             [FIRE],
             steals=[True],
-        ), is_linked=(2, 'Martelo')),
-        Spell('Reinforcement', [6, 42, 74], Effects(
+        ), is_linked=(2, 'Catalepsy')),
+        Spell('Capering', [10, 77, 144], Effects(
+            [['18-20', '23-26', '28-32']],
+            [['21-24', '27-31', '34-38']],
+            [AIR],
+        ), is_linked=(1, 'Purgatorio')),
+        Spell('Purgatorio', [120, 187], Effects(
+            [['29-32', '32-36']],
+            [['34-39', '38-43']],
+            [FIRE],
+        ), is_linked=(2, 'Capering')),
+        Spell('Shove Off', [15, 82, 149], Effects(
             [['6-7', '7-8', '8-9']] * 4,
             [['8-9', '9-10', '10-11']] * 4,
             [AIR, WATER, EARTH, FIRE],
          ), aggregates=[('', [0, 1, 2, 3])]),
-        Spell('Retention', [17, 58, 102], Effects(
-            [['16-18', '19-21', '22-24']],
-            [['20-22', '23-25', '26-28']],
+         Spell('Parafuso', [20, 87, 154], Effects(
+            [['13-15', '17-19', '21-24']],
+            [['16-18', '20-23', '25-29']],
+            [WATER],
+            steals=[True],
+        ), is_linked=(1, 'Martelo')),
+         Spell('Martelo', [130, 197], Effects(
+            [['20-22', '22-25']],
+            [['24-27', '26-30']],
+            [EARTH]
+        ), is_linked=(2, 'Parafuso')),
+        Spell('Inferno', [35, 102, 169], Effects(
+            [['24-27', '31-34', '38-42'],
+             ['100', '150', '200']],
+            [['29-32', '37-40', '46-50'],
+             ['100', '150', '200']],
+            [FIRE, 'buff_pow'],
+        ), is_linked=(1, 'Distance')),
+        Spell('Distance', [145], Effects(
+            [['24-26']],
+            [['29-31']],
+            [WATER],
+        ), is_linked=(2, 'Inferno')),
+        Spell('Furia', [50, 117, 184], Effects(
+            [['21-23', '28-31', '35-39'],
+             ['20', '30', '40']],
+            [['25-28', '34-38', '42-47'],
+             ['20', '30', '40']],
+            [EARTH, 'buff_dam'],
+        ), is_linked=(1, 'Bocciara')),
+        Spell('Bocciara', [160], Effects(
+            [['16-19'],
+             ['80']],
+            [['20-24'],
+             ['80']],
+            [WATER, 'buff_pshdam'],
+        ), is_linked=(2, 'Furia')),
+        Spell('Ponteira', [60, 127, 194], Effects(
+            [['12-15', '15-18', '20-23']],
+            [['16-19', '19-22', '24-28']],
+            [WATER],
+        ), is_linked=(1, 'Agular')),
+        Spell('Agular', [170], Effects(
+            [['30-34']],
+            [['36-41']],
+            [AIR],
+        ), is_linked=(2, 'Picada')),
+        Spell('Neurosis', [175], Effects(
+            [['200']],
+            None,
+            ['buff_pow'],
+        )),
+        Spell('Cavalcade', [70, 137], Effects(
+            [['31-34', '38-42']],
+            [['37-40', '46-50']],
+            [AIR],
+        ), is_linked=(1, 'Apostasy')),
+        Spell('Apostasy', [180], Effects(
+            [['25-28']],
+            [['30-34']],
+            [FIRE],
+        ), is_linked=(2, 'Cavalcade')),
+        Spell('Apathy', [80, 147], Effects(
+            [['23-26', '28-32']],
+            [['27-31', '34-38']],
+            [EARTH],
+        ), is_linked=(1, 'Retention')),
+        Spell('Retention', [190], Effects(
+            [['27-31']],
+            [['33-37']],
             [AIR],
             steals=[True],
         ), is_linked=(1, 'Estrelia')),
-        Spell('Estrelia', [135], Effects(
+        Spell('Boliche', [85, 152], Effects(
+            [['21-23', '26-28']],
+            [['25-27', '31-34']],
+            [WATER],
+        ), is_linked=(1, 'Ronda')),
+        Spell('Ronda', [195], Effects(
             [['38-42']],
-            [['44-48']],
-            [WATER],
-            steals=[True],
-        ), is_linked=(2, 'Retention')),
-        Spell('Furia', [27, 72, 118], Effects(
-            [['27-31', '31-35', '35-39'],
-             ['20', '30', '40']],
-            [['29-33', '33-37', '37-41'],
-             ['22', '33', '44']],
-            [EARTH, 'buff_dam'],
-        ), is_linked=(1, 'Cavalcade')),
-        Spell('Cavalcade', [145], Effects(
-            [['38-42']],
-            [['44-48']],
-            [AIR],
-        ), is_linked=(2, 'Furia')),
-        Spell('Distance', [32, 81, 124], Effects(
-            [['15-17', '19-21', '23-25']],
-            [['19-21', '23-25', '27-29']],
-            [WATER],
-        ), is_linked=(1, 'Atabak')),
-        Spell('Atabak', [150], Effects(
-            [['33-37']],
-            [['37-41']],
+            [['46-50']],
             [EARTH],
-        ), is_linked=(2, 'Distance')),
-        Spell('Ginga', [155], Effects(
-            [['250']],
-            None,
-            ['buff_pow'],
-        )),
-        Spell('Neurosis', [160], Effects(
-            [['150']],
-            None,
-            ['buff_pow'],
-        )),
-        Spell('Capering', [56, 112, 147], Effects(
-            [['22-26', '25-29', '28-32']],
-            [['25-29', '28-32', '31-35']],
-            [AIR],
-        ), is_linked=(1, 'Bocciara')),
-        Spell('Bocciara', [170], Effects(
-            [['14-16'],
-             ['80']],
-            [['16-18'],
-             ['80']],
-            [WATER, 'buff_pshdam'],
-        ), is_linked=(2, 'Capering')),
-        Spell('Decoy', [62, 116, 153], Effects(
-            [['14-18', '18-22', '22-26']],
-            [['19-23', '23-27', '27-31']],
-            [WATER],
-            steals=[True],
-        ), is_linked=(1, 'Catalepsy')),
-        Spell('Catalepsy', [175], Effects(
-            [['23-25']],
-            [['26-28']],
-            [EARTH],
-            steals=[True],
-        ), is_linked=(2, 'Decoy')),
-        Spell('Apostasy', [77, 128, 172], Effects(
-            [['16-20', '19-23', '22-26']],
-            [['19-23', '22-26', '25-29']],
-            [FIRE],
-        ), is_linked=(1, 'Brincaderia')),
-        Spell('Apathy', [84, 134, 178], Effects(
-            [['17-21', '21-25', '25-29']],
-            [['20-24', '24-28', '28-32']],
-            [EARTH],
-        ), is_linked=(1, 'Ponteira')),
-        Spell('Ponteira', [190], Effects(
-            [['17-19']],
-            [['20-22']],
-            [WATER],
-        ), is_linked=(2, 'Apathy')),
-        Spell('Boliche', [92, 141, 187], Effects(
-            [['17-19', '20-22', '26-28']],
-            [['20-22', '23-25', '29-31']],
-            [WATER],
-        ), is_linked=(1, 'Inferno')),
-        Spell('Inferno', [195], Effects(
-            [['38-42'],
-             ['200']],
-            [['42-46'],
-             ['220']],
-            [FIRE, 'buff_pow'],
-        ), is_linked=(2, 'Boliche')),
+        ), is_linked=(2, 'Boliche')),   
     ],
     'Osamodas': [
         Spell('Canine', [1, 25, 52], Effects(
