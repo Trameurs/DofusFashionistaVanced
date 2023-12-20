@@ -2582,35 +2582,6 @@ DAMAGE_SPELLS = {
             [FIRE],
             steals=[True],
         ), is_linked=(2, 'Absorption')),
-        Spell('Decimation', [60, 127, 194], Effects(
-            [['16-17', '19-22', '22-24'],
-             ['26-29', '32-36', '36-40']],
-            [['19-21', '22-26', '26-29'],
-             ['31-35', '39-43', '43-48']]
-            [EARTH] * 2,
-        ), aggregates=[('Suffering 1', [0]),
-                        ('Suffering 10', [1])],
-        is_linked=(1, 'Carnage')),
-        Spell('Carnage', [170], Effects(
-            [['44-48']],
-            [['53-58']],
-            [AIR],
-            steals=[True],
-        ), is_linked=(2, 'Decimation')),
-        Spell('Fury', [70, 137], Effects(
-            [['18-20', '23-26'],
-             ['30-34', '39-43']],
-            [['22-24', '28-31'],
-             ['36-40', '47-52']]
-            [AIR] * 2,
-        ), aggregates=[('Suffering 1', [0]),
-                        ('Suffering 10', [1])],
-        is_linked=(1, 'Gash')),
-        Spell('Gash', [180], Effects(
-            [['47-51']],
-            [['56-61']],
-            [EARTH],
-        ), is_linked=(2, 'Fury')),
     ],
     'Sadida': [
         Spell('Bramble', [1, 25, 52], Effects(
