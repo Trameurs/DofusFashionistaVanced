@@ -2261,53 +2261,30 @@ DAMAGE_SPELLS = {
             [['29-34']],
             [WATER],
         ), is_linked=(2, 'Alcoholic Breath')),
-
-
-
-
-
-
-
-        Spell('Blazing Fist', [1, 25, 52], Effects(
-            [['16-21', '19-24', '22-27']],
-            [['21-26', '24-29', '27-32']],
-            [FIRE],
-        ), is_linked=(1, 'Burning Circle')),
-        Spell('Burning Circle', [105], Effects(
+        Spell('Melancholy', [80, 147], Effects(
+            [['29-32', '36-40'],
+             ['35-38', '41-45']],
+            [['35-39', '43-48'],
+             ['44-48', '51-556']],
+            [WATER] * 2,
+        ), aggregates=[('Sober', [0]),
+                       ('Drunk', [1])],
+        is_linked=(1, 'Pandjiu')),
+        Spell('Pandjiu', [190], Effects(
+            [['28-32']],
             [['34-38']],
-            [['39-43']],
             [FIRE],
-        ), is_linked=(2, 'Blazing Fist')),
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Spell('Melancholy', [56, 112, 147], Effects(
-            [['31-33', '36-38', '41-43']],
-            [['37-39', '42-44', '47-49']],
-            [WATER],
-        ), is_linked=(1, 'Hooch')),
-        Spell('Hooch', [170], Effects(
-            [['53-57']],
-            [['61-65']],
-            [WATER],
         ), is_linked=(2, 'Melancholy')),
-        Spell("Zatoishwan's Wrath", [62, 116, 153], Effects(
-            [['100', '150', '200'],
-             ['5', '10', '15']],
-            None,
-            ['buff_pow', 'buff_dam']
-        )),
-        
-        
-        
-        
+        Spell('Pandawa\'s Hand', [200], Effects(
+            [['50']] * 5 + [['5']] * 5,
+            [['100']] * 5 + [['10']] * 5,
+            [NEUTRAL, EARTH, FIRE, WATER, AIR] * 2,
+        ), aggregates=[('Sober:<br>Hit in best element', [0]),
+                        ('', [1]),
+                        ('', [2]),
+                        ('', [3]),
+                        ('', [4]),
+                        ('Drunk', [5, 6, 7, 8, 9])]), 
     ],
     'Rogue': [
         Spell('Explobomb', [1, 25, 52], Effects(
