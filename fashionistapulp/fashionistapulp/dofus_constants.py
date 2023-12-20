@@ -1952,14 +1952,14 @@ DAMAGE_SPELLS = {
         Spell('Dragonic', [1, 66, 132], Effects(
             [['13-15', '17-20', '22-25']] * 2,
             [['16-18', '21-24', '27-30']] * 2,
-            [FIRE] * 2,
+            [FIRE] * 2, heals=[True, False],
         ), aggregates=[('Allies', [0]),
                        ('Enemies', [1])],
         is_linked=(1, 'Sparkmeleon')),
         Spell('Sparkmeleon', [95, 162], Effects(
             [['21-23', '26-29']] * 2,
             [['25-28', '31-35']] * 2,
-            [FIRE] * 2,
+            [FIRE] * 2, heals=[False, True],
         ), aggregates=[('Enemies', [0]), 
                        ('Allies', [1])],
         is_linked=(2, 'Dragonic')),
