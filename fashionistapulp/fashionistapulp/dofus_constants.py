@@ -2054,8 +2054,8 @@ DAMAGE_SPELLS = {
             [EARTH],
         ), is_linked=(2, 'Woolly Sledgehammer')),
         Spell('Duster', [50, 117, 184], Effects(
-            create_level_based_stacking_values(((21, 24), (24, 27), (29, 33)), (3, 4, 5), 5),
-            create_level_based_stacking_values(((25, 28), (29, 32), (35, 40)), (3, 4, 5), 5),
+            create_level_based_stacking_values(((21, 24), (24, 27), (29, 33)), (3, 4, 5), 6),
+            create_level_based_stacking_values(((25, 28), (29, 32), (35, 40)), (3, 4, 5), 6),
             [AIR, AIR, AIR, AIR, AIR, AIR]
         ), aggregates=[('No Tofus', [0]),
                        ('One Tofu', [1]),
