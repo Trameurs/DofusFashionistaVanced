@@ -2517,7 +2517,7 @@ DAMAGE_SPELLS = {
              ['20-23', '27-31', '34-38']],
             [['15-16', '20-22', '24-27'],
              ['24-27', '33-37', '41-46']],
-            [FIRE],
+            [FIRE] * 2,
         ), aggregates=[('Suffering 1', [0]),
                         ('Suffering 10', [1])],
         is_linked=(1, 'Clobbering')),
