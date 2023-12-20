@@ -1975,38 +1975,65 @@ DAMAGE_SPELLS = {
              ['100', '150']],
             [WATER, 'buff_pow'],
         ), is_linked=(2, 'Geyser')),
-
-
-
-
-
-
-        Spell('Canine', [1, 25, 52], Effects(
-            [['14-17', '17-20', '20-23']],
-            [['17-20', '20-23', '23-26']],
+        Spell('Canine', [3, 69, 136], Effects(
+            [['12-14', '16-19', '21-24']],
+            [['15-17', '20-22', '25-29']],
             [AIR],
-        ), is_linked=(1, 'Repulsive Fang')),
+        ), is_linked=(1, 'Gambol')),
+        Spell('Gambol', [110, 177], Effects(
+            [['15-17', '19-21']],
+            [['18-20', '23-25']],
+            [AIR],
+        ), is_linked=(2, 'Canine')),
+        Spell('Fossil', [6, 71, 138], Effects(
+            [['13-15', '18-20', '23-25']],
+            [['16-18', '22-24', '28-30']],
+            [EARTH],
+        ), is_linked=(1, 'Sedimentation')),
+        Spell('Sedimentation', [115, 182], Effects(
+            [['32-36', '38-42']],
+            [['39-43', '46-50']],
+            [EARTH],
+        ), is_linked=(2, 'Aquatic Wave')),
+        Spell('Scalding Poison', [20, 87, 154], Effects(
+            [['11-13', '13-15', '15-17']],
+            None,
+            [WATER],
+        ), is_linked=(1, 'Aquatic Wave')),
+        Spell('Aquatic Wave', [130, 197], Effects(
+            [['19-22', '25-29']],
+            [['24-27', '31-35']],
+            [WATER],
+        ), is_linked=(2, 'Scalding Poison')),
+        Spell('Flaming Crow', [25, 92, 159], Effects(
+            [['4-6', '6-8', '8-10'] * 2,
+             ['7-15', '11-19', '15-23'] * 2,
+             ['10-24', '16-30', '22-36'] * 2],
+            [['7-9', '9-11', '11-13'] * 2,
+             ['12-20', '16-24', '20-28'] * 2,
+             ['17-31', '23-37', '29-41'] * 2],
+            [FIRE] * 6, heals=[False, True, False, True, False, True],
+        ), aggregates=[('Not charged:<br>Enemies', [0]),
+                       ('Allies', [1]),
+                       ('Charged once:<br>Enemies', [2]),
+                       ('Allies', [3]),
+                       ('Charged twice:<br>Enemies', [4]),
+                       ('Allies', [5])],),
+
+
+
+
+
+
+        
         Spell('Repulsive Fang', [105], Effects(
             [['38-42']],
             [['46-50']],
             [AIR],
         ), is_linked=(2, 'Canine')),
         
-        Spell('Aquatic Wave', [110], Effects(
-            [['28-32']],
-            [['31-35']],
-            [WATER],
-        ), is_linked=(2, 'Dragonic')),
-        Spell('Fossil', [6, 42, 74], Effects(
-            [['16-20', '19-23', '22-26']],
-            [['21-25', '24-28', '27-31']],
-            [EARTH],
-        ), is_linked=(1, 'Sedimentation')),
-        Spell('Sedimentation', [120], Effects(
-            [['38-42']],
-            [['44-48']],
-            [EARTH],
-        ), is_linked=(2, 'Aquatic Wave')),
+        
+        
         Spell('Takeoff', [135], Effects(
             [['30']],
             None,
