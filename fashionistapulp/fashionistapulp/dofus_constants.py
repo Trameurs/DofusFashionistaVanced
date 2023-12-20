@@ -2007,18 +2007,18 @@ DAMAGE_SPELLS = {
         ), is_linked=(2, 'Scalding Poison')),
         Spell('Flaming Crow', [25, 92, 159], Effects(
             [['4-6', '6-8', '8-10'] * 2 +
-             ['7-15', '11-19', '15-23'] * 2 +
-             ['10-24', '16-30', '22-36'] * 2],
+            ['7-15', '11-19', '15-23'] * 2 +
+            ['10-24', '16-30', '22-36'] * 2],
             [['7-9', '9-11', '11-13'] * 2 +
-             ['12-20', '16-24', '20-28'] * 2 +
-             ['17-31', '23-37', '29-41'] * 2],
+            ['12-20', '16-24', '20-28'] * 2 +
+            ['17-31', '23-37', '29-41'] * 2],
             [FIRE] * 6, heals=[False, True, False, True, False, True],
         ), aggregates=[('Not charged:<br>Enemies', [0]),
-                       ('Allies', [1]),
-                       ('Charged once:<br>Enemies', [2]),
-                       ('Allies', [3]),
-                       ('Charged twice:<br>Enemies', [4]),
-                       ('Allies', [5])],),
+                    ('Allies', [1]),
+                    ('Charged once:<br>Enemies', [2]),
+                    ('Allies', [3]),
+                    ('Charged twice:<br>Enemies', [4]),
+                    ('Allies', [5])]),
 
 
 
