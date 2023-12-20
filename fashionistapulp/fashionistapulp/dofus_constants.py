@@ -2251,6 +2251,16 @@ DAMAGE_SPELLS = {
         ), aggregates=[('Sober', [0]),
                         ('Drunk', [1])],
         is_linked=(2, 'Explosive Flask')),
+        Spell('Alcoholic Breath', [75, 142], Effects(
+            [['23-26', '28-32']],
+            [['27-31', '34-38']],
+            [AIR],
+        ), is_linked=(1, 'Waterfall')),
+        Spell('Waterfall', [185], Effects(
+            [['24-28']],
+            [['29-34']],
+            [WATER],
+        ), is_linked=(2, 'Alcoholic Breath')),
 
 
 
