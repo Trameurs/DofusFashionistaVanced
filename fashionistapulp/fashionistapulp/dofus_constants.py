@@ -2074,6 +2074,32 @@ DAMAGE_SPELLS = {
                        ('Caster', [1]),
                        ('Enemies', [2])],
         is_linked=(2, 'Duster')),
+        Spell('Dragon\'s Breath', [55, 122, 189], Effects(
+            [['20-23', '27-31', '31-35']] * 2,
+            [['24-27', '32-37', '37-42']] * 2,
+            [FIRE] * 2, heals=[False, True],
+        ), aggregates=[('Enemies', [0]),
+                       ('Allies', [1])],
+        is_linked=(1, 'Constriction')),
+        Spell('Constriction', [165], Effects(
+            [['25-28']],
+            [['30-33']],
+            [EARTH],
+            steals=[True],
+        ), is_linked=(2, 'Dragon\'s Breath')),
+        Spell('Crackler Punch', [65, 131, 198], Effects(
+            [['24-27', '31-35', '39-44']],
+            [['29-32', '37-41', '47-52']],
+            [EARTH],
+        ), is_linked=(1, 'Batra')),
+        Spell('Batra', [175], Effects(
+            [['27-30'],
+             ['9-10']],
+            [['32-35'],
+             ['11-12']],
+            [WATER] * 2,
+        ), aggregates=[('', [0, 1])],
+        is_linked=(2, 'Crackler Punch')),
 
 
 
@@ -2111,17 +2137,8 @@ DAMAGE_SPELLS = {
             [['20-23', '26-29', '32-35']],
             [FIRE],
         )),
-        Spell('Crackler Punch', [56, 112, 147], Effects(
-            [['23-27', '28-32', '33-37']],
-            [['30-34', '35-39', '40-44']],
-            [EARTH],
-        ), is_linked=(1, 'Constriction')),
-        Spell('Constriction', [170], Effects(
-            [['25-29']],
-            [['28-32']],
-            [EARTH],
-            steals=[True],
-        ), is_linked=(2, 'Crackler Punch')),
+        
+        
         
         Spell('Whirlwind', [180], Effects(
             [['38-42']],
