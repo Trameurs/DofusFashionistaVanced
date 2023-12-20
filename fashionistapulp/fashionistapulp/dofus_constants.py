@@ -2582,80 +2582,50 @@ DAMAGE_SPELLS = {
             [FIRE],
             steals=[True],
         ), is_linked=(2, 'Absorption')),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        
-        
-        
-        
-        Spell('Decimation', [92, 141, 187], Effects(
-            create_level_based_stacking_values(((17, 20), (22, 25), (24, 28)), 
-                                               (20, 20, 20), 2),
-            create_level_based_stacking_values(((21, 25), (26, 30), (29, 34)), 
-                                               (20, 20, 20), 2),
-            [[EARTH]] * 2
-        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)]
-        , is_linked=(1, 'Gash')),
-        Spell('Gash', [195], Effects(
-            create_stacking_values(((35, 39),), 30, 2),
-            create_stacking_values(((42, 47),), 30, 2),
-            [[EARTH]] * 2
-        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)]
-        , is_linked=(2, 'Decimation')),
+        Spell('Decimation', [60, 127, 194], Effects(
+            [['16-17', '19-22', '22-24'],
+             ['26-29', '32-36', '36-40']],
+            [['19-21', '22-26', '26-29'],
+             ['31-35', '39-43', '43-48']]
+            [EARTH] * 2,
+        ), aggregates=[('Suffering 1', [0]),
+                        ('Suffering 10', [1])],
+        is_linked=(1, 'Carnage')),
+        Spell('Carnage', [170], Effects(
+            [['44-48']],
+            [['53-58']],
+            [AIR],
+            steals=[True],
+        ), is_linked=(2, 'Decimation')),
         Spell('Fury', [70, 137], Effects(
-            create_level_based_stacking_values(((19, 22), (24, 28)), 
-                                               (20, 20), 2),
-            create_level_based_stacking_values(((22, 26), (29, 34)), 
-                                               (20, 20), 2),
-            [[AIR]] * 2
-        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)]
-        , is_linked=(1, 'Carnage')),
-        Spell('Carnage', [180], Effects(
-            create_stacking_values(((35, 39),), 30, 2),
-            create_stacking_values(((42, 47),), 30, 2),
-            [[EARTH]] * 2
-        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)]
-        , is_linked=(2, 'Fury')),
+            [['18-20', '23-26'],
+             ['30-34', '39-43']],
+            [['22-24', '28-31'],
+             ['36-40', '47-52']]
+            [AIR] * 2,
+        ), aggregates=[('Suffering 1', [0]),
+                        ('Suffering 10', [1])],
+        is_linked=(1, 'Gash')),
+        Spell('Gash', [180], Effects(
+            [['47-51']],
+            [['56-61']],
+            [EARTH],
+        ), is_linked=(2, 'Fury')),
         Spell('Stase', [75, 142], Effects(
-            [['19-23', '23-27']],
-            [['22-26', '26-31']],
+            [['16-19', '20-24']],
+            [['19-23', '24-29']],
             [WATER],
             steals=[True]
         ), is_linked=(1, 'Dissolution')),
         Spell('Dissolution', [185], Effects(
-            [['29-33']],
-            [['35-40']],
+            [['25-29']],
+            [['30-35']],
             [WATER],
             steals=[True]
         ), is_linked=(2, 'Stase')),
-        #TODO: Figure out how much Power Berserk gives
-        Spell('Berserk', [195], Effects(
-            [['50'],
-             ['100'],
-             ['150']],
-            None,
-            ['buff_pow','buff_pow','buff_pow']
-        ), aggregates=[('Option 1', [0]),
-                       ('Option 2', [1]),
-                       ('Option 3', [2])]), 
-        #TODO: The following spells should only display the best element
         Spell('Retribution', [90, 157], Effects(
-            [['26-30', '31-35']] * 4,
-            [['31-35', '36-40']] * 4,
+            [['28', '35']] * 4,
+            [['34', '42']] * 4,
             [EARTH, FIRE, WATER, AIR],
         ), aggregates=[('Hit in best element', [0]), 
                        ('', [1]),
@@ -2663,14 +2633,44 @@ DAMAGE_SPELLS = {
                        ('', [3])],
         is_linked=(1, 'Bloodthirsty Madness')),
         Spell('Bloodthirsty Madness', [200], Effects(
-            [['24-28']] * 4,
+            [['24-28'], ['48-56']] * 4,
             None,
-            [EARTH, FIRE, WATER, AIR],
+            [EARTH, FIRE, WATER, AIR], steals=[True],
         ), aggregates=[('Hit in best element', [0]),
                           ('', [1]),
                           ('', [2]),
-                          ('', [3])],
+                          ('', [3]),
+                        ('Hit in best element on caster\'s Swords', [4]),
+                          ('', [5]),
+                          ('', [6]),
+                          ('', [7])],
         is_linked=(2, 'Retribution')),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+
+        
+        
+        
+        #TODO: The following spells should only display the best element
+        
     ],
     'Sadida': [
         Spell('Bramble', [1, 25, 52], Effects(
