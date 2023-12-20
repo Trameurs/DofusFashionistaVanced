@@ -2287,11 +2287,36 @@ DAMAGE_SPELLS = {
                         ('Drunk', [5, 6, 7, 8, 9])]), 
     ],
     'Rogue': [
-        Spell('Explobomb', [1, 25, 52], Effects(
-            [['12-13', '16-17', '20-22']],
+        Spell('Explobomb', [1, 67, 133], Effects(
+            [['9-10', '13-14', '17-19'],
+             ['21-24', '24-27', '30-33'],
+             ['11-12', '12-14', '15-17']],
             None,
-            [FIRE],
-        )),
+            [FIRE] * 3,
+        ), aggregates=[('Explosion', [0]),
+                        ('Wall during caster turn', [1]),
+                        ('Wall after caster turn', [2])],
+        is_linked=(1, 'Resilient Explobomb')),
+        Spell('Resilient Explobomb', [100, 167], Effects(
+            [['13-14', '17-19'],
+             ['24-27', '30-33'],
+             ['12-14', '15-17']],
+            None,
+            [FIRE] * 3,
+        ), aggregates=[('Explosion', [0]),
+                        ('Wall during caster turn', [1]),
+                        ('Wall after caster turn', [2])],
+        is_linked=(2, 'Explobomb')),
+
+
+
+
+
+
+
+
+
+
         Spell('Extraction', [1, 30, 60], Effects(
             [['16-18', '21-23', '26-28']],
             [['19-21', '24-26', '29-31']],
