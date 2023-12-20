@@ -2189,8 +2189,7 @@ DAMAGE_SPELLS = {
             steals=[True],
         ), is_linked=(2, 'Pandilongation')),
         Spell('Inebriation', [30, 97, 164], Effects(
-            [['50', '50', '50'],
-             ['8', '10', '12'] * 5],
+            [['50', '50', '50']] + [['8', '10', '12']] * 5,
             None,
             ['buff_pow', NEUTRAL, EARTH, FIRE, WATER, AIR],
         ), aggregates=[('', [0]),
