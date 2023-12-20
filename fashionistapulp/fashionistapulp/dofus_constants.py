@@ -2147,7 +2147,58 @@ DAMAGE_SPELLS = {
             [['37-40', '46-50']],
             [FIRE],
         ), is_linked=(2, 'Hangover')),
-
+        Spell('Schnaps', [6, 71, 138], Effects(
+            [['12-14', '17-19', '21-24']],
+            [['15-17', '20-23', '25-29']],
+            [AIR],
+        ), is_linked=(1, 'Debauchery')),
+        Spell('Debauchery', [115, 182], Effects(
+            [['17-19', '20-22']],
+            [['20-22', '24-26']],
+            [EARTH],
+        ), is_linked=(2, 'Schnaps')),
+        Spell('Tipple', [10, 77, 144], Effects(
+            [['15-17', '20-23', '25-28']],
+            [['18-22', '24-27', '30-34']],
+            [WATER],
+        ), is_linked=(1, 'Numbness')),
+        Spell('Numbness', [120, 187], Effects(
+            [['31-34', '36-40']],
+            [['37-41', '43-48']],
+            [AIR],
+        ), is_linked=(2, 'Tipple')),
+        Spell('Stretcher', [20, 87, 154], Effects(
+            [['18-20', '23-26', '28-32']],
+            [['21-24', '27-31', '34-38']],
+            [EARTH],
+        ), is_linked=(1, 'Alcoshu')),
+        Spell('Alcoshu', [130, 197], Effects(
+            [['10-12', '11-13']],
+            [['12-14', '13-16']],
+            [WATER], steals=[True],
+        ), is_linked=(2, 'Stretcher')),
+        Spell('Pandilongation', [25, 92, 159], Effects(
+            [['18-20', '23-25', '28-31']],
+            [['21-23', '27-30', '34-37']],
+            [FIRE],
+        ), is_linked=(1, 'Liqueur')),
+        Spell('Liqueur', [135], Effects(
+            [['22-25']],
+            [['26-30']],
+            [AIR],
+            steals=[True],
+        ), is_linked=(2, 'Pandilongation')),
+        Spell('Inebriation', [30, 97, 164], Effects(
+            [['50', '50', '50'],
+             ['8', '10', '12'] * 5],
+            None,
+            ['buff_pow', NEUTRAL, EARTH, FIRE, WATER, AIR],
+        ), aggregates=[('', [0]),
+                        ('Hit in best element', [1]),
+                        ('', [2]),
+                        ('', [3]),
+                        ('', [4]),
+                        ('', [5])]),
 
 
 
@@ -2164,33 +2215,16 @@ DAMAGE_SPELLS = {
             [['39-43']],
             [FIRE],
         ), is_linked=(2, 'Blazing Fist')),
-        Spell('Debauchery', [1, 30, 60], Effects(
-            [['16-20', '19-23', '22-26']],
-            [['19-23', '22-26', '25-29']],
-            [EARTH],
-        ), is_linked=(1, 'Hangover')),
+        
         
         Spell('Alcoholic Breath', [6, 42, 74], Effects(
             [['16-17', '20-21', '24-25']],
             [['20-21', '24-25', '28-29']],
             [AIR],
         ), is_linked=(1, 'Numbness')),
-        Spell('Numbness', [120], Effects(
-            [['38-42']],
-            [['42-46']],
-            [AIR],
-        ), is_linked=(2, 'Alcoholic Breath')),
-        Spell('Schnaps', [13, 54, 94], Effects(
-            [['23-25', '29-31', '35-37']],
-            [['27-29', '33-35', '39-41']],
-            [AIR],
-        ), is_linked=(1, 'Liqueur')),
-        Spell('Liqueur', [130], Effects(
-            [['19-23']],
-            [['23-27']],
-            [AIR],
-            steals=[True],
-        ), is_linked=(2, 'Schnaps')),
+        
+        
+        
         Spell('Propulsion', [17, 58, 102], Effects(
             [['27-33', '37-43', '47-53']],
             [['32-38', '42-48', '52-58']],
@@ -2206,11 +2240,7 @@ DAMAGE_SPELLS = {
             [['9-11']],
             [AIR],
         ), is_linked=(2, 'Eviction')),
-        Spell('Tipple', [38, 90, 132], Effects(
-            [['16-20', '19-23', '22-26']],
-            [['20-24', '23-27', '26-30']],
-            [WATER],
-        ), is_linked=(1, 'Distillation')),
+        
         
         Spell('Melancholy', [56, 112, 147], Effects(
             [['31-33', '36-38', '41-43']],
