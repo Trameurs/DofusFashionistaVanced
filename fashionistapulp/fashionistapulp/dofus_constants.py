@@ -1949,6 +1949,26 @@ DAMAGE_SPELLS = {
         ), is_linked=(2, 'Boliche')),   
     ],
     'Osamodas': [
+        Spell('Dragonic', [1, 66, 132], Effects(
+            [['13-15', '17-20', '22-25']] * 2,
+            [['16-18', '21-24', '27-30']] * 2,
+            [FIRE] * 2,
+        ), aggregates=[('Allies', [0]),
+                       ('Enemies', [1])],
+        is_linked=(1, 'Sparkmeleon')),
+        Spell('Sparkmeleon', [95, 162], Effects(
+            [['21-23', '26-29']] * 2,
+            [['25-28', '31-35']] * 2,
+            [FIRE] * 2,
+        ), aggregates=[('Enemies', [0]), 
+                       ('Allies', [1])],
+        is_linked=(2, 'Dragonic')),
+
+
+
+
+
+
         Spell('Canine', [1, 25, 52], Effects(
             [['14-17', '17-20', '20-23']],
             [['17-20', '20-23', '23-26']],
@@ -1959,11 +1979,7 @@ DAMAGE_SPELLS = {
             [['46-50']],
             [AIR],
         ), is_linked=(2, 'Canine')),
-        Spell('Dragonic', [1, 30, 60], Effects(
-            [['15-17', '19-21', '23-25']],
-            [['20-22', '24-26', '26-30']],
-            [FIRE],
-        ), is_linked=(1, 'Aquatic Wave')),
+        
         Spell('Aquatic Wave', [110], Effects(
             [['28-32']],
             [['31-35']],
