@@ -2117,6 +2117,19 @@ DAMAGE_SPELLS = {
         )),    
     ],
     'Pandawa': [
+        Spell('Explosive Palm', [1, 68, 134], Effects(
+            create_level_based_stacking_values(((12, 14), (15, 17), (20, 22)), (6, 8, 12), 2),
+            create_level_based_stacking_values(((14, 16), (19, 21), (24, 26)), (6, 8, 12), 2),
+            [FIRE] * 2,
+        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)],
+        is_linked=(1, 'Drunkenness')),
+
+
+
+
+
+
+
         Spell('Blazing Fist', [1, 25, 52], Effects(
             [['16-21', '19-24', '22-27']],
             [['21-26', '24-29', '27-32']],
