@@ -2136,6 +2136,17 @@ DAMAGE_SPELLS = {
         ), aggregates=[('Sober', [0, 1, 2]),
                        ('Drunk', [3])],
         is_linked=(2, 'Explosive Palm')),
+        Spell('Hangover', [1, 67, 133], Effects(
+            create_level_based_stacking_values(((14, 16), (19, 22), (24, 27)), (4, 6, 10), 2),
+            create_level_based_stacking_values(((17, 19), (22, 25), (29, 32)), (4, 6, 10), 2),
+            [EARTH]*2,
+        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)],
+        is_linked=(1, 'Fiery Breath')),
+        Spell('Fiery Breath', [100, 167], Effects(
+            [['31-34', '38-42']],
+            [['37-40', '46-50']],
+            [FIRE],
+        ), is_linked=(2, 'Hangover')),
 
 
 
@@ -2158,12 +2169,7 @@ DAMAGE_SPELLS = {
             [['19-23', '22-26', '25-29']],
             [EARTH],
         ), is_linked=(1, 'Hangover')),
-        Spell('Hangover', [110], Effects(
-            create_stacking_values(((24, 28),), 5, 6),
-            create_stacking_values(((29, 33),), 5, 6),
-            [EARTH]*6,
-        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(6)],
-        is_linked=(2, 'Debauchery')),
+        
         Spell('Alcoholic Breath', [6, 42, 74], Effects(
             [['16-17', '20-21', '24-25']],
             [['20-21', '24-25', '28-29']],
