@@ -2122,7 +2122,20 @@ DAMAGE_SPELLS = {
             create_level_based_stacking_values(((14, 16), (19, 21), (24, 26)), (6, 8, 12), 2),
             [FIRE] * 2,
         ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)],
-        is_linked=(1, 'Drunkenness')),
+        is_linked=(1, 'Distillation')),
+        Spell('Distillation', [105, 172], Effects(
+            [['8-10', '10-12'],
+             ['10-13', '13-16'],
+             ['14-17', '17-21'],
+             ['26-29', '32-36']],
+            [['10-12', '12-14'],
+             ['12-15', '16-19'],
+             ['16-20', '20-25'],
+             ['31-35', '38-43']],
+            [WATER] * 4,
+        ), aggregates=[('Sober', [0, 1, 2]),
+                       ('Drunk', [3])],
+        is_linked=(2, 'Explosive Palm')),
 
 
 
@@ -2192,11 +2205,7 @@ DAMAGE_SPELLS = {
             [['20-24', '23-27', '26-30']],
             [WATER],
         ), is_linked=(1, 'Distillation')),
-        Spell('Distillation', [155], Effects(
-            [['38-42']],
-            [['42-46']],
-            [WATER],
-        ), is_linked=(2, 'Tipple')),
+        
         Spell('Melancholy', [56, 112, 147], Effects(
             [['31-33', '36-38', '41-43']],
             [['37-39', '42-44', '47-49']],
