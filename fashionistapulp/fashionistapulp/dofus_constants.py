@@ -2198,6 +2198,94 @@ DAMAGE_SPELLS = {
                         ('', [3]),
                         ('', [4]),
                         ('', [5])]),
+        Spell('Propulsion', [40, 107, 174], Effects(
+            [['21-23', '27-30', '33-37']],
+            [['25-28', '32-36', '40-44']],
+            [AIR],
+        ), is_linked=(1, 'Absinthe')),
+        Spell('Absinthe', [150], Effects(
+            [['12-15']],
+            [['14-18']],
+            [FIRE], steals=[True],
+        ), is_linked=(2, 'Propulsion')),
+        Spell('Brandy', [45, 112, 179], Effects(
+            [['16-18', '22-24', '26-29']],
+            [['20-22', '26-28', '31-35']],
+            [WATER],
+        ), is_linked=(1, 'Filthipint')),
+        Spell('Filthipint', [155], Effects(
+            [['34-38']],
+            [['41-46']],
+            [EARTH],
+            steals=[True],
+        ), is_linked=(2, 'Brandy')),
+        Spell('Eviction', [60, 127, 194], Effects(
+            [['11-13', '13-15', '15-17']],
+            [['13-15', '16-18', '18-20']],
+            [EARTH],
+        ), is_linked=(1, 'Nausea')),
+        Spell('Nausea', [170], Effects(
+            [['15-17'],
+             ['19-21']],
+            [['18-20'],
+             ['22-24']],
+            [AIR] * 2,
+        ), aggregates=[('Sober', [0]),
+                       ('Drunk', [1])], 
+        is_linked=(2, 'Eviction')),
+        Spell('Explosive Flask', [65, 131, 198], Effects(
+            [['13-15', '16-18', '18-20'],
+             ['16-19', '20-22', '22-25']],
+            [['16-18', '19-21', '22-24'],
+             ['20-22', '24-27', '26-30']],
+            [FIRE] * 2,
+        ), aggregates=[('Sober', [0]),
+                        ('Drunk', [1])],
+        is_linked=(1, 'Pandatak')),
+        Spell('Pandatak', [175], Effects(
+            [['38-42'],
+             ['46-50']],
+            [['46-50'],
+             ['54-58']],
+            [EARTH] * 2,
+        ), aggregates=[('Sober', [0]),
+                        ('Drunk', [1])],
+        is_linked=(2, 'Explosive Flask')),
+        Spell('Alcoholic Breath', [75, 142], Effects(
+            [['23-26', '28-32']],
+            [['27-31', '34-38']],
+            [AIR],
+        ), is_linked=(1, 'Waterfall')),
+        Spell('Waterfall', [185], Effects(
+            [['24-28']],
+            [['29-34']],
+            [WATER],
+        ), is_linked=(2, 'Alcoholic Breath')),
+        Spell('Melancholy', [80, 147], Effects(
+            [['29-32', '36-40'],
+             ['35-38', '41-45']],
+            [['35-39', '43-48'],
+             ['44-48', '51-556']],
+            [WATER] * 2,
+        ), aggregates=[('Sober', [0]),
+                       ('Drunk', [1])],
+        is_linked=(1, 'Pandjiu')),
+        Spell('Pandjiu', [190], Effects(
+            [['28-32']],
+            [['34-38']],
+            [FIRE],
+        ), is_linked=(2, 'Melancholy')),
+        Spell('Pandawa\'s Hand', [200], Effects(
+            [['50']] * 5 + [['5']] * 5,
+            [['100']] * 5 + [['10']] * 5,
+            [NEUTRAL, EARTH, FIRE, WATER, AIR] * 2,
+        ), aggregates=[('Sober:<br>Hit in best element', [0]),
+                        ('', [1]),
+                        ('', [2]),
+                        ('', [3]),
+                        ('', [4]),
+                        ('Drunk', [5, 6, 7, 8, 9])]),
+
 
 
 
@@ -2216,29 +2304,12 @@ DAMAGE_SPELLS = {
         ), is_linked=(2, 'Blazing Fist')),
         
         
-        Spell('Alcoholic Breath', [6, 42, 74], Effects(
-            [['16-17', '20-21', '24-25']],
-            [['20-21', '24-25', '28-29']],
-            [AIR],
-        ), is_linked=(1, 'Numbness')),
         
         
         
-        Spell('Propulsion', [17, 58, 102], Effects(
-            [['27-33', '37-43', '47-53']],
-            [['32-38', '42-48', '52-58']],
-            [FIRE],
-        )),
-        Spell('Eviction', [32, 81, 124], Effects(
-            [['12-16', '15-19', '18-22']],
-            [['15-19', '18-22', '21-25']],
-            [EARTH],
-        ), is_linked=(1, 'Nausea')),
-        Spell('Nausea', [150], Effects(
-            [['7-9']],
-            [['9-11']],
-            [AIR],
-        ), is_linked=(2, 'Eviction')),
+        
+        
+        
         
         
         Spell('Melancholy', [56, 112, 147], Effects(
@@ -2257,27 +2328,10 @@ DAMAGE_SPELLS = {
             None,
             ['buff_pow', 'buff_dam']
         )),
-        Spell('Explosive Flask', [69, 122, 162], Effects(
-            [['24-28', '29-33', '34-38']],
-            [['29-33', '34-38', '39-43']],
-            [FIRE],
-        ), is_linked=(1, 'Absinthe')),
-        Spell('Absinthe', [180], Effects(
-            [['25-29']],
-            [['30-34']],
-            [FIRE],
-        ), is_linked=(2, 'Explosive Flask')),
-        Spell('Pandatak', [84, 134, 178], Effects(
-            [['36-40', '42-46', '48-52']],
-            [['43-47', '49-53', '55-59']],
-            [EARTH],
-        ), is_linked=(1, 'Filthipint')),
-        Spell('Filthipint', [190], Effects(
-            [['38-42']],
-            [['42-46']],
-            [EARTH],
-            steals=[True],
-        ), is_linked=(2, 'Pandatak')),
+        
+        
+        
+        
     ],
     'Rogue': [
         Spell('Explobomb', [1, 25, 52], Effects(
