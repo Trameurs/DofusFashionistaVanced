@@ -2440,6 +2440,14 @@ DAMAGE_SPELLS = {
             [['42-47']],
             [WATER],
         ), is_linked=(2, 'Boomerang Daggers')),
+        Spell('Sticky Bomb', [180], Effects(
+            [['19']],
+            None,
+            [EARTH, FIRE, WATER, AIR],
+        ), aggregates=[('Hit in best element', [0]),
+                        ('', [1]),
+                        ('', [2]),
+                        ('', [3])]),
 
 
 
