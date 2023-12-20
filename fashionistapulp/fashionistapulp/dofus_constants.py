@@ -2475,7 +2475,7 @@ DAMAGE_SPELLS = {
     ],
     'Sacrier': [
         Spell('Hemorrhage', [1, 66, 132], Effects(
-            [['13-17', '17-20', '22-26']],
+            [['13-16', '17-20', '22-26']],
             [['16-19', '21-24', '26-31']],
             [AIR],
             steals=[True],
@@ -2487,67 +2487,63 @@ DAMAGE_SPELLS = {
             steals=[True],
         ), is_linked=(2, 'Hemorrhage')), 
         Spell('Nervousness', [1, 67, 133], Effects(
-            create_level_based_stacking_values(((13, 15), (16, 20), (21, 25)), 
-                                               (15, 15, 15), 2),
-            create_level_based_stacking_values(((15, 18), (20, 23), (55, 30)), 
-                                               (15, 15, 15), 2),
+            [['13-14', '16-18', '21-23'],
+             ['21-23', '27-30', '35-39']],
+            [['15-17', '20-22', '25-28'],
+             ['25-28', '33-36', '42-47']],
             [[WATER]] * 2
-        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)],
-        is_linked=(1, 'Clobbering')),
-        Spell('Clobbering', [100, 167], Effects(
-            create_level_based_stacking_values(((26, 29), (32, 36)), 
-                                               (20, 20), 2),
-            create_level_based_stacking_values(((31, 35), (38, 43)), 
-                                               (20, 20), 2),
-            [[WATER]] * 2
-        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)]
-        , is_linked=(2, 'Nervousness')),
-        Spell('Blood Bath', [3, 69, 136], Effects(
-            [['17-20', '23-27', '29-34']],
-            [['21-24', '27-32', '34-41']],
+        ), aggregates=[('Suffering 1', [0]),
+                       ('Suffering 10', [1])],
+        is_linked=(1, 'Immolation')),
+        Spell('Immolation', [100, 167], Effects(
+            [['34-37', '40-44']],
+            [['41-45', '48-53']],
+            [[FIRE]],
+        ), is_linked=(2, 'Nervousness')),
+        Spell('Torture', [3, 69, 136], Effects(
+            [['13-16', '17-20', '22-26']],
+            [['16-19', '21-24', '26-31']],
             [EARTH],
             steals=[True],
-        ), is_linked=(1, 'Torture')),
-        Spell('Torture', [110, 177], Effects(
-            [['18-21', '22-26']],
-            [['21-25', '26-31']],
+        ), is_linked=(1, 'Blood Bath')),
+        Spell('Blood Bath', [110, 177], Effects(
+            [['21-24', '27-31']],
+            [['25-29', '32-37']],
             [EARTH],
             steals=[True],
-        ), is_linked=(2, 'Blood Bath')),
+        ), is_linked=(2, 'Torture')),
         Spell('Excruciating Pain', [6, 71, 138], Effects(
-            create_level_based_stacking_values(((13, 15), (17, 20), (21, 25)), 
-                                               (15, 15, 15), 2),
-            create_level_based_stacking_values(((15, 18), (20, 24), (25, 30)), 
-                                               (15, 15, 15), 2),
-            [[FIRE]] * 2
-        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)]
-        , is_linked=(1, 'Immolation')),
-        Spell('Immolation', [115, 182], Effects(
-            create_level_based_stacking_values(((28, 32), (33, 37)), 
-                                               (20, 20), 2),
-            create_level_based_stacking_values(((34, 38), (40, 44)), 
-                                               (20, 20), 2),
-            [[FIRE]] * 2
-        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(2)]
-        , is_linked=(2, 'Excruciating Pain')),   
+            [['12-14', '16-18', '20-23'],
+             ['20-23', '27-31', '34-38']],
+            [['15-16', '20-22', '24-27'],
+             ['24-27', '33-37', '41-46']],
+            [FIRE],
+        ), aggregates=[('Suffering 1', [0]),
+                        ('Suffering 10', [1])],
+        is_linked=(1, 'Clobbering')),
+        Spell('Clobbering', [115, 182], Effects(
+            [['31-35', '39-43']],
+            [['38-41', '47-52']],
+            [WATER],
+        ), is_linked=(2, 'Excruciating Pain')),
         Spell('Mutilation', [10, 77, 144], Effects(
             [['50', '100', '150']],
             None,
             ['buff_pow']
         )),
         Spell('Ravages', [20, 87, 154], Effects(
-            [['16-19', '21-24', '26-30']],
-            [['20-23', '25-29', '31-36']],
+            [['17-20', '22-26', '28-32']],
+            [['21-24', '27-31', '34-38']],
             [EARTH]
         ), is_linked=(1, 'Light Speed')),
         Spell('Light Speed', [130, 197], Effects(
-            [['21-24', '23-27']],
-            [['25-29', '28-32']],
+            [['20-23', '22-26']],
+            [['24-28', '26-31']],
             [AIR],
         ), is_linked=(2, 'Ravages')),
         Spell('Assault', [25, 92, 159], Effects(
-            [['9-10', '12-14', '15-18']],
-            [['11-14', '14-17', '18-22']],
+            [['9-11', '11-14', '14-17']],
+            [['11-13', '13-16', '17-20']],
             [AIR]
         ), is_linked=(1, 'Aversion')),
         Spell('Aversion', [135], Effects(
@@ -2555,7 +2551,7 @@ DAMAGE_SPELLS = {
             [['15-18']],
             [FIRE],
         ), is_linked=(2, 'Assault')),
-        Spell('Condensation', [32, 81, 124], Effects(
+        Spell('Condensation', [32, 102, 169], Effects(
             [['13-16', '17-20', '21-25']],
             [['16-19', '20-24', '25-30']],
             [WATER]
@@ -2566,33 +2562,46 @@ DAMAGE_SPELLS = {
             [EARTH],
         ), is_linked=(2, 'Condensation')),
         Spell('Hostility', [40, 107, 174], Effects(
-            [['7-9', '10-12', '14-17']],
-            [['10-12', '14-16', '18-21']],
+            [['9-11', '12-14', '15-18']],
+            [['11-14', '14-17', '18-22']],
             [FIRE]
         ), is_linked=(1, 'Projection')),
         Spell('Projection', [150], Effects(
-            [['15-18']],
-            [['18-22']],
+            [['14-17']],
+            [['17-20']],
             [WATER],
         ), is_linked=(2, 'Hostility')),
-        Spell('Absorption', [69, 122, 162], Effects(
-            [['14-17', '19-22', '22-26']] * 2,
-            [['17-20', '23-28', '26-31']] * 2,
-            [FIRE, FIRE],
-            steals=[True, False],
-            heals=[False, True],
-            
-        ), aggregates=[('Enemies', [0]),
-                       ('Allies', [1])],
-        is_linked=(1, 'Slaughter')),
+        Spell('Absorption', [55, 122, 189], Effects(
+            [['13-16', '17-20', '20-24']],
+            [['16-19', '20-24', '24-29']],
+            [FIRE],
+        ), is_linked=(1, 'Slaughter')),
         Spell('Slaughter', [165], Effects(
-            [['29-33'],
-             ['150']],
-            [['35-40'],
-             ['150']],
-            [FIRE, 'buff_pow'],
-            steals=[True, False],
+            [['26-30']],
+            [['31-36']],
+            [FIRE],
+            steals=[True],
         ), is_linked=(2, 'Absorption')),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
         Spell('Decimation', [92, 141, 187], Effects(
             create_level_based_stacking_values(((17, 20), (22, 25), (24, 28)), 
                                                (20, 20, 20), 2),
