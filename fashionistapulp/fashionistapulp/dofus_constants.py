@@ -2826,6 +2826,17 @@ DAMAGE_SPELLS = {
         ), aggregates=[('', [0,]),
                        ('', [1])], stacks=1, 
         is_linked=(2, 'Deviousness')),
+        Spell('Arsenic', [3, 69, 136], Effects(
+            [['8-10', '11-13', '14-16']],
+            [['10-12', '13-15', '17-19']],
+            [AIR],
+        ), is_linked=(1, 'Toxines')),
+        Spell('Toxines', [110, 177], Effects(
+            create_level_based_stacking_values(((5, 7), (7, 9)), (5, 6), 6),
+            None,
+            [AIR] * 6,
+        ), aggregates=[(TRAP_LABELS[n], [n]) for n in range(6)],
+        is_linked=(2, 'Arsenic')),
 
 
 
