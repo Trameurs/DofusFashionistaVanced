@@ -3238,7 +3238,7 @@ DAMAGE_SPELLS = {
         Spell('Affront', [160], Effects(
             [['20-23']] * 2,
             [['24-28']] * 2,
-            [FIRE], steals=[False, True],
+            [FIRE] * 2, steals=[False, True],
         ), aggregates=[('Directly', [0]),
                        ('Through a portal', [1])],
         is_linked=(2, 'Affliction')),
