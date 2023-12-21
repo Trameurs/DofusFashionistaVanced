@@ -456,22 +456,22 @@ CHARGED_LABELS = [
     'Not charged',
     'Charged once',
     'Charged twice',
-] + ['Charged %d times' % n for n in range(3, 10)]
+] + ['Charged %d times' % n for n in range(3, 20)]
 
 BOMB_LABELS = [
     '',
     '1 bomb',
-] + ['%d bombs' % n for n in range(2, 10)]
+] + ['%d bombs' % n for n in range(2, 20)]
 
 TREE_LABELS = [
     '',
     '1 tree',
-] + ['%d trees' % n for n in range(2, 10)]
+] + ['%d trees' % n for n in range(2, 20)]
 
 TRAP_LABELS = [
     '',
     '1 trap',
-] + ['%d traps' % n for n in range(2, 10)]
+] + ['%d traps' % n for n in range(2, 20)]
 
 
 DAMAGE_SPELLS = {
@@ -2870,10 +2870,10 @@ DAMAGE_SPELLS = {
             [AIR],
         ), is_linked=(2, 'Miry Trap')),
         Spell('Malevolent Trap', [25, 92, 159], Effects(
-            create_level_based_stacking_values(((18, 20), (23, 26), (28, 32)), (10, 15, 20), 10),
+            create_level_based_stacking_values(((18, 20), (23, 26), (28, 32)), (10, 15, 20), 13),
             None,
-            [EARTH] * 10,
-        ), aggregates=[(TRAP_LABELS[n], [n]) for n in range(10)],
+            [EARTH] * 13,
+        ), aggregates=[(CHARGED_LABELS[n], [n]) for n in range(13)],
         is_linked=(1, 'Break-In'),
         special='trap'),
         Spell('Break-In', [135], Effects(
