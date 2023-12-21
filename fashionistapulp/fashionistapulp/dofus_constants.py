@@ -2881,6 +2881,32 @@ DAMAGE_SPELLS = {
             [['19-21']],
             [FIRE],
         ), is_linked=(2, 'Malevolent Trap')),
+        Spell('Repelling Trap', [30, 97, 164], Effects(
+            [['12-14', '15-17', '19-21']],
+            None,
+            [AIR],
+        ), special='trap',
+        is_linked=(1, 'Frightful Trap')),
+        Spell('Frightful Trap', [140], Effects(
+            [['20-22']],
+            None,
+            [EARTH],
+        ), special='trap',
+        is_linked=(2, 'Repelling Trap')),
+        Spell('Shakedown', [40, 107, 174], Effects(
+            [['21-24', '26-29', '31-34'],
+             ['40', '60', '100']],
+            [['26-29', '31-34', '37-41'],
+             ['60', '80', '120']],
+            [EARTH, 'buff_str'],
+        ), aggregates=[('', [0]),
+                       ('', [1])], stacks=2,
+        is_linked=(1, 'Perquisition')),
+        Spell('Perquisition', [150], Effects(
+            [['24-27']],
+            [['29-32']],
+            [FIRE],
+        ), is_linked=(2, 'Shakedown')),
 
 
 
@@ -2975,11 +3001,7 @@ DAMAGE_SPELLS = {
         ), is_linked=(1, 'Epidemic'),
         special='trap'),
         
-        Spell('Repelling Trap', [56, 112, 147], Effects(
-            [['8', '10', '12']],
-            None,
-            [AIR],
-        ), special='trap'),
+        
         Spell('Con', [69, 122, 162], Effects(
             [['25-29', '29-33', '33-37']],
             [['32', '36', '40']],
@@ -3007,12 +3029,8 @@ DAMAGE_SPELLS = {
             [FIRE, 'buff_int'],
         ), aggregates=[('', [0]),
                        ('', [1])], stacks=2,
-        is_linked=(1, 'Perquisition')),
-        Spell('Perquisition', [190], Effects(
-            [['19-23']],
-            [['23-27']],
-            [WATER],
-        ), is_linked=(2, 'Furrow')),
+        ),
+        
         Spell('Lethal Attack', [92, 141, 187], Effects(
             [['39-43', '46-50', '53-57']],
             [['49-53', '56-60', '63-67']],
