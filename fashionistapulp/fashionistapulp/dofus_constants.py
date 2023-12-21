@@ -2847,29 +2847,6 @@ DAMAGE_SPELLS = {
             [['35-39', '41-46']],
             [WATER], steals=[True],
         ), is_linked=(2, 'Cruelty')),
-        Spell('Tricky Trap', [15, 82, 149], Effects(
-            [['18-20', '22-24', '26-28']],
-            None,
-            [FIRE],
-        ), special='trap',
-        is_linked=(1, 'Waylaying')),
-        Spell('Waylaying', [125, 192], Effects(
-            [['19-22', '22-25']],
-            [['23-26', '27-30']],
-            [WATER], steals=[True],
-        ), is_linked=(2, 'Tricky Trap')),
-        Spell('Miry Trap', [20, 87, 154], Effects(
-            [['21-25', '27-31', '33-37']],
-            None,
-            [WATER],
-        ), 
-        is_linked=(1, 'Epidemic'),
-        special='trap'),
-        Spell('Epidemic', [130, 197], Effects(
-            [['32-36', '36-40']],
-            None,
-            [AIR],
-        ), is_linked=(2, 'Miry Trap')),
 
 
 
