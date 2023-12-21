@@ -473,6 +473,11 @@ TRAP_LABELS = [
     '1 trap',
 ] + ['%d traps' % n for n in range(2, 20)]
 
+REBOUND_LABELS = [
+    '',
+    '1 rebound',
+] + ['%d rebounds' % n for n in range(2, 20)]
+
 
 DAMAGE_SPELLS = {
     'default': [
@@ -3036,21 +3041,26 @@ DAMAGE_SPELLS = {
         ), aggregates=[('', [0]),
                        ('Leaving Telegraf state', [1])],
         is_linked=(1, 'Cog')),
-        Spell('Cog', [110], Effects(
-            [['12-14']],
-            [['15-17']],
+        Spell('Cog', [100, 167], Effects(
+            [['14-16', '17-20']],
+            [['16-19', '20-24']],
             [WATER],
         ), is_linked=(2, 'Hand')),
-        Spell('Shriveling', [3, 35, 67], Effects(
-            [['16-19', '21-24', '26-29']],
-            [['21-24', '26-29', '31-34']],
+        Spell('Shriveling', [3, 69, 136], Effects(
+            [['14-16', '19-22', '25-28'],
+             ['20-22', '26-29', '33-36']],
+            [['18-20', '23-26', '30-34'],
+             ['24-26', '31-35', '40-43']],
+            [AIR] * 2,
+        ), aggregates=[('', [0]),
+                       ('Telegraf state', [1])],
+        is_linked=(1, 'Drying Up')),
+        Spell('Drying Up', [110, 177], Effects(
+            create_level_based_stacking_values(((27, 31), (34, 38)), (7, 10), 6),
+            None,
             [AIR],
-        ), is_linked=(1, 'Drying Up')),
-        Spell('Drying Up', [115], Effects(
-            [['38-42']],
-            [['44-48']],
-            [AIR],
-        ), is_linked=(2, 'Shriveling')),
+        ), aggregates=[(REBOUND_LABELS[n], [n]) for n in range(6)], 
+        is_linked=(2, 'Shriveling')),
         Spell("Xelor's Punch", [9, 47, 87], Effects(
             [['15-19', '19-23', '23-27']],
             [['21-25', '25-29', '29-33']],
