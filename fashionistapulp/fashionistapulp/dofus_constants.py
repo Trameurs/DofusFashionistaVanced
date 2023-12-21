@@ -3293,6 +3293,26 @@ DAMAGE_SPELLS = {
         ), is_linked=(2, 'Sarcasme')), 
     ],
     'Huppermage': [
+        Spell('Telluric Wave', [1, 67, 133], Effects(
+            [['15-19', '20-24', '25-29']],
+            [['20-24', '25-29', '30-34']],
+            [EARTH],
+        ), is_linked=(1, 'Cataract')),
+        Spell('Cataract', [100, 167], Effects(
+            [['15-17', '18-20']] * 2,
+            [['18-20', '21-23']] * 2,
+            [WATER, FIRE],
+        ), is_linked=(2, 'Telluric Wave')),
+
+
+
+
+
+
+
+
+
+
         Spell('Ether', [1, 20, 40], Effects(
             [['12-14', '16-18', '20-22']],
             [['15-17', '19-21', '23-25']],
@@ -3305,11 +3325,7 @@ DAMAGE_SPELLS = {
              ['22-26']],
             [WATER, EARTH],
         ), is_linked=(2, 'Ether')),
-        Spell('Telluric Wave', [1, 25, 52], Effects(
-            [['15-19', '20-24', '25-29']],
-            [['20-24', '25-29', '30-34']],
-            [EARTH],
-        ), is_linked=(1, 'Celestial Wave')),
+        
         Spell('Celestial Wave', [105], Effects(
             [['20-24'],
              ['20-24']],
@@ -3322,13 +3338,7 @@ DAMAGE_SPELLS = {
             [['16-18', '20-22', '24-26']],
             [FIRE],
         ), is_linked=(1, 'Cataract')),
-        Spell('Cataract', [115], Effects(
-            [['26-30'],
-             ['26-30']],
-            [['31-35'],
-             ['31-35']],
-            [FIRE, WATER],
-        ), is_linked=(2, 'Flamethrower')),
+        
         Spell('Stalagmite', [6, 42, 74], Effects(
             [['18-21', '23-26', '28-31']],
             [['24-27', '29-32', '34-37']],
