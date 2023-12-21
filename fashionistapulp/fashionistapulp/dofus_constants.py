@@ -2746,12 +2746,6 @@ DAMAGE_SPELLS = {
         ), aggregates=[('Enemies', [0]),
                        ('Allies/Summons', [1])],
         is_linked=(1, 'Force of Nature')),
-        Spell('Force of Nature', [160], Effects(
-            create_stacking_values((('21-27')), 15, 6),
-            create_stacking_values((('29-36')), 15, 6),
-            [EARTH] * 6,
-        ), aggregates=[(TREE_LABELS[n], [n]) for n in range(6)],
-        is_linked=(2, 'Dolly Sacrifice')),
 
 
 
