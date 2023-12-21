@@ -2834,7 +2834,7 @@ DAMAGE_SPELLS = {
         Spell('Toxines', [110, 177], Effects(
             create_level_based_stacking_values(((5, 7), (7, 9)), (5, 6), 6),
             None,
-            [AIR],
+            [AIR] * 6,
         ), aggregates=[(TRAP_LABELS[n], [n]) for n in range(6)],
         is_linked=(2, 'Arsenic')),
 
