@@ -2826,6 +2826,17 @@ DAMAGE_SPELLS = {
         ), aggregates=[('', [0,]),
                        ('', [1])], stacks=1, 
         is_linked=(2, 'Deviousness')),
+        Spell('Arsenic', [3, 69, 136], Effects(
+            [['8-10', '11-13', '14-16']],
+            [['10-12', '13-15', '17-19']],
+            [AIR],
+        ), is_linked=(1, 'Toxines')),
+        Spell('Toxines', [110, 177], Effects(
+            create_level_based_stacking_values(((5, 7), (7, 9)), (5, 6), 6),
+            None,
+            [AIR],
+        ), aggregates=[(TRAP_LABELS[n], [n]) for n in range(6)],
+        is_linked=(2, 'Arsenic')),
 
 
 
@@ -2839,17 +2850,6 @@ DAMAGE_SPELLS = {
             [FIRE],
         ), special='trap'),
         
-        
-        Spell('Insidious Poison', [3, 35, 67], Effects(
-            [['6-7', '8-9', '10-11']],
-            [['8-9', '10-11', '12-13']],
-            [AIR],
-        ), is_linked=(1, 'Toxines')),
-        Spell('Toxines', [115], Effects(
-            [['9-11']],
-            None,
-            [AIR],
-        ), is_linked=(2, 'Insidious Poison')),
         Spell('Mistake', [6, 42, 74], Effects(
             [['11-14', '14-17', '17-20']] * 2
             + [['30', '40', '50']] * 2,
