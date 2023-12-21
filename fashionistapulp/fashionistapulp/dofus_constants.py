@@ -3152,6 +3152,25 @@ DAMAGE_SPELLS = {
         ), aggregates=[('', [0, 1, 2, 3])]),
     ],
     'Eliotrope': [
+        Spell('Insult', [1, 67, 133], Effects(
+            [['15-17', '20-22', '26-28']],
+            [['18-20', '24-26', '31-34']],
+            [AIR],
+        ), is_linked=(1, 'Contempt')),
+        Spell('Contempt', [100, 167], Effects(
+            [['19-22', '24-27']],
+            [['23-26', '29-32']],
+            [AIR],
+        ), is_linked=(2, 'Insult')),
+
+
+        
+
+
+
+
+
+
         Spell('Affliction', [1, 25, 52], Effects(
             [['14-16', '17-19', '20-22']],
             [['18-20', '21-23', '24-26']],
@@ -3162,16 +3181,7 @@ DAMAGE_SPELLS = {
             [['25-29']],
             [WATER],
         ), is_linked=(2, 'Affliction')),
-        Spell('Insult', [1, 30, 60], Effects(
-            [['20-22', '23-25', '26-28']],
-            [['25-27', '28-30', '31-33']],
-            [AIR],
-        ), is_linked=(1, 'Contempt')),
-        Spell('Contempt', [110], Effects(
-            [['30-34']],
-            [['33-37']],
-            [AIR],
-        ), is_linked=(2, 'Insult')),
+        
         Spell('Shock', [3, 35, 67], Effects(
             [['19-21', '24-26', '29-31']],
             [['22-24', '27-29', '32-34']],
