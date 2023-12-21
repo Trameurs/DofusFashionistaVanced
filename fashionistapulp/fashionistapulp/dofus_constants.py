@@ -2907,6 +2907,38 @@ DAMAGE_SPELLS = {
             [['29-32']],
             [FIRE],
         ), is_linked=(2, 'Shakedown')),
+        Spell('Con', [45, 112, 179], Effects(
+            [['18-20', '24-26', '29-32'],
+             ['40', '60', '100']],
+            [['22-24', '29-32', '35-38'],
+             ['60', '80', '120']],
+            [AIR, 'buff_agi'],
+        ), aggregates=[('', [0]),
+                       ('', [1])], stacks=2,
+        is_linked=(1, 'Raiding')),
+        Spell('Raiding', [155], Effects(
+            [['29-34']],
+            [['35-41']],
+            [WATER],
+        ), is_linked=(2, 'Con')),
+        Spell('Larceny', [50, 117, 184], Effects(
+            [['34-38', '38-42', '38-42'],
+             ['20', '40', '80']],
+            [['41-45', '46-50', '46-50'],
+             ['40', '60', '100']],
+            [WATER, 'buff_cha'],
+        ), aggregates=[('', [0]),
+                       ('', [1])], stacks=2, 
+        is_linked=(1, 'Lethal Attack')),
+        Spell('Lethal Attack', [160], Effects(
+            [['43-48'],
+             ['54-60']],
+            [['52-58'],
+             ['65-72']],
+            [EARTH] * 2,
+        ), aggregates=[('', [0]),
+                       ('On target with less than 25% HP', [1])],
+        is_linked=(2, 'Larceny')),
 
 
 
@@ -2926,27 +2958,15 @@ DAMAGE_SPELLS = {
         ), aggregates=[('', [0, 1]),
                        ('', [2]),
                        ('', [3])], stacks=2,
-        is_linked=(1, 'Raiding')),
-        Spell('Raiding', [120], Effects(
-            [['34-38']],
-            [['40-44']],
-            [WATER],
-        ), is_linked=(2, 'Mistake')),
+        ),
+       
         Spell('Tricky Blow', [9, 47, 87], Effects(
             [['18-21', '22-25', '26-29']],
             [['22-25', '26-29', '31-34']],
             [FIRE],
         ), is_linked=(1, 'Cut-Throat')),
         
-        Spell('Larceny', [135], Effects(
-            [['40-44'],
-             ['80']],
-            [['44-48'],
-             ['100']],
-            [WATER, 'buff_cha'],
-        ), aggregates=[('', [0]),
-                       ('', [1])], stacks=2, 
-        is_linked=(2, 'Miry Trap')),
+        
         Spell('Mass Trap', [22, 65, 108], Effects(
             [['24-28', '29-33', '34-38']],
             None,
@@ -3002,16 +3022,12 @@ DAMAGE_SPELLS = {
         special='trap'),
         
         
-        Spell('Con', [69, 122, 162], Effects(
-            [['25-29', '29-33', '33-37']],
-            [['32', '36', '40']],
-            [AIR],
-        ), is_linked=(1, 'Proximity Trap')),
+        
         Spell('Proximity Trap', [165], Effects(
             [['43-47']],
             None,
             [AIR],
-        ), is_linked=(2, 'Con'), 
+        ), 
         special='trap'),
         
         Spell('Calamity', [185], Effects(
@@ -3031,11 +3047,7 @@ DAMAGE_SPELLS = {
                        ('', [1])], stacks=2,
         ),
         
-        Spell('Lethal Attack', [92, 141, 187], Effects(
-            [['39-43', '46-50', '53-57']],
-            [['49-53', '56-60', '63-67']],
-            [EARTH],
-        ),),
+        
         
         Spell('Lethal Trap', [100, 147, 197], Effects(
             [['37-41', '45-49', '53-57']],
