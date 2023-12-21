@@ -2728,6 +2728,30 @@ DAMAGE_SPELLS = {
         ), aggregates=[('Leafy Tree', [0]),
                        ('Infected enemy', [1])],
         is_linked=(2, 'Natural Gift')),
+        Spell('Manifold Bramble', [45, 112, 179], Effects(
+            [['17-19', '22-25', '27-30']],
+            [['20-23', '27-30', '32-36']],
+            [EARTH],
+        ), is_linked=(1, 'Bane')),
+        Spell('Bane', [155], Effects(
+            [['27-30']],
+            [['31-35']],
+            [WATER], steals=[True],
+        ), is_linked=(2, 'Manifold Bramble')),
+        Spell('Dolly Sacrifice', [50, 117, 184], Effects(
+            [['27-30', '37-41', '43-48']] * 2,
+            [['33-36', '44-49', '52-58']] * 2,
+            [WATER, WATER],
+            steals=[False, True],
+        ), aggregates=[('Enemies', [0]),
+                       ('Allies/Summons', [1])],
+        is_linked=(1, 'Force of Nature')),
+        Spell('Force of Nature', [160], Effects(
+            create_stacking_values((('21-27')), 15, 6),
+            create_stacking_values((('29-36')), 15, 6),
+            [EARTH] * 6,
+        ), aggregates=[(TREE_LABELS[n], [n]) for n in range(6)],
+        is_linked=(2, 'Dolly Sacrifice')),
 
 
 
