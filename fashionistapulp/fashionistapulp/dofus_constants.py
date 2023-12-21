@@ -2787,35 +2787,11 @@ DAMAGE_SPELLS = {
                        ('If the target loses MP', [2]),
                        ('If the target loses AP', [3])],
         is_linked=(2, 'Bush Fire')),
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         Spell('Paralysing Bramble', [195], Effects(
-            [['18-20']],
-            [['21-25']],
+            [['20-23']],
+            [['24-28']],
             [AIR],
-         )),
+         )),  
     ],
     'Sram': [
         Spell('Tricky Trap', [1, 30, 60], Effects(
