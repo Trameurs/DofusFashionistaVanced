@@ -2870,18 +2870,6 @@ DAMAGE_SPELLS = {
             None,
             [AIR],
         ), is_linked=(2, 'Miry Trap')),
-        Spell('Malevolent Trap', [25, 92, 159], Effects(
-            create_level_based_stacking_values(((18, 20), (23, 26), (28, 32)), (10, 15, 20), 10),
-            None,
-            [EARTH] * 10,
-        ), aggregates=[(TRAP_LABELS[n], [n]) for n in range(10)],
-        is_linked=(1, 'Break-In'),
-        special='trap'),
-        Spell('Break-In', [135], Effects(
-            [['15-17']],
-            [['19-21']],
-            [FIRE],
-        ), is_linked=(2, 'Malevolent Trap')),
 
 
 
