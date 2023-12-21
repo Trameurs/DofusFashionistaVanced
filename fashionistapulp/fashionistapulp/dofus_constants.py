@@ -2812,6 +2812,20 @@ DAMAGE_SPELLS = {
             [EARTH] * 6,
         ), aggregates=[(TRAP_LABELS[n], [n]) for n in range(6)],
         is_linked=(2, 'Gangsterdom')),
+        Spell('Deviousness', [1, 67, 133], Effects(
+            [['18-21', '22-25', '26-29']],
+            [['22-25', '26-29', '31-34']],
+            [FIRE],
+        ), is_linked=(1, 'Cut-Throat')),
+        Spell('Cut-Throat', [100, 167], Effects(
+            [['30-33', '34-38'],
+             ['100']],
+            [['46-40', '40-44'],
+             ['150']],
+            [FIRE, 'buff_pow'],
+        ), aggregates=[('', [0,]),
+                       ('', [1])], stacks=1, 
+        is_linked=(2, 'Deviousness')),
 
 
 
@@ -2824,11 +2838,7 @@ DAMAGE_SPELLS = {
             None,
             [FIRE],
         ), special='trap'),
-        Spell('Deviousness', [1, 25, 52], Effects(
-            [['14-16', '17-19', '20-22']],
-            [['18-20', '21-23', '24-26']],
-            [EARTH],
-        ), is_linked=(1, 'Pitfall')),
+        
         
         Spell('Insidious Poison', [3, 35, 67], Effects(
             [['6-7', '8-9', '10-11']],
@@ -2860,15 +2870,6 @@ DAMAGE_SPELLS = {
             [['22-25', '26-29', '31-34']],
             [FIRE],
         ), is_linked=(1, 'Cut-Throat')),
-        Spell('Cut-Throat', [125], Effects(
-            [['34-38'],
-             ['250']],
-            [['40-44'],
-             ['250']],
-            [FIRE, 'buff_pow_traps'],
-        ), aggregates=[('', [0,]),
-                       ('', [1])], stacks=1, 
-        is_linked=(2, 'Tricky Blow')),
         Spell('Miry Trap', [17, 58, 102], Effects(
             [['21-25', '27-31', '33-37']],
             None,
