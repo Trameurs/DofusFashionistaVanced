@@ -471,7 +471,7 @@ TREE_LABELS = [
 TRAP_LABELS = [
     '',
     '1 trap',
-] + ['%d traps' % n for n in range(2, 20)]
+] + ['%d traps' % n for n in range(2, 10)]
 
 
 DAMAGE_SPELLS = {
@@ -2871,10 +2871,10 @@ DAMAGE_SPELLS = {
             [AIR],
         ), is_linked=(2, 'Miry Trap')),
         Spell('Malevolent Trap', [25, 92, 159], Effects(
-            create_level_based_stacking_values(((18, 20), (23, 26), (28, 32)), (10, 15, 20), 13),
+            create_level_based_stacking_values(((18, 20), (23, 26), (28, 32)), (10, 15, 20), 10),
             None,
-            [EARTH] * 13,
-        ), aggregates=[(TRAP_LABELS[n], [n]) for n in range(13)],
+            [EARTH] * 10,
+        ), aggregates=[(TRAP_LABELS[n], [n]) for n in range(10)],
         is_linked=(2, 'Lethal Attack'),
         special='trap'),
 
