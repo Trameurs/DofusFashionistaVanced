@@ -463,6 +463,11 @@ BOMB_LABELS = [
     '1 bomb',
 ] + ['%d bombs' % n for n in range(2, 10)]
 
+TREE_LABELS = [
+    '',
+    '1 tree',
+] + ['%d trees' % n for n in range(2, 10)]
+
 
 DAMAGE_SPELLS = {
     'default': [
@@ -2669,86 +2674,104 @@ DAMAGE_SPELLS = {
              ['30-32', '37-40']],
             [FIRE] * 2,
         ), aggregates=[('', [0]),
-                        ('Around Leafy Trees', [1])],
+                        ('Leafy Tree', [1])],
         is_linked=(2, 'Prickly Embers')),
-
-
-
-
-
-
-
-
-
-
-
-
-        Spell('Paralysing Poison', [3, 35, 67], Effects(
-            [['13', '19', '25']],
-            None,
-            [FIRE],
-        )),
-        Spell('Tear', [6, 42, 74], Effects(
-            [['14-17', '18-21', '22-25']],
-            [['18-21', '22-25', '26-29']],
+        Spell('Tear', [10, 77, 144], Effects(
+            [['13-15', '18-20', '22-25']],
+            [['16-18', '21-24', '26-30']],
             [WATER],
         ), is_linked=(1, 'Rise of Sap')),
-        Spell('Rise of Sap', [120], Effects(
-            [['29-32']],
-            [['33-36']],
+        Spell('Rise of Sap', [120, 187], Effects(
+            [['24-38', '28-32']],
+            [['29-33', '34-38']],
             [WATER],
             steals=[True],
         ), is_linked=(2, 'Tear')),
-        Spell('Soothing Bramble', [13, 54, 94], Effects(
+        Spell('Paralysing Poison', [15, 82, 149], Effects(
+            [['13-15', '18-20', '21-23']],
+            None,
+            [FIRE],
+        ), is_linked=(1, 'Contamination')),
+        Spell('Contamination', [125, 192], Effects(
+            [['9-11', '11-13']],
+            None,
+            [AIR],
+        ), is_linked=(2, 'Paralysing Poison')),
+        Spell('Soothing Bramble', [20, 87, 154], Effects(
             [['46-50', '61-65', '76-80']],
             None,
             [FIRE],
             heals=[True],
          )),
-        Spell('Earthquake', [27, 72, 118], Effects(
-            [['21', '28', '35']],
+         Spell('Earthquake', [35, 102, 169], Effects(
+            [['22-25', '28-31', '34-38']],
             None,
-            [FIRE],
+            [EARTH],
         ), is_linked=(1, 'Shake')),
         Spell('Shake', [145], Effects(
-            [['34-38']],
+            [['32-35']],
             None,
             [AIR],
         ), is_linked=(2, 'Earthquake')),
-        Spell('Natural Gift', [32, 81, 124], Effects(
+        Spell('Natural Gift', [40, 107, 174], Effects(
             [['30', '40', '50']],
             None,
             [FIRE],
             heals=[True],
         ), is_linked=(1, 'Inoculation')),
         Spell('Inoculation', [150], Effects(
-            [['38-42']],
-            None,
-            [AIR],
-        ), is_linked=(2, 'Natural Gift')),
-        Spell('Manifold Bramble', [38, 90, 132], Effects(
-            [['17-19', '22-24', '27-29']],
-            [['21-23', '26-28', '31-33']],
+            [['38-42'],
+             ['29-33']],
+            [['43-47'],
+             ['34-38']],
+            [AIR] * 2,
+        ), aggregates=[('Leafy Tree', [0]),
+                       ('Infected enemy', [1])],
+        is_linked=(2, 'Natural Gift')),
+        Spell('Manifold Bramble', [45, 112, 179], Effects(
+            [['17-19', '22-25', '27-30']],
+            [['20-23', '27-30', '32-36']],
             [EARTH],
-        ), is_linked=(1, 'Force of Nature')),
-        Spell('Force of Nature', [155], Effects(
-            [['11-17']],
-            [['21-27']],
-            [EARTH],
+        ), is_linked=(1, 'Bane')),
+        Spell('Bane', [155], Effects(
+            [['27-30']],
+            [['31-35']],
+            [WATER], steals=[True],
         ), is_linked=(2, 'Manifold Bramble')),
-        Spell('Dolly Sacrifice', [44, 97, 137], Effects(
-            [['31-35', '37-41', '43-47']] * 2,
-            [['38-42', '44-48', '50-54']] * 2,
+        Spell('Dolly Sacrifice', [50, 117, 184], Effects(
+            [['27-30', '37-41', '43-48']] * 2,
+            [['33-36', '44-49', '52-58']] * 2,
             [WATER, WATER],
             steals=[False, True],
         ), aggregates=[('Enemies', [0]),
                        ('Allies/Summons', [1])],
-        is_linked=(1, 'Bane')),
-        Spell('Bane', [160], Effects(
-            [['31-35']],
-            [['34-38']],
-            [WATER],
-        ), is_linked=(2, 'Dolly Sacrifice')),
+        is_linked=(1, 'Force of Nature')),
+        Spell('Force of Nature', [160], Effects(
+            create_stacking_values((('21-27',),), 15, 6),
+            create_stacking_values((('29-36',),), 15, 6),
+        ), aggregates=[(TREE_LABELS[n], [n]) for n in range(6)],
+        is_linked=(2, 'Dolly Sacrifice')),
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
         Spell('Aggressive Bramble', [62, 116, 153], Effects(
             [['35-40', '42-47', '49-54']],
             [['42-47', '49-54', '56-61']],
