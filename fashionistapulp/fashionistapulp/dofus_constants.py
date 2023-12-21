@@ -471,7 +471,7 @@ TREE_LABELS = [
 TRAP_LABELS = [
     '',
     '1 trap',
-] + ['%d traps' % n for n in range(2, 10)]
+] + ['%d traps' % n for n in range(2, 20)]
 
 
 DAMAGE_SPELLS = {
@@ -2837,18 +2837,55 @@ DAMAGE_SPELLS = {
             [AIR] * 6,
         ), aggregates=[(TRAP_LABELS[n], [n]) for n in range(6)],
         is_linked=(2, 'Arsenic')),
-
-
-
-
-
-
-
-        Spell('Tricky Trap', [1, 30, 60], Effects(
+        Spell('Cruelty', [6, 71, 138], Effects(
+            [['13-15', '18-20', '22-25']],
+            [['16-18', '21-24', '26-30']],
+            [WATER],
+        ), is_linked=(1, 'Jinx')),
+        Spell('Jinx', [115, 182], Effects(
+            [['29-32', '34-38']],
+            [['35-39', '41-46']],
+            [WATER], steals=[True],
+        ), is_linked=(2, 'Cruelty')),
+        Spell('Tricky Trap', [15, 82, 149], Effects(
             [['18-20', '22-24', '26-28']],
             None,
             [FIRE],
-        ), special='trap'),
+        ), special='trap',
+        is_linked=(1, 'Waylaying')),
+        Spell('Waylaying', [125, 192], Effects(
+            [['19-22', '22-25']],
+            [['23-26', '27-30']],
+            [WATER], steals=[True],
+        ), is_linked=(2, 'Tricky Trap')),
+        Spell('Miry Trap', [20, 87, 154], Effects(
+            [['21-25', '27-31', '33-37']],
+            None,
+            [WATER],
+        ), 
+        is_linked=(1, 'Epidemic'),
+        special='trap'),
+        Spell('Epidemic', [130, 197], Effects(
+            [['32-36', '36-40']],
+            None,
+            [AIR],
+        ), is_linked=(2, 'Miry Trap')),
+        Spell('Malevolent Trap', [25, 92, 159], Effects(
+            create_level_based_stacking_values(((18, 20), (23, 26), (28, 32)), (10, 15, 20), 13),
+            None,
+            [EARTH] * 13,
+        ), aggregates=[(TRAP_LABELS[n], [n]) for n in range(13)],
+        is_linked=(2, 'Lethal Attack'),
+        special='trap'),
+
+
+
+
+
+
+
+
+        
         
         Spell('Mistake', [6, 42, 74], Effects(
             [['11-14', '14-17', '17-20']] * 2
@@ -2870,13 +2907,7 @@ DAMAGE_SPELLS = {
             [['22-25', '26-29', '31-34']],
             [FIRE],
         ), is_linked=(1, 'Cut-Throat')),
-        Spell('Miry Trap', [17, 58, 102], Effects(
-            [['21-25', '27-31', '33-37']],
-            None,
-            [WATER],
-        ), 
-        is_linked=(1, 'Larceny'),
-        special='trap'),
+        
         Spell('Larceny', [135], Effects(
             [['40-44'],
              ['80']],
@@ -2897,11 +2928,7 @@ DAMAGE_SPELLS = {
             [['33-37']],
             [EARTH],
         ), is_linked=(2, 'Mass Trap')),
-        Spell('Cruelty', [27, 72, 118], Effects(
-            [['12-14', '15-17', '18-20']],
-            [['16-18', '19-21', '22-24']],
-            [WATER],
-        ), is_linked=(1, 'Ambush')),
+        
         Spell('Ambush', [145], Effects(
             [['30-34']],
             [['34-38']],
@@ -2943,11 +2970,7 @@ DAMAGE_SPELLS = {
             [AIR],
         ), is_linked=(1, 'Epidemic'),
         special='trap'),
-        Spell('Epidemic', [165], Effects(
-            [['38-42']],
-            [['46-50']],
-            [AIR],
-        ), is_linked=(2, 'Insidious Trap')),
+        
         Spell('Repelling Trap', [56, 112, 147], Effects(
             [['8', '10', '12']],
             None,
@@ -2996,12 +3019,7 @@ DAMAGE_SPELLS = {
             [['49-53', '56-60', '63-67']],
             [EARTH],
         ), is_linked=(1, 'Malevolent Trap')),
-        Spell('Malevolent Trap', [195], Effects(
-            [['28-32']],
-            None,
-            [EARTH],
-        ), is_linked=(2, 'Lethal Attack'),
-        special='trap'),
+        
         Spell('Lethal Trap', [100, 147, 197], Effects(
             [['37-41', '45-49', '53-57']],
             None,
