@@ -2953,6 +2953,37 @@ DAMAGE_SPELLS = {
             [['34-38']],
             [AIR],
         ), is_linked=(2, 'Furrow')),
+        Spell('Drift Trap', [65, 131, 198], Effects(
+            [['12-14', '15-17', '17-19']],
+            None,
+            [FIRE],
+        ), special='trap',
+        is_linked=(1, 'Insidious Trap')),
+        Spell('Insidious Trap', [175], Effects(
+            [['8-9']],
+            None,
+            [AIR],
+        ), is_linked=(2, 'Drift Trap'),
+        special='trap'),
+        Spell('Sickrat Trap', [70, 137], Effects(
+            [['13-15', '17-19']],
+            None,
+            [WATER],
+        ), special='trap',
+        is_linked=(1, 'Fragmentation Trap')),
+        Spell('Fragmentation Trap', [180], Effects(
+            [['13-17'],
+             ['27-31'],
+             ['37-41'],
+             ['47-51']],
+            None,
+            [FIRE, FIRE, FIRE, FIRE],
+        ), aggregates=[('At the center', [0]),
+                       ('One tile away from the center', [1]),
+                       ('Two tiles away from the center', [2]),
+                       ('Three tiles away from the center', [3])],
+        is_linked=(2, 'Sickrat Trap'),
+        special='trap'),
 
 
 
@@ -3011,25 +3042,8 @@ DAMAGE_SPELLS = {
             [FIRE],
             steals=[True],
         ), is_linked=(1, 'Fragmentation Trap')),
-        Spell('Fragmentation Trap', [155], Effects(
-            [['18-22'],
-             ['33-37'],
-             ['43-47'],
-             ['58-62']],
-            None,
-            [FIRE, FIRE, FIRE, FIRE],
-        ), aggregates=[('At the center', [0]),
-                       ('One tile away from the center', [1]),
-                       ('Two tiles away from the center', [2]),
-                       ('Three tiles away from the center', [3])],
-        is_linked=(2, 'Chakra Concentration'),
-        special='trap'),
-        Spell('Insidious Trap', [50, 103, 143], Effects(
-            [['34-38', '41-45', '48-52']],
-            None,
-            [AIR],
-        ), is_linked=(1, 'Epidemic'),
-        special='trap'),
+        
+        
         
         
         
