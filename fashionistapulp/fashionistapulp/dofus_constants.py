@@ -3222,8 +3222,8 @@ DAMAGE_SPELLS = {
             [['14-16', '18-20', '23-25']],
             [['17-19', '22-24', '28-30']],
             [AIR],
-        ), is_linked=(1, 'Sermon ')),
-        Spell('Sermon ', [150], Effects(
+        ), is_linked=(1, 'Sermon')),
+        Spell('Sermon', [150], Effects(
             [['34-38']],
             [['41-46']],
             [AIR],
