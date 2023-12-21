@@ -2809,6 +2809,7 @@ DAMAGE_SPELLS = {
         Spell('Pitfall', [95, 162], Effects(
             create_stacking_values(((24, 27), (30, 34)), 8, 6),
             create_stacking_values(((29, 33), (34, 38)), 8, 6),
+            [EARTH] * 6,
         ), aggregates=[(TRAP_LABELS[n], [n]) for n in range(6)],
         is_linked=(2, 'Gangsterdom')),
 
