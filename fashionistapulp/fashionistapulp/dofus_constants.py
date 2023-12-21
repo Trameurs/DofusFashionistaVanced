@@ -2780,11 +2780,12 @@ DAMAGE_SPELLS = {
         is_linked=(1, 'Voodoo Curse')),
         Spell('Voodoo Curse', [190], Effects(
             [['11-13'],
-            ['11-13']],
+            ['11-13']] * 2,
             None,
-            [FIRE, WATER],
-        ), aggregates=[('If the target loses MP', [0]),
-                       ('If the target loses AP', [1])],
+            [FIRE, WATER] * 2,
+        ), aggregates=[('', [0, 1]),
+                       ('If the target loses MP', [2]),
+                       ('If the target loses AP', [3])],
         is_linked=(2, 'Bush Fire')),
 
 
