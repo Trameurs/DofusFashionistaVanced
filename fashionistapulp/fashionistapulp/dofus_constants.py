@@ -3058,7 +3058,7 @@ DAMAGE_SPELLS = {
         Spell('Drying Up', [110, 177], Effects(
             create_level_based_stacking_values(((27, 31), (34, 38)), (7, 10), 6),
             None,
-            [AIR],
+            [AIR] * 6,
         ), aggregates=[(REBOUND_LABELS[n], [n]) for n in range(6)], 
         is_linked=(2, 'Shriveling')),
         Spell("Xelor's Punch", [9, 47, 87], Effects(
