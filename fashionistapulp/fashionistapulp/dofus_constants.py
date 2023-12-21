@@ -3302,7 +3302,8 @@ DAMAGE_SPELLS = {
             [['15-17', '18-20']] * 2,
             [['18-20', '21-23']] * 2,
             [WATER, FIRE],
-        ), is_linked=(2, 'Telluric Wave')),
+        ), aggregates=[('', [0, 1])],
+        is_linked=(2, 'Telluric Wave')),
 
 
 
