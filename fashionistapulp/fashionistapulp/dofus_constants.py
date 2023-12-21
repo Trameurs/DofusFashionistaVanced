@@ -3061,88 +3061,92 @@ DAMAGE_SPELLS = {
             [AIR] * 6,
         ), aggregates=[(REBOUND_LABELS[n], [n]) for n in range(6)], 
         is_linked=(2, 'Shriveling')),
-        Spell("Xelor's Punch", [9, 47, 87], Effects(
-            [['15-19', '19-23', '23-27']],
-            [['21-25', '25-29', '29-33']],
+        Spell("Xelor's Punch", [10, 77, 144], Effects(
+            [['14-16', '19-22', '23-27']],
+            [['16-19', '22-26', '28-32']],
             [EARTH],
         ), is_linked=(1, 'Gear')),
-        Spell('Gear', [125], Effects(
-            [['31-35']],
-            [['34-38']],
+        Spell('Gear', [120, 187], Effects(
+            [['24-27', '27-31']],
+            [['28-32', '33-37']],
             [EARTH],
         ), is_linked=(2, "Xelor's Punch")),
-        Spell('Frostbite', [17, 58, 102], Effects(
-            [['5-7', '8-10', '11-13']],
-            [['11', '14', '17']],
+        Spell('Frostbite', [20, 87, 154], Effects(
+            [['7-9', '9-11', '11-13']],
+            [['8-10', '10-12', '13-16']],
             [AIR],
         ), is_linked=(1, 'Disruption')),
-        Spell('Disruption', [135], Effects(
-            [['9-11']],
-            [['11-13']],
+        Spell('Disruption', [130, 197], Effects(
+            [['15-17', '17-19']],
+            [['18-20', '20-23']],
             [FIRE],
         ), is_linked=(2, 'Frostbite')),
-        Spell("Xelor's Sandglass", [22, 65, 108], Effects(
-            [['9-11', '12-14', '15-17']],
-            [['13-15', '16-18', '19-21']],
+        Spell("Xelor's Sandglass", [25, 92, 159], Effects(
+            [['17-19', '20-22', '23-26']],
+            [['20-22', '23-26', '27-30']],
             [FIRE],
         ), is_linked=(1, 'Temporal Distortion')),
-        Spell('Temporal Distortion', [140], Effects(
+        Spell('Temporal Distortion', [135], Effects(
             [['34-38']],
-            [['38-42']],
+            [['41-46']],
             [AIR],
         ), is_linked=(2, "Xelor's Sandglass")),
-        Spell('Time Theft', [27, 72, 118], Effects(
-            [['20-24', '25-29', '30-34']],
-            [['25-29', '30-34', '35-39']],
+        Spell('Time Theft', [30, 97, 164], Effects(
+            [['19-21', '24-27', '30-34']],
+            [['23-26', '29-33', '36-41']],
             [WATER],
         ), is_linked=(1, 'Petrification')),
-        Spell('Petrification', [145], Effects(
+        Spell('Petrification', [140], Effects(
             [['34-38']],
-            [['38-42']],
+            [['41-46']],
             [WATER],
         ), is_linked=(2, 'Time Theft')),
-        Spell('Temporal Dust', [38, 90, 132], Effects(
-            [['22-25', '28-31', '34-37']],
-            [['26-29', '32-35', '38-41']],
+        Spell('Temporal Dust', [40, 107, 174], Effects(
+            [['20-22', '26-28', '32-35']],
+            [['24-27', '31-34', '38-42']],
             [FIRE],
         ), is_linked=(1, 'Temporal Suspension')),
-        Spell('Temporal Suspension', [155], Effects(
+        Spell('Temporal Suspension', [150], Effects(
             [['25-29']],
-            [['29-33']],
+            [['30-35']],
             [FIRE],
         ), is_linked=(2, 'Temporal Dust')),
-        Spell('Loss of Motivation', [50, 103, 143], Effects(
-            [['17-20', '20-23', '23-26']],
-            [['22-25', '25-28', '28-31']],
+        Spell('Loss of Motivation', [50, 117, 184], Effects(
+            [['14-16', '20-22', '23-26']],
+            [['17-20', '23-27', '28-31']],
             [EARTH],
         ), is_linked=(1, 'Pendulum')),
-        Spell('Pendulum', [165], Effects(
+        Spell('Pendulum', [160], Effects(
             [['38-42']],
             [['46-50']],
             [AIR],
         ), is_linked=(2, 'Loss of Motivation')),
-        Spell('Clock', [84, 134, 178], Effects(
-            [['28-31', '32-35', '36-39']],
-            [['32-35', '36-39', '40-43']],
-            [WATER],
+        Spell('Clock', [75, 142], Effects(
+            [['29-31', '36-39']],
+            [['35-38', '43-47']],
+            [WATER], steals=[True],
         ), is_linked=(1, 'Water Clock')),
-        Spell('Water Clock', [190], Effects(
-            [['30-34']],
-            [['36-40']],
+        Spell('Water Clock', [185], Effects(
+            [['32-36']],
+            [['38-43']],
             [WATER],
         ), is_linked=(2, 'Clock')),
-        Spell('Dark Ray', [92, 141, 187], Effects(
-            [['27-31', '30-34', '33-37']],
-            [['34-38', '37-41', '40-44']],
-            [EARTH],
-        ), is_linked=(1, 'Shadowy Beam')),
-        Spell('Shadowy Beam', [195], Effects(
-            [['19-23']],
-            [['23-27']],
+        Spell('Dark Ray', [80, 147], Effects(
+            [['34-37', '40-44'],
+             ['59-67']],
+            [['39-43', '47-51'],
+             ['73-81']],
+            [EARTH] * 2,
+        ), aggregates=[('', [0]),
+                       ('Telegraf state', [1])],
+        is_linked=(1, 'Shadowy Beam')),
+        Spell('Shadowy Beam', [190], Effects(
+            [['20-22']],
+            [['24-26']],
             [EARTH],
         ), is_linked=(2, 'Dark Ray')),
         Spell('Knell', [200], Effects(
-            [['4']] * 4,
+            [['6']] * 4,
             None,
             [AIR, WATER, EARTH, FIRE],
         ), aggregates=[('', [0, 1, 2, 3])]),
