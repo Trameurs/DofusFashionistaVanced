@@ -2652,11 +2652,37 @@ DAMAGE_SPELLS = {
             [['17-19', '22-25', '29-32']],
             [EARTH],
         ), is_linked=(1, 'Poisoned Undergrowth')),
-        Spell('Poisoned Undergrowth', [105], Effects(
-            [['23-27']],
-            [['28-32']],
+        Spell('Poisoned Undergrowth', [100, 167], Effects(
+            [['20-23', '24-28']],
+            None,
             [EARTH],
         ), is_linked=(2, 'Bramble')),
+        Spell('Prickly Embers', [3, 69, 136], Effects(
+            [['14-16', '19-21', '24-27']],
+            [['17-19', '22-25', '29-32']],
+            [FIRE],
+        ), is_linked=(1, 'Mangrove')),
+        Spell('Mangrove', [110, 177], Effects(
+            [['19-21', '23-26'],
+             ['26-28', '32-35']],
+            [['23-25', '28-31'],
+             ['30-32', '37-40']],
+            [FIRE] * 2,
+        ), aggregates=[('', [0]),
+                        ('Around Leafy Trees', [1])],
+        is_linked=(2, 'Prickly Embers')),
+
+
+
+
+
+
+
+
+
+
+
+
         Spell('Paralysing Poison', [3, 35, 67], Effects(
             [['13', '19', '25']],
             None,
