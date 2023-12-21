@@ -2752,50 +2752,29 @@ DAMAGE_SPELLS = {
             [EARTH] * 6,
         ), aggregates=[(TREE_LABELS[n], [n]) for n in range(6)],
         is_linked=(2, 'Dolly Sacrifice')),
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Spell('Aggressive Bramble', [62, 116, 153], Effects(
-            [['35-40', '42-47', '49-54']],
-            [['42-47', '49-54', '56-61']],
+        Spell('Aggressive Bramble', [65, 131, 198], Effects(
+            [['34-37', '40-45', '45-50']],
+            [['40-45', '48-54', '54-60']],
             [EARTH],
         ), is_linked=(1, 'Plaguing Bramble')),
         Spell('Plaguing Bramble', [175], Effects(
-            [['28-32']],
+            [['23-26']],
             None,
-            [EARTH],
+            [FIRE],
         ), is_linked=(2, 'Aggressive Bramble')),
-        Spell('Wild Grass', [69, 122, 162], Effects(
-            [['16-20', '21-25', '26-30']],
-            [['22', '27', '32']],
+        Spell('Wild Grass', [70, 137], Effects(
+            [['20-23', '26-29']],
+            [['24-27', '31-35']],
             [FIRE],
         ), is_linked=(1, 'Contagion')),
         Spell('Contagion', [180], Effects(
-            [['38-42']],
-            [['46-50']],
+            [['39-43']],
+            [['45-50']],
             [AIR],
         ), is_linked=(2, 'Wild Grass')),
-        Spell('Bush Fire', [84, 134, 178], Effects(
-            [['8-11', '11-14', '14-17']] * 2,
-            [['13', '16', '19']] * 2,
+        Spell('Bush Fire', [80, 147], Effects(
+            [['9-11', '13-15']] * 2,
+            [['11-13', '16-18']] * 2,
             [FIRE, WATER],
         ), aggregates=[('', [0, 1])],
         is_linked=(1, 'Voodoo Curse')),
@@ -2807,6 +2786,30 @@ DAMAGE_SPELLS = {
         ), aggregates=[('If the target loses MP', [0]),
                        ('If the target loses AP', [1])],
         is_linked=(2, 'Bush Fire')),
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         Spell('Paralysing Bramble', [195], Effects(
             [['18-20']],
             [['21-25']],
