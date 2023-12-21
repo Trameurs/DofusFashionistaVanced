@@ -2939,6 +2939,20 @@ DAMAGE_SPELLS = {
         ), aggregates=[('', [0]),
                        ('On target with less than 25% HP', [1])],
         is_linked=(2, 'Larceny')),
+        Spell('Furrow', [55, 122, 189], Effects(
+            [['24-26', '31-35', '36-40'],
+             ['20', '40', '80']],
+            [['28-31', '38-42', '43-48'],
+             ['40', '60', '100']],
+            [FIRE, 'buff_int'],
+        ), aggregates=[('', [0]),
+                       ('', [1])], stacks=2,
+        is_linked=(1, 'Toxic Injection')),
+        Spell('Toxic Injection', [165], Effects(
+            [['28-32']],
+            [['34-38']],
+            [AIR],
+        ), is_linked=(2, 'Furrow')),
 
 
 
@@ -2988,13 +3002,9 @@ DAMAGE_SPELLS = {
             [['6', '8', '10']],
             None,
             [AIR],
-        ), is_linked=(1, 'Toxic Injection'),
+        ),
         special='trap'),
-        Spell('Toxic Injection', [150], Effects(
-            [['28-32']],
-            [['34-38']],
-            [AIR],
-        ), is_linked=(2, 'Poisoned Trap')),
+        
         Spell('Chakra Concentration', [38, 90, 132], Effects(
             [['15', '15', '15',]],
             None,
@@ -3037,15 +3047,7 @@ DAMAGE_SPELLS = {
             steals=[True],
         ), is_linked=(2, 'Jinx'),
         special='trap'),
-        Spell('Furrow', [84, 134, 178], Effects(
-            [['30-34', '35-39', '40-44'],
-             ['40', '60', '80']],
-            [['36-40', '41-45', '46-50'],
-             ['60', '80', '100']],
-            [FIRE, 'buff_int'],
-        ), aggregates=[('', [0]),
-                       ('', [1])], stacks=2,
-        ),
+        
         
         
         
