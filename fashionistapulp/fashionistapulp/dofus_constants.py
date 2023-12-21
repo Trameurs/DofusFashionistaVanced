@@ -3162,129 +3162,135 @@ DAMAGE_SPELLS = {
             [['23-26', '29-32']],
             [AIR],
         ), is_linked=(2, 'Insult')),
-
-
-        
-
-
-
-
-
-
-        Spell('Affliction', [1, 25, 52], Effects(
-            [['14-16', '17-19', '20-22']],
-            [['18-20', '21-23', '24-26']],
+        Spell('Audacious', [1, 68, 134], Effects(
+            [['15-17', '20-23', '26-29']],
+            [['19-21', '24-27', '31-35']],
             [WATER],
         ), is_linked=(1, 'Tribulation')),
-        Spell('Tribulation', [105], Effects(
-            [['22-26']],
-            [['25-29']],
+        Spell('Tribulation', [105, 172], Effects(
+            [['17-19', '21-24']],
+            [['20-23', '25-29']],
             [WATER],
         ), is_linked=(2, 'Affliction')),
-        
-        Spell('Shock', [3, 35, 67], Effects(
-            [['19-21', '24-26', '29-31']],
-            [['22-24', '27-29', '32-34']],
+        Spell('Shock', [3, 69, 136], Effects(
+            [['11-13', '15-17', '19-21']],
+            [['14-16', '18-20', '22-25']],
             [EARTH],
         ), is_linked=(1, 'Convulsion')),
-        Spell('Convulsion', [115], Effects(
-            [['20-22']],
-            [['23-25']],
+        Spell('Convulsion', [110, 177], Effects(
+            [['16-18', '20-22']],
+            [['19-21', '24-26']],
             [EARTH],
         ), is_linked=(2, 'Shock')),
-        Spell('Wakfu Ray', [6, 42, 74], Effects(
-            [['16-18', '21-23', '26-28']] * 2,
-            [['19-21', '24-26', '29-31']] * 2,
+        Spell('Wakfu Ray', [6, 71, 138], Effects(
+            [['15-17', '21-23', '26-28']] * 2,
+            [['18-20', '25-27', '31-34']] * 2,
             [FIRE, FIRE],
             heals=[False, True],
         ), aggregates=[('Enemies', [0]),
                        ('Allies', [1])],
         is_linked=(1, 'Lazybeam')),
-        Spell('Lazybeam', [120], Effects(
-            [['27-31']] * 2,
-            [['31-35']] * 2,
+        Spell('Lazybeam', [115, 182], Effects(
+            [['23-26', '27-31']] * 2,
+            [['27-32', '32-37']] * 2,
             [FIRE, FIRE],
             steals=[False, True],
         ), aggregates=[('Directly', [0]),
                        ('Through a portal', [1])],
         is_linked=(2, 'Wakfu Ray')),
-        Spell('Offence', [13, 54, 94], Effects(
-            [['16-20', '21-25', '26-30']],
-            [['20-24', '25-29', '30-34']],
+        Spell('Offence', [13, 82, 149], Effects(
+            [['20-23', '25-29', '31-36']],
+            [['23-27', '30-35', '37-43']],
             [FIRE],
-        ), is_linked=(1, 'Affront')),
-        Spell('Affront', [130], Effects(
-            [['25-29']],
-            [['28-32']],
-            [FIRE],
-        ), is_linked=(2, 'Offence')),
-        Spell('Therapy', [22, 65, 108], Effects(
-            [['15-17', '19-21', '23-25']],
-            [['19-21', '23-25', '28-30']],
-            [EARTH],
-        ), is_linked=(1, 'Sinecure')),
-        Spell('Sinecure', [140], Effects(
-            [['43-47']],
-            [['52-56']],
+        ), is_linked=(1, 'Composure')),
+        Spell('Composure', [125, 192], Effects(
+            [['28-31', '32-36']],
+            [['33-37', '39-43']],
             [WATER],
+        ), is_linked=(2, 'Offence')),
+        Spell('Therapy', [25, 92, 159], Effects(
+            [['12-14', '16-18', '21-23']],
+            [['15-17', '20-22', '26-28']],
+            [EARTH],
+        ), is_linked=(1, 'Snub')),
+        Spell('Snub', [135], Effects(
+            [['23-26']],
+            [['28-31']],
+            [EARTH],
         ), is_linked=(2, 'Therapy')),
-        Spell('Bullying', [38, 90, 132], Effects(
-            [['15-17', '19-21', '23-25']],
-            [['19-21', '23-25', '27-29']],
+        Spell('Bullying', [40, 107, 174], Effects(
+            [['14-16', '18-20', '23-25']],
+            [['17-19', '22-24', '28-30']],
             [AIR],
-        ), is_linked=(1, 'Correction ')),
-        Spell('Correction ', [155], Effects(
+        ), is_linked=(1, 'Sermon ')),
+        Spell('Sermon ', [150], Effects(
             [['34-38']],
-            [['38-42']],
+            [['41-46']],
             [AIR],
         ), is_linked=(2, 'Bullying')),
-        Spell('Lightning Fist', [50, 103, 143], Effects(
-            [['15-17', '19-21', '23-25']],
-            [['19-21', '23-25', '27-29']],
+        Spell('Affliction', [50, 117, 184], Effects(
+            [['16-18', '20-23', '25-28']] * 3,
+            [['19-21', '24-27', '30-34']] * 3,
+            [WATER] * 3,
+        ), aggregates=[('Directly', [0]),
+                       ('Through a portal', [1, 2])],
+        is_linked=(1, 'Affront')),
+        Spell('Affront', [160], Effects(
+            [['20-23']] * 2,
+            [['24-28']] * 2,
+            [FIRE], steals=[False, True],
+        ), aggregates=[('Directly', [0]),
+                       ('Through a portal', [1])],
+        is_linked=(2, 'Affliction')),
+        Spell('Lightning Fist', [65, 131, 198], Effects(
+            [['14-16', '19-21', '23-25']],
+            [['17-19', '23-25', '28-30']],
             [WATER],
-        )),
-        Spell('Snub', [62, 116, 153], Effects(
-            [['20-24', '23-27', '26-30']],
-            [['24-28', '27-31', '30-34']],
-            [EARTH],
-        )),
-        Spell('Audacious', [69, 122, 162], Effects(
-            [['22-26', '25-29', '28-32']],
-            [['25-29', '28-32', '31-35']],
+        ), is_linked=(1, 'Insolence')),
+        Spell('Insolence', [175], Effects(
+            [['25-28']],
+            [['30-34']],
             [WATER],
-        ), is_linked=(1, 'Composure')),
-        Spell('Composure', [180], Effects(
-            [['32-36']],
-            [['39-43']],
-            [WATER],
-        ), is_linked=(2, 'Audacious')),
-        Spell('Focus', [77, 128, 172], Effects(
-            [['50', '75', '100'],
-             ['100', '150', '200']],
+        ), is_linked=(2, 'Lightning Fist')),
+        Spell('Focus', [70, 137], Effects(
+            [['75', '100'],
+             ['150', '200']],
             None,
             ['buff_pow', 'buff_pow'],
         ), aggregates=[('Directly', [0]),
                        ('Through a portal', [1])]),
-        Spell('Parasite', [84, 134, 178], Effects(
-            [['23-27', '28-32', '33-37']],
-            [['26-30', '31-35', '36-40']],
-            [FIRE],
-        ), is_linked=(1, 'Virus')),
-        Spell('Virus', [190], Effects(
+        Spell('Parasite', [75, 142], Effects(
+            [['27-30', '33-37']] * 3,
+            [['32-36', '40-44']] * 3,
+            [FIRE] * 3,
+        ), aggregates=[('Directly', [0]),
+                       ('Through a portal', [1, 2])],
+        is_linked=(1, 'Virus')),
+        Spell('Virus', [185], Effects(
             [['34-38']],
-            [['41-45']],
+            [['41-46']],
             [FIRE],
         ), is_linked=(2, 'Parasite')),
-        Spell('Ridicule', [92, 141, 187], Effects(
-            [['22-26', '26-30', '30-34']],
-            [['26-30', '30-34', '34-38']],
+        Spell('Sinecure', [80, 147], Effects(
+            [['9-11', '12-14']],
+            [['12-14', '15-17']],
             [AIR],
         ), is_linked=(1, 'Persiflage')),
-        Spell('Persiflage', [195], Effects(
+        Spell('Persiflage', [190], Effects(
             [['25-29']],
-            [['30-34']],
+            [['30-35']],
             [EARTH],
-        ), is_linked=(2, 'Ridicule')),
+        ), is_linked=(2, 'Sinecure')),
+        Spell('Sarcasme', [85, 152], Effects(
+            [['26-29', '32-36']],
+            [['31-35', '38-43']],
+            [EARTH],
+        ), is_linked=(1, 'Ridicule ')),
+        Spell('Ridicule', [195], Effects(
+            [['30-34']],
+            [['36-41']],
+            [AIR],
+        ), is_linked=(2, 'Sarcasme')), 
     ],
     'Huppermage': [
         Spell('Ether', [1, 20, 40], Effects(
