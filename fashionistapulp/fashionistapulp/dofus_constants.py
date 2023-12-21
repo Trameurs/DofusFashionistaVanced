@@ -3017,14 +3017,14 @@ DAMAGE_SPELLS = {
         ), is_linked=(2, 'Mistake')),
     ],
     'Xelor': [
-        Spell('Slow Down', [1, 25, 52], Effects(
-            [['4-5', '6-7', '8-9']],
-            [['7-8', '9-10', '11-12']],
+        Spell('Slow Down', [1, 66, 132], Effects(
+            [['6-8', '8-10', '11-13']],
+            [['8-10', '10-12', '13-16']],
             [WATER],
         ), is_linked=(1, 'Souvenir')),
-        Spell('Souvenir', [105], Effects(
-            [['26-30']],
-            [['30-34']],
+        Spell('Souvenir', [95, 162], Effects(
+            [['23-26', '28-32']],
+            [['27-31', '34-38']],
             [EARTH],
         ), is_linked=(2, 'Slow Down')),
         Spell('Hand', [1, 30, 60], Effects(
