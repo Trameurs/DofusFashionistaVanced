@@ -2984,98 +2984,37 @@ DAMAGE_SPELLS = {
                        ('Three tiles away from the center', [3])],
         is_linked=(2, 'Sickrat Trap'),
         special='trap'),
-
-
-
-
-
-
-
-
-        
-        
-        Spell('Mistake', [6, 42, 74], Effects(
-            [['11-14', '14-17', '17-20']] * 2
-            + [['30', '40', '50']] * 2,
-            [['15-18', '18-21', '21-24']] * 2
-            + [['40', '50', '60']] * 2,
-            [AIR, EARTH, 'buff_agi', 'buff_str'],
-        ), aggregates=[('', [0, 1]),
-                       ('', [2]),
-                       ('', [3])], stacks=2,
-        ),
-       
-        Spell('Tricky Blow', [9, 47, 87], Effects(
-            [['18-21', '22-25', '26-29']],
-            [['22-25', '26-29', '31-34']],
-            [FIRE],
-        ), is_linked=(1, 'Cut-Throat')),
-        
-        
-        Spell('Mass Trap', [22, 65, 108], Effects(
-            [['24-28', '29-33', '34-38']],
-            None,
-            [EARTH],
-        ), is_linked=(1, 'Trapster'),
-        special='trap'),
-        Spell('Trapster', [140], Effects(
-            [['30-34']],
-            [['33-37']],
-            [EARTH],
-        ), is_linked=(2, 'Mass Trap')),
-        
-        Spell('Ambush', [145], Effects(
-            [['30-34']],
-            [['34-38']],
-            [FIRE],
-        ),),
-        Spell('Poisoned Trap', [32, 81, 124], Effects(
-            [['6', '8', '10']],
-            None,
-            [AIR],
-        ),
-        special='trap'),
-        
-        Spell('Chakra Concentration', [38, 90, 132], Effects(
-            [['15', '15', '15',]],
+        Spell('Chakra Concentration', [75, 142], Effects(
+            [['13', '15']],
             None,
             [FIRE],
             steals=[True],
-        ), is_linked=(1, 'Fragmentation Trap')),
-        
-        
-        
-        
-        
-        Spell('Proximity Trap', [165], Effects(
-            [['43-47']],
+        )),
+        Spell('Lethal Trap', [80, 147], Effects(
+            [['31-35', '39-43'],
+             ['39-44', '49-54']],
             None,
-            [AIR],
-        ), 
+            [EARTH],
+        ), aggregates=[('', [0]),
+                       ('On target with less than 25% HP', [1])], 
+        is_linked=(1, 'Calamity'),
         special='trap'),
-        
-        Spell('Calamity', [185], Effects(
-            [['38-42']],
+        Spell('Calamity', [190], Effects(
+            [['40-44']],
             None,
             [WATER],
-            steals=[True],
-        ), is_linked=(2, 'Jinx'),
+        ), is_linked=(2, 'Lethal Trap'),
         special='trap'),
-        
-        
-        
-        
-        Spell('Lethal Trap', [100, 147, 197], Effects(
-            [['37-41', '45-49', '53-57']],
-            None,
+        Spell('Mistake', [85, 152], Effects(
+            [['27-31', '32-36']],
+            [['33-37', '38-43']],
+            [AIR],
+        ), is_linked=(1, 'Perfidy')),
+        Spell('Perfidy', [195], Effects(
+            [['56-60']],
+            [['62-66']],
             [EARTH],
-        ), is_linked=(1, 'Perfidy'),
-        special='trap'),
-        Spell('Perfidy', [200], Effects(
-            [['58-62']],
-            [['64-68']],
-            [EARTH],
-        ), is_linked=(2, 'Lethal Trap')),
+        ), is_linked=(2, 'Mistake')),
     ],
     'Xelor': [
         Spell('Slow Down', [1, 25, 52], Effects(
