@@ -2647,9 +2647,9 @@ DAMAGE_SPELLS = {
         is_linked=(2, 'Retribution')), 
     ],
     'Sadida': [
-        Spell('Bramble', [1, 25, 52], Effects(
-            [['13-16', '17-20', '21-24']],
-            [['18-21', '22-25', '26-29']],
+        Spell('Bramble', [1, 67, 133], Effects(
+            [['14-16', '19-21', '24-27']],
+            [['17-19', '22-25', '29-32']],
             [EARTH],
         ), is_linked=(1, 'Poisoned Undergrowth')),
         Spell('Poisoned Undergrowth', [105], Effects(
