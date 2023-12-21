@@ -2837,6 +2837,50 @@ DAMAGE_SPELLS = {
             [AIR] * 6,
         ), aggregates=[(TRAP_LABELS[n], [n]) for n in range(6)],
         is_linked=(2, 'Arsenic')),
+        Spell('Cruelty', [6, 71, 138], Effects(
+            [['13-15', '18-20', '22-25']],
+            [['16-18', '21-24', '26-30']],
+            [WATER],
+        ), is_linked=(1, 'Jinx')),
+        Spell('Jinx', [115, 182], Effects(
+            [['29-32', '34-38']],
+            [['35-39', '41-46']],
+            [WATER], steals=[True],
+        ), is_linked=(2, 'Cruelty')),
+        Spell('Tricky Trap', [15, 82, 149], Effects(
+            [['18-20', '22-24', '26-28']],
+            None,
+            [FIRE],
+        ), special='trap',
+        is_linked=(1, 'Waylaying')),
+        Spell('Waylaying', [125, 192], Effects(
+            [['19-22', '22-25']],
+            [['23-26', '27-30']],
+            [WATER], steals=[True],
+        ), is_linked=(2, 'Tricky Trap')),
+        Spell('Miry Trap', [20, 87, 154], Effects(
+            [['21-25', '27-31', '33-37']],
+            None,
+            [WATER],
+        ), is_linked=(1, 'Epidemic'),
+        special='trap'),
+        Spell('Epidemic', [130, 197], Effects(
+            [['32-36', '36-40']],
+            None,
+            [AIR],
+        ), is_linked=(2, 'Miry Trap')),
+        Spell('Malevolent Trap', [25, 92, 159], Effects(
+            create_level_based_stacking_values(((18, 20), (23, 26), (28, 32)), (10, 15, 20), 10),
+            None,
+            [EARTH] * 10,
+        ), aggregates=[(TRAP_LABELS[n], [n]) for n in range(10)],
+        is_linked=(1, 'Break-In'),
+        special='trap'),
+        Spell('Break-In', [135], Effects(
+            [['15-17']],
+            [['19-21']],
+            [FIRE],
+        ), is_linked=(2, 'Malevolent Trap')),
 
 
 
@@ -2893,7 +2937,7 @@ DAMAGE_SPELLS = {
             [['30-34']],
             [['34-38']],
             [FIRE],
-        ), is_linked=(2, 'Cruelty')),
+        ),),
         Spell('Poisoned Trap', [32, 81, 124], Effects(
             [['6', '8', '10']],
             None,
@@ -2947,12 +2991,7 @@ DAMAGE_SPELLS = {
             [AIR],
         ), is_linked=(2, 'Con'), 
         special='trap'),
-        Spell('Jinx', [77, 128, 172], Effects(
-            [['22-26', '25-29', '28-32']],
-            [['27-31', '30-34', '33-37']],
-            [WATER],
-            steals=[True],
-        ), is_linked=(1, 'Calamity')),
+        
         Spell('Calamity', [185], Effects(
             [['38-42']],
             None,
