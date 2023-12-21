@@ -3281,7 +3281,7 @@ DAMAGE_SPELLS = {
             [['30-35']],
             [EARTH],
         ), is_linked=(2, 'Sinecure')),
-        Spell('Sarcasme', [85, 152], Effects(
+        Spell('Sarcasm', [85, 152], Effects(
             [['26-29', '32-36']],
             [['31-35', '38-43']],
             [EARTH],
