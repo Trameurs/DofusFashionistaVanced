@@ -468,6 +468,11 @@ TREE_LABELS = [
     '1 tree',
 ] + ['%d trees' % n for n in range(2, 10)]
 
+TRAP_LABELS = [
+    '',
+    '1 trap',
+] + ['%d traps' % n for n in range(2, 10)]
+
 
 DAMAGE_SPELLS = {
     'default': [
@@ -2794,6 +2799,25 @@ DAMAGE_SPELLS = {
          )),  
     ],
     'Sram': [
+        Spell('Gangsterdom', [1, 66, 132], Effects(
+            [['15-17', '21-23', '26-29'],
+             ['50', '100', '200']],
+            [['19-21', '25-28', '31-35'],
+             ['50', '100', '200']],
+            [EARTH, 'buff_pow_traps'],
+        ), is_linked=(1, 'Pitfall')),
+        Spell('Pitfall', [95, 162], Effects(
+            create_stacking_values(((24, 27), (30, 34)), 8, 6),
+            create_stacking_values(((29, 33), (34, 38)), 8, 6),
+        ), aggregates=[(TRAP_LABELS[n], [n]) for n in range(6)],
+        is_linked=(2, 'Gangsterdom')),
+
+
+
+
+
+
+
         Spell('Tricky Trap', [1, 30, 60], Effects(
             [['18-20', '22-24', '26-28']],
             None,
@@ -2804,11 +2828,7 @@ DAMAGE_SPELLS = {
             [['18-20', '21-23', '24-26']],
             [EARTH],
         ), is_linked=(1, 'Pitfall')),
-        Spell('Pitfall', [110], Effects(
-            [['30-34']],
-            [['34-38']],
-            [EARTH],
-        ), is_linked=(2, 'Deviousness')),
+        
         Spell('Insidious Poison', [3, 35, 67], Effects(
             [['6-7', '8-9', '10-11']],
             [['8-9', '10-11', '12-13']],
