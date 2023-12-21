@@ -2819,9 +2819,9 @@ DAMAGE_SPELLS = {
         ), is_linked=(1, 'Cut-Throat')),
         Spell('Cut-Throat', [100, 167], Effects(
             [['30-33', '34-38'],
-             ['100']],
+             ['100', '100']],
             [['46-40', '40-44'],
-             ['150']],
+             ['150', '150']],
             [FIRE, 'buff_pow'],
         ), aggregates=[('', [0,]),
                        ('', [1])], stacks=1, 
