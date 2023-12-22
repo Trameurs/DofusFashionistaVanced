@@ -3391,31 +3391,97 @@ DAMAGE_SPELLS = {
             [['24-26', '26-28']],
             [WATER],
         ), is_linked=(2, 'Glacier')),
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        
-        
-        
-        
-        
-        
-        Spell('Tectonic Breach', [130], Effects(
-            [['13-15']],
-            [['15-17']],
-            [EARTH],
+        Spell('Transfixing Gust', [20, 87, 154], Effects(
+            [['20-22', '25-28', '31-35']],
+            [['23-26', '30-34', '35-39']],
+            [AIR],
             steals=[True]
-        ), is_linked=(2, 'Storm')),
+        ), is_linked=(1, 'Tectonic Breach')),
+        Spell('Tectonic Breach', [130, 197], Effects(
+            [['12-14', '14-16']],
+            [['15-17', '17-19']],
+            [EARTH],
+        ), is_linked=(2, 'Transfixing Gust')),
+        Spell('Burning Stroke', [30, 97, 164], Effects(
+            [['23-27', '28-32', '33-37']],
+            [['28-32', '33-37', '38-42']],
+            [FIRE],
+            steals=[True]
+        ), is_linked=(1, 'Hurricane')),
+        Spell('Hurricane', [140], Effects(
+            [['17-19']],
+            [['20-22']],
+            [AIR]
+        ), is_linked=(2, 'Burning Stroke')),
+        Spell('Glacier', [32, 102, 169], Effects(
+            [['22-26', '28-32', '34-38']],
+            [['26-30', '32-36', '38-42']],
+            [WATER],
+            steals=[True]
+        ), is_linked=(1, 'Volcano')),
+        Spell('Volcano', [145], Effects(
+            [['19-21']],
+            [['22-24']],
+            [FIRE]
+        ), is_linked=(2, 'Glacier')),
+        Spell('Journey', [40, 107, 174], Effects(
+            [['15-24', '23-32', '31-40']] * 4,
+            [['25-34', '33-42', '41-50']] * 4,
+            [EARTH, FIRE, WATER, AIR], 
+        ), aggregates=[('Target in earth state', [0]),
+                       ('Target in fire state', [1]),
+                       ('Target in water state', [2]),
+                       ('Target in air state', [3])]),
+        Spell('Deflagration', [50, 117, 184], Effects(
+            [['22-26', '26-30', '30-34']],
+            [['26-30', '30-34', '34-38']],
+            [FIRE],
+        ), is_linked=(1, 'Comet')),
+        Spell('Comet', [160], Effects(
+            [['28-32']],
+            [['32-36']],
+            [AIR],
+        ), is_linked=(2, 'Deflagration')),
+        Spell('Contribution', [55, 122, 189], Effects(
+            [['150'] * 3],
+            None,
+            ['buff_pow']
+        ), aggregates=[('Target in water state', [0])], stacks=2),
+        Spell('Icy Shards', [60, 127, 194], Effects(
+            [['24-28', '29-33', '34-38']],
+            [['28-32', '33-37', '38-42']],
+            [WATER],
+        ), is_linked=(1, 'Sun Lance')),
+        Spell('Sun Lance', [170], Effects(
+            [['34-38']],
+            [['39-43']],
+            [FIRE],
+        ), is_linked=(2, 'Icy Shards')),
+        Spell('Runic Overcharge', [175], Effects(
+            [['10']] * 4,
+            None,
+            [WATER, FIRE, AIR, EARTH],
+        ), aggregates=[('For each of the caster\s runes', [0, 1, 2 , 3])]),
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
         Spell('Astral Blade', [17, 58, 102], Effects(
             [['22-25', '27-30', '32-35']],
             [['26-29', '31-34', '36-39']],
@@ -3426,78 +3492,28 @@ DAMAGE_SPELLS = {
             [['39-43']],
             [EARTH],
         ), is_linked=(2, 'Astral Blade')),
-        Spell('Burning Stroke', [27, 72, 118], Effects(
-            [['23-27', '28-32', '33-37']],
-            [['28-32', '33-37', '38-42']],
-            [FIRE],
-            steals=[True]
-        ), is_linked=(1, 'Volcano')),
-        Spell('Volcano', [145], Effects(
-            [['19-21']],
-            [['21-23']],
-            [FIRE]
-        ), is_linked=(2, 'Burning Stroke')),
-        Spell('Glacier', [32, 81, 124], Effects(
-            [['22-26', '28-32', '34-38']],
-            [['26-30', '32-36', '38-42']],
-            [WATER],
-            steals=[True]
-        ), is_linked=(1, 'Stalactite')),
         
-        Spell('Journey', [38, 90, 132], Effects(
-            [['15-24', '23-32', '31-40']] * 4,
-            None,
-            [AIR, WATER, FIRE, EARTH], 
-        ), aggregates=[('Target in air state', [0]),
-                       ('Target in water state', [1]),
-                       ('Target in fire state', [2]),
-                       ('Target in earth state', [3])]),
-        Spell('Deflagration', [50, 103, 143], Effects(
-            [['22-26', '26-30', '30-34']],
-            [['26-30', '30-34', '34-38']],
-            [FIRE],
-        ), is_linked=(1, 'Flood')),
+        
+        
+        
+        
+        
         Spell('Flood', [165], Effects(
             [['26-30']],
             [['30-34']],
             [WATER],
         ), is_linked=(2, 'Deflagration')),
-        Spell('Contribution', [56, 112, 147], Effects(
-            [['150'] * 3],
-            None,
-            ['buff_pow']
-        ), aggregates=[('Target in water state', [0])], stacks=2),
-        Spell('Icy Shards', [62, 81, 124], Effects(
-            [['24-28', '29-33', '34-38']],
-            [['28-32', '33-37', '38-42']],
-            [WATER],
-        ), is_linked=(1, 'Sun Lance')),
-        Spell('Sun Lance', [175], Effects(
-            [['34-38']],
-            [['39-43']],
-            [FIRE],
-        ), is_linked=(2, 'Icy Shards')),
-        Spell('Transfixing Gust', [84, 134, 178], Effects(
-            [['23-27', '27-31', '31-35']],
-            [['27-31', '31-35', '35-39']],
-            [AIR],
-            steals=[True]
-        ), is_linked=(1, 'Hurricane')),
-        Spell('Hurricane', [190], Effects(
-            [['17-19']],
-            [['19-21']],
-            [AIR]
-        ), is_linked=(2, 'Transfixing Gust')),
+        
+        
+        
+        
+        
         Spell('Striking Meteor', [92, 141, 187], Effects(
             [['20-24', '25-29', '30-34']],
             [['23-27', '28-32', '33-37']],
             [EARTH],
         ), is_linked=(1, 'Comet')),
-        Spell('Comet', [195], Effects(
-            [['28-32']],
-            [['32-36']],
-            [AIR],
-        ), is_linked=(2, 'Striking Meteor')),
+        
     ],
     'Ouginak': [
         Spell('Watchdog', [1, 25, 52], Effects(
