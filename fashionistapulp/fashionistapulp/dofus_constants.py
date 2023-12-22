@@ -3510,6 +3510,99 @@ DAMAGE_SPELLS = {
             [['27-30', '34-37']],
             [FIRE],
         ), is_linked=(2, 'Watchdog')),
+        Spell('Marrow Bone', [1, 68, 134], Effects(
+            create_level_based_stacking_values(((12, 14), (16, 19), (21, 24)), 
+                                               (6, 7, 8), 5),
+            create_level_based_stacking_values(((15, 17), (20, 22), (25, 29)), 
+                                               (6, 7, 8), 5),
+            [[WATER]] * 5,
+        ), aggregates=[('', [0]),
+                       ('After hitting a Prey once', [1]),
+                       ('After hitting a Prey twice', [2]),
+                       ('After hitting a Prey 3x', [3]),
+                       ('After hitting a Prey 4x', [4])],
+        is_linked=(1, 'Muzzle')),
+        Spell('Muzzle', [105, 172], Effects(
+            create_level_based_stacking_values(((30, 33), (37, 41)),
+                                                  (18, 22), 5),
+            create_level_based_stacking_values(((30, 33), (36, 39)),
+                                                  (18, 22), 5),
+            [EARTH] * 5,
+        ), aggregates=[('', [0]),
+                       ('1 ennemy adjacent to a Prey', [1]),
+                        ('2 enemies adjacent to a Prey', [2]),
+                        ('3 enemies adjacent to a Prey', [3]),
+                        ('4 enemies adjacent to a Prey', [4])],
+        is_linked=(2, 'Marrow Bone')),
+        Spell('Carrion', [3, 69, 136], Effects(
+            [['18-20', '25-27', '29-32']],
+            [['22-24', '30-33', '35-38']],
+            [AIR],
+        ), is_linked=(1, 'Radius')),
+        Spell('Radius', [110, 177], Effects(
+            [['26-29', '32-36']],
+            [['31-35', '38-43']],
+            [WATER],
+        ), is_linked=(2, 'Carrion')),
+        Spell('Tracking', [6, 71, 138], Effects(
+            [['19-21', '25-28', '31-35']],
+            [['22-25', '30-34', '37-42']],
+            [FIRE],
+        ), is_linked=(1, 'Carving Up')),
+        Spell('Carving Up', [115, 182], Effects(
+            [['34-38', '40-45']],
+            [['41-46', '48-54']],
+            [AIR],
+        ), is_linked=(2, 'Tracking')),
+        Spell('Mastiff', [20, 87, 154], Effects(
+            [['10-11', '13-15', '17-19']] * 2,
+            [['13-15', '16-18', '20-23']] * 2,
+            [EARTH,EARTH],
+            steals=(False, True)
+        ), aggregates=[('', [0]),
+                       ('If the target is Prey', [1])],
+        is_linked=(1, 'Stripping')),
+        Spell('Stripping', [130, 197], Effects(
+            create_level_based_stacking_values(((31, 35), (35, 39)),
+                                                  (16, 20), 5),
+            create_level_based_stacking_values(((38, 42), (42, 47)),
+                                                  (16, 20), 5),
+            [AIR] * 5,
+        ), aggregates=[('', [0]),
+                        ('1 ally adjacent to a Prey', [1]),
+                        ('2 allies adjacent to a Prey', [2]),
+                        ('3 allies adjacent to a Prey', [3]),
+                        ('4 allies adjacent to a Prey', [4])],
+        is_linked=(2, 'Mastiff')),
+        Spell('Tibia', [25, 92, 159], Effects(
+            [['25-28', '32-36', '40-45']],
+            [['30-34', '39-43', '48-54']],
+            [WATER],
+        ), is_linked=(1, 'Humerous')),
+        Spell('Humerous', [135], Effects(
+            [['41-46']],
+            [['49-55']],
+            [EARTH],
+        ), is_linked=(2, 'Tibia')),
+        Spell('R-Canine', [30, 97, 164], Effects(
+            [['50', '70', '100']],
+            None,
+            ['buff_pow'],
+        ), stacks=2),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         Spell('Ulna', [1, 30, 60], Effects(
             [['14-16', '19-21', '24-26']],
             [['19-21', '24-26', '29-31']],
@@ -3533,11 +3626,7 @@ DAMAGE_SPELLS = {
                        ('After hitting a Prey 4x', [4]),
                        ('After hitting a Prey 5x', [5])],
         is_linked=(1, 'Stripping')),
-        Spell('Stripping', [115], Effects(
-            [['28-32']],
-            [['34-38']],
-            [AIR],
-        ), is_linked=(2, 'Carcass')),
+        
         Spell('Cutting Down', [6, 42, 74], Effects(
             [['19-21', '24-26', '29-31']],
             [['25-27', '30-32', '35-37']],
@@ -3549,34 +3638,10 @@ DAMAGE_SPELLS = {
             [FIRE],
             steals=[True],
         ), is_linked=(2, 'Cutting Down')),
-        Spell('Mastiff', [17, 58, 102], Effects(
-            [['10-11', '13-14', '16-17']] * 2,
-            [['12-13', '15-16', '18-19']] * 2,
-            [EARTH,EARTH],
-            steals=(False, True)
-        ), aggregates=[('', [0]),
-                       ('If the target is Prey', [1])],
-        is_linked=(1, 'Muzzle')),
-        Spell('Muzzle', [135], Effects(
-            [['53-57']],
-            [['59-63']],
-            [EARTH],
-        ), is_linked=(2, 'Mastiff')),
-        Spell('Tibia', [22, 65, 108], Effects(
-            [['29-33', '36-40', '43-47']],
-            [['34-38', '41-45', '48-52']],
-            [WATER],
-        ), is_linked=(1, 'Humerous')),
-        Spell('Humerous', [140], Effects(
-            [['43-47']],
-            [['48-52']],
-            [EARTH],
-        ), is_linked=(2, 'Tibia')),
-        Spell('Tracking', [27, 72, 118], Effects(
-            [['22-24', '28-30', '34-36']],
-            [['27-29', '33-35', '39-41']],
-            [FIRE],
-        ), is_linked=(1, 'Hunt')),
+        
+        
+        
+        
         Spell('Hunt', [145], Effects(
             [['38-42']],
             [['44-48']],
@@ -3596,34 +3661,9 @@ DAMAGE_SPELLS = {
             [['30-34']],
             [AIR],
         ), is_linked=(2, 'Bloodhound')),
-        Spell('R-Canine', [38, 90, 132], Effects(
-            [['100', '150', '200']],
-            None,
-            ['buff_pow'],
-        )),
-        Spell('Carrion', [50, 103, 143], Effects(
-            [['23-27', '28-32', '33-37']],
-            [['28-32', '33-37', '38-42']],
-            [AIR],
-        ), is_linked=(1, 'Radius')),
-        Spell('Radius', [165], Effects(
-            [['34-38']],
-            [['38-42']],
-            [WATER],
-        ), is_linked=(2, 'Carrion')),
-        Spell('Marrow Bone', [56, 112, 147], Effects(
-            create_level_based_stacking_values(((21, 23), (25, 27), (29, 31)), 
-                                               (5, 6, 7), 6),
-            create_level_based_stacking_values(((26, 28), (30, 32), (34, 36)), 
-                                               (5, 6, 7), 6),
-            [[WATER]] * 6,
-        ), aggregates=[('', [0]),
-                       ('After hitting a Prey once', [1]),
-                       ('After hitting a Prey twice', [2]),
-                       ('After hitting a Prey 3x', [3]),
-                       ('After hitting a Prey 4x', [4]),
-                       ('After hitting a Prey 5x', [5])],
-        is_linked=(1, 'Vertebra')),
+        
+        
+        
         Spell('Vertebra', [170], Effects(
             [['28-32']],
             [['34-38']],
@@ -3644,11 +3684,7 @@ DAMAGE_SPELLS = {
             [['35-39', '42-46', '49-53']],
             [FIRE],
         ), is_linked=(1, 'Carving Up')),
-        Spell('Carving Up', [195], Effects(
-            [['31-35']],
-            [['35-39']],
-            [AIR],
-        ), is_linked=(2, 'Tetanisation')),
+        
     ],
     'Forgelance': [
         Spell('Lance of the Lake', [1, 66, 132], Effects(
