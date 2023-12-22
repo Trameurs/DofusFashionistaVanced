@@ -95,41 +95,79 @@ class Model:
         
     def add_weird_item_weights_to_objective_funcion(self, objective_values, level):    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        #Adding more weight to Crimson Dofus equivalent to 5% melee damage + 5% ranged damage = 5% final damage = 5 times stack average.
+        #For each attack suffered, the final damage inflicted is increased by 1% for 1 turn.\nThe effects can stack 10 times.
+        crimson_dofus_new_stat_weight = objective_values.get('permedam', 0) * 5 + objective_values.get('perrandam', 0) * 5
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name('Crimson Dofus').id, 
+                               crimson_dofus_new_stat_weight)
         
+        #Adding more weight to Emerald Dofus equivalent to 0.5 * level HP
+        #At the end of the turn, gives 100% of the owner's level in shield points for each adjacent enemy.\nSummons are not counted.
+        emerald_dofus_new_stat_weight = objective_values.get('hp', 0) * 0.5 * level
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name('Emerald Dofus').id, 
+                               emerald_dofus_new_stat_weight)
         
         #Adding more weight to Turquoise Dofus equivalent to 5 CH
         #For each Critical Hit inflicted, the final damage is increased by 1% for 3 turns. Can be stacked 10 times.
-        turq_dofus_new_stat_weight = objective_values.get('ch', 0) * 5
-        
+        turq_dofus_new_stat_weight = objective_values.get('ch', 0) * 5   
         self.problem.add_to_of('p', 
                                self.structure.get_item_by_name('Turquoise Dofus').id, 
                                turq_dofus_new_stat_weight)
         
-        #Adding more weight to Crimson Dofus equivalent to 40 Power * level / 200
-        #For each distance attack suffered, the final damage inflicted is increased by 1% for 1 turns. The effects are stackable 10 times.
-        crimson_dofus_new_stat_weight = objective_values.get('pow', 0) * 40.0 * level / 200
-        
+        #adding random stats to dofusteuse 75 per stat average
+        #Increases one elemental characteristic per game turn: 300 to Chance, then 300 to Strength, then 300 to Agility, and then 300 to Intelligence.
         self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name('Crimson Dofus').id, 
-                               crimson_dofus_new_stat_weight)
+                               self.structure.get_item_by_name('Dofusteuse').id, 
+                               objective_values.get('agi', 0) * 75)
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name('Dofusteuse').id, 
+                               objective_values.get('cha', 0) * 75)
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name('Dofusteuse').id, 
+                               objective_values.get('int', 0) * 75)
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name('Dofusteuse').id, 
+                               objective_values.get('str', 0) * 75)
+        
+        #Adding more weight to Cawwot Dofus equivalent to 12.5 MP Loss Res + 12.5 AP Loss Res
+        #Gives 25 AP Parry if an AP penalty is suffered, or 25 MP Parry if an MP penalty is suffered. \nThe two effects last 1 turn and do not stack.
+        cawwot_dofus_new_stat_weight = objective_values.get('apres', 0) * 12.5 + objective_values.get('mpres', 0) * 12.5
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name('Cawwot Dofus').id, 
+                               cawwot_dofus_new_stat_weight)
+        
+        #Adding more weight to Vulbis Dofus equivalent to 5% damage + 10 lock
+        #Increases damage inflicted by 10% for 1 turn if the bearer has suffered no damage from enemies since the last turn.\nOtherwise, gives 20 Lock.
+        vulbis_dofus_new_stat_weight = objective_values.get('permedam', 0) * 5 + objective_values.get('perrandam', 0) * 5 + objective_values.get('lock', 0) * 10
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name('Vulbis Dofus').id, 
+                               vulbis_dofus_new_stat_weight)
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
         
         #Adding more weight to Ochre Dofus equivalent to 0.1 AP
         #it gives 1 AP if no damage has been received since the preceding turn
@@ -139,26 +177,9 @@ class Model:
                                self.structure.get_item_by_name('Ochre Dofus').id, 
                                ochre_dofus_new_stat_weight)
         
-        #Adding more weight to Emerald Dofus equivalent to
-        #At the end of the turn, gives 100% of the owner's level in shield points
-        #for each adjacent enemy. Summons are not counted.
         
-        #Formula: Multiply by 0.5, since you get the bonus 50% of the time
-        # Correct for level
         
-        emerald_dofus_new_stat_weight = objective_values.get('hp', 0) * 0.5 * level
         
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name('Emerald Dofus').id, 
-                               emerald_dofus_new_stat_weight)
-        
-        #Adding more weight to Vulbis Dofus equivalent to 7 Power
-        #damage inflicted is increased by 10% for one turn if no damage has been received since the preceding turn.
-        vulbis_dofus_new_stat_weight = objective_values.get('pow', 0) * 40.0 * level / 200
-        
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name('Vulbis Dofus').id, 
-                               vulbis_dofus_new_stat_weight)
          
         #Adding more weight to Abyssal Dofus equivalent to 1/2 AP + 1/2 MP
         #at the start of each turn, if no enemy is in close combat, it gives 1 MP. Otherwise, it gives 1 AP.
@@ -168,13 +189,7 @@ class Model:
                                self.structure.get_item_by_name('Abyssal Dofus').id, 
                                abyssal_dofus_new_stat_weight)
          
-        #Adding more weight to Cawwot Dofus equivalent to 0.25 MP Loss Res + 0.25 AP Loss Res
-        # it gives 25 AP Loss Resistance if an MP penalty is received, or 25 MP Loss Resistance if an AP penalty if received. These two effects can not combined.
-        cawwot_dofus_new_stat_weight = objective_values.get('apres', 0) * 0.25 + objective_values.get('mpres', 0) * 0.25
         
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name('Cawwot Dofus').id, 
-                               cawwot_dofus_new_stat_weight)
          
         #Adding more weight to Watchers Dofus equivalent to 10 heals
         #allies in alignment at the beginning of the turn get back 7% of their health points 
@@ -343,19 +358,7 @@ class Model:
                                objective_values.get('pow', 0) * 25)
         
         
-        #adding random stats to dofusteuse
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name('Dofusteuse').id, 
-                               objective_values.get('agi', 0) * 75)
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name('Dofusteuse').id, 
-                               objective_values.get('cha', 0) * 75)
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name('Dofusteuse').id, 
-                               objective_values.get('int', 0) * 75)
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name('Dofusteuse').id, 
-                               objective_values.get('str', 0) * 75)
+        
         #end
     def write_objective_function(self, objective_values, level):
         self.problem.init_objective_function()

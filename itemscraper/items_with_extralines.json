@@ -1,29 +1,5 @@
 [
     {
-        "name": "Crimson Dofus",
-        "special_spell": "For each attack suffered, the final damage inflicted is increased by 1% for 1 turn.\nThe effects can stack 10 times."
-    },
-    {
-        "name": "Emerald Dofus",
-        "special_spell": "At the end of the turn, gives 100% of the owner's level in shield points for each adjacent enemy.\nSummons are not counted."
-    },
-    {
-        "name": "Turquoise Dofus",
-        "special_spell": "For each Critical Hit inflicted, the final damage is increased by 1% for 3 turns. Can be stacked 10 times."
-    },
-    {
-        "name": "Dofusteuse",
-        "special_spell": "Increases one elemental characteristic per game turn: 300 to Chance, then 300 to Strength, then 300 to Agility, and then 300 to Intelligence."
-    },
-    {
-        "name": "Cawwot Dofus",
-        "special_spell": "Gives 25 AP Parry if an AP penalty is suffered, or 25 MP Parry if an MP penalty is suffered. \nThe two effects last 1 turn and do not stack."
-    },
-    {
-        "name": "Vulbis Dofus",
-        "special_spell": "Increases damage inflicted by 10% for 1 turn if the bearer has suffered no damage from enemies since the last turn.\nOtherwise, gives 20 Lock."
-    },
-    {
         "name": "Black-Spotted Dofus",
         "special_spell": "If the bearer inflicts damage during their turn, they and their allies carrying the Dorigami gain 20 damage for 1 turn.\n\nIf the bearer does not inflict damage, they and their allies carrying the Domakuro gain 150% of their respective levels in shield for 1 turn."
     },
