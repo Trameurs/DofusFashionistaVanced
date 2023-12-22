@@ -3482,22 +3482,6 @@ DAMAGE_SPELLS = {
             [['37-42']],
             [WATER],
         ), is_linked=(2, 'Striking Meteor')),
-        Spell('Tribute', [90, 157], Effects(
-            [['150']],
-            None,
-            ['buff_pow'],
-        ), is_linked=(1, 'Arcane Torrent')),
-        Spell('Arcane Torrent', [200], Effects(
-            create_stacking_values((('3'),), (3), 7) * 24,
-            create_stacking_values((('4'),), (3), 7) * 24,
-            [AIR, EARTH, FIRE, WATER] * 6,
-        ), aggregates=[('1 combination', [1, 2, 3, 4]),
-                        ('2 combinations', [5, 6, 7, 8]),
-                        ('3 combinations', [9, 10, 11, 12]),
-                        ('4 combinations', [13, 14, 15, 16]),
-                        ('5 combinations', [17, 18, 19, 20]),
-                        ('6 combinations', [21, 22, 23, 24])],
-        is_linked=(2, 'Tribute')),
     ],
     'Ouginak': [
         Spell('Watchdog', [1, 25, 52], Effects(
