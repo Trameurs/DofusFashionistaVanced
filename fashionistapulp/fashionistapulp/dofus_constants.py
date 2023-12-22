@@ -3488,13 +3488,13 @@ DAMAGE_SPELLS = {
             ['buff_pow'],
         ), is_linked=(1, 'Arcane Torrent')),
         Spell('Arcane Torrent', [200], Effects(
-            [['6']] * 4, [['9']] * 4,
+            [['6']] * 4 + [['9']] * 4,
             None,
             [AIR, EARTH, FIRE, WATER] * 2,
         ), aggregates=[('Target in earth state', [0, 1]),
                           ('Target in fire state', [2, 3]),
                           ('Target in water state', [4, 5]),
-                          ('Target in air state', [6, 7])]),
+                          ('Target in air state', [6, 7])],
         is_linked=(2, 'Tribute')),
     ],
     'Ouginak': [
