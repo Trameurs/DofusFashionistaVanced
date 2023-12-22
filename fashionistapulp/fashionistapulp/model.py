@@ -144,91 +144,91 @@ class Model:
         self.problem.add_to_of('p', 
                                self.structure.get_item_by_name('Vulbis Dofus').id, 
                                vulbis_dofus_new_stat_weight)
-
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        #Adding more weight to Black-Spotted Dofus
+        #If the bearer inflicts damage during their turn, they and their allies carrying the Dorigami gain 20 damage for 1 turn.\n\nIf the bearer does not inflict damage, they and their allies carrying the Domakuro gain 150% of their respective levels in shield for 1 turn.
+        black_spotted_dofus_new_stat_weight = objective_values.get('dam', 0) * 10 + objective_values.get('hp', 0) * 150 * level / 200 / 2
+        self.problem.add_to_of('p',
+                                 self.structure.get_item_by_name('Black-Spotted Dofus').id,
+                                 black_spotted_dofus_new_stat_weight)
         
+        #TODO: find better way to add weight to Ebony Dofus
+        #Adding more weight to Ebony Dofus equivalent to 60 Power * level / 200
+        #Inflicting ranged damage and close-combat damage during one's turn triggers the Ebony Dofus's power: the next attack during the same turn applies a poison (2 turns).\nThis attack takes 2 turns to recharge. The poison can be stacked 2 times.
+        ebony_dofus_new_stat_weight = objective_values.get('pow', 0) * 60.0 * level / 200
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name('Ebony Dofus').id, 
+                               ebony_dofus_new_stat_weight)
         
+        #Adding more weight to Ivory Dofus equivalent to 10% res distance and melee
+        #The bearer reduces damage from one out of five attacks by 50%. The reduction is lost if this one is sacrificed.
+        ivory_dofus_new_stat_weight = objective_values.get('respermee', 0) * 10 + objective_values.get('resperran', 0) * 10
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name('Ivory Dofus').id,
+                                ivory_dofus_new_stat_weight)
         
-        
-        
-        #Adding more weight to Ochre Dofus equivalent to 0.1 AP
-        #it gives 1 AP if no damage has been received since the preceding turn
-        ochre_dofus_new_stat_weight = objective_values.get('ap', 0) * 0.1
-        
+        #Adding more weight to Ochre Dofus equivalent to 0.2 AP + 16 Dodge
+        #Gives 1 AP for 1 turn if the bearer has suffered no damage from enemies since the last turn.\nOtherwise, gives 20 Dodge.
+        ochre_dofus_new_stat_weight = objective_values.get('ap', 0) * 0.2 + objective_values.get('dodge', 0) * 16
         self.problem.add_to_of('p', 
                                self.structure.get_item_by_name('Ochre Dofus').id, 
                                ochre_dofus_new_stat_weight)
         
+        #Adding more weight to Cloudy Dofus equivalent to 15% damage distance and melee
+        #On odd turns, increases damage by 20%. On even turns, decreases damage by 10%.
+        cloudy_dofus_new_stat_weight = objective_values.get('permedam', 0) * 15 + objective_values.get('perrandam', 0) * 15
+        self.problem.add_to_of('p',
+                                 self.structure.get_item_by_name('Cloudy Dofus').id,
+                                 cloudy_dofus_new_stat_weight)
         
-        
-        
-         
-        #Adding more weight to Abyssal Dofus equivalent to 1/2 AP + 1/2 MP
-        #at the start of each turn, if no enemy is in close combat, it gives 1 MP. Otherwise, it gives 1 AP.
-        abyssal_dofus_new_stat_weight = objective_values.get('ap', 0) * 0.5 + objective_values.get('mp', 0) * 0.5
-        
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name('Abyssal Dofus').id, 
-                               abyssal_dofus_new_stat_weight)
-         
-        
-         
+        #TODO: find better way to add weight to Watchers Dofus
         #Adding more weight to Watchers Dofus equivalent to 10 heals
-        #allies in alignment at the beginning of the turn get back 7% of their health points 
+        #At the end of the turn, returns 7% HP to aligned allies. 
         watchers_dofus_new_stat_weight = (objective_values.get('heals', 0) * 10 + 2500) * level / 200.0
-        
         self.problem.add_to_of('p', 
                                self.structure.get_item_by_name('Watchers Dofus').id, 
                                watchers_dofus_new_stat_weight)
         
-        #Adding more weight to Thousand-League Boots equivalent to 1 MP
-        #The bearer gains 2 MP on odd turns and loses 1 MP on even turns.
+        #Adding more weight to Dokoko
+        #Every 3 turns starting on turn 3, returns 10% of their maximum health points.
+        dokoko_new_stat_weight = objective_values.get('hp', 0) * (4500.0 * 10 / 100) * (1/3) * level / 200
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name('Dokoko').id,
+                                dokoko_new_stat_weight)
+        
+        #Adding more weight to Abyssal Dofus equivalent to 1/2 AP + 1/2 MP
+        #At the start of each turn, if there are no enemies in close combat, gives 1 MP. Otherwise, gives 1 AP.
+        abyssal_dofus_new_stat_weight = objective_values.get('ap', 0) * 0.5 + objective_values.get('mp', 0) * 0.5
         self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name('Thousand-League Boots').id, 
-                               objective_values.get('mp', 0))
+                               self.structure.get_item_by_name('Abyssal Dofus').id, 
+                               abyssal_dofus_new_stat_weight)
+        
+        #Adding more weight to Lavasmith Dofus
+        #Applies 100% of level as shield points to its bearer, 1 time max per turn for pushback damage and 1 time for each type of movement: \n- pushback damage\n- pushback / attraction\n- place switching / teleportation / Eliotrope portal\n- carried by a Pandawa\n\nThe effect can only be triggered by enemies.
+        lavasmith_dofus_new_stat_weight = objective_values.get('hp', 0) * 100 * level / 200
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name('Lavasmith Dofus').id,
+                                lavasmith_dofus_new_stat_weight)
         
         #Adding more weight to Silver Dofus equivalent to some HP
-        #At the start of the caster's turn, if they have less than 20% of their HP, they are healed by 20% of their HP. This effect can only be played once per fight.
-        
+        #As soon as the bearer falls below 20% of their health points, the Dofus's effect is triggered.\nAt the start of their next turn: heals 20% HP (once per fight).
         #Formula: expected life at lvl 200: 4500 - get 20% of that. 
-        # Multiply by 0.2, since you wont get the bonus too often
-        # Correct for level
+        #Multiply by 0.2, since you wont get the bonus too often
+        #Correct for level
         silver_dofus_new_stat_weight = objective_values.get('hp', 0) * (4500.0 * 20 / 100) * 0.2 * level / 200
-        
         self.problem.add_to_of('p', 
                                self.structure.get_item_by_name('Silver Dofus').id, 
                                silver_dofus_new_stat_weight)
         
         #Adding more weight to Sparkling Silver Dofus equivalent to some HP
-        #At the start of the caster's turn, if they have less than 20% of their HP, 
-        #they are healed by they are healed 40% HP and gain 20% final damage for the current turn. 
-        #This effect can only be played once per fight.
+        #As soon as the bearer falls below 20% of their health points, the Dofus's effect is triggered.\nAt the start of their next turn: heals 30% HP and gives 20% final damage for 1 turn (once per fight).
         
         #Formula: expected life at lvl 200: 4500 - get 40% of that. 
         # Add 30% power to simulate final damage
         # Multiply by 0.2, since you wont get the bonus too often
         # Correct for level
-        sparkling_silver_dofus_new_stat_weight_hp = objective_values.get('hp', 0) * (4500.0 * 40 / 100) * 0.2 * level / 200
-        sparkling_silver_dofus_new_stat_weight_pow = objective_values.get('power', 0) * (30) * 0.2
-        
+        sparkling_silver_dofus_new_stat_weight_hp = objective_values.get('hp', 0) * (4500.0 * 30 / 100) * 0.2 * level / 200
+        sparkling_silver_dofus_new_stat_weight_pow = objective_values.get('respermee', 0) * 20 * 0.2 + objective_values.get('resperran', 0) * 20 * 0.2
         self.problem.add_to_of('p', 
                                self.structure.get_item_by_name('Sparkling Silver Dofus').id, 
                                sparkling_silver_dofus_new_stat_weight_hp)
@@ -236,16 +236,147 @@ class Model:
                                self.structure.get_item_by_name('Sparkling Silver Dofus').id, 
                                sparkling_silver_dofus_new_stat_weight_pow)
         
-        #Adding more weight to Ebony Dofus equivalent to 60 Power * level / 200
-        #Generates 1 first charge at the start of the turn, 1 second charge upon inflicting close-combat damage, and 1 third charge upon inflicting ranged damage.
-        #Once 5 charges are reached, the next attack consumes the charges and applies a poison to the target for 3 turns.
-        #Each charge gives a 2% final damage inflicted bonus.
-        #Assuming one has an average of 3 charges, so 6% final damage bonus
-        ebony_dofus_new_stat_weight = objective_values.get('pow', 0) * 60.0 * level / 200
-        
+        #TODO: find better way to add weight to Crocobur
+        #Adding more weight to Crocobur equivalent to 200 HP * meleeness
+        #At the start of each turn, the bearer inflicts damage on themself in their best attack element to steal health from adjacent entities at the end of the caster's turn.
         self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name('Ebony Dofus').id, 
-                               ebony_dofus_new_stat_weight)
+                               self.structure.get_item_by_name("Crocobur").id, 
+                               objective_values.get('hp', 0) * level / 2 + objective_values.get('perrandam', 0) * level / 200)
+        
+        #TODO: find better way to add weight to Buhorado Feather
+        #Adding more weight to Buhorado Feather equivalent to 10 pushback damage
+        #Whenever the bearer inflicts Critical Hits, they gain pushback damage for 2 turns, stackable 5 times.
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name("Buhorado Feather").id, 
+                               objective_values.get('pshdam', 0) * 10 * objective_values.get('ch', 0) / 100)
+        
+        #Adding more weight to Fallanster's Rectitude equivalent to 2% HP
+        #If the bearer ends their turn with a line of sight to at least one opponent, they earn a 10% damage suffered reduction for 1 turn as long as they haven't been pushed, attracted, carried, teleported or transposed.
+        fallanster_new_stat_weight = objective_values.get('respermee', 0) * 8 + objective_values.get('resperran', 0) * 8
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name("Fallanster's Rectitude").id, 
+                               fallanster_new_stat_weight)
+        
+        #Adding more weight to Death-Defying equivalent to 2.5% res distance and melee
+        #Damage suffered by the bearer is increased by 15% whenever they have more than 50% HP, but damage suffered is reduced by 20% whenever they have less than 50% HP.
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name("Death-Defying").id, 
+                               objective_values.get('respermee', 0) * 2.5 + objective_values.get('resperran', 0) * 2.5)
+        
+        #Adding more weight to Bram Worldbeard's Crown equivalent to 7.5% weapon damage
+        #When the bearer suffers an AP, MP or Range removal, they gain 3% weapon damage for 2 turns, stackable 5 times.
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name("Bram Worldbeard's Crown").id, 
+                               objective_values.get('perweadam', 0) * 7.5)
+        
+        #Adding more weight to Ganymede's Diadem equivalent to 1 AP
+        #The bearer gains 2 AP on even turns and loses 1 AP on odd turns.
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name("Ganymede's Diadem").id, 
+                               objective_values.get('ap', 0))
+        
+        #Adding more weight to Rykke Errel's Bravery equivalent to 400 hp and -10% ranged damage
+        #For each distance attack suffered, the bearer gains shield and loses ranged damage for 1 turn; stackable up to 5 times maximum. The damage penalty and shield values vary according to the distance between the bearer and their attacker.
+        #Will consider 3 distance attacks each turn
+        distance_attacks = 3
+        rikke_new_stat_weight = objective_values.get('hp', 0) * 200 * distance_attacks - objective_values.get('perrandam', 0) * 5 * distance_attacks
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name("Rykke Errel's Bravery").id, 
+                               rikke_new_stat_weight)
+        
+        #Adding more weight to Jahash Jurgen's Cloak equivalent to 1.5% resists (1-2 hits on each element)
+        #When the bearer suffers damage in an element, they gain 3% resistance in that element for 2 turns, stackable 5 times.
+        resists_to_consider = 1.5
+        jahash_new_stat_weight = (objective_values.get('neutresper', 0) * resists_to_consider
+                                  + objective_values.get('airresper', 0) * resists_to_consider
+                                  + objective_values.get('earthresper', 0) * resists_to_consider
+                                  + objective_values.get('fireresper', 0) * resists_to_consider
+                                  + objective_values.get('waterresper', 0) * resists_to_consider)
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name("Jahash Jurgen's Cloak").id, 
+                               jahash_new_stat_weight)
+        
+        #Adding more weight to Thousand-League Boots equivalent to 1 MP
+        #The bearer gains 2 MP on odd turns and loses 1 MP on even turns.
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name('Thousand-League Boots').id, 
+                               objective_values.get('mp', 0))
+        
+        #Adding more weight to Kicked Ass Boots equivalent to 30 Dodge and 50 Pushback Damage
+        #At the start of each turn, the bearer pushes entities in close combat back 2 cells.
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name("Kicked Ass Boots").id, 
+                               objective_values.get('dodge', 0) * 30 + objective_values.get('pshdam', 0) * 50)
+        
+        #Adding more weight to Dodge's Audacity equivalent to 50 dodge, 5% critical hits and 40 pushback damage
+        #At the start of each turn, the caster randomly teleports to an adjacent cell. If the move is impossible, they earn a +10% chance of critical hits and +80 Pushback Damage for 1 turn.
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name("Dodge's Audacity").id, 
+                               objective_values.get('dodge', 0) * 50 + objective_values.get('ch', 0) * 5 + objective_values.get('pshdam') * 40)
+        
+        #Adding more weight to Lady Jhessica's Belt equivalent to 25 Lock
+        #At end of their turn, the bearer removes 100 Dodge from adjacent enemies for 1 turn.
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name("Lady Jhessica's Belt").id, 
+                               objective_values.get('lock', 0) * 50)
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+        
+         
+        
+         
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         #Adding more weight to Dorigami equivalent to 20 (avg vit weight) + lvl * 1.25
@@ -277,85 +408,26 @@ class Model:
                                domakuro_dofus_new_stat_weight)
         
         
-        #Adding more weight to Rykke Errel's Bravery equivalent to 400 hp and -10% ranged damage
-        #For each distance attack suffered, the bearer gains 200 shield and loses 5% ranged damage for 1 turn; stackable up to 5 times maximum.
-        
-        #Will consider 3 distance attacks each turn
-        distance_attacks = 3
-        rikke_new_stat_weight = objective_values.get('hp', 0) * 200 * distance_attacks - objective_values.get('perrandam', 0) * 5 * distance_attacks
-        
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name("Rykke Errel's Bravery").id, 
-                               rikke_new_stat_weight)
-        
-        #Adding more weight to Lady Jhessica's Belt equivalent to 25 Lock
-        #At the end of their turn, the bearer removes 50 Dodge from adjacent enemies for 1 turn.
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name("Lady Jhessica's Belt").id, 
-                               objective_values.get('lock', 0) * 25)
         
         
-        #Adding more weight to Kicked Ass Boots equivalent to 30 Dodge and 50 Pushback Damage
-        #At the start of each turn, the wearer pushes entities in close combat back 1 cell.
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name("Kicked Ass Boots").id, 
-                               objective_values.get('dodge', 0) * 30 + objective_values.get('pshdam', 0) * 50)
         
-        #Adding more weight to Jahash Jurgen's Cloak equivalent to 2.5% resists (1-2 hits on each element)
-        #When the bearer suffers damage in an element, they gain 5% resistance in that element for 1 turn, stackable 5 times.
-        resists_to_consider = 2.5
-        jahash_new_stat_weight = (objective_values.get('neutresper', 0) * resists_to_consider
-                                  + objective_values.get('airresper', 0) * resists_to_consider
-                                  + objective_values.get('earthresper', 0) * resists_to_consider
-                                  + objective_values.get('fireresper', 0) * resists_to_consider
-                                  + objective_values.get('waterresper', 0) * resists_to_consider)
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name("Jahash Jurgen's Cloak").id, 
-                               jahash_new_stat_weight)
         
-        #Adding more weight to Ganymede's Diadem equivalent to 1 AP
-        #The bearer gains 2 AP on even turns and loses 1 AP on odd turns.
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name("Ganymede's Diadem").id, 
-                               objective_values.get('ap', 0))
         
-        #Adding more weight to Fallanster's Rectitude equivalent to 2% HP
-        #The bearer gains a 10% reduction in damage suffered for 1 turn at the start of each turn. The bonus is removed as soon as the caster is moved.
-        fallanster_new_stat_weight = objective_values.get('hp', 0) * (4500.0 * 2 / 100) * level / 200
         
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name("Fallanster's Rectitude").id, 
-                               fallanster_new_stat_weight)
         
-        #Adding more weight to Dodge's Audacity equivalent to 50 dodge
-        #If the bearer suffers a Lock or does not move during their turn, the bearer becomes Unlockable on their next turn for 1 turn.
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name("Dodge's Audacity").id, 
-                               objective_values.get('dodge', 0) * 50)
         
-        #Adding more weight to Death-Defying equivalent to nothing
-        #Damage suffered by the bearer is increased by 15% whenever they have more than 50% HP, but damage suffered is reduced by 20% whenever they have less than 50% HP.
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name("Death-Defying").id, 
-                               objective_values.get('hp', 0) * 0)
         
-        #Adding more weight to Crocobur equivalent to 200 HP * meleeness
-        #The bearer steals health in their best attack element from adjacent enemies at the end of the turn.
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name("Crocobur").id, 
-                               objective_values.get('hp', 0) * 200 * objective_values.get('meleeness', 0))
         
-        #Adding more weight to Buhorado Feather equivalent to 10 pushback damage
-        #Whenever the bearer inflicts Critical Hits, they gain pushback damage for 2 turns, stackable 5 times.
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name("Buhorado Feather").id, 
-                               objective_values.get('pshdam', 0) * 10 * objective_values.get('ch', 0) / 100)
         
-        #Adding more weight to Bram Worldbeard's Crown equivalent to 25 power
-        #Whenever the bearer suffers an AP or MP removal, they gain 50 Power for 1 turn, stackable 10 times.
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name("Bram Worldbeard's Crown").id, 
-                               objective_values.get('pow', 0) * 25)
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
