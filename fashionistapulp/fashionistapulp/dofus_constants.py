@@ -3618,7 +3618,7 @@ DAMAGE_SPELLS = {
             [['32-36'],
              ['75'],
              ['150']],
-            [AIR],
+            [AIR, 'buff_pow', 'buff_pow'],
         ), aggregates=[('', [0]),
                        ('', [1]),
                        ('If the target is Prey', [2])],
