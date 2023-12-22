@@ -327,118 +327,293 @@ class Model:
                                 3139,
                                 cocoa_dofus_new_stat_weight)
         
+        #Adding more weight to Prytekt
+        #The bearer gains 550% of their level in shield points on the first turn, 200% on the second turn and 100% on the third.
+        prytekt_new_stat_weight = objective_values.get('hp', 0) * ((0.7*550+0.85*200+100)/4) * level / 200
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Prytekt").id,
+                                prytekt_new_stat_weight)
+        #Shiny Prytekt
+        #The bearer gains 150% of their level in shield points on the first turn, 450% on the second turn and 150% on the third.
+        shiny_prytekt_new_stat_weight = objective_values.get('hp', 0) * ((0.7*150+0.85*450+150)/4) * level / 200
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Shiny Prytekt").id,
+                                shiny_prytekt_new_stat_weight)
+
+        #Iridescent Prytekt
+        #The bearer gains 100% of their level in shield points on the first turn, 200% on the second turn and 350% on the third.
+        iridescent_prytekt_new_stat_weight = objective_values.get('hp', 0) * ((0.7*100+0.85*200+350)/4) * level / 200
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Iridescent Prytekt").id,
+                                iridescent_prytekt_new_stat_weight)
+
+        #Pryssure
+        #The bearer gains 1 AP for 3 turns but inflicts -10% damage.
+        pryssure_new_stat_weight = objective_values.get('ap', 0) * 0.75 - objective_values.get('permedam', 0) * 7.5 - objective_values.get('perrandam', 0) * 7.5     
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Pryssure").id,
+                                pryssure_new_stat_weight)
+
+        #Shiny Pryssure
+        #The bearer gains 2 AP for 2 turns but inflicts -35% damage.
+        shiny_pryssure_new_stat_weight = objective_values.get('ap', 0) * 1 - objective_values.get('permedam', 0) * 17.5 - objective_values.get('perrandam', 0) * 17.5
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Shiny Pryssure").id,
+                                shiny_pryssure_new_stat_weight)
 
 
+        #Iridescent Pryssure
+        #The bearer gains 4 AP for 1 turn but inflicts -50% damage.
+        iridescent_pryssure_new_stat_weight = objective_values.get('ap', 0) * 1 - objective_values.get('permedam', 0) * 12.5 - objective_values.get('perrandam', 0) * 12.5
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Iridescent Pryssure").id,
+                                iridescent_pryssure_new_stat_weight)
 
+        #Surpryz
+        #The bearer gains 15% Critical for 3 turns.
+        surpryz_new_stat_weight = objective_values.get('ch', 0) * 11.25
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Surpryz").id,
+                                surpryz_new_stat_weight)
 
+        #Shiny Surpryz
+        #The bearer gains 35% Critical for 2 turns.
+        shiny_surpryz_new_stat_weight = objective_values.get('ch', 0) * 17.5
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Shiny Surpryz").id,
+                                shiny_surpryz_new_stat_weight)
 
+        #Iridescent Surpryz
+        #The bearer gains 100% Critical for 1 turn.
+        iridescent_surpryz_new_stat_weight = objective_values.get('ch', 0) * 25
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Iridescent Surpryz").id,
+                                iridescent_surpryz_new_stat_weight)
 
+        #Pryndsight
+        #For 1 turn, the bearer gains as much Power as damage suffered by enemies, up to 200 Power (3 turns).
+        pryndsight_new_stat_weight = objective_values.get('pow', 0) * 150
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Pryndsight").id,
+                                pryndsight_new_stat_weight)
 
+        #Shiny Pryndsight
+        #For 1 turn, the bearer gains as much Power as damage suffered by enemies, up to 300 Power (2 turns).
+        shiny_pryndsight_new_stat_weight = objective_values.get('pow', 0) * 150
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Shiny Pryndsight").id,
+                                shiny_pryndsight_new_stat_weight)
 
+        #Iridescent Pryndsight
+        #For 1 turn, the bearer gains as much Power as damage suffered by enemies, up to 600 Power (1 turn).
+        iridescent_pryndsight_new_stat_weight = objective_values.get('pow', 0) * 150
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Iridescent Pryndsight").id,
+                                iridescent_pryndsight_new_stat_weight)
 
+        #Prycapture
+        #The bearer gains 1 MP (2 turns) per enemy more than 15 cells away.
+        prycapture_new_stat_weight = objective_values.get('mp', 0) * 0.5
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Prycapture").id,
+                                prycapture_new_stat_weight)
 
+        #Shiny Prycapture
+        #The bearer gains 1 MP (2 turns) per enemy more than 12 cells away and loses 1 AP (2 turns) per enemy within 12 cells.
+        shiny_prycapture_new_stat_weight = objective_values.get('mp', 0) * 0.5 - objective_values.get('ap', 0) * 0.5
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Shiny Prycapture").id,
+                                shiny_prycapture_new_stat_weight)
 
+        #Iridescent Prycapture
+        #The bearer gains 1 MP (2 turns) per enemy more than 9 cells away and loses 2 AP (2 turns) per enemy within 9 cells.
+        iridescent_prycapture_new_stat_weight = objective_values.get('mp', 0) * 0.5 - objective_values.get('ap', 0) * 1
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Iridescent Prycapture").id,
+                                iridescent_prycapture_new_stat_weight)
 
+        #Prygenerate
+        #Heals 15% of enemy damage suffered until the end of the third turn.
+        prygenerate_new_stat_weight = objective_values.get('hp', 0) * 0.15 * 3 * level
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Prygenerate").id,
+                                prygenerate_new_stat_weight)
 
-        
-        
+        #Shiny Prygenerate
+        #Heals 30% of enemy damage suffered until the end of the second turn.
+        shiny_prygenerate_new_stat_weight = objective_values.get('hp', 0) * 0.3 * 1.5 * level
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Shiny Prygenerate").id,
+                                shiny_prygenerate_new_stat_weight)
 
+        #Iridescent Prygenerate
+        #Heals 100% of enemy damage suffered until the end of the first turn.
+        iridescent_prygenerate_new_stat_weight = objective_values.get('hp', 0) * 1 * 0.5 * level
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Iridescent Prygenerate").id,
+                                iridescent_prygenerate_new_stat_weight)
 
+        #Prysipitate
+        #The bearer gains +2 AP for their first round.
+        prysipitate_new_stat_weight = objective_values.get('ap', 0) * 0.5
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Prysipitate").id,
+                                prysipitate_new_stat_weight)
 
+        #Shiny Prysipitate
+        #The bearer gains +3 AP for their first round but also loses 2 MP.
+        shiny_prysipitate_new_stat_weight = objective_values.get('ap', 0) * 0.75 - objective_values.get('mp', 0) * 0.5
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Shiny Prysipitate").id,
+                                shiny_prysipitate_new_stat_weight)
 
+        #Iridescent Prysipitate
+        #The bearer gains +4 AP for their first round but also loses 4 MP.
+        iridescent_prysipitate_new_stat_weight = objective_values.get('ap', 0) * 1 - objective_values.get('mp', 0) * 1
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Iridescent Prysipitate").id,
+                                iridescent_prysipitate_new_stat_weight)
 
+        #Spryritual
+        #The bearer gains 250 AP Parry on the first turn, then 50 AP Parry on the second turn.
+        spryritual_new_stat_weight = objective_values.get('apres', 0) * 100
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Spryritual").id,
+                                spryritual_new_stat_weight)
 
+        #Prysical
+        #The bearer gains 250 MP Parry on the first turn, then 50 MP Parry on the second turn.
+        prysical_new_stat_weight = objective_values.get('mpres', 0) * 100
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Prysical").id,
+                                prysical_new_stat_weight)
 
+        #Pryank
+        #At the end of their first turn, the bearer reduces damage by 5% (3 turns) for each enemy (excluding summons) in their line of sight.
+        pryank_new_stat_weight = objective_values.get('respermee', 0) * 7.5 + objective_values.get('resperran', 0) * 7.5
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Pryank").id,
+                                pryank_new_stat_weight)
 
+        #Shiny Pryank
+        #At the end of their first turn, the bearer reduces damage by 10% (2 turns) for each enemy (excluding summons) in their line of sight.
+        shiny_pryank_new_stat_weight = objective_values.get('respermee', 0) * 7.5 + objective_values.get('resperran', 0) * 7.5
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Shiny Pryank").id,
+                                shiny_pryank_new_stat_weight)
 
+        #Iridescent Pryank
+        #At the end of their first turn, the bearer reduces damage by 20% (1 turn) for each enemy (excluding summons) in their line of sight.
+        iridescent_pryank_new_stat_weight = objective_values.get('respermee', 0) * 7.5 + objective_values.get('resperran', 0) * 7.5
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Iridescent Pryank").id,
+                                iridescent_pryank_new_stat_weight)
 
+        #TODO: find better way to add weight to Disaprys
+        #Disaprys
+        #The bearer becomes invisible (1 turn) at the start of their first round.
+        disaprys_new_stat_weight = objective_values.get('hp', 0) * 0.5 * level
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Disaprys").id,
+                                disaprys_new_stat_weight)
 
+        #TODO: find better way to add weight to Prywitchment
+        #Prywitchment
+        #Reduces the duration of active effects on the bearer by 4 at the start of their first round.
+        prywitchment_new_stat_weight = objective_values.get('hp', 0) * 0.5 * level
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Prywitchment").id,
+                                prywitchment_new_stat_weight)
 
+        #Pryshield
+        #The bearer gains 200% of their level in shield (infinite) for each opponent (excluding summons) that plays before them.
+        pryshield_new_stat_weight = objective_values.get('hp', 0) * 2 * level * 2
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Pryshield").id,
+                                pryshield_new_stat_weight)
 
+        #Pryximity
+        #At the start of their first round, the bearer gains 200% of their level in shield (infinite) for each enemy (excluding summons) in their line of sight.
+        pryximity_new_stat_weight = objective_values.get('hp', 0) * 2 * level * 2
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Pryximity").id,
+                                pryximity_new_stat_weight)
 
+        #Prymune
+        #The bearer reduces all types of damage suffered by 80% on the first turn.
+        prymune_new_stat_weight = objective_values.get('respermee', 0) * 10 + objective_values.get('resperran', 0) * 10
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Prymune").id,
+                                prymune_new_stat_weight)
 
+        #Gravprysy
+        #The bearer gains the Gravity state as long as they have not suffered any damage. If they suffer damage, the duration of the state changes to 1 turn.
+        gravprysy_new_stat_weight = objective_values.get('dodge', 0) * 50 + objective_values.get('lock', 0) * 50
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Gravprysy").id,
+                                gravprysy_new_stat_weight)
 
+        #War's Halbaxe
+        #If the bearer is in close contact with an enemy at the start of their turn, they gain 20 MP Reduction for 1 turn; if not, they gain 30 Lock. When the bearer kills an opponent (excluding summons) with direct damage, they gain 1 MP until the end of the fight, stackable max. 3 times.
+        wars_halbaxe_new_stat_weight = objective_values.get('mpres', 0) * 10 + objective_values.get('lock', 0) * 15 + objective_values.get('mp', 0) * 0.25
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("War's Halbaxe").id,
+                                wars_halbaxe_new_stat_weight)
 
+        #TODO: find better way to add weight to Corruption Pestilence
+        #Corruption Pestilence
+        #When the caster returns to 100% HP via healing or a health steal, they apply a start-of-turn poison in their best element on entities two cells away or less. The poison lasts 2 turns, cannot be unbewitched, and can be stacked a maximum of 1 time.
+        corruption_pestilence_new_stat_weight = objective_values.get('permedam', 0) * 2 + objective_values.get('perrandam', 0) * 2
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Corruption Pestilence").id,
+                                corruption_pestilence_new_stat_weight)
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-         
-        
-         
-        
-         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        #Adding more weight to Dorigami equivalent to 20 (avg vit weight) + lvl * 1.25
-        #Applies 100% of level as Shield at the start of each turn for the first
-        #5 turns. During each of these 5 turns, if the caster kills a summons, the
-        #caster gains 100% of their level as Shield for 1 turn (max. 4 times), and
-        #300% (max. 2 times) for a monster or player. Shields are only obtained 
-        #during the caster's turn.
-        dorigami_dofus_new_stat_weight = 20 * level * 1.25
-        
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name('Dorigami').id, 
-                               dorigami_dofus_new_stat_weight)
-        
+        #TODO: find better way to add weight to Servitude's Embrace
+        #Servitude's Embrace
+        #At the end of each turn, the bearer attracts entities in a 3-cell cross around themself by 2 cells. If the bearer has no entities next to them at the end of their turn, they enter the Unmovable state until the start of their next turn. The state is removed if they suffer damage.
+        servitudes_embrace_new_stat_weight = objective_values.get('dodge', 0) * 20 + objective_values.get('lock', 0) * 20
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Servitude's Embrace").id,
+                                servitudes_embrace_new_stat_weight)
+
+        #Misery's Flail-Scale
+        #When the bearer suffers an AP, MP or Range reduction, the damage they suffer is reduced by 4% for 2 turns. Damage suffered by the attacker is increased by 4% for 2 turns. Stackable max. 3 times.
+        miserys_flail_scale_new_stat_weight = objective_values.get('respermee', 0) * 4 + objective_values.get('resperran', 0) * 4
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Misery's Flail-Scale").id,
+                                miserys_flail_scale_new_stat_weight)
         
         #Adding more weight to Domakuro equivalent to dmg * 16
-        #Starting on the 5th turn, the caster gains up to 64 damage for the rest of the fight.
-        #This bonus is reduced each time the caster inflicts damage during their turn on an 
-        #opponent for each of the first 4 turns of the fight: No attacks: 16 damage 
-        #1 attack: 8 damage 2+ attacks: 0 damage.
+        #Starting on the 5th turn, the caster gains up to 64 damage for the rest of the fight.\nThis bonus is reduced each time the caster inflicts damage on an opponent during their turn for each of the first 4 turns of the fight:\n\nNo attacks: 16 damage.\n1 attack: 8 damage.\n2+ attacks: 0 damage.
         domakuro_dofus_new_stat_weight = (objective_values.get('neutdam', 0) + 
                                           objective_values.get('earthdam', 0) + 
                                           objective_values.get('firedam', 0) + 
                                           objective_values.get('airdam', 0) + 
                                           objective_values.get('waterdam', 0)) * 16
-        
         self.problem.add_to_of('p', 
                                self.structure.get_item_by_name('Domakuro').id, 
                                domakuro_dofus_new_stat_weight)
+        #Adding more weight to Dorigami equivalent to 20 (avg vit weight) + lvl * 1.25
+        #Applies 100% of level as Shield at the start of each turn for the first 5 turns. \nDuring each of these 5 turns, if the caster kills a summons, the caster gains 100% of their level as shield for 2 turns (max. 4 times), and 300% (max. 2 times) for a monster or player.\nShields are only obtained during the caster's turn.
+        dorigami_dofus_new_stat_weight = 20 * level * 1.25
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name('Dorigami').id, 
+                               dorigami_dofus_new_stat_weight)
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        #end
+        #Nightmare Dofus
+        #If the bearer applies or receives a shield, allies within 3 cells or less of the bearer are healed by 7% of their HP. \nIf the bearer unbewitches a target, allies within 3 cells or less gain 150 Power for 1 turn (stacks 1 time, cannot be dissipated). \nEach effect can only be triggered once per turn, but if both are triggered in the same turn, the bearer receives 10% additional damage for 1 turn (cannot be dissipated).
+        nightmare_dofus_new_stat_weight = objective_values.get('heals', 0) * 10 + objective_values.get('pow', 0) * 50 + objective_values.get('permedam', 0) * 5 + objective_values.get('perrandam', 0) * 5
+        self.problem.add_to_of('p',
+                                self.structure.get_item_by_name("Nightmare Dofus").id,
+                                nightmare_dofus_new_stat_weight)
+
+        #Sylvan Dofus
+        #For each MP used, the bearer gains 8 Power for 2 turns, stackable 20 times. If the bearer does not use any MP, they are healed for 10% of their HP at the end of their turn.
+        sylvan_dofus_new_stat_weight = objective_values.get('pow', 0) * 50 + objective_values.get('hp', 0) * (4500.0 * 10 / 100) * 0.2 * level / 200
+        self.problem.add_to_of('p',
+                                3387,
+                                sylvan_dofus_new_stat_weight)
+
     def write_objective_function(self, objective_values, level):
         self.problem.init_objective_function()
 
