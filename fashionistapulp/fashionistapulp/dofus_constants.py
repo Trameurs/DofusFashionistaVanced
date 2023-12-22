@@ -3500,14 +3500,14 @@ DAMAGE_SPELLS = {
         is_linked=(2, 'Tribute')),
     ],
     'Ouginak': [
-        Spell('Watchdog', [1, 25, 52], Effects(
-            [['21-25', '26-30', '31-35']],
-            [['25-29', '30-34', '35-39']],
+        Spell('Watchdog', [1, 67, 133], Effects(
+            [['18-20', '24-27', '31-34']],
+            [['22-24', '29-32', '37-41']],
             [EARTH],
         ), is_linked=(1, 'Jaw')),
-        Spell('Jaw', [105], Effects(
-            [['28-32']],
-            [['34-38']],
+        Spell('Jaw', [100, 167], Effects(
+            [['23-35', '28-31']],
+            [['27-30', '34-37']],
             [FIRE],
         ), is_linked=(2, 'Watchdog')),
         Spell('Ulna', [1, 30, 60], Effects(
