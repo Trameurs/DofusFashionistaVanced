@@ -3669,6 +3669,11 @@ DAMAGE_SPELLS = {
                         ('Raage', [2, 3]),
                         ('Animal Form', [4, 5, 6])],
         is_linked=(2, 'Amarok')),
+        Spell('Gnaw', [185], Effects(
+            [['80']],
+            None,
+            ['buff_pow'],
+        ), stacks=3),
         
 
 
