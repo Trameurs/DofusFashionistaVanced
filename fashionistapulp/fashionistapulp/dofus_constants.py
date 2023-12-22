@@ -3316,12 +3316,12 @@ DAMAGE_SPELLS = {
         ), aggregates=[('', [0, 1])], 
         is_linked=(2, 'Ether')),
         Spell('Runification', [1, 68, 134], Effects(
-            [['9', '12', '15']],
+            [['9', '12', '15']] * 4,
             None,
             [EARTH, FIRE, WATER, AIR],
         ), is_linked=(1, 'Manifestation')),
         Spell('Manifestation', [105, 172], Effects(
-            [['15', '15']],
+            [['15', '15']] * 4,
             None,
             [EARTH, FIRE, WATER, AIR],
         ), is_linked=(2, 'Runification')),
