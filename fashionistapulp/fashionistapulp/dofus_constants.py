@@ -3589,6 +3589,40 @@ DAMAGE_SPELLS = {
             None,
             ['buff_pow'],
         ), stacks=2),
+        Spell('Tally Ho', [35, 102, 169], Effects(
+            [['18-20', '23-26', '29-31']],
+            [['22-24', '28-30', '35-37']],
+            [FIRE],
+        ), is_linked=(1, 'Hunt')),
+        Spell('Hunt', [145], Effects(
+            [['39-44']],
+            [['47-53']],
+            [FIRE],
+        ), is_linked=(2, 'Tally Ho')),
+        Spell('Carcass', [40, 107, 174], Effects(
+            create_level_based_stacking_values(((5, 7), (7, 9), (9, 11)), 
+                                               (4, 5, 6), 5),
+            create_level_based_stacking_values(((3, 8), (9, 11), (11, 13)), 
+                                               (4, 5, 6), 5),
+            [[AIR]] * 6,
+        ), aggregates=[('', [0]),
+                       ('After hitting a Prey once', [1]),
+                       ('After hitting a Prey twice', [2]),
+                       ('After hitting a Prey 3x', [3]),
+                       ('After hitting a Prey 4x', [4])],
+        is_linked=(1, 'Beaten')),
+        Spell('Beaten', [150], Effects(
+            [['27-30'],
+             ['75'],
+             ['150']],
+            [['32-36'],
+             ['75'],
+             ['150']],
+            [AIR],
+        ), aggregates=[('', [0]),
+                       ('', [1]),
+                       ('If the target is Prey', [2])],
+        is_linked=(2, 'Carcass')),
 
 
 
@@ -3613,19 +3647,7 @@ DAMAGE_SPELLS = {
             [['16-18']],
             [WATER],
         ), is_linked=(2, 'Ulna')),
-        Spell('Carcass', [3, 35, 67], Effects(
-            create_level_based_stacking_values(((7, 9), (8, 10), (9, 11)), 
-                                               (2, 3, 4), 6),
-            create_level_based_stacking_values(((9, 11), (10, 12), (11, 13)), 
-                                               (2, 3, 4), 6),
-            [[AIR]] * 6,
-        ), aggregates=[('', [0]),
-                       ('After hitting a Prey once', [1]),
-                       ('After hitting a Prey twice', [2]),
-                       ('After hitting a Prey 3x', [3]),
-                       ('After hitting a Prey 4x', [4]),
-                       ('After hitting a Prey 5x', [5])],
-        is_linked=(1, 'Stripping')),
+        
         
         Spell('Cutting Down', [6, 42, 74], Effects(
             [['19-21', '24-26', '29-31']],
@@ -3642,11 +3664,7 @@ DAMAGE_SPELLS = {
         
         
         
-        Spell('Hunt', [145], Effects(
-            [['38-42']],
-            [['44-48']],
-            [FIRE],
-        ), is_linked=(2, 'Tracking')),
+        
         Spell('Bloodhound', [32, 81, 124], Effects(
             [['16-18', '21-23', '26-28'],
              ['70', '110', '150']],
@@ -3656,11 +3674,7 @@ DAMAGE_SPELLS = {
         ), aggregates=[('', [0]),
                        ('If the target is Prey', [1])],
         is_linked=(1, 'Beaten')),
-        Spell('Beaten', [150], Effects(
-            [['26-30']],
-            [['30-34']],
-            [AIR],
-        ), is_linked=(2, 'Bloodhound')),
+        
         
         
         
