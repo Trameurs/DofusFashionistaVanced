@@ -97,7 +97,7 @@ class Model:
         
         #Adding more weight to Turquoise Dofus equivalent to 5 CH
         #For each Critical Hit inflicted, the final damage is increased by 1% for 3 turns. Can be stacked 10 times.
-        turq_dofus_new_stat_weight = objective_values.get('ch', 0) * 5
+        turq_dofus_new_stat_weight = objective_values.get('ch', 0) * 500
         
         self.problem.add_to_of('p', 
                                self.structure.get_item_by_name('Turquoise Dofus').id, 
