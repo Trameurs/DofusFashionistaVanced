@@ -3617,33 +3617,74 @@ DAMAGE_SPELLS = {
             [['32-36'],
              ['75']],
             [AIR, 'buff_pow'],
-        ), aggregates=[('If the target is Prey, cumul x2', [0]),
+        ), aggregates=[('If the target is Prey, stack x2', [0]),
                        ('', [1])], stacks=2,
         is_linked=(2, 'Carcass')),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        Spell('Ulna', [1, 30, 60], Effects(
-            [['14-16', '19-21', '24-26']],
-            [['19-21', '24-26', '29-31']],
+        Spell('Woof', [50, 117, 184], Effects(
+            [['12-14', '17-19', '20-22']] * 2,
+            [['15-17', '20-22', '24-26']] * 2,
+            [FIRE] * 2,
+            steals=[False, True],
+        ), aggregates=[('', [0]),
+                       ('If the target is Prey', [1])],
+        is_linked=(1, 'Vertebra')),
+        Spell('Vertebra', [160], Effects(
+            [['32-36']],
+            [['38-43']],
+            [WATER],
+        ), is_linked=(2, 'Woof')),
+        Spell('Ulna', [55, 122, 189], Effects(
+            [['10-12', '14-16', '16-18']],
+            [['12-14', '16-18', '19-22']],
             [WATER],
         ), is_linked=(1, 'Calcaneus')),
-        Spell('Calcaneus', [110], Effects(
-            [['13-15']],
-            [['16-18']],
+        Spell('Calcaneus', [165], Effects(
+            [['14-16']],
+            [['17-19']],
             [WATER],
         ), is_linked=(2, 'Ulna')),
+        Spell('Amarok', [65, 131, 198], Effects(
+            [['21-23', '25-28', '28-31']],
+            [['25-28', '30-33', '34-37']],
+            [EARTH],
+        ), is_linked=(1, 'Cerberus')),
+        Spell('Cerberus', [175], Effects(
+            [['15-18'],
+             ['21-25'],
+             ['15-18'],
+             ['15-18'],
+             ['13-14'],
+             ['13-14'],
+             ['13-14']],
+            [['19-23'],
+             ['26-30'],
+             ['19-22'],
+             ['19-22'],
+             ['15-16'],
+             ['15-16'],
+             ['15-16']],
+            [EARTH] * 7,
+        ), aggregates=[('No Rage', [0]),
+                        ('Rage', [1]),
+                        ('Raage', [2, 3]),
+                        ('Animal Form', [4, 5, 6])],
+        is_linked=(2, 'Amarok')),
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         
         
         Spell('Cutting Down', [6, 42, 74], Effects(
@@ -3651,12 +3692,7 @@ DAMAGE_SPELLS = {
             [['25-27', '30-32', '35-37']],
             [FIRE],
         ), is_linked=(1, 'Woof')),
-        Spell('Woof', [120], Effects(
-            [['19-21']],
-            [['23-25']],
-            [FIRE],
-            steals=[True],
-        ), is_linked=(2, 'Cutting Down')),
+        
         
         
         
@@ -3675,21 +3711,8 @@ DAMAGE_SPELLS = {
         
         
         
-        Spell('Vertebra', [170], Effects(
-            [['28-32']],
-            [['34-38']],
-            [WATER],
-        ), is_linked=(2, 'Marrow Bone')),
-        Spell('Cerberus', [69, 122, 162], Effects(
-            [['37-41', '40-44', '43-47']],
-            [['44-48', '47-51', '50-54']],
-            [EARTH],
-        ), is_linked=(1, 'Amarok')),
-        Spell('Amarok', [180], Effects(
-            [['25-29']],
-            [['29-33']],
-            [EARTH],
-        ), is_linked=(2, 'Cerberus')),
+        
+        
         Spell('Tetanisation', [92, 141, 187], Effects(
             [['29-33', '36-40', '43-47']],
             [['35-39', '42-46', '49-53']],
