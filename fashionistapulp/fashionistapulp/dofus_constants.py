@@ -3619,7 +3619,7 @@ DAMAGE_SPELLS = {
             [AIR, 'buff_pow'],
         ), aggregates=[('', [0]),
                        ('', [1]),
-                       ('If the target is Prey, cumul x2')], stacks=2,
+                       ('If the target is Prey, cumul x2', '')], stacks=2,
         is_linked=(2, 'Carcass')),
 
 
