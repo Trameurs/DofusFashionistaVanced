@@ -392,21 +392,21 @@ class Model:
 
         #Pryndsight
         #For 1 turn, the bearer gains as much Power as damage suffered by enemies, up to 200 Power (3 turns).
-        pryndsight_new_stat_weight = objective_values.get('pow', 0) * 150
+        pryndsight_new_stat_weight = objective_values.get('pow', 0) * 100
         self.problem.add_to_of('p',
                                 self.structure.get_item_by_name("Pryndsight").id,
                                 pryndsight_new_stat_weight)
 
         #Shiny Pryndsight
         #For 1 turn, the bearer gains as much Power as damage suffered by enemies, up to 300 Power (2 turns).
-        shiny_pryndsight_new_stat_weight = objective_values.get('pow', 0) * 150
+        shiny_pryndsight_new_stat_weight = objective_values.get('pow', 0) * 100
         self.problem.add_to_of('p',
                                 self.structure.get_item_by_name("Shiny Pryndsight").id,
                                 shiny_pryndsight_new_stat_weight)
 
         #Iridescent Pryndsight
         #For 1 turn, the bearer gains as much Power as damage suffered by enemies, up to 600 Power (1 turn).
-        iridescent_pryndsight_new_stat_weight = objective_values.get('pow', 0) * 150
+        iridescent_pryndsight_new_stat_weight = objective_values.get('pow', 0) * 100
         self.problem.add_to_of('p',
                                 self.structure.get_item_by_name("Iridescent Pryndsight").id,
                                 iridescent_pryndsight_new_stat_weight)
