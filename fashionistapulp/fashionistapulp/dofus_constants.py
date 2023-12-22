@@ -3490,7 +3490,7 @@ DAMAGE_SPELLS = {
         Spell('Arcane Torrent', [200], Effects(
             [['6']] * 4 + [['9']] * 4 + [['12']] * 4 + [['15']] * 4 + [['18']] * 4 + [['21']] * 4,
             [['8']] * 4 + [['11']] * 4 + [['14']] * 4 + [['17']] * 4 + [['20']] * 4 + [['23']] * 4,
-            [AIR, EARTH, FIRE, WATER] * 2,
+            [AIR, EARTH, FIRE, WATER] * 6,
         ), aggregates=[('1 combination', [0, 1, 2, 3]),
                         ('2 combinations', [4, 5, 6, 7]),
                         ('3 combinations', [8, 9, 10, 11]),
