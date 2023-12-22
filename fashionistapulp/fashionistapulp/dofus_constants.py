@@ -3461,59 +3461,43 @@ DAMAGE_SPELLS = {
             [['10']] * 4,
             None,
             [WATER, FIRE, AIR, EARTH],
-        ), aggregates=[('For each of the caster\s runes', [0, 1, 2 , 3])]),
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        Spell('Astral Blade', [17, 58, 102], Effects(
-            [['22-25', '27-30', '32-35']],
-            [['26-29', '31-34', '36-39']],
+        ), aggregates=[('For each of the caster\'s runes', [0, 1, 2 , 3])]),
+        Spell('Astral Blade', [75, 142], Effects(
+            [['26-28', '32-35']],
+            [['31-34', '36-39']],
             [AIR],
         ), is_linked=(1, 'Telluric Blade')),
-        Spell('Telluric Blade', [135], Effects(
+        Spell('Telluric Blade', [185], Effects(
             [['34-38']],
-            [['39-43']],
+            [['41-46']],
             [EARTH],
         ), is_linked=(2, 'Astral Blade')),
-        
-        
-        
-        
-        
-        
-        Spell('Flood', [165], Effects(
-            [['26-30']],
-            [['30-34']],
-            [WATER],
-        ), is_linked=(2, 'Deflagration')),
-        
-        
-        
-        
-        
-        Spell('Striking Meteor', [92, 141, 187], Effects(
-            [['20-24', '25-29', '30-34']],
-            [['23-27', '28-32', '33-37']],
+        Spell('Striking Meteor', [80, 147], Effects(
+            [['20-24', '30-34']],
+            [['24-27', '34-37']],
             [EARTH],
-        ), is_linked=(1, 'Comet')),
-        
+        ), is_linked=(1, 'Flood')),
+        Spell('Flood', [190], Effects(
+            [['31-35']],
+            [['37-42']],
+            [WATER],
+        ), is_linked=(2, 'Striking Meteor')),
+        Spell('Tribute', [90, 157], Effects(
+            [['150']],
+            None,
+            ['buff_pow'],
+        ), is_linked=(1, 'Arcane Torrent')),
+        Spell('Arcane Torrent', [200], Effects(
+            create_stacking_values((('3'),), (3), 7) * 24,
+            create_stacking_values((('4'),), (3), 7) * 24,
+            [AIR, EARTH, FIRE, WATER] * 6,
+        ), aggregates=[('1 combination', [1, 2, 3, 4]),
+                        ('2 combinations', [5, 6, 7, 8]),
+                        ('3 combinations', [9, 10, 11, 12]),
+                        ('4 combinations', [13, 14, 15, 16]),
+                        ('5 combinations', [17, 18, 19, 20]),
+                        ('6 combinations', [21, 22, 23, 24])],
+        is_linked=(2, 'Tribute')),
     ],
     'Ouginak': [
         Spell('Watchdog', [1, 25, 52], Effects(
