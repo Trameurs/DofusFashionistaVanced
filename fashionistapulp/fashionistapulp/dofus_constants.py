@@ -3613,15 +3613,13 @@ DAMAGE_SPELLS = {
         is_linked=(1, 'Beaten')),
         Spell('Beaten', [150], Effects(
             [['27-30'],
-             ['75'],
-             ['150']],
+             ['75']],
             [['32-36'],
-             ['75'],
-             ['150']],
-            [AIR, 'buff_pow', 'buff_pow'],
+             ['75']],
+            [AIR, 'buff_pow'],
         ), aggregates=[('', [0]),
                        ('', [1]),
-                       ('If the target is Prey', [2])],
+                       ('If the target is Prey, cumul x2')], stacks=2,
         is_linked=(2, 'Carcass')),
 
 
