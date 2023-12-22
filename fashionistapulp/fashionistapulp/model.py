@@ -94,10 +94,30 @@ class Model:
         self.problem.setup_variable('trophies', 1, 0,  1)
         
     def add_weird_item_weights_to_objective_funcion(self, objective_values, level):    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         
         #Adding more weight to Turquoise Dofus equivalent to 5 CH
         #For each Critical Hit inflicted, the final damage is increased by 1% for 3 turns. Can be stacked 10 times.
-        turq_dofus_new_stat_weight = objective_values.get('ch', 0) * 500
+        turq_dofus_new_stat_weight = objective_values.get('ch', 0) * 5
         
         self.problem.add_to_of('p', 
                                self.structure.get_item_by_name('Turquoise Dofus').id, 

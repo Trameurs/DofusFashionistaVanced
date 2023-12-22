@@ -1,0 +1,286 @@
+[
+    {
+        "name": "Crimson Dofus",
+        "special_spell": "For each attack suffered, the final damage inflicted is increased by 1% for 1 turn.\nThe effects can stack 10 times."
+    },
+    {
+        "name": "Emerald Dofus",
+        "special_spell": "At the end of the turn, gives 100% of the owner's level in shield points for each adjacent enemy.\nSummons are not counted."
+    },
+    {
+        "name": "Turquoise Dofus",
+        "special_spell": "For each Critical Hit inflicted, the final damage is increased by 1% for 3 turns. Can be stacked 10 times."
+    },
+    {
+        "name": "Dofusteuse",
+        "special_spell": "Increases one elemental characteristic per game turn: 300 to Chance, then 300 to Strength, then 300 to Agility, and then 300 to Intelligence."
+    },
+    {
+        "name": "Cawwot Dofus",
+        "special_spell": "Gives 25 AP Parry if an AP penalty is suffered, or 25 MP Parry if an MP penalty is suffered. \nThe two effects last 1 turn and do not stack."
+    },
+    {
+        "name": "Vulbis Dofus",
+        "special_spell": "Increases damage inflicted by 10% for 1 turn if the bearer has suffered no damage from enemies since the last turn.\nOtherwise, gives 20 Lock."
+    },
+    {
+        "name": "Black-Spotted Dofus",
+        "special_spell": "If the bearer inflicts damage during their turn, they and their allies carrying the Dorigami gain 20 damage for 1 turn.\n\nIf the bearer does not inflict damage, they and their allies carrying the Domakuro gain 150% of their respective levels in shield for 1 turn."
+    },
+    {
+        "name": "Ebony Dofus",
+        "special_spell": "Inflicting ranged damage and close-combat damage during one's turn triggers the Ebony Dofus's power: the next attack during the same turn applies a poison (2 turns).\nThis attack takes 2 turns to recharge. The poison can be stacked 2 times."
+    },
+    {
+        "name": "Ivory Dofus",
+        "special_spell": "The bearer reduces damage from one out of five attacks by 50%. The reduction is lost if this one is sacrificed."
+    },
+    {
+        "name": "Ochre Dofus",
+        "special_spell": "Gives 1 AP for 1 turn if the bearer has suffered no damage from enemies since the last turn.\nOtherwise, gives 20 Dodge."
+    },
+    {
+        "name": "Cloudy Dofus",
+        "special_spell": "On odd turns, increases damage by 20%. On even turns, decreases damage by 10%."
+    },
+    {
+        "name": "Watchers Dofus",
+        "special_spell": "At the end of the turn, returns 7% HP to aligned allies."
+    },
+    {
+        "name": "Dokoko",
+        "special_spell": "Every 3 turns starting on turn 3, returns 10% of their maximum health points."
+    },
+    {
+        "name": "Abyssal Dofus",
+        "special_spell": "At the start of each turn, if there are no enemies in close combat, gives 1 MP. Otherwise, gives 1 AP."
+    },
+    {
+        "name": "Lavasmith Dofus",
+        "special_spell": "Applies 100% of level as shield points to its bearer, 1 time max per turn for pushback damage and 1 time for each type of movement: \n- pushback damage\n- pushback / attraction\n- place switching / teleportation / Eliotrope portal\n- carried by a Pandawa\n\nThe effect can only be triggered by enemies."
+    },
+    {
+        "name": "Silver Dofus",
+        "special_spell": "As soon as the bearer falls below 20% of their health points, the Dofus's effect is triggered.\nAt the start of their next turn: heals 20% HP (once per fight)."
+    },
+    {
+        "name": "Sparkling Silver Dofus",
+        "special_spell": "As soon as the bearer falls below 20% of their health points, the Dofus's effect is triggered.\nAt the start of their next turn: heals 30% HP and gives 20% final damage for 1 turn (once per fight)."
+    },
+    {
+        "name": "Crocobur",
+        "special_spell": "At the start of each turn, the bearer inflicts damage on themself in their best attack element to steal health from adjacent entities at the end of the caster's turn."
+    },
+    {
+        "name": "Buhorado Feather",
+        "special_spell": "Whenever the bearer inflicts Critical Hits, they gain pushback damage for 2 turns, stackable 5 times."
+    },
+    {
+        "name": "Fallanster's Rectitude",
+        "special_spell": "If the bearer ends their turn with a line of sight to at least one opponent, they earn a 10% damage suffered reduction for 1 turn as long as they haven't been pushed, attracted, carried, teleported or transposed."
+    },
+    {
+        "name": "Death-Defying",
+        "special_spell": "Damage suffered by the bearer is increased by 15% whenever they have more than 50% HP, but damage suffered is reduced by 20% whenever they have less than 50% HP."
+    },
+    {
+        "name": "Bram Worldbeard's Crown",
+        "special_spell": "When the bearer suffers an AP, MP or Range removal, they gain 3% weapon damage for 2 turns, stackable 5 times."
+    },
+    {
+        "name": "Ganymede's Diadem",
+        "special_spell": "The bearer gains 2 AP on even turns and loses 1 AP on odd turns."
+    },
+    {
+        "name": "Rykke Errel's Bravery",
+        "special_spell": "For each distance attack suffered, the bearer gains shield and loses ranged damage for 1 turn; stackable up to 5 times maximum. The damage penalty and shield values vary according to the distance between the bearer and their attacker."
+    },
+    {
+        "name": "Jahash Jurgen's Cloak",
+        "special_spell": "When the bearer suffers damage in an element, they gain 3% resistance in that element for 2 turns, stackable 5 times."
+    },
+    {
+        "name": "Thousand-League Boots",
+        "special_spell": "The bearer gains 2 MP on odd turns and loses 1 MP on even turns."
+    },
+    {
+        "name": "Kicked Ass Boots",
+        "special_spell": "At the start of each turn, the bearer pushes entities in close combat back 2 cells."
+    },
+    {
+        "name": "Dodge's Audacity",
+        "special_spell": "At the start of each turn, the caster randomly teleports to an adjacent cell. If the move is impossible, they earn a +10% chance of critical hits and +80 Pushback Damage for 1 turn."
+    },
+    {
+        "name": "Lady Jhessica's Belt",
+        "special_spell": "At end of their turn, the bearer removes 100 Dodge from adjacent enemies for 1 turn."
+    },
+    {
+        "name": "Cocoa Dofus",
+        "special_spell": "Each ranged attack suffered while you are in close combat with an enemy grants a chocolate mark.\n\nThese marks are consumed at the end of your turn; each one gives 25% of your level in shield for 1 turn."
+    },
+    {
+        "name": "Prytekt",
+        "special_spell": "The bearer gains 550% of their level in shield points on the first turn, 200% on the second turn and 100% on the third."
+    },
+    {
+        "name": "Shiny Prytekt",
+        "special_spell": "The bearer gains 150% of their level in shield points on the first turn, 450% on the second turn and 150% on the third."
+    },
+    {
+        "name": "Iridescent Prytekt",
+        "special_spell": "The bearer gains 100% of their level in shield points on the first turn, 200% on the second turn and 350% on the third."
+    },
+    {
+        "name": "Pryssure",
+        "special_spell": "The bearer gains 1 AP for 3 turns but inflicts -10% damage."
+    },
+    {
+        "name": "Shiny Pryssure",
+        "special_spell": "The bearer gains 2 AP for 2 turns but inflicts -35% damage."
+    },
+    {
+        "name": "Iridescent Pryssure",
+        "special_spell": "The bearer gains 4 AP for 1 turn but inflicts -50% damage."
+    },
+    {
+        "name": "Surpryz",
+        "special_spell": "The bearer gains 15% Critical for 3 turns."
+    },
+    {
+        "name": "Shiny Surpryz",
+        "special_spell": "The bearer gains 35% Critical for 2 turns."
+    },
+    {
+        "name": "Iridescent Surpryz",
+        "special_spell": "The bearer gains 100% Critical for 1 turn."
+    },
+    {
+        "name": "Pryndsight",
+        "special_spell": "For 1 turn, the bearer gains as much Power as damage suffered by enemies, up to 200 Power (3 turns)."
+    },
+    {
+        "name": "Shiny Pryndsight",
+        "special_spell": "For 1 turn, the bearer gains as much Power as damage suffered by enemies, up to 300 Power (2 turns)."
+    },
+    {
+        "name": "Iridescent Pryndsight",
+        "special_spell": "For 1 turn, the bearer gains as much Power as damage suffered by enemies, up to 600 Power (1 turn)."
+    },
+    {
+        "name": "Prycapture",
+        "special_spell": "The bearer gains 1 MP (2 turns) per enemy more than 15 cells away."
+    },
+    {
+        "name": "Shiny Prycapture",
+        "special_spell": "The bearer gains 1 MP (2 turns) per enemy more than 12 cells away and loses 1 AP (2 turns) per enemy within 12 cells."
+    },
+    {
+        "name": "Iridescent Prycapture",
+        "special_spell": "The bearer gains 1 MP (2 turns) per enemy more than 9 cells away and loses 2 AP (2 turns) per enemy within 9 cells."
+    },
+    {
+        "name": "Prygenerate",
+        "special_spell": "Heals 15% of enemy damage suffered until the end of the third turn."
+    },
+    {
+        "name": "Shiny Prygenerate",
+        "special_spell": "Heals 30% of enemy damage suffered until the end of the second turn."
+    },
+    {
+        "name": "Iridescent Prygenerate",
+        "special_spell": "Heals 100% of enemy damage suffered until the end of the first turn."
+    },
+    {
+        "name": "Prysipitate",
+        "special_spell": "The bearer gains +2 AP for their first round."
+    },
+    {
+        "name": "Shiny Prysipitate",
+        "special_spell": "The bearer gains +3 AP for their first round but also loses 2 MP."
+    },
+    {
+        "name": "Iridescent Prysipitate",
+        "special_spell": "The bearer gains +4 AP for their first round but also loses 4 MP."
+    },
+    {
+        "name": "Spryritual",
+        "special_spell": "The bearer gains 250 AP Parry on the first turn, then 50 AP Parry on the second turn."
+    },
+    {
+        "name": "Prysical",
+        "special_spell": "The bearer gains 250 MP Parry on the first turn, then 50 MP Parry on the second turn."
+    },
+    {
+        "name": "Pryank",
+        "special_spell": "At the end of their first turn, the bearer reduces damage by 5% (3 turns) for each enemy (excluding summons) in their line of sight."
+    },
+    {
+        "name": "Shiny Pryank",
+        "special_spell": "At the end of their first turn, the bearer reduces damage by 10% (2 turns) for each enemy (excluding summons) in their line of sight."
+    },
+    {
+        "name": "Iridescent Pryank",
+        "special_spell": "At the end of their first turn, the bearer reduces damage by 20% (1 turn) for each enemy (excluding summons) in their line of sight."
+    },
+    {
+        "name": "Disaprys",
+        "special_spell": "The bearer becomes invisible (1 turn) at the start of their first round."
+    },
+    {
+        "name": "Prywitchment",
+        "special_spell": "Reduces the duration of active effects on the bearer by 4 at the start of their first round."
+    },
+    {
+        "name": "Pryshield",
+        "special_spell": "The bearer gains 200% of their level in shield (infinite) for each opponent (excluding summons) that plays before them."
+    },
+    {
+        "name": "Pryximity",
+        "special_spell": "At the start of their first round, the bearer gains 200% of their level in shield (infinite) for each enemy (excluding summons) in their line of sight."
+    },
+    {
+        "name": "Prymune",
+        "special_spell": "The bearer reduces all types of damage suffered by 80% on the first turn."
+    },
+    {
+        "name": "Gravprysy",
+        "special_spell": "The bearer gains the Gravity state as long as they have not suffered any damage. If they suffer damage, the duration of the state changes to 1 turn."
+    },
+    {
+        "name": "War's Halbaxe",
+        "special_spell": "If the bearer is in close contact with an enemy at the start of their turn, they gain 20 MP Reduction for 1 turn; if not, they gain 30 Lock. When the bearer kills an opponent (excluding summons) with direct damage, they gain 1 MP until the end of the fight, stackable max. 3 times."
+    },
+    {
+        "name": "Corruption Pestilence",
+        "special_spell": "When the caster returns to 100% HP via healing or a health steal, they apply a start-of-turn poison in their best element on entities two cells away or less. The poison lasts 2 turns, cannot be unbewitched, and can be stacked a maximum of 1 time."
+    },
+    {
+        "name": "Servitude's Embrace",
+        "special_spell": "At the end of each turn, the bearer attracts entities in a 3-cell cross around themself by 2 cells. If the bearer has no entities next to them at the end of their turn, they enter the Unmovable state until the start of their next turn. The state is removed if they suffer damage."
+    },
+    {
+        "name": "Misery's Flail-Scale",
+        "special_spell": "When the bearer suffers an AP, MP or Range reduction, the damage they suffer is reduced by 4% for 2 turns. Damage suffered by the attacker is increased by 4% for 2 turns. Stackable max. 3 times."
+    },
+    {
+        "name": "Domakuro",
+        "special_spell": "Starting on the 5th turn, the caster gains up to 64 damage for the rest of the fight.\nThis bonus is reduced each time the caster inflicts damage on an opponent during their turn for each of the first 4 turns of the fight:\n\nNo attacks: 16 damage.\n1 attack: 8 damage.\n2+ attacks: 0 damage."
+    },
+    {
+        "name": "Dorigami",
+        "special_spell": "Applies 100% of level as Shield at the start of each turn for the first 5 turns. \nDuring each of these 5 turns, if the caster kills a summons, the caster gains 100% of their level as shield for 2 turns (max. 4 times), and 300% (max. 2 times) for a monster or player.\nShields are only obtained during the caster's turn."
+    },
+    {
+        "name": "Gobbowl Ball",
+        "special_spell": "[!] Déclenche le combat tactique \"Boufbowl\""
+    },
+    {
+        "name": "Nightmare Dofus",
+        "special_spell": "If the bearer applies or receives a shield, allies within 3 cells or less of the bearer are healed by 7% of their HP. \nIf the bearer unbewitches a target, allies within 3 cells or less gain 150 Power for 1 turn (stacks 1 time, cannot be dissipated). \nEach effect can only be triggered once per turn, but if both are triggered in the same turn, the bearer receives 10% additional damage for 1 turn (cannot be dissipated)."
+    },
+    {
+        "name": "Sylvan Dofus",
+        "special_spell": "For each MP used, the bearer gains 8 Power for 2 turns, stackable 20 times. If the bearer does not use any MP, they are healed for 10% of their HP at the end of their turn."
+    }
+]
