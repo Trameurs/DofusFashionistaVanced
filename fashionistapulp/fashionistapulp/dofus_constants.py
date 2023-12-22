@@ -3319,80 +3319,97 @@ DAMAGE_SPELLS = {
             [['9', '12', '15']] * 4,
             None,
             [EARTH, FIRE, WATER, AIR],
-        ), is_linked=(1, 'Manifestation')),
+        ), aggregates=[('Target in earth state', [0]),
+                       ('Target in fire state', [1]),
+                       ('Target in water state', [2]),
+                       ('Target in air state', [3])],
+        is_linked=(1, 'Manifestation')),
         Spell('Manifestation', [105, 172], Effects(
             [['15', '15']] * 4,
             None,
             [EARTH, FIRE, WATER, AIR],
-        ), is_linked=(2, 'Runification')),
-
-
-
-
-
-
-
-
-
-
-        
-        
-        Spell('Celestial Wave', [105], Effects(
-            [['20-24'],
-             ['20-24']],
-            [['25-29'],
-             ['25-29']],
-            [EARTH, AIR],
-        ), is_linked=(2, 'Telluric Wave')),
-        Spell('Flamethrower', [3, 35, 67], Effects(
+        ), aggregates=[('Target in earth state', [0]),
+                       ('Target in fire state', [1]),
+                       ('Target in water state', [2]),
+                       ('Target in air state', [3])],
+        is_linked=(2, 'Runification')),
+        Spell('Flamethrower', [3, 69, 136], Effects(
             [['12-14', '16-18', '20-22']],
             [['16-18', '20-22', '24-26']],
             [FIRE],
-        ), is_linked=(1, 'Cataract')),
-        
-        Spell('Stalagmite', [6, 42, 74], Effects(
+        ), is_linked=(1, 'Celestial Wave')),
+        Spell('Celestial Wave', [110, 177], Effects(
+            [['11-13', '14-16']] * 2,
+            [['14-16', '17-19']] * 2,
+            [AIR, EARTH],
+        ), aggregates=[('', [0, 1])],
+        is_linked=(2, 'Flamethrower')),
+        Spell('Stalagmite', [6, 71, 138], Effects(
             [['18-21', '23-26', '28-31']],
             [['24-27', '29-32', '34-37']],
             [WATER],
         ), is_linked=(1, 'Ember')),
-        Spell('Ember', [120], Effects(
-            [['23-27'],
-             ['23-27']],
-            [['28-32'],
-             ['28-32']],
-            [AIR, FIRE],
-        ), is_linked=(2, 'Stalagmite')),
+        Spell('Ember', [115, 182], Effects(
+            [['15-17', '18-20']] * 2,
+            [['18-20', '21-23']] * 2,
+            [FIRE, AIR],
+        ), aggregates=[('', [0, 1])], 
+        is_linked=(2, 'Stalagmite')),
         Spell('Elemental Drain', [9, 47, 87], Effects(
             [['15-19', '19-23', '23-27']] * 4
-            + [['100', '150', '200']] * 4,
+            + [['50', '100', '180']] * 4,
             [['19-23', '23-27', '27-31']] * 4
-            + [['130', '180', '230']] * 4,
-            [AIR, WATER, FIRE, EARTH,
-             'buff_agi', 'buff_cha', 'buff_int', 'buff_str'], 
-        ), aggregates=[('Target in air state', [0]),
+            + [['60', '120', '200']] * 4,
+            [EARTH, FIRE, WATER, AIR,
+             'buff_str', 'buff_int', 'buff_cha', 'buff_agi'], 
+        ), aggregates=[('Target in earth state', [0]),
                        ('', [4]),
-                       ('Target in water state', [1]),
+                       ('Target in fire state', [1]),
                        ('', [5]),
-                       ('Target in fire state', [2]),
+                       ('Target in water state', [2]),
                        ('', [6]),
-                       ('Target in earth state', [3]),
-                       ('', [7])], stacks=2,
+                       ('Target in air state', [3]),
+                       ('', [7])],
         is_linked=(1, 'Morph')),
-        Spell('Morph', [125], Effects(
-            [['28-32']] * 4,
-            [['33-37']] * 4,
-            [AIR, WATER, FIRE, EARTH], 
-        ), aggregates=[('Target in air state', [0]),
-                       ('Target in water state', [1]),
-                       ('Target in fire state', [2]),
-                       ('Target in earth state', [3])],
+        Spell('Morph', [120, 187], Effects(
+            [['24-27', '28-32']] * 4,
+            [['29-33', '34-38']] * 4,
+            [WATER, EARTH, AIR, FIRE], 
+        ), aggregates=[('Target in water state', [0]),
+                       ('Target in earth state', [1]),
+                       ('Target in air state', [2]),
+                       ('Target in fire state', [3])],
         is_linked=(2, 'Elemental Drain')),
-        Spell('Storm', [13, 54, 94], Effects(
+        Spell('Storm', [15, 82, 149], Effects(
             [['24-28', '29-33', '34-38']],
             [['29-33', '34-38', '39-43']],
             [EARTH],
             steals=[True]
-        ), is_linked=(1, 'Tectonic Breach')),
+        ), is_linked=(1, 'Stalactite')),
+        Spell('Stalactite', [125, 192], Effects(
+            [['20-22', '23-25']],
+            [['24-26', '26-28']],
+            [WATER],
+        ), is_linked=(2, 'Glacier')),
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
         Spell('Tectonic Breach', [130], Effects(
             [['13-15']],
             [['15-17']],
@@ -3426,11 +3443,7 @@ DAMAGE_SPELLS = {
             [WATER],
             steals=[True]
         ), is_linked=(1, 'Stalactite')),
-        Spell('Stalactite', [150], Effects(
-            [['23-25']],
-            [['26-28']],
-            [WATER],
-        ), is_linked=(2, 'Glacier')),
+        
         Spell('Journey', [38, 90, 132], Effects(
             [['15-24', '23-32', '31-40']] * 4,
             None,
