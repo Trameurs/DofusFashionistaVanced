@@ -3483,10 +3483,17 @@ DAMAGE_SPELLS = {
             [WATER],
         ), is_linked=(2, 'Striking Meteor')),
         Spell('Tribute', [90, 157], Effects(
-            [['150']],
+            [['150', '150']],
             None,
             ['buff_pow'],
         ), is_linked=(1, 'Arcane Torrent')),
+        Spell('Arcane Torrent', [200], Effects(
+            [['6']] * 4,
+            None,
+            [AIR, EARTH, FIRE, WATER],
+        ), aggregates=[('Target in earth state', [0, 1]),
+                          ('Target in fire state', [2, 3])],
+        is_linked=(2, 'Tribute')),
     ],
     'Ouginak': [
         Spell('Watchdog', [1, 25, 52], Effects(
