@@ -1,9 +1,5 @@
 [
     {
-        "name": "Lady Jhessica's Belt",
-        "special_spell": "At end of their turn, the bearer removes 100 Dodge from adjacent enemies for 1 turn."
-    },
-    {
         "name": "Cocoa Dofus",
         "special_spell": "Each ranged attack suffered while you are in close combat with an enemy grants a chocolate mark.\n\nThese marks are consumed at the end of your turn; each one gives 25% of your level in shield for 1 turn."
     },

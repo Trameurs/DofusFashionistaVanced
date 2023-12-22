@@ -320,6 +320,13 @@ class Model:
                                self.structure.get_item_by_name("Lady Jhessica's Belt").id, 
                                objective_values.get('lock', 0) * 50)
         
+        #Adding more weight to Cocoa Dofus
+        #Each ranged attack suffered while you are in close combat with an enemy grants a chocolate mark.\n\nThese marks are consumed at the end of your turn; each one gives 25% of your level in shield for 1 turn.
+        cocoa_dofus_new_stat_weight = objective_values.get('hp', 0) * 50 * level / 200
+        self.problem.add_to_of('p',
+                                3139,
+                                cocoa_dofus_new_stat_weight)
+        
 
 
 
