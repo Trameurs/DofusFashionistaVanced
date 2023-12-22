@@ -3304,28 +3304,38 @@ DAMAGE_SPELLS = {
             [WATER, FIRE],
         ), aggregates=[('', [0, 1])],
         is_linked=(2, 'Telluric Wave')),
-
-
-
-
-
-
-
-
-
-
-        Spell('Ether', [1, 20, 40], Effects(
+        Spell('Ether', [1, 66, 132], Effects(
             [['12-14', '16-18', '20-22']],
             [['15-17', '19-21', '23-25']],
             [AIR],
         ), is_linked=(1, 'Stinger')),
-        Spell('Stinger', [101], Effects(
-            [['18-22'],
-             ['18-22']],
-            [['22-26'],
-             ['22-26']],
-            [WATER, EARTH],
-        ), is_linked=(2, 'Ether')),
+        Spell('Stinger', [95, 162], Effects(
+            [['13-15', '16-18']] * 2,
+            [['16-18', '19-21']] * 2,
+            [EARTH, WATER],
+        ), aggregates=[('', [0, 1])], 
+        is_linked=(2, 'Ether')),
+        Spell('Runification', [1, 68, 134], Effects(
+            [['9', '12', '15']],
+            None,
+            [EARTH, FIRE, WATER, AIR],
+        ), is_linked=(1, 'Manifestation')),
+        Spell('Manifestation', [105, 172], Effects(
+            [['15', '15']],
+            None,
+            [EARTH, FIRE, WATER, AIR],
+        ), is_linked=(2, 'Runification')),
+
+
+
+
+
+
+
+
+
+
+        
         
         Spell('Celestial Wave', [105], Effects(
             [['20-24'],
