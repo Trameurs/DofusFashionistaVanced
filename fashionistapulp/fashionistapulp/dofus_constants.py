@@ -3488,7 +3488,7 @@ DAMAGE_SPELLS = {
             ['buff_pow'],
         ), is_linked=(1, 'Arcane Torrent')),
         Spell('Arcane Torrent', [200], Effects(
-            [['6'] * 4] + [['9'] * 4],
+            [['6']] * 4, [['9']] * 4,
             None,
             [AIR, EARTH, FIRE, WATER] * 2,
         ), aggregates=[('Target in earth state', [0, 1]),
