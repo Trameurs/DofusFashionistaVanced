@@ -3494,7 +3494,7 @@ DAMAGE_SPELLS = {
         ), aggregates=[('Target in earth state', [0, 1]),
                           ('Target in fire state', [2, 3]),
                           ('Target in water state', [4, 5]),
-                          ('Target in air state', [6, 7])]),
+                          ('Target in air state', [6, 7])],
         is_linked=(2, 'Tribute')),
     ],
     'Ouginak': [
