@@ -3674,56 +3674,16 @@ DAMAGE_SPELLS = {
             None,
             ['buff_pow'],
         ), stacks=3),
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        
-        Spell('Cutting Down', [6, 42, 74], Effects(
-            [['19-21', '24-26', '29-31']],
-            [['25-27', '30-32', '35-37']],
+        Spell('Bloodhound', [80, 147], Effects(
+            [['23-25', '28-31']],
+            [['27-30', '34-37']],
+            [AIR],
+        ), is_linked=(1, 'Tetanisation')),
+        Spell('Tetanisation', [190], Effects(
+            [['41-46']],
+            [['49-55']],
             [FIRE],
-        ), is_linked=(1, 'Woof')),
-        
-        
-        
-        
-        
-        
-        Spell('Bloodhound', [32, 81, 124], Effects(
-            [['16-18', '21-23', '26-28'],
-             ['70', '110', '150']],
-            [['20-22', '25-27', '30-32'],
-             ['70', '110', '150']],
-            [AIR, 'buff_pow'],
-        ), aggregates=[('', [0]),
-                       ('If the target is Prey', [1])],
-        is_linked=(1, 'Beaten')),
-        
-        
-        
-        
-        
-        
-        Spell('Tetanisation', [92, 141, 187], Effects(
-            [['29-33', '36-40', '43-47']],
-            [['35-39', '42-46', '49-53']],
-            [FIRE],
-        ), is_linked=(1, 'Carving Up')),
-        
+        ), is_linked=(2, 'Bloodhound')),   
     ],
     'Forgelance': [
         Spell('Lance of the Lake', [1, 66, 132], Effects(
