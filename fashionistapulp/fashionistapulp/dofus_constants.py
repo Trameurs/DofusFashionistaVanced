@@ -3490,7 +3490,7 @@ DAMAGE_SPELLS = {
         Spell('Arcane Torrent', [200], Effects(
             [['6']] * 4 + [['9']] * 4,
             None,
-            [AIR, EARTH, FIRE, WATER],
+            [AIR, EARTH, FIRE, WATER] * 2,
         ), aggregates=[('Target in earth state', [0]),
                           ('Target in fire state', [1]),
                           ('Target in water state', [2]),
