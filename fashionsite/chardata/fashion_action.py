@@ -34,7 +34,7 @@ from fashionistapulp.model import ModelInput
 from fashionistapulp.model_pool import create_model, borrow_model, return_model
 
 
-if not settings.DEBUG:
+if settings.DEBUG:
     create_model()
 
 MEMORY = DatabaseSolutionMemory()
