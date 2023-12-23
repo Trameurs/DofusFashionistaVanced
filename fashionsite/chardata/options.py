@@ -51,6 +51,8 @@ def get_dofus_not_for_char(char):
     dofus_for_char = {}
     for (red, item) in DOFUS_OPTIONS.items():
         dofus = s.get_item_by_name(item)
+        if s.get_item_by_name(item).id == 3142:
+            dofus = s.get_item_by_id(792)
         if dofus.level > char.level:
             dofus_for_char[red] = item
     return dofus_for_char
