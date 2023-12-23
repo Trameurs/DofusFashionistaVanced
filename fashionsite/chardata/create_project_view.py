@@ -37,7 +37,7 @@ from fashionistapulp.dofus_constants import STATS_NAMES, CHARACTER_CLASSES
 from chardata.themes import get_questionmark_URL
 
 
-MAXIMUM_NUMBER_OF_PROJECTS = 50
+MAXIMUM_NUMBER_OF_PROJECTS = 100
 
 def setup(request, char_id=0):
     too_many_projects_problem = False
