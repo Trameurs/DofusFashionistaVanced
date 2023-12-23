@@ -135,7 +135,7 @@ urlpatterns = [
     
 ]
 
-if settings.DEBUG:
+if not settings.DEBUG:
     urlpatterns += [
         re_path(r'^edit_item/$', manage_items_view.edit_item, name = 'edit_item'),
         re_path(r'^edit_item/(?P<item_id>\d+)/', manage_items_view.edit_item, name = 'edit_item'),
