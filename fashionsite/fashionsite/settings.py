@@ -47,7 +47,7 @@ SECRET_KEY = GEN_CONFIGS['SECRET_KEY']
 with open(os.path.join(CONFIG_DIR, 'debug_mode')) as f:
     DEBUG = False #(f.read() == 'True')
 
-ALLOWED_HOSTS = ['fashionistavanced.com', 'www.fashionistavanced.com']
+ALLOWED_HOSTS = ['fashionistavanced.com', 'www.fashionistavanced.com', '16.171.215.36']
 
 STATIC_URL = '/static/'
 
