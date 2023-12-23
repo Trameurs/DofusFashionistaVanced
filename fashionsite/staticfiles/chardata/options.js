@@ -95,6 +95,33 @@ function optionsInit(options) {
     
     var $lavasmithCheckbox = $('input:checkbox[name=lavasmith]');
     $lavasmithCheckbox.prop('checked', options.dofuses.lavasmith);
+
+    var $blackspottedCheckbox = $('input:checkbox[name=blackspotted]');
+    $blackspottedCheckbox.prop('checked', options.dofuses.blackspotted);
+    
+    var $ebonyCheckbox = $('input:checkbox[name=ebony]');
+    $ebonyCheckbox.prop('checked', options.dofuses.ebony);
+
+    var $silverCheckbox = $('input:checkbox[name=silver]');
+    $silverCheckbox.prop('checked', options.dofuses.silver);
+
+    var $sparklingsilverCheckbox = $('input:checkbox[name=sparklingsilver]');
+    $sparklingsilverCheckbox.prop('checked', options.dofuses.sparklingsilver);
+
+    var $cocoaCheckbox = $('input:checkbox[name=cocoa]');
+    $cocoaCheckbox.prop('checked', options.dofuses.cocoa);
+
+    var $domakuroCheckbox = $('input:checkbox[name=domakuro]');
+    $domakuroCheckbox.prop('checked', options.dofuses.domakuro);
+
+    var $dorigamiCheckbox = $('input:checkbox[name=dorigami]');
+    $dorigamiCheckbox.prop('checked', options.dofuses.dorigami);
+
+    var $nightmareCheckbox = $('input:checkbox[name=nightmare]');
+    $nightmareCheckbox.prop('checked', options.dofuses.nightmare);
+
+    var $sylvanCheckbox = $('input:checkbox[name=sylvan]');
+    $sylvanCheckbox.prop('checked', options.dofuses.sylvan);
 }
 
 function disableUnusableDofus(unusable){
