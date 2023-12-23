@@ -50,11 +50,7 @@ def get_dofus_not_for_char(char):
     s = get_structure()
     dofus_for_char = {}
     for (red, item) in DOFUS_OPTIONS.items():
-        match s.get_item_by_name(item).id:
-            case 3142:
-                dofus = s.get_item_by_id(792) #vulbis
-            case _:
-                dofus = s.get_item_by_name(item)
+        dofus = s.get_item_by_name(item)
         if dofus.level > char.level:
             dofus_for_char[red] = item
     return dofus_for_char
