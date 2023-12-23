@@ -35,7 +35,16 @@ DOFUS_OPTIONS = {'ochre': 'Ochre Dofus',
                  'abyssal': 'Abyssal Dofus',
                  'grofus': 'Grofus',
                  'kaliptus': 'Kaliptus Dofus',
-                 'lavasmith': 'Lavasmith Dofus'}
+                 'lavasmith': 'Lavasmith Dofus',
+                 'black-Spotted': 'Black-Spotted Dofus',
+                 'ebony': 'Ebony Dofus',
+                 'silver': 'Silver Dofus',
+                 'sparkling Silver': 'Sparkling Silver Dofus',
+                 'cocoa': 'Cocoa Dofus',
+                 'domakuro': 'Domakuro',
+                 'dorigami': 'Dorigami',
+                 'Nightmare': 'Nightmare Dofus',
+                 'Sylvan': 'Sylvan Dofus',}
 
 def get_dofus_not_for_char(char):
     s = get_structure()
