@@ -142,7 +142,7 @@ class Model:
         #Increases damage inflicted by 10% for 1 turn if the bearer has suffered no damage from enemies since the last turn.\nOtherwise, gives 20 Lock.
         vulbis_dofus_new_stat_weight = objective_values.get('permedam', 0) * 5 + objective_values.get('perrandam', 0) * 5 + objective_values.get('lock', 0) * 10
         self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name('Vulbis Dofus').id, 
+                               792, 
                                vulbis_dofus_new_stat_weight)
         
         #Adding more weight to Black-Spotted Dofus
