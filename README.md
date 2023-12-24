@@ -104,7 +104,7 @@ run_fashionista.bat
     🚧 80% Portuguese
     🚧 30% Deutsche
     🚧 30% Italian
- 
+❌ Make it mobile friendly 
 ❌ Bug fixes and improvement before 1.0 release           
 
 # Reference
