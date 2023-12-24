@@ -94,13 +94,14 @@ run_fashionista.bat
 ✅ Update all spells to 2.70          
 ✅ Update weights of special items including Dofus and Prytek  
 ✅ Release a beta version 
+✅ Add support for new languages
+    ✅ Deutsche
+    ✅ Italian  
 ❌ Translate new content
     ❌ French
     ❌ Spanish
     ❌ Portuguese
-❌ Add support for new languages
-    ❌ Deutsche
-    ❌ Italian   
+ 
 ❌ Details before 1.0 release           
 
 # Reference
