@@ -97,12 +97,15 @@ run_fashionista.bat
 ✅ Add support for new languages
     ✅ Deutsche
     ✅ Italian  
-❌ Translate new content
-    ❌ French
-    ❌ Spanish
-    ❌ Portuguese
+🚧 Translate new content
+    ✅ 100% English 
+    🚧 90% French 
+    🚧 80% Spanish
+    🚧 80% Portuguese
+    🚧 30% Deutsche
+    🚧 30% Italian
  
-❌ Details before 1.0 release           
+❌ Bug fixes and improvement before 1.0 release           
 
 # Reference
 
