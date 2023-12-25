@@ -166,6 +166,7 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
             item['w_type'] = 'Dofus'
         if item['w_type'] == 'Prysmaradite':
             item['w_type'] = 'Dofus'
+            item['is_prysmaradite'] = True
         if item['w_type'] == 'Backpack':
             item['w_type'] = 'Cloak'
         if item['w_type'] == 'Petsmount':
@@ -392,6 +393,14 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
                 f.write(f"INSERT INTO set_names VALUES({index}, '{lang}', '{escape_single_quotes(name)}');\n")
 
     f.write("""CREATE TABLE item_weird_conditions (item INTEGER, condition_id INTEGER, FOREIGN KEY(item) REFERENCES items(id));\n""")
+
+    for index, item in enumerate(original_data, start=1):
+        if 'conditions' in item:
+            if 'Set bonus < 2' in item['conditions']:
+                f.write(f"INSERT INTO item_weird_conditions VALUES({index}, 1);\n")
+        if 'is_prysmaradite' in item and item['is_prysmaradite'] == True:
+            f.write(f"INSERT INTO item_weird_conditions VALUES({index}, 2);\n")
+
 
     f.write(f"""DELETE FROM sqlite_sequence;
 INSERT INTO sqlite_sequence VALUES('item_types',{len(TYPE_NAME_TO_SLOT)});
