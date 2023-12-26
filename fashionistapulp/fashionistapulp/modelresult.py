@@ -407,7 +407,7 @@ class ModelResult():
                         violations.append(violation)
 
         is_prysmaradite = self.check_if_prysmaradite()
-        if is_prysmaradite:
+        if not is_prysmaradite:
             for item in self.item_list:
                 if item.item_added and item.weird_conditions['prysmaradite']:
                     violation = Violation()
