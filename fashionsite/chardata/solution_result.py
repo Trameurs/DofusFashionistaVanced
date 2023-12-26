@@ -166,7 +166,7 @@ def evolve_result_item(result_item, r=None):
         result_item.condition_lines.append(LightSetConditionLine(r))
 
     if result_item.weird_conditions['prysmaradite']:
-        result_item.condition_lines.append(ExtraLine(_('Prysmaradite')))
+        result_item.condition_lines.append(PrysmaraditeConditionLine(r))
 
     if hasattr(result_item, 'non_crit_hits'):
         damage_lines = []
@@ -257,4 +257,13 @@ class LightSetConditionLine:
         self.formatting = ''
         if model_result:
             if not model_result.check_if_set_is_light():
+                self.formatting = '#r'
+
+class PrysmaraditeConditionLine:
+
+    def __init__(self, model_result):
+        self.text = _('Prysmaradite < 1')
+        self.formatting = ''
+        if model_result:
+            if not model_result.check_if_prysmaradite():
                 self.formatting = '#r'

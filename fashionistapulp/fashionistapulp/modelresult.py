@@ -413,7 +413,7 @@ class ModelResult():
                     if item.weird_conditions['prysmaradite']:
                         violation = Violation()
                         violation.item_name = item.localized_name
-                        violation.stat_name = _("Prysmaradite")
+                        violation.stat_name = _("Prysmaradite < 1")
                         violation.condition_type = 'weird_prysmaradite'
                         violation.is_red = True
                         violation.cant_equip = False
