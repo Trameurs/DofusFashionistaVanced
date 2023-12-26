@@ -122,7 +122,6 @@ function optionsInit(options) {
 
     var $sylvanCheckbox = $('input:checkbox[name=sylvan]');
     $sylvanCheckbox.prop('checked', options.dofuses.sylvan);
-
 }
 
 function disableUnusableDofus(unusable){
