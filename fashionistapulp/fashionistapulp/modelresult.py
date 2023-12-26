@@ -486,7 +486,7 @@ class ModelResult():
                 violation.stat_name = _("Prysmaradite < 1")
                 violation.condition_type = 'weird_prysmaradite'
                 violation.is_red = True
-                violation.cant_equip = False
+                violation.cant_equip = True
                 violations.append(violation)
         item_type_id = get_structure().get_type_id_by_name(item.type)
         repeat = self._get_repeat_violations(item_type_id)
