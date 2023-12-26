@@ -393,6 +393,11 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
 
     f.write("""CREATE TABLE item_weird_conditions (item INTEGER, condition_id INTEGER, FOREIGN KEY(item) REFERENCES items(id));\n""")
 
+    for index, item in enumerate(original_data, start=1):
+        if 'conditions' in item:
+            if 'Set bonus < 2' in item['conditions']:
+                f.write(f"INSERT INTO item_weird_conditions VALUES({index}, 1);\n")
+
     f.write(f"""DELETE FROM sqlite_sequence;
 INSERT INTO sqlite_sequence VALUES('item_types',{len(TYPE_NAME_TO_SLOT)});
 INSERT INTO sqlite_sequence VALUES('stats',{len(STAT_NAME_TO_KEY_LOCAL)});
