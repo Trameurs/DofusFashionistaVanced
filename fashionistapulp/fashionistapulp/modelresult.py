@@ -407,17 +407,15 @@ class ModelResult():
                         violations.append(violation)
 
         is_prysmaradite = self.check_if_prysmaradite()
-        if not is_prysmaradite:
-            for item in self.item_list:
-                if item.item_added:  
-                    if item.weird_conditions['prysmaradite']:
-                        violation = Violation()
-                        violation.item_name = item.localized_name
-                        violation.stat_name = _("Prysmaradite < 1")
-                        violation.condition_type = 'weird_prysmaradite'
-                        violation.is_red = True
-                        violation.cant_equip = True
-                        violations.append(violation)
+        prysmaradite_items = [item for item in self.items_list if item.item_added and item.weird_conditions['prysmaradite']]
+        if len(prysmaradite_items) > 1:
+            for item in prysmaradite_items:
+                violation = Violation()
+                violation.is_red = True
+                violation.item_name = item.localized_name
+                violation.condition_type = 'repeated_prysmaradite'
+                violation.cant_equip = True
+                violations.append(violation)
 
         return violations
     
