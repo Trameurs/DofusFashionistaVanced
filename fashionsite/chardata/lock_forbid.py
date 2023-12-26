@@ -45,6 +45,14 @@ DEFAULT_EXCLUSIONS_121_PLUS = ['Gore Master\'s Ring (Gms Only)',
                                'Hatched Garudania',
                                'Incubated Garudania',
                                'Reincarnated Garudania',
+                               'Khardboard Goultard',
+                               'Khardboard Gobball Headgear',
+                               'Khardboard Dazzling Cloak',
+                               'Khardboard Celestial Brooch',
+                               'Khardboard Gelano',
+                               'Khardboard Getas',
+                               'Khardboard Moowolf Belt',
+                               'Khardboard Bowisse\'s Shield',
                                ]
 DEFAULT_EXCLUSIONS_120_MINUS = (DEFAULT_EXCLUSIONS_121_PLUS
                                 + [])
