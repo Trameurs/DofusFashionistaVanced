@@ -165,6 +165,9 @@ def evolve_result_item(result_item, r=None):
     if result_item.weird_conditions['light_set']:
         result_item.condition_lines.append(LightSetConditionLine(r))
 
+    if result_item.weird_conditions['prysmaradite']:
+        result_item.condition_lines.append(ExtraLine(_('Prysmaradite')))
+
     if hasattr(result_item, 'non_crit_hits'):
         damage_lines = []
         weapon_type_key = result_item.weapon_type

@@ -405,6 +405,19 @@ class ModelResult():
                         violation.is_red = True
                         violation.cant_equip = False
                         violations.append(violation)
+        is_prysmaradite = self.check_if_prysmaradite()
+
+        if not is_prysmaradite:
+            for item in self.item_list:
+                if item.item_added:  
+                    if item.weird_conditions['prysmaradite']:
+                        violation = Violation()
+                        violation.item_name = item.localized_name
+                        violation.stat_name = _("Prysmaradite")
+                        violation.condition_type = 'weird_prysmaradite'
+                        violation.is_red = True
+                        violation.cant_equip = False
+                        violations.append(violation)
 
         return violations
     
@@ -434,6 +447,14 @@ class ModelResult():
         is_set_light = (len(self.sets) == 0 or
                         (len(self.sets) == 1 and self.sets[0].number_of_items <= 2))
         return is_set_light
+    
+    def check_if_prysmaradite(self):
+        is_prysmaradite = False
+        for item in self.item_list:
+            if item.item_added:
+                if item.weird_conditions['prysmaradite']:
+                    is_prysmaradite = True
+        return is_prysmaradite
 
     def get_all_project_violations(self, item_type_id, min_stats):
         return (self._get_repeat_violations(item_type_id)
@@ -455,6 +476,15 @@ class ModelResult():
                 violation.item_name = item.localized_name
                 violation.stat_name = _("Set bonus < 2")
                 violation.condition_type = 'weird_light_set'
+                violation.is_red = True
+                violation.cant_equip = False
+                violations.append(violation)
+        if item.weird_conditions['prysmaradite']:
+            if not self.check_if_prysmaradite():
+                violation = Violation()
+                violation.item_name = item.localized_name
+                violation.stat_name = _("Prysmaradite")
+                violation.condition_type = 'weird_prysmaradite'
                 violation.is_red = True
                 violation.cant_equip = False
                 violations.append(violation)

@@ -52,6 +52,7 @@ class Model:
         self.create_stat_total_variables()
         self.create_stat_points_variables()
         self.create_light_set_variables()
+        self.create_prysmaradite_variables()
     
     def create_item_number_variables(self):
         for item in self.items_list:
@@ -92,6 +93,10 @@ class Model:
         self.problem.setup_variable('ytrophy', 1, 0,  1)
         self.problem.setup_variable('ytrophy', 2, 0,  1)
         self.problem.setup_variable('trophies', 1, 0,  1)
+
+    def create_prysmaradite_variables(self):
+        self.problem.setup_variable('prysmaradite', 1, 0,  1)
+        
         
     def add_weird_item_weights_to_objective_funcion(self, objective_values, level):    
 
@@ -654,6 +659,7 @@ class Model:
         self.create_forbidden_items_constraints()
         self.create_stats_points_constraints()
         self.create_light_set_constraints()
+        self.create_prysmaradite_constraints()
         
     def setup(self, model_input):
         self.input = model_input.get_old_input()
@@ -908,6 +914,12 @@ class Model:
 
         restriction = self.problem.restriction_lt_eq(0, plist) 
         self.restrictions.fifth_light_set_constraint = restriction
+    
+    def create_prysmaradite_constraints(self):
+        for item in self.items_list:
+            if item.weird_conditions['prysmaradite']:
+                restriction = self.problem.restriction_lt_eq(0, [(1, 'x', item.id), (-1, 'prysmaradite', 1)])
+                self.restrictions.prysmaradite_constraints[item.id] = restriction
         
     def create_condition_contraints(self):
         for item in self.items_list:
