@@ -532,7 +532,7 @@ class Model:
 
         #Pryshield
         #The bearer gains 200% of their level in shield (infinite) for each opponent (excluding summons) that plays before them.
-        pryshield_new_stat_weight = objective_values.get('hp', 0) * 2 * level * 2
+        pryshield_new_stat_weight = objective_values.get('hp', 0) * 2 * level * 1.5
         self.problem.add_to_of('p',
                                 self.structure.get_item_by_name("Pryshield").id,
                                 pryshield_new_stat_weight)
