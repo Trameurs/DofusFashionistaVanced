@@ -34,7 +34,7 @@ class Item:
         self.localized_extras = {}
         self.localized_names = {}
         self.accentless_local_names = {}
-        self.weird_conditions = {'light_set': False}
+        self.weird_conditions = {'light_set': False, 'prysmaradite': False}
         self.removed = False
         self.dofus_touch = False
 
