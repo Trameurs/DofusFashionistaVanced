@@ -407,10 +407,9 @@ class ModelResult():
                         violations.append(violation)
 
         is_prysmaradite = self.check_if_prysmaradite()
-        if not is_prysmaradite:
-            prysmaradite_items = [item for item in self.items_list if item.item_added and item.weird_conditions['prysmaradite']]
-            if len(prysmaradite_items) > 1:
-                for item in prysmaradite_items:
+        if is_prysmaradite:
+            for item in self.item_list:
+                if item.item_added and item.weird_conditions['prysmaradite']:
                     violation = Violation()
                     violation.is_red = True
                     violation.item_name = item.localized_name
@@ -448,12 +447,9 @@ class ModelResult():
         return is_set_light
     
     def check_if_prysmaradite(self):
-        is_prysmaradite = False
-        for item in self.item_list:
-            if item.item_added:
-                if item.weird_conditions['prysmaradite']:
-                    is_prysmaradite = True
-        return is_prysmaradite
+        prysmaradite_count = sum(1 for item in self.item_list if item.item_added and item.weird_conditions['prysmaradite'])
+        return prysmaradite_count <= 1
+
 
     def get_all_project_violations(self, item_type_id, min_stats):
         return (self._get_repeat_violations(item_type_id)
