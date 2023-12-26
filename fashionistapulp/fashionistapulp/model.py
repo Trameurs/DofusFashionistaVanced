@@ -52,6 +52,7 @@ class Model:
         self.create_stat_total_variables()
         self.create_stat_points_variables()
         self.create_light_set_variables()
+        self.create_prysmaradite_variables()
     
     def create_item_number_variables(self):
         for item in self.items_list:
@@ -92,6 +93,10 @@ class Model:
         self.problem.setup_variable('ytrophy', 1, 0,  1)
         self.problem.setup_variable('ytrophy', 2, 0,  1)
         self.problem.setup_variable('trophies', 1, 0,  1)
+
+    def create_prysmaradite_variables(self):
+        self.problem.setup_variable('prysmaradite', 1, 0,  1)
+        
         
     def add_weird_item_weights_to_objective_funcion(self, objective_values, level):    
 
@@ -527,7 +532,7 @@ class Model:
 
         #Pryshield
         #The bearer gains 200% of their level in shield (infinite) for each opponent (excluding summons) that plays before them.
-        pryshield_new_stat_weight = objective_values.get('hp', 0) * 2 * level * 2
+        pryshield_new_stat_weight = objective_values.get('hp', 0) * 2 * level * 1.5
         self.problem.add_to_of('p',
                                 self.structure.get_item_by_name("Pryshield").id,
                                 pryshield_new_stat_weight)
@@ -654,6 +659,7 @@ class Model:
         self.create_forbidden_items_constraints()
         self.create_stats_points_constraints()
         self.create_light_set_constraints()
+        self.create_prysmaradite_constraints()
         
     def setup(self, model_input):
         self.input = model_input.get_old_input()
@@ -908,6 +914,16 @@ class Model:
 
         restriction = self.problem.restriction_lt_eq(0, plist) 
         self.restrictions.fifth_light_set_constraint = restriction
+    
+    def create_prysmaradite_constraints(self):
+        prysmaradite_count = []
+        for item in self.items_list:
+            if item.weird_conditions['prysmaradite']:
+                prysmaradite_count.append((1, 'x', item.id))
+
+        if prysmaradite_count:
+            restriction = self.problem.restriction_lt_eq(1, prysmaradite_count)
+            self.restrictions.prysmaradite_constraints = restriction
         
     def create_condition_contraints(self):
         for item in self.items_list:

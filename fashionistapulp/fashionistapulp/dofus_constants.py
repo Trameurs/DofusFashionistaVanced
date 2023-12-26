@@ -304,7 +304,7 @@ ELEMENT_KEY_TO_NAME = {
 }
 ELEMENT_NAME_TO_KEY = {v: k for k, v in ELEMENT_KEY_TO_NAME.items()}
 
-WEIRD_CONDITION_FROM_ID = {1: 'light_set'}
+WEIRD_CONDITION_FROM_ID = {1: 'light_set', 2: 'prysmaradite'}
 WEIRD_CONDITION_TO_ID = {v: k for k, v in WEIRD_CONDITION_FROM_ID.items()}
 WEIRD_CONDITIONS = list(WEIRD_CONDITION_TO_ID.keys()) 
 

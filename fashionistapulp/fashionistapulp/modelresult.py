@@ -406,6 +406,18 @@ class ModelResult():
                         violation.cant_equip = False
                         violations.append(violation)
 
+        is_prysmaradite = self.check_if_prysmaradite()
+        if not is_prysmaradite:
+            for item in self.item_list:
+                if item.item_added and item.weird_conditions['prysmaradite']:
+                    violation = Violation()
+                    violation.is_red = True
+                    violation.item_name = item.localized_name
+                    violation.stat_name = _("Prysmaradite < 1")
+                    violation.condition_type = 'weird_prysmaradite'
+                    violation.cant_equip = True
+                    violations.append(violation)
+
         return violations
     
 #     def _get_shield_violation(self):
@@ -434,6 +446,11 @@ class ModelResult():
         is_set_light = (len(self.sets) == 0 or
                         (len(self.sets) == 1 and self.sets[0].number_of_items <= 2))
         return is_set_light
+    
+    def check_if_prysmaradite(self):
+        prysmaradite_count = sum(1 for item in self.item_list if item.item_added and item.weird_conditions['prysmaradite'])
+        return prysmaradite_count <= 1
+
 
     def get_all_project_violations(self, item_type_id, min_stats):
         return (self._get_repeat_violations(item_type_id)
@@ -457,6 +474,15 @@ class ModelResult():
                 violation.condition_type = 'weird_light_set'
                 violation.is_red = True
                 violation.cant_equip = False
+                violations.append(violation)
+        if item.weird_conditions['prysmaradite']:
+            if not self.check_if_prysmaradite():
+                violation = Violation()
+                violation.item_name = item.localized_name
+                violation.stat_name = _("Prysmaradite < 1")
+                violation.condition_type = 'weird_prysmaradite'
+                violation.is_red = True
+                violation.cant_equip = True
                 violations.append(violation)
         item_type_id = get_structure().get_type_id_by_name(item.type)
         repeat = self._get_repeat_violations(item_type_id)

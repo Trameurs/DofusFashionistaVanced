@@ -166,6 +166,7 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
             item['w_type'] = 'Dofus'
         if item['w_type'] == 'Prysmaradite':
             item['w_type'] = 'Dofus'
+            item['is_prysmaradite'] = True
         if item['w_type'] == 'Backpack':
             item['w_type'] = 'Cloak'
         if item['w_type'] == 'Petsmount':
@@ -397,6 +398,9 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
         if 'conditions' in item:
             if 'Set bonus < 2' in item['conditions']:
                 f.write(f"INSERT INTO item_weird_conditions VALUES({index}, 1);\n")
+        if 'is_prysmaradite' in item:
+            if item['is_prysmaradite']:
+                f.write(f"INSERT INTO item_weird_conditions VALUES({index}, 2);\n")
 
     f.write(f"""DELETE FROM sqlite_sequence;
 INSERT INTO sqlite_sequence VALUES('item_types',{len(TYPE_NAME_TO_SLOT)});

@@ -344,6 +344,15 @@ function setItemViolations(item, violations, char_id) {
                 };
                 violationsString += interpolate(transViolationString, d, true);
                 addLink = false;
+            } else if (violation.condition_type === "weird_prysmaradite") {
+                removedOnly = false;
+                transViolationString = gettext("Violates %(item)s's condition:") + " %(condition_text)s";
+                d = {
+                    item: violation.item_name,
+                    condition_text: violation.stat_name
+                };
+                violationsString += interpolate(transViolationString, d, true);
+                addLink = false;
             } else if (violation.condition_type === "shield") {
                 removedOnly = false;
                 transViolationString = gettext("Violates %(item)s's condition:") + " %(condition_text)s";
