@@ -413,7 +413,7 @@ class ModelResult():
                 violation = Violation()
                 violation.is_red = True
                 violation.item_name = item.localized_name
-                violation.condition_type = 'repeated_prysmaradite'
+                violation.condition_type = 'weird_prysmaradite'
                 violation.cant_equip = True
                 violations.append(violation)
 
