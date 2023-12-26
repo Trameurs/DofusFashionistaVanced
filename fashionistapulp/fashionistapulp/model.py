@@ -918,7 +918,7 @@ class Model:
     def create_prysmaradite_constraints(self):
         for item in self.items_list:
             if item.weird_conditions['prysmaradite']:
-                restriction = self.problem.restriction_lt_eq(0, [(1, 'x', item.id), (-1, 'prysmaradite', 1)])
+                restriction = self.problem.restriction_lt_eq(0, [(1, 'prysmaradite', 1), (1, 'prysmaradite', 1)])
                 self.restrictions.prysmaradite_constraints = restriction
         
     def create_condition_contraints(self):
