@@ -232,11 +232,11 @@ LOGGING = {
         'django': {
             'handlers':['console'],
             'propagate': True,
-            'level':'DEBUG',
+            'level':'WARN',
         },
         'django.db.backends': {
             'handlers': ['console'],
-            'level': 'WARNING',
+            'level': 'DEBUG',
             'propagate': False,
         },
         'MYAPP': {
