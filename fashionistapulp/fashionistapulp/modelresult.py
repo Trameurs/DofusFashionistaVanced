@@ -405,8 +405,8 @@ class ModelResult():
                         violation.is_red = True
                         violation.cant_equip = False
                         violations.append(violation)
-        is_prysmaradite = self.check_if_prysmaradite()
 
+        is_prysmaradite = self.check_if_prysmaradite()
         if not is_prysmaradite:
             for item in self.item_list:
                 if item.item_added:  
@@ -416,7 +416,7 @@ class ModelResult():
                         violation.stat_name = _("Prysmaradite < 1")
                         violation.condition_type = 'weird_prysmaradite'
                         violation.is_red = True
-                        violation.cant_equip = False
+                        violation.cant_equip = True
                         violations.append(violation)
 
         return violations
