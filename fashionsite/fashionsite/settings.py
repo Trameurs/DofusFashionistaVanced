@@ -45,7 +45,8 @@ SECRET_KEY = GEN_CONFIGS['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 with open(os.path.join(CONFIG_DIR, 'debug_mode')) as f:
-    DEBUG = (f.read() == 'True')
+    content = f.read().strip()
+    DEBUG = (content == 'True')
     print('DEBUG: %s' % DEBUG)
 
 ALLOWED_HOSTS = ["*"]
