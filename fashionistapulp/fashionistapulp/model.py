@@ -147,7 +147,7 @@ class Model:
         #Increases damage inflicted by 10% for 1 turn if the bearer has suffered no damage from enemies since the last turn.\nOtherwise, gives 20 Lock.
         vulbis_dofus_new_stat_weight = objective_values.get('permedam', 0) * 5 + objective_values.get('perrandam', 0) * 5 + objective_values.get('lock', 0) * 10
         self.problem.add_to_of('p', 
-                               792, 
+                               self.structure.get_item_by_name('Vulbis Dofus').id, 
                                vulbis_dofus_new_stat_weight)
         
         #Adding more weight to Black-Spotted Dofus
@@ -245,7 +245,7 @@ class Model:
         #Adding more weight to Crocobur equivalent to 200 HP * meleeness
         #At the start of each turn, the bearer inflicts damage on themself in their best attack element to steal health from adjacent entities at the end of the caster's turn.
         self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name("Crocobur").id, 
+                               self.structure.get_item_by_name("Crocobur 3").id, 
                                objective_values.get('hp', 0) * level / 2 + objective_values.get('perrandam', 0) * level / 200)
         
         #TODO: find better way to add weight to Buhorado Feather
@@ -329,7 +329,7 @@ class Model:
         #Each ranged attack suffered while you are in close combat with an enemy grants a chocolate mark.\n\nThese marks are consumed at the end of your turn; each one gives 25% of your level in shield for 1 turn.
         cocoa_dofus_new_stat_weight = objective_values.get('hp', 0) * 50 * level / 200
         self.problem.add_to_of('p',
-                                3139,
+                                self.structure.get_item_by_name("Cocoa Dofus 2").id,
                                 cocoa_dofus_new_stat_weight)
         
         #Adding more weight to Prytekt
@@ -616,7 +616,7 @@ class Model:
         #For each MP used, the bearer gains 8 Power for 2 turns, stackable 20 times. If the bearer does not use any MP, they are healed for 10% of their HP at the end of their turn.
         sylvan_dofus_new_stat_weight = objective_values.get('pow', 0) * 50 + objective_values.get('hp', 0) * (4500.0 * 10 / 100) * 0.2 * level / 200
         self.problem.add_to_of('p',
-                                3387,
+                                self.structure.get_item_by_name("Sylvan Dofus 2").id,
                                 sylvan_dofus_new_stat_weight)
 
     def write_objective_function(self, objective_values, level):

@@ -105,6 +105,24 @@ set_data = {lang: load_data_for_language(lang, 'sets') for lang in LANGUAGES}
 # Create a list to store the new formatted items
 new_data = []
 
+# Initialize a dictionary to keep track of item name counts
+name_counts = {}
+
+# Iterate through the items
+for item in equipment_data['en']['items']:
+    name = item['name']
+
+    # Count the occurrences of each name
+    if name in name_counts:
+        name_counts[name] += 1
+        # Update the item name with the count
+        item['name'] = f"{name} {name_counts[name]}"
+        for eff in item["effects"]:
+            if eff["type"]["name"] == '-special spell-':
+                print(f"An item need attention! Updated {name} to {item['name']}")
+    else:
+        name_counts[name] = 1
+
 for item in equipment_data['en']['items']:
     if 'Certificate' in item['type']['name'] or 'Sidekick' in item['type']['name'] or 'Badge' in item['type']['name'] or '[!] [UNKNOWN_TEXT_ID_0]' in item['name'] or 'Perceptor' in item['type']['name']:
         continue

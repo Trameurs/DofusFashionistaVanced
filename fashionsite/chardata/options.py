@@ -40,19 +40,17 @@ DOFUS_OPTIONS = {'ochre': 'Ochre Dofus',
                  'ebony': 'Ebony Dofus',
                  'silver': 'Silver Dofus',
                  'sparklingsilver': 'Sparkling Silver Dofus',
-                 'cocoa': 'Cocoa Dofus',
+                 'cocoa': 'Cocoa Dofus 2',
                  'domakuro': 'Domakuro',
                  'dorigami': 'Dorigami',
                  'nightmare': 'Nightmare Dofus',
-                 'sylvan': 'Sylvan Dofus',}
+                 'sylvan': 'Sylvan Dofus 2',}
 
 def get_dofus_not_for_char(char):
     s = get_structure()
     dofus_for_char = {}
     for (red, item) in DOFUS_OPTIONS.items():
         dofus = s.get_item_by_name(item)
-        if s.get_item_by_name(item).id == 3142:
-            dofus = s.get_item_by_id(792)
         if dofus.level > char.level:
             dofus_for_char[red] = item
     return dofus_for_char
