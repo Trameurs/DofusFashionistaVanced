@@ -49,7 +49,10 @@ with open(os.path.join(CONFIG_DIR, 'debug_mode')) as f:
     DEBUG = (content == 'True')
     print('DEBUG: %s' % DEBUG)
 
-ALLOWED_HOSTS = ["*"]
+if DEBUG:
+    ALLOWED_HOSTS = ["*"]
+else:
+    ALLOWED_HOSTS = ['fashionistavanced.com', 'www.fashionistavanced.com', '16.171.215.36']
 
 STATIC_URL = '/static/'
 
