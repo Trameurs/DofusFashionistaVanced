@@ -92,20 +92,26 @@ run_fashionista.bat
 ✅ Update UI to reflect new Dofus and Prytek       
 ✅ Add Forgelance          
 ✅ Update all spells to 2.70          
-✅ Update weights of special items including Dofus and Prytek  
-✅ Release a beta version 
-✅ Add support for new languages
-    ✅ Deutsche
-    ✅ Italian  
-🚧 Translate new content
-    ✅ 100% English 
-    🚧 90% French 
-    🚧 80% Spanish
-    🚧 80% Portuguese
-    🚧 30% Deutsche
-    🚧 30% Italian
-❌ Make it mobile friendly 
+✅ Update weights of special items including Dofus and Prysmaradite         
+✅ Release a beta version          
+✅ Add support for new languages         
+    ✅ Deutsche          
+    ✅ Italian          
+🚧 Translate new content           
+    ✅ 100% English           
+    🚧 95% French (some spells left)            
+    🚧 80% Spanish (some spells and text left)           
+    🚧 80% Portuguese (some spells and text left)          
+    🚧 30% Deutsche (only items done)           
+    🚧 30% Italian (only items done)          
+❌ Add ability to forbid prysmaradite 
+❌ Make it mobile friendly             
 ❌ Bug fixes and improvement before 1.0 release           
+❌ New features after 1.0 TBD         
+            
+❌ Dofus Touch            
+❌ Dofus Retro             
+❌ Dofus Unity               
 
 # Reference
 
