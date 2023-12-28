@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-28 13:55+0000\n"
+"POT-Creation-Date: 2023-12-28 18:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -291,7 +291,7 @@ msgstr "Pièges"
 #: chardata/smart_build.py:53 chardata/templates/chardata/compare_sets.html:147
 #: chardata/templates/chardata/solution.html:165
 #: chardata/templates/chardata/stats.html:38 chardata/translation_util.py:71
-#: chardata/translation_util.py:580 chardata/wizard_sliders.py:92
+#: chardata/translation_util.py:581 chardata/wizard_sliders.py:92
 msgid "Summons"
 msgstr "Invocations"
 
@@ -1375,9 +1375,10 @@ msgid ""
 "that the Dofus Fashionista does not store your password. However, the Dofus "
 "Fashionista does store your email address and your Google ID."
 msgstr ""
-"The Dofus Fashionista utilise Google OAuth pour authentifier les utilisateurs. Cela signifie "
-"que Dofus Fashionista ne stocke pas votre mot de passe. Cependant, Dofus "
-"Fashionista stocke votre adresse e-mail et votre identifiant Google."
+"The Dofus Fashionista utilise Google OAuth pour authentifier les "
+"utilisateurs. Cela signifie que Dofus Fashionista ne stocke pas votre mot de "
+"passe. Cependant, Dofus Fashionista stocke votre adresse e-mail et votre "
+"identifiant Google."
 
 #: chardata/templates/chardata/license.html:60
 msgid ""
@@ -1385,9 +1386,10 @@ msgid ""
 "Fashionista. You can create an account with a username and password. The "
 "Dofus Fashionista stores your password in an encrypted form."
 msgstr ""
-"Si vous préférez ne pas utiliser Google OAuth, vous pouvez toujours utiliser Dofus "
-"Fashionista. Vous pouvez créer un compte avec un nom d'utilisateur et un mot de passe. "
-"Dofus Fashionista stocke votre mot de passe sous une forme cryptée."
+"Si vous préférez ne pas utiliser Google OAuth, vous pouvez toujours utiliser "
+"Dofus Fashionista. Vous pouvez créer un compte avec un nom d'utilisateur et "
+"un mot de passe. Dofus Fashionista stocke votre mot de passe sous une forme "
+"cryptée."
 
 #: chardata/templates/chardata/license.html:61
 msgid ""
@@ -4468,297 +4470,301 @@ msgstr "Tétanisation"
 msgid "Carving Up"
 msgstr "Dépeçage"
 
-#: chardata/translation_util.py:555
+#: chardata/translation_util.py:552
+msgid "Lance of the Lake"
+msgstr ""
+
+#: chardata/translation_util.py:556
 #, fuzzy, python-format
 #| msgid "25% chance of"
 msgid "25% chance of"
 msgstr "25% de chance de:"
 
-#: chardata/translation_util.py:556
+#: chardata/translation_util.py:557
 msgid "Not charged"
 msgstr "Non chargée"
 
-#: chardata/translation_util.py:557
+#: chardata/translation_util.py:558
 msgid "Not Charged"
 msgstr "Non chargée"
 
-#: chardata/translation_util.py:558
+#: chardata/translation_util.py:559
 msgid "Charged once"
 msgstr "Chargée une fois"
 
-#: chardata/translation_util.py:559
+#: chardata/translation_util.py:560
 msgid "Charged twice"
 msgstr "Chargée deux fois"
 
-#: chardata/translation_util.py:560 chardata/translation_util.py:576
+#: chardata/translation_util.py:561 chardata/translation_util.py:577
 msgid "If the target is pushed"
 msgstr "Si la cible est poussée"
 
-#: chardata/translation_util.py:561
+#: chardata/translation_util.py:562
 msgid "If the target suffers pushback damage"
 msgstr "Si la cible subit des dégâts de poussée"
 
-#: chardata/translation_util.py:562
+#: chardata/translation_util.py:563
 msgid "Regular shot"
 msgstr "Tir régulier"
 
-#: chardata/translation_util.py:563
+#: chardata/translation_util.py:564
 msgid "After postponing once"
 msgstr "Après avoir reporté une fois"
 
-#: chardata/translation_util.py:564
+#: chardata/translation_util.py:565
 msgid "After postponing twice"
 msgstr "Après avoir reporté deux fois"
 
-#: chardata/translation_util.py:565
+#: chardata/translation_util.py:566
 msgid "Enemies"
 msgstr "Ennemis"
 
-#: chardata/translation_util.py:566
+#: chardata/translation_util.py:567
 msgid "Allies"
 msgstr "Alliés"
 
-#: chardata/translation_util.py:567
+#: chardata/translation_util.py:568
 msgid "Enemies (imediately)"
 msgstr "Ennemis (immédiatement)"
 
-#: chardata/translation_util.py:568
+#: chardata/translation_util.py:569
 msgid "Enemies (next turn)"
 msgstr "Ennemis (prochain tour)"
 
-#: chardata/translation_util.py:569
+#: chardata/translation_util.py:570
 msgid "Allies (imediately)"
 msgstr "Alliés (immédiatement)"
 
-#: chardata/translation_util.py:570
+#: chardata/translation_util.py:571
 msgid "Allies (next turn)"
 msgstr "Alliés (prochain tour)"
 
-#: chardata/translation_util.py:571
+#: chardata/translation_util.py:572
 msgid "If the target has more than 50% HP"
 msgstr "Si la cible a plus de 50% de PV"
 
-#: chardata/translation_util.py:572
+#: chardata/translation_util.py:573
 msgid "If the target has less than 50% HP"
 msgstr "Si la cible a moins de 50% de PV"
 
-#: chardata/translation_util.py:573
+#: chardata/translation_util.py:574
 msgid "In one turn"
 msgstr "Dans un tour"
 
-#: chardata/translation_util.py:574
+#: chardata/translation_util.py:575
 msgid "In two turns"
 msgstr "Dans deux tours"
 
-#: chardata/translation_util.py:575
+#: chardata/translation_util.py:576
 msgid "In three turns"
 msgstr "Dans trois tours"
 
-#: chardata/translation_util.py:577
+#: chardata/translation_util.py:578
 msgid "Enemy or around ally"
 msgstr "Dans un ennemi ou autour d'un allié"
 
-#: chardata/translation_util.py:578
+#: chardata/translation_util.py:579
 msgid "Ally or around enemy"
 msgstr "Dans un allié ou autour d'un ennemi"
 
-#: chardata/translation_util.py:579
+#: chardata/translation_util.py:580
 msgid "Non-summons"
 msgstr "Autre qu'invocation"
 
-#: chardata/translation_util.py:581
+#: chardata/translation_util.py:582
 msgid "Hit"
 msgstr "Coup"
 
-#: chardata/translation_util.py:582
+#: chardata/translation_util.py:583
 msgid "Pushback Poison"
 msgstr "Dommages supplémentaires sur dommages de poussée"
 
-#: chardata/translation_util.py:583
+#: chardata/translation_util.py:584
 msgid "Other"
 msgstr "Autres"
 
-#: chardata/translation_util.py:584
+#: chardata/translation_util.py:585
 msgid "Charged"
 msgstr "Chargée"
 
-#: chardata/translation_util.py:585
+#: chardata/translation_util.py:586
 msgid "Tofu"
 msgstr "Tofu"
 
-#: chardata/translation_util.py:586
+#: chardata/translation_util.py:587
 msgid "Gobball"
 msgstr "Bouftou"
 
-#: chardata/translation_util.py:587
+#: chardata/translation_util.py:588
 msgid "Toad"
 msgstr "Crapaud"
 
-#: chardata/translation_util.py:588
+#: chardata/translation_util.py:589
 msgid "Wyrmling (enemies)"
 msgstr "Dragonnet (Ennemis)"
 
-#: chardata/translation_util.py:589
+#: chardata/translation_util.py:590
 msgid "Wyrmling (allies)"
 msgstr "Dragonnet (Alliés)"
 
-#: chardata/translation_util.py:590
+#: chardata/translation_util.py:591
 msgid "No Tofus"
 msgstr "Sans Tofus"
 
-#: chardata/translation_util.py:591
+#: chardata/translation_util.py:592
 msgid "One Tofu"
 msgstr "Un Tofu"
 
-#: chardata/translation_util.py:592
+#: chardata/translation_util.py:593
 msgid "Two Tofus"
 msgstr "Deux Tofus"
 
-#: chardata/translation_util.py:593
+#: chardata/translation_util.py:594
 msgid "Three Tofus"
 msgstr "Trois Tofus"
 
-#: chardata/translation_util.py:594
+#: chardata/translation_util.py:595
 msgid "Four Tofus"
 msgstr "Quatre Tofus"
 
-#: chardata/translation_util.py:595
+#: chardata/translation_util.py:596
 msgid "Five Tofus"
 msgstr "Cinq Tofus"
 
-#: chardata/translation_util.py:596
+#: chardata/translation_util.py:597
 msgid "If an Explobomb is present"
 msgstr "Si une Explobombe est présente"
 
-#: chardata/translation_util.py:597
+#: chardata/translation_util.py:598
 msgid "If a Grenado is present"
 msgstr "Si Tornabombe bombe est présente"
 
-#: chardata/translation_util.py:598
+#: chardata/translation_util.py:599
 msgid "If a Waterbomb is present"
 msgstr "Si une Bombe à Eau est présente"
 
-#: chardata/translation_util.py:599
+#: chardata/translation_util.py:600
 msgid "If a Seismobomb is present"
 msgstr "Si une Sismobombe est présente"
 
-#: chardata/translation_util.py:600
+#: chardata/translation_util.py:601
 msgid "Allies/Summons"
 msgstr "Alliés/Invocations"
 
-#: chardata/translation_util.py:601
+#: chardata/translation_util.py:602
 msgid "If the target loses MP"
 msgstr "Si la cible perd PM"
 
-#: chardata/translation_util.py:602
+#: chardata/translation_util.py:603
 msgid "If the target loses AP"
 msgstr "Si la cible perd PA"
 
-#: chardata/translation_util.py:603
+#: chardata/translation_util.py:604
 msgid "At the center"
 msgstr "Au centre"
 
-#: chardata/translation_util.py:604
+#: chardata/translation_util.py:605
 msgid "One tile away from the center"
 msgstr "Un carré à l'écart du centre"
 
-#: chardata/translation_util.py:605
+#: chardata/translation_util.py:606
 msgid "Two tiles away from the center"
 msgstr "Deux carrés éloignés du centre"
 
-#: chardata/translation_util.py:606
+#: chardata/translation_util.py:607
 msgid "Three tiles away from the center"
 msgstr "Trois carrés éloignés du centre"
 
-#: chardata/translation_util.py:607
+#: chardata/translation_util.py:608
 msgid "Directly"
 msgstr "Directement"
 
-#: chardata/translation_util.py:608
+#: chardata/translation_util.py:609
 msgid "Through a portal"
 msgstr "Grâce à un portail"
 
-#: chardata/translation_util.py:609
+#: chardata/translation_util.py:610
 msgid "Target in air state"
 msgstr "Cible dans l'état air"
 
-#: chardata/translation_util.py:610
+#: chardata/translation_util.py:611
 msgid "Target in fire state"
 msgstr "Cible dans l'état feu"
 
-#: chardata/translation_util.py:611
+#: chardata/translation_util.py:612
 msgid "Target in water state"
 msgstr "Cible dans l'état eau"
 
-#: chardata/translation_util.py:612
+#: chardata/translation_util.py:613
 msgid "Target in earth state"
 msgstr "Cible dans l'état terre"
 
-#: chardata/translation_util.py:613
+#: chardata/translation_util.py:614
 msgid "If the target is Prey"
 msgstr "Si la cible est la Proie"
 
-#: chardata/translation_util.py:614
+#: chardata/translation_util.py:615
 msgid "After hitting a Prey once"
 msgstr "Après avoir frappé une Proie une fois"
 
-#: chardata/translation_util.py:615
+#: chardata/translation_util.py:616
 msgid "After hitting a Prey twice"
 msgstr "Après avoir frappé une Proie deux fois"
 
-#: chardata/translation_util.py:616
+#: chardata/translation_util.py:617
 msgid "After hitting a Prey 3x"
 msgstr "Après avoir frappé une Proie 3x"
 
-#: chardata/translation_util.py:617
+#: chardata/translation_util.py:618
 msgid "After hitting a Prey 4x"
 msgstr "Après avoir frappé une Proie 4x"
 
-#: chardata/translation_util.py:618
+#: chardata/translation_util.py:619
 msgid "After hitting a Prey 5x"
 msgstr "Après avoir frappé une Proie 5x"
 
-#: chardata/translation_util.py:623
+#: chardata/translation_util.py:624
 msgid "Hammer"
 msgstr "Marteau"
 
-#: chardata/translation_util.py:624
+#: chardata/translation_util.py:625
 msgid "Axe"
 msgstr "Hache"
 
-#: chardata/translation_util.py:625
+#: chardata/translation_util.py:626
 msgid "Shovel"
 msgstr "Pelle"
 
-#: chardata/translation_util.py:626
+#: chardata/translation_util.py:627
 msgid "Staff"
 msgstr "Bâton"
 
-#: chardata/translation_util.py:627
+#: chardata/translation_util.py:628
 msgid "Sword"
 msgstr "Épée"
 
-#: chardata/translation_util.py:628
+#: chardata/translation_util.py:629
 msgid "Dagger"
 msgstr "Dagues"
 
-#: chardata/translation_util.py:629
+#: chardata/translation_util.py:630
 msgid "Bow"
 msgstr "Arc"
 
-#: chardata/translation_util.py:630
+#: chardata/translation_util.py:631
 msgid "Wand"
 msgstr "Baguette"
 
-#: chardata/translation_util.py:631
+#: chardata/translation_util.py:632
 msgid "Pickaxe"
 msgstr "Pioche"
 
-#: chardata/translation_util.py:632
+#: chardata/translation_util.py:633
 msgid "Scythe"
 msgstr "Faux"
 
-#: chardata/translation_util.py:633
+#: chardata/translation_util.py:634
 #, fuzzy
 #| msgid "Chance"
 msgid "Lance"
