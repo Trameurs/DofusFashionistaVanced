@@ -549,6 +549,7 @@ SPELLS_NAMES = {
     'Amarok': _('Amarok'),
     'Tetanisation': _('Tetanisation'),
     'Carving Up': _('Carving Up'),
+    'Lance of the Lake': _('Lance of the Lake'),
 }
 
 SPELLS_EFFECTS = {

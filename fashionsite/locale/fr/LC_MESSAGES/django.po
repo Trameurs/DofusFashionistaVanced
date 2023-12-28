@@ -520,7 +520,7 @@ msgstr "Version du site :"
 msgid "English version by: "
 msgstr ""
 "Version française par : Mr-quifaitmal, Naturalglyphs, Edrolys, Praesugatus, "
-"Hyd-x, Bouzouw et Elbisiap."
+"Hyd-x, Bouzouw, Elbisiap et Trameur"
 
 #: chardata/templates/chardata/base.html:38
 msgid "You have unsaved changes. They will be discarded if you leave."
