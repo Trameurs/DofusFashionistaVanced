@@ -352,7 +352,7 @@ msgstr "Bonus de panoplies < 2"
 
 #: chardata/solution_result.py:265
 msgid "Prysmaradite < 1"
-msgstr ""
+msgstr "Prysmaradite < 1"
 
 #: chardata/templates/chardata/403.html:6
 #: chardata/templates/chardata/404.html:6
@@ -1324,12 +1324,12 @@ msgstr "Espagnol"
 #: chardata/templates/chardata/language-selector.html:22
 #: chardata/templates/chardata/language-selector.html:42
 msgid "Deutsch"
-msgstr ""
+msgstr "Allemand"
 
 #: chardata/templates/chardata/language-selector.html:25
 #: chardata/templates/chardata/language-selector.html:45
 msgid "Italian"
-msgstr ""
+msgstr "Italien"
 
 #: chardata/templates/chardata/license.html:6
 #: chardata/templates/chardata/license.html:12
@@ -1367,7 +1367,7 @@ msgstr "généré à"
 
 #: chardata/templates/chardata/license.html:58
 msgid "Privacy Policy:"
-msgstr ""
+msgstr "Politique de confidentialité :"
 
 #: chardata/templates/chardata/license.html:59
 msgid ""
@@ -1375,6 +1375,9 @@ msgid ""
 "that the Dofus Fashionista does not store your password. However, the Dofus "
 "Fashionista does store your email address and your Google ID."
 msgstr ""
+"The Dofus Fashionista utilise Google OAuth pour authentifier les utilisateurs. Cela signifie "
+"que Dofus Fashionista ne stocke pas votre mot de passe. Cependant, Dofus "
+"Fashionista stocke votre adresse e-mail et votre identifiant Google."
 
 #: chardata/templates/chardata/license.html:60
 msgid ""
@@ -1382,16 +1385,21 @@ msgid ""
 "Fashionista. You can create an account with a username and password. The "
 "Dofus Fashionista stores your password in an encrypted form."
 msgstr ""
+"Si vous préférez ne pas utiliser Google OAuth, vous pouvez toujours utiliser Dofus "
+"Fashionista. Vous pouvez créer un compte avec un nom d'utilisateur et un mot de passe. "
+"Dofus Fashionista stocke votre mot de passe sous une forme cryptée."
 
 #: chardata/templates/chardata/license.html:61
 msgid ""
 "The Dofus Fashionista also stores the characters you create. This "
 "information is used to provide the services of the Dofus Fashionista."
 msgstr ""
+"Dofus Fashionista stocke également les personnages que vous créez. Ces "
+"informations sont utilisées pour fournir les services de Dofus Fashionista."
 
 #: chardata/templates/chardata/license.html:62
 msgid "The Dofus Fashionista does not share any data with third parties."
-msgstr ""
+msgstr "Dofus Fashionista ne partage aucune donnée avec des tiers."
 
 #: chardata/templates/chardata/load_projects.html:15
 #: chardata/templates/chardata/load_projects.html:114
@@ -1802,47 +1810,47 @@ msgstr "Forgelave"
 
 #: chardata/templates/chardata/options.html:238
 msgid "Black-Spotted"
-msgstr ""
+msgstr "Tacheté"
 
 #: chardata/templates/chardata/options.html:245
 #: chardata/templates/chardata/wizard_options.html:169
 msgid "Ebony"
-msgstr ""
+msgstr "Ébène"
 
 #: chardata/templates/chardata/options.html:252
 #: chardata/templates/chardata/wizard_options.html:176
 msgid "Silver"
-msgstr ""
+msgstr "Argenté"
 
 #: chardata/templates/chardata/options.html:259
 #: chardata/templates/chardata/wizard_options.html:183
 msgid "Sparkling Silver"
-msgstr ""
+msgstr "Argenté Scintillant"
 
 #: chardata/templates/chardata/options.html:266
 #: chardata/templates/chardata/wizard_options.html:190
 msgid "Cocoa"
-msgstr ""
+msgstr "Cacao"
 
 #: chardata/templates/chardata/options.html:273
 #: chardata/templates/chardata/wizard_options.html:197
 msgid "Domakuro"
-msgstr ""
+msgstr "Domakuro"
 
 #: chardata/templates/chardata/options.html:280
 #: chardata/templates/chardata/wizard_options.html:204
 msgid "Dorigami"
-msgstr ""
+msgstr "Dorigami"
 
 #: chardata/templates/chardata/options.html:287
 #: chardata/templates/chardata/wizard_options.html:211
 msgid "Nightmare"
-msgstr ""
+msgstr "Cauchemar"
 
 #: chardata/templates/chardata/options.html:294
 #: chardata/templates/chardata/wizard_options.html:218
 msgid "Sylvan"
-msgstr ""
+msgstr "Sylvestre"
 
 #: chardata/templates/chardata/password_was_reset.html:6
 #: chardata/templates/chardata/password_was_reset.html:13
@@ -2536,7 +2544,7 @@ msgstr "les Dofus "
 
 #: chardata/templates/chardata/wizard_options.html:162
 msgid "Black Spotted"
-msgstr ""
+msgstr "Tacheté"
 
 #: chardata/templates/chardata/wizard_options.html:223
 msgid "Check the dofuses we are allowed to use"
@@ -2658,7 +2666,7 @@ msgstr "Ouginak"
 
 #: chardata/translation_util.py:40
 msgid "Forgelance"
-msgstr ""
+msgstr "Forgelance"
 
 #: chardata/translation_util.py:44
 msgid "Fire"
