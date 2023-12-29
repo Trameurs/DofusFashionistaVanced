@@ -2329,10 +2329,8 @@ msgstr "%% Dommages Mêlée"
 #: fashionsite/chardata/templates/chardata/solution.html:152
 #: fashionsite/chardata/templates/chardata/stats.html:31
 #: fashionsite/chardata/translation_util.py:103
-#, python-format
-#| msgid "%% Ranged Damage"
-msgid "%% Ranged Damage"
-msgstr "%% Dommages Distance"
+msgid "% Ranged Damage"
+msgstr "% Dommages Distance"
 
 #: fashionsite/chardata/templates/chardata/solution.html:154
 #: fashionsite/chardata/templates/chardata/stats.html:32
