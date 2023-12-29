@@ -147,8 +147,8 @@ SPELLS_NAMES = {
     'Fulminating Arrow': _('Fulminating Arrow'),
     'Bow Skill': _('Bow Skill'),
     'Sentinel': _('Sentinel'),
-    'Heads or Tails 1': _('Heads or Tails 1'),
-    'Heads or Tails 2': _('Heads or Tails 2'),
+    'Heads or Tails': _('Heads or Tails'),
+    'Tails or Heads': _('Tails or Heads'),
     'Bluff': _('Bluff'),
     'Nerve': _('Nerve'),
     'Topkaj': _('Topkaj'),
@@ -617,6 +617,9 @@ SPELLS_NAMES = {
     'Waterfall': _('Waterfall'),
     'Pandawa\'s Hand': _('Pandawa\'s Hand'),
     'Stretcher': _('Stretcher'),
+    'Balling Up': _('Balling Up'),
+    'Meowch': _('Meowch'),
+    'Roar': _('Roar'),
 }
 
 SPELLS_EFFECTS = {
@@ -706,6 +709,12 @@ SPELLS_EFFECTS = {
     'If pushed or attracted': _('If pushed or attracted'),
     'Sober': _('Sober'),
     'Drunk': _('Drunk'),
+    'This turn': _('This turn'),
+    'Next turn': _('Next turn'),
+    'If previous casting was a critical hit': _('If previous casting was a critical hit'),
+    '1 turn': _('1 turn'),
+    '2 turns': _('2 turns'),
+    '3 turns': _('3 turns'),
 }
 
 LOCALIZED_WEAPON_TYPES = {
