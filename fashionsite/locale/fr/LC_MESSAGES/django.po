@@ -2329,60 +2329,78 @@ msgstr "%% Dommages Mêlée"
 #: fashionsite/chardata/templates/chardata/solution.html:152
 #: fashionsite/chardata/templates/chardata/stats.html:31
 #: fashionsite/chardata/translation_util.py:103
-msgid "% Ranged Damage"
-msgstr "% Dommages Distance"
+#, python-format
+#| msgid "%% Ranged Damage"
+msgid "%% Ranged Damage"
+msgstr "%% Dommages Distance"
 
 #: fashionsite/chardata/templates/chardata/solution.html:154
 #: fashionsite/chardata/templates/chardata/stats.html:32
 #: fashionsite/chardata/translation_util.py:104
-msgid "% Weapon Damage"
-msgstr "% Dommages d'Armes"
+#, python-format
+#| msgid "%% Weapon Damage"
+msgid "%% Weapon Damage"
+msgstr "%% Dommages d'Armes"
 
 #: fashionsite/chardata/templates/chardata/solution.html:156
-msgid "% Spell Damage"
-msgstr "% Dommages aux Sorts"
+#, python-format
+#| msgid "%% Spell Damage"
+msgid "%% Spell Damage"
+msgstr "%% Dommages aux Sorts"
 
 #: fashionsite/chardata/templates/chardata/solution.html:196
-msgid "% Trap Damage"
+#, python-format
+msgid "%% Trap Damage"
 msgstr "Puissance (Pièges)"
 
 #: fashionsite/chardata/templates/chardata/solution.html:229
-msgid "% Neutral Resist"
-msgstr "% Résistance Neutre"
+#, python-format
+msgid "%% Neutral Resist"
+msgstr "%% Résistance Neutre"
 
 #: fashionsite/chardata/templates/chardata/solution.html:231
-msgid "% Earth Resist"
-msgstr "% Résistance Terre"
+#, python-format
+msgid "%% Earth Resist"
+msgstr "%% Résistance Terre"
 
 #: fashionsite/chardata/templates/chardata/solution.html:233
-msgid "% Fire Resist"
-msgstr "% Résistance Feu"
+#, python-format
+msgid "%% Fire Resist"
+msgstr "%% Résistance Feu"
 
 #: fashionsite/chardata/templates/chardata/solution.html:235
-msgid "% Water Resist"
-msgstr "% Résistance Eau"
+#, python-format
+msgid "%% Water Resist"
+msgstr "%% Résistance Eau"
 
 #: fashionsite/chardata/templates/chardata/solution.html:237
-msgid "% Air Resist"
-msgstr "% Résistance Air"
+#, python-format
+msgid "%% Air Resist"
+msgstr "%% Résistance Air"
 
 #: fashionsite/chardata/templates/chardata/solution.html:239
 #: fashionsite/chardata/templates/chardata/stats.html:80
 #: fashionsite/chardata/translation_util.py:106
-msgid "% Melee Resist"
-msgstr "% Résistance Mêlée"
+#, python-format
+#| msgid "%% Melee Resist"
+msgid "%% Melee Resist"
+msgstr "%% Résistance Mêlée"
 
 #: fashionsite/chardata/templates/chardata/solution.html:241
 #: fashionsite/chardata/templates/chardata/stats.html:81
 #: fashionsite/chardata/translation_util.py:107
-msgid "% Ranged Resist"
-msgstr "% Résistance Distance"
+#, python-format
+#| msgid "%% Ranged Resist"
+msgid "%% Ranged Resist"
+msgstr "%% Résistance Distance"
 
 #: fashionsite/chardata/templates/chardata/solution.html:243
 #: fashionsite/chardata/templates/chardata/stats.html:82
 #: fashionsite/chardata/translation_util.py:108
-msgid "% Weapon Resist"
-msgstr "% Résistance d'Armes"
+#, python-format
+#| msgid "%% Weapon Resist"
+msgid "%% Weapon Resist"
+msgstr "%% Résistance d'Armes"
 
 #: fashionsite/chardata/templates/chardata/solution.html:375
 #: fashionsite/chardata/templates/chardata/solution.html:388
