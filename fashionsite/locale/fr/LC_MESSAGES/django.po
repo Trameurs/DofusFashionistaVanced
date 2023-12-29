@@ -2329,12 +2329,16 @@ msgid "%% Melee Damage"
 msgstr "% Dommages Mêlée"
 
 #: fashionsite/chardata/templates/chardata/solution.html:152
+#: fashionsite/chardata/templates/chardata/stats.html:31
+#: fashionsite/chardata/translation_util.py:103
 #, fuzzy, python-format
 #| msgid "%% Ranged Damage"
 msgid "%% Ranged Damage"
 msgstr "% Dommages Distance"
 
 #: fashionsite/chardata/templates/chardata/solution.html:154
+#: fashionsite/chardata/templates/chardata/stats.html:32
+#: fashionsite/chardata/translation_util.py:104
 #, fuzzy, python-format
 #| msgid "%% Weapon Damage"
 msgid "%% Weapon Damage"
@@ -2377,12 +2381,16 @@ msgid "%% Air Resist"
 msgstr "% Résistance Air"
 
 #: fashionsite/chardata/templates/chardata/solution.html:239
+#: fashionsite/chardata/templates/chardata/stats.html:80
+#: fashionsite/chardata/translation_util.py:106
 #, fuzzy, python-format
 #| msgid "%% Melee Resist"
 msgid "%% Melee Resist"
 msgstr "% Résistance Mêlée"
 
 #: fashionsite/chardata/templates/chardata/solution.html:241
+#: fashionsite/chardata/templates/chardata/stats.html:81
+#: fashionsite/chardata/translation_util.py:107
 #, fuzzy, python-format
 #| msgid "%% Ranged Resist"
 msgid "%% Ranged Resist"
@@ -2563,16 +2571,6 @@ msgstr ""
 "caractéristiques à la place. Diminuer le poids d'une caractéristique la "
 "sacrifiera pour d'autres"
 
-#: fashionsite/chardata/templates/chardata/stats.html:31
-#: fashionsite/chardata/translation_util.py:103
-msgid "%% Ranged Damage"
-msgstr "% Dommages Distance"
-
-#: fashionsite/chardata/templates/chardata/stats.html:32
-#: fashionsite/chardata/translation_util.py:104
-msgid "%% Weapon Damage"
-msgstr "% Dommages d'Armes"
-
 #: fashionsite/chardata/templates/chardata/stats.html:33
 msgid "%% Spells Damage"
 msgstr "% Dommages aux Sorts"
@@ -2584,16 +2582,6 @@ msgstr "Toutes les Résistances (Fixe)"
 #: fashionsite/chardata/templates/chardata/stats.html:73
 msgid "All %% Resists"
 msgstr "Toutes les Résistances (%)"
-
-#: fashionsite/chardata/templates/chardata/stats.html:80
-#: fashionsite/chardata/translation_util.py:106
-msgid "%% Melee Resist"
-msgstr "% Résistance Mêlée"
-
-#: fashionsite/chardata/templates/chardata/stats.html:81
-#: fashionsite/chardata/translation_util.py:107
-msgid "%% Ranged Resist"
-msgstr "% Résistance Distance"
 
 #: fashionsite/chardata/templates/chardata/stats.html:82
 #, fuzzy
