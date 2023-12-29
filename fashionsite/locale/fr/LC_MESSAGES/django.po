@@ -2371,9 +2371,7 @@ msgid "%% Fire Resist"
 msgstr "%% Résistance Feu"
 
 #: fashionsite/chardata/templates/chardata/solution.html:235
-#: fashionsite/chardata/templates/chardata/solution.html:243
-#: fashionsite/chardata/templates/chardata/stats.html:82
-#, fuzzy, python-format
+#, python-format
 msgid "%% Water Resist"
 msgstr "%% Résistance Eau"
 
