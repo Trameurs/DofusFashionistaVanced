@@ -2387,10 +2387,8 @@ msgstr "%% Résistance Mêlée"
 #: fashionsite/chardata/templates/chardata/solution.html:241
 #: fashionsite/chardata/templates/chardata/stats.html:81
 #: fashionsite/chardata/translation_util.py:107
-#, python-format
-#| msgid "%% Ranged Resist"
-msgid "%% Ranged Resist"
-msgstr "%% Résistance Distance"
+msgid "% Ranged Resist"
+msgstr "% Résistance Distance"
 
 #: fashionsite/chardata/templates/chardata/solution.html:243
 #: fashionsite/chardata/templates/chardata/stats.html:82
