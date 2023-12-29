@@ -2321,6 +2321,8 @@ msgid "Base"
 msgstr "Base"
 
 #: fashionsite/chardata/templates/chardata/solution.html:150
+#: fashionsite/chardata/templates/chardata/stats.html:30
+#: fashionsite/chardata/translation_util.py:102
 #, fuzzy, python-format
 #| msgid "%% Melee Damage"
 msgid "%% Melee Damage"
@@ -2560,13 +2562,6 @@ msgstr ""
 "personnage. Augmenter le poids d'une caractéristique sacrifiera d'autres "
 "caractéristiques à la place. Diminuer le poids d'une caractéristique la "
 "sacrifiera pour d'autres"
-
-#: fashionsite/chardata/templates/chardata/stats.html:30
-#: fashionsite/chardata/translation_util.py:102
-#, fuzzy
-#| msgid "%% Melee Damage"
-msgid "%% Melee Damage"
-msgstr "% Dommages Mêlée"
 
 #: fashionsite/chardata/templates/chardata/stats.html:31
 #: fashionsite/chardata/translation_util.py:103
@@ -5338,11 +5333,6 @@ msgstr "Mobilité"
 msgctxt "Slider section"
 msgid "Special"
 msgstr "Spécial"
-
-#, fuzzy, python-format
-#~| msgid "%% Melee Damage"
-#~ msgid "%% Melee Damage"
-#~ msgstr "% Dommages Mêlée"
 
 #~ msgid "Send"
 #~ msgstr "Envoyer"
