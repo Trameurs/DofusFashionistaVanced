@@ -598,7 +598,9 @@ SPELLS_NAMES = {
     'Stripping': _('Stripping'),
     'Cutting Down': _('Cutting Down'),
     'Woof': _('Woof'),
+    'Gnaw': _('Gnaw'),
     'Mastiff': _('Mastiff'),
+    'Tally Ho': _('Tally Ho'),
     'Muzzle': _('Muzzle'),
     'Tibia': _('Tibia'),
     'Humerous': _('Humerous'),
@@ -864,6 +866,15 @@ SPELLS_EFFECTS = {
     '4 combinations': _(' combinations'),
     '5 combinations': _(' combinations'),
     '6 combinations': _(' combinations'),
+    '1 ally adjacent to a Prey': _(' ally adjacent to a Prey'),
+    '2 allies adjacent to a Prey': _(' allies adjacent to a Prey'),
+    '3 allies adjacent to a Prey': _(' allies adjacent to a Prey'),
+    '4 allies adjacent to a Prey': _(' allies adjacent to a Prey'),
+    'No Rage': _('No Rage'),
+    'Rage': _('Rage'),
+    'Raage': _('Raage'),
+    'Animal Form': _('Animal Form'),
+    'If the target is Prey, stack x2': _('If the target is Prey, stack x2'),
 }
 
 LOCALIZED_WEAPON_TYPES = {
