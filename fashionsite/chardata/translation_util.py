@@ -276,6 +276,7 @@ SPELLS_NAMES = {
     'Corrosion': _('Corrosion'),
     'Vapour': _('Vapour'),
     'Valve': _('Valve'),
+    'Spyglass': _('Spyglass'),
     'Periscope 1': _('Periscope 1'),
     'Periscope 2': _('Periscope 2'),
     'First Aid': _('First Aid'),
