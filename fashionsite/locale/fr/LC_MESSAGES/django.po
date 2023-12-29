@@ -2221,7 +2221,7 @@ msgstr "Base"
 #, fuzzy, python-format
 #| msgid "%% Melee Damage"
 msgid "%% Melee Damage"
-msgstr "% Dommages Mêlée"
+msgstr "%% Dommages Mêlée"
 
 #: chardata/templates/chardata/solution.html:152
 #: chardata/translation_util.py:103
@@ -2465,8 +2465,8 @@ msgstr ""
 "sacrifiera pour d'autres"
 
 #: chardata/templates/chardata/stats.html:30
-msgid "% Melee Damage"
-msgstr "% Dommages Mêlée"
+msgid "%% Melee Damage"
+msgstr "%% Dommages Mêlée"
 
 #: chardata/templates/chardata/stats.html:31
 msgid "% Ranged Damage"
