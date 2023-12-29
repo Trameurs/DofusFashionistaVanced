@@ -841,6 +841,13 @@ SPELLS_EFFECTS = {
     '4 trees': _(' trees'),
     '5 trees': _(' trees'),
     'On target with less than 25% HP': _('On target with less than 25% HP'),
+    'Telegraf state': _('Telegraf state'),
+    '1 rebound': _(' rebound'),
+    '2 rebounds': _(' rebounds'),
+    '3 rebounds': _(' rebounds'),
+    '4 rebounds': _(' rebounds'),
+    '5 rebounds': _(' rebounds'),
+    'Leaving Telegraf state': _('Leaving Telegraf state'),
 }
 
 LOCALIZED_WEAPON_TYPES = {
