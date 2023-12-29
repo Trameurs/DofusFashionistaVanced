@@ -2358,29 +2358,29 @@ msgstr "Puissance (Pièges)"
 #: fashionsite/chardata/templates/chardata/solution.html:229
 #, python-format
 msgid "%% Neutral Resist"
-msgstr "% Résistance Neutre"
+msgstr "%% Résistance Neutre"
 
 #: fashionsite/chardata/templates/chardata/solution.html:231
 #, python-format
 msgid "%% Earth Resist"
-msgstr "% Résistance Terre"
+msgstr "%% Résistance Terre"
 
 #: fashionsite/chardata/templates/chardata/solution.html:233
 #, python-format
 msgid "%% Fire Resist"
-msgstr "% Résistance Feu"
+msgstr "%% Résistance Feu"
 
 #: fashionsite/chardata/templates/chardata/solution.html:235
 #: fashionsite/chardata/templates/chardata/solution.html:243
 #: fashionsite/chardata/templates/chardata/stats.html:82
 #, fuzzy, python-format
 msgid "%% Water Resist"
-msgstr "% Résistance Eau"
+msgstr "%% Résistance Eau"
 
 #: fashionsite/chardata/templates/chardata/solution.html:237
 #, python-format
 msgid "%% Air Resist"
-msgstr "% Résistance Air"
+msgstr "%% Résistance Air"
 
 #: fashionsite/chardata/templates/chardata/solution.html:239
 #: fashionsite/chardata/templates/chardata/stats.html:80
