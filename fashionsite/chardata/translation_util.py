@@ -211,14 +211,24 @@ SPELLS_NAMES = {
     'Prime of Life': _('Prime of Life'),
     'Obsolescence': _('Obsolescence'),
     'Greed': _('Greed'),
+    'Mine Fire': _('Mine Fire'),
     'Shovel Kiss': _('Shovel Kiss'),
+    'Golden Age': _('Golden Age'),
     'Spade Kiss': _('Spade Kiss'),
     'Loafylactic': _('Loafylactic'),
+    'Lucky Shovel': _('Lucky Shovel'),
     'Fortune': _('Fortune'),
+    'Bankruptcy': _('Bankruptcy'),
+    'Shovel of the Ancients': _('Shovel of the Ancients'),
+    'Sieving': _('Sieving'),
     'Opportuneness': _('Opportuneness'),
     'Shovel of Judgment': _('Shovel of Judgment'),
     'Spade of Judgment': _('Spade of Judgment'),
+    'Firedamp Explosion': _('Firedamp Explosion'),
+    'Spade of the Ancients': _('Spade of the Ancients'),
     'Slaughtering Shovel': _('Slaughtering Shovel'),
+    'Deposit': _('Deposit'),
+    'Auriferous Shovel': _('Auriferous Shovel'),
     'Carnivore Spade': _('Carnivore Spade'),
     'Unsummoning': _('Unsummoning'),
     'Correction': _('Correction'),
@@ -644,6 +654,9 @@ SPELLS_NAMES = {
     'Malicious Word': _('Malicious Word'),
     'Profanity': _('Profanity'),
     'Ancestral Ointment': _('Ancestral Ointment'),
+    'Coin Throwing': _('Coin Throwing'),
+    'Placer Mining': _('Placer Mining'),
+    ''
 }
 
 SPELLS_EFFECTS = {
@@ -751,6 +764,15 @@ SPELLS_EFFECTS = {
     'Allies around the target': _('Allies around the target'),
     'Enemies around the target': _('Enemies around the target'),
     'Allies around enemies are healed at the end of enemies turns': _('Allies around enemies are healed at the end of enemies turns'),
+    'For 2 turns when target suffers an attempted MP reduction:<br>Not charged': _('For 2 turns when target suffers an attempted MP reduction:<br>Not charged'),
+    'For 2 turns when target suffers a Range reduction:<br>Not charged': _('For 2 turns when target suffers a Range reduction:<br>Not charged'),
+    'Ennemies at the end of their turns': _('Ennemies at the end of their turns'),
+    'Allies at the end of their turns': _('Allies at the end of their turns'),
+    'For 2 turns when target suffers an attempted AP reduction:<br>Not charged': _('For 2 turns when target suffers an attempted AP reduction:<br>Not charged'),
+    ' MP used this turn': _(' MP used this turn'),
+    'Hit in best element on enemy that kills Lucky Shovel': _('Hit in best element on enemy that kills Lucky Shovel'),
+    'On summons': _('On summons'),
+    'For 2 turns when target is healed:<br>Not charged': _('For 2 turns when target is healed:<br>Not charged'),
 }
 
 LOCALIZED_WEAPON_TYPES = {
