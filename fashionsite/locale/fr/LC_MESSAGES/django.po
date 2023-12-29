@@ -1088,8 +1088,6 @@ msgstr "% Résistance Neutre"
 
 #: fashionsite/chardata/templates/chardata/compare_sets.html:194
 #: fashionsite/chardata/templates/chardata/stats.html:75
-#, python-format
-#| msgid "% Earth Resist"
 msgid "% Earth Resist"
 msgstr "% Résistance Terre"
 
