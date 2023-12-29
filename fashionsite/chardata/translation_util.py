@@ -576,14 +576,18 @@ SPELLS_NAMES = {
     'Volcano': _('Volcano'),
     'Glacier': _('Glacier'),
     'Stalactite': _('Stalactite'),
+    'Manifestation': _('Manifestation'),
     'Journey': _('Journey'),
+    'Runification': _('Runification'),
     'Deflagration': _('Deflagration'),
     'Flood': _('Flood'),
     'Contribution': _('Contribution'),
     'Icy Shards': _('Icy Shards'),
+    'Runic Overcharge': _('Runic Overcharge'),
     'Sun Lance': _('Sun Lance'),
     'Transfixing Gust': _('Transfixing Gust'),
     'Hurricane': _('Hurricane'),
+    'Glacier': _('Glacier'),
     'Striking Meteor': _('Striking Meteor'),
     'Comet': _('Comet'),
     'Watchdog': _('Watchdog'),
@@ -705,6 +709,8 @@ SPELLS_NAMES = {
     'Placer Mining': _('Placer Mining'),
     'Hemorrhage': _('Hemorrhage'),
     'Gangsterdom': _('Gangsterdom'),
+    'Tribute': _('Tribute'),
+    'Arcane Torrent': _('Arcane Torrent'),
 }
 
 SPELLS_EFFECTS = {
@@ -851,6 +857,13 @@ SPELLS_EFFECTS = {
     '4 rebounds': _(' rebounds'),
     '5 rebounds': _(' rebounds'),
     'Leaving Telegraf state': _('Leaving Telegraf state'),
+    'For each of the caster\'s runes': _('For each of the caster\'s runes'),
+    '1 combination': _(' combination'),
+    '2 combinations': _(' combinations'),
+    '3 combinations': _(' combinations'),
+    '4 combinations': _(' combinations'),
+    '5 combinations': _(' combinations'),
+    '6 combinations': _(' combinations'),
 }
 
 LOCALIZED_WEAPON_TYPES = {
