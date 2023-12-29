@@ -2333,10 +2333,8 @@ msgstr "% Dommages Distance"
 #: fashionsite/chardata/templates/chardata/solution.html:154
 #: fashionsite/chardata/templates/chardata/stats.html:32
 #: fashionsite/chardata/translation_util.py:104
-#, python-format
-#| msgid "%% Weapon Damage"
-msgid "%% Weapon Damage"
-msgstr "%% Dommages d'Armes"
+msgid "% Weapon Damage"
+msgstr "% Dommages d'Armes"
 
 #: fashionsite/chardata/templates/chardata/solution.html:156
 #, python-format
