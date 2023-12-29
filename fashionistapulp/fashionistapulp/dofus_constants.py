@@ -2999,7 +2999,7 @@ DAMAGE_SPELLS = {
             [['31-35', '39-43'],
              ['39-44', '49-54']],
             None,
-            [EARTH],
+            [EARTH] * 2,
         ), aggregates=[('', [0]),
                        ('On target with less than 25% HP', [1])], 
         is_linked=(1, 'Calamity'),

@@ -476,9 +476,11 @@ SPELLS_NAMES = {
     'Pitfall': _('Pitfall'),
     'Insidious Poison': _('Insidious Poison'),
     'Toxines': _('Toxines'),
+    'Waylaying': _('Waylaying'),
     'Mistake': _('Mistake'),
     'Raiding': _('Raiding'),
     'Tricky Blow': _('Tricky Blow'),
+    'Frightful Trap': _('Frightful Trap'),
     'Cut-Throat': _('Cut-Throat'),
     'Miry Trap': _('Miry Trap'),
     'Larceny': _('Larceny'),
@@ -502,12 +504,17 @@ SPELLS_NAMES = {
     'Malevolent Trap': _('Malevolent Trap'),
     'Lethal Trap': _('Lethal Trap'),
     'Perfidy': _('Perfidy'),
+    'Break-In': _('Break-In'),
     'Slow Down': _('Slow Down'),
     'Souvenir': _('Souvenir'),
     'Hand': _('Hand'),
+    'Arsenic': _('Arsenic'),
+    'Shakedown': _('Shakedown'),
     'Cog': _('Cog'),
     'Shriveling': _('Shriveling'),
     'Drying Up': _('Drying Up'),
+    'Drift Trap': _('Drift Trap'),
+    'Sickrat Trap': _('Sickrat Trap'),
     "Xelor's Punch": _("Xelor's Punch"),
     'Gear': _('Gear'),
     'Frostbite': _('Frostbite'),
@@ -694,6 +701,7 @@ SPELLS_NAMES = {
     'Coin Throwing': _('Coin Throwing'),
     'Placer Mining': _('Placer Mining'),
     'Hemorrhage': _('Hemorrhage'),
+    'Gangsterdom': _('Gangsterdom'),
 }
 
 SPELLS_EFFECTS = {
@@ -827,6 +835,12 @@ SPELLS_EFFECTS = {
     '5 bombs': _(' bombs'),
     'Suffering 1': _('Suffering 1'),
     'Suffering 10': _('Suffering 10'),
+    '1 tree': _(' tree'),
+    '2 trees': _(' trees'),
+    '3 trees': _(' trees'),
+    '4 trees': _(' trees'),
+    '5 trees': _(' trees'),
+    'On target with less than 25% HP': _('On target with less than 25% HP'),
 }
 
 LOCALIZED_WEAPON_TYPES = {
