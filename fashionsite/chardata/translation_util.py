@@ -50,8 +50,8 @@ LOCALIZED_ELEMENTS = {
 
 OTHERS = {
     'project': gettext_lazy('project'),
-    'min_stats_all_but_neut': _('Sum of all %% Resists except neutral'),
-    'min_stats_all': _('Sum of all %% Resists'),
+    'min_stats_all_but_neut': _('Sum of all % Resists except neutral'),
+    'min_stats_all': _('Sum of all % Resists'),
     'min_stats_all_lin': _('Sum of all Linear Resists'),
     'min_stats_all_lin_but_neut': _('Sum of all Linear Resists except neutral'),
 }
@@ -84,7 +84,7 @@ LOCALIZED_STATS = {
     'Pods': gettext_lazy('Pods'),
     'Reflects': gettext_lazy('Reflects'),
     'Trap Damage': gettext_lazy('Trap Damage'),
-    '% Trap Damage': gettext_lazy('%% Trap Damage'),
+    '% Trap Damage': gettext_lazy('% Trap Damage'),
     'Damage': gettext_lazy('Damage'),
     'Neutral Damage': gettext_lazy('Neutral Damage'),
     'Earth Damage': gettext_lazy('Earth Damage'),
@@ -99,12 +99,12 @@ LOCALIZED_STATS = {
     'Fire Resist': gettext_lazy('Fire Resist'),
     'Water Resist': gettext_lazy('Water Resist'),
     'Air Resist': gettext_lazy('Air Resist'),
-    '% Melee Damage': gettext_lazy('%% Melee Damage'),
-    '% Ranged Damage': gettext_lazy('%% Ranged Damage'),
-    '% Weapon Damage': gettext_lazy('%% Weapon Damage'),
-    '% Spell Damage': gettext_lazy('%% Spell Damage'),
-    '% Melee Resist': gettext_lazy('%% Melee Resist'),
-    '% Ranged Resist': gettext_lazy('%% Ranged Resist'),
+    '% Melee Damage': gettext_lazy('% Melee Damage'),
+    '% Ranged Damage': gettext_lazy('% Ranged Damage'),
+    '% Weapon Damage': gettext_lazy('% Weapon Damage'),
+    '% Spell Damage': gettext_lazy('% Spell Damage'),
+    '% Melee Resist': gettext_lazy('% Melee Resist'),
+    '% Ranged Resist': gettext_lazy('% Ranged Resist'),
 }
 
 SPELLS_NAMES = {
@@ -619,7 +619,7 @@ SPELLS_NAMES = {
 }
 
 SPELLS_EFFECTS = {
-    '25% chance of': _('25%% chance of'),
+    '25% chance of': _('25% chance of'),
     'Not charged': _('Not charged'),
     'Not Charged': _('Not Charged'),
     'Charged once': _('Charged once'),
@@ -648,8 +648,8 @@ SPELLS_EFFECTS = {
     'Enemies (next turn)': _('Enemies (next turn)'),
     'Allies (imediately)': _('Allies (imediately)'),
     'Allies (next turn)': _('Allies (next turn)'),
-    'If the target has more than 50% HP': _('If the target has more than 50%% HP'),
-    'If the target has less than 50% HP': _('If the target has less than 50%% HP'),
+    'If the target has more than 50% HP': _('If the target has more than 50% HP'),
+    'If the target has less than 50% HP': _('If the target has less than 50% HP'),
     'In one turn': _('In one turn'),
     'In two turns': _('In two turns'),
     'In three turns': _('In three turns'),
