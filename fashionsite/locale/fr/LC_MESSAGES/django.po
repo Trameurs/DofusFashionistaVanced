@@ -2375,10 +2375,8 @@ msgstr "%% Résistance Air"
 #: fashionsite/chardata/templates/chardata/solution.html:239
 #: fashionsite/chardata/templates/chardata/stats.html:80
 #: fashionsite/chardata/translation_util.py:106
-#, python-format
-#| msgid "%% Melee Resist"
-msgid "%% Melee Resist"
-msgstr "%% Résistance Mêlée"
+msgid "% Melee Resist"
+msgstr "% Résistance Mêlée"
 
 #: fashionsite/chardata/templates/chardata/solution.html:241
 #: fashionsite/chardata/templates/chardata/stats.html:81
