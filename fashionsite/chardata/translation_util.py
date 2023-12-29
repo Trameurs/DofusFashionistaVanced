@@ -322,6 +322,7 @@ SPELLS_NAMES = {
     'Picada': _('Picada'),
     'Agular': _('Agular'),
     'Martelo': _('Martelo'),
+    'Shove Off': _('Shove Off'),
     'Parafuso': _('Parafuso'),
     'Reinforcement': _('Reinforcement'),
     'Retention': _('Retention'),
@@ -338,7 +339,9 @@ SPELLS_NAMES = {
     'Catalepsy': _('Catalepsy'),
     'Apostasy': _('Apostasy'),
     'Brincaderia': _('Brincaderia'),
+    'Purgatorio': _('Purgatorio'),
     'Apathy': _('Apathy'),
+    'Ronda': _('Ronda'),
     'Ponteira': _('Ponteira'),
     'Boliche': _('Boliche'),
     'Inferno': _('Inferno'),
@@ -664,7 +667,6 @@ SPELLS_NAMES = {
     'Ancestral Ointment': _('Ancestral Ointment'),
     'Coin Throwing': _('Coin Throwing'),
     'Placer Mining': _('Placer Mining'),
-    ''
 }
 
 SPELLS_EFFECTS = {
