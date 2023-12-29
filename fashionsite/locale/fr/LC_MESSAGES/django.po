@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-28 18:46+0000\n"
+"POT-Creation-Date: 2023-12-29 09:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -291,7 +291,7 @@ msgstr "Pièges"
 #: chardata/smart_build.py:53 chardata/templates/chardata/compare_sets.html:147
 #: chardata/templates/chardata/solution.html:165
 #: chardata/templates/chardata/stats.html:38 chardata/translation_util.py:71
-#: chardata/translation_util.py:581 chardata/wizard_sliders.py:92
+#: chardata/translation_util.py:660 chardata/wizard_sliders.py:92
 msgid "Summons"
 msgstr "Invocations"
 
@@ -881,8 +881,7 @@ msgid "Trap Damage"
 msgstr "Dommages (Pièges)"
 
 #: chardata/templates/chardata/compare_sets.html:166
-#: chardata/templates/chardata/stats.html:54 chardata/translation_util.py:87
-#: chardata/wizard_sliders.py:58
+#: chardata/templates/chardata/stats.html:54 chardata/wizard_sliders.py:58
 msgid "% Trap Damage"
 msgstr "Puissance (Pièges)"
 
@@ -2218,30 +2217,35 @@ msgid "Base"
 msgstr "Base"
 
 #: chardata/templates/chardata/solution.html:150
+#: chardata/translation_util.py:102
 #, fuzzy, python-format
 #| msgid "%% Melee Damage"
 msgid "%% Melee Damage"
 msgstr "% Dommages Mêlée"
 
 #: chardata/templates/chardata/solution.html:152
+#: chardata/translation_util.py:103
 #, fuzzy, python-format
 #| msgid "%% Ranged Damage"
 msgid "%% Ranged Damage"
 msgstr "% Dommages Distance"
 
 #: chardata/templates/chardata/solution.html:154
+#: chardata/translation_util.py:104
 #, fuzzy, python-format
 #| msgid "%% Weapon Damage"
 msgid "%% Weapon Damage"
 msgstr "% Dommages d'Armes"
 
 #: chardata/templates/chardata/solution.html:156
+#: chardata/translation_util.py:105
 #, fuzzy, python-format
 #| msgid "%% Spell Damage"
 msgid "%% Spell Damage"
 msgstr "% Dommages aux Sorts"
 
 #: chardata/templates/chardata/solution.html:196
+#: chardata/translation_util.py:87
 #, python-format
 msgid "%% Trap Damage"
 msgstr "Puissance (Pièges)"
@@ -2272,12 +2276,14 @@ msgid "%% Air Resist"
 msgstr "%% Résistance Air"
 
 #: chardata/templates/chardata/solution.html:239
+#: chardata/translation_util.py:106
 #, fuzzy, python-format
 #| msgid "%% Melee Resist"
 msgid "%% Melee Resist"
 msgstr "% Résistance Mêlée"
 
 #: chardata/templates/chardata/solution.html:241
+#: chardata/translation_util.py:107
 #, fuzzy, python-format
 #| msgid "%% Ranged Resist"
 msgid "%% Ranged Resist"
@@ -2458,15 +2464,15 @@ msgstr ""
 "caractéristiques à la place. Diminuer le poids d'une caractéristique la "
 "sacrifiera pour d'autres"
 
-#: chardata/templates/chardata/stats.html:30 chardata/translation_util.py:102
+#: chardata/templates/chardata/stats.html:30
 msgid "% Melee Damage"
 msgstr "% Dommages Mêlée"
 
-#: chardata/templates/chardata/stats.html:31 chardata/translation_util.py:103
+#: chardata/templates/chardata/stats.html:31
 msgid "% Ranged Damage"
 msgstr "% Dommages Distance"
 
-#: chardata/templates/chardata/stats.html:32 chardata/translation_util.py:104
+#: chardata/templates/chardata/stats.html:32
 msgid "% Weapon Damage"
 msgstr "% Dommages d'Armes"
 
@@ -2482,11 +2488,11 @@ msgstr "Toutes les Résistances (Fixe)"
 msgid "All % Resists"
 msgstr "Toutes les Résistances (%)"
 
-#: chardata/templates/chardata/stats.html:80 chardata/translation_util.py:106
+#: chardata/templates/chardata/stats.html:80
 msgid "% Melee Resist"
 msgstr "% Résistance Mêlée"
 
-#: chardata/templates/chardata/stats.html:81 chardata/translation_util.py:107
+#: chardata/templates/chardata/stats.html:81
 msgid "% Ranged Resist"
 msgstr "% Résistance Distance"
 
@@ -2695,11 +2701,15 @@ msgid "project"
 msgstr "projet"
 
 #: chardata/translation_util.py:53
-msgid "Sum of all % Resists except neutral"
+#, fuzzy, python-format
+#| msgid "Sum of all % Resists except neutral"
+msgid "Sum of all %% Resists except neutral"
 msgstr "Somme de toutes les résistances (%), sauf neutre"
 
 #: chardata/translation_util.py:54
-msgid "Sum of all % Resists"
+#, fuzzy, python-format
+#| msgid "Sum of all % Resists"
+msgid "Sum of all %% Resists"
 msgstr "Somme de toutes les résistances (%)"
 
 #: chardata/translation_util.py:55
@@ -2713,10 +2723,6 @@ msgstr "Somme de toutes les résistances fixes, sauf neutre"
 #: chardata/translation_util.py:72
 msgid "Summon"
 msgstr "Invocations"
-
-#: chardata/translation_util.py:105
-msgid "% Spell Damage"
-msgstr "% Dommages aux Sorts"
 
 #: chardata/translation_util.py:111
 msgid "Perfidious Boomerang"
@@ -4474,297 +4480,749 @@ msgstr "Dépeçage"
 msgid "Lance of the Lake"
 msgstr ""
 
+#: chardata/translation_util.py:553
+msgid "Slingshot"
+msgstr ""
+
+#: chardata/translation_util.py:554
+msgid "Seismic Pike"
+msgstr ""
+
+#: chardata/translation_util.py:555
+#, fuzzy
+#| msgid "Lightning Fist"
+msgid "Lightning-Javelin"
+msgstr "Poing Fulgurant"
+
 #: chardata/translation_util.py:556
-#, fuzzy, python-format
-#| msgid "25% chance of"
-msgid "25% chance of"
-msgstr "25% de chance de:"
+#, fuzzy
+#| msgid "Forgelance"
+msgid "Fire Lance"
+msgstr "Forgelance"
 
 #: chardata/translation_util.py:557
-msgid "Not charged"
-msgstr "Non chargée"
+msgid "No Myr Javelin"
+msgstr ""
 
 #: chardata/translation_util.py:558
-msgid "Not Charged"
-msgstr "Non chargée"
+msgid "Disengaging"
+msgstr ""
 
 #: chardata/translation_util.py:559
-msgid "Charged once"
-msgstr "Chargée une fois"
+msgid "Hot Iron"
+msgstr ""
 
 #: chardata/translation_util.py:560
-msgid "Charged twice"
-msgstr "Chargée deux fois"
+msgid "Parry"
+msgstr ""
 
-#: chardata/translation_util.py:561 chardata/translation_util.py:577
-msgid "If the target is pushed"
-msgstr "Si la cible est poussée"
+#: chardata/translation_util.py:561
+#, fuzzy
+#| msgid "Collapse All"
+msgid "Collapse"
+msgstr "Tout réduire"
 
 #: chardata/translation_util.py:562
-msgid "If the target suffers pushback damage"
-msgstr "Si la cible subit des dégâts de poussée"
+#, fuzzy
+#| msgid "Trident"
+msgid "Biting Trident"
+msgstr "Foène"
 
 #: chardata/translation_util.py:563
-msgid "Regular shot"
-msgstr "Tir régulier"
+#, fuzzy
+#| msgid "Not Charged"
+msgid "Heroic Charge"
+msgstr "Non chargée"
 
 #: chardata/translation_util.py:564
-msgid "After postponing once"
-msgstr "Après avoir reporté une fois"
+msgid "Brass Rain"
+msgstr ""
 
 #: chardata/translation_util.py:565
-msgid "After postponing twice"
-msgstr "Après avoir reporté deux fois"
+msgid "Spicy Mill"
+msgstr ""
 
 #: chardata/translation_util.py:566
-msgid "Enemies"
-msgstr "Ennemis"
+#, fuzzy
+#| msgid "Burning Stroke"
+msgid "Burning Estoc"
+msgstr "Trait Ardent"
 
 #: chardata/translation_util.py:567
-msgid "Allies"
-msgstr "Alliés"
+msgid "Brass Volley"
+msgstr ""
 
 #: chardata/translation_util.py:568
-msgid "Enemies (imediately)"
-msgstr "Ennemis (immédiatement)"
+msgid "Balestra"
+msgstr ""
 
 #: chardata/translation_util.py:569
-msgid "Enemies (next turn)"
-msgstr "Ennemis (prochain tour)"
+msgid "Octave"
+msgstr ""
 
 #: chardata/translation_util.py:570
-msgid "Allies (imediately)"
-msgstr "Alliés (immédiatement)"
+msgid "Upheaval"
+msgstr ""
 
 #: chardata/translation_util.py:571
-msgid "Allies (next turn)"
-msgstr "Alliés (prochain tour)"
+msgid "Windmill"
+msgstr ""
 
 #: chardata/translation_util.py:572
-msgid "If the target has more than 50% HP"
-msgstr "Si la cible a plus de 50% de PV"
+#, fuzzy
+#| msgid "Earth Resist"
+msgid "Earthen Weakness"
+msgstr "Résistance Terre"
 
 #: chardata/translation_util.py:573
-msgid "If the target has less than 50% HP"
-msgstr "Si la cible a moins de 50% de PV"
+msgid "Kyrja"
+msgstr ""
 
 #: chardata/translation_util.py:574
-msgid "In one turn"
-msgstr "Dans un tour"
+msgid "Maelstrom"
+msgstr ""
 
 #: chardata/translation_util.py:575
-msgid "In two turns"
-msgstr "Dans deux tours"
+msgid "Lunge"
+msgstr ""
 
 #: chardata/translation_util.py:576
-msgid "In three turns"
-msgstr "Dans trois tours"
+msgid "Vajra"
+msgstr ""
+
+#: chardata/translation_util.py:577
+msgid "Ydra"
+msgstr ""
 
 #: chardata/translation_util.py:578
-msgid "Enemy or around ally"
-msgstr "Dans un ennemi ou autour d'un allié"
+msgid "Iron Prelude"
+msgstr ""
 
 #: chardata/translation_util.py:579
-msgid "Ally or around enemy"
-msgstr "Dans un allié ou autour d'un ennemi"
+#, fuzzy
+#| msgid "Sun Lance"
+msgid "Cyclone Lancer"
+msgstr "Lance Solaire"
 
 #: chardata/translation_util.py:580
-msgid "Non-summons"
-msgstr "Autre qu'invocation"
+#, fuzzy
+#| msgid "Lightning Strike"
+msgid "Grunob's Lightning Strike"
+msgstr "Foudroiement"
+
+#: chardata/translation_util.py:581
+msgid "Grunob's Lesson"
+msgstr ""
 
 #: chardata/translation_util.py:582
-msgid "Hit"
-msgstr "Coup"
+msgid "Jormun"
+msgstr ""
 
 #: chardata/translation_util.py:583
-msgid "Pushback Poison"
-msgstr "Dommages supplémentaires sur dommages de poussée"
+#, fuzzy
+#| msgid "(spells)"
+msgid "Muspell"
+msgstr "(sorts)"
 
 #: chardata/translation_util.py:584
-msgid "Other"
-msgstr "Autres"
+#, fuzzy
+#| msgid "Raiding"
+msgid "Elding"
+msgstr "Pillage"
 
 #: chardata/translation_util.py:585
-msgid "Charged"
-msgstr "Chargée"
+#, fuzzy
+#| msgid "Burning Circle"
+msgid "Burnt Pie"
+msgstr "Cercle Brûlant"
 
 #: chardata/translation_util.py:586
-msgid "Tofu"
-msgstr "Tofu"
+msgid "Crocobur's Appetite"
+msgstr ""
 
 #: chardata/translation_util.py:587
-msgid "Gobball"
-msgstr "Bouftou"
+msgid "Scurvion Toxicity"
+msgstr ""
 
 #: chardata/translation_util.py:588
-msgid "Toad"
-msgstr "Crapaud"
+msgid "Kannibubble"
+msgstr ""
 
 #: chardata/translation_util.py:589
-msgid "Wyrmling (enemies)"
-msgstr "Dragonnet (Ennemis)"
+msgid "Kanniboil"
+msgstr ""
 
 #: chardata/translation_util.py:590
-msgid "Wyrmling (allies)"
-msgstr "Dragonnet (Alliés)"
+#, fuzzy
+#| msgid "Moon Hammer"
+msgid "Darkli Moon Hammer"
+msgstr "Marteau de Moon"
 
 #: chardata/translation_util.py:591
-msgid "No Tofus"
+#, fuzzy
+#| msgid "No Tofus"
+msgid "Ebony Dofus"
 msgstr "Sans Tofus"
 
 #: chardata/translation_util.py:592
+msgid "Pestilential Fog"
+msgstr ""
+
+#: chardata/translation_util.py:593
+msgid "Middle Earth"
+msgstr ""
+
+#: chardata/translation_util.py:594
+#, fuzzy
+#| msgid "No"
+msgid "Noa"
+msgstr "Non"
+
+#: chardata/translation_util.py:595
+msgid "Mantiscroc"
+msgstr ""
+
+#: chardata/translation_util.py:596
+msgid "Dart Mocles"
+msgstr ""
+
+#: chardata/translation_util.py:597
+#, fuzzy
+#| msgid "Perfidious Boomerang"
+msgid "Diamondine Boomerang"
+msgstr "Boomerang Perfide"
+
+#: chardata/translation_util.py:598
+#, fuzzy
+#| msgid "Tyrannical Arrow"
+msgid "Optical Arrow"
+msgstr "Flèche Tyrannique"
+
+#: chardata/translation_util.py:599
+#, fuzzy
+#| msgid "Assailing Arrow"
+msgid "Raining Arrows"
+msgstr "Flèche Assaillante"
+
+#: chardata/translation_util.py:600
+#, fuzzy
+#| msgid "Clobbering"
+msgid "Covering Fire"
+msgstr "Déchaînement"
+
+#: chardata/translation_util.py:601
+#, fuzzy
+#| msgid "Assailing Arrow"
+msgid "Immobilising Arrow"
+msgstr "Flèche Assaillante"
+
+#: chardata/translation_util.py:602
+msgid "Piercing Shots"
+msgstr ""
+
+#: chardata/translation_util.py:603
+#, fuzzy
+#| msgid "Explosive Arrow"
+msgid "Exploding Arrow"
+msgstr "Flèche Explosive"
+
+#: chardata/translation_util.py:604
+#, fuzzy
+#| msgid "Tormenting Arrow"
+msgid "Tormenting Arrow 1"
+msgstr "Flèche Persécutrice"
+
+#: chardata/translation_util.py:605
+#, fuzzy
+#| msgid "Repulsive Arrow"
+msgid "Repulsive Shot"
+msgstr "Flèche Répulsive"
+
+#: chardata/translation_util.py:606
+#, fuzzy
+#| msgid "Burning Arrow"
+msgid "Burning Arrows"
+msgstr "Flèche Enflammée"
+
+#: chardata/translation_util.py:607
+#, fuzzy
+#| msgid "Retreat Arrow"
+msgid "Retreating Shot"
+msgstr "Flèche de Recul"
+
+#: chardata/translation_util.py:608
+#, fuzzy
+#| msgid "Paralyzing Arrow"
+msgid "Paralysing Arrow"
+msgstr "Flèche d'Immobilisation"
+
+#: chardata/translation_util.py:609
+msgid "Piercing Shot"
+msgstr ""
+
+#: chardata/translation_util.py:610
+#, fuzzy
+#| msgid "Powerful Shooting"
+msgid "Powerful Shots"
+msgstr "Tir Puissant"
+
+#: chardata/translation_util.py:611
+#, fuzzy
+#| msgid "Destructive Arrow"
+msgid "Destructive Bolts"
+msgstr "Flèche Destructrice"
+
+#: chardata/translation_util.py:612
+#, fuzzy
+#| msgid "Tormenting Arrow"
+msgid "Tormenting Arrow 2"
+msgstr "Flèche Persécutrice"
+
+#: chardata/translation_util.py:613
+#, fuzzy
+#| msgid "Explosive Flask"
+msgid "Explosive Palm"
+msgstr "Flasque Explosive"
+
+#: chardata/translation_util.py:614
+#, fuzzy
+#| msgid "Last Breath"
+msgid "Fiery Breath"
+msgstr "Dernier Souffle"
+
+#: chardata/translation_util.py:615
+msgid "Brandy"
+msgstr ""
+
+#: chardata/translation_util.py:616
+#, fuzzy
+#| msgid "Water"
+msgid "Waterfall"
+msgstr "Eau"
+
+#: chardata/translation_util.py:617
+#, fuzzy
+#| msgid "Pandawa"
+msgid "Pandawa's Hand"
+msgstr "Pandawa"
+
+#: chardata/translation_util.py:618
+#, fuzzy
+#| msgid "Strength"
+msgid "Stretcher"
+msgstr "Force"
+
+#: chardata/translation_util.py:622
+#, fuzzy, python-format
+#| msgid "25% chance of"
+msgid "25%% chance of"
+msgstr "25% de chance de:"
+
+#: chardata/translation_util.py:623
+msgid "Not charged"
+msgstr "Non chargée"
+
+#: chardata/translation_util.py:624
+msgid "Not Charged"
+msgstr "Non chargée"
+
+#: chardata/translation_util.py:625
+msgid "Charged once"
+msgstr "Chargée une fois"
+
+#: chardata/translation_util.py:626
+msgid "Charged twice"
+msgstr "Chargée deux fois"
+
+#: chardata/translation_util.py:627
+#, fuzzy
+#| msgid "Charged twice"
+msgid "Charged 3 times"
+msgstr "Chargée deux fois"
+
+#: chardata/translation_util.py:628
+#, fuzzy
+#| msgid "Charged twice"
+msgid "Charged 4 times"
+msgstr "Chargée deux fois"
+
+#: chardata/translation_util.py:629
+#, fuzzy
+#| msgid "Charged twice"
+msgid "Charged 5 times"
+msgstr "Chargée deux fois"
+
+#: chardata/translation_util.py:630
+#, fuzzy
+#| msgid "Charged twice"
+msgid "Charged 6 times"
+msgstr "Chargée deux fois"
+
+#: chardata/translation_util.py:631
+#, fuzzy
+#| msgid "Charged twice"
+msgid "Charged 7 times"
+msgstr "Chargée deux fois"
+
+#: chardata/translation_util.py:632
+#, fuzzy
+#| msgid "Charged twice"
+msgid "Charged 8 times"
+msgstr "Chargée deux fois"
+
+#: chardata/translation_util.py:633
+#, fuzzy
+#| msgid "Charged twice"
+msgid "Charged 9 times"
+msgstr "Chargée deux fois"
+
+#: chardata/translation_util.py:634
+#, fuzzy
+#| msgid "Charged twice"
+msgid "Charged 10 times"
+msgstr "Chargée deux fois"
+
+#: chardata/translation_util.py:635
+#, fuzzy
+#| msgid "Charged twice"
+msgid "Charged 11 times"
+msgstr "Chargée deux fois"
+
+#: chardata/translation_util.py:636
+#, fuzzy
+#| msgid "Charged twice"
+msgid "Charged 12 times"
+msgstr "Chargée deux fois"
+
+#: chardata/translation_util.py:637
+#, fuzzy
+#| msgid "Not charged"
+msgid "Shock Not charged"
+msgstr "Non chargée"
+
+#: chardata/translation_util.py:638
+#, fuzzy
+#| msgid "Charged once"
+msgid "Shock Charged once"
+msgstr "Chargée une fois"
+
+#: chardata/translation_util.py:639
+#, fuzzy
+#| msgid "Charged twice"
+msgid "Shock Charged twice"
+msgstr "Chargée deux fois"
+
+#: chardata/translation_util.py:640 chardata/translation_util.py:656
+msgid "If the target is pushed"
+msgstr "Si la cible est poussée"
+
+#: chardata/translation_util.py:641
+msgid "If the target suffers pushback damage"
+msgstr "Si la cible subit des dégâts de poussée"
+
+#: chardata/translation_util.py:642
+msgid "Regular shot"
+msgstr "Tir régulier"
+
+#: chardata/translation_util.py:643
+msgid "After postponing once"
+msgstr "Après avoir reporté une fois"
+
+#: chardata/translation_util.py:644
+msgid "After postponing twice"
+msgstr "Après avoir reporté deux fois"
+
+#: chardata/translation_util.py:645
+msgid "Enemies"
+msgstr "Ennemis"
+
+#: chardata/translation_util.py:646
+msgid "Allies"
+msgstr "Alliés"
+
+#: chardata/translation_util.py:647
+msgid "Enemies (imediately)"
+msgstr "Ennemis (immédiatement)"
+
+#: chardata/translation_util.py:648
+msgid "Enemies (next turn)"
+msgstr "Ennemis (prochain tour)"
+
+#: chardata/translation_util.py:649
+msgid "Allies (imediately)"
+msgstr "Alliés (immédiatement)"
+
+#: chardata/translation_util.py:650
+msgid "Allies (next turn)"
+msgstr "Alliés (prochain tour)"
+
+#: chardata/translation_util.py:651
+#, fuzzy, python-format
+#| msgid "If the target has more than 50% HP"
+msgid "If the target has more than 50%% HP"
+msgstr "Si la cible a plus de 50% de PV"
+
+#: chardata/translation_util.py:652
+#, fuzzy, python-format
+#| msgid "If the target has less than 50% HP"
+msgid "If the target has less than 50%% HP"
+msgstr "Si la cible a moins de 50% de PV"
+
+#: chardata/translation_util.py:653
+msgid "In one turn"
+msgstr "Dans un tour"
+
+#: chardata/translation_util.py:654
+msgid "In two turns"
+msgstr "Dans deux tours"
+
+#: chardata/translation_util.py:655
+msgid "In three turns"
+msgstr "Dans trois tours"
+
+#: chardata/translation_util.py:657
+msgid "Enemy or around ally"
+msgstr "Dans un ennemi ou autour d'un allié"
+
+#: chardata/translation_util.py:658
+msgid "Ally or around enemy"
+msgstr "Dans un allié ou autour d'un ennemi"
+
+#: chardata/translation_util.py:659
+msgid "Non-summons"
+msgstr "Autre qu'invocation"
+
+#: chardata/translation_util.py:661
+msgid "Hit"
+msgstr "Coup"
+
+#: chardata/translation_util.py:662
+msgid "Pushback Poison"
+msgstr "Dommages supplémentaires sur dommages de poussée"
+
+#: chardata/translation_util.py:663
+msgid "Other"
+msgstr "Autres"
+
+#: chardata/translation_util.py:664
+msgid "Charged"
+msgstr "Chargée"
+
+#: chardata/translation_util.py:665
+msgid "Tofu"
+msgstr "Tofu"
+
+#: chardata/translation_util.py:666
+msgid "Gobball"
+msgstr "Bouftou"
+
+#: chardata/translation_util.py:667
+msgid "Toad"
+msgstr "Crapaud"
+
+#: chardata/translation_util.py:668
+msgid "Wyrmling (enemies)"
+msgstr "Dragonnet (Ennemis)"
+
+#: chardata/translation_util.py:669
+msgid "Wyrmling (allies)"
+msgstr "Dragonnet (Alliés)"
+
+#: chardata/translation_util.py:670
+msgid "No Tofus"
+msgstr "Sans Tofus"
+
+#: chardata/translation_util.py:671
 msgid "One Tofu"
 msgstr "Un Tofu"
 
-#: chardata/translation_util.py:593
+#: chardata/translation_util.py:672
 msgid "Two Tofus"
 msgstr "Deux Tofus"
 
-#: chardata/translation_util.py:594
+#: chardata/translation_util.py:673
 msgid "Three Tofus"
 msgstr "Trois Tofus"
 
-#: chardata/translation_util.py:595
+#: chardata/translation_util.py:674
 msgid "Four Tofus"
 msgstr "Quatre Tofus"
 
-#: chardata/translation_util.py:596
+#: chardata/translation_util.py:675
 msgid "Five Tofus"
 msgstr "Cinq Tofus"
 
-#: chardata/translation_util.py:597
+#: chardata/translation_util.py:676
 msgid "If an Explobomb is present"
 msgstr "Si une Explobombe est présente"
 
-#: chardata/translation_util.py:598
+#: chardata/translation_util.py:677
 msgid "If a Grenado is present"
 msgstr "Si Tornabombe bombe est présente"
 
-#: chardata/translation_util.py:599
+#: chardata/translation_util.py:678
 msgid "If a Waterbomb is present"
 msgstr "Si une Bombe à Eau est présente"
 
-#: chardata/translation_util.py:600
+#: chardata/translation_util.py:679
 msgid "If a Seismobomb is present"
 msgstr "Si une Sismobombe est présente"
 
-#: chardata/translation_util.py:601
+#: chardata/translation_util.py:680
 msgid "Allies/Summons"
 msgstr "Alliés/Invocations"
 
-#: chardata/translation_util.py:602
+#: chardata/translation_util.py:681
 msgid "If the target loses MP"
 msgstr "Si la cible perd PM"
 
-#: chardata/translation_util.py:603
+#: chardata/translation_util.py:682
 msgid "If the target loses AP"
 msgstr "Si la cible perd PA"
 
-#: chardata/translation_util.py:604
+#: chardata/translation_util.py:683
 msgid "At the center"
 msgstr "Au centre"
 
-#: chardata/translation_util.py:605
+#: chardata/translation_util.py:684
 msgid "One tile away from the center"
 msgstr "Un carré à l'écart du centre"
 
-#: chardata/translation_util.py:606
+#: chardata/translation_util.py:685
 msgid "Two tiles away from the center"
 msgstr "Deux carrés éloignés du centre"
 
-#: chardata/translation_util.py:607
+#: chardata/translation_util.py:686
 msgid "Three tiles away from the center"
 msgstr "Trois carrés éloignés du centre"
 
-#: chardata/translation_util.py:608
+#: chardata/translation_util.py:687
 msgid "Directly"
 msgstr "Directement"
 
-#: chardata/translation_util.py:609
+#: chardata/translation_util.py:688
 msgid "Through a portal"
 msgstr "Grâce à un portail"
 
-#: chardata/translation_util.py:610
+#: chardata/translation_util.py:689
 msgid "Target in air state"
 msgstr "Cible dans l'état air"
 
-#: chardata/translation_util.py:611
+#: chardata/translation_util.py:690
 msgid "Target in fire state"
 msgstr "Cible dans l'état feu"
 
-#: chardata/translation_util.py:612
+#: chardata/translation_util.py:691
 msgid "Target in water state"
 msgstr "Cible dans l'état eau"
 
-#: chardata/translation_util.py:613
+#: chardata/translation_util.py:692
 msgid "Target in earth state"
 msgstr "Cible dans l'état terre"
 
-#: chardata/translation_util.py:614
+#: chardata/translation_util.py:693
 msgid "If the target is Prey"
 msgstr "Si la cible est la Proie"
 
-#: chardata/translation_util.py:615
+#: chardata/translation_util.py:694
 msgid "After hitting a Prey once"
 msgstr "Après avoir frappé une Proie une fois"
 
-#: chardata/translation_util.py:616
+#: chardata/translation_util.py:695
 msgid "After hitting a Prey twice"
 msgstr "Après avoir frappé une Proie deux fois"
 
-#: chardata/translation_util.py:617
+#: chardata/translation_util.py:696
 msgid "After hitting a Prey 3x"
 msgstr "Après avoir frappé une Proie 3x"
 
-#: chardata/translation_util.py:618
+#: chardata/translation_util.py:697
 msgid "After hitting a Prey 4x"
 msgstr "Après avoir frappé une Proie 4x"
 
-#: chardata/translation_util.py:619
+#: chardata/translation_util.py:698
 msgid "After hitting a Prey 5x"
 msgstr "Après avoir frappé une Proie 5x"
 
-#: chardata/translation_util.py:624
+#: chardata/translation_util.py:699
+msgid "Hit in best element"
+msgstr ""
+
+#: chardata/translation_util.py:700
+msgid "Steals in best element"
+msgstr ""
+
+#: chardata/translation_util.py:701
+msgid "On ennemy"
+msgstr ""
+
+#: chardata/translation_util.py:702
+msgid "On caster"
+msgstr ""
+
+#: chardata/translation_util.py:703
+msgid "Hit in worst element"
+msgstr ""
+
+#: chardata/translation_util.py:704
+#, fuzzy
+#| msgid "Pushback Damage"
+msgid "After pushback damage"
+msgstr "Dommages Poussée"
+
+#: chardata/translation_util.py:705
+msgid "If pushed or attracted"
+msgstr ""
+
+#: chardata/translation_util.py:706
+msgid "Sober"
+msgstr ""
+
+#: chardata/translation_util.py:707
+msgid "Drunk"
+msgstr ""
+
+#: chardata/translation_util.py:711
 msgid "Hammer"
 msgstr "Marteau"
 
-#: chardata/translation_util.py:625
+#: chardata/translation_util.py:712
 msgid "Axe"
 msgstr "Hache"
 
-#: chardata/translation_util.py:626
+#: chardata/translation_util.py:713
 msgid "Shovel"
 msgstr "Pelle"
 
-#: chardata/translation_util.py:627
+#: chardata/translation_util.py:714
 msgid "Staff"
 msgstr "Bâton"
 
-#: chardata/translation_util.py:628
+#: chardata/translation_util.py:715
 msgid "Sword"
 msgstr "Épée"
 
-#: chardata/translation_util.py:629
+#: chardata/translation_util.py:716
 msgid "Dagger"
 msgstr "Dagues"
 
-#: chardata/translation_util.py:630
+#: chardata/translation_util.py:717
 msgid "Bow"
 msgstr "Arc"
 
-#: chardata/translation_util.py:631
+#: chardata/translation_util.py:718
 msgid "Wand"
 msgstr "Baguette"
 
-#: chardata/translation_util.py:632
+#: chardata/translation_util.py:719
 msgid "Pickaxe"
 msgstr "Pioche"
 
-#: chardata/translation_util.py:633
+#: chardata/translation_util.py:720
 msgid "Scythe"
 msgstr "Faux"
 
-#: chardata/translation_util.py:634
+#: chardata/translation_util.py:721
 #, fuzzy
 #| msgid "Chance"
 msgid "Lance"
@@ -4793,6 +5251,9 @@ msgstr "Mobilité"
 msgctxt "Slider section"
 msgid "Special"
 msgstr "Spécial"
+
+#~ msgid "% Spell Damage"
+#~ msgstr "% Dommages aux Sorts"
 
 #~ msgid "Send"
 #~ msgstr "Envoyer"
