@@ -105,6 +105,7 @@ LOCALIZED_STATS = {
     '% Spell Damage': gettext_lazy('% Spell Damage'),
     '% Melee Resist': gettext_lazy('% Melee Resist'),
     '% Ranged Resist': gettext_lazy('% Ranged Resist'),
+    '% Weapon Resist': gettext_lazy('% Weapon Resist'),
 }
 
 SPELLS_NAMES = {
