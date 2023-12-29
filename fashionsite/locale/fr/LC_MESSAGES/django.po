@@ -2386,7 +2386,7 @@ msgstr "%% Résistance Air"
 #, python-format
 #| msgid "%% Melee Resist"
 msgid "%% Melee Resist"
-msgstr "% Résistance Mêlée"
+msgstr "%% Résistance Mêlée"
 
 #: fashionsite/chardata/templates/chardata/solution.html:241
 #: fashionsite/chardata/templates/chardata/stats.html:81
