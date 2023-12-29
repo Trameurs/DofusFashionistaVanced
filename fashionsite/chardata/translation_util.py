@@ -427,8 +427,10 @@ SPELLS_NAMES = {
     'Motivating Pain': _('Motivating Pain'),
     'Cauterisation': _('Cauterisation'),
     'Assault': _('Assault'),
+    'Bloodthirsty Madness': _('Bloodthirsty Madness'),
     'Aversion': _('Aversion'),
     'Mutilation': _('Mutilation'),
+    'Retribution': _('Retribution'),
     'Light Speed': _('Light Speed'),
     'Condensation': _('Condensation'),
     'Nervousness': _('Nervousness'),
@@ -437,8 +439,10 @@ SPELLS_NAMES = {
     'Hostility': _('Hostility'),
     'Torture': _('Torture'),
     'Desolation': _('Desolation'),
+    'Immolation': _('Immolation'),
     'Influx': _('Influx'),
     'Ravages': _('Ravages'),
+    'Excruciating Pain': _('Excruciating Pain'),
     'Decimation': _('Decimation'),
     'Gash': _('Gash'),
     'Blood Bath': _('Blood Bath'),
@@ -686,6 +690,7 @@ SPELLS_NAMES = {
     'Ancestral Ointment': _('Ancestral Ointment'),
     'Coin Throwing': _('Coin Throwing'),
     'Placer Mining': _('Placer Mining'),
+    'Hemorrhage': _('Hemorrhage'),
 }
 
 SPELLS_EFFECTS = {
@@ -817,6 +822,8 @@ SPELLS_EFFECTS = {
     '3 bombs': _(' bombs'),
     '4 bombs': _(' bombs'),
     '5 bombs': _(' bombs'),
+    'Suffering 1': _('Suffering 1'),
+    'Suffering 10': _('Suffering 10'),
 }
 
 LOCALIZED_WEAPON_TYPES = {
