@@ -2371,7 +2371,9 @@ msgid "%% Fire Resist"
 msgstr "% Résistance Feu"
 
 #: fashionsite/chardata/templates/chardata/solution.html:235
-#, python-format
+#: fashionsite/chardata/templates/chardata/solution.html:243
+#: fashionsite/chardata/templates/chardata/stats.html:82
+#, fuzzy, python-format
 msgid "%% Water Resist"
 msgstr "% Résistance Eau"
 
@@ -2395,12 +2397,6 @@ msgstr "% Résistance Mêlée"
 #| msgid "%% Ranged Resist"
 msgid "%% Ranged Resist"
 msgstr "% Résistance Distance"
-
-#: fashionsite/chardata/templates/chardata/solution.html:243
-#, fuzzy, python-format
-#| msgid "%% Water Resist"
-msgid "%% Weapon Resist"
-msgstr "% Résistance Eau"
 
 #: fashionsite/chardata/templates/chardata/solution.html:375
 #: fashionsite/chardata/templates/chardata/solution.html:388
@@ -2582,12 +2578,6 @@ msgstr "Toutes les Résistances (Fixe)"
 #: fashionsite/chardata/templates/chardata/stats.html:73
 msgid "All %% Resists"
 msgstr "Toutes les Résistances (%)"
-
-#: fashionsite/chardata/templates/chardata/stats.html:82
-#, fuzzy
-#| msgid "%% Water Resist"
-msgid "%% Weapon Resist"
-msgstr "% Résistance Eau"
 
 #: fashionsite/chardata/templates/chardata/thankyou.html:12
 msgid "Your message has been sent."
