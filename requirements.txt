@@ -36,7 +36,7 @@ idna==3.4
 incremental==22.10.0
 itemadapter==0.8.0
 itemloaders==1.0.6
-Jinja2==2.11.3
+Jinja2==3.1.3
 jmespath==1.0.1
 jsonpatch==1.21
 jsonpickle==3.0.1
