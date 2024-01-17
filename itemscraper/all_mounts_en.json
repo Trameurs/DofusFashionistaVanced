@@ -9,7 +9,7 @@
         {
             "ankama_id": 1,
             "name": "Wild Almond Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/1.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/1-200.png",
@@ -20,7 +20,7 @@
         {
             "ankama_id": 3,
             "name": "Ebony Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/3.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/3-200.png",
@@ -59,7 +59,7 @@
         {
             "ankama_id": 6,
             "name": "Wild Ginger Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/6.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/6-200.png",
@@ -70,7 +70,7 @@
         {
             "ankama_id": 9,
             "name": "Ebony and Ivory Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/9.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/9-200.png",
@@ -122,7 +122,7 @@
         {
             "ankama_id": 10,
             "name": "Ginger Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/10.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/10-200.png",
@@ -161,7 +161,7 @@
         {
             "ankama_id": 11,
             "name": "Ivory and Ginger Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/11.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/11-200.png",
@@ -213,7 +213,7 @@
         {
             "ankama_id": 12,
             "name": "Ebony and Ginger Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/12.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/12-200.png",
@@ -265,7 +265,7 @@
         {
             "ankama_id": 15,
             "name": "Turquoise Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/15.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/15-200.png",
@@ -304,7 +304,7 @@
         {
             "ankama_id": 16,
             "name": "Ivory Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/16.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/16-200.png",
@@ -343,7 +343,7 @@
         {
             "ankama_id": 17,
             "name": "Indigo Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/17.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/17-200.png",
@@ -382,7 +382,7 @@
         {
             "ankama_id": 18,
             "name": "Golden Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/18.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/18-200.png",
@@ -421,7 +421,7 @@
         {
             "ankama_id": 19,
             "name": "Crimson Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/19.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/19-200.png",
@@ -460,7 +460,7 @@
         {
             "ankama_id": 20,
             "name": "Almond Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/20.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/20-200.png",
@@ -499,7 +499,7 @@
         {
             "ankama_id": 21,
             "name": "Emerald Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/21.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/21-200.png",
@@ -538,7 +538,7 @@
         {
             "ankama_id": 22,
             "name": "Orchid Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/22.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/22-200.png",
@@ -577,7 +577,7 @@
         {
             "ankama_id": 23,
             "name": "Plum Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/23.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/23-200.png",
@@ -616,7 +616,7 @@
         {
             "ankama_id": 33,
             "name": "Almond and Golden Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/33.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/33-200.png",
@@ -668,7 +668,7 @@
         {
             "ankama_id": 34,
             "name": "Almond and Ebony Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/34.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/34-200.png",
@@ -720,7 +720,7 @@
         {
             "ankama_id": 35,
             "name": "Almond and Emerald Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/35.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/35-200.png",
@@ -772,7 +772,7 @@
         {
             "ankama_id": 36,
             "name": "Almond and Indigo Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/36.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/36-200.png",
@@ -824,7 +824,7 @@
         {
             "ankama_id": 37,
             "name": "Almond and Ivory Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/37.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/37-200.png",
@@ -876,7 +876,7 @@
         {
             "ankama_id": 38,
             "name": "Almond and Ginger Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/38.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/38-200.png",
@@ -928,7 +928,7 @@
         {
             "ankama_id": 39,
             "name": "Almond and Turquoise Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/39.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/39-200.png",
@@ -980,7 +980,7 @@
         {
             "ankama_id": 40,
             "name": "Almond and Orchid Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/40.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/40-200.png",
@@ -1032,7 +1032,7 @@
         {
             "ankama_id": 41,
             "name": "Almond and Crimson Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/41.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/41-200.png",
@@ -1084,7 +1084,7 @@
         {
             "ankama_id": 42,
             "name": "Golden and Ebony Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/42.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/42-200.png",
@@ -1136,7 +1136,7 @@
         {
             "ankama_id": 43,
             "name": "Golden and Emerald Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/43.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/43-200.png",
@@ -1188,7 +1188,7 @@
         {
             "ankama_id": 44,
             "name": "Golden and Indigo Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/44.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/44-200.png",
@@ -1240,7 +1240,7 @@
         {
             "ankama_id": 45,
             "name": "Golden and Ivory Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/45.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/45-200.png",
@@ -1292,7 +1292,7 @@
         {
             "ankama_id": 46,
             "name": "Golden and Ginger Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/46.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/46-200.png",
@@ -1344,7 +1344,7 @@
         {
             "ankama_id": 47,
             "name": "Golden and Turquoise Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/47.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/47-200.png",
@@ -1396,7 +1396,7 @@
         {
             "ankama_id": 48,
             "name": "Golden and Orchid Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/48.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/48-200.png",
@@ -1448,7 +1448,7 @@
         {
             "ankama_id": 49,
             "name": "Golden and Crimson Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/49.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/49-200.png",
@@ -1500,7 +1500,7 @@
         {
             "ankama_id": 50,
             "name": "Ebony and Emerald Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/50.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/50-200.png",
@@ -1552,7 +1552,7 @@
         {
             "ankama_id": 51,
             "name": "Ebony and Indigo Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/51.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/51-200.png",
@@ -1604,7 +1604,7 @@
         {
             "ankama_id": 52,
             "name": "Ebony and Turquoise Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/52.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/52-200.png",
@@ -1656,7 +1656,7 @@
         {
             "ankama_id": 53,
             "name": "Ebony and Orchid Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/53.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/53-200.png",
@@ -1708,7 +1708,7 @@
         {
             "ankama_id": 54,
             "name": "Ebony and Crimson Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/54.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/54-200.png",
@@ -1760,7 +1760,7 @@
         {
             "ankama_id": 55,
             "name": "Emerald and Indigo Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/55.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/55-200.png",
@@ -1812,7 +1812,7 @@
         {
             "ankama_id": 56,
             "name": "Emerald and Ivory Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/56.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/56-200.png",
@@ -1864,7 +1864,7 @@
         {
             "ankama_id": 57,
             "name": "Emerald and Ginger Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/57.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/57-200.png",
@@ -1916,7 +1916,7 @@
         {
             "ankama_id": 58,
             "name": "Emerald and Turquoise Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/58.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/58-200.png",
@@ -1968,7 +1968,7 @@
         {
             "ankama_id": 59,
             "name": "Emerald and Orchid Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/59.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/59-200.png",
@@ -2020,7 +2020,7 @@
         {
             "ankama_id": 60,
             "name": "Emerald and Crimson Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/60.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/60-200.png",
@@ -2072,7 +2072,7 @@
         {
             "ankama_id": 61,
             "name": "Indigo and Ivory Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/61.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/61-200.png",
@@ -2124,7 +2124,7 @@
         {
             "ankama_id": 62,
             "name": "Indigo and Ginger Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/62.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/62-200.png",
@@ -2176,7 +2176,7 @@
         {
             "ankama_id": 63,
             "name": "Indigo and Turquoise Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/63.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/63-200.png",
@@ -2228,7 +2228,7 @@
         {
             "ankama_id": 64,
             "name": "Indigo and Orchid Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/64.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/64-200.png",
@@ -2280,7 +2280,7 @@
         {
             "ankama_id": 65,
             "name": "Indigo and Crimson Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/65.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/65-200.png",
@@ -2332,7 +2332,7 @@
         {
             "ankama_id": 66,
             "name": "Ivory and Turquoise Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/66.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/66-200.png",
@@ -2384,7 +2384,7 @@
         {
             "ankama_id": 67,
             "name": "Ivory and Orchid Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/67.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/67-200.png",
@@ -2436,7 +2436,7 @@
         {
             "ankama_id": 68,
             "name": "Ivory and Crimson Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/68.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/68-200.png",
@@ -2488,7 +2488,7 @@
         {
             "ankama_id": 69,
             "name": "Turquoise and Ginger Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/69.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/69-200.png",
@@ -2540,7 +2540,7 @@
         {
             "ankama_id": 70,
             "name": "Orchid and Ginger Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/70.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/70-200.png",
@@ -2592,7 +2592,7 @@
         {
             "ankama_id": 71,
             "name": "Crimson and Ginger Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/71.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/71-200.png",
@@ -2644,7 +2644,7 @@
         {
             "ankama_id": 72,
             "name": "Turquoise and Orchid Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/72.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/72-200.png",
@@ -2696,7 +2696,7 @@
         {
             "ankama_id": 73,
             "name": "Turquoise and Crimson Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/73.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/73-200.png",
@@ -2748,7 +2748,7 @@
         {
             "ankama_id": 74,
             "name": "Wild Golden Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/74.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/74-200.png",
@@ -2759,7 +2759,7 @@
         {
             "ankama_id": 76,
             "name": "Orchid and Crimson Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/76.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/76-200.png",
@@ -2811,7 +2811,7 @@
         {
             "ankama_id": 77,
             "name": "Plum and Almond Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/77.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/77-200.png",
@@ -2863,7 +2863,7 @@
         {
             "ankama_id": 78,
             "name": "Plum and Golden Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/78.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/78-200.png",
@@ -2915,7 +2915,7 @@
         {
             "ankama_id": 79,
             "name": "Plum and Ebony Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/79.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/79-200.png",
@@ -2967,7 +2967,7 @@
         {
             "ankama_id": 80,
             "name": "Plum and Emerald Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/80.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/80-200.png",
@@ -3019,7 +3019,7 @@
         {
             "ankama_id": 82,
             "name": "Plum and Indigo Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/82.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/82-200.png",
@@ -3071,7 +3071,7 @@
         {
             "ankama_id": 83,
             "name": "Plum and Ivory Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/83.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/83-200.png",
@@ -3123,7 +3123,7 @@
         {
             "ankama_id": 84,
             "name": "Plum and Ginger Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/84.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/84-200.png",
@@ -3175,7 +3175,7 @@
         {
             "ankama_id": 85,
             "name": "Plum and Turquoise Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/85.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/85-200.png",
@@ -3227,7 +3227,7 @@
         {
             "ankama_id": 86,
             "name": "Plum and Orchid Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/86.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/86-200.png",
@@ -3279,7 +3279,7 @@
         {
             "ankama_id": 87,
             "name": "Plum and Crimson Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/87.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/87-200.png",
@@ -3331,7 +3331,7 @@
         {
             "ankama_id": 88,
             "name": "Armoured Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/88.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/88-200.png",
@@ -3422,7 +3422,7 @@
         {
             "ankama_id": 89,
             "name": "Feathered Dragoturkey",
-            "family_name": "Perceptor",
+            "family_name": "Dragoturkey",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/89.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/89-200.png",
@@ -3461,7 +3461,7 @@
         {
             "ankama_id": 90,
             "name": "Orchid Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/90.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/90-200.png",
@@ -3500,7 +3500,7 @@
         {
             "ankama_id": 91,
             "name": "Ebony Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/91.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/91-200.png",
@@ -3539,7 +3539,7 @@
         {
             "ankama_id": 92,
             "name": "Indigo Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/92.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/92-200.png",
@@ -3578,7 +3578,7 @@
         {
             "ankama_id": 93,
             "name": "Crimson Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/93.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/93-200.png",
@@ -3617,7 +3617,7 @@
         {
             "ankama_id": 94,
             "name": "Golden Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/94.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/94-200.png",
@@ -3656,7 +3656,7 @@
         {
             "ankama_id": 95,
             "name": "Ginger Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/95.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/95-200.png",
@@ -3695,7 +3695,7 @@
         {
             "ankama_id": 96,
             "name": "Almond Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/96.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/96-200.png",
@@ -3734,7 +3734,7 @@
         {
             "ankama_id": 97,
             "name": "Ivory Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/97.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/97-200.png",
@@ -3773,7 +3773,7 @@
         {
             "ankama_id": 98,
             "name": "Turquoise Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/98.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/98-200.png",
@@ -3812,7 +3812,7 @@
         {
             "ankama_id": 99,
             "name": "Plum Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/99.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/99-200.png",
@@ -3851,7 +3851,7 @@
         {
             "ankama_id": 100,
             "name": "Emerald Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/100.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/100-200.png",
@@ -3890,7 +3890,7 @@
         {
             "ankama_id": 101,
             "name": "Golden and Crimson Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/101.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/101-200.png",
@@ -3942,7 +3942,7 @@
         {
             "ankama_id": 102,
             "name": "Indigo and Crimson Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/102.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/102-200.png",
@@ -3994,7 +3994,7 @@
         {
             "ankama_id": 103,
             "name": "Ebony and Crimson Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/103.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/103-200.png",
@@ -4046,7 +4046,7 @@
         {
             "ankama_id": 104,
             "name": "Orchid and Crimson Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/104.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/104-200.png",
@@ -4098,7 +4098,7 @@
         {
             "ankama_id": 105,
             "name": "Golden and Orchid Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/105.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/105-200.png",
@@ -4150,7 +4150,7 @@
         {
             "ankama_id": 106,
             "name": "Indigo and Orchid Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/106.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/106-200.png",
@@ -4202,7 +4202,7 @@
         {
             "ankama_id": 107,
             "name": "Ebony and Orchid Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/107.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/107-200.png",
@@ -4254,7 +4254,7 @@
         {
             "ankama_id": 108,
             "name": "Golden and Indigo Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/108.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/108-200.png",
@@ -4306,7 +4306,7 @@
         {
             "ankama_id": 109,
             "name": "Ebony and Indigo Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/109.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/109-200.png",
@@ -4358,7 +4358,7 @@
         {
             "ankama_id": 110,
             "name": "Golden and Ebony Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/110.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/110-200.png",
@@ -4410,7 +4410,7 @@
         {
             "ankama_id": 111,
             "name": "Ginger and Crimson Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/111.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/111-200.png",
@@ -4462,7 +4462,7 @@
         {
             "ankama_id": 112,
             "name": "Ginger and Orchid Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/112.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/112-200.png",
@@ -4514,7 +4514,7 @@
         {
             "ankama_id": 113,
             "name": "Ginger and Indigo Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/113.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/113-200.png",
@@ -4566,7 +4566,7 @@
         {
             "ankama_id": 114,
             "name": "Ginger and Ebony Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/114.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/114-200.png",
@@ -4618,7 +4618,7 @@
         {
             "ankama_id": 115,
             "name": "Ginger and Golden Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/115.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/115-200.png",
@@ -4670,7 +4670,7 @@
         {
             "ankama_id": 116,
             "name": "Ginger and Almond Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/116.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/116-200.png",
@@ -4722,7 +4722,7 @@
         {
             "ankama_id": 117,
             "name": "Crimson and Almond Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/117.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/117-200.png",
@@ -4774,7 +4774,7 @@
         {
             "ankama_id": 118,
             "name": "Orchid and Almond Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/118.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/118-200.png",
@@ -4826,7 +4826,7 @@
         {
             "ankama_id": 119,
             "name": "Indigo and Almond Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/119.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/119-200.png",
@@ -4878,7 +4878,7 @@
         {
             "ankama_id": 120,
             "name": "Ebony and Almond Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/120.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/120-200.png",
@@ -4930,7 +4930,7 @@
         {
             "ankama_id": 121,
             "name": "Golden and Almond Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/121.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/121-200.png",
@@ -4982,7 +4982,7 @@
         {
             "ankama_id": 122,
             "name": "Crimson and Ivory Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/122.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/122-200.png",
@@ -5034,7 +5034,7 @@
         {
             "ankama_id": 123,
             "name": "Orchid and Ivory Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/123.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/123-200.png",
@@ -5086,7 +5086,7 @@
         {
             "ankama_id": 124,
             "name": "Indigo and Ivory Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/124.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/124-200.png",
@@ -5138,7 +5138,7 @@
         {
             "ankama_id": 125,
             "name": "Ebony and Ivory Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/125.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/125-200.png",
@@ -5190,7 +5190,7 @@
         {
             "ankama_id": 126,
             "name": "Golden and Ivory Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/126.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/126-200.png",
@@ -5242,7 +5242,7 @@
         {
             "ankama_id": 127,
             "name": "Ginger and Ivory Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/127.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/127-200.png",
@@ -5294,7 +5294,7 @@
         {
             "ankama_id": 138,
             "name": "Almond and Ivory Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/138.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/138-200.png",
@@ -5346,7 +5346,7 @@
         {
             "ankama_id": 139,
             "name": "Turquoise and Ivory Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/139.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/139-200.png",
@@ -5398,7 +5398,7 @@
         {
             "ankama_id": 140,
             "name": "Turquoise and Crimson Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/140.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/140-200.png",
@@ -5450,7 +5450,7 @@
         {
             "ankama_id": 141,
             "name": "Turquoise and Indigo Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/141.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/141-200.png",
@@ -5502,7 +5502,7 @@
         {
             "ankama_id": 142,
             "name": "Turquoise and Ebony Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/142.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/142-200.png",
@@ -5554,7 +5554,7 @@
         {
             "ankama_id": 143,
             "name": "Turquoise and Ginger Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/143.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/143-200.png",
@@ -5606,7 +5606,7 @@
         {
             "ankama_id": 144,
             "name": "Turquoise and Almond Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/144.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/144-200.png",
@@ -5658,7 +5658,7 @@
         {
             "ankama_id": 145,
             "name": "Turquoise and Golden Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/145.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/145-200.png",
@@ -5710,7 +5710,7 @@
         {
             "ankama_id": 146,
             "name": "Plum and Crimson Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/146.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/146-200.png",
@@ -5762,7 +5762,7 @@
         {
             "ankama_id": 147,
             "name": "Plum and Orchid Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/147.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/147-200.png",
@@ -5814,7 +5814,7 @@
         {
             "ankama_id": 148,
             "name": "Plum and Indigo Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/148.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/148-200.png",
@@ -5866,7 +5866,7 @@
         {
             "ankama_id": 149,
             "name": "Plum and Ebony Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/149.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/149-200.png",
@@ -5918,7 +5918,7 @@
         {
             "ankama_id": 150,
             "name": "Plum and Golden Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/150.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/150-200.png",
@@ -5970,7 +5970,7 @@
         {
             "ankama_id": 151,
             "name": "Plum and Ginger Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/151.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/151-200.png",
@@ -6022,7 +6022,7 @@
         {
             "ankama_id": 152,
             "name": "Plum and Almond Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/152.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/152-200.png",
@@ -6074,7 +6074,7 @@
         {
             "ankama_id": 153,
             "name": "Plum and Ivory Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/153.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/153-200.png",
@@ -6126,7 +6126,7 @@
         {
             "ankama_id": 154,
             "name": "Plum and Turquoise Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/154.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/154-200.png",
@@ -6178,7 +6178,7 @@
         {
             "ankama_id": 155,
             "name": "Plum and Emerald Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/155.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/155-200.png",
@@ -6230,7 +6230,7 @@
         {
             "ankama_id": 156,
             "name": "Crimson and Emerald Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/156.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/156-200.png",
@@ -6282,7 +6282,7 @@
         {
             "ankama_id": 157,
             "name": "Orchid and Emerald Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/157.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/157-200.png",
@@ -6334,7 +6334,7 @@
         {
             "ankama_id": 158,
             "name": "Indigo and Emerald Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/158.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/158-200.png",
@@ -6386,7 +6386,7 @@
         {
             "ankama_id": 159,
             "name": "Ebony and Emerald Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/159.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/159-200.png",
@@ -6438,7 +6438,7 @@
         {
             "ankama_id": 160,
             "name": "Golden and Emerald Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/160.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/160-200.png",
@@ -6490,7 +6490,7 @@
         {
             "ankama_id": 161,
             "name": "Ginger and Emerald Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/161.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/161-200.png",
@@ -6542,7 +6542,7 @@
         {
             "ankama_id": 162,
             "name": "Almond and Emerald Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/162.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/162-200.png",
@@ -6594,7 +6594,7 @@
         {
             "ankama_id": 163,
             "name": "Ivory and Emerald Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/163.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/163-200.png",
@@ -6646,7 +6646,7 @@
         {
             "ankama_id": 164,
             "name": "Turquoise and Emerald Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/164.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/164-200.png",
@@ -6698,7 +6698,7 @@
         {
             "ankama_id": 165,
             "name": "Turquoise and Orchid Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/165.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/165-200.png",
@@ -6750,7 +6750,7 @@
         {
             "ankama_id": 167,
             "name": "Wild Golden Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/167.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/167-200.png",
@@ -6761,7 +6761,7 @@
         {
             "ankama_id": 168,
             "name": "Wild Crimson Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/168.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/168-200.png",
@@ -6787,7 +6787,7 @@
         {
             "ankama_id": 169,
             "name": "Wild Indigo Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/169.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/169-200.png",
@@ -6813,7 +6813,7 @@
         {
             "ankama_id": 170,
             "name": "Wild Ebony Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/170.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/170-200.png",
@@ -6839,7 +6839,7 @@
         {
             "ankama_id": 171,
             "name": "Wild Orchid Seemyool",
-            "family_name": "",
+            "family_name": "Seemyool",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/171.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/171-200.png",
@@ -6865,7 +6865,7 @@
         {
             "ankama_id": 172,
             "name": "Wild Crimson Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/172.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/172-200.png",
@@ -6876,7 +6876,7 @@
         {
             "ankama_id": 173,
             "name": "Wild Orchid Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/173.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/173-200.png",
@@ -6887,7 +6887,7 @@
         {
             "ankama_id": 174,
             "name": "Wild Indigo Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/174.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/174-200.png",
@@ -6898,7 +6898,7 @@
         {
             "ankama_id": 175,
             "name": "Wild Ebony Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/175.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/175-200.png",
@@ -6909,7 +6909,7 @@
         {
             "ankama_id": 176,
             "name": "Indigo Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/176.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/176-200.png",
@@ -6948,7 +6948,7 @@
         {
             "ankama_id": 177,
             "name": "Ebony Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/177.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/177-200.png",
@@ -6987,7 +6987,7 @@
         {
             "ankama_id": 178,
             "name": "Crimson Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/178.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/178-200.png",
@@ -7026,7 +7026,7 @@
         {
             "ankama_id": 179,
             "name": "Orchid Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/179.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/179-200.png",
@@ -7065,7 +7065,7 @@
         {
             "ankama_id": 180,
             "name": "Ginger Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/180.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/180-200.png",
@@ -7104,7 +7104,7 @@
         {
             "ankama_id": 181,
             "name": "Almond Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/181.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/181-200.png",
@@ -7143,7 +7143,7 @@
         {
             "ankama_id": 182,
             "name": "Ivory Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/182.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/182-200.png",
@@ -7182,7 +7182,7 @@
         {
             "ankama_id": 183,
             "name": "Turquoise Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/183.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/183-200.png",
@@ -7221,7 +7221,7 @@
         {
             "ankama_id": 184,
             "name": "Plum Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/184.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/184-200.png",
@@ -7260,7 +7260,7 @@
         {
             "ankama_id": 185,
             "name": "Emerald Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/185.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/185-200.png",
@@ -7299,7 +7299,7 @@
         {
             "ankama_id": 186,
             "name": "Golden Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/186.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/186-200.png",
@@ -7338,7 +7338,7 @@
         {
             "ankama_id": 187,
             "name": "Jade Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/187.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/187-200.png",
@@ -7377,7 +7377,7 @@
         {
             "ankama_id": 188,
             "name": "Ruby Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/188.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/188-200.png",
@@ -7416,7 +7416,7 @@
         {
             "ankama_id": 189,
             "name": "Sapphire Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/189.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/189-200.png",
@@ -7455,7 +7455,7 @@
         {
             "ankama_id": 190,
             "name": "Amethyst Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/190.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/190-200.png",
@@ -7494,7 +7494,7 @@
         {
             "ankama_id": 191,
             "name": "Crimson and Orchid Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/191.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/191-200.png",
@@ -7546,7 +7546,7 @@
         {
             "ankama_id": 192,
             "name": "Crimson and Indigo Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/192.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/192-200.png",
@@ -7598,7 +7598,7 @@
         {
             "ankama_id": 193,
             "name": "Crimson and Ebony Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/193.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/193-200.png",
@@ -7650,7 +7650,7 @@
         {
             "ankama_id": 194,
             "name": "Orchid and Indigo Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/194.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/194-200.png",
@@ -7702,7 +7702,7 @@
         {
             "ankama_id": 195,
             "name": "Orchid and Ebony Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/195.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/195-200.png",
@@ -7754,7 +7754,7 @@
         {
             "ankama_id": 196,
             "name": "Indigo and Ebony Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/196.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/196-200.png",
@@ -7806,7 +7806,7 @@
         {
             "ankama_id": 197,
             "name": "Almond and Crimson Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/197.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/197-200.png",
@@ -7858,7 +7858,7 @@
         {
             "ankama_id": 198,
             "name": "Almond and Orchid Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/198.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/198-200.png",
@@ -7910,7 +7910,7 @@
         {
             "ankama_id": 199,
             "name": "Almond and Indigo Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/199.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/199-200.png",
@@ -7962,7 +7962,7 @@
         {
             "ankama_id": 200,
             "name": "Almond and Ebony Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/200.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/200-200.png",
@@ -8014,7 +8014,7 @@
         {
             "ankama_id": 201,
             "name": "Almond and Ginger Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/201.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/201-200.png",
@@ -8066,7 +8066,7 @@
         {
             "ankama_id": 202,
             "name": "Almond and Ivory Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/202.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/202-200.png",
@@ -8118,7 +8118,7 @@
         {
             "ankama_id": 203,
             "name": "Almond and Turquoise Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/203.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/203-200.png",
@@ -8170,7 +8170,7 @@
         {
             "ankama_id": 204,
             "name": "Ginger and Crimson Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/204.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/204-200.png",
@@ -8222,7 +8222,7 @@
         {
             "ankama_id": 205,
             "name": "Ginger and Orchid Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/205.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/205-200.png",
@@ -8274,7 +8274,7 @@
         {
             "ankama_id": 206,
             "name": "Ginger and Indigo Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/206.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/206-200.png",
@@ -8326,7 +8326,7 @@
         {
             "ankama_id": 207,
             "name": "Ginger and Ebony Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/207.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/207-200.png",
@@ -8378,7 +8378,7 @@
         {
             "ankama_id": 208,
             "name": "Ginger and Ivory Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/208.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/208-200.png",
@@ -8430,7 +8430,7 @@
         {
             "ankama_id": 209,
             "name": "Ginger and Turquoise Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/209.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/209-200.png",
@@ -8482,7 +8482,7 @@
         {
             "ankama_id": 210,
             "name": "Ivory and Crimson Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/210.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/210-200.png",
@@ -8534,7 +8534,7 @@
         {
             "ankama_id": 211,
             "name": "Ivory and Orchid Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/211.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/211-200.png",
@@ -8586,7 +8586,7 @@
         {
             "ankama_id": 212,
             "name": "Ivory and Indigo Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/212.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/212-200.png",
@@ -8638,7 +8638,7 @@
         {
             "ankama_id": 213,
             "name": "Ivory and Ebony Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/213.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/213-200.png",
@@ -8690,7 +8690,7 @@
         {
             "ankama_id": 214,
             "name": "Ivory and Turquoise Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/214.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/214-200.png",
@@ -8742,7 +8742,7 @@
         {
             "ankama_id": 215,
             "name": "Turquoise and Crimson Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/215.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/215-200.png",
@@ -8794,7 +8794,7 @@
         {
             "ankama_id": 216,
             "name": "Turquoise and Orchid Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/216.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/216-200.png",
@@ -8846,7 +8846,7 @@
         {
             "ankama_id": 217,
             "name": "Turquoise and Indigo Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/217.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/217-200.png",
@@ -8898,7 +8898,7 @@
         {
             "ankama_id": 218,
             "name": "Turquoise and Ebony Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/218.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/218-200.png",
@@ -8950,7 +8950,7 @@
         {
             "ankama_id": 219,
             "name": "Plum and Crimson Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/219.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/219-200.png",
@@ -9002,7 +9002,7 @@
         {
             "ankama_id": 220,
             "name": "Plum and Orchid Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/220.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/220-200.png",
@@ -9054,7 +9054,7 @@
         {
             "ankama_id": 221,
             "name": "Plum and Indigo Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/221.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/221-200.png",
@@ -9106,7 +9106,7 @@
         {
             "ankama_id": 222,
             "name": "Plum and Ebony Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/222.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/222-200.png",
@@ -9158,7 +9158,7 @@
         {
             "ankama_id": 223,
             "name": "Plum and Almond Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/223.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/223-200.png",
@@ -9210,7 +9210,7 @@
         {
             "ankama_id": 224,
             "name": "Plum and Turquoise Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/224.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/224-200.png",
@@ -9262,7 +9262,7 @@
         {
             "ankama_id": 225,
             "name": "Plum and Emerald Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/225.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/225-200.png",
@@ -9314,7 +9314,7 @@
         {
             "ankama_id": 226,
             "name": "Emerald and Crimson Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/226.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/226-200.png",
@@ -9366,7 +9366,7 @@
         {
             "ankama_id": 227,
             "name": "Emerald and Orchid Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/227.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/227-200.png",
@@ -9418,7 +9418,7 @@
         {
             "ankama_id": 228,
             "name": "Emerald and Indigo Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/228.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/228-200.png",
@@ -9470,7 +9470,7 @@
         {
             "ankama_id": 229,
             "name": "Emerald and Ebony Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/229.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/229-200.png",
@@ -9522,7 +9522,7 @@
         {
             "ankama_id": 230,
             "name": "Emerald and Almond Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/230.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/230-200.png",
@@ -9574,7 +9574,7 @@
         {
             "ankama_id": 231,
             "name": "Emerald and Ginger Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/231.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/231-200.png",
@@ -9626,7 +9626,7 @@
         {
             "ankama_id": 233,
             "name": "Emerald and Ivory Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/233.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/233-200.png",
@@ -9678,7 +9678,7 @@
         {
             "ankama_id": 234,
             "name": "Emerald and Turquoise Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/234.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/234-200.png",
@@ -9730,7 +9730,7 @@
         {
             "ankama_id": 235,
             "name": "Golden and Crimson Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/235.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/235-200.png",
@@ -9782,7 +9782,7 @@
         {
             "ankama_id": 236,
             "name": "Golden and Orchid Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/236.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/236-200.png",
@@ -9834,7 +9834,7 @@
         {
             "ankama_id": 237,
             "name": "Golden and Indigo Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/237.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/237-200.png",
@@ -9886,7 +9886,7 @@
         {
             "ankama_id": 238,
             "name": "Golden and Ebony Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/238.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/238-200.png",
@@ -9938,7 +9938,7 @@
         {
             "ankama_id": 239,
             "name": "Jade and Crimson Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/239.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/239-200.png",
@@ -9990,7 +9990,7 @@
         {
             "ankama_id": 240,
             "name": "Jade and Orchid Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/240.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/240-200.png",
@@ -10042,7 +10042,7 @@
         {
             "ankama_id": 241,
             "name": "Jade and Indigo Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/241.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/241-200.png",
@@ -10094,7 +10094,7 @@
         {
             "ankama_id": 242,
             "name": "Jade and Ebony Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/242.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/242-200.png",
@@ -10146,7 +10146,7 @@
         {
             "ankama_id": 243,
             "name": "Jade and Almond Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/243.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/243-200.png",
@@ -10198,7 +10198,7 @@
         {
             "ankama_id": 244,
             "name": "Jade and Ginger Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/244.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/244-200.png",
@@ -10250,7 +10250,7 @@
         {
             "ankama_id": 245,
             "name": "Jade and Ivory Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/245.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/245-200.png",
@@ -10302,7 +10302,7 @@
         {
             "ankama_id": 246,
             "name": "Jade and Turquoise Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/246.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/246-200.png",
@@ -10354,7 +10354,7 @@
         {
             "ankama_id": 247,
             "name": "Jade and Plum Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/247.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/247-200.png",
@@ -10406,7 +10406,7 @@
         {
             "ankama_id": 248,
             "name": "Jade and Emerald Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/248.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/248-200.png",
@@ -10458,7 +10458,7 @@
         {
             "ankama_id": 249,
             "name": "Jade and Golden Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/249.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/249-200.png",
@@ -10510,7 +10510,7 @@
         {
             "ankama_id": 250,
             "name": "Jade and Ruby Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/250.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/250-200.png",
@@ -10562,7 +10562,7 @@
         {
             "ankama_id": 251,
             "name": "Jade and Sapphire Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/251.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/251-200.png",
@@ -10614,7 +10614,7 @@
         {
             "ankama_id": 252,
             "name": "Jade and Amethyst Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/252.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/252-200.png",
@@ -10666,7 +10666,7 @@
         {
             "ankama_id": 253,
             "name": "Ruby and Crimson Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/253.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/253-200.png",
@@ -10718,7 +10718,7 @@
         {
             "ankama_id": 254,
             "name": "Ruby and Orchid Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/254.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/254-200.png",
@@ -10770,7 +10770,7 @@
         {
             "ankama_id": 255,
             "name": "Ruby and Indigo Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/255.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/255-200.png",
@@ -10822,7 +10822,7 @@
         {
             "ankama_id": 256,
             "name": "Ruby and Ebony Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/256.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/256-200.png",
@@ -10874,7 +10874,7 @@
         {
             "ankama_id": 257,
             "name": "Ruby and Almond Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/257.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/257-200.png",
@@ -10926,7 +10926,7 @@
         {
             "ankama_id": 258,
             "name": "Ruby and Ginger Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/258.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/258-200.png",
@@ -10978,7 +10978,7 @@
         {
             "ankama_id": 259,
             "name": "Ruby and Ivory Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/259.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/259-200.png",
@@ -11030,7 +11030,7 @@
         {
             "ankama_id": 260,
             "name": "Ruby and Turquoise Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/260.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/260-200.png",
@@ -11082,7 +11082,7 @@
         {
             "ankama_id": 261,
             "name": "Ruby and Plum Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/261.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/261-200.png",
@@ -11134,7 +11134,7 @@
         {
             "ankama_id": 262,
             "name": "Ruby and Emerald Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/262.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/262-200.png",
@@ -11186,7 +11186,7 @@
         {
             "ankama_id": 263,
             "name": "Ruby and Golden Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/263.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/263-200.png",
@@ -11238,7 +11238,7 @@
         {
             "ankama_id": 264,
             "name": "Sapphire and Crimson Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/264.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/264-200.png",
@@ -11290,7 +11290,7 @@
         {
             "ankama_id": 265,
             "name": "Sapphire and Orchid Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/265.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/265-200.png",
@@ -11342,7 +11342,7 @@
         {
             "ankama_id": 266,
             "name": "Sapphire and Indigo Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/266.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/266-200.png",
@@ -11394,7 +11394,7 @@
         {
             "ankama_id": 267,
             "name": "Sapphire and Ebony Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/267.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/267-200.png",
@@ -11446,7 +11446,7 @@
         {
             "ankama_id": 268,
             "name": "Sapphire and Almond Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/268.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/268-200.png",
@@ -11498,7 +11498,7 @@
         {
             "ankama_id": 269,
             "name": "Sapphire and Ginger Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/269.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/269-200.png",
@@ -11550,7 +11550,7 @@
         {
             "ankama_id": 270,
             "name": "Sapphire and Ivory Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/270.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/270-200.png",
@@ -11602,7 +11602,7 @@
         {
             "ankama_id": 271,
             "name": "Sapphire and Turquoise Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/271.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/271-200.png",
@@ -11654,7 +11654,7 @@
         {
             "ankama_id": 272,
             "name": "Sapphire and Plum Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/272.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/272-200.png",
@@ -11706,7 +11706,7 @@
         {
             "ankama_id": 273,
             "name": "Sapphire and Emerald Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/273.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/273-200.png",
@@ -11758,7 +11758,7 @@
         {
             "ankama_id": 274,
             "name": "Sapphire and Golden Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/274.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/274-200.png",
@@ -11810,7 +11810,7 @@
         {
             "ankama_id": 275,
             "name": "Sapphire and Amethyst Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/275.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/275-200.png",
@@ -11862,7 +11862,7 @@
         {
             "ankama_id": 276,
             "name": "Amethyst and Crimson Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/276.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/276-200.png",
@@ -11914,7 +11914,7 @@
         {
             "ankama_id": 277,
             "name": "Amethyst and Orchid Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/277.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/277-200.png",
@@ -11966,7 +11966,7 @@
         {
             "ankama_id": 278,
             "name": "Amethyst and Indigo Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/278.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/278-200.png",
@@ -12018,7 +12018,7 @@
         {
             "ankama_id": 279,
             "name": "Amethyst and Ebony Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/279.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/279-200.png",
@@ -12070,7 +12070,7 @@
         {
             "ankama_id": 280,
             "name": "Amethyst and Almond Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/280.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/280-200.png",
@@ -12122,7 +12122,7 @@
         {
             "ankama_id": 281,
             "name": "Amethyst and Ginger Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/281.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/281-200.png",
@@ -12174,7 +12174,7 @@
         {
             "ankama_id": 282,
             "name": "Amethyst and Ivory Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/282.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/282-200.png",
@@ -12226,7 +12226,7 @@
         {
             "ankama_id": 283,
             "name": "Amethyst and Turquoise Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/283.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/283-200.png",
@@ -12278,7 +12278,7 @@
         {
             "ankama_id": 284,
             "name": "Amethyst and Plum Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/284.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/284-200.png",
@@ -12330,7 +12330,7 @@
         {
             "ankama_id": 285,
             "name": "Amethyst and Emerald Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/285.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/285-200.png",
@@ -12382,7 +12382,7 @@
         {
             "ankama_id": 286,
             "name": "Amethyst and Golden Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/286.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/286-200.png",
@@ -12434,7 +12434,7 @@
         {
             "ankama_id": 287,
             "name": "Plum and Ginger Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/287.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/287-200.png",
@@ -12486,7 +12486,7 @@
         {
             "ankama_id": 288,
             "name": "Plum and Ivory Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/288.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/288-200.png",
@@ -12538,7 +12538,7 @@
         {
             "ankama_id": 289,
             "name": "Ruby and Sapphire Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/289.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/289-200.png",
@@ -12590,7 +12590,7 @@
         {
             "ankama_id": 290,
             "name": "Ruby and Amethyst Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/290.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/290-200.png",
@@ -12642,7 +12642,7 @@
         {
             "ankama_id": 291,
             "name": "Golden and Ginger Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/291.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/291-200.png",
@@ -12694,7 +12694,7 @@
         {
             "ankama_id": 292,
             "name": "Golden and Almond Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/292.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/292-200.png",
@@ -12746,7 +12746,7 @@
         {
             "ankama_id": 293,
             "name": "Golden and Ivory Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/293.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/293-200.png",
@@ -12798,7 +12798,7 @@
         {
             "ankama_id": 294,
             "name": "Golden and Turquoise Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/294.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/294-200.png",
@@ -12850,7 +12850,7 @@
         {
             "ankama_id": 295,
             "name": "Golden and Plum Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/295.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/295-200.png",
@@ -12902,7 +12902,7 @@
         {
             "ankama_id": 296,
             "name": "Golden and Emerald Rhineetle",
-            "family_name": "",
+            "family_name": "Rhineetle",
             "image_urls": {
                 "icon": "https://api.dofusdu.de/dofus2/img/mount/296.png",
                 "sd": "https://api.dofusdu.de/dofus2/img/mount/296-200.png",

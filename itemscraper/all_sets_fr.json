@@ -40622,7 +40622,7 @@
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
                         "ignore_int_min": true,
@@ -40771,7 +40771,7 @@
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
                         "ignore_int_min": true,
@@ -41037,7 +41037,7 @@
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
                         "ignore_int_min": true,
@@ -41079,7 +41079,7 @@
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
                         "ignore_int_min": true,
@@ -41094,7 +41094,7 @@
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
                         "ignore_int_min": true,
@@ -44174,12 +44174,12 @@
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
                         "ignore_int_min": true,
                         "ignore_int_max": true,
-                        "formatted": "Titre : 100"
+                        "formatted": "Titre : 1"
                     }
                 ],
                 [
@@ -44215,12 +44215,12 @@
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
                         "ignore_int_min": true,
                         "ignore_int_max": true,
-                        "formatted": "Titre : 100"
+                        "formatted": "Titre : 1"
                     },
                     {
                         "int_minimum": 10,
@@ -44243,12 +44243,12 @@
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
                         "ignore_int_min": true,
                         "ignore_int_max": true,
-                        "formatted": "Titre : 100"
+                        "formatted": "Titre : 1"
                     },
                     {
                         "int_minimum": 30,
@@ -44310,12 +44310,12 @@
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
                         "ignore_int_min": true,
                         "ignore_int_max": true,
-                        "formatted": "Titre : 100"
+                        "formatted": "Titre : 1"
                     },
                     {
                         "int_minimum": 30,
@@ -69900,80 +69900,80 @@
                         "formatted": "Ajouter un sort temporaire"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 5"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 7"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 3"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 6"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 4"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 2"
                     }
@@ -70019,80 +70019,80 @@
                         "formatted": "Ajouter un sort temporaire"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 5"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 7"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 3"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 6"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 4"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 2"
                     },
@@ -70151,80 +70151,80 @@
                         "formatted": "Ajouter un sort temporaire"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 5"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 7"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 3"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 6"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 4"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 2"
                     },
@@ -70283,80 +70283,80 @@
                         "formatted": "Ajouter un sort temporaire"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 5"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 7"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 3"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 6"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 4"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 2"
                     },
@@ -70428,80 +70428,80 @@
                         "formatted": "Ajouter un sort temporaire"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 5"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 7"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 3"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 6"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 4"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 2"
                     },
@@ -70586,80 +70586,80 @@
                         "formatted": "Ajouter un sort temporaire"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 5"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 7"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 3"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 6"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 4"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 0,
                         "int_maximum": 0,
                         "type": {
                             "name": "Titre :",
                             "id": 35,
-                            "is_meta": false,
+                            "is_meta": true,
                             "is_active": false
                         },
-                        "ignore_int_min": false,
+                        "ignore_int_min": true,
                         "ignore_int_max": true,
                         "formatted": "Titre : 2"
                     },
@@ -84190,6 +84190,20 @@
                 26178,
                 27839,
                 29513
+            ]
+        },
+        {
+            "ankama_id": 834,
+            "name": "Panoplie d'apparat du chasseur de truches",
+            "items": 6,
+            "level": 1,
+            "equipment_ids": [
+                29555,
+                29556,
+                29557,
+                29558,
+                29564,
+                29565
             ]
         }
     ]
