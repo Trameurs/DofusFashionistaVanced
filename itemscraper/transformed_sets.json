@@ -32089,32 +32089,32 @@
                     "Add a temporary spell"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ]
@@ -32136,32 +32136,32 @@
                     "Add a temporary spell"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
@@ -32188,32 +32188,32 @@
                     "Add a temporary spell"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
@@ -32240,32 +32240,32 @@
                     "Add a temporary spell"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
@@ -32297,32 +32297,32 @@
                     "Add a temporary spell"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
@@ -32359,32 +32359,32 @@
                     "Add a temporary spell"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
                 [
-                    1,
+                    null,
                     null,
                     "Title:"
                 ],
@@ -41655,6 +41655,24 @@
             26178,
             27839,
             29513
+        ]
+    },
+    {
+        "ankama_id": 834,
+        "name_en": "Strich Hunter Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du chasseur de truches",
+        "name_es": "Set cosmético de cazador de pestruces",
+        "name_pt": "Conjunto de Aparência do Caçador de Truz",
+        "name_de": "Prunkset des Kamelspatzen-Jägers",
+        "name_it": "[!] Strich Hunter Ceremonial Set",
+        "items": 6,
+        "equipment_ids": [
+            29555,
+            29556,
+            29557,
+            29558,
+            29564,
+            29565
         ]
     }
 ]
