@@ -79,15 +79,10 @@ var constantData = {{ constant_data | safe }};
 var triangleURL = {{ triangle_url | safe }};
 
 function init(data) {
-    if (data.mins && data.mins.mins) {
-        $("#min_AP").val(data.mins.mins["AP"] ? (isNaN(data.mins.mins["AP"]) ? "" : data.mins.mins["AP"]) : "");
-        $("#min_MP").val(data.mins.mins["MP"] ? (isNaN(data.mins.mins["MP"]) ? "" : data.mins.mins["MP"]) : "");
-        $("#min_Range").val(data.mins.mins["Range"] ? (isNaN(data.mins.mins["Range"]) ? "" : data.mins.mins["Range"]) : "");
-    } else {
-        $("#min_AP").val(0);
-        $("#min_MP").val(0);
-        $("#min_Range").val(0);
-    }
+    // Minimums
+    $("#min_AP").val(data.mins.mins["AP"]);
+    $("#min_MP").val(data.mins.mins["MP"]);
+    $("#min_Range").val(data.mins.mins["Range"]);
 }
 
 function lockItem(itemId, slot, char_id) {
