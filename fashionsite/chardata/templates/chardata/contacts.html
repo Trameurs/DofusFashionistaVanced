@@ -6,6 +6,25 @@
 {% block css %}
     <link rel="stylesheet" type="text/css" href="{% static "chardata/forms.css" %}">
     <link rel="stylesheet" type="text/css" href="{% static css_files.forms %}" class="forms-css css-file">
+    <style>
+        .discord-invite-btn {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #7289DA; /* Discord's brand color */
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+    
+        .discord-invite-btn:hover, .discord-invite-btn:focus {
+            background-color: #5b6eae;
+            text-decoration: none;
+            color: #ffffff;
+        }
+    </style>
 {% endblock %}
 
 {% block title %}The Dofus Fashionista: {% trans "Contact us" %}{% endblock %}
@@ -72,6 +91,8 @@
                     data-action='submit'>Submit</button>
             </div>
         </form>
+        <p>Join our Discord for direct support and community discussions:</p>
+        <a href="https://discord.gg/J842fFxU7r" target="_blank" class="discord-invite-btn">Join our Discord!</a>
     </div>
 </td>
 </tr>
