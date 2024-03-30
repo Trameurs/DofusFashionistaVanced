@@ -24,6 +24,12 @@
             text-decoration: none;
             color: #ffffff;
         }
+
+        .discord-logo {
+        margin-right: 8px;
+        height: 20px;
+        width: 20px;
+        }
     </style>
 {% endblock %}
 
@@ -91,8 +97,10 @@
                     data-action='submit'>Submit</button>
             </div>
         </form>
-        <p>Join our Discord for direct support and community discussions:</p>
-        <a href="https://discord.gg/J842fFxU7r" target="_blank" class="discord-invite-btn">Join our Discord!</a>
+        <a href="https://discord.gg/J842fFxU7r" target="_blank" class="discord-invite-btn">
+            <img src="{% static 'fashionsite/chardata/static/chardata/discord.png' %}" alt="Discord" class="discord-logo" />
+            Join our Discord!
+        </a>
     </div>
 </td>
 </tr>
