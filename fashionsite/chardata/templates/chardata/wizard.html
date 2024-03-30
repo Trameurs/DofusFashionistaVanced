@@ -84,9 +84,9 @@ function init(data) {
         $("#min_MP").val(data.mins.mins["MP"] ? (isNaN(data.mins.mins["MP"]) ? "" : data.mins.mins["MP"]) : "");
         $("#min_Range").val(data.mins.mins["Range"] ? (isNaN(data.mins.mins["Range"]) ? "" : data.mins.mins["Range"]) : "");
     } else {
-        $("#min_AP").val("");
-        $("#min_MP").val("");
-        $("#min_Range").val("");
+        $("#min_AP").val(0);
+        $("#min_MP").val(0);
+        $("#min_Range").val(0);
     }
 }
 
