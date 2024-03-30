@@ -115,34 +115,34 @@ function addFixedFields(stat) {
 
 function setStatMin(stat, statValue) {
     var input;
-    if (stat == 'ap') {
-         input = $('input[name=min_ap]');
-    } else if (stat == 'mp') {
-        input = $('input[name=min_mp]');
-    } else if (stat == 'range') {
-        input = $('input[name=min_range]');
-    } else if (stat == 'adv_mins') {
+
+    if (stat === 'adv_mins' && typeof statValue === 'object') {
         $.each(statValue, function(index, value) {
-            input = $('input[name=min_' + index + ']');
-            input.val(value);
+            // Default to 0 if value is not a number
+            var numericValue = isNaN(value) ? 0 : value;
+            $('input[name="min_' + index + '"]').val(numericValue);
         });
         return;
-    } else {
-        var selectThere = $("select option[value='" + stat + "']").filter(":selected");
-        var lineContainer;
-        if (selectThere.length > 0) {
-            lineContainer = selectThere.parent().parent();
-        } else {
-            lineContainer = addFields();
-            var selectOption = lineContainer.find("select option[value='" + stat + "']");
-            selectOption.attr('selected', 'selected');
-        }
-        
-        input = lineContainer.find("input");
     }
-    input.attr('name', 'min_' + stat);
-    input.val(statValue);
-    
+
+    // This accounts for 'ap', 'mp', 'range', and any other stats not explicitly listed
+    input = $('input[name="min_' + stat + '"]');
+
+    if (input.length === 0) { // If the input does not exist, it attempts to handle dynamically added fields
+        var selectThere = $("select option[value='" + stat + "']").filter(":selected");
+        if (selectThere.length > 0) {
+            input = selectThere.closest('tr').find('input');
+        } else {
+            var lineContainer = addFields();
+            var selectOption = lineContainer.find("select option[value='" + stat + "']");
+            selectOption.prop('selected', true); // Use prop instead of attr for boolean attributes
+            input = lineContainer.find("input");
+        }
+    }
+
+    // Validate statValue for non-adv_mins cases. Default to 0 if not a number or not provided.
+    var finalValue = (!isNaN(statValue) && statValue !== '' && statValue !== null) ? statValue : 0;
+    input.val(finalValue);
 }
 
 function hideStatMin(statName) {
@@ -172,15 +172,17 @@ function init(data) {
     $("#form_container").empty();
     $.each(fixedStats, function(index, value) {
         addFixedFields(value);
-     });
+    });
     $.each(advStats, function(index, value) {
         addCompositeMinimums(value);
-     });
-    $.each(data["minimum_stats"], function(stat, stat_value) {
-        if (stat_value !== '') {
-            setStatMin(stat, stat_value);
-        }
     });
+    if (data["minimum_stats"]) { // Check if minimum_stats exists
+        $.each(data["minimum_stats"], function(stat, stat_value) {
+            if (stat_value !== '') {
+                setStatMin(stat, stat_value);
+            }
+        });
+    }
 }
 
 $(document).ready(function() {
