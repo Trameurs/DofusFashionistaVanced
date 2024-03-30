@@ -133,8 +133,20 @@ constantData.inclusions.images_urls);
                    });
         }
     });
-    $("#tailor-set").click(function(){
-        $("#wizard-form").submit()
+    $("#tailor-set").click(function(e) {
+        // Prevent the default action if needed
+        e.preventDefault();
+
+        // Validate and correct inputs
+        $('#main_minimum_stats input[type="number"]').each(function() {
+            var inputVal = $(this).val();
+            if (inputVal === '' || isNaN(inputVal)) {
+                $(this).val('0');
+            }
+        });
+
+        // After validation and correction, submit the form
+        $("#wizard-form").submit();
     });
     var addButton = $("#button-add-weapon");
 
