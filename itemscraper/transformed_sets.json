@@ -21076,14 +21076,9 @@
                     "Critical Hits"
                 ],
                 [
-                    30,
+                    10,
                     null,
-                    "Heals"
-                ],
-                [
-                    15,
-                    null,
-                    "Critical Damage"
+                    "Fire Damage"
                 ],
                 [
                     150,
@@ -21093,49 +21088,12 @@
                 [
                     10,
                     null,
-                    "Fire Damage"
-                ]
-            ],
-            [
+                    "Critical Damage"
+                ],
                 [
                     30,
                     null,
                     "Heals"
-                ],
-                [
-                    50,
-                    null,
-                    "Agility"
-                ],
-                [
-                    1,
-                    null,
-                    "AP"
-                ],
-                [
-                    15,
-                    null,
-                    "Critical Damage"
-                ],
-                [
-                    10,
-                    null,
-                    "Critical Hits"
-                ],
-                [
-                    50,
-                    null,
-                    "Intelligence"
-                ],
-                [
-                    150,
-                    null,
-                    "Vitality"
-                ],
-                [
-                    10,
-                    null,
-                    "Fire Damage"
                 ],
                 [
                     15,
@@ -21143,14 +21101,66 @@
                     "Dodge"
                 ],
                 [
+                    1,
+                    null,
+                    "Range"
+                ]
+            ],
+            [
+                [
+                    1,
+                    null,
+                    "Range"
+                ],
+                [
                     20,
                     null,
                     "Air Damage"
                 ],
                 [
+                    15,
+                    null,
+                    "Dodge"
+                ],
+                [
+                    10,
+                    null,
+                    "Fire Damage"
+                ],
+                [
+                    150,
+                    null,
+                    "Vitality"
+                ],
+                [
+                    50,
+                    null,
+                    "Intelligence"
+                ],
+                [
+                    8,
+                    null,
+                    "Critical Hits"
+                ],
+                [
+                    10,
+                    null,
+                    "Critical Damage"
+                ],
+                [
                     1,
                     null,
-                    "Range"
+                    "AP"
+                ],
+                [
+                    50,
+                    null,
+                    "Agility"
+                ],
+                [
+                    30,
+                    null,
+                    "Heals"
                 ]
             ]
         ],
@@ -24260,44 +24270,9 @@
                     "Intelligence"
                 ],
                 [
-                    15,
-                    null,
-                    "Water Damage"
-                ],
-                [
-                    15,
-                    null,
-                    "Fire Damage"
-                ],
-                [
-                    15,
-                    null,
-                    "Earth Damage"
-                ],
-                [
-                    15,
-                    null,
-                    "Neutral Damage"
-                ],
-                [
-                    1,
-                    null,
-                    "Range"
-                ],
-                [
-                    15,
-                    null,
-                    "Dodge"
-                ],
-                [
-                    30,
-                    null,
-                    "Chance"
-                ],
-                [
                     6,
                     null,
-                    "% Earth Resist"
+                    "% Water Resist"
                 ],
                 [
                     6,
@@ -24307,29 +24282,84 @@
                 [
                     6,
                     null,
-                    "% Water Resist"
-                ]
-            ],
-            [
+                    "% Earth Resist"
+                ],
                 [
-                    15,
+                    30,
                     null,
-                    "Water Damage"
+                    "Chance"
                 ],
                 [
                     15,
                     null,
-                    "Fire Damage"
+                    "Dodge"
                 ],
                 [
-                    15,
+                    1,
+                    null,
+                    "Range"
+                ],
+                [
+                    10,
+                    null,
+                    "Neutral Damage"
+                ],
+                [
+                    10,
                     null,
                     "Earth Damage"
                 ],
                 [
+                    10,
+                    null,
+                    "Fire Damage"
+                ],
+                [
+                    10,
+                    null,
+                    "Water Damage"
+                ]
+            ],
+            [
+                [
+                    6,
+                    null,
+                    "% Water Resist"
+                ],
+                [
+                    6,
+                    null,
+                    "% Fire Resist"
+                ],
+                [
+                    6,
+                    null,
+                    "% Earth Resist"
+                ],
+                [
+                    60,
+                    null,
+                    "Strength"
+                ],
+                [
+                    60,
+                    null,
+                    "Intelligence"
+                ],
+                [
+                    60,
+                    null,
+                    "Chance"
+                ],
+                [
                     15,
                     null,
-                    "Neutral Damage"
+                    "Dodge"
+                ],
+                [
+                    1,
+                    null,
+                    "Range"
                 ],
                 [
                     1,
@@ -24337,44 +24367,24 @@
                     "AP"
                 ],
                 [
-                    1,
+                    10,
                     null,
-                    "Range"
+                    "Neutral Damage"
                 ],
                 [
-                    15,
+                    10,
                     null,
-                    "Dodge"
+                    "Earth Damage"
                 ],
                 [
-                    30,
+                    10,
                     null,
-                    "Chance"
+                    "Fire Damage"
                 ],
                 [
-                    30,
+                    10,
                     null,
-                    "Intelligence"
-                ],
-                [
-                    30,
-                    null,
-                    "Strength"
-                ],
-                [
-                    6,
-                    null,
-                    "% Earth Resist"
-                ],
-                [
-                    6,
-                    null,
-                    "% Fire Resist"
-                ],
-                [
-                    6,
-                    null,
-                    "% Water Resist"
+                    "Water Damage"
                 ]
             ]
         ],
@@ -24406,19 +24416,29 @@
                     "Agility"
                 ],
                 [
-                    15,
+                    10,
                     null,
-                    "Air Damage"
+                    "% Water Resist"
                 ],
                 [
-                    15,
+                    800,
                     null,
-                    "Earth Damage"
+                    "Initiative"
                 ],
                 [
-                    15,
+                    20,
                     null,
-                    "Neutral Damage"
+                    "Critical Resist"
+                ],
+                [
+                    10,
+                    null,
+                    "AP Loss Resist"
+                ],
+                [
+                    10,
+                    null,
+                    "MP Reduction"
                 ],
                 [
                     1,
@@ -24428,12 +24448,29 @@
                 [
                     10,
                     null,
-                    "MP Reduction"
+                    "Neutral Damage"
                 ],
                 [
                     10,
                     null,
-                    "AP Loss Resist"
+                    "Earth Damage"
+                ],
+                [
+                    10,
+                    null,
+                    "Air Damage"
+                ]
+            ],
+            [
+                [
+                    10,
+                    null,
+                    "% Water Resist"
+                ],
+                [
+                    800,
+                    null,
+                    "Initiative"
                 ],
                 [
                     20,
@@ -24441,31 +24478,29 @@
                     "Critical Resist"
                 ],
                 [
-                    1000,
+                    10,
                     null,
-                    "Initiative"
+                    "AP Loss Resist"
                 ],
                 [
                     10,
                     null,
-                    "% Water Resist"
-                ]
-            ],
-            [
-                [
-                    15,
-                    null,
-                    "Air Damage"
+                    "MP Reduction"
                 ],
                 [
-                    15,
+                    80,
                     null,
-                    "Earth Damage"
+                    "Strength"
                 ],
                 [
-                    15,
+                    80,
                     null,
-                    "Neutral Damage"
+                    "Agility"
+                ],
+                [
+                    1,
+                    null,
+                    "Range"
                 ],
                 [
                     1,
@@ -24473,44 +24508,19 @@
                     "AP"
                 ],
                 [
-                    1,
+                    10,
                     null,
-                    "Range"
-                ],
-                [
-                    40,
-                    null,
-                    "Agility"
-                ],
-                [
-                    40,
-                    null,
-                    "Strength"
+                    "Neutral Damage"
                 ],
                 [
                     10,
                     null,
-                    "MP Reduction"
+                    "Earth Damage"
                 ],
                 [
                     10,
                     null,
-                    "AP Loss Resist"
-                ],
-                [
-                    20,
-                    null,
-                    "Critical Resist"
-                ],
-                [
-                    1000,
-                    null,
-                    "Initiative"
-                ],
-                [
-                    10,
-                    null,
-                    "% Water Resist"
+                    "Air Damage"
                 ]
             ]
         ],
@@ -28431,9 +28441,24 @@
                     "Agility"
                 ],
                 [
+                    30,
+                    null,
+                    "Chance"
+                ],
+                [
+                    10,
+                    null,
+                    "AP Reduction"
+                ],
+                [
+                    15,
+                    null,
+                    "Critical Damage"
+                ],
+                [
                     7,
                     null,
-                    "% Air Resist"
+                    "% Fire Resist"
                 ],
                 [
                     7,
@@ -28443,59 +28468,14 @@
                 [
                     7,
                     null,
-                    "% Fire Resist"
-                ],
-                [
-                    20,
-                    null,
-                    "Critical Damage"
-                ],
-                [
-                    10,
-                    null,
-                    "AP Reduction"
-                ],
-                [
-                    30,
-                    null,
-                    "Chance"
+                    "% Air Resist"
                 ]
             ],
             [
                 [
-                    7,
-                    null,
-                    "% Air Resist"
-                ],
-                [
-                    7,
-                    null,
-                    "% Water Resist"
-                ],
-                [
-                    7,
-                    null,
-                    "% Fire Resist"
-                ],
-                [
-                    1,
-                    null,
-                    "AP"
-                ],
-                [
-                    20,
-                    null,
-                    "Critical Damage"
-                ],
-                [
-                    10,
-                    null,
-                    "AP Reduction"
-                ],
-                [
                     60,
                     null,
-                    "Chance"
+                    "Intelligence"
                 ],
                 [
                     60,
@@ -28505,7 +28485,37 @@
                 [
                     60,
                     null,
-                    "Intelligence"
+                    "Chance"
+                ],
+                [
+                    10,
+                    null,
+                    "AP Reduction"
+                ],
+                [
+                    15,
+                    null,
+                    "Critical Damage"
+                ],
+                [
+                    1,
+                    null,
+                    "AP"
+                ],
+                [
+                    7,
+                    null,
+                    "% Fire Resist"
+                ],
+                [
+                    7,
+                    null,
+                    "% Water Resist"
+                ],
+                [
+                    7,
+                    null,
+                    "% Air Resist"
                 ]
             ]
         ],
@@ -31425,24 +31435,9 @@
                     "Lock"
                 ],
                 [
-                    80,
+                    40,
                     null,
-                    "Pushback Resist"
-                ],
-                [
-                    10,
-                    null,
-                    "% Earth Resist"
-                ],
-                [
-                    15,
-                    null,
-                    "% Fire Resist"
-                ],
-                [
-                    15,
-                    null,
-                    "MP Reduction"
+                    "Intelligence"
                 ],
                 [
                     40,
@@ -31450,16 +31445,14 @@
                     "Strength"
                 ],
                 [
-                    40,
+                    15,
                     null,
-                    "Intelligence"
-                ]
-            ],
-            [
+                    "MP Reduction"
+                ],
                 [
-                    80,
+                    10,
                     null,
-                    "Pushback Resist"
+                    "% Fire Resist"
                 ],
                 [
                     10,
@@ -31467,24 +31460,21 @@
                     "% Earth Resist"
                 ],
                 [
-                    15,
+                    80,
                     null,
-                    "% Fire Resist"
+                    "Pushback Resist"
+                ]
+            ],
+            [
+                [
+                    40,
+                    null,
+                    "Intelligence"
                 ],
                 [
-                    1,
+                    40,
                     null,
-                    "AP"
-                ],
-                [
-                    15,
-                    null,
-                    "MP Reduction"
-                ],
-                [
-                    20,
-                    null,
-                    "Lock"
+                    "Strength"
                 ],
                 [
                     50,
@@ -31492,14 +31482,34 @@
                     "Heals"
                 ],
                 [
-                    40,
+                    20,
                     null,
-                    "Strength"
+                    "Lock"
                 ],
                 [
-                    40,
+                    15,
                     null,
-                    "Intelligence"
+                    "MP Reduction"
+                ],
+                [
+                    1,
+                    null,
+                    "AP"
+                ],
+                [
+                    10,
+                    null,
+                    "% Fire Resist"
+                ],
+                [
+                    10,
+                    null,
+                    "% Earth Resist"
+                ],
+                [
+                    80,
+                    null,
+                    "Pushback Resist"
                 ]
             ]
         ],
@@ -31703,29 +31713,9 @@
                     "Strength"
                 ],
                 [
-                    10,
+                    25,
                     null,
-                    "% Fire Resist"
-                ],
-                [
-                    15,
-                    null,
-                    "Water Damage"
-                ],
-                [
-                    15,
-                    null,
-                    "Earth Damage"
-                ],
-                [
-                    15,
-                    null,
-                    "Neutral Damage"
-                ],
-                [
-                    40,
-                    null,
-                    "Chance"
+                    "Critical Resist"
                 ],
                 [
                     25,
@@ -31733,36 +31723,36 @@
                     "Lock"
                 ],
                 [
-                    30,
+                    40,
                     null,
-                    "Critical Resist"
-                ]
-            ],
-            [
+                    "Chance"
+                ],
                 [
                     10,
                     null,
                     "% Fire Resist"
+                ]
+            ],
+            [
+                [
+                    25,
+                    null,
+                    "Critical Resist"
                 ],
                 [
-                    15,
+                    25,
                     null,
-                    "Water Damage"
+                    "Lock"
                 ],
                 [
-                    15,
+                    80,
                     null,
-                    "Earth Damage"
+                    "Chance"
                 ],
                 [
-                    15,
+                    80,
                     null,
-                    "Neutral Damage"
-                ],
-                [
-                    150,
-                    null,
-                    "Vitality"
+                    "Strength"
                 ],
                 [
                     1,
@@ -31770,24 +31760,14 @@
                     "AP"
                 ],
                 [
-                    40,
+                    150,
                     null,
-                    "Strength"
+                    "Vitality"
                 ],
                 [
-                    40,
+                    10,
                     null,
-                    "Chance"
-                ],
-                [
-                    25,
-                    null,
-                    "Lock"
-                ],
-                [
-                    30,
-                    null,
-                    "Critical Resist"
+                    "% Fire Resist"
                 ]
             ]
         ],
@@ -36370,29 +36350,9 @@
                     "Critical Hits"
                 ],
                 [
-                    15,
+                    10,
                     null,
-                    "Earth Damage"
-                ],
-                [
-                    -300,
-                    null,
-                    "Neutral Damage"
-                ],
-                [
-                    15,
-                    null,
-                    "Air Damage"
-                ],
-                [
-                    15,
-                    null,
-                    "Water Damage"
-                ],
-                [
-                    15,
-                    null,
-                    "Fire Damage"
+                    "Critical Resist"
                 ],
                 [
                     30,
@@ -36402,24 +36362,54 @@
                 [
                     10,
                     null,
-                    "Critical Resist"
+                    "Fire Damage"
+                ],
+                [
+                    10,
+                    null,
+                    "Water Damage"
+                ],
+                [
+                    10,
+                    null,
+                    "Air Damage"
+                ],
+                [
+                    -300,
+                    null,
+                    "Neutral Damage"
+                ],
+                [
+                    10,
+                    null,
+                    "Earth Damage"
                 ]
             ],
             [
                 [
-                    1,
+                    -30,
                     null,
-                    "AP"
-                ],
-                [
-                    -300,
-                    null,
-                    "Neutral Damage"
+                    "Critical Hits"
                 ],
                 [
                     15,
                     null,
-                    "Air Damage"
+                    "Earth Damage"
+                ],
+                [
+                    10,
+                    null,
+                    "Critical Resist"
+                ],
+                [
+                    30,
+                    null,
+                    "Power"
+                ],
+                [
+                    15,
+                    null,
+                    "Fire Damage"
                 ],
                 [
                     15,
@@ -36429,27 +36419,17 @@
                 [
                     15,
                     null,
-                    "Fire Damage"
+                    "Air Damage"
                 ],
                 [
-                    30,
+                    -300,
                     null,
-                    "Power"
+                    "Neutral Damage"
                 ],
                 [
-                    10,
+                    1,
                     null,
-                    "Critical Resist"
-                ],
-                [
-                    15,
-                    null,
-                    "Earth Damage"
-                ],
-                [
-                    -30,
-                    null,
-                    "Critical Hits"
+                    "AP"
                 ]
             ]
         ],
@@ -40802,10 +40782,12 @@
         "name_pt": "Conjunto de Aparência de Pão Satrício",
         "name_de": "Hassang Trapicks Prunkset",
         "name_it": "[!] Saint Potrick Ceremonial Set",
-        "items": 2,
+        "items": 4,
         "equipment_ids": [
             9120,
-            9121
+            9121,
+            29723,
+            29724
         ]
     },
     {
@@ -40982,6 +40964,20 @@
         ]
     },
     {
+        "ankama_id": 787,
+        "name_en": "Vader Ceremonial Set",
+        "name_fr": "Panoplie d'apparat Vader",
+        "name_es": "Set cosmético Vader",
+        "name_pt": "Conjunto de Aparência Vader",
+        "name_de": "Vader-Prunkset",
+        "name_it": "[!] Vader Ceremonial Set",
+        "items": 2,
+        "equipment_ids": [
+            9936,
+            9938
+        ]
+    },
+    {
         "ankama_id": 788,
         "name_en": "Bearendizer Ceremonial Set",
         "name_fr": "Panoplie d'apparat de Glourdorak",
@@ -41056,6 +41052,20 @@
         ]
     },
     {
+        "ankama_id": 793,
+        "name_en": "Kwismas Tree Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Sapin de Nowel",
+        "name_es": "Set cosmético de abeto de Nawidad",
+        "name_pt": "Conjunto de Aparência da Árvore de Nataw",
+        "name_de": "Weißnachtsbaum-Prunkset",
+        "name_it": "[!] Kwismas Tree Ceremonial Set",
+        "items": 2,
+        "equipment_ids": [
+            17454,
+            17455
+        ]
+    },
+    {
         "ankama_id": 794,
         "name_en": "Shadow Ceremonial Set",
         "name_fr": "Panoplie d'apparat d'Ombre",
@@ -41067,6 +41077,20 @@
         "equipment_ids": [
             14305,
             14423
+        ]
+    },
+    {
+        "ankama_id": 795,
+        "name_en": "Chaplin Ceremonial Set",
+        "name_fr": "Panoplie d'apparat Chaplin",
+        "name_es": "Set cosmético Chaplin",
+        "name_pt": "Conjunto de Aparência Chaplin",
+        "name_de": "Chaplin-Prunkset",
+        "name_it": "[!] Chaplin Ceremonial Set",
+        "items": 2,
+        "equipment_ids": [
+            9937,
+            9939
         ]
     },
     {
@@ -41673,6 +41697,116 @@
             29558,
             29564,
             29565
+        ]
+    },
+    {
+        "ankama_id": 835,
+        "name_en": "Stingy Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du radin",
+        "name_es": "Set cosmético de rácano",
+        "name_pt": "Conjunto de Aparência do Sovina",
+        "name_de": "Prunkset des Geizkragens",
+        "name_it": "[!] Stingy Ceremonial Set",
+        "items": 3,
+        "equipment_ids": [
+            29562,
+            29571,
+            29573
+        ]
+    },
+    {
+        "ankama_id": 836,
+        "name_en": "Dragon Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Dragon",
+        "name_es": "Set cosmético de dragón",
+        "name_pt": "Conjunto de Aparência do Dragão",
+        "name_de": "Prunkset des Drachen",
+        "name_it": "[!] Dragon Ceremonial Set",
+        "items": 6,
+        "equipment_ids": [
+            29572,
+            29639,
+            29640,
+            29641,
+            29642,
+            29643
+        ]
+    },
+    {
+        "ankama_id": 837,
+        "name_en": "Ström Ceremonial Set",
+        "name_fr": "Panoplie d'apparat Ström",
+        "name_es": "Set cosmético Ström",
+        "name_pt": "Conjunto de Aparência Ström",
+        "name_de": "Ström-Prunkset",
+        "name_it": "[!] Ström Ceremonial Set",
+        "items": 2,
+        "equipment_ids": [
+            29646,
+            29647
+        ]
+    },
+    {
+        "ankama_id": 838,
+        "name_en": "Wikkan Warrior Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Guerrier Wikkan",
+        "name_es": "Set cosmético de guerrero Wikkan",
+        "name_pt": "Conjunto de Aparência do Guerreiro Wikkan",
+        "name_de": "Prunkset des Wikkan-Kriegers",
+        "name_it": "[!] Wikkan Warrior Ceremonial Set",
+        "items": 4,
+        "equipment_ids": [
+            29743,
+            29744,
+            29745,
+            29746
+        ]
+    },
+    {
+        "ankama_id": 839,
+        "name_en": "Wikkan War Chief Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Chef de Guerre Wikkan",
+        "name_es": "Set cosmético de jefe de guerra Wikkan",
+        "name_pt": "Conjunto de Aparência do Chefe de Guerra Wikkan",
+        "name_de": "Prunkset des Wikkan-Kriegsherren",
+        "name_it": "[!] Wikkan War Chief Ceremonial Set",
+        "items": 4,
+        "equipment_ids": [
+            29747,
+            29748,
+            29749,
+            29750
+        ]
+    },
+    {
+        "ankama_id": 840,
+        "name_en": "Cursed Shadow Ceremonial Set",
+        "name_fr": "Panoplie d'apparat de l'Ombre Maudite",
+        "name_es": "Set cosmético de la Sombra Maldita",
+        "name_pt": "Conjunto de Aparência de Sombra Maldita",
+        "name_de": "Prunkset des Verfluchten Schattens",
+        "name_it": "[!] Cursed Shadow Ceremonial Set",
+        "items": 5,
+        "equipment_ids": [
+            29731,
+            29732,
+            29733,
+            29734,
+            30021
+        ]
+    },
+    {
+        "ankama_id": 842,
+        "name_en": "Eliatrope King Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Roi Eliatrope",
+        "name_es": "Set cosmético de rey selatrop",
+        "name_pt": "Conjunto de Aparência do Rei Eliatrope",
+        "name_de": "Prunkset des Eliatropen-Königs",
+        "name_it": "[!] Eliatrope King Ceremonial Set",
+        "items": 2,
+        "equipment_ids": [
+            30047,
+            30048
         ]
     }
 ]
