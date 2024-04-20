@@ -105,7 +105,7 @@ run_fashionista.bat
     🚧 30% Deutsche (only items done)           
     🚧 30% Italian (only items done)           
 ✅ All equipments and mounts updated to Dofus 2.71          
-❌ Add ability to forbid prysmaradite 
+❌ Add ability to forbid prysmaradite       
 ❌ Make it mobile friendly             
 ❌ Bug fixes and improvement before 1.0 release           
 ❌ New features after 1.0 TBD         
