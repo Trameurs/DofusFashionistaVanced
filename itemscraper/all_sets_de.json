@@ -89907,6 +89907,19 @@
             ]
         },
         {
+            "ankama_id": 841,
+            "name": "[!] Panoplie d'apparat du Trankilou Argenté",
+            "items": 5,
+            "level": 60,
+            "equipment_ids": [
+                29755,
+                29756,
+                29757,
+                29758,
+                29759
+            ]
+        },
+        {
             "ankama_id": 842,
             "name": "Prunkset des Eliatropen-Königs",
             "items": 2,
@@ -89914,6 +89927,32 @@
             "equipment_ids": [
                 30047,
                 30048
+            ]
+        },
+        {
+            "ankama_id": 843,
+            "name": "[!] Panoplie d'apparat de Chevalier Noir",
+            "items": 5,
+            "level": 60,
+            "equipment_ids": [
+                30061,
+                30062,
+                30063,
+                30064,
+                30066
+            ]
+        },
+        {
+            "ankama_id": 846,
+            "name": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
+            "items": 5,
+            "level": 1,
+            "equipment_ids": [
+                30022,
+                30023,
+                30024,
+                30025,
+                30029
             ]
         }
     ]

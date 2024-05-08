@@ -37604,7 +37604,7 @@
     {
         "ankama_id": 569,
         "name_en": "Az'Hassin Ceremonial Set",
-        "name_fr": "Panoplie d'apparat  Az'Hassin",
+        "name_fr": "Panoplie d'apparat Az'Hassin",
         "name_es": "Set cosmético As'hesino",
         "name_pt": "Conjunto de Aparência Az'Hassino",
         "name_de": "Ass'Azin-Prunkset",
@@ -39290,7 +39290,7 @@
     {
         "ankama_id": 672,
         "name_en": "Chtiger Ceremonial Set",
-        "name_fr": "Panoplie d'apparat  du Chtigre",
+        "name_fr": "Panoplie d'apparat du Chtigre",
         "name_es": "Set cosmético del chtigre",
         "name_pt": "Conjunto de Aparência do Tigraxé",
         "name_de": "Prunkset des Tiguars",
@@ -41796,6 +41796,23 @@
         ]
     },
     {
+        "ankama_id": 841,
+        "name_en": "[!] Panoplie d'apparat du Trankilou Argenté",
+        "name_fr": "Panoplie d'apparat du Trankilou Argenté",
+        "name_es": "Set del Trankilobo Plateado",
+        "name_pt": "[!] Panoplie d'apparat du Trankilou Argenté",
+        "name_de": "[!] Panoplie d'apparat du Trankilou Argenté",
+        "name_it": "[!] Panoplie d'apparat du Trankilou Argenté",
+        "items": 5,
+        "equipment_ids": [
+            29755,
+            29756,
+            29757,
+            29758,
+            29759
+        ]
+    },
+    {
         "ankama_id": 842,
         "name_en": "Eliatrope King Ceremonial Set",
         "name_fr": "Panoplie d'apparat du Roi Eliatrope",
@@ -41807,6 +41824,40 @@
         "equipment_ids": [
             30047,
             30048
+        ]
+    },
+    {
+        "ankama_id": 843,
+        "name_en": "[!] Panoplie d'apparat de Chevalier Noir",
+        "name_fr": "Panoplie d'apparat de Chevalier Noir",
+        "name_es": "[!] Panoplie d'apparat de Chevalier Noir",
+        "name_pt": "[!] Panoplie d'apparat de Chevalier Noir",
+        "name_de": "[!] Panoplie d'apparat de Chevalier Noir",
+        "name_it": "[!] Panoplie d'apparat de Chevalier Noir",
+        "items": 5,
+        "equipment_ids": [
+            30061,
+            30062,
+            30063,
+            30064,
+            30066
+        ]
+    },
+    {
+        "ankama_id": 846,
+        "name_en": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
+        "name_fr": "Panoplie d'apparat de l'Exécuteur Miséreux",
+        "name_es": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
+        "name_pt": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
+        "name_de": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
+        "name_it": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
+        "items": 5,
+        "equipment_ids": [
+            30022,
+            30023,
+            30024,
+            30025,
+            30029
         ]
     }
 ]
