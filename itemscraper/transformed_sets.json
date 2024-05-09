@@ -41859,5 +41859,23 @@
             30025,
             30029
         ]
+    },
+    {
+        "ankama_id": 848,
+        "name_en": "[!] Panoplie d'apparat de la Flamme Bleue",
+        "name_fr": "Panoplie d'apparat de la Flamme Bleue",
+        "name_es": "[!] Panoplie d'apparat de la Flamme Bleue",
+        "name_pt": "[!] Panoplie d'apparat de la Flamme Bleue",
+        "name_de": "[!] Panoplie d'apparat de la Flamme Bleue",
+        "name_it": "[!] Panoplie d'apparat de la Flamme Bleue",
+        "items": 6,
+        "equipment_ids": [
+            30081,
+            30082,
+            30083,
+            30084,
+            30085,
+            30086
+        ]
     }
 ]
