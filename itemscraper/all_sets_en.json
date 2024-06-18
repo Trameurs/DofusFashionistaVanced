@@ -57268,76 +57268,6 @@
                         "item_combination": 2
                     },
                     {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "% Water Resistance",
-                            "id": 17,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10% Water Resistance",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 800,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Initiative",
-                            "id": 24,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "800 Initiative",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 20,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Critical Resistance",
-                            "id": 46,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "20 Critical Resistance",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "AP Parry",
-                            "id": 75,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 AP Parry",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "MP Reduction",
-                            "id": 50,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 MP Reduction",
-                        "item_combination": 2
-                    },
-                    {
                         "int_minimum": 1,
                         "int_maximum": 0,
                         "type": {
@@ -57355,87 +57285,15 @@
                         "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Neutral Damage",
-                            "id": 49,
+                            "name": "MP Reduction",
+                            "id": 50,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 Neutral Damage",
+                        "formatted": "10 MP Reduction",
                         "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Earth Damage",
-                            "id": 48,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 Earth Damage",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Air Damage",
-                            "id": 47,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 Air Damage",
-                        "item_combination": 2
-                    }
-                ],
-                [
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "% Water Resistance",
-                            "id": 17,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10% Water Resistance",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 800,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Initiative",
-                            "id": 24,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "800 Initiative",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 20,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Critical Resistance",
-                            "id": 46,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "20 Critical Resistance",
-                        "item_combination": 3
                     },
                     {
                         "int_minimum": 10,
@@ -57449,34 +57307,78 @@
                         "ignore_int_min": false,
                         "ignore_int_max": true,
                         "formatted": "10 AP Parry",
-                        "item_combination": 3
+                        "item_combination": 2
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Critical Resistance",
+                            "id": 46,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 Critical Resistance",
+                        "item_combination": 2
+                    },
+                    {
+                        "int_minimum": 800,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Initiative",
+                            "id": 24,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "800 Initiative",
+                        "item_combination": 2
                     },
                     {
                         "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "MP Reduction",
-                            "id": 50,
+                            "name": "% Water Resistance",
+                            "id": 17,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 MP Reduction",
+                        "formatted": "10% Water Resistance",
+                        "item_combination": 2
+                    }
+                ],
+                [
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "AP",
+                            "id": 12,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 AP",
                         "item_combination": 3
                     },
                     {
-                        "int_minimum": 80,
+                        "int_minimum": 1,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Strength",
-                            "id": 45,
+                            "name": "Range",
+                            "id": 31,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "80 Strength",
+                        "formatted": "1 Range",
                         "item_combination": 3
                     },
                     {
@@ -57494,73 +57396,87 @@
                         "item_combination": 3
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 80,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Range",
-                            "id": 31,
+                            "name": "Strength",
+                            "id": 45,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "1 Range",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 1,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "AP",
-                            "id": 12,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "1 AP",
+                        "formatted": "80 Strength",
                         "item_combination": 3
                     },
                     {
                         "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Neutral Damage",
-                            "id": 49,
+                            "name": "MP Reduction",
+                            "id": 50,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 Neutral Damage",
+                        "formatted": "10 MP Reduction",
                         "item_combination": 3
                     },
                     {
                         "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Earth Damage",
-                            "id": 48,
+                            "name": "AP Parry",
+                            "id": 75,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 Earth Damage",
+                        "formatted": "10 AP Parry",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Critical Resistance",
+                            "id": 46,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 Critical Resistance",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 800,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Initiative",
+                            "id": 24,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "800 Initiative",
                         "item_combination": 3
                     },
                     {
                         "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Air Damage",
-                            "id": 47,
+                            "name": "% Water Resistance",
+                            "id": 17,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 Air Damage",
+                        "formatted": "10% Water Resistance",
                         "item_combination": 3
                     }
                 ]
@@ -70904,7 +70820,7 @@
             "effects": [
                 [
                     {
-                        "int_minimum": 40,
+                        "int_minimum": 20,
                         "int_maximum": 0,
                         "type": {
                             "name": "Critical Resistance",
@@ -70914,7 +70830,7 @@
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "40 Critical Resistance",
+                        "formatted": "20 Critical Resistance",
                         "item_combination": 2
                     },
                     {
@@ -70935,14 +70851,14 @@
                         "int_minimum": 40,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Chance",
-                            "id": 22,
+                            "name": "Strength",
+                            "id": 45,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "40 Chance",
+                        "formatted": "40 Strength",
                         "item_combination": 2
                     },
                     {
@@ -70963,22 +70879,6 @@
                         "int_minimum": 40,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Strength",
-                            "id": 45,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "40 Strength",
-                        "item_combination": 2
-                    }
-                ],
-                [
-                    {
-                        "int_minimum": 80,
-                        "int_maximum": 0,
-                        "type": {
                             "name": "Chance",
                             "id": 22,
                             "is_meta": false,
@@ -70986,7 +70886,65 @@
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "80 Chance",
+                        "formatted": "40 Chance",
+                        "item_combination": 2
+                    }
+                ],
+                [
+                    {
+                        "int_minimum": 20,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Critical Resistance",
+                            "id": 46,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "20 Critical Resistance",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "AP",
+                            "id": 12,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 AP",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 25,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "AP Parry",
+                            "id": 75,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "25 AP Parry",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 80,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Strength",
+                            "id": 45,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "80 Strength",
                         "item_combination": 3
                     },
                     {
@@ -71007,56 +70965,14 @@
                         "int_minimum": 80,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Strength",
-                            "id": 45,
+                            "name": "Chance",
+                            "id": 22,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "80 Strength",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 25,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "AP Parry",
-                            "id": 75,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "25 AP Parry",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 1,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "AP",
-                            "id": 12,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "1 AP",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 40,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Critical Resistance",
-                            "id": 46,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "40 Critical Resistance",
+                        "formatted": "80 Chance",
                         "item_combination": 3
                     }
                 ]
@@ -73867,31 +73783,17 @@
                         "item_combination": 2
                     },
                     {
-                        "int_minimum": 25,
+                        "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Critical Resistance",
-                            "id": 46,
+                            "name": "% Fire Resistance",
+                            "id": 37,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "25 Critical Resistance",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 25,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Lock",
-                            "id": 26,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "25 Lock",
+                        "formatted": "10% Fire Resistance",
                         "item_combination": 2
                     },
                     {
@@ -73909,36 +73811,6 @@
                         "item_combination": 2
                     },
                     {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "% Fire Resistance",
-                            "id": 37,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10% Fire Resistance",
-                        "item_combination": 2
-                    }
-                ],
-                [
-                    {
-                        "int_minimum": 25,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Critical Resistance",
-                            "id": 46,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "25 Critical Resistance",
-                        "item_combination": 3
-                    },
-                    {
                         "int_minimum": 25,
                         "int_maximum": 0,
                         "type": {
@@ -73950,48 +73822,36 @@
                         "ignore_int_min": false,
                         "ignore_int_max": true,
                         "formatted": "25 Lock",
-                        "item_combination": 3
+                        "item_combination": 2
                     },
                     {
-                        "int_minimum": 80,
+                        "int_minimum": 15,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Chance",
-                            "id": 22,
+                            "name": "Critical Resistance",
+                            "id": 46,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "80 Chance",
-                        "item_combination": 3
-                    },
+                        "formatted": "15 Critical Resistance",
+                        "item_combination": 2
+                    }
+                ],
+                [
                     {
-                        "int_minimum": 80,
+                        "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Strength",
-                            "id": 45,
+                            "name": "% Fire Resistance",
+                            "id": 37,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "80 Strength",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 1,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "AP",
-                            "id": 12,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "1 AP",
+                        "formatted": "10% Fire Resistance",
                         "item_combination": 3
                     },
                     {
@@ -74009,17 +73869,73 @@
                         "item_combination": 3
                     },
                     {
-                        "int_minimum": 10,
+                        "int_minimum": 1,
                         "int_maximum": 0,
                         "type": {
-                            "name": "% Fire Resistance",
-                            "id": 37,
+                            "name": "AP",
+                            "id": 12,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10% Fire Resistance",
+                        "formatted": "1 AP",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 80,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Strength",
+                            "id": 45,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "80 Strength",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 80,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Chance",
+                            "id": 22,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "80 Chance",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 25,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Lock",
+                            "id": 26,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "25 Lock",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Critical Resistance",
+                            "id": 46,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 Critical Resistance",
                         "item_combination": 3
                     }
                 ]
@@ -89896,19 +89812,20 @@
         {
             "ankama_id": 840,
             "name": "Cursed Shadow Ceremonial Set",
-            "items": 5,
+            "items": 6,
             "level": 60,
             "equipment_ids": [
                 29731,
                 29732,
                 29733,
                 29734,
-                30021
+                30021,
+                30052
             ]
         },
         {
             "ankama_id": 841,
-            "name": "[!] Panoplie d'apparat du Trankilou Argenté",
+            "name": "Silver Coolwolf Ceremonial Set",
             "items": 5,
             "level": 60,
             "equipment_ids": [
@@ -89931,7 +89848,7 @@
         },
         {
             "ankama_id": 843,
-            "name": "[!] Panoplie d'apparat de Chevalier Noir",
+            "name": "Black Knight Ceremonial Set",
             "items": 5,
             "level": 60,
             "equipment_ids": [
@@ -89944,7 +89861,7 @@
         },
         {
             "ankama_id": 846,
-            "name": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
+            "name": "Miserite Executor Ceremonial Set",
             "items": 5,
             "level": 1,
             "equipment_ids": [
@@ -89957,7 +89874,7 @@
         },
         {
             "ankama_id": 848,
-            "name": "[!] Panoplie d'apparat de la Flamme Bleue",
+            "name": "Blue Flame Ceremonial Set",
             "items": 6,
             "level": 60,
             "equipment_ids": [
@@ -89967,6 +89884,70 @@
                 30084,
                 30085,
                 30086
+            ]
+        },
+        {
+            "ankama_id": 849,
+            "name": "Guyomu Oniwa Ceremonial Set",
+            "items": 5,
+            "level": 1,
+            "equipment_ids": [
+                30103,
+                30104,
+                30105,
+                30106,
+                30107
+            ]
+        },
+        {
+            "ankama_id": 850,
+            "name": "Krosmoz Ceremonial Set",
+            "items": 5,
+            "level": 60,
+            "equipment_ids": [
+                30142,
+                30143,
+                30144,
+                30145,
+                30146
+            ]
+        },
+        {
+            "ankama_id": 851,
+            "name": "Wikkan Sage Ceremonial Set",
+            "items": 4,
+            "level": 1,
+            "equipment_ids": [
+                30149,
+                30151,
+                30153,
+                30155
+            ]
+        },
+        {
+            "ankama_id": 852,
+            "name": "Great Wikkan Sage Ceremonial Set",
+            "items": 4,
+            "level": 1,
+            "equipment_ids": [
+                30150,
+                30152,
+                30154,
+                30156
+            ]
+        },
+        {
+            "ankama_id": 853,
+            "name": "Weapons Master Ceremonial Set",
+            "items": 6,
+            "level": 60,
+            "equipment_ids": [
+                30203,
+                30205,
+                30206,
+                30208,
+                30209,
+                30210
             ]
         }
     ]

@@ -24416,31 +24416,6 @@
                     "Agility"
                 ],
                 [
-                    10,
-                    null,
-                    "% Water Resist"
-                ],
-                [
-                    800,
-                    null,
-                    "Initiative"
-                ],
-                [
-                    20,
-                    null,
-                    "Critical Resist"
-                ],
-                [
-                    10,
-                    null,
-                    "AP Loss Resist"
-                ],
-                [
-                    10,
-                    null,
-                    "MP Reduction"
-                ],
-                [
                     1,
                     null,
                     "Range"
@@ -24448,34 +24423,7 @@
                 [
                     10,
                     null,
-                    "Neutral Damage"
-                ],
-                [
-                    10,
-                    null,
-                    "Earth Damage"
-                ],
-                [
-                    10,
-                    null,
-                    "Air Damage"
-                ]
-            ],
-            [
-                [
-                    10,
-                    null,
-                    "% Water Resist"
-                ],
-                [
-                    800,
-                    null,
-                    "Initiative"
-                ],
-                [
-                    20,
-                    null,
-                    "Critical Resist"
+                    "MP Reduction"
                 ],
                 [
                     10,
@@ -24483,14 +24431,31 @@
                     "AP Loss Resist"
                 ],
                 [
-                    10,
+                    15,
                     null,
-                    "MP Reduction"
+                    "Critical Resist"
                 ],
                 [
-                    80,
+                    800,
                     null,
-                    "Strength"
+                    "Initiative"
+                ],
+                [
+                    10,
+                    null,
+                    "% Water Resist"
+                ]
+            ],
+            [
+                [
+                    1,
+                    null,
+                    "AP"
+                ],
+                [
+                    1,
+                    null,
+                    "Range"
                 ],
                 [
                     80,
@@ -24498,29 +24463,34 @@
                     "Agility"
                 ],
                 [
-                    1,
+                    80,
                     null,
-                    "Range"
-                ],
-                [
-                    1,
-                    null,
-                    "AP"
+                    "Strength"
                 ],
                 [
                     10,
                     null,
-                    "Neutral Damage"
+                    "MP Reduction"
                 ],
                 [
                     10,
                     null,
-                    "Earth Damage"
+                    "AP Loss Resist"
+                ],
+                [
+                    15,
+                    null,
+                    "Critical Resist"
+                ],
+                [
+                    800,
+                    null,
+                    "Initiative"
                 ],
                 [
                     10,
                     null,
-                    "Air Damage"
+                    "% Water Resist"
                 ]
             ]
         ],
@@ -30401,7 +30371,7 @@
         "stats": [
             [
                 [
-                    40,
+                    20,
                     null,
                     "Critical Resist"
                 ],
@@ -30413,7 +30383,7 @@
                 [
                     40,
                     null,
-                    "Chance"
+                    "Strength"
                 ],
                 [
                     40,
@@ -30423,29 +30393,14 @@
                 [
                     40,
                     null,
-                    "Strength"
+                    "Chance"
                 ]
             ],
             [
                 [
-                    80,
+                    20,
                     null,
-                    "Chance"
-                ],
-                [
-                    80,
-                    null,
-                    "Intelligence"
-                ],
-                [
-                    80,
-                    null,
-                    "Strength"
-                ],
-                [
-                    25,
-                    null,
-                    "AP Loss Resist"
+                    "Critical Resist"
                 ],
                 [
                     1,
@@ -30453,9 +30408,24 @@
                     "AP"
                 ],
                 [
-                    40,
+                    25,
                     null,
-                    "Critical Resist"
+                    "AP Loss Resist"
+                ],
+                [
+                    80,
+                    null,
+                    "Strength"
+                ],
+                [
+                    80,
+                    null,
+                    "Intelligence"
+                ],
+                [
+                    80,
+                    null,
+                    "Chance"
                 ]
             ]
         ],
@@ -31713,14 +31683,9 @@
                     "Strength"
                 ],
                 [
-                    25,
+                    10,
                     null,
-                    "Critical Resist"
-                ],
-                [
-                    25,
-                    null,
-                    "Lock"
+                    "% Fire Resist"
                 ],
                 [
                     40,
@@ -31728,36 +31693,21 @@
                     "Chance"
                 ],
                 [
-                    10,
-                    null,
-                    "% Fire Resist"
-                ]
-            ],
-            [
-                [
-                    25,
-                    null,
-                    "Critical Resist"
-                ],
-                [
                     25,
                     null,
                     "Lock"
                 ],
                 [
-                    80,
+                    15,
                     null,
-                    "Chance"
-                ],
+                    "Critical Resist"
+                ]
+            ],
+            [
                 [
-                    80,
+                    10,
                     null,
-                    "Strength"
-                ],
-                [
-                    1,
-                    null,
-                    "AP"
+                    "% Fire Resist"
                 ],
                 [
                     150,
@@ -31765,9 +31715,29 @@
                     "Vitality"
                 ],
                 [
-                    10,
+                    1,
                     null,
-                    "% Fire Resist"
+                    "AP"
+                ],
+                [
+                    80,
+                    null,
+                    "Strength"
+                ],
+                [
+                    80,
+                    null,
+                    "Chance"
+                ],
+                [
+                    25,
+                    null,
+                    "Lock"
+                ],
+                [
+                    15,
+                    null,
+                    "Critical Resist"
                 ]
             ]
         ],
@@ -38852,9 +38822,9 @@
     {
         "ankama_id": 646,
         "name_en": "Skratiay Clan Ceremonial Set",
-        "name_fr": "Panoplie d'apparat Clan Skratéa",
+        "name_fr": "Panoplie d'apparat du Clan Skratéa",
         "name_es": "Set cosmético del clan Skratea",
-        "name_pt": "Conjunto de Aparência Clan Skrat",
+        "name_pt": "Conjunto de Aparência do Clã Skratea",
         "name_de": "Prunkset des Skratea-Clans",
         "name_it": "[!] Skratiay Clan Ceremonial Set",
         "items": 4,
@@ -39291,7 +39261,7 @@
         "ankama_id": 672,
         "name_en": "Chtiger Ceremonial Set",
         "name_fr": "Panoplie d'apparat du Chtigre",
-        "name_es": "Set cosmético del chtigre",
+        "name_es": "Set cosmético de chtigre",
         "name_pt": "Conjunto de Aparência do Tigraxé",
         "name_de": "Prunkset des Tiguars",
         "name_it": "[!] Chtiger Ceremonial Set",
@@ -41786,23 +41756,24 @@
         "name_pt": "Conjunto de Aparência de Sombra Maldita",
         "name_de": "Prunkset des Verfluchten Schattens",
         "name_it": "[!] Cursed Shadow Ceremonial Set",
-        "items": 5,
+        "items": 6,
         "equipment_ids": [
             29731,
             29732,
             29733,
             29734,
-            30021
+            30021,
+            30052
         ]
     },
     {
         "ankama_id": 841,
-        "name_en": "[!] Panoplie d'apparat du Trankilou Argenté",
+        "name_en": "Silver Coolwolf Ceremonial Set",
         "name_fr": "Panoplie d'apparat du Trankilou Argenté",
-        "name_es": "Set del Trankilobo Plateado",
-        "name_pt": "[!] Panoplie d'apparat du Trankilou Argenté",
-        "name_de": "[!] Panoplie d'apparat du Trankilou Argenté",
-        "name_it": "[!] Panoplie d'apparat du Trankilou Argenté",
+        "name_es": "Set cosmético del Trankilobo Plateado",
+        "name_pt": "Conjunto de Aparência do Trankilobo Prateado",
+        "name_de": "Prunkset des Silbernen Friedwolfs",
+        "name_it": "[!] Silver Coolwolf Ceremonial Set",
         "items": 5,
         "equipment_ids": [
             29755,
@@ -41828,12 +41799,12 @@
     },
     {
         "ankama_id": 843,
-        "name_en": "[!] Panoplie d'apparat de Chevalier Noir",
+        "name_en": "Black Knight Ceremonial Set",
         "name_fr": "Panoplie d'apparat de Chevalier Noir",
-        "name_es": "[!] Panoplie d'apparat de Chevalier Noir",
-        "name_pt": "[!] Panoplie d'apparat de Chevalier Noir",
-        "name_de": "[!] Panoplie d'apparat de Chevalier Noir",
-        "name_it": "[!] Panoplie d'apparat de Chevalier Noir",
+        "name_es": "Set cosmético de caballero negro",
+        "name_pt": "Conjunto de Aparência de Cavaleiro Negro",
+        "name_de": "Prunkset des Schwarzen Ritters",
+        "name_it": "[!] Black Knight Ceremonial Set",
         "items": 5,
         "equipment_ids": [
             30061,
@@ -41845,12 +41816,12 @@
     },
     {
         "ankama_id": 846,
-        "name_en": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
+        "name_en": "Miserite Executor Ceremonial Set",
         "name_fr": "Panoplie d'apparat de l'Exécuteur Miséreux",
-        "name_es": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
-        "name_pt": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
-        "name_de": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
-        "name_it": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
+        "name_es": "Set cosmético de ejecutor mísero",
+        "name_pt": "Conjunto de Aparência do Carrasco Mísero",
+        "name_de": "Prunkset des Elenden Scharfrichters",
+        "name_it": "[!] Miserite Executor Ceremonial Set",
         "items": 5,
         "equipment_ids": [
             30022,
@@ -41862,12 +41833,12 @@
     },
     {
         "ankama_id": 848,
-        "name_en": "[!] Panoplie d'apparat de la Flamme Bleue",
+        "name_en": "Blue Flame Ceremonial Set",
         "name_fr": "Panoplie d'apparat de la Flamme Bleue",
-        "name_es": "[!] Panoplie d'apparat de la Flamme Bleue",
-        "name_pt": "[!] Panoplie d'apparat de la Flamme Bleue",
-        "name_de": "[!] Panoplie d'apparat de la Flamme Bleue",
-        "name_it": "[!] Panoplie d'apparat de la Flamme Bleue",
+        "name_es": "Set cosmético de la Llama Azul",
+        "name_pt": "Conjunto de Aparência da Chama Azul",
+        "name_de": "Prunkset der Blauen Flamme",
+        "name_it": "[!] Blue Flame Ceremonial Set",
         "items": 6,
         "equipment_ids": [
             30081,
@@ -41876,6 +41847,90 @@
             30084,
             30085,
             30086
+        ]
+    },
+    {
+        "ankama_id": 849,
+        "name_en": "Guyomu Oniwa Ceremonial Set",
+        "name_fr": "Panoplie d'apparat de Guyomu Oniwa",
+        "name_es": "Set cosmético de Guyomu Oniwa",
+        "name_pt": "Conjunto de Aparência de Guyomu Oniwa",
+        "name_de": "Gyomu Oniwas Prunkset",
+        "name_it": "[!] Guyomu Oniwa Ceremonial Set",
+        "items": 5,
+        "equipment_ids": [
+            30103,
+            30104,
+            30105,
+            30106,
+            30107
+        ]
+    },
+    {
+        "ankama_id": 850,
+        "name_en": "Krosmoz Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Krosmoz",
+        "name_es": "Set cosmético del Krosmoz",
+        "name_pt": "Conjunto de Aparência do Krosmoz",
+        "name_de": "Krosmoz-Prunkset",
+        "name_it": "[!] Krosmoz Ceremonial Set",
+        "items": 5,
+        "equipment_ids": [
+            30142,
+            30143,
+            30144,
+            30145,
+            30146
+        ]
+    },
+    {
+        "ankama_id": 851,
+        "name_en": "Wikkan Sage Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Sage Wikkan",
+        "name_es": "Set cosmético de sabio Wikkan",
+        "name_pt": "Conjunto de Aparência do Sábio Wikkan",
+        "name_de": "Prunkset des Wikkan-Weisen",
+        "name_it": "[!] Wikkan Sage Ceremonial Set",
+        "items": 4,
+        "equipment_ids": [
+            30149,
+            30151,
+            30153,
+            30155
+        ]
+    },
+    {
+        "ankama_id": 852,
+        "name_en": "Great Wikkan Sage Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Grand Sage Wikkan",
+        "name_es": "Set cosmético de gran sabio Wikkan",
+        "name_pt": "Conjunto de Aparência do Grande Sábio Wikkan",
+        "name_de": "Prunkset des Großen Wikkan-Weisen",
+        "name_it": "[!] Great Wikkan Sage Ceremonial Set",
+        "items": 4,
+        "equipment_ids": [
+            30150,
+            30152,
+            30154,
+            30156
+        ]
+    },
+    {
+        "ankama_id": 853,
+        "name_en": "Weapons Master Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Maître d'Armes",
+        "name_es": "Set cosmético de maestro de armas",
+        "name_pt": "Conjunto de Aparência do Mestre de Armas",
+        "name_de": "Waffenmeisters Prunkset",
+        "name_it": "[!] Weapons Master Ceremonial Set",
+        "items": 6,
+        "equipment_ids": [
+            30203,
+            30205,
+            30206,
+            30208,
+            30209,
+            30210
         ]
     }
 ]

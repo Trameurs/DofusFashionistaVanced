@@ -57268,76 +57268,6 @@
                         "item_combination": 2
                     },
                     {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "% resistência à água",
-                            "id": 17,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10% resistência à água",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 800,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Iniciativa",
-                            "id": 24,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "800 Iniciativa",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 20,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "de resistências a crítico",
-                            "id": 46,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "20 de resistências a crítico",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Esquiva PA",
-                            "id": 75,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 Esquiva PA",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Retirada de PM",
-                            "id": 50,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 Retirada de PM",
-                        "item_combination": 2
-                    },
-                    {
                         "int_minimum": 1,
                         "int_maximum": 0,
                         "type": {
@@ -57355,87 +57285,15 @@
                         "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "de danos neutros",
-                            "id": 49,
+                            "name": "Retirada de PM",
+                            "id": 50,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 de danos neutros",
+                        "formatted": "10 Retirada de PM",
                         "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "de danos de terra",
-                            "id": 48,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 de danos de terra",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "de danos de ar",
-                            "id": 47,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 de danos de ar",
-                        "item_combination": 2
-                    }
-                ],
-                [
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "% resistência à água",
-                            "id": 17,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10% resistência à água",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 800,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Iniciativa",
-                            "id": 24,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "800 Iniciativa",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 20,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "de resistências a crítico",
-                            "id": 46,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "20 de resistências a crítico",
-                        "item_combination": 3
                     },
                     {
                         "int_minimum": 10,
@@ -57449,34 +57307,78 @@
                         "ignore_int_min": false,
                         "ignore_int_max": true,
                         "formatted": "10 Esquiva PA",
-                        "item_combination": 3
+                        "item_combination": 2
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de resistências a crítico",
+                            "id": 46,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 de resistências a crítico",
+                        "item_combination": 2
+                    },
+                    {
+                        "int_minimum": 800,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Iniciativa",
+                            "id": 24,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "800 Iniciativa",
+                        "item_combination": 2
                     },
                     {
                         "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Retirada de PM",
-                            "id": 50,
+                            "name": "% resistência à água",
+                            "id": 17,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 Retirada de PM",
+                        "formatted": "10% resistência à água",
+                        "item_combination": 2
+                    }
+                ],
+                [
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "PA",
+                            "id": 12,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 PA",
                         "item_combination": 3
                     },
                     {
-                        "int_minimum": 80,
+                        "int_minimum": 1,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Força",
-                            "id": 45,
+                            "name": "de alcance",
+                            "id": 31,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "80 Força",
+                        "formatted": "1 de alcance",
                         "item_combination": 3
                     },
                     {
@@ -57494,73 +57396,87 @@
                         "item_combination": 3
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 80,
                         "int_maximum": 0,
                         "type": {
-                            "name": "de alcance",
-                            "id": 31,
+                            "name": "Força",
+                            "id": 45,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "1 de alcance",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 1,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "PA",
-                            "id": 12,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "1 PA",
+                        "formatted": "80 Força",
                         "item_combination": 3
                     },
                     {
                         "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "de danos neutros",
-                            "id": 49,
+                            "name": "Retirada de PM",
+                            "id": 50,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 de danos neutros",
+                        "formatted": "10 Retirada de PM",
                         "item_combination": 3
                     },
                     {
                         "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "de danos de terra",
-                            "id": 48,
+                            "name": "Esquiva PA",
+                            "id": 75,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 de danos de terra",
+                        "formatted": "10 Esquiva PA",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de resistências a crítico",
+                            "id": 46,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 de resistências a crítico",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 800,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Iniciativa",
+                            "id": 24,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "800 Iniciativa",
                         "item_combination": 3
                     },
                     {
                         "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "de danos de ar",
-                            "id": 47,
+                            "name": "% resistência à água",
+                            "id": 17,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 de danos de ar",
+                        "formatted": "10% resistência à água",
                         "item_combination": 3
                     }
                 ]
@@ -70904,7 +70820,7 @@
             "effects": [
                 [
                     {
-                        "int_minimum": 40,
+                        "int_minimum": 20,
                         "int_maximum": 0,
                         "type": {
                             "name": "de resistências a crítico",
@@ -70914,7 +70830,7 @@
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "40 de resistências a crítico",
+                        "formatted": "20 de resistências a crítico",
                         "item_combination": 2
                     },
                     {
@@ -70935,14 +70851,14 @@
                         "int_minimum": 40,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Sorte",
-                            "id": 22,
+                            "name": "Força",
+                            "id": 45,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "40 Sorte",
+                        "formatted": "40 Força",
                         "item_combination": 2
                     },
                     {
@@ -70963,22 +70879,6 @@
                         "int_minimum": 40,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Força",
-                            "id": 45,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "40 Força",
-                        "item_combination": 2
-                    }
-                ],
-                [
-                    {
-                        "int_minimum": 80,
-                        "int_maximum": 0,
-                        "type": {
                             "name": "Sorte",
                             "id": 22,
                             "is_meta": false,
@@ -70986,7 +70886,65 @@
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "80 Sorte",
+                        "formatted": "40 Sorte",
+                        "item_combination": 2
+                    }
+                ],
+                [
+                    {
+                        "int_minimum": 20,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de resistências a crítico",
+                            "id": 46,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "20 de resistências a crítico",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "PA",
+                            "id": 12,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 PA",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 25,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Esquiva PA",
+                            "id": 75,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "25 Esquiva PA",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 80,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Força",
+                            "id": 45,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "80 Força",
                         "item_combination": 3
                     },
                     {
@@ -71007,56 +70965,14 @@
                         "int_minimum": 80,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Força",
-                            "id": 45,
+                            "name": "Sorte",
+                            "id": 22,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "80 Força",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 25,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Esquiva PA",
-                            "id": 75,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "25 Esquiva PA",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 1,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "PA",
-                            "id": 12,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "1 PA",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 40,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "de resistências a crítico",
-                            "id": 46,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "40 de resistências a crítico",
+                        "formatted": "80 Sorte",
                         "item_combination": 3
                     }
                 ]
@@ -73867,31 +73783,17 @@
                         "item_combination": 2
                     },
                     {
-                        "int_minimum": 25,
+                        "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "de resistências a crítico",
-                            "id": 46,
+                            "name": "% resistência ao fogo",
+                            "id": 37,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "25 de resistências a crítico",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 25,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Bloqueio",
-                            "id": 26,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "25 Bloqueio",
+                        "formatted": "10% resistência ao fogo",
                         "item_combination": 2
                     },
                     {
@@ -73909,36 +73811,6 @@
                         "item_combination": 2
                     },
                     {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "% resistência ao fogo",
-                            "id": 37,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10% resistência ao fogo",
-                        "item_combination": 2
-                    }
-                ],
-                [
-                    {
-                        "int_minimum": 25,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "de resistências a crítico",
-                            "id": 46,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "25 de resistências a crítico",
-                        "item_combination": 3
-                    },
-                    {
                         "int_minimum": 25,
                         "int_maximum": 0,
                         "type": {
@@ -73950,48 +73822,36 @@
                         "ignore_int_min": false,
                         "ignore_int_max": true,
                         "formatted": "25 Bloqueio",
-                        "item_combination": 3
+                        "item_combination": 2
                     },
                     {
-                        "int_minimum": 80,
+                        "int_minimum": 15,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Sorte",
-                            "id": 22,
+                            "name": "de resistências a crítico",
+                            "id": 46,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "80 Sorte",
-                        "item_combination": 3
-                    },
+                        "formatted": "15 de resistências a crítico",
+                        "item_combination": 2
+                    }
+                ],
+                [
                     {
-                        "int_minimum": 80,
+                        "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Força",
-                            "id": 45,
+                            "name": "% resistência ao fogo",
+                            "id": 37,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "80 Força",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 1,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "PA",
-                            "id": 12,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "1 PA",
+                        "formatted": "10% resistência ao fogo",
                         "item_combination": 3
                     },
                     {
@@ -74009,17 +73869,73 @@
                         "item_combination": 3
                     },
                     {
-                        "int_minimum": 10,
+                        "int_minimum": 1,
                         "int_maximum": 0,
                         "type": {
-                            "name": "% resistência ao fogo",
-                            "id": 37,
+                            "name": "PA",
+                            "id": 12,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10% resistência ao fogo",
+                        "formatted": "1 PA",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 80,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Força",
+                            "id": 45,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "80 Força",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 80,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Sorte",
+                            "id": 22,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "80 Sorte",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 25,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Bloqueio",
+                            "id": 26,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "25 Bloqueio",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de resistências a crítico",
+                            "id": 46,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 de resistências a crítico",
                         "item_combination": 3
                     }
                 ]
@@ -87722,7 +87638,7 @@
         },
         {
             "ankama_id": 646,
-            "name": "Conjunto de Aparência Clan Skrat",
+            "name": "Conjunto de Aparência do Clã Skratea",
             "items": 4,
             "level": 1,
             "equipment_ids": [
@@ -89896,19 +89812,20 @@
         {
             "ankama_id": 840,
             "name": "Conjunto de Aparência de Sombra Maldita",
-            "items": 5,
+            "items": 6,
             "level": 60,
             "equipment_ids": [
                 29731,
                 29732,
                 29733,
                 29734,
-                30021
+                30021,
+                30052
             ]
         },
         {
             "ankama_id": 841,
-            "name": "[!] Panoplie d'apparat du Trankilou Argenté",
+            "name": "Conjunto de Aparência do Trankilobo Prateado",
             "items": 5,
             "level": 60,
             "equipment_ids": [
@@ -89931,7 +89848,7 @@
         },
         {
             "ankama_id": 843,
-            "name": "[!] Panoplie d'apparat de Chevalier Noir",
+            "name": "Conjunto de Aparência de Cavaleiro Negro",
             "items": 5,
             "level": 60,
             "equipment_ids": [
@@ -89944,7 +89861,7 @@
         },
         {
             "ankama_id": 846,
-            "name": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
+            "name": "Conjunto de Aparência do Carrasco Mísero",
             "items": 5,
             "level": 1,
             "equipment_ids": [
@@ -89957,7 +89874,7 @@
         },
         {
             "ankama_id": 848,
-            "name": "[!] Panoplie d'apparat de la Flamme Bleue",
+            "name": "Conjunto de Aparência da Chama Azul",
             "items": 6,
             "level": 60,
             "equipment_ids": [
@@ -89967,6 +89884,70 @@
                 30084,
                 30085,
                 30086
+            ]
+        },
+        {
+            "ankama_id": 849,
+            "name": "Conjunto de Aparência de Guyomu Oniwa",
+            "items": 5,
+            "level": 1,
+            "equipment_ids": [
+                30103,
+                30104,
+                30105,
+                30106,
+                30107
+            ]
+        },
+        {
+            "ankama_id": 850,
+            "name": "Conjunto de Aparência do Krosmoz",
+            "items": 5,
+            "level": 60,
+            "equipment_ids": [
+                30142,
+                30143,
+                30144,
+                30145,
+                30146
+            ]
+        },
+        {
+            "ankama_id": 851,
+            "name": "Conjunto de Aparência do Sábio Wikkan",
+            "items": 4,
+            "level": 1,
+            "equipment_ids": [
+                30149,
+                30151,
+                30153,
+                30155
+            ]
+        },
+        {
+            "ankama_id": 852,
+            "name": "Conjunto de Aparência do Grande Sábio Wikkan",
+            "items": 4,
+            "level": 1,
+            "equipment_ids": [
+                30150,
+                30152,
+                30154,
+                30156
+            ]
+        },
+        {
+            "ankama_id": 853,
+            "name": "Conjunto de Aparência do Mestre de Armas",
+            "items": 6,
+            "level": 60,
+            "equipment_ids": [
+                30203,
+                30205,
+                30206,
+                30208,
+                30209,
+                30210
             ]
         }
     ]

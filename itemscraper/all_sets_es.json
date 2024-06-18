@@ -57268,76 +57268,6 @@
                         "item_combination": 2
                     },
                     {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "% resistencia al agua",
-                            "id": 17,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10% resistencia al agua",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 800,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "iniciativa",
-                            "id": 24,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "800 iniciativa",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 20,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "de resistencia a los críticos",
-                            "id": 46,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "20 de resistencia a los críticos",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "a la esquiva pérdidas de PA",
-                            "id": 75,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 a la esquiva pérdidas de PA",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "al retiro de PM",
-                            "id": 50,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 al retiro de PM",
-                        "item_combination": 2
-                    },
-                    {
                         "int_minimum": 1,
                         "int_maximum": 0,
                         "type": {
@@ -57355,87 +57285,15 @@
                         "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "de daño neutro",
-                            "id": 49,
+                            "name": "al retiro de PM",
+                            "id": 50,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 de daño neutro",
+                        "formatted": "10 al retiro de PM",
                         "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "de daño de tierra",
-                            "id": 48,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 de daño de tierra",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "de daño de aire",
-                            "id": 47,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 de daño de aire",
-                        "item_combination": 2
-                    }
-                ],
-                [
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "% resistencia al agua",
-                            "id": 17,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10% resistencia al agua",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 800,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "iniciativa",
-                            "id": 24,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "800 iniciativa",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 20,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "de resistencia a los críticos",
-                            "id": 46,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "20 de resistencia a los críticos",
-                        "item_combination": 3
                     },
                     {
                         "int_minimum": 10,
@@ -57449,34 +57307,78 @@
                         "ignore_int_min": false,
                         "ignore_int_max": true,
                         "formatted": "10 a la esquiva pérdidas de PA",
-                        "item_combination": 3
+                        "item_combination": 2
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de resistencia a los críticos",
+                            "id": 46,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 de resistencia a los críticos",
+                        "item_combination": 2
+                    },
+                    {
+                        "int_minimum": 800,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "iniciativa",
+                            "id": 24,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "800 iniciativa",
+                        "item_combination": 2
                     },
                     {
                         "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "al retiro de PM",
-                            "id": 50,
+                            "name": "% resistencia al agua",
+                            "id": 17,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 al retiro de PM",
+                        "formatted": "10% resistencia al agua",
+                        "item_combination": 2
+                    }
+                ],
+                [
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "PA",
+                            "id": 12,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 PA",
                         "item_combination": 3
                     },
                     {
-                        "int_minimum": 80,
+                        "int_minimum": 1,
                         "int_maximum": 0,
                         "type": {
-                            "name": "fuerza",
-                            "id": 45,
+                            "name": "alcance",
+                            "id": 31,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "80 fuerza",
+                        "formatted": "1 alcance",
                         "item_combination": 3
                     },
                     {
@@ -57494,73 +57396,87 @@
                         "item_combination": 3
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 80,
                         "int_maximum": 0,
                         "type": {
-                            "name": "alcance",
-                            "id": 31,
+                            "name": "fuerza",
+                            "id": 45,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "1 alcance",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 1,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "PA",
-                            "id": 12,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "1 PA",
+                        "formatted": "80 fuerza",
                         "item_combination": 3
                     },
                     {
                         "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "de daño neutro",
-                            "id": 49,
+                            "name": "al retiro de PM",
+                            "id": 50,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 de daño neutro",
+                        "formatted": "10 al retiro de PM",
                         "item_combination": 3
                     },
                     {
                         "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "de daño de tierra",
-                            "id": 48,
+                            "name": "a la esquiva pérdidas de PA",
+                            "id": 75,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 de daño de tierra",
+                        "formatted": "10 a la esquiva pérdidas de PA",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de resistencia a los críticos",
+                            "id": 46,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 de resistencia a los críticos",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 800,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "iniciativa",
+                            "id": 24,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "800 iniciativa",
                         "item_combination": 3
                     },
                     {
                         "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "de daño de aire",
-                            "id": 47,
+                            "name": "% resistencia al agua",
+                            "id": 17,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 de daño de aire",
+                        "formatted": "10% resistencia al agua",
                         "item_combination": 3
                     }
                 ]
@@ -70904,7 +70820,7 @@
             "effects": [
                 [
                     {
-                        "int_minimum": 40,
+                        "int_minimum": 20,
                         "int_maximum": 0,
                         "type": {
                             "name": "de resistencia a los críticos",
@@ -70914,7 +70830,7 @@
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "40 de resistencia a los críticos",
+                        "formatted": "20 de resistencia a los críticos",
                         "item_combination": 2
                     },
                     {
@@ -70935,14 +70851,14 @@
                         "int_minimum": 40,
                         "int_maximum": 0,
                         "type": {
-                            "name": "suerte",
-                            "id": 22,
+                            "name": "fuerza",
+                            "id": 45,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "40 suerte",
+                        "formatted": "40 fuerza",
                         "item_combination": 2
                     },
                     {
@@ -70963,22 +70879,6 @@
                         "int_minimum": 40,
                         "int_maximum": 0,
                         "type": {
-                            "name": "fuerza",
-                            "id": 45,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "40 fuerza",
-                        "item_combination": 2
-                    }
-                ],
-                [
-                    {
-                        "int_minimum": 80,
-                        "int_maximum": 0,
-                        "type": {
                             "name": "suerte",
                             "id": 22,
                             "is_meta": false,
@@ -70986,7 +70886,65 @@
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "80 suerte",
+                        "formatted": "40 suerte",
+                        "item_combination": 2
+                    }
+                ],
+                [
+                    {
+                        "int_minimum": 20,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de resistencia a los críticos",
+                            "id": 46,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "20 de resistencia a los críticos",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "PA",
+                            "id": 12,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 PA",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 25,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "a la esquiva pérdidas de PA",
+                            "id": 75,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "25 a la esquiva pérdidas de PA",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 80,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "fuerza",
+                            "id": 45,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "80 fuerza",
                         "item_combination": 3
                     },
                     {
@@ -71007,56 +70965,14 @@
                         "int_minimum": 80,
                         "int_maximum": 0,
                         "type": {
-                            "name": "fuerza",
-                            "id": 45,
+                            "name": "suerte",
+                            "id": 22,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "80 fuerza",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 25,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "a la esquiva pérdidas de PA",
-                            "id": 75,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "25 a la esquiva pérdidas de PA",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 1,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "PA",
-                            "id": 12,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "1 PA",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 40,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "de resistencia a los críticos",
-                            "id": 46,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "40 de resistencia a los críticos",
+                        "formatted": "80 suerte",
                         "item_combination": 3
                     }
                 ]
@@ -73867,31 +73783,17 @@
                         "item_combination": 2
                     },
                     {
-                        "int_minimum": 25,
+                        "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "de resistencia a los críticos",
-                            "id": 46,
+                            "name": "% resistencia al fuego",
+                            "id": 37,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "25 de resistencia a los críticos",
-                        "item_combination": 2
-                    },
-                    {
-                        "int_minimum": 25,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "placaje",
-                            "id": 26,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "25 placaje",
+                        "formatted": "10% resistencia al fuego",
                         "item_combination": 2
                     },
                     {
@@ -73909,36 +73811,6 @@
                         "item_combination": 2
                     },
                     {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "% resistencia al fuego",
-                            "id": 37,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10% resistencia al fuego",
-                        "item_combination": 2
-                    }
-                ],
-                [
-                    {
-                        "int_minimum": 25,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "de resistencia a los críticos",
-                            "id": 46,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "25 de resistencia a los críticos",
-                        "item_combination": 3
-                    },
-                    {
                         "int_minimum": 25,
                         "int_maximum": 0,
                         "type": {
@@ -73950,48 +73822,36 @@
                         "ignore_int_min": false,
                         "ignore_int_max": true,
                         "formatted": "25 placaje",
-                        "item_combination": 3
+                        "item_combination": 2
                     },
                     {
-                        "int_minimum": 80,
+                        "int_minimum": 15,
                         "int_maximum": 0,
                         "type": {
-                            "name": "suerte",
-                            "id": 22,
+                            "name": "de resistencia a los críticos",
+                            "id": 46,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "80 suerte",
-                        "item_combination": 3
-                    },
+                        "formatted": "15 de resistencia a los críticos",
+                        "item_combination": 2
+                    }
+                ],
+                [
                     {
-                        "int_minimum": 80,
+                        "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "fuerza",
-                            "id": 45,
+                            "name": "% resistencia al fuego",
+                            "id": 37,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "80 fuerza",
-                        "item_combination": 3
-                    },
-                    {
-                        "int_minimum": 1,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "PA",
-                            "id": 12,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "1 PA",
+                        "formatted": "10% resistencia al fuego",
                         "item_combination": 3
                     },
                     {
@@ -74009,17 +73869,73 @@
                         "item_combination": 3
                     },
                     {
-                        "int_minimum": 10,
+                        "int_minimum": 1,
                         "int_maximum": 0,
                         "type": {
-                            "name": "% resistencia al fuego",
-                            "id": 37,
+                            "name": "PA",
+                            "id": 12,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10% resistencia al fuego",
+                        "formatted": "1 PA",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 80,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "fuerza",
+                            "id": 45,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "80 fuerza",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 80,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "suerte",
+                            "id": 22,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "80 suerte",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 25,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "placaje",
+                            "id": 26,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "25 placaje",
+                        "item_combination": 3
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de resistencia a los críticos",
+                            "id": 46,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 de resistencia a los críticos",
                         "item_combination": 3
                     }
                 ]
@@ -88056,7 +87972,7 @@
         },
         {
             "ankama_id": 672,
-            "name": "Set cosmético del chtigre",
+            "name": "Set cosmético de chtigre",
             "items": 5,
             "level": 1,
             "equipment_ids": [
@@ -89896,19 +89812,20 @@
         {
             "ankama_id": 840,
             "name": "Set cosmético de la Sombra Maldita",
-            "items": 5,
+            "items": 6,
             "level": 60,
             "equipment_ids": [
                 29731,
                 29732,
                 29733,
                 29734,
-                30021
+                30021,
+                30052
             ]
         },
         {
             "ankama_id": 841,
-            "name": "Set del Trankilobo Plateado",
+            "name": "Set cosmético del Trankilobo Plateado",
             "items": 5,
             "level": 60,
             "equipment_ids": [
@@ -89931,7 +89848,7 @@
         },
         {
             "ankama_id": 843,
-            "name": "[!] Panoplie d'apparat de Chevalier Noir",
+            "name": "Set cosmético de caballero negro",
             "items": 5,
             "level": 60,
             "equipment_ids": [
@@ -89944,7 +89861,7 @@
         },
         {
             "ankama_id": 846,
-            "name": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
+            "name": "Set cosmético de ejecutor mísero",
             "items": 5,
             "level": 1,
             "equipment_ids": [
@@ -89957,7 +89874,7 @@
         },
         {
             "ankama_id": 848,
-            "name": "[!] Panoplie d'apparat de la Flamme Bleue",
+            "name": "Set cosmético de la Llama Azul",
             "items": 6,
             "level": 60,
             "equipment_ids": [
@@ -89967,6 +89884,70 @@
                 30084,
                 30085,
                 30086
+            ]
+        },
+        {
+            "ankama_id": 849,
+            "name": "Set cosmético de Guyomu Oniwa",
+            "items": 5,
+            "level": 1,
+            "equipment_ids": [
+                30103,
+                30104,
+                30105,
+                30106,
+                30107
+            ]
+        },
+        {
+            "ankama_id": 850,
+            "name": "Set cosmético del Krosmoz",
+            "items": 5,
+            "level": 60,
+            "equipment_ids": [
+                30142,
+                30143,
+                30144,
+                30145,
+                30146
+            ]
+        },
+        {
+            "ankama_id": 851,
+            "name": "Set cosmético de sabio Wikkan",
+            "items": 4,
+            "level": 1,
+            "equipment_ids": [
+                30149,
+                30151,
+                30153,
+                30155
+            ]
+        },
+        {
+            "ankama_id": 852,
+            "name": "Set cosmético de gran sabio Wikkan",
+            "items": 4,
+            "level": 1,
+            "equipment_ids": [
+                30150,
+                30152,
+                30154,
+                30156
+            ]
+        },
+        {
+            "ankama_id": 853,
+            "name": "Set cosmético de maestro de armas",
+            "items": 6,
+            "level": 60,
+            "equipment_ids": [
+                30203,
+                30205,
+                30206,
+                30208,
+                30209,
+                30210
             ]
         }
     ]
