@@ -289,7 +289,7 @@ class Model:
                                self.structure.get_item_by_name("Rykke Errel's Bravery").id, 
                                rikke_new_stat_weight)
         
-        #Adding more weight to Jahash Jurgen's Cloak equivalent to 1.5% resists (1-2 hits on each element)
+        #Adding more weight to Jahash Jurgen's Nobility equivalent to 1.5% resists (1-2 hits on each element)
         #When the bearer suffers damage in an element, they gain 3% resistance in that element for 2 turns, stackable 5 times.
         resists_to_consider = 1.5
         jahash_new_stat_weight = (objective_values.get('neutresper', 0) * resists_to_consider
@@ -298,7 +298,7 @@ class Model:
                                   + objective_values.get('fireresper', 0) * resists_to_consider
                                   + objective_values.get('waterresper', 0) * resists_to_consider)
         self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name("Jahash Jurgen's Cloak").id, 
+                               self.structure.get_item_by_name("Jahash Jurgen's Nobility").id, 
                                jahash_new_stat_weight)
         
         #Adding more weight to Thousand-League Boots equivalent to 1 MP
