@@ -319,10 +319,10 @@ class Model:
                                self.structure.get_item_by_name("Dodge's Audacity").id, 
                                objective_values.get('dodge', 0) * 50 + objective_values.get('ch', 0) * 5 + objective_values.get('pshdam') * 40)
         
-        #Adding more weight to Lady Jhessica's Belt equivalent to 25 Lock
+        #Adding more weight to Lady Jhessica's Courage equivalent to 25 Lock
         #At end of their turn, the bearer removes 100 Dodge from adjacent enemies for 1 turn.
         self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name("Lady Jhessica's Belt").id, 
+                               self.structure.get_item_by_name("Lady Jhessica's Courage").id, 
                                objective_values.get('lock', 0) * 50)
         
         #Adding more weight to Cocoa Dofus
