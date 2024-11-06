@@ -10861,29 +10861,9 @@
                     "Intelligence"
                 ],
                 [
-                    20,
+                    10,
                     null,
-                    "Chance"
-                ],
-                [
-                    20,
-                    null,
-                    "Strength"
-                ],
-                [
-                    20,
-                    null,
-                    "Wisdom"
-                ],
-                [
-                    100,
-                    null,
-                    "Vitality"
-                ],
-                [
-                    3,
-                    null,
-                    "Damage"
+                    "Prospecting"
                 ],
                 [
                     3,
@@ -10891,36 +10871,46 @@
                     "Heals"
                 ],
                 [
-                    10,
+                    3,
                     null,
-                    "Prospecting"
-                ]
-            ],
-            [
-                [
-                    40,
-                    null,
-                    "Agility"
+                    "Damage"
                 ],
                 [
-                    40,
+                    100,
                     null,
-                    "Intelligence"
+                    "Vitality"
                 ],
                 [
-                    40,
+                    20,
                     null,
-                    "Chance"
+                    "Wisdom"
                 ],
                 [
-                    40,
+                    20,
                     null,
                     "Strength"
                 ],
                 [
-                    40,
+                    20,
                     null,
-                    "Wisdom"
+                    "Chance"
+                ]
+            ],
+            [
+                [
+                    20,
+                    null,
+                    "Prospecting"
+                ],
+                [
+                    7,
+                    null,
+                    "Heals"
+                ],
+                [
+                    7,
+                    null,
+                    "Damage"
                 ],
                 [
                     200,
@@ -10928,66 +10918,56 @@
                     "Vitality"
                 ],
                 [
-                    7,
-                    null,
-                    "Damage"
-                ],
-                [
-                    7,
-                    null,
-                    "Power"
-                ],
-                [
-                    20,
-                    null,
-                    "Prospecting"
-                ]
-            ],
-            [
-                [
-                    70,
-                    null,
-                    "Agility"
-                ],
-                [
-                    70,
-                    null,
-                    "Intelligence"
-                ],
-                [
-                    70,
-                    null,
-                    "Chance"
-                ],
-                [
-                    70,
-                    null,
-                    "Strength"
-                ],
-                [
-                    70,
+                    40,
                     null,
                     "Wisdom"
                 ],
                 [
-                    500,
+                    40,
                     null,
-                    "Vitality"
+                    "Strength"
                 ],
                 [
-                    12,
+                    40,
                     null,
-                    "Damage"
+                    "Chance"
                 ],
                 [
-                    12,
+                    40,
                     null,
-                    "Heals"
+                    "Intelligence"
                 ],
                 [
-                    1,
+                    40,
                     null,
-                    "Summon"
+                    "Agility"
+                ]
+            ],
+            [
+                [
+                    5,
+                    null,
+                    "% Fire Resist"
+                ],
+                [
+                    5,
+                    null,
+                    "% Earth Resist"
+                ],
+                [
+                    5,
+                    null,
+                    "% Neutral Resist"
+                ],
+                [
+                    5,
+                    null,
+                    "% Water Resist"
+                ],
+                [
+                    5,
+                    null,
+                    "% Air Resist"
                 ],
                 [
                     30,
@@ -10995,46 +10975,111 @@
                     "Prospecting"
                 ],
                 [
-                    5,
+                    1,
                     null,
-                    "% Air Resist"
+                    "Summon"
                 ],
                 [
-                    5,
+                    12,
                     null,
-                    "% Water Resist"
+                    "Heals"
                 ],
                 [
-                    5,
+                    12,
                     null,
-                    "% Neutral Resist"
+                    "Damage"
                 ],
                 [
-                    5,
+                    500,
                     null,
-                    "% Earth Resist"
+                    "Vitality"
                 ],
                 [
-                    5,
+                    70,
                     null,
-                    "% Fire Resist"
-                ]
-            ],
-            [
-                [
-                    100,
-                    null,
-                    "Agility"
+                    "Wisdom"
                 ],
                 [
-                    100,
+                    70,
+                    null,
+                    "Strength"
+                ],
+                [
+                    70,
+                    null,
+                    "Chance"
+                ],
+                [
+                    70,
                     null,
                     "Intelligence"
                 ],
                 [
+                    70,
+                    null,
+                    "Agility"
+                ]
+            ],
+            [
+                [
+                    10,
+                    null,
+                    "% Earth Resist"
+                ],
+                [
+                    10,
+                    null,
+                    "% Neutral Resist"
+                ],
+                [
+                    10,
+                    null,
+                    "% Fire Resist"
+                ],
+                [
+                    10,
+                    null,
+                    "% Water Resist"
+                ],
+                [
+                    10,
+                    null,
+                    "% Air Resist"
+                ],
+                [
+                    40,
+                    null,
+                    "Prospecting"
+                ],
+                [
+                    800,
+                    null,
+                    "Vitality"
+                ],
+                [
+                    1,
+                    null,
+                    "AP"
+                ],
+                [
+                    1,
+                    null,
+                    "Summon"
+                ],
+                [
+                    20,
+                    null,
+                    "Heals"
+                ],
+                [
+                    20,
+                    null,
+                    "Damage"
+                ],
+                [
                     100,
                     null,
-                    "Chance"
+                    "Wisdom"
                 ],
                 [
                     100,
@@ -11044,62 +11089,17 @@
                 [
                     100,
                     null,
-                    "Wisdom"
+                    "Chance"
                 ],
                 [
-                    20,
+                    100,
                     null,
-                    "Damage"
+                    "Intelligence"
                 ],
                 [
-                    20,
+                    100,
                     null,
-                    "Heals"
-                ],
-                [
-                    1,
-                    null,
-                    "Summon"
-                ],
-                [
-                    1,
-                    null,
-                    "AP"
-                ],
-                [
-                    800,
-                    null,
-                    "Vitality"
-                ],
-                [
-                    40,
-                    null,
-                    "Prospecting"
-                ],
-                [
-                    10,
-                    null,
-                    "% Air Resist"
-                ],
-                [
-                    10,
-                    null,
-                    "% Water Resist"
-                ],
-                [
-                    10,
-                    null,
-                    "% Fire Resist"
-                ],
-                [
-                    10,
-                    null,
-                    "% Neutral Resist"
-                ],
-                [
-                    10,
-                    null,
-                    "% Earth Resist"
+                    "Agility"
                 ]
             ]
         ],
@@ -24416,31 +24416,6 @@
                     "Agility"
                 ],
                 [
-                    10,
-                    null,
-                    "% Water Resist"
-                ],
-                [
-                    800,
-                    null,
-                    "Initiative"
-                ],
-                [
-                    20,
-                    null,
-                    "Critical Resist"
-                ],
-                [
-                    10,
-                    null,
-                    "AP Loss Resist"
-                ],
-                [
-                    10,
-                    null,
-                    "MP Reduction"
-                ],
-                [
                     1,
                     null,
                     "Range"
@@ -24448,34 +24423,7 @@
                 [
                     10,
                     null,
-                    "Neutral Damage"
-                ],
-                [
-                    10,
-                    null,
-                    "Earth Damage"
-                ],
-                [
-                    10,
-                    null,
-                    "Air Damage"
-                ]
-            ],
-            [
-                [
-                    10,
-                    null,
-                    "% Water Resist"
-                ],
-                [
-                    800,
-                    null,
-                    "Initiative"
-                ],
-                [
-                    20,
-                    null,
-                    "Critical Resist"
+                    "MP Reduction"
                 ],
                 [
                     10,
@@ -24483,14 +24431,31 @@
                     "AP Loss Resist"
                 ],
                 [
-                    10,
+                    15,
                     null,
-                    "MP Reduction"
+                    "Critical Resist"
                 ],
                 [
-                    80,
+                    800,
                     null,
-                    "Strength"
+                    "Initiative"
+                ],
+                [
+                    10,
+                    null,
+                    "% Water Resist"
+                ]
+            ],
+            [
+                [
+                    1,
+                    null,
+                    "AP"
+                ],
+                [
+                    1,
+                    null,
+                    "Range"
                 ],
                 [
                     80,
@@ -24498,29 +24463,34 @@
                     "Agility"
                 ],
                 [
-                    1,
+                    80,
                     null,
-                    "Range"
-                ],
-                [
-                    1,
-                    null,
-                    "AP"
+                    "Strength"
                 ],
                 [
                     10,
                     null,
-                    "Neutral Damage"
+                    "MP Reduction"
                 ],
                 [
                     10,
                     null,
-                    "Earth Damage"
+                    "AP Loss Resist"
+                ],
+                [
+                    15,
+                    null,
+                    "Critical Resist"
+                ],
+                [
+                    800,
+                    null,
+                    "Initiative"
                 ],
                 [
                     10,
                     null,
-                    "Air Damage"
+                    "% Water Resist"
                 ]
             ]
         ],
@@ -29527,12 +29497,13 @@
         "name_pt": "Conjunto Aparência de Guilda",
         "name_de": "Gildenprunkset",
         "name_it": "[!] Guild Ceremonial Set",
-        "items": 4,
+        "items": 5,
         "equipment_ids": [
             13240,
             18525,
             18579,
-            18580
+            18580,
+            30233
         ]
     },
     {
@@ -30401,7 +30372,7 @@
         "stats": [
             [
                 [
-                    40,
+                    20,
                     null,
                     "Critical Resist"
                 ],
@@ -30413,7 +30384,7 @@
                 [
                     40,
                     null,
-                    "Chance"
+                    "Strength"
                 ],
                 [
                     40,
@@ -30423,29 +30394,14 @@
                 [
                     40,
                     null,
-                    "Strength"
+                    "Chance"
                 ]
             ],
             [
                 [
-                    80,
+                    20,
                     null,
-                    "Chance"
-                ],
-                [
-                    80,
-                    null,
-                    "Intelligence"
-                ],
-                [
-                    80,
-                    null,
-                    "Strength"
-                ],
-                [
-                    25,
-                    null,
-                    "AP Loss Resist"
+                    "Critical Resist"
                 ],
                 [
                     1,
@@ -30453,9 +30409,24 @@
                     "AP"
                 ],
                 [
-                    40,
+                    25,
                     null,
-                    "Critical Resist"
+                    "AP Loss Resist"
+                ],
+                [
+                    80,
+                    null,
+                    "Strength"
+                ],
+                [
+                    80,
+                    null,
+                    "Intelligence"
+                ],
+                [
+                    80,
+                    null,
+                    "Chance"
                 ]
             ]
         ],
@@ -31713,14 +31684,9 @@
                     "Strength"
                 ],
                 [
-                    25,
+                    10,
                     null,
-                    "Critical Resist"
-                ],
-                [
-                    25,
-                    null,
-                    "Lock"
+                    "% Fire Resist"
                 ],
                 [
                     40,
@@ -31728,36 +31694,21 @@
                     "Chance"
                 ],
                 [
-                    10,
-                    null,
-                    "% Fire Resist"
-                ]
-            ],
-            [
-                [
-                    25,
-                    null,
-                    "Critical Resist"
-                ],
-                [
                     25,
                     null,
                     "Lock"
                 ],
                 [
-                    80,
+                    15,
                     null,
-                    "Chance"
-                ],
+                    "Critical Resist"
+                ]
+            ],
+            [
                 [
-                    80,
+                    10,
                     null,
-                    "Strength"
-                ],
-                [
-                    1,
-                    null,
-                    "AP"
+                    "% Fire Resist"
                 ],
                 [
                     150,
@@ -31765,9 +31716,29 @@
                     "Vitality"
                 ],
                 [
-                    10,
+                    1,
                     null,
-                    "% Fire Resist"
+                    "AP"
+                ],
+                [
+                    80,
+                    null,
+                    "Strength"
+                ],
+                [
+                    80,
+                    null,
+                    "Chance"
+                ],
+                [
+                    25,
+                    null,
+                    "Lock"
+                ],
+                [
+                    15,
+                    null,
+                    "Critical Resist"
                 ]
             ]
         ],
@@ -36962,11 +36933,14 @@
         "name_pt": "Conjunto de Aparência Samuravivo",
         "name_de": "Lebsamurai-Prunkset",
         "name_it": "[!] Samuralive Ceremonial Set",
-        "items": 3,
+        "items": 6,
         "equipment_ids": [
             23659,
             23660,
-            23708
+            23708,
+            30431,
+            30432,
+            30433
         ]
     },
     {
@@ -36977,12 +36951,17 @@
         "name_pt": "Conjunto de Aparência Quebra-Nozivo",
         "name_de": "Lebknacker-Prunkset",
         "name_it": "[!] Nut'Itinem Ceremonial Set",
-        "items": 4,
+        "items": 9,
         "equipment_ids": [
             26062,
             26063,
             26064,
-            26110
+            26110,
+            30426,
+            30427,
+            30428,
+            30429,
+            30430
         ]
     },
     {
@@ -37014,12 +36993,13 @@
         "name_pt": "Conjunto de Aparência de Hecate",
         "name_de": "Hécate-Prunkset",
         "name_it": "[!] Hecate Ceremonial Set",
-        "items": 4,
+        "items": 5,
         "equipment_ids": [
             27376,
             27377,
             27378,
-            27379
+            27379,
+            30252
         ]
     },
     {
@@ -37127,12 +37107,13 @@
         "name_pt": "Conjunto de Aparência de Rosal",
         "name_de": "Rosal-Prunkset",
         "name_it": "[!] Rosal Ceremonial Set",
-        "items": 4,
+        "items": 5,
         "equipment_ids": [
             26915,
             26919,
             26920,
-            27047
+            27047,
+            30254
         ]
     },
     {
@@ -37241,12 +37222,13 @@
         "name_pt": "Conjunto de Aparência da Cidade Sombria",
         "name_de": "Prunkset der Dunklen Stadt",
         "name_it": "[!] Dark City Ceremonial Set",
-        "items": 4,
+        "items": 5,
         "equipment_ids": [
             26185,
             26186,
             26187,
-            26188
+            26188,
+            30255
         ]
     },
     {
@@ -37751,7 +37733,7 @@
         "name_pt": "Conjunto de Aparência Iop",
         "name_de": "Iop-Prunkset",
         "name_it": "[!] Iop Ceremonial Set",
-        "items": 7,
+        "items": 8,
         "equipment_ids": [
             21319,
             21329,
@@ -37759,7 +37741,8 @@
             21333,
             21415,
             21416,
-            23002
+            23002,
+            30245
         ]
     },
     {
@@ -37865,7 +37848,7 @@
         "name_pt": "Conjunto de Aparência Sacrier",
         "name_de": "Sacrieur-Prunkset",
         "name_it": "[!] Sacrier Ceremonial Set",
-        "items": 7,
+        "items": 8,
         "equipment_ids": [
             23212,
             23213,
@@ -37873,7 +37856,8 @@
             23215,
             23216,
             23217,
-            23643
+            23643,
+            30244
         ]
     },
     {
@@ -38017,7 +38001,7 @@
         "name_pt": "Conjunto de Aparência Enutrof",
         "name_de": "Enutrof-Prunkset",
         "name_it": "[!] Enutrof Ceremonial Set",
-        "items": 7,
+        "items": 8,
         "equipment_ids": [
             25359,
             25360,
@@ -38025,7 +38009,8 @@
             25362,
             25363,
             25364,
-            25994
+            25994,
+            30235
         ]
     },
     {
@@ -38175,11 +38160,12 @@
         "name_pt": "Conjunto de Aparência de Katar",
         "name_de": "Prunkset Katar",
         "name_it": "[!] Katar Ceremonial Set",
-        "items": 3,
+        "items": 4,
         "equipment_ids": [
             27441,
             27442,
-            28293
+            28293,
+            30251
         ]
     },
     {
@@ -38237,11 +38223,12 @@
         "name_pt": "Conjunto de Aparência de Leorictus",
         "name_de": "Prunkset Leorictus",
         "name_it": "[!] Leorictus Ceremonial Set",
-        "items": 3,
+        "items": 4,
         "equipment_ids": [
             27359,
             27360,
-            27361
+            27361,
+            30253
         ]
     },
     {
@@ -38852,9 +38839,9 @@
     {
         "ankama_id": 646,
         "name_en": "Skratiay Clan Ceremonial Set",
-        "name_fr": "Panoplie d'apparat Clan Skratéa",
+        "name_fr": "Panoplie d'apparat du Clan Skratéa",
         "name_es": "Set cosmético del clan Skratea",
-        "name_pt": "Conjunto de Aparência Clan Skrat",
+        "name_pt": "Conjunto de Aparência do Clã Skratea",
         "name_de": "Prunkset des Skratea-Clans",
         "name_it": "[!] Skratiay Clan Ceremonial Set",
         "items": 4,
@@ -39028,7 +39015,7 @@
         "name_pt": "Conjunto de Aparência Grifado",
         "name_de": "Prunkset des Greifen",
         "name_it": "[!] Griffined Ceremonial Set",
-        "items": 16,
+        "items": 17,
         "equipment_ids": [
             22497,
             22498,
@@ -39045,7 +39032,8 @@
             22993,
             22994,
             22995,
-            22996
+            22996,
+            30424
         ]
     },
     {
@@ -39195,12 +39183,13 @@
         "name_pt": "Conjunto de Aparência de Beladona",
         "name_de": "Bellabone-Prunkset",
         "name_it": "[!] Bellabonna Ceremonial Set",
-        "items": 4,
+        "items": 5,
         "equipment_ids": [
             27937,
             27938,
             27939,
-            27940
+            27940,
+            30250
         ]
     },
     {
@@ -39226,7 +39215,7 @@
         "name_pt": "Conjunto de Aparência do Caçador",
         "name_de": "Prunkset des Fallenstellers",
         "name_it": "[!] Trapper Ceremonial Set",
-        "items": 8,
+        "items": 9,
         "equipment_ids": [
             27462,
             27463,
@@ -39235,7 +39224,8 @@
             27466,
             27467,
             27468,
-            27499
+            27499,
+            30243
         ]
     },
     {
@@ -39262,13 +39252,14 @@
         "name_pt": "Conjunto de Aparência do Mercenário",
         "name_de": "Prunkset des Söldners",
         "name_it": "[!] Mercenary Ceremonial Set",
-        "items": 5,
+        "items": 6,
         "equipment_ids": [
             27443,
             27444,
             27445,
             27447,
-            27448
+            27448,
+            30258
         ]
     },
     {
@@ -39291,7 +39282,7 @@
         "ankama_id": 672,
         "name_en": "Chtiger Ceremonial Set",
         "name_fr": "Panoplie d'apparat du Chtigre",
-        "name_es": "Set cosmético del chtigre",
+        "name_es": "Set cosmético de chtigre",
         "name_pt": "Conjunto de Aparência do Tigraxé",
         "name_de": "Prunkset des Tiguars",
         "name_it": "[!] Chtiger Ceremonial Set",
@@ -39433,7 +39424,7 @@
         "name_pt": "Conjunto de Aparência Celeste",
         "name_de": "Azurblaues Prunkset",
         "name_it": "[!] Azure Ceremonial Set",
-        "items": 9,
+        "items": 10,
         "equipment_ids": [
             21389,
             21390,
@@ -39443,7 +39434,8 @@
             21394,
             21395,
             21398,
-            21399
+            21399,
+            30241
         ]
     },
     {
@@ -39602,11 +39594,12 @@
         "name_pt": "Conjunto de Aparência do Samurai",
         "name_de": "Prunkset des Samurai",
         "name_it": "[!] Samurai Ceremonial Set",
-        "items": 3,
+        "items": 4,
         "equipment_ids": [
             14796,
             14797,
-            14799
+            14799,
+            30242
         ]
     },
     {
@@ -39648,10 +39641,11 @@
         "name_pt": "Conjunto de Aparência de Yugo , o Eliatrope",
         "name_de": "Prunkset von Yago dem Eliatropen",
         "name_it": "[!] Yugo the Eliatrope Ceremonial Set",
-        "items": 2,
+        "items": 3,
         "equipment_ids": [
             23712,
-            23713
+            23713,
+            30256
         ]
     },
     {
@@ -40448,7 +40442,7 @@
     {
         "ankama_id": 749,
         "name_en": "Yellow Quaquak Ceremonial Set",
-        "name_fr": "Panoplie d'apparat du KouinKoiun Jaune",
+        "name_fr": "Panoplie d'apparat du Kouin-Kouin Jaune",
         "name_es": "Set cosmético de kuakuá amarillo",
         "name_pt": "Conjunto de Aparência do KuimKium Amarelo",
         "name_de": "Prunkset des Gelben Quakquaks",
@@ -40656,10 +40650,11 @@
         "name_pt": "Conjunto de Aparência Siks Wonn Ein",
         "name_de": "Siks Won Nain-Prunkset",
         "name_it": "[!] Siks Wonn Ein Ceremonial Set",
-        "items": 2,
+        "items": 3,
         "equipment_ids": [
             9930,
-            9933
+            9933,
+            30425
         ]
     },
     {
@@ -41310,7 +41305,7 @@
         "name_pt": "Conjunto de Aparência Changuru",
         "name_de": "Känglüh-Prunkset",
         "name_it": "[!] Scorcheroo Ceremonial Set",
-        "items": 7,
+        "items": 8,
         "equipment_ids": [
             29159,
             29268,
@@ -41318,7 +41313,8 @@
             29288,
             29292,
             29299,
-            29323
+            29323,
+            30234
         ]
     },
     {
@@ -41606,14 +41602,16 @@
         "name_pt": "Conjunto de Aparência Afiado",
         "name_de": "Geschärftes Prunkset",
         "name_it": "[!] Sharp Ceremonial Set",
-        "items": 6,
+        "items": 8,
         "equipment_ids": [
             29465,
             29466,
             29467,
             29472,
             29473,
-            29474
+            29474,
+            30236,
+            30237
         ]
     },
     {
@@ -41689,14 +41687,15 @@
         "name_pt": "Conjunto de Aparência do Caçador de Truz",
         "name_de": "Prunkset des Kamelspatzen-Jägers",
         "name_it": "[!] Strich Hunter Ceremonial Set",
-        "items": 6,
+        "items": 7,
         "equipment_ids": [
             29555,
             29556,
             29557,
             29558,
             29564,
-            29565
+            29565,
+            30257
         ]
     },
     {
@@ -41786,23 +41785,24 @@
         "name_pt": "Conjunto de Aparência de Sombra Maldita",
         "name_de": "Prunkset des Verfluchten Schattens",
         "name_it": "[!] Cursed Shadow Ceremonial Set",
-        "items": 5,
+        "items": 6,
         "equipment_ids": [
             29731,
             29732,
             29733,
             29734,
+            29742,
             30021
         ]
     },
     {
         "ankama_id": 841,
-        "name_en": "[!] Panoplie d'apparat du Trankilou Argenté",
+        "name_en": "Silver Coolwolf Ceremonial Set",
         "name_fr": "Panoplie d'apparat du Trankilou Argenté",
-        "name_es": "Set del Trankilobo Plateado",
-        "name_pt": "[!] Panoplie d'apparat du Trankilou Argenté",
-        "name_de": "[!] Panoplie d'apparat du Trankilou Argenté",
-        "name_it": "[!] Panoplie d'apparat du Trankilou Argenté",
+        "name_es": "Set cosmético del Trankilobo Plateado",
+        "name_pt": "Conjunto de Aparência do Trankilobo Prateado",
+        "name_de": "Prunkset des Silbernen Friedwolfs",
+        "name_it": "[!] Silver Coolwolf Ceremonial Set",
         "items": 5,
         "equipment_ids": [
             29755,
@@ -41828,12 +41828,12 @@
     },
     {
         "ankama_id": 843,
-        "name_en": "[!] Panoplie d'apparat de Chevalier Noir",
+        "name_en": "Black Knight Ceremonial Set",
         "name_fr": "Panoplie d'apparat de Chevalier Noir",
-        "name_es": "[!] Panoplie d'apparat de Chevalier Noir",
-        "name_pt": "[!] Panoplie d'apparat de Chevalier Noir",
-        "name_de": "[!] Panoplie d'apparat de Chevalier Noir",
-        "name_it": "[!] Panoplie d'apparat de Chevalier Noir",
+        "name_es": "Set cosmético de caballero negro",
+        "name_pt": "Conjunto de Aparência de Cavaleiro Negro",
+        "name_de": "Prunkset des Schwarzen Ritters",
+        "name_it": "[!] Black Knight Ceremonial Set",
         "items": 5,
         "equipment_ids": [
             30061,
@@ -41845,12 +41845,12 @@
     },
     {
         "ankama_id": 846,
-        "name_en": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
+        "name_en": "Miserite Executor Ceremonial Set",
         "name_fr": "Panoplie d'apparat de l'Exécuteur Miséreux",
-        "name_es": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
-        "name_pt": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
-        "name_de": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
-        "name_it": "[!] Panoplie d'apparat de l'Exécuteur Miséreux",
+        "name_es": "Set cosmético de ejecutor mísero",
+        "name_pt": "Conjunto de Aparência do Carrasco Mísero",
+        "name_de": "Prunkset des Elenden Scharfrichters",
+        "name_it": "[!] Miserite Executor Ceremonial Set",
         "items": 5,
         "equipment_ids": [
             30022,
@@ -41861,13 +41861,30 @@
         ]
     },
     {
+        "ankama_id": 847,
+        "name_en": "An Air of Aerafal",
+        "name_fr": "Un air d'Aerafal",
+        "name_es": "Un aire de Aerafal",
+        "name_pt": "Ares de Aerafal",
+        "name_de": "Ein Hauch von Aerafal",
+        "name_it": "[!] An Air of Aerafal",
+        "items": 5,
+        "equipment_ids": [
+            30077,
+            30078,
+            30079,
+            30080,
+            30422
+        ]
+    },
+    {
         "ankama_id": 848,
-        "name_en": "[!] Panoplie d'apparat de la Flamme Bleue",
+        "name_en": "Blue Flame Ceremonial Set",
         "name_fr": "Panoplie d'apparat de la Flamme Bleue",
-        "name_es": "[!] Panoplie d'apparat de la Flamme Bleue",
-        "name_pt": "[!] Panoplie d'apparat de la Flamme Bleue",
-        "name_de": "[!] Panoplie d'apparat de la Flamme Bleue",
-        "name_it": "[!] Panoplie d'apparat de la Flamme Bleue",
+        "name_es": "Set cosmético de la Llama Azul",
+        "name_pt": "Conjunto de Aparência da Chama Azul",
+        "name_de": "Prunkset der Blauen Flamme",
+        "name_it": "[!] Blue Flame Ceremonial Set",
         "items": 6,
         "equipment_ids": [
             30081,
@@ -41876,6 +41893,248 @@
             30084,
             30085,
             30086
+        ]
+    },
+    {
+        "ankama_id": 849,
+        "name_en": "Guyomu Oniwa Ceremonial Set",
+        "name_fr": "Panoplie d'apparat de Guyomu Oniwa",
+        "name_es": "Set cosmético de Guyomu Oniwa",
+        "name_pt": "Conjunto de Aparência de Guyomu Oniwa",
+        "name_de": "Gyomu Oniwas Prunkset",
+        "name_it": "[!] Guyomu Oniwa Ceremonial Set",
+        "items": 5,
+        "equipment_ids": [
+            30103,
+            30104,
+            30105,
+            30106,
+            30107
+        ]
+    },
+    {
+        "ankama_id": 850,
+        "name_en": "Krosmoz Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Krosmoz",
+        "name_es": "Set cosmético del Krosmoz",
+        "name_pt": "Conjunto de Aparência do Krosmoz",
+        "name_de": "Krosmoz-Prunkset",
+        "name_it": "[!] Krosmoz Ceremonial Set",
+        "items": 5,
+        "equipment_ids": [
+            30142,
+            30143,
+            30144,
+            30145,
+            30146
+        ]
+    },
+    {
+        "ankama_id": 851,
+        "name_en": "Wikkan Sage Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Sage Wikkan",
+        "name_es": "Set cosmético de sabio Wikkan",
+        "name_pt": "Conjunto de Aparência do Sábio Wikkan",
+        "name_de": "Prunkset des Wikkan-Weisen",
+        "name_it": "[!] Wikkan Sage Ceremonial Set",
+        "items": 4,
+        "equipment_ids": [
+            30149,
+            30151,
+            30153,
+            30155
+        ]
+    },
+    {
+        "ankama_id": 852,
+        "name_en": "Great Wikkan Sage Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Grand Sage Wikkan",
+        "name_es": "Set cosmético de gran sabio Wikkan",
+        "name_pt": "Conjunto de Aparência do Grande Sábio Wikkan",
+        "name_de": "Prunkset des Großen Wikkan-Weisen",
+        "name_it": "[!] Great Wikkan Sage Ceremonial Set",
+        "items": 4,
+        "equipment_ids": [
+            30150,
+            30152,
+            30154,
+            30156
+        ]
+    },
+    {
+        "ankama_id": 853,
+        "name_en": "Weapons Master Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Maître d'Armes",
+        "name_es": "Set cosmético de maestro de armas",
+        "name_pt": "Conjunto de Aparência do Mestre de Armas",
+        "name_de": "Waffenmeisters Prunkset",
+        "name_it": "[!] Weapons Master Ceremonial Set",
+        "items": 6,
+        "equipment_ids": [
+            30203,
+            30205,
+            30206,
+            30208,
+            30209,
+            30210
+        ]
+    },
+    {
+        "ankama_id": 854,
+        "name_en": "Flutterfly Ceremonial Set",
+        "name_fr": "Panoplie d'apparat Papillonnante",
+        "name_es": "Set cosmético mariposeador",
+        "name_pt": "Conjunto de Aparência Borboletando",
+        "name_de": "Flatterhaftes Prunkset",
+        "name_it": "[!] Flutterfly Ceremonial Set",
+        "items": 5,
+        "equipment_ids": [
+            30227,
+            30228,
+            30229,
+            30230,
+            30231
+        ]
+    },
+    {
+        "ankama_id": 855,
+        "name_en": "Ankamian Ceremonial Set",
+        "name_fr": "Panoplie d'apparat Ankamienne",
+        "name_es": "Set cosmético ankamiano",
+        "name_pt": "Conjunto de Aparência Amakniano",
+        "name_de": "Ankamianisches Prunkset",
+        "name_it": "[!] Ankamian Ceremonial Set",
+        "items": 2,
+        "equipment_ids": [
+            21874,
+            30225
+        ]
+    },
+    {
+        "ankama_id": 856,
+        "name_en": "Celestial Eagle Ceremonial Set",
+        "name_fr": "Panoplie d'apparat de l'aigle céleste",
+        "name_es": "Set cosmético de águila celestial",
+        "name_pt": "Conjunto de Aparência da Águia Celeste",
+        "name_de": "Prunkset des Himmlischen Adlers",
+        "name_it": "[!] Celestial Eagle Ceremonial Set",
+        "items": 5,
+        "equipment_ids": [
+            30329,
+            30330,
+            30331,
+            30332,
+            30363
+        ]
+    },
+    {
+        "ankama_id": 857,
+        "name_en": "Hornbearer Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Kornu",
+        "name_es": "Set cosmético del kornudo",
+        "name_pt": "Conjunto de Aparência Córneo",
+        "name_de": "Prunkset des Gehörnten",
+        "name_it": "[!] Hornbearer Ceremonial Set",
+        "items": 4,
+        "equipment_ids": [
+            18898,
+            30353,
+            30354,
+            30355
+        ]
+    },
+    {
+        "ankama_id": 858,
+        "name_en": "Retrofus Set",
+        "name_fr": "Panoplie Retrofus",
+        "name_es": "Set cosmético Retrofus",
+        "name_pt": "Conjunto Retrofus",
+        "name_de": "Retrofus-Ausrüstungsset",
+        "name_it": "[!] Retrofus Set",
+        "items": 4,
+        "equipment_ids": [
+            30434,
+            30538,
+            30539,
+            30540
+        ]
+    },
+    {
+        "ankama_id": 859,
+        "name_en": "Great Stag Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Grand Cerf",
+        "name_es": "Set cosmético del Gran Ciervo",
+        "name_pt": "Conjunto de Aparência do Grande Cervo",
+        "name_de": "Prunkset des Großen Hirsches",
+        "name_it": "[!] Great Stag Ceremonial Set",
+        "items": 4,
+        "equipment_ids": [
+            30458,
+            30459,
+            30460,
+            30461
+        ]
+    },
+    {
+        "ankama_id": 860,
+        "name_en": "Stag God Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Dieu Cerf",
+        "name_es": "Set cosmético del Dios Ciervo",
+        "name_pt": "Conjunto de Aparência do Deus Cervo",
+        "name_de": "Prunkset des Hirschgottes",
+        "name_it": "[!] Stag God Ceremonial Set",
+        "items": 4,
+        "equipment_ids": [
+            30462,
+            30463,
+            30464,
+            30465
+        ]
+    },
+    {
+        "ankama_id": 861,
+        "name_en": "[!] Panoplie d'apparat du Grand Spectacle",
+        "name_fr": "Panoplie d'apparat du Grand Spectacle",
+        "name_es": "[!] Panoplie d'apparat du Grand Spectacle",
+        "name_pt": "[!] Panoplie d'apparat du Grand Spectacle",
+        "name_de": "[!] Panoplie d'apparat du Grand Spectacle",
+        "name_it": "[!] Panoplie d'apparat du Grand Spectacle",
+        "items": 3,
+        "equipment_ids": [
+            30524,
+            30525,
+            30526
+        ]
+    },
+    {
+        "ankama_id": 862,
+        "name_en": "Chun-Leia Ceremonial Set",
+        "name_fr": "Panoplie d'apparat de Chun-Leia",
+        "name_es": "Set cosmético de Chun-Leia",
+        "name_pt": "Conjunto de Aparência de Chun-Leia",
+        "name_de": "Chun-Leia-Prunkset",
+        "name_it": "[!] Chun-Leia Ceremonial Set",
+        "items": 4,
+        "equipment_ids": [
+            30520,
+            30521,
+            30522,
+            30523
+        ]
+    },
+    {
+        "ankama_id": 934,
+        "name_en": "",
+        "name_fr": "",
+        "name_es": "",
+        "name_pt": "",
+        "name_de": "",
+        "name_it": "",
+        "items": 3,
+        "equipment_ids": [
+            30817,
+            30818,
+            30819
         ]
     }
 ]

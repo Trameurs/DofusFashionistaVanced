@@ -1,0 +1,8 @@
+COPYING
+COPYING.LESSER
+README.md
+setup.py
+DofusFashionistaVanced.egg-info/PKG-INFO
+DofusFashionistaVanced.egg-info/SOURCES.txt
+DofusFashionistaVanced.egg-info/dependency_links.txt
+DofusFashionistaVanced.egg-info/top_level.txt
