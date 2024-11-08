@@ -16,7 +16,13 @@
 
 import json
 import pickle
-from fashionistapulp.dofus_constants import STAT_NAME_TO_KEY, STAT_ORDER, TYPE_NAME_TO_SLOT
+
+from fashionistapulp.fashionistapulp.dofus_constants import (
+    STAT_NAME_TO_KEY,
+    STAT_ORDER,
+    TYPE_NAME_TO_SLOT
+)
+
 
 LANGUAGES = ['en', 'fr', 'es', 'pt', 'de', 'it']
 
