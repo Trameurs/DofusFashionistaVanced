@@ -3,7 +3,7 @@
 while true
 do
     # Set the PYTHONPATH to include necessary directories
-    export PYTHONPATH=$PYTHONPATH:~/fashionista/fashionistapulp
+    export PYTHONPATH=$PYTHONPATH:~/DofusFashionistaVanced/fashionistapulp
 
     # Run the cache-wiping script
     ./wipe_solution_cache.py
