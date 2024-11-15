@@ -28,10 +28,10 @@ print(f"System: {platform.system()}")
 print(f"Machine: {platform.machine()}")
 
 # Detect if we are running on a Raspberry Pi or on an AWS server
-if platform.system() == 'Linux' and 'arm' in platform.machine():
-    # On Raspberry Pi (ARM architecture)
+if platform.system() == 'Linux' and ('arm' in platform.machine() or 'aarch64' in platform.machine()):
+    # On Raspberry Pi (ARM architecture, both 32-bit and 64-bit)
     cbc_path = '/usr/bin/cbc'
-    print(f"Detected ARM architecture. Using system-installed CBC at: {cbc_path}")
+    print(f"Detected ARM architecture (aarch64). Using system-installed CBC at: {cbc_path}")
     if not os.path.isfile(cbc_path):
         raise FileNotFoundError(f"CBC binary not found at {cbc_path}")
     SOLVER = pulp.COIN_CMD(path=cbc_path, timeLimit=90, keepFiles=True)
