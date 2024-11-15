@@ -23,15 +23,18 @@ import os
 import uuid
 import platform
 
-# Detect if we are running on a Raspberry Pi or on an AWS server
 if platform.system() == 'Linux' and 'arm' in platform.machine():
     # On Raspberry Pi (ARM architecture)
-    SOLVER = pulp.COIN_CMD(path='/usr/bin/cbc', timeLimit=90, keepFiles=True)
+    cbc_path = '/usr/bin/cbc'
+    if not os.path.isfile(cbc_path):
+        raise FileNotFoundError(f"CBC binary not found at {cbc_path}")
+    print(f"Using CBC solver at: {cbc_path}")
+    SOLVER = pulp.COIN_CMD(path=cbc_path, timeLimit=90, keepFiles=True)
 else:
     # On AWS or other x86_64 systems
-    SOLVER = pulp.COIN_CMD(path=get_fashionista_path() + '/fashionistapulp/fashionistapulp/cbc',
-                           timeLimit=90,
-                           keepFiles=True)
+    cbc_path = get_fashionista_path() + '/fashionistapulp/fashionistapulp/cbc'
+    print(f"Using CBC solver at: {cbc_path}")
+    SOLVER = pulp.COIN_CMD(path=cbc_path, timeLimit=90, keepFiles=True)
 
 class LpProblem2:
     
