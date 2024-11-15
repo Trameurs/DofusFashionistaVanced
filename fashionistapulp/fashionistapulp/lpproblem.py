@@ -19,14 +19,18 @@
 from .fashionista_config import get_fashionista_path
 from pulp import LpVariable, LpInteger, LpProblem, LpMaximize, LpStatus, value
 import pulp
-
 import os
 import uuid
 
-
-SOLVER = pulp.COIN_CMD(path=get_fashionista_path() + '/fashionistapulp/fashionistapulp/cbc',
-                  timeLimit=90,
-                  keepFiles=True)
+# Detect if we are running on a Raspberry Pi or on an AWS server
+if platform.system() == 'Linux' and 'arm' in platform.machine():
+    # On Raspberry Pi (ARM architecture)
+    SOLVER = pulp.COIN_CMD(path='/usr/bin/cbc', timeLimit=90, keepFiles=True)
+else:
+    # On AWS or other x86_64 systems
+    SOLVER = pulp.COIN_CMD(path=get_fashionista_path() + '/fashionistapulp/fashionistapulp/cbc',
+                           timeLimit=90,
+                           keepFiles=True)
 
 class LpProblem2:
     
