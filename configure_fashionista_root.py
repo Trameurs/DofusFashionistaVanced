@@ -29,19 +29,20 @@ if platform.system() == 'Windows':
 else:
     CONFIG_DIR = '/etc/fashionista'
 
+# Updated package list for Debian-based systems
 PACKAGES_TO_INSTALL = {
     'apt-get': [
-        'python-pip', 'sqlite3', 'pngcrush', 'imagemagick', 'mysql-server',
-        'mysql-client', 'python-dev', 'libmysqlclient-dev', 'libevent-dev', 'memcached',
+        'python3-pip', 'sqlite3', 'pngcrush', 'imagemagick', 'mariadb-server',
+        'mariadb-client', 'python3-dev', 'libmariadb-dev', 'libevent-dev', 'memcached',
     ],
     'yum': [
-        'python-pip', 'sqlite', 'pngcrush', 'ImageMagick', 'mariadb-server',
-        'mariadb', 'python-devel', 'mariadb-devel', 'libevent-devel', 'memcached',
+        'python3-pip', 'sqlite', 'pngcrush', 'ImageMagick', 'mariadb-server',
+        'mariadb', 'python3-devel', 'mariadb-devel', 'libevent-devel', 'memcached',
     ]
 }
 
 PIP_PACKAGES_TO_INSTALL = [
-    'Django==1.8.13.....', # Application server.
+    'Django==4.2.6', # Updated Django version
     'python-social-auth==0.2.21', # Federated SSO.
     'social-auth-core',
     'social-auth-app-django',
@@ -79,7 +80,7 @@ GEN_CONFIG_FILE = {
     "EMAIL_USE_TLS": True,
     "EMAIL_HOST": "smtp@host.com",
     "EMAIL_PORT": 587,
-    }
+}
 
 def main():
     if getpass.getuser() != 'root' and platform.system() != 'Windows':
@@ -87,85 +88,72 @@ def main():
         return
         
     parser = argparse.ArgumentParser()
-    parser.add_argument('-i', '--install_deps',
-                        action='store_true',
-                        help='install packages Fashionista depends on')
-    parser.add_argument('-s', '--serve_static_files',
-                        action='store_true',
-                        help='serve static files instead of linking to S3')
-    parser.add_argument('-d', '--debug_mode',
-                        action='store_true',
-                        help='run server in DEBUG mode')
+    parser.add_argument('-i', '--install_deps', action='store_true', help='install packages Fashionista depends on')
+    parser.add_argument('-s', '--serve_static_files', action='store_true', help='serve static files instead of linking to S3')
+    parser.add_argument('-d', '--debug_mode', action='store_true', help='run server in DEBUG mode')
     args = parser.parse_args()
     
     _print_header('Writing config files')
     if not os.path.exists(CONFIG_DIR):
-        os.mkdir(CONFIG_DIR)
+        os.makedirs(CONFIG_DIR)
         
-    path_config_file_path = CONFIG_DIR + '/config'
+    path_config_file_path = os.path.join(CONFIG_DIR, 'config')
     with open(path_config_file_path, 'w') as f:
         f.write(os.getcwd())
-    print('Wrote path to %s' % path_config_file_path)
+    print(f'Wrote path to {path_config_file_path}')
     
-    path_gen_config_file_path = CONFIG_DIR + '/gen_config.json'
+    path_gen_config_file_path = os.path.join(CONFIG_DIR, 'gen_config.json')
     if not os.path.exists(path_gen_config_file_path):
         with open(path_gen_config_file_path, 'w') as f:
             f.write(json.dumps(GEN_CONFIG_FILE, indent=4, sort_keys=True))
-        print('Wrote path to %s. Please fill it out manually.' % path_gen_config_file_path)
+        print(f'Wrote path to {path_gen_config_file_path}. Please fill it out manually.')
         input('Press Enter once it is done.')
     else:
-        print('Skipping creation of %s: already exists.' % path_config_file_path)
+        print(f'Skipping creation of {path_gen_config_file_path}: already exists.')
     
-    static_config_file_path = CONFIG_DIR + '/serve_static'
+    static_config_file_path = os.path.join(CONFIG_DIR, 'serve_static')
     with open(static_config_file_path, 'w') as f:
         f.write(str(args.serve_static_files))
-    print('Wrote serve static to %s' % static_config_file_path)
+    print(f'Wrote serve static to {static_config_file_path}')
 
-    debug_config_file_path = CONFIG_DIR + '/debug_mode'
+    debug_config_file_path = os.path.join(CONFIG_DIR, 'debug_mode')
     with open(debug_config_file_path, 'w') as f:
         f.write(str(args.debug_mode))
-    print('Wrote debug mode to %s' % debug_config_file_path)
+    print(f'Wrote debug mode to {debug_config_file_path}')
 
     with open(path_gen_config_file_path, 'r') as f:
-        GEN_CONFIGS = json.loads(f.read())
-    mysql_config_file_path = '../.my.cnf'
+        GEN_CONFIGS = json.load(f)
+    
+    mysql_config_file_path = os.path.join('..', '.my.cnf')
     with open(mysql_config_file_path, 'w') as f:
-        f.write("""
+        f.write(f"""
 [client]
-user=%s
-password=%s
+user={GEN_CONFIGS['mysql_USER']}
+password={GEN_CONFIGS['mysql_PASSWORD']}
 
 [mysqldump]
-user=%s
-password=%s
-""" % (GEN_CONFIGS['mysql_USER'], 
-       GEN_CONFIGS['mysql_PASSWORD'], 
-       GEN_CONFIGS['mysql_USER'], 
-       GEN_CONFIGS['mysql_PASSWORD']))
-    if platform.system() != 'Windows':
-        call(['chmod', '644', mysql_config_file_path])
-    print('Wrote MySQL config to %s' % mysql_config_file_path)
+user={GEN_CONFIGS['mysql_USER']}
+password={GEN_CONFIGS['mysql_PASSWORD']}
+""")
+    call(['chmod', '644', mysql_config_file_path])
+    print(f'Wrote MySQL config to {mysql_config_file_path}')
 
     if args.install_deps:
         _print_header('Installing dependencies')
-        if platform.system() == 'Windows':
-            check_call([sys.executable, '-m', 'pip', 'install'] + PIP_PACKAGES_TO_INSTALL)
-        else:
-            package_manager = _get_package_manager()
-            if package_manager:
-                call([package_manager, 'install'] + PACKAGES_TO_INSTALL[package_manager])
-                call(['python', '-m', 'pip', 'install'] + PIP_PACKAGES_TO_INSTALL)
+        package_manager = _get_package_manager()
+        if package_manager:
+            call(['sudo', package_manager, 'install', '-y'] + PACKAGES_TO_INSTALL[package_manager])
+            call(['pip3', 'install'] + PIP_PACKAGES_TO_INSTALL)
 
     _print_header('Done')
 
 def _get_package_manager():
-    """Identify the appropriate package manager (apt-get or yum) for the distribution."""
     try:
         with open('/etc/os-release', 'r') as f:
             distro_name = f.readline().split('=')[1].strip().replace('"', '')
         if 'ubuntu' in distro_name.lower() or 'debian' in distro_name.lower():
             return 'apt-get'
-        elif 'amzn' in distro_name.lower() or 'centos' in distro_name.lower() or 'redhat' in distro_name.lower():
+        elif 'amzn' in distro_name.lower() or 'centos' in distro_name.lower():
             return 'yum'
     except Exception as e:
         print(f"Error determining package manager: {e}")
