@@ -21,6 +21,7 @@ from pulp import LpVariable, LpInteger, LpProblem, LpMaximize, LpStatus, value
 import pulp
 import os
 import uuid
+import platform
 
 # Detect if we are running on a Raspberry Pi or on an AWS server
 if platform.system() == 'Linux' and 'arm' in platform.machine():
