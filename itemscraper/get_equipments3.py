@@ -24,7 +24,7 @@ from fashionistapulp.fashionistapulp.dofus_constants import (
 )
 
 
-LANGUAGES = ['en', 'fr', 'es', 'pt', 'de', 'it']
+LANGUAGES = ['en', 'fr', 'es', 'pt', 'de']
 
 WEAPON_TYPES = {
     'Hammer': 'hammer',
