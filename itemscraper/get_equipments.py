@@ -17,10 +17,10 @@
 import requests
 import json
 
-LANGUAGES = ['en', 'fr', 'es', 'pt', 'de', 'it']
+LANGUAGES = ['en', 'fr', 'es', 'pt', 'de']
 
 # API base URL
-api_base = "https://api.dofusdu.de/dofus2/"
+api_base = "https://api.dofusdu.de/dofus3beta/v1/"
 
 # Endpoints
 endpoints = {

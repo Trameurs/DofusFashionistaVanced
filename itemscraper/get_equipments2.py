@@ -88,7 +88,7 @@ STAT_TRANSLATE = {
     '% Spell Damage': '% Spell Damage',
 }
 
-LANGUAGES = ['en', 'fr', 'es', 'pt', 'de', 'it']
+LANGUAGES = ['en', 'fr', 'es', 'pt', 'de']
 
 # Function to load data for each language
 def load_data_for_language(lang, data_type):
@@ -151,8 +151,20 @@ for item in equipment_data['en']['items']:
         transformed_item["crit_chance"] = item["critical_hit_probability"]
     if "critical_hit_bonus" in item:
         transformed_item["crit_bonus"] = item["critical_hit_bonus"]
-    if "conditions" in item:
-        transformed_item["conditions"] = [f"{cond['element']['name']} {cond['operator']} {cond['int_value']}" for cond in item["conditions"]]
+    if "conditions" in item and isinstance(item["conditions"], dict):
+        def parse_conditions(condition_node):
+            conditions = []
+            if "children" in condition_node:
+                for child in condition_node["children"]:
+                    conditions.extend(parse_conditions(child))
+            if "condition" in condition_node:
+                cond = condition_node["condition"]
+                conditions.append(f"{cond.get('element', {}).get('name', '')} {cond.get('operator', '')} {cond.get('int_value', '')}")
+            return conditions
+        parsed_conditions = parse_conditions(item["conditions"])
+        transformed_item["conditions"] = parsed_conditions if parsed_conditions else []
+    else:
+        transformed_item["conditions"] = []
     if "effects" in item:
         transformed_item["stats"] = [
             [
@@ -251,15 +263,21 @@ for item in set_data['en']["sets"]:
     if "items" in item:
         transformed_item["items"] = item["items"]
     if "effects" in item:
-        transformed_item["stats"] = []
-        for i, effect_group in enumerate(item["effects"]):  # Iterate over each group of effects
-            transformed_item["stats"].append([
-            [
-                eff["int_minimum"] if not eff["ignore_int_min"] else None,
-                eff["int_maximum"] if not eff["ignore_int_max"] else None,
-                eff["type"]["name"] 
-            ] for eff in effect_group
-        ])
+        transformed_item["stats_list"] = []
+        for effect_key, effect_value in item.get("effects", {}).items():
+            if effect_value is None:
+                continue
+            stats_entry = {
+                "effect_key": effect_key,
+                "effects": [
+                    [
+                        eff.get("int_minimum", None) if not eff.get("ignore_int_min", False) else None,
+                        eff.get("int_maximum", None) if not eff.get("ignore_int_max", False) else None,
+                        eff.get("type", {}).get("name", "")
+                    ] for eff in effect_value
+                ]
+            }
+            transformed_item["stats_list"].append(stats_entry)
     if "equipment_ids" in item:
         transformed_item["equipment_ids"] = item["equipment_ids"]
 
