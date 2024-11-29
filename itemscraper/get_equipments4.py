@@ -30,9 +30,11 @@ def download_image(url, filename):
     if response.status_code == 200:
         with open(filename, 'wb') as file:
             file.write(response.content)
+current_directory = os.path.dirname(__file__)
+target_directory = os.path.join(current_directory, '../fashionsite/staticfiles/chardata/')
 
-target_directory = '../fashionsite/staticfiles/chardata/'
-
+count = 0
+total = len(data)
 for item in data:
     image_url = item.get('image_url')
     if image_url:
@@ -42,3 +44,5 @@ for item in data:
         else:
             filename = os.path.join(target_directory, "items/", sanitize_filename(f"{item['name_en']}.png"))
         download_image(image_url, filename)
+        count += 1
+        print(f"Download images {count} / {total}")

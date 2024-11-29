@@ -883,28 +883,39 @@ class Model:
             self.restrictions.fourth_set_constraints[item_set.name] = restrictions_list
     
     def create_light_set_constraints(self):
-        MAX_SETS_ONE_CAN_EQUIP = len(self.sets_list)
+        """
+        Constraints for light sets:
+        - Only one bonus 3 present if at least one item has the weird_condition 'light_set'
+        - Only two bonus 2 present if at least one item has the weird_condition 'light_set'
+        - If there is no weird_condition 'light_set' present, there can be at most 6 trophies
+        """
+        N_TOTAL_SETS = len(self.sets_list)
+        # Count 1 for each bonus 2 for all item sets tested
         matrix = [(1, 'ss', '%d_%d' % (item_set.id, 2 + 1)) for item_set in self.sets_list]
-        matrix.append((-MAX_SETS_ONE_CAN_EQUIP, 'ytrophy', 1))
-        restriction = self.problem.restriction_lt_eq(1, matrix) 
+        # Count 2 for each bonus 3 for all item sets tested
+        matrix += [(2, 'ss', '%d_%d' % (item_set.id, 3 + 1)) for item_set in self.sets_list]
+        matrix.append((-N_TOTAL_SETS, 'ytrophy', 1))  
+        # restriction to 2 (either 1 bonus 3 or 2 bonus 2)
+        restriction = self.problem.restriction_lt_eq(2, matrix) 
         self.restrictions.first_light_set_constraint = restriction
         
-        restriction = self.problem.restriction_lt_eq(MAX_SETS_ONE_CAN_EQUIP, [(MAX_SETS_ONE_CAN_EQUIP, 'ytrophy', 1), 
+        restriction = self.problem.restriction_lt_eq(N_TOTAL_SETS, [(N_TOTAL_SETS, 'ytrophy', 1), 
                                                                               (1, 'trophies', 1)]) 
         self.restrictions.second_light_set_constraint = restriction
         
         plist = []
-        for slot in range(3, 9):
-            plist.extend([(1, 'ss', '%d_%d' % (item_set.id, slot + 1)) for item_set in self.sets_list])
-        plist.append((-MAX_SETS_ONE_CAN_EQUIP, 'ytrophy', 2))
+        # Limits the number of bonus 4 or more to 0
+        for set_bonus in range(4, 9): 
+            plist.extend([(1, 'ss', '%d_%d' % (item_set.id, set_bonus + 1)) for item_set in self.sets_list])
+        plist.append((-N_TOTAL_SETS, 'ytrophy', 2))
         restriction = self.problem.restriction_lt_eq(0, plist)
         self.restrictions.third_light_set_constraint = restriction
         
-        restriction = self.problem.restriction_lt_eq(MAX_SETS_ONE_CAN_EQUIP, [(MAX_SETS_ONE_CAN_EQUIP, 'ytrophy', 2), 
+        restriction = self.problem.restriction_lt_eq(N_TOTAL_SETS, [(N_TOTAL_SETS, 'ytrophy', 2), 
                                                                               (1, 'trophies', 1)]) 
         self.restrictions.fourth_light_set_constraint = restriction
-    
         plist = []
+        # Count one for each item with weird_condition 'light_set'
         for item in self.items_list:
             if item.weird_conditions['light_set']:
                 plist.append((1, 'x', item.id))
