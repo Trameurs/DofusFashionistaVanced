@@ -16,15 +16,16 @@
 
 import json
 import pickle
-
+import os
 from fashionistapulp.fashionistapulp.dofus_constants import (
     STAT_NAME_TO_KEY,
     STAT_ORDER,
     TYPE_NAME_TO_SLOT
 )
+current_directory = os.path.dirname(__file__)
 
 
-LANGUAGES = ['en', 'fr', 'es', 'pt', 'de', 'it']
+LANGUAGES = ['en', 'fr', 'es', 'pt', 'de'] # Italy data is not available
 
 WEAPON_TYPES = {
     'Hammer': 'hammer',
@@ -44,36 +45,64 @@ STAT_NAME_TO_KEY_LOCAL = {
     'Power': 'pow',
     'Damage': 'dam',
     'Heals': 'heals',
+    'Heal': 'heals', # dofus3beta/v1
     'AP': 'ap',
     'MP': 'mp',
     'Critical Hits': 'ch',
+    '% Critical': 'ch', # dofus3beta/v1
     'Agility': 'agi',
     'Strength': 'str',
     'Neutral Damage': 'neutdam',
+    'Neutral damage': 'neutdam', # dofus3beta/v1
     'Earth Damage': 'earthdam',
+    'Earth damage': 'earthdam', # dofus3beta/v1
     'Intelligence': 'int',
     'Fire Damage': 'firedam',
+    'Fire damage': 'firedam', # dofus3beta/v1
     'Air Damage': 'airdam',
+    'Air damage': 'airdam', # dofus3beta/v1
     'Chance': 'cha',
     'Water Damage': 'waterdam',
+    'Water damage': 'waterdam', # dofus3beta/v1
     'Vitality': 'vit',
     'Initiative': 'init',
     'Summon': 'summon',
+    'Summons': 'summon', # dofus3beta/v1
     'Range': 'range',
     'Wisdom': 'wis',
     'Neutral Resist': 'neutres',
+    'Neutral Resistance': 'neutres', # dofus3beta/v1
     'Water Resist': 'waterres',
+    'Water Resistance': 'waterres', # dofus3beta/v1
     'Air Resist': 'airres',
+    'Air Resistance': 'airres', # dofus3beta/v1
     'Fire Resist': 'fireres',
+    'Fire Resistance': 'fireres', # dofus3beta/v1
     'Earth Resist': 'earthres',
+    'Earth Resistance': 'earthres', # dofus3beta/v1
     '% Neutral Resist': 'neutresper',
+    '% Neutral Resistance': 'neutresper', # dofus3beta/v1
     '% Air Resist': 'airresper',
+    '% Air Resistance': 'airresper', # dofus3beta/v1
     '% Fire Resist': 'fireresper',
+    '% Fire Resistance': 'fireresper', # dofus3beta/v1
     '% Water Resist': 'waterresper',
+    '% Water Resistance': 'waterresper', # dofus3beta/v1
+    '% Earth Resistance': 'earthresper', # dofus3beta/v1
     '% Earth Resist': 'earthresper',
+    'Neutral Resistance in PVP': 'pvpneutres', # dofus3beta/v1
     'Neutral Resist in PVP': 'pvpneutres',
+    'Water Resistance in PVP': 'pvpwaterres', # dofus3beta/v1
     'Water Resist in PVP': 'pvpwaterres',
+    'Air Resistance in PVP': 'pvpairres', # dofus3beta/v1
     'Air Resist in PVP': 'pvpairres',
+    'Fire Resistance in PVP': 'pvpfireres', # dofus3beta/v1
+    'Earth Resistance in PVP': 'pvpearthres', # dofus3beta/v1
+    '% Neutral Resistance in PVP': 'pvpneutresper', # dofus3beta/v1
+    '% Air Resistance in PVP': 'pvpairresper', # dofus3beta/v1
+    '% Fire Resistance in PVP': 'pvpfireresper', # dofus3beta/v1
+    '% Water Resistance in PVP': 'pvpwaterresper', # dofus3beta/v1
+    '% Earth Resistance in PVP': 'pvpearthresper', # dofus3beta/v1
     'Fire Resist in PVP': 'pvpfireres',
     'Earth Resist in PVP': 'pvpearthres',
     '% Neutral Resist in PVP': 'pvpneutresper',
@@ -88,13 +117,18 @@ STAT_NAME_TO_KEY_LOCAL = {
     'Lock': 'lock',
     'Dodge': 'dodge',
     'Reflects': 'ref',
+    "reflected Damage": 'ref', # dofus3beta/v1
     'Pushback Damage': 'pshdam',
     'Trap Damage': 'trapdam',
     '% Trap Damage': 'trapdamper',
     'Critical Resist': 'crires',
+    'Critical Resistance': 'crires', # dofus3beta/v1
     'Pushback Resist': 'pshres',
+    'Pushback Resistance': 'pshres', # dofus3beta/v1
     'MP Loss Resist': 'mpres',
+    'MP Parry': 'mpres', # dofus3beta/v1
     'AP Loss Resist': 'apres',
+    'AP Parry': 'apres', # dofus3beta/v1
     'Critical Damage': 'cridam',
     'Critical Failure': 'cf',
     '% Melee Damage': 'permedam',
@@ -111,14 +145,14 @@ def escape_single_quotes(s):
     return s.replace("'", "''")
 
 # Read the original JSON file
-with open('transformed_equipment.json', 'r', encoding='utf-8') as f:
+with open(f'{current_directory}/transformed_equipment.json', 'r', encoding='utf-8') as f:
     original_data = json.load(f)
 
-with open('transformed_sets.json', 'r', encoding='utf-8') as f:
+with open(f'{current_directory}/transformed_sets.json', 'r', encoding='utf-8') as f:
     original_sets = json.load(f)
 
 # Open the .dump file for writing
-with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encoding='utf-8') as f:
+with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encoding='utf-8') as f:
     # Write initial SQL commands
     f.write("PRAGMA foreign_keys=OFF;\nBEGIN TRANSACTION;\nCREATE TABLE item_types\n             (id INTEGER PRIMARY KEY AUTOINCREMENT, name text);\n")
 
@@ -217,9 +251,10 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
     # Write INSERT commands for set_bonus
     for index, set in enumerate(original_sets, start=1):
         if 'stats' in set:
-            for i, effects in enumerate(set['stats'], start=2):
+            for i, effects in enumerate(set['stats'], start=1):
                 for bonus in effects:
                     if bonus[2] not in STAT_NAME_TO_KEY_LOCAL:
+                        print(f"Skipping {bonus[2]}") # Skip unknown stats, Title, Emote or Pet mostly
                         continue
                     f.write(f"INSERT INTO set_bonus VALUES({index},{i},{list(STAT_NAME_TO_KEY_LOCAL).index(bonus[2]) + 1},{bonus[0]});\n")
 
@@ -234,6 +269,9 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
         if 'conditions' in item:
             for condition_string in item['conditions']:
                 parts = condition_string.split(' ')  # Split the string by spaces
+                if len(parts) > 3:  # Some stat names have multiple words like "Alignment Level > 20"
+                    joined_name = " ".join(parts[:-2])
+                    parts = [joined_name, parts[-2], parts[-1]]
                 if len(parts) == 3 and parts[0] in STAT_NAME_TO_KEY_LOCAL:
                     stat_name = parts[0]  # The stat name, e.g., "Strength"
                     operator = parts[1]  # The operator, e.g., ">"
@@ -402,7 +440,7 @@ with open('../fashionistapulp/fashionistapulp/item_db_dumped.dump', 'w', encodin
 
     for index, item in enumerate(original_data, start=1):
         if 'conditions' in item:
-            if 'Set bonus < 2' in item['conditions']:
+            if 'Set bonus < 3' in item["conditions"]: # dofus3beta/v1 new set bonus
                 f.write(f"INSERT INTO item_weird_conditions VALUES({index}, 1);\n")
         if 'is_prysmaradite' in item:
             if item['is_prysmaradite']:
