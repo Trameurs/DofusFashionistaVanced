@@ -93,7 +93,8 @@ STAT_TRANSLATE = {
     '% Spell Damage': '% Spell Damage',
 }
 
-LANGUAGES = ['en', 'fr', 'es', 'pt', 'de', 'it'] # it fails previous step
+
+LANGUAGES = ['en', 'fr', 'es', 'pt', 'de']
 
 def parse_conditions(tree):
     """
@@ -126,7 +127,6 @@ def parse_conditions(tree):
             return [item for sublist in children_results for item in sublist]
         else:
             raise ValueError(f"Unsupported relation: {relation}")
-
     # Start traversal from the root node
     return traverse(tree)
 
@@ -329,6 +329,7 @@ for item in set_data['en']["sets"]:
                 ] for eff in effect_group
             ]
             transformed_item["stats"].append(set_n_stat)
+
     if "equipment_ids" in item:
         transformed_item["equipment_ids"] = item["equipment_ids"]
 

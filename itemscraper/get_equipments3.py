@@ -24,8 +24,7 @@ from fashionistapulp.dofus_constants import (
 )
 current_directory = os.path.dirname(__file__)
 
-
-LANGUAGES = ['en', 'fr', 'es', 'pt', 'de'] # Italy data is not available
+LANGUAGES = ['en', 'fr', 'es', 'pt', 'de']
 
 WEAPON_TYPES = {
     'Hammer': 'hammer',
@@ -249,14 +248,15 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
               FOREIGN KEY(stat) REFERENCES stats(id));\n""")
     
     # Write INSERT commands for set_bonus
-    for index, set in enumerate(original_sets, start=1):
-        if 'stats' in set:
-            for i, effects in enumerate(set['stats'], start=1):
-                for bonus in effects:
+    for index, set_data in enumerate(original_sets, start=1):
+        if 'stats_list' in set_data:
+            for effect_data in set_data['stats_list']:
+                effect_key = int(effect_data['effect_key'])  # Number of pieces used
+                for bonus in effect_data['effects']:
                     if bonus[2] not in STAT_NAME_TO_KEY_LOCAL:
                         print(f"Skipping {bonus[2]}") # Skip unknown stats, Title, Emote or Pet mostly
                         continue
-                    f.write(f"INSERT INTO set_bonus VALUES({index},{i},{list(STAT_NAME_TO_KEY_LOCAL).index(bonus[2]) + 1},{bonus[0]});\n")
+                    f.write(f"INSERT INTO set_bonus VALUES({index},{effect_key},{list(STAT_NAME_TO_KEY_LOCAL).index(bonus[2]) + 1},{bonus[0]});\n")
 
     # Write CREATE TABLE for min_stat_to_equip
     f.write("""CREATE TABLE min_stat_to_equip

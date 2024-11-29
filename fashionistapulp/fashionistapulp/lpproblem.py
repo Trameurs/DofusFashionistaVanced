@@ -19,14 +19,32 @@
 from .fashionista_config import get_fashionista_path
 from pulp import LpVariable, LpInteger, LpProblem, LpMaximize, LpStatus, value
 import pulp
-
 import os
 import uuid
+import platform
 
+# Print debug information to confirm platform details
+print(f"System: {platform.system()}")
+print(f"Machine: {platform.machine()}")
 
-SOLVER = pulp.COIN_CMD(path=get_fashionista_path() + '/fashionistapulp/fashionistapulp/cbc',
-                  timeLimit=90,
-                  keepFiles=True)
+# Detect if we are running on a Raspberry Pi or on an AWS server
+if platform.system() == 'Linux' and ('arm' in platform.machine() or 'aarch64' in platform.machine()):
+    # On Raspberry Pi (ARM architecture, both 32-bit and 64-bit)
+    cbc_path = '/usr/bin/cbc'
+    print(f"Detected ARM architecture (aarch64). Using system-installed CBC at: {cbc_path}")
+    if not os.path.isfile(cbc_path):
+        raise FileNotFoundError(f"CBC binary not found at {cbc_path}")
+    SOLVER = pulp.COIN_CMD(path=cbc_path, timeLimit=90, keepFiles=True)
+else:
+    # On AWS or other x86_64 systems
+    cbc_path = os.path.join(get_fashionista_path(), 'fashionistapulp', 'fashionistapulp', 'cbc')
+    print(f"Detected non-ARM system. Using project-specific CBC at: {cbc_path}")
+    if not os.path.isfile(cbc_path):
+        raise FileNotFoundError(f"CBC binary not found at {cbc_path}")
+    SOLVER = pulp.COIN_CMD(path=cbc_path, timeLimit=90, keepFiles=True)
+
+# Confirm which solver path is being used
+print(f"Using CBC solver at: {SOLVER.path}")
 
 class LpProblem2:
     
