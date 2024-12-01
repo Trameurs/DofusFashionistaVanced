@@ -3519,7 +3519,7 @@
                     "int_maximum": 10,
                     "type": {
                         "name": "reflected Damage",
-                        "id": 223,
+                        "id": 235,
                         "is_meta": false,
                         "is_active": false
                     },

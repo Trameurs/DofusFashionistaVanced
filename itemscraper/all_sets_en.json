@@ -2148,7 +2148,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -2267,7 +2267,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -2386,7 +2386,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -2644,7 +2644,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -7585,7 +7585,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -7600,7 +7600,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -7977,7 +7977,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -8070,7 +8070,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -8163,7 +8163,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9671,7 +9671,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected Damage",
-                            "id": 223,
+                            "id": 235,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9699,7 +9699,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected Damage",
-                            "id": 223,
+                            "id": 235,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9753,7 +9753,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected Damage",
-                            "id": 223,
+                            "id": 235,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9807,7 +9807,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected Damage",
-                            "id": 223,
+                            "id": 235,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -13549,7 +13549,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -13590,7 +13590,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -13696,7 +13696,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -14862,8 +14862,8 @@
             "name": "Champion Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "effects": {
                 "1": null,
                 "2": null,
@@ -15866,7 +15866,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -15907,7 +15907,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -15948,7 +15948,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -15989,7 +15989,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -16043,7 +16043,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -16097,7 +16097,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -18486,7 +18486,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -18618,7 +18618,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -20692,7 +20692,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -20772,7 +20772,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -20865,7 +20865,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -20945,7 +20945,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -21051,7 +21051,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -24106,7 +24106,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -24134,7 +24134,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -24864,7 +24864,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -24918,7 +24918,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -25011,7 +25011,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -33365,7 +33365,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -36838,7 +36838,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -36905,7 +36905,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -36972,7 +36972,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -37689,7 +37689,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected Damage",
-                            "id": 223,
+                            "id": 235,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -37730,7 +37730,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected Damage",
-                            "id": 223,
+                            "id": 235,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -37852,7 +37852,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -37919,7 +37919,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -38839,7 +38839,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -38867,7 +38867,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -39028,7 +39028,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -39173,7 +39173,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -39266,7 +39266,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -42339,7 +42339,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -43708,7 +43708,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -43801,7 +43801,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -43894,7 +43894,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -44151,7 +44151,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -44482,7 +44482,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -44601,7 +44601,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -44707,7 +44707,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -45094,7 +45094,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -45278,7 +45278,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -45410,7 +45410,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -45832,7 +45832,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -45899,7 +45899,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -48275,7 +48275,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -48368,7 +48368,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -48448,7 +48448,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -48509,8 +48509,8 @@
             "name": "Hispañic Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "effects": {
                 "1": null,
                 "2": [
@@ -49219,7 +49219,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -49338,7 +49338,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -49483,7 +49483,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -50872,7 +50872,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -51056,7 +51056,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -51412,8 +51412,8 @@
             "name": "Livitinem Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9233,
                 9234,
@@ -54090,7 +54090,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -54623,7 +54623,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -55038,7 +55038,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -55144,7 +55144,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -55289,7 +55289,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -56083,7 +56083,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -56228,7 +56228,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -58037,7 +58037,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -58156,7 +58156,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -58803,7 +58803,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -58896,7 +58896,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -60156,7 +60156,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -60340,7 +60340,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -60423,7 +60423,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -60516,7 +60516,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -63781,7 +63781,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -63900,7 +63900,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -64478,7 +64478,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -64545,7 +64545,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -66949,7 +66949,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -67055,7 +67055,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -67161,7 +67161,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -67421,7 +67421,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -67566,7 +67566,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -71601,7 +71601,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -71645,7 +71645,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -71673,7 +71673,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -73151,7 +73151,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -73244,7 +73244,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -74256,8 +74256,8 @@
             "name": "Guild Ceremonial Set",
             "items": 5,
             "level": 100,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 13240,
                 18525,
@@ -74581,7 +74581,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -74661,7 +74661,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -75915,7 +75915,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -75982,7 +75982,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -78372,7 +78372,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -78439,7 +78439,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -79352,7 +79352,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -79432,7 +79432,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -79512,7 +79512,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -80228,7 +80228,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -80321,7 +80321,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -80453,7 +80453,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -82248,7 +82248,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -83179,7 +83179,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -83285,7 +83285,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -83391,7 +83391,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -86009,7 +86009,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -86271,7 +86271,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -86598,7 +86598,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -86908,7 +86908,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -87001,7 +87001,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -87062,8 +87062,8 @@
             "name": "Tweecher Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "effects": {
                 "1": null,
                 "2": null,
@@ -87510,7 +87510,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -87798,7 +87798,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -88086,7 +88086,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -88374,7 +88374,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -88662,7 +88662,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -88950,7 +88950,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -90878,7 +90878,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -91046,7 +91046,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -91113,7 +91113,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -91206,7 +91206,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -92161,8 +92161,8 @@
             "name": "Nidania Josne Ceremonial Set",
             "items": 4,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 28479,
                 28480,
@@ -92175,8 +92175,8 @@
             "name": "Alyverol Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 13210,
                 13211,
@@ -92189,8 +92189,8 @@
             "name": "Shushivin Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 18154,
                 18155
@@ -92201,8 +92201,8 @@
             "name": "Parasymbic Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 12424,
                 12425,
@@ -92215,8 +92215,8 @@
             "name": "Albueralive Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 28362,
                 28363,
@@ -92228,8 +92228,8 @@
             "name": "Glorious Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 24990,
                 24992,
@@ -92241,8 +92241,8 @@
             "name": "Glorious Polykrome Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 24991,
                 24993,
@@ -92255,8 +92255,8 @@
             "name": "Coulive Ceremonial Set 1",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 19524,
                 19525,
@@ -92268,8 +92268,8 @@
             "name": "Coulive Ceremonial Set 2",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 23022,
                 23023,
@@ -92281,8 +92281,8 @@
             "name": "Coulive Ceremonial Set 3",
             "items": 13,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26260,
                 26261,
@@ -92304,8 +92304,8 @@
             "name": "Samuralive Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 23659,
                 23660,
@@ -92318,8 +92318,8 @@
             "name": "Nut'Itinem Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26062,
                 26063,
@@ -92333,8 +92333,8 @@
             "name": "Astrub Knight Ceremonial Set",
             "items": 9,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27719,
                 27758,
@@ -92352,8 +92352,8 @@
             "name": "Hecate Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27376,
                 27377,
@@ -92367,8 +92367,8 @@
             "name": "Ulgrude Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26693,
                 26694,
@@ -92381,8 +92381,8 @@
             "name": "Pouchecot Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27386,
                 27387,
@@ -92395,8 +92395,8 @@
             "name": "Brumaire Ceremonial Set",
             "items": 4,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27682,
                 27683,
@@ -92409,8 +92409,8 @@
             "name": "Silouate Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26671,
                 26672,
@@ -92423,8 +92423,8 @@
             "name": "Raval Ceremonial Set",
             "items": 5,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27417,
                 27418,
@@ -92438,8 +92438,8 @@
             "name": "Jiva Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26283,
                 26284,
@@ -92452,8 +92452,8 @@
             "name": "Rosal Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26915,
                 26919,
@@ -92467,8 +92467,8 @@
             "name": "Silvosse Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26303,
                 26304,
@@ -92481,8 +92481,8 @@
             "name": "Djaul Ceremonial Set",
             "items": 4,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27668,
                 27699,
@@ -92495,8 +92495,8 @@
             "name": "Maimane Ceremonial Set",
             "items": 4,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27556,
                 27575,
@@ -92509,8 +92509,8 @@
             "name": "Sumens Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27065,
                 27066,
@@ -92523,8 +92523,8 @@
             "name": "Wodent Ceremonial Set",
             "items": 6,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27849,
                 27989,
@@ -92539,8 +92539,8 @@
             "name": "White City Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26181,
                 26182,
@@ -92554,8 +92554,8 @@
             "name": "Dark City Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26185,
                 26186,
@@ -92569,8 +92569,8 @@
             "name": "Glow-with-the-Flow Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26821,
                 26822,
@@ -92582,8 +92582,8 @@
             "name": "Selenic Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26818,
                 26819,
@@ -92595,8 +92595,8 @@
             "name": "Ochre Dragon Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26734,
                 26737,
@@ -92609,8 +92609,8 @@
             "name": "New Awakening Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 23546,
                 23548,
@@ -92623,8 +92623,8 @@
             "name": "Dream Ceremonial Set",
             "items": 5,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21503,
                 21504,
@@ -92638,8 +92638,8 @@
             "name": "Last Hope Ceremonial Set",
             "items": 6,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 22275,
                 22276,
@@ -92654,8 +92654,8 @@
             "name": "Tylezia Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21202,
                 21203,
@@ -92668,8 +92668,8 @@
             "name": "Bow Meow Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15752,
                 15753,
@@ -92682,8 +92682,8 @@
             "name": "Lightning Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15757,
                 15758,
@@ -92696,8 +92696,8 @@
             "name": "Traffic Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15765,
                 15766,
@@ -92710,8 +92710,8 @@
             "name": "Groom Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15772,
                 15774,
@@ -92724,8 +92724,8 @@
             "name": "Boney-O Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15785,
                 15786,
@@ -92738,8 +92738,8 @@
             "name": "Emperor Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15792,
                 15797,
@@ -92752,8 +92752,8 @@
             "name": "Radiant Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15770,
                 15819,
@@ -92765,8 +92765,8 @@
             "name": "Droid Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15815,
                 15816,
@@ -92779,8 +92779,8 @@
             "name": "Raja Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15820,
                 15821,
@@ -92793,8 +92793,8 @@
             "name": "Crossbone Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15829,
                 15830,
@@ -92807,8 +92807,8 @@
             "name": "Feathered Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15856,
                 15857,
@@ -92821,8 +92821,8 @@
             "name": "Mechana Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15862,
                 15863,
@@ -92835,8 +92835,8 @@
             "name": "XIV Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15867,
                 15869,
@@ -92849,8 +92849,8 @@
             "name": "Green Ninja Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 19196,
                 19197,
@@ -92863,8 +92863,8 @@
             "name": "Air Knight Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 19202,
                 19203,
@@ -92877,8 +92877,8 @@
             "name": "Az'Hassin Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 20300,
                 20301,
@@ -92892,8 +92892,8 @@
             "name": "Corsair Ceremonial Set",
             "items": 5,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 20068,
                 20072,
@@ -92907,8 +92907,8 @@
             "name": "Seaside Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 17846,
                 17847,
@@ -92920,8 +92920,8 @@
             "name": "Charlie's Agents Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 17284,
                 17285,
@@ -92934,8 +92934,8 @@
             "name": "Royal Guard Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 17494,
                 17505
@@ -92946,8 +92946,8 @@
             "name": "Black Quaquack Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14607,
                 14608,
@@ -92959,8 +92959,8 @@
             "name": "Lol-ita Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14804,
                 14805,
@@ -92972,8 +92972,8 @@
             "name": "Watchdog Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 18637,
                 18638
@@ -92984,8 +92984,8 @@
             "name": "Forgelance Ceremonial Set",
             "items": 7,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 28337,
                 28338,
@@ -93001,8 +93001,8 @@
             "name": "Iop Ceremonial Set",
             "items": 8,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21319,
                 21329,
@@ -93019,8 +93019,8 @@
             "name": "Sram Ceremonial Set",
             "items": 7,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21472,
                 21473,
@@ -93036,8 +93036,8 @@
             "name": "Rogue Ceremonial Set",
             "items": 7,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21454,
                 21455,
@@ -93053,8 +93053,8 @@
             "name": "Osamodas Ceremonial Set",
             "items": 7,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21769,
                 21770,
@@ -93070,8 +93070,8 @@
             "name": "Foggernaut Ceremonial Set",
             "items": 7,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21787,
                 21788,
@@ -93087,8 +93087,8 @@
             "name": "Cra Ceremonial Set",
             "items": 7,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21796,
                 21797,
@@ -93104,8 +93104,8 @@
             "name": "Sacrier Ceremonial Set",
             "items": 8,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 23212,
                 23213,
@@ -93122,8 +93122,8 @@
             "name": "Xelor Ceremonial Set",
             "items": 7,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 23463,
                 23464,
@@ -93139,8 +93139,8 @@
             "name": "Pandawa Ceremonial Set",
             "items": 7,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 23565,
                 23566,
@@ -93156,8 +93156,8 @@
             "name": "Sadida Ceremonial Set",
             "items": 7,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 23040,
                 23041,
@@ -93173,8 +93173,8 @@
             "name": "Masqueraider Ceremonial Set",
             "items": 7,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 22452,
                 22453,
@@ -93190,8 +93190,8 @@
             "name": "Feca Ceremonial Set",
             "items": 7,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 22362,
                 22363,
@@ -93207,8 +93207,8 @@
             "name": "Ecaflip Ceremonial Set",
             "items": 7,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 23833,
                 23834,
@@ -93224,8 +93224,8 @@
             "name": "Ouginak Ceremonial Set",
             "items": 7,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 24941,
                 24942,
@@ -93241,8 +93241,8 @@
             "name": "Enutrof Ceremonial Set",
             "items": 8,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25359,
                 25360,
@@ -93259,8 +93259,8 @@
             "name": "Eniripsa Ceremonial Set",
             "items": 8,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 24969,
                 24970,
@@ -93277,8 +93277,8 @@
             "name": "Huppermage Ceremonial Set",
             "items": 7,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25173,
                 25174,
@@ -93294,8 +93294,8 @@
             "name": "Eliotrope Ceremonial Set",
             "items": 7,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25995,
                 25998,
@@ -93311,8 +93311,8 @@
             "name": "Panache Ceremonial Set",
             "items": 5,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25119,
                 25120,
@@ -93326,8 +93326,8 @@
             "name": "Aqueous Panache Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25121,
                 25374,
@@ -93340,8 +93340,8 @@
             "name": "Fiery Panache Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25122,
                 25373,
@@ -93354,8 +93354,8 @@
             "name": "Botanic Panache Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25123,
                 25375,
@@ -93368,8 +93368,8 @@
             "name": "Volatile Panache Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25124,
                 25376,
@@ -93382,8 +93382,8 @@
             "name": "Katar Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27441,
                 27442,
@@ -93396,8 +93396,8 @@
             "name": "Kamiwolf Ceremonial Set",
             "items": 5,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27323,
                 27922,
@@ -93411,8 +93411,8 @@
             "name": "Lumino Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27428,
                 27429,
@@ -93424,8 +93424,8 @@
             "name": "Dathura Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27330,
                 27331,
@@ -93437,8 +93437,8 @@
             "name": "Leorictus Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27359,
                 27360,
@@ -93451,8 +93451,8 @@
             "name": "Fleastrecker Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26808,
                 26813,
@@ -93465,8 +93465,8 @@
             "name": "Arjan's Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26739,
                 26740,
@@ -93479,8 +93479,8 @@
             "name": "Tooschuss Ceremonial Set",
             "items": 6,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26212,
                 26241,
@@ -93495,8 +93495,8 @@
             "name": "Heartbreaker Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26299,
                 26300,
@@ -93509,8 +93509,8 @@
             "name": "Zombite Ceremonial Set",
             "items": 4,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 19136,
                 19145,
@@ -93523,8 +93523,8 @@
             "name": "Magma Ceremonial Set",
             "items": 4,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 18805,
                 18806,
@@ -93537,8 +93537,8 @@
             "name": "Springy Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 16237,
                 16238
@@ -93549,8 +93549,8 @@
             "name": "Bramble Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 18227,
                 18228
@@ -93561,8 +93561,8 @@
             "name": "Woolly Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 18527,
                 18528
@@ -93573,8 +93573,8 @@
             "name": "Penglamour Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27168,
                 27169,
@@ -93587,8 +93587,8 @@
             "name": "Slamshell Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27172,
                 27173,
@@ -93601,8 +93601,8 @@
             "name": "Jitterscar Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27178,
                 27179,
@@ -93615,8 +93615,8 @@
             "name": "Vulturricane Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27181,
                 27182,
@@ -93629,8 +93629,8 @@
             "name": "Aurum Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26743,
                 26744,
@@ -93644,8 +93644,8 @@
             "name": "Scrollsayer Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25773,
                 25774,
@@ -93659,8 +93659,8 @@
             "name": "Osteomancer Ceremonial Set",
             "items": 4,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25929,
                 25930,
@@ -93673,8 +93673,8 @@
             "name": "Pirate Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25369,
                 25370,
@@ -93687,8 +93687,8 @@
             "name": "Amphitrident Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25365,
                 25366,
@@ -93701,8 +93701,8 @@
             "name": "Music Mix-Mash Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 19724,
                 25238,
@@ -93716,8 +93716,8 @@
             "name": "High Roller Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25028,
                 25029,
@@ -93730,8 +93730,8 @@
             "name": "Mask Parade Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 24951,
                 24952,
@@ -93745,8 +93745,8 @@
             "name": "Folded Ceremonial Set",
             "items": 5,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 24147,
                 24148,
@@ -93760,8 +93760,8 @@
             "name": "Fricadavera Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 23774,
                 23778,
@@ -93775,8 +93775,8 @@
             "name": "Gladius Ceremonial Set",
             "items": 4,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 23559,
                 23560,
@@ -93789,8 +93789,8 @@
             "name": "Karnaval Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15097,
                 15098
@@ -93801,8 +93801,8 @@
             "name": "Vanelle Sings Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21888,
                 22053,
@@ -93815,8 +93815,8 @@
             "name": "Nightmare Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21776,
                 21777,
@@ -93829,8 +93829,8 @@
             "name": "Wild Ceremonial Set",
             "items": 4,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21802,
                 21803,
@@ -93843,8 +93843,8 @@
             "name": "Primate Ceremonial Set",
             "items": 4,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21418,
                 21419,
@@ -93857,8 +93857,8 @@
             "name": "Tuquoque Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21323,
                 21324,
@@ -93871,8 +93871,8 @@
             "name": "Floral Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21326,
                 21327,
@@ -93885,8 +93885,8 @@
             "name": "Olden Times Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21058,
                 21059,
@@ -93898,8 +93898,8 @@
             "name": "Baker Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21101,
                 21102
@@ -93910,8 +93910,8 @@
             "name": "Esspeakewlair Ceremonial Set",
             "items": 5,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 20305,
                 20306,
@@ -93925,8 +93925,8 @@
             "name": "Shadragon Ceremonial Set",
             "items": 4,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 20367,
                 20368,
@@ -93939,8 +93939,8 @@
             "name": "Draeggosaure Ceremonial Set",
             "items": 4,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 19991,
                 19992,
@@ -93953,8 +93953,8 @@
             "name": "Crypt Ceremonial Set",
             "items": 4,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 19732,
                 19733,
@@ -93967,8 +93967,8 @@
             "name": "Divine Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 19464,
                 19465,
@@ -93980,8 +93980,8 @@
             "name": "Skratiay Clan Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 23807,
                 25040,
@@ -93994,8 +93994,8 @@
             "name": "Alliance Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14396,
                 28356,
@@ -94008,8 +94008,8 @@
             "name": "Krosmic Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 13483,
                 13484
@@ -94020,8 +94020,8 @@
             "name": "Sorond Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 28423,
                 28424,
@@ -94034,8 +94034,8 @@
             "name": "Scarab Ceremonial Set",
             "items": 4,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 19613,
                 19614,
@@ -94048,8 +94048,8 @@
             "name": "Noh Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14800,
                 14801,
@@ -94061,8 +94061,8 @@
             "name": "Wa Odanowth Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 20739,
                 22322,
@@ -94075,8 +94075,8 @@
             "name": "Mandibular Ceremonial Set",
             "items": 9,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 20765,
                 20766,
@@ -94094,8 +94094,8 @@
             "name": "Drakatiay Clan Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25936,
                 25937,
@@ -94107,8 +94107,8 @@
             "name": "Garudania Ceremonial Set",
             "items": 14,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27071,
                 27073,
@@ -94131,8 +94131,8 @@
             "name": "Griffined Ceremonial Set",
             "items": 17,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 22497,
                 22498,
@@ -94158,8 +94158,8 @@
             "name": "Bolrog Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 28494,
                 28495,
@@ -94173,8 +94173,8 @@
             "name": "Dark Shushu Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 28517,
                 28518,
@@ -94187,8 +94187,8 @@
             "name": "Tokagecko Ceremonial Set",
             "items": 6,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27432,
                 27455,
@@ -94203,8 +94203,8 @@
             "name": "Mystery Man Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26866,
                 26867,
@@ -94216,8 +94216,8 @@
             "name": "Perceptor Ceremonial Set",
             "items": 4,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27844,
                 27851,
@@ -94230,8 +94230,8 @@
             "name": "Pandalida Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 12503,
                 12504,
@@ -94243,8 +94243,8 @@
             "name": "Pamus Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 17290,
                 17298
@@ -94255,8 +94255,8 @@
             "name": "Redroz Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 17289,
                 17297
@@ -94267,8 +94267,8 @@
             "name": "Zalblaks Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 17291,
                 17299
@@ -94279,8 +94279,8 @@
             "name": "Bellabonna Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27937,
                 27938,
@@ -94294,8 +94294,8 @@
             "name": "Combatant Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27759,
                 27760,
@@ -94307,8 +94307,8 @@
             "name": "Trapper Ceremonial Set",
             "items": 9,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27462,
                 27463,
@@ -94326,8 +94326,8 @@
             "name": "Bard Ceremonial Set",
             "items": 4,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27423,
                 27424,
@@ -94340,8 +94340,8 @@
             "name": "Mercenary Ceremonial Set",
             "items": 6,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27443,
                 27444,
@@ -94356,8 +94356,8 @@
             "name": "Festival Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27319,
                 27320,
@@ -94370,8 +94370,8 @@
             "name": "Chtiger Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25987,
                 26315,
@@ -94385,8 +94385,8 @@
             "name": "Vee'two Battler Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 20313,
                 26179,
@@ -94398,8 +94398,8 @@
             "name": "Sherajah Ceremonial Set",
             "items": 14,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25795,
                 25796,
@@ -94422,8 +94422,8 @@
             "name": "Bluffer Ceremonial Set",
             "items": 15,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25019,
                 25021,
@@ -94447,8 +94447,8 @@
             "name": "Monkiki'ng Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 20317,
                 20318,
@@ -94461,8 +94461,8 @@
             "name": "Little Moushu Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 22252,
                 22268,
@@ -94476,8 +94476,8 @@
             "name": "Bone Ceremonial Set",
             "items": 9,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21400,
                 21401,
@@ -94495,8 +94495,8 @@
             "name": "Azure Ceremonial Set",
             "items": 10,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21389,
                 21390,
@@ -94515,8 +94515,8 @@
             "name": "Nox Ceremonial Set",
             "items": 9,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21030,
                 21032,
@@ -94534,8 +94534,8 @@
             "name": "Anakronik Ceremonial Set",
             "items": 4,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 20996,
                 20997,
@@ -94548,8 +94548,8 @@
             "name": "Hyrkul Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 20677,
                 20678,
@@ -94561,8 +94561,8 @@
             "name": "Hairy Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 20296,
                 20297,
@@ -94575,8 +94575,8 @@
             "name": "1001 Claws Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 17211,
                 17212,
@@ -94589,8 +94589,8 @@
             "name": "Gingerbread Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 16068,
                 16069,
@@ -94603,8 +94603,8 @@
             "name": "Al Howin Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 16015,
                 16016,
@@ -94617,8 +94617,8 @@
             "name": "P'Nata Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15841,
                 15842,
@@ -94631,8 +94631,8 @@
             "name": "Sweetheart Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15122,
                 15123,
@@ -94645,8 +94645,8 @@
             "name": "Samurai Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14796,
                 14797,
@@ -94659,8 +94659,8 @@
             "name": "Jahash Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25379,
                 25380,
@@ -94672,8 +94672,8 @@
             "name": "Chaotic Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25348,
                 25349,
@@ -94686,8 +94686,8 @@
             "name": "Yugo the Eliatrope Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 23712,
                 23713,
@@ -94699,8 +94699,8 @@
             "name": "Flopin Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 23655,
                 23689,
@@ -94712,8 +94712,8 @@
             "name": "Elely Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 23652,
                 23653,
@@ -94725,8 +94725,8 @@
             "name": "Ominous Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21962,
                 21963
@@ -94737,8 +94737,8 @@
             "name": "Malicious Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 20139,
                 20140,
@@ -94751,8 +94751,8 @@
             "name": "Temporis I Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 20031,
                 20032
@@ -94763,8 +94763,8 @@
             "name": "Shiny Ceremonial Set",
             "items": 5,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 20022,
                 20023,
@@ -94778,8 +94778,8 @@
             "name": "Shariva Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 26793,
                 26794,
@@ -94791,8 +94791,8 @@
             "name": "Haurned Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 23910,
                 24948,
@@ -94805,8 +94805,8 @@
             "name": "Stroud Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 11854,
                 13089
@@ -94817,8 +94817,8 @@
             "name": "White Ninja Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14615,
                 14616,
@@ -94830,8 +94830,8 @@
             "name": "Bzzz Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9403,
                 9404,
@@ -94843,8 +94843,8 @@
             "name": "Winged Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14623,
                 14624,
@@ -94856,8 +94856,8 @@
             "name": "Chips Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 10169,
                 10170
@@ -94868,8 +94868,8 @@
             "name": "Miss Lousy Piggy Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9406,
                 9407
@@ -94880,8 +94880,8 @@
             "name": "Viootifool Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 2518,
                 2520
@@ -94892,8 +94892,8 @@
             "name": "Pinokio Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 11401,
                 11402
@@ -94904,8 +94904,8 @@
             "name": "Solaris Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 10182,
                 10183
@@ -94916,8 +94916,8 @@
             "name": "Percimol Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 11817,
                 11818,
@@ -94929,8 +94929,8 @@
             "name": "Pompom Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9456,
                 9457
@@ -94941,8 +94941,8 @@
             "name": "Platypus Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 11808,
                 11809,
@@ -94956,8 +94956,8 @@
             "name": "Eastern Wood Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9410,
                 9411
@@ -94968,8 +94968,8 @@
             "name": "Black Crow Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 10957,
                 10958,
@@ -94982,8 +94982,8 @@
             "name": "Beanie Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9196,
                 9197
@@ -94994,8 +94994,8 @@
             "name": "Adora Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14599,
                 14600,
@@ -95007,8 +95007,8 @@
             "name": "Noke Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 10184,
                 10185,
@@ -95020,8 +95020,8 @@
             "name": "Godfather Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9540,
                 9541
@@ -95032,8 +95032,8 @@
             "name": "Pony Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 12881,
                 12884
@@ -95044,8 +95044,8 @@
             "name": "Makizu Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14627,
                 14628,
@@ -95057,8 +95057,8 @@
             "name": "Slait Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9660,
                 9663
@@ -95069,8 +95069,8 @@
             "name": "Lonne Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 11077,
                 11078,
@@ -95082,8 +95082,8 @@
             "name": "Nomen Tengu Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14591,
                 14592,
@@ -95095,8 +95095,8 @@
             "name": "Black Ninja Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14619,
                 14620,
@@ -95108,8 +95108,8 @@
             "name": "Lagomorph Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 19722,
                 19723
@@ -95120,8 +95120,8 @@
             "name": "Poppinz Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 11382,
                 11383
@@ -95132,8 +95132,8 @@
             "name": "Grillian Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 11088,
                 11089
@@ -95144,8 +95144,8 @@
             "name": "Alowa Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9652,
                 9654
@@ -95156,8 +95156,8 @@
             "name": "Posh Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9479,
                 9480,
@@ -95169,8 +95169,8 @@
             "name": "Stroud Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 11854,
                 13089
@@ -95181,8 +95181,8 @@
             "name": "Pynekone Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 11055,
                 11056
@@ -95193,8 +95193,8 @@
             "name": "Gadjet Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 11084,
                 11086
@@ -95205,8 +95205,8 @@
             "name": "Feather Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 11376,
                 11377
@@ -95217,8 +95217,8 @@
             "name": "Prisoner Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 11393,
                 11394
@@ -95229,8 +95229,8 @@
             "name": "Jon Lemon Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 11418,
                 11420,
@@ -95242,8 +95242,8 @@
             "name": "Ong Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 12751,
                 12752
@@ -95254,8 +95254,8 @@
             "name": "Brrrbli Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 13890,
                 13892
@@ -95266,8 +95266,8 @@
             "name": "Shincha Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14595,
                 14596,
@@ -95279,8 +95279,8 @@
             "name": "Monarch Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 17492,
                 17499,
@@ -95292,8 +95292,8 @@
             "name": "Beachgoer Ceremonial Set",
             "items": 5,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 28563,
                 28564,
@@ -95307,8 +95307,8 @@
             "name": "Goultard Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 28433,
                 28434,
@@ -95320,8 +95320,8 @@
             "name": "Ephedryan Ceremonial Set",
             "items": 3,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 28436,
                 28482,
@@ -95333,8 +95333,8 @@
             "name": "Tailblazer Ceremonial Set",
             "items": 3,
             "level": 10,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 13710,
                 13711,
@@ -95346,8 +95346,8 @@
             "name": "Our Miss Triste Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14556,
                 14557
@@ -95358,8 +95358,8 @@
             "name": "Cheeky Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14587,
                 14588,
@@ -95371,8 +95371,8 @@
             "name": "Geisha Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14603,
                 14604,
@@ -95384,8 +95384,8 @@
             "name": "Yellow Quaquack Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14611,
                 14612,
@@ -95397,8 +95397,8 @@
             "name": "Pink Dragoone Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14631,
                 14632,
@@ -95410,8 +95410,8 @@
             "name": "French Maid Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14641,
                 14642,
@@ -95423,8 +95423,8 @@
             "name": "Kamas Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15238,
                 15239
@@ -95435,8 +95435,8 @@
             "name": "Bigoks Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 17288,
                 17296
@@ -95447,8 +95447,8 @@
             "name": "Zadioc Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 18883,
                 18884,
@@ -95460,8 +95460,8 @@
             "name": "Fleaster Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21103,
                 21104
@@ -95472,8 +95472,8 @@
             "name": "Mega Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 2517,
                 2519
@@ -95484,8 +95484,8 @@
             "name": "Wintry Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 6801,
                 6802
@@ -95496,8 +95496,8 @@
             "name": "Pineapi Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 7422,
                 7581,
@@ -95509,8 +95509,8 @@
             "name": "Citrus Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9414,
                 9415,
@@ -95522,8 +95522,8 @@
             "name": "Crystalline Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9418,
                 9451
@@ -95534,8 +95534,8 @@
             "name": "Cicada Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9482,
                 9485,
@@ -95547,8 +95547,8 @@
             "name": "Black Wab Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9567,
                 9569
@@ -95559,8 +95559,8 @@
             "name": "Siks Wonn Ein Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9930,
                 9933,
@@ -95572,8 +95572,8 @@
             "name": "Tetra Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 12420,
                 12422
@@ -95584,8 +95584,8 @@
             "name": "Davyd's Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 12670,
                 12673
@@ -95596,8 +95596,8 @@
             "name": "Eider Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 13015,
                 13016
@@ -95608,8 +95608,8 @@
             "name": "Maria Kitty Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 13019,
                 13021
@@ -95620,8 +95620,8 @@
             "name": "Kami Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 13318,
                 13319
@@ -95632,8 +95632,8 @@
             "name": "Justice Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14308,
                 14309
@@ -95644,8 +95644,8 @@
             "name": "Greenengol Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 15542,
                 15547
@@ -95656,8 +95656,8 @@
             "name": "Indifferent Coney Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 8532,
                 8558
@@ -95668,8 +95668,8 @@
             "name": "Saint Potrick Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9120,
                 9121,
@@ -95682,8 +95682,8 @@
             "name": "Gato Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9194,
                 9195
@@ -95694,8 +95694,8 @@
             "name": "Slug Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 10174,
                 10175
@@ -95706,8 +95706,8 @@
             "name": "Borbat Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 11397,
                 11398
@@ -95718,8 +95718,8 @@
             "name": "Hir Suit Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 12377,
                 12378
@@ -95730,8 +95730,8 @@
             "name": "Battler Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 16236,
                 18218,
@@ -95743,8 +95743,8 @@
             "name": "Reinforked Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 25978,
                 25979,
@@ -95757,8 +95757,8 @@
             "name": "Cire Momore Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27371,
                 27637,
@@ -95771,8 +95771,8 @@
             "name": "World Worrier Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 13849,
                 14303
@@ -95783,8 +95783,8 @@
             "name": "Diplo Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 13457,
                 13458
@@ -95795,8 +95795,8 @@
             "name": "Julith Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 17500,
                 17509
@@ -95807,8 +95807,8 @@
             "name": "Dragorace Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 17731,
                 17732
@@ -95819,8 +95819,8 @@
             "name": "Gladiator Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 12885,
                 12886
@@ -95831,8 +95831,8 @@
             "name": "Vader Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9936,
                 9938
@@ -95843,8 +95843,8 @@
             "name": "Bearendizer Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9924,
                 9926,
@@ -95856,8 +95856,8 @@
             "name": "Clementine Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 11049,
                 11050
@@ -95868,8 +95868,8 @@
             "name": "Paper Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 11372,
                 11373
@@ -95880,8 +95880,8 @@
             "name": "Chocolate Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 20989,
                 25010,
@@ -95895,8 +95895,8 @@
             "name": "Robust Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 19720,
                 19721
@@ -95907,8 +95907,8 @@
             "name": "Kwismas Tree Ceremonial Set",
             "items": 2,
             "level": 59,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 17454,
                 17455
@@ -95919,8 +95919,8 @@
             "name": "Shadow Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14305,
                 14423
@@ -95931,8 +95931,8 @@
             "name": "Chaplin Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9937,
                 9939
@@ -95943,8 +95943,8 @@
             "name": "Lamechester United Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 10554,
                 10556
@@ -95955,8 +95955,8 @@
             "name": "Real Gobbly Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 10553,
                 10555
@@ -95967,8 +95967,8 @@
             "name": "Frozen Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 10988,
                 10989
@@ -95979,8 +95979,8 @@
             "name": "Solar Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29145,
                 29152,
@@ -95993,8 +95993,8 @@
             "name": "Queen Odasouth Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27848,
                 29498
@@ -96005,8 +96005,8 @@
             "name": "Kwismas Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27826,
                 29426,
@@ -96018,8 +96018,8 @@
             "name": "Joris Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 16377,
                 17498
@@ -96030,8 +96030,8 @@
             "name": "Social Netbwork Ceremonial Set",
             "items": 9,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 14298,
                 14299,
@@ -96049,8 +96049,8 @@
             "name": "Pacmanic Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 12755,
                 12758
@@ -96061,8 +96061,8 @@
             "name": "Bakara Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 17490,
                 17497
@@ -96073,8 +96073,8 @@
             "name": "Vulkania Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 10904,
                 10906,
@@ -96086,8 +96086,8 @@
             "name": "Yakitoro Ceremonial Set",
             "items": 13,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29119,
                 29121,
@@ -96109,8 +96109,8 @@
             "name": "Amphibubble Ceremonial Set",
             "items": 7,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29162,
                 29267,
@@ -96126,8 +96126,8 @@
             "name": "Scorcheroo Ceremonial Set",
             "items": 8,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29159,
                 29268,
@@ -96144,8 +96144,8 @@
             "name": "Gustiful Ceremonial Set",
             "items": 7,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29160,
                 29269,
@@ -96161,8 +96161,8 @@
             "name": "Sweetapir Ceremonial Set",
             "items": 7,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29161,
                 29270,
@@ -96178,8 +96178,8 @@
             "name": "Team Croquette Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 27187,
                 29342
@@ -96190,8 +96190,8 @@
             "name": "Slump Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 9653,
                 9657
@@ -96202,8 +96202,8 @@
             "name": "Spacevader Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 12597,
                 12600
@@ -96214,8 +96214,8 @@
             "name": "Indigenous Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 17011,
                 17014
@@ -96226,8 +96226,8 @@
             "name": "Iopset Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 11041,
                 11043,
@@ -96239,8 +96239,8 @@
             "name": "Thunderset Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 12655,
                 12656
@@ -96251,8 +96251,8 @@
             "name": "Nicola Flannel Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29385,
                 29400,
@@ -96264,8 +96264,8 @@
             "name": "Paul Yunban Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29394,
                 29401,
@@ -96277,8 +96277,8 @@
             "name": "Marshmallow Bill Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29395,
                 29402,
@@ -96290,8 +96290,8 @@
             "name": "Wayland Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29396,
                 29403,
@@ -96303,8 +96303,8 @@
             "name": "Stack Anove Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29397,
                 29406,
@@ -96316,8 +96316,8 @@
             "name": "Olivier Triste Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29398,
                 29404,
@@ -96329,8 +96329,8 @@
             "name": "Santiagogo Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29399,
                 29405,
@@ -96342,8 +96342,8 @@
             "name": "Wikkan Sorcerer Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29436,
                 29438,
@@ -96357,8 +96357,8 @@
             "name": "Master Wikkan Sorcerer Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29437,
                 29439,
@@ -96372,8 +96372,8 @@
             "name": "Sylvan Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29449,
                 29450,
@@ -96387,8 +96387,8 @@
             "name": "Sharp Ceremonial Set",
             "items": 8,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29465,
                 29466,
@@ -96405,8 +96405,8 @@
             "name": "Confectioner Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29488,
                 29491,
@@ -96419,8 +96419,8 @@
             "name": "Biscuit Baker Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29487,
                 29490,
@@ -96433,8 +96433,8 @@
             "name": "Gift Wrapper Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29486,
                 29489,
@@ -96447,8 +96447,8 @@
             "name": "Father Kwismas's Reindeer Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 20053,
                 24153,
@@ -96462,8 +96462,8 @@
             "name": "Strich Hunter Ceremonial Set",
             "items": 7,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29555,
                 29556,
@@ -96479,8 +96479,8 @@
             "name": "Stingy Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29562,
                 29571,
@@ -96492,8 +96492,8 @@
             "name": "Dragon Ceremonial Set",
             "items": 6,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29572,
                 29639,
@@ -96508,8 +96508,8 @@
             "name": "Ström Ceremonial Set",
             "items": 2,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29646,
                 29647
@@ -96520,8 +96520,8 @@
             "name": "Wikkan Warrior Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29743,
                 29744,
@@ -96535,8 +96535,8 @@
             "name": "Wikkan War Chief Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29747,
                 29748,
@@ -96550,8 +96550,8 @@
             "name": "Cursed Shadow Ceremonial Set",
             "items": 6,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29731,
                 29732,
@@ -96566,8 +96566,8 @@
             "name": "Silver Coolwolf Ceremonial Set",
             "items": 5,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 29755,
                 29756,
@@ -96581,8 +96581,8 @@
             "name": "Eliatrope King Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30047,
                 30048
@@ -96593,8 +96593,8 @@
             "name": "Black Knight Ceremonial Set",
             "items": 5,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30061,
                 30062,
@@ -96608,8 +96608,8 @@
             "name": "Miserite Executor Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30022,
                 30023,
@@ -96623,8 +96623,8 @@
             "name": "An Air of Aerafal",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30077,
                 30078,
@@ -96638,8 +96638,8 @@
             "name": "Blue Flame Ceremonial Set",
             "items": 6,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30081,
                 30082,
@@ -96654,8 +96654,8 @@
             "name": "Guyomu Oniwa Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30103,
                 30104,
@@ -96669,8 +96669,8 @@
             "name": "Krosmoz Ceremonial Set",
             "items": 5,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30142,
                 30143,
@@ -96684,8 +96684,8 @@
             "name": "Wikkan Sage Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30149,
                 30151,
@@ -96698,8 +96698,8 @@
             "name": "Great Wikkan Sage Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30150,
                 30152,
@@ -96712,8 +96712,8 @@
             "name": "Weapons Master Ceremonial Set",
             "items": 6,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30203,
                 30205,
@@ -96728,8 +96728,8 @@
             "name": "Flutterfly Ceremonial Set",
             "items": 5,
             "level": 60,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30227,
                 30228,
@@ -96743,8 +96743,8 @@
             "name": "Ankamian Ceremonial Set",
             "items": 2,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 21874,
                 30225
@@ -96755,8 +96755,8 @@
             "name": "Celestial Eagle Ceremonial Set",
             "items": 5,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30329,
                 30330,
@@ -96770,8 +96770,8 @@
             "name": "Hornbearer Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 18898,
                 30353,
@@ -96784,8 +96784,8 @@
             "name": "Retrofus Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30434,
                 30538,
@@ -96798,8 +96798,8 @@
             "name": "Great Stag Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30458,
                 30459,
@@ -96812,8 +96812,8 @@
             "name": "Stag God Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30462,
                 30463,
@@ -96826,8 +96826,8 @@
             "name": "Big Show Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30524,
                 30525,
@@ -96839,8 +96839,8 @@
             "name": "Chun-Leia Ceremonial Set",
             "items": 4,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30520,
                 30521,
@@ -97293,7 +97293,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -98016,7 +98016,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -98877,7 +98877,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -99209,7 +99209,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -99390,7 +99390,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -100728,7 +100728,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -101409,7 +101409,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected Damage",
-                            "id": 223,
+                            "id": 235,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -101560,7 +101560,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -101684,8 +101684,8 @@
             "name": "[!] Panoplie d'apparat du Gladiatrool",
             "items": 6,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30670,
                 30671,
@@ -101700,8 +101700,8 @@
             "name": "Astral Murmillo Ceremonial Set",
             "items": 3,
             "level": 1,
-            "contains_cosmetics": false,
-            "contains_cosmetics_only": false,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
             "equipment_ids": [
                 30817,
                 30818,
@@ -101788,7 +101788,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -101894,7 +101894,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -102833,7 +102833,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -103663,7 +103663,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -104791,7 +104791,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -105017,7 +105017,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Air damage",
-                            "id": 207,
+                            "id": 47,
                             "is_meta": false,
                             "is_active": false
                         },
