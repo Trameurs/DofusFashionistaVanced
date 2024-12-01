@@ -205,16 +205,20 @@
             <div align="center" class="footer">
                 {% trans "Items up to update" %} 3.0.5.9
                 <br>
+                <!-- General Site Links -->
                 <a href="{% url 'about' %}">{% trans "Help & About" %}</a> &ndash;
                 <a href="{% url 'contact' %}">{% trans "Contact us" %}</a> &ndash;
-                <a href="{% url 'license_page' %}">{% trans "Copyright and License information" %}</a> &ndash;
+                <a href="{% url 'license_page' %}">{% trans "Copyright and License information" %}</a>
+                <br><br> <!-- Adds space between general links and Discord links -->
+        
+                <!-- Discord Invite Buttons -->
                 <a href="https://discord.gg/3EtHskZD8h" target="_blank" rel="noopener noreferrer" class="discord-invite-btn">
                     <img src="{% static 'chardata/discord.png' %}" alt="Discord" class="discord-logo" />
                     dofusdude
                 </a> &ndash;
                 <a href="https://discord.gg/J842fFxU7r" target="_blank" rel="noopener noreferrer" class="discord-invite-btn">
                     <img src="{% static 'chardata/discord.png' %}" alt="Discord" class="discord-logo" />
-                    fashionista
+                    fashionistavanced
                 </a>
             </div>
             <style>
