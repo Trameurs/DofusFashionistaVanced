@@ -38,7 +38,6 @@ total = len(data)
 for item in data:
     image_url = item.get('image_url')
     if image_url:
-        # You can modify the filename as per your requirement
         if item['w_type'] == 'Petsmount' or item['w_type'] == 'Pet':
             filename = os.path.join(target_directory, "pets/", sanitize_filename(f"{item['name_en']}.png"))
         else:
