@@ -204,8 +204,52 @@
         {% include "chardata/loading.html" with char=char language=language %}
    
             <div align="center" class="footer">
-        {% trans "Items up to update" %} 3.0.5.9
-            <br> <a href="{% url 'about' %}">{% trans "Help & About" %}</a> &ndash; <a href="{% url 'contact' %}">{% trans "Contact us" %}</a> &ndash; <a href="{% url 'license_page' %}">{% trans "Copyright and License information" %}</a>
+                {% trans "Items up to update" %} 3.0.5.9
+                <br>
+                <a href="{% url 'about' %}">{% trans "Help & About" %}</a> &ndash;
+                <a href="{% url 'contact' %}">{% trans "Contact us" %}</a> &ndash;
+                <a href="{% url 'license_page' %}">{% trans "Copyright and License information" %}</a> &ndash;
+                <div align="center" class="footer">
+                    {% trans "Items up to update" %} 3.0.5.9
+                    <br>
+                    <a href="{% url 'about' %}">{% trans "Help & About" %}</a> &ndash;
+                    <a href="{% url 'contact' %}">{% trans "Contact us" %}</a> &ndash;
+                    <a href="{% url 'license_page' %}">{% trans "Copyright and License information" %}</a> &ndash;
+                    <a href="https://discord.gg/3EtHskZD8h" target="_blank" rel="noopener noreferrer" class="discord-invite-btn">
+                        <img src="{% static 'chardata/discord.png' %}" alt="Discord" class="discord-logo" />
+                        dofusdude
+                    </a> &ndash;
+                    <a href="https://discord.gg/J842fFxU7r" target="_blank" rel="noopener noreferrer" class="discord-invite-btn">
+                        <img src="{% static 'chardata/discord.png' %}" alt="Discord" class="discord-logo" />
+                        fashionistaVanced
+                    </a>
+                </div>
+                <style>
+                    .discord-invite-btn {
+                        display: inline-flex;
+                        align-items: center;
+                        margin: 10px 5px;
+                        padding: 10px 20px;
+                        background-color: #7289DA; /* Discord's brand color */
+                        color: #ffffff;
+                        text-decoration: none;
+                        font-weight: bold;
+                        border-radius: 5px;
+                        transition: background-color 0.3s ease;
+                    }
+                
+                    .discord-invite-btn:hover,
+                    .discord-invite-btn:focus {
+                        background-color: #5b6eae;
+                        color: #ffffff;
+                    }
+                
+                    .discord-logo {
+                        margin-right: 8px;
+                        height: 20px;
+                        width: 26px;
+                    }
+                </style>
             </div>
         </div>
      </div>
