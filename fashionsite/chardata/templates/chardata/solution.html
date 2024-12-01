@@ -238,10 +238,11 @@
             {% include "chardata/solution_stat_line.html" with icon="chardata/Agility.png" stat_name=Per_Air_Res stat_key="airresper" %}
             {% trans "% Melee Resist" as Res_Per_Me %}
             {% include "chardata/solution_stat_line.html" with stat_name=Res_Per_Me stat_key="respermee" %}
+            {% trans "% Weapon Resist" as Res_Per_Wea %}
+            {% include "chardata/solution_stat_line.html" with stat_name=Res_Per_Wea stat_key="resperwea" %}
             {% trans "% Ranged Resist" as Res_Per_Dis %}
             {% include "chardata/solution_stat_line.html" with stat_name=Res_Per_Dis stat_key="resperran" %}
             {% trans "% Weapon Resist" as Res_Per_Wea %}
-            {% include "chardata/solution_stat_line.html" with stat_name=Res_Per_Wea stat_key="resperwea" %}
             <tr>
         </table>
     </td>
@@ -265,7 +266,7 @@
         </tr>
         </table>
     </div>
-    <p align="center" class="built-using">
+    <p align="center" class="text">
         {% trans "Built using data from " %}
         <a href="https://docs.dofusdu.de/" target="_blank" rel="noopener noreferrer">dofusdude</a>
         {% trans "." %}
