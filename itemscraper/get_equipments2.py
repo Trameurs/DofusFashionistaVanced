@@ -238,12 +238,22 @@ for item in equipment_data['en']['items']:
         if len(flattened_or_conditions) == 0:
             raise ValueError("Invalid parsing of conditions detected")
         # An item is created per OR condition
-        for i, conditions in enumerate(flattened_or_conditions):
-            copy_item = deepcopy(transformed_item)
-            copy_item["name"] = item["name"]+" condition("+str(i)+")"
-            copy_item["conditions"] = [f"{cond['element']['name']} {cond['operator']} {cond['int_value']}" for cond in conditions]
-            new_data.append(copy_item)
-    else:     
+        if len(flattened_or_conditions) > 1:
+            for i, conditions in enumerate(flattened_or_conditions):
+                copy_item = deepcopy(transformed_item)
+                # Add the numbering to localized names
+                for lang in LANGUAGES:
+                    lang_name_key = f"name_{lang}"
+                    if lang_name_key in copy_item:
+                        copy_item[lang_name_key] += f" {i + 1}"
+                copy_item["conditions"] = [f"{cond['element']['name']} {cond['operator']} {cond['int_value']}" for cond in conditions]
+                new_data.append(copy_item)
+        else:
+            transformed_item["conditions"] = [f"{cond['element']['name']} {cond['operator']} {cond['int_value']}" for cond in flattened_or_conditions[0]]
+            new_data.append(transformed_item)
+    else:
+        # Ensure "conditions" key exists with an empty list
+        transformed_item["conditions"] = []     
         new_data.append(transformed_item)
 
 for item in mount_data['en']['mounts']:
@@ -314,22 +324,21 @@ for item in set_data['en']["sets"]:
     if "items" in item:
         transformed_item["items"] = item["items"]
     if "effects" in item:
-        transformed_item["stats"] = []
-        #item["effects"] has become a dictionary with the new API.
-        # Key is number of item required starting at 1 max 8, value is a list of effects but can be None 
-        # if no effect is present for the group.
-        for i, effect_group in item["effects"].items():  # Iterate over each group of effects
-            if effect_group is None:
-                effect_group = []
-            set_n_stat = [
-                [
-                    eff["int_minimum"] if not eff["ignore_int_min"] else None,
-                    eff["int_maximum"] if not eff["ignore_int_max"] else None,
-                    eff["type"]["name"] 
-                ] for eff in effect_group
-            ]
-            transformed_item["stats"].append(set_n_stat)
-
+        transformed_item["stats_list"] = []
+        for effect_key, effect_value in item.get("effects", {}).items():
+            if effect_value is None:
+                continue
+            stats_entry = {
+                "effect_key": effect_key,
+                "effects": [
+                    [
+                        eff.get("int_minimum", None) if not eff.get("ignore_int_min", False) else None,
+                        eff.get("int_maximum", None) if not eff.get("ignore_int_max", False) else None,
+                        eff.get("type", {}).get("name", "")
+                    ] for eff in effect_value
+                ]
+            }
+            transformed_item["stats_list"].append(stats_entry)
     if "equipment_ids" in item:
         transformed_item["equipment_ids"] = item["equipment_ids"]
 

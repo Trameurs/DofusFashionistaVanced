@@ -22,7 +22,7 @@
             "ankama_id": 3,
             "name": "Dragopavo ébano",
             "family": {
-                "ankama_id": 3,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -62,7 +62,7 @@
             "ankama_id": 6,
             "name": "Dragopavo pelirrojo salvaje",
             "family": {
-                "ankama_id": 6,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -74,7 +74,7 @@
             "ankama_id": 9,
             "name": "Dragopavo ébano y marfil",
             "family": {
-                "ankama_id": 9,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -127,7 +127,7 @@
             "ankama_id": 10,
             "name": "Dragopavo pelirrojo",
             "family": {
-                "ankama_id": 10,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -167,7 +167,7 @@
             "ankama_id": 11,
             "name": "Dragopavo marfil y pelirrojo",
             "family": {
-                "ankama_id": 11,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -220,7 +220,7 @@
             "ankama_id": 12,
             "name": "Dragopavo ébano y pelirrojo",
             "family": {
-                "ankama_id": 12,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -273,7 +273,7 @@
             "ankama_id": 15,
             "name": "Dragopavo turquesa",
             "family": {
-                "ankama_id": 15,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -313,7 +313,7 @@
             "ankama_id": 16,
             "name": "Dragopavo marfil",
             "family": {
-                "ankama_id": 16,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -353,7 +353,7 @@
             "ankama_id": 17,
             "name": "Dragopavo índigo",
             "family": {
-                "ankama_id": 17,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -393,7 +393,7 @@
             "ankama_id": 18,
             "name": "Dragopavo dorado",
             "family": {
-                "ankama_id": 18,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -433,7 +433,7 @@
             "ankama_id": 19,
             "name": "Dragopavo púrpura",
             "family": {
-                "ankama_id": 19,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -473,7 +473,7 @@
             "ankama_id": 20,
             "name": "Dragopavo almendrado",
             "family": {
-                "ankama_id": 20,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -513,7 +513,7 @@
             "ankama_id": 21,
             "name": "Dragopavo esmeralda",
             "family": {
-                "ankama_id": 21,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -553,7 +553,7 @@
             "ankama_id": 22,
             "name": "Dragopavo orquídeo",
             "family": {
-                "ankama_id": 22,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -593,7 +593,7 @@
             "ankama_id": 23,
             "name": "Dragopavo ciruela",
             "family": {
-                "ankama_id": 23,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -633,7 +633,7 @@
             "ankama_id": 33,
             "name": "Dragopavo almendrado y dorado",
             "family": {
-                "ankama_id": 33,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -686,7 +686,7 @@
             "ankama_id": 34,
             "name": "Dragopavo almendrado y ébano",
             "family": {
-                "ankama_id": 34,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -739,7 +739,7 @@
             "ankama_id": 35,
             "name": "Dragopavo almendrado y esmeralda",
             "family": {
-                "ankama_id": 35,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -792,7 +792,7 @@
             "ankama_id": 36,
             "name": "Dragopavo almendrado e índigo",
             "family": {
-                "ankama_id": 36,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -845,7 +845,7 @@
             "ankama_id": 37,
             "name": "Dragopavo almendrado y marfil",
             "family": {
-                "ankama_id": 37,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -898,7 +898,7 @@
             "ankama_id": 38,
             "name": "Dragopavo almendrado y pelirrojo",
             "family": {
-                "ankama_id": 38,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -951,7 +951,7 @@
             "ankama_id": 39,
             "name": "Dragopavo almendrado y turquesa",
             "family": {
-                "ankama_id": 39,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1004,7 +1004,7 @@
             "ankama_id": 40,
             "name": "Dragopavo almendrado y orquídeo",
             "family": {
-                "ankama_id": 40,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1057,7 +1057,7 @@
             "ankama_id": 41,
             "name": "Dragopavo almendrado y púrpura",
             "family": {
-                "ankama_id": 41,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1110,7 +1110,7 @@
             "ankama_id": 42,
             "name": "Dragopavo dorado y ébano",
             "family": {
-                "ankama_id": 42,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1163,7 +1163,7 @@
             "ankama_id": 43,
             "name": "Dragopavo dorado y esmeralda",
             "family": {
-                "ankama_id": 43,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1216,7 +1216,7 @@
             "ankama_id": 44,
             "name": "Dragopavo dorado e índigo",
             "family": {
-                "ankama_id": 44,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1269,7 +1269,7 @@
             "ankama_id": 45,
             "name": "Dragopavo dorado y marfil",
             "family": {
-                "ankama_id": 45,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1322,7 +1322,7 @@
             "ankama_id": 46,
             "name": "Dragopavo dorado y pelirrojo",
             "family": {
-                "ankama_id": 46,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1375,7 +1375,7 @@
             "ankama_id": 47,
             "name": "Dragopavo dorado y turquesa",
             "family": {
-                "ankama_id": 47,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1428,7 +1428,7 @@
             "ankama_id": 48,
             "name": "Dragopavo dorado y orquídeo",
             "family": {
-                "ankama_id": 48,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1481,7 +1481,7 @@
             "ankama_id": 49,
             "name": "Dragopavo dorado y púrpura",
             "family": {
-                "ankama_id": 49,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1534,7 +1534,7 @@
             "ankama_id": 50,
             "name": "Dragopavo ébano y esmeralda",
             "family": {
-                "ankama_id": 50,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1587,7 +1587,7 @@
             "ankama_id": 51,
             "name": "Dragopavo ébano e índigo",
             "family": {
-                "ankama_id": 51,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1640,7 +1640,7 @@
             "ankama_id": 52,
             "name": "Dragopavo ébano y turquesa",
             "family": {
-                "ankama_id": 52,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1693,7 +1693,7 @@
             "ankama_id": 53,
             "name": "Dragopavo ébano y orquídeo",
             "family": {
-                "ankama_id": 53,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1746,7 +1746,7 @@
             "ankama_id": 54,
             "name": "Dragopavo ébano y púrpura",
             "family": {
-                "ankama_id": 54,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1799,7 +1799,7 @@
             "ankama_id": 55,
             "name": "Dragopavo esmeralda e índigo",
             "family": {
-                "ankama_id": 55,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1852,7 +1852,7 @@
             "ankama_id": 56,
             "name": "Dragopavo esmeralda y marfil",
             "family": {
-                "ankama_id": 56,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1905,7 +1905,7 @@
             "ankama_id": 57,
             "name": "Dragopavo esmeralda y pelirrojo",
             "family": {
-                "ankama_id": 57,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -1958,7 +1958,7 @@
             "ankama_id": 58,
             "name": "Dragopavo esmeralda y turquesa",
             "family": {
-                "ankama_id": 58,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2011,7 +2011,7 @@
             "ankama_id": 59,
             "name": "Dragopavo esmeralda y orquídeo",
             "family": {
-                "ankama_id": 59,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2064,7 +2064,7 @@
             "ankama_id": 60,
             "name": "Dragopavo esmeralda y púrpura",
             "family": {
-                "ankama_id": 60,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2117,7 +2117,7 @@
             "ankama_id": 61,
             "name": "Dragopavo índigo y marfil",
             "family": {
-                "ankama_id": 61,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2170,7 +2170,7 @@
             "ankama_id": 62,
             "name": "Dragopavo índigo y pelirrojo",
             "family": {
-                "ankama_id": 62,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2223,7 +2223,7 @@
             "ankama_id": 63,
             "name": "Dragopavo índigo y turquesa",
             "family": {
-                "ankama_id": 63,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2276,7 +2276,7 @@
             "ankama_id": 64,
             "name": "Dragopavo índigo y orquídeo",
             "family": {
-                "ankama_id": 64,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2329,7 +2329,7 @@
             "ankama_id": 65,
             "name": "Dragopavo índigo y púrpura",
             "family": {
-                "ankama_id": 65,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2382,7 +2382,7 @@
             "ankama_id": 66,
             "name": "Dragopavo marfil y turquesa",
             "family": {
-                "ankama_id": 66,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2435,7 +2435,7 @@
             "ankama_id": 67,
             "name": "Dragopavo marfil y orquídeo",
             "family": {
-                "ankama_id": 67,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2488,7 +2488,7 @@
             "ankama_id": 68,
             "name": "Dragopavo marfil y púrpura",
             "family": {
-                "ankama_id": 68,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2541,7 +2541,7 @@
             "ankama_id": 69,
             "name": "Dragopavo turquesa y pelirrojo",
             "family": {
-                "ankama_id": 69,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2594,7 +2594,7 @@
             "ankama_id": 70,
             "name": "Dragopavo orquídeo y pelirrojo",
             "family": {
-                "ankama_id": 70,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2647,7 +2647,7 @@
             "ankama_id": 71,
             "name": "Dragopavo púrpura y pelirrojo",
             "family": {
-                "ankama_id": 71,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2700,7 +2700,7 @@
             "ankama_id": 72,
             "name": "Dragopavo turquesa y orquídeo",
             "family": {
-                "ankama_id": 72,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2753,7 +2753,7 @@
             "ankama_id": 73,
             "name": "Dragopavo turquesa y púrpura",
             "family": {
-                "ankama_id": 73,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2806,7 +2806,7 @@
             "ankama_id": 74,
             "name": "Dragopavo dorado salvaje",
             "family": {
-                "ankama_id": 74,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2818,7 +2818,7 @@
             "ankama_id": 76,
             "name": "Dragopavo orquídeo y púrpura",
             "family": {
-                "ankama_id": 76,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2871,7 +2871,7 @@
             "ankama_id": 77,
             "name": "Dragopavo ciruela y almendrado",
             "family": {
-                "ankama_id": 77,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2924,7 +2924,7 @@
             "ankama_id": 78,
             "name": "Dragopavo ciruela y dorado",
             "family": {
-                "ankama_id": 78,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -2977,7 +2977,7 @@
             "ankama_id": 79,
             "name": "Dragopavo ciruela y ébano",
             "family": {
-                "ankama_id": 79,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -3030,7 +3030,7 @@
             "ankama_id": 80,
             "name": "Dragopavo ciruela y esmeralda",
             "family": {
-                "ankama_id": 80,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -3083,7 +3083,7 @@
             "ankama_id": 82,
             "name": "Dragopavo ciruela e índigo",
             "family": {
-                "ankama_id": 82,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -3136,7 +3136,7 @@
             "ankama_id": 83,
             "name": "Dragopavo ciruela y marfil",
             "family": {
-                "ankama_id": 83,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -3189,7 +3189,7 @@
             "ankama_id": 84,
             "name": "Dragopavo ciruela y pelirrojo",
             "family": {
-                "ankama_id": 84,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -3242,7 +3242,7 @@
             "ankama_id": 85,
             "name": "Dragopavo ciruela y turquesa",
             "family": {
-                "ankama_id": 85,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -3295,7 +3295,7 @@
             "ankama_id": 86,
             "name": "Dragopavo ciruela y orquídeo",
             "family": {
-                "ankama_id": 86,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -3348,7 +3348,7 @@
             "ankama_id": 87,
             "name": "Dragopavo ciruela y púrpura",
             "family": {
-                "ankama_id": 87,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -3401,7 +3401,7 @@
             "ankama_id": 88,
             "name": "Dragopavo con armadura",
             "family": {
-                "ankama_id": 88,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -3493,7 +3493,7 @@
             "ankama_id": 89,
             "name": "Dragopavo con plumas",
             "family": {
-                "ankama_id": 89,
+                "ankama_id": 1,
                 "name": "Dragopavo"
             },
             "image_urls": {
@@ -3533,7 +3533,7 @@
             "ankama_id": 90,
             "name": "Mulagua orquídea",
             "family": {
-                "ankama_id": 90,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -3573,7 +3573,7 @@
             "ankama_id": 91,
             "name": "Mulagua ébano",
             "family": {
-                "ankama_id": 91,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -3613,7 +3613,7 @@
             "ankama_id": 92,
             "name": "Mulagua índigo",
             "family": {
-                "ankama_id": 92,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -3653,7 +3653,7 @@
             "ankama_id": 93,
             "name": "Mulagua púrpura",
             "family": {
-                "ankama_id": 93,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -3693,7 +3693,7 @@
             "ankama_id": 94,
             "name": "Mulagua dorada",
             "family": {
-                "ankama_id": 94,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -3733,7 +3733,7 @@
             "ankama_id": 95,
             "name": "Mulagua roja",
             "family": {
-                "ankama_id": 95,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -3773,7 +3773,7 @@
             "ankama_id": 96,
             "name": "Mulagua almendrada",
             "family": {
-                "ankama_id": 96,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -3813,7 +3813,7 @@
             "ankama_id": 97,
             "name": "Mulagua marfil",
             "family": {
-                "ankama_id": 97,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -3853,7 +3853,7 @@
             "ankama_id": 98,
             "name": "Mulagua turquesa",
             "family": {
-                "ankama_id": 98,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -3893,7 +3893,7 @@
             "ankama_id": 99,
             "name": "Mulagua ciruela",
             "family": {
-                "ankama_id": 99,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -3933,7 +3933,7 @@
             "ankama_id": 100,
             "name": "Mulagua esmeralda",
             "family": {
-                "ankama_id": 100,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -3973,7 +3973,7 @@
             "ankama_id": 101,
             "name": "Mulagua dorada y púrpura",
             "family": {
-                "ankama_id": 101,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4026,7 +4026,7 @@
             "ankama_id": 102,
             "name": "Mulagua índigo y púrpura",
             "family": {
-                "ankama_id": 102,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4079,7 +4079,7 @@
             "ankama_id": 103,
             "name": "Mulagua ébano y púrpura",
             "family": {
-                "ankama_id": 103,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4132,7 +4132,7 @@
             "ankama_id": 104,
             "name": "Mulagua orquídea y púrpura",
             "family": {
-                "ankama_id": 104,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4185,7 +4185,7 @@
             "ankama_id": 105,
             "name": "Mulagua dorada y orquídea",
             "family": {
-                "ankama_id": 105,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4238,7 +4238,7 @@
             "ankama_id": 106,
             "name": "Mulagua índigo y orquídea",
             "family": {
-                "ankama_id": 106,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4291,7 +4291,7 @@
             "ankama_id": 107,
             "name": "Mulagua ébano y orquídea",
             "family": {
-                "ankama_id": 107,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4344,7 +4344,7 @@
             "ankama_id": 108,
             "name": "Mulagua dorada e índigo",
             "family": {
-                "ankama_id": 108,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4397,7 +4397,7 @@
             "ankama_id": 109,
             "name": "Mulagua ébano e índigo",
             "family": {
-                "ankama_id": 109,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4450,7 +4450,7 @@
             "ankama_id": 110,
             "name": "Mulagua dorada y ébano",
             "family": {
-                "ankama_id": 110,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4503,7 +4503,7 @@
             "ankama_id": 111,
             "name": "Mulagua roja y púrpura",
             "family": {
-                "ankama_id": 111,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4556,7 +4556,7 @@
             "ankama_id": 112,
             "name": "Mulagua roja y orquídea",
             "family": {
-                "ankama_id": 112,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4609,7 +4609,7 @@
             "ankama_id": 113,
             "name": "Mulagua roja e índigo",
             "family": {
-                "ankama_id": 113,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4662,7 +4662,7 @@
             "ankama_id": 114,
             "name": "Mulagua roja y ébano",
             "family": {
-                "ankama_id": 114,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4715,7 +4715,7 @@
             "ankama_id": 115,
             "name": "Mulagua roja y dorada",
             "family": {
-                "ankama_id": 115,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4768,7 +4768,7 @@
             "ankama_id": 116,
             "name": "Mulagua roja y almendrada",
             "family": {
-                "ankama_id": 116,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4821,7 +4821,7 @@
             "ankama_id": 117,
             "name": "Mulagua púrpura y almendrada",
             "family": {
-                "ankama_id": 117,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4874,7 +4874,7 @@
             "ankama_id": 118,
             "name": "Mulagua orquídea y almendrada",
             "family": {
-                "ankama_id": 118,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4927,7 +4927,7 @@
             "ankama_id": 119,
             "name": "Mulagua índigo y almendrada",
             "family": {
-                "ankama_id": 119,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -4980,7 +4980,7 @@
             "ankama_id": 120,
             "name": "Mulagua ébano y almendrada",
             "family": {
-                "ankama_id": 120,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5033,7 +5033,7 @@
             "ankama_id": 121,
             "name": "Mulagua dorada y almendrada",
             "family": {
-                "ankama_id": 121,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5086,7 +5086,7 @@
             "ankama_id": 122,
             "name": "Mulagua púrpura y marfil",
             "family": {
-                "ankama_id": 122,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5139,7 +5139,7 @@
             "ankama_id": 123,
             "name": "Mulagua orquídea y marfil",
             "family": {
-                "ankama_id": 123,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5192,7 +5192,7 @@
             "ankama_id": 124,
             "name": "Mulagua índigo y marfil",
             "family": {
-                "ankama_id": 124,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5245,7 +5245,7 @@
             "ankama_id": 125,
             "name": "Mulagua ébano y marfil",
             "family": {
-                "ankama_id": 125,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5298,7 +5298,7 @@
             "ankama_id": 126,
             "name": "Mulagua dorada y marfil",
             "family": {
-                "ankama_id": 126,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5351,7 +5351,7 @@
             "ankama_id": 127,
             "name": "Mulagua roja y marfil",
             "family": {
-                "ankama_id": 127,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5404,7 +5404,7 @@
             "ankama_id": 138,
             "name": "Mulagua almendrada y marfil",
             "family": {
-                "ankama_id": 138,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5457,7 +5457,7 @@
             "ankama_id": 139,
             "name": "Mulagua turquesa y marfil",
             "family": {
-                "ankama_id": 139,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5510,7 +5510,7 @@
             "ankama_id": 140,
             "name": "Mulagua turquesa y púrpura",
             "family": {
-                "ankama_id": 140,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5563,7 +5563,7 @@
             "ankama_id": 141,
             "name": "Mulagua turquesa e índigo",
             "family": {
-                "ankama_id": 141,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5616,7 +5616,7 @@
             "ankama_id": 142,
             "name": "Mulagua turquesa y ébano",
             "family": {
-                "ankama_id": 142,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5669,7 +5669,7 @@
             "ankama_id": 143,
             "name": "Mulagua turquesa y roja",
             "family": {
-                "ankama_id": 143,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5722,7 +5722,7 @@
             "ankama_id": 144,
             "name": "Mulagua turquesa y almendrada",
             "family": {
-                "ankama_id": 144,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5775,7 +5775,7 @@
             "ankama_id": 145,
             "name": "Mulagua turquesa y dorada",
             "family": {
-                "ankama_id": 145,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5828,7 +5828,7 @@
             "ankama_id": 146,
             "name": "Mulagua ciruela y púrpura",
             "family": {
-                "ankama_id": 146,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5881,7 +5881,7 @@
             "ankama_id": 147,
             "name": "Mulagua ciruela y orquídea",
             "family": {
-                "ankama_id": 147,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5934,7 +5934,7 @@
             "ankama_id": 148,
             "name": "Mulagua ciruela e índigo",
             "family": {
-                "ankama_id": 148,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -5987,7 +5987,7 @@
             "ankama_id": 149,
             "name": "Mulagua ciruela y ébano",
             "family": {
-                "ankama_id": 149,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6040,7 +6040,7 @@
             "ankama_id": 150,
             "name": "Mulagua ciruela y dorada",
             "family": {
-                "ankama_id": 150,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6093,7 +6093,7 @@
             "ankama_id": 151,
             "name": "Mulagua ciruela y roja",
             "family": {
-                "ankama_id": 151,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6146,7 +6146,7 @@
             "ankama_id": 152,
             "name": "Mulagua ciruela y almendrada",
             "family": {
-                "ankama_id": 152,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6199,7 +6199,7 @@
             "ankama_id": 153,
             "name": "Mulagua ciruela y marfil",
             "family": {
-                "ankama_id": 153,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6252,7 +6252,7 @@
             "ankama_id": 154,
             "name": "Mulagua ciruela y turquesa",
             "family": {
-                "ankama_id": 154,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6305,7 +6305,7 @@
             "ankama_id": 155,
             "name": "Mulagua ciruela y esmeralda",
             "family": {
-                "ankama_id": 155,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6358,7 +6358,7 @@
             "ankama_id": 156,
             "name": "Mulagua púrpura y esmeralda",
             "family": {
-                "ankama_id": 156,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6411,7 +6411,7 @@
             "ankama_id": 157,
             "name": "Mulagua orquídea y esmeralda",
             "family": {
-                "ankama_id": 157,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6464,7 +6464,7 @@
             "ankama_id": 158,
             "name": "Mulagua índigo y esmeralda",
             "family": {
-                "ankama_id": 158,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6517,7 +6517,7 @@
             "ankama_id": 159,
             "name": "Mulagua ébano y esmeralda",
             "family": {
-                "ankama_id": 159,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6570,7 +6570,7 @@
             "ankama_id": 160,
             "name": "Mulagua dorada y esmeralda",
             "family": {
-                "ankama_id": 160,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6623,7 +6623,7 @@
             "ankama_id": 161,
             "name": "Mulagua roja y esmeralda",
             "family": {
-                "ankama_id": 161,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6676,7 +6676,7 @@
             "ankama_id": 162,
             "name": "Mulagua almendrada y esmeralda",
             "family": {
-                "ankama_id": 162,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6729,7 +6729,7 @@
             "ankama_id": 163,
             "name": "Mulagua marfil y esmeralda",
             "family": {
-                "ankama_id": 163,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6782,7 +6782,7 @@
             "ankama_id": 164,
             "name": "Mulagua turquesa y esmeralda",
             "family": {
-                "ankama_id": 164,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6835,7 +6835,7 @@
             "ankama_id": 165,
             "name": "Mulagua turquesa y orquídea",
             "family": {
-                "ankama_id": 165,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6888,7 +6888,7 @@
             "ankama_id": 167,
             "name": "Mulagua dorada salvaje",
             "family": {
-                "ankama_id": 167,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6900,7 +6900,7 @@
             "ankama_id": 168,
             "name": "Mulagua púrpura salvaje",
             "family": {
-                "ankama_id": 168,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6927,7 +6927,7 @@
             "ankama_id": 169,
             "name": "Mulagua índigo salvaje",
             "family": {
-                "ankama_id": 169,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6954,7 +6954,7 @@
             "ankama_id": 170,
             "name": "Mulagua ébano salvaje",
             "family": {
-                "ankama_id": 170,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -6981,7 +6981,7 @@
             "ankama_id": 171,
             "name": "Mulagua orquídea salvaje",
             "family": {
-                "ankama_id": 171,
+                "ankama_id": 5,
                 "name": "Mulagua"
             },
             "image_urls": {
@@ -7008,7 +7008,7 @@
             "ankama_id": 172,
             "name": "Vueloceronte púrpura salvaje",
             "family": {
-                "ankama_id": 172,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7020,7 +7020,7 @@
             "ankama_id": 173,
             "name": "Vueloceronte orquídeo salvaje",
             "family": {
-                "ankama_id": 173,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7032,7 +7032,7 @@
             "ankama_id": 174,
             "name": "Vueloceronte índigo salvaje",
             "family": {
-                "ankama_id": 174,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7044,7 +7044,7 @@
             "ankama_id": 175,
             "name": "Vueloceronte ébano salvaje",
             "family": {
-                "ankama_id": 175,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7056,7 +7056,7 @@
             "ankama_id": 176,
             "name": "Vueloceronte índigo",
             "family": {
-                "ankama_id": 176,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7096,7 +7096,7 @@
             "ankama_id": 177,
             "name": "Vueloceronte ébano",
             "family": {
-                "ankama_id": 177,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7136,7 +7136,7 @@
             "ankama_id": 178,
             "name": "Vueloceronte púrpura",
             "family": {
-                "ankama_id": 178,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7176,7 +7176,7 @@
             "ankama_id": 179,
             "name": "Vueloceronte orquídeo",
             "family": {
-                "ankama_id": 179,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7216,7 +7216,7 @@
             "ankama_id": 180,
             "name": "Vueloceronte pelirrojo",
             "family": {
-                "ankama_id": 180,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7256,7 +7256,7 @@
             "ankama_id": 181,
             "name": "Vueloceronte almendrado",
             "family": {
-                "ankama_id": 181,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7296,7 +7296,7 @@
             "ankama_id": 182,
             "name": "Vueloceronte marfil",
             "family": {
-                "ankama_id": 182,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7336,7 +7336,7 @@
             "ankama_id": 183,
             "name": "Vueloceronte turquesa",
             "family": {
-                "ankama_id": 183,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7376,7 +7376,7 @@
             "ankama_id": 184,
             "name": "Vueloceronte ciruela",
             "family": {
-                "ankama_id": 184,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7416,7 +7416,7 @@
             "ankama_id": 185,
             "name": "Vueloceronte esmeralda",
             "family": {
-                "ankama_id": 185,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7456,7 +7456,7 @@
             "ankama_id": 186,
             "name": "Vueloceronte dorado",
             "family": {
-                "ankama_id": 186,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7496,7 +7496,7 @@
             "ankama_id": 187,
             "name": "Vueloceronte jade",
             "family": {
-                "ankama_id": 187,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7536,7 +7536,7 @@
             "ankama_id": 188,
             "name": "Vueloceronte rubí",
             "family": {
-                "ankama_id": 188,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7576,7 +7576,7 @@
             "ankama_id": 189,
             "name": "Vueloceronte zafiro",
             "family": {
-                "ankama_id": 189,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7616,7 +7616,7 @@
             "ankama_id": 190,
             "name": "Vueloceronte amatista",
             "family": {
-                "ankama_id": 190,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7656,7 +7656,7 @@
             "ankama_id": 191,
             "name": "Vueloceronte púrpura y orquídeo",
             "family": {
-                "ankama_id": 191,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7709,7 +7709,7 @@
             "ankama_id": 192,
             "name": "Vueloceronte púrpura e índigo",
             "family": {
-                "ankama_id": 192,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7762,7 +7762,7 @@
             "ankama_id": 193,
             "name": "Vueloceronte púrpura y ébano",
             "family": {
-                "ankama_id": 193,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7815,7 +7815,7 @@
             "ankama_id": 194,
             "name": "Vueloceronte orquídeo e índigo",
             "family": {
-                "ankama_id": 194,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7868,7 +7868,7 @@
             "ankama_id": 195,
             "name": "Vueloceronte orquídeo y ébano",
             "family": {
-                "ankama_id": 195,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7921,7 +7921,7 @@
             "ankama_id": 196,
             "name": "Vueloceronte índigo y ébano",
             "family": {
-                "ankama_id": 196,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -7974,7 +7974,7 @@
             "ankama_id": 197,
             "name": "Vueloceronte almendrado y púrpura",
             "family": {
-                "ankama_id": 197,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8027,7 +8027,7 @@
             "ankama_id": 198,
             "name": "Vueloceronte almendrado y orquídeo",
             "family": {
-                "ankama_id": 198,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8080,7 +8080,7 @@
             "ankama_id": 199,
             "name": "Vueloceronte almendrado e índigo",
             "family": {
-                "ankama_id": 199,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8133,7 +8133,7 @@
             "ankama_id": 200,
             "name": "Vueloceronte almendrado y ébano",
             "family": {
-                "ankama_id": 200,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8186,7 +8186,7 @@
             "ankama_id": 201,
             "name": "Vueloceronte almendrado y pelirrojo",
             "family": {
-                "ankama_id": 201,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8239,7 +8239,7 @@
             "ankama_id": 202,
             "name": "Vueloceronte almendrado y marfil",
             "family": {
-                "ankama_id": 202,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8292,7 +8292,7 @@
             "ankama_id": 203,
             "name": "Vueloceronte almendrado y turquesa",
             "family": {
-                "ankama_id": 203,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8345,7 +8345,7 @@
             "ankama_id": 204,
             "name": "Vueloceronte pelirrojo y púrpura",
             "family": {
-                "ankama_id": 204,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8398,7 +8398,7 @@
             "ankama_id": 205,
             "name": "Vueloceronte pelirrojo y orquídeo",
             "family": {
-                "ankama_id": 205,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8451,7 +8451,7 @@
             "ankama_id": 206,
             "name": "Vueloceronte pelirrojo e índigo",
             "family": {
-                "ankama_id": 206,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8504,7 +8504,7 @@
             "ankama_id": 207,
             "name": "Vueloceronte pelirrojo y ébano",
             "family": {
-                "ankama_id": 207,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8557,7 +8557,7 @@
             "ankama_id": 208,
             "name": "Vueloceronte pelirrojo y marfil",
             "family": {
-                "ankama_id": 208,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8610,7 +8610,7 @@
             "ankama_id": 209,
             "name": "Vueloceronte pelirrojo y turquesa",
             "family": {
-                "ankama_id": 209,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8663,7 +8663,7 @@
             "ankama_id": 210,
             "name": "Vueloceronte marfil y púrpura",
             "family": {
-                "ankama_id": 210,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8716,7 +8716,7 @@
             "ankama_id": 211,
             "name": "Vueloceronte marfil y orquídeo",
             "family": {
-                "ankama_id": 211,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8769,7 +8769,7 @@
             "ankama_id": 212,
             "name": "Vueloceronte marfil e índigo",
             "family": {
-                "ankama_id": 212,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8822,7 +8822,7 @@
             "ankama_id": 213,
             "name": "Vueloceronte marfil y ébano",
             "family": {
-                "ankama_id": 213,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8875,7 +8875,7 @@
             "ankama_id": 214,
             "name": "Vueloceronte marfil y turquesa",
             "family": {
-                "ankama_id": 214,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8928,7 +8928,7 @@
             "ankama_id": 215,
             "name": "Vueloceronte turquesa y púrpura",
             "family": {
-                "ankama_id": 215,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -8981,7 +8981,7 @@
             "ankama_id": 216,
             "name": "Vueloceronte turquesa y orquídeo",
             "family": {
-                "ankama_id": 216,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9034,7 +9034,7 @@
             "ankama_id": 217,
             "name": "Vueloceronte turquesa e índigo",
             "family": {
-                "ankama_id": 217,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9087,7 +9087,7 @@
             "ankama_id": 218,
             "name": "Vueloceronte turquesa y ébano",
             "family": {
-                "ankama_id": 218,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9140,7 +9140,7 @@
             "ankama_id": 219,
             "name": "Vueloceronte ciruela y púrpura",
             "family": {
-                "ankama_id": 219,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9193,7 +9193,7 @@
             "ankama_id": 220,
             "name": "Vueloceronte ciruela y orquídeo",
             "family": {
-                "ankama_id": 220,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9246,7 +9246,7 @@
             "ankama_id": 221,
             "name": "Vueloceronte ciruela e índigo",
             "family": {
-                "ankama_id": 221,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9299,7 +9299,7 @@
             "ankama_id": 222,
             "name": "Vueloceronte ciruela y ébano",
             "family": {
-                "ankama_id": 222,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9352,7 +9352,7 @@
             "ankama_id": 223,
             "name": "Vueloceronte ciruela y almendrado",
             "family": {
-                "ankama_id": 223,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9405,7 +9405,7 @@
             "ankama_id": 224,
             "name": "Vueloceronte ciruela y turquesa",
             "family": {
-                "ankama_id": 224,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9458,7 +9458,7 @@
             "ankama_id": 225,
             "name": "Vueloceronte ciruela y esmeralda",
             "family": {
-                "ankama_id": 225,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9511,7 +9511,7 @@
             "ankama_id": 226,
             "name": "Vueloceronte esmeralda y púrpura",
             "family": {
-                "ankama_id": 226,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9564,7 +9564,7 @@
             "ankama_id": 227,
             "name": "Vueloceronte esmeralda y orquídeo",
             "family": {
-                "ankama_id": 227,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9617,7 +9617,7 @@
             "ankama_id": 228,
             "name": "Vueloceronte esmeralda e índigo",
             "family": {
-                "ankama_id": 228,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9670,7 +9670,7 @@
             "ankama_id": 229,
             "name": "Vueloceronte esmeralda y ébano",
             "family": {
-                "ankama_id": 229,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9723,7 +9723,7 @@
             "ankama_id": 230,
             "name": "Vueloceronte esmeralda y almendrado",
             "family": {
-                "ankama_id": 230,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9776,7 +9776,7 @@
             "ankama_id": 231,
             "name": "Vueloceronte esmeralda y pelirrojo",
             "family": {
-                "ankama_id": 231,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9829,7 +9829,7 @@
             "ankama_id": 233,
             "name": "Vueloceronte esmeralda y marfil",
             "family": {
-                "ankama_id": 233,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9882,7 +9882,7 @@
             "ankama_id": 234,
             "name": "Vueloceronte esmeralda y turquesa",
             "family": {
-                "ankama_id": 234,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9935,7 +9935,7 @@
             "ankama_id": 235,
             "name": "Vueloceronte dorado y púrpura",
             "family": {
-                "ankama_id": 235,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -9988,7 +9988,7 @@
             "ankama_id": 236,
             "name": "Vueloceronte dorado y orquídeo",
             "family": {
-                "ankama_id": 236,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10041,7 +10041,7 @@
             "ankama_id": 237,
             "name": "Vueloceronte dorado e índigo",
             "family": {
-                "ankama_id": 237,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10094,7 +10094,7 @@
             "ankama_id": 238,
             "name": "Vueloceronte dorado y ébano",
             "family": {
-                "ankama_id": 238,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10147,7 +10147,7 @@
             "ankama_id": 239,
             "name": "Vueloceronte jade y púrpura",
             "family": {
-                "ankama_id": 239,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10200,7 +10200,7 @@
             "ankama_id": 240,
             "name": "Vueloceronte jade y orquídeo",
             "family": {
-                "ankama_id": 240,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10253,7 +10253,7 @@
             "ankama_id": 241,
             "name": "Vueloceronte jade e índigo",
             "family": {
-                "ankama_id": 241,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10306,7 +10306,7 @@
             "ankama_id": 242,
             "name": "Vueloceronte jade y ébano",
             "family": {
-                "ankama_id": 242,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10359,7 +10359,7 @@
             "ankama_id": 243,
             "name": "Vueloceronte jade y almendrado",
             "family": {
-                "ankama_id": 243,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10412,7 +10412,7 @@
             "ankama_id": 244,
             "name": "Vueloceronte jade y pelirrojo",
             "family": {
-                "ankama_id": 244,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10465,7 +10465,7 @@
             "ankama_id": 245,
             "name": "Vueloceronte jade y marfil",
             "family": {
-                "ankama_id": 245,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10518,7 +10518,7 @@
             "ankama_id": 246,
             "name": "Vueloceronte jade y turquesa",
             "family": {
-                "ankama_id": 246,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10571,7 +10571,7 @@
             "ankama_id": 247,
             "name": "Vueloceronte jade y ciruela",
             "family": {
-                "ankama_id": 247,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10624,7 +10624,7 @@
             "ankama_id": 248,
             "name": "Vueloceronte jade y esmeralda",
             "family": {
-                "ankama_id": 248,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10677,7 +10677,7 @@
             "ankama_id": 249,
             "name": "Vueloceronte jade y dorado",
             "family": {
-                "ankama_id": 249,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10730,7 +10730,7 @@
             "ankama_id": 250,
             "name": "Vueloceronte jade y rubí",
             "family": {
-                "ankama_id": 250,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10783,7 +10783,7 @@
             "ankama_id": 251,
             "name": "Vueloceronte jade y zafiro",
             "family": {
-                "ankama_id": 251,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10836,7 +10836,7 @@
             "ankama_id": 252,
             "name": "Vueloceronte jade y amatista",
             "family": {
-                "ankama_id": 252,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10889,7 +10889,7 @@
             "ankama_id": 253,
             "name": "Vueloceronte rubí y púrpura",
             "family": {
-                "ankama_id": 253,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10942,7 +10942,7 @@
             "ankama_id": 254,
             "name": "Vueloceronte rubí y orquídeo",
             "family": {
-                "ankama_id": 254,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -10995,7 +10995,7 @@
             "ankama_id": 255,
             "name": "Vueloceronte rubí e índigo",
             "family": {
-                "ankama_id": 255,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11048,7 +11048,7 @@
             "ankama_id": 256,
             "name": "Vueloceronte rubí y ébano",
             "family": {
-                "ankama_id": 256,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11101,7 +11101,7 @@
             "ankama_id": 257,
             "name": "Vueloceronte rubí y almendrado",
             "family": {
-                "ankama_id": 257,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11154,7 +11154,7 @@
             "ankama_id": 258,
             "name": "Vueloceronte rubí y pelirrojo",
             "family": {
-                "ankama_id": 258,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11207,7 +11207,7 @@
             "ankama_id": 259,
             "name": "Vueloceronte rubí y marfil",
             "family": {
-                "ankama_id": 259,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11260,7 +11260,7 @@
             "ankama_id": 260,
             "name": "Vueloceronte rubí y turquesa",
             "family": {
-                "ankama_id": 260,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11313,7 +11313,7 @@
             "ankama_id": 261,
             "name": "Vueloceronte rubí y ciruela",
             "family": {
-                "ankama_id": 261,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11366,7 +11366,7 @@
             "ankama_id": 262,
             "name": "Vueloceronte rubí y esmeralda",
             "family": {
-                "ankama_id": 262,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11419,7 +11419,7 @@
             "ankama_id": 263,
             "name": "Vueloceronte rubí y dorado",
             "family": {
-                "ankama_id": 263,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11472,7 +11472,7 @@
             "ankama_id": 264,
             "name": "Vueloceronte zafiro y púrpura",
             "family": {
-                "ankama_id": 264,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11525,7 +11525,7 @@
             "ankama_id": 265,
             "name": "Vueloceronte zafiro y orquídeo",
             "family": {
-                "ankama_id": 265,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11578,7 +11578,7 @@
             "ankama_id": 266,
             "name": "Vueloceronte zafiro e índigo",
             "family": {
-                "ankama_id": 266,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11631,7 +11631,7 @@
             "ankama_id": 267,
             "name": "Vueloceronte zafiro y ébano",
             "family": {
-                "ankama_id": 267,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11684,7 +11684,7 @@
             "ankama_id": 268,
             "name": "Vueloceronte zafiro y almendrado",
             "family": {
-                "ankama_id": 268,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11737,7 +11737,7 @@
             "ankama_id": 269,
             "name": "Vueloceronte zafiro y pelirrojo",
             "family": {
-                "ankama_id": 269,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11790,7 +11790,7 @@
             "ankama_id": 270,
             "name": "Vueloceronte zafiro y marfil",
             "family": {
-                "ankama_id": 270,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11843,7 +11843,7 @@
             "ankama_id": 271,
             "name": "Vueloceronte zafiro y turquesa",
             "family": {
-                "ankama_id": 271,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11896,7 +11896,7 @@
             "ankama_id": 272,
             "name": "Vueloceronte zafiro y ciruela",
             "family": {
-                "ankama_id": 272,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -11949,7 +11949,7 @@
             "ankama_id": 273,
             "name": "Vueloceronte zafiro y esmeralda",
             "family": {
-                "ankama_id": 273,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12002,7 +12002,7 @@
             "ankama_id": 274,
             "name": "Vueloceronte zafiro y dorado",
             "family": {
-                "ankama_id": 274,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12055,7 +12055,7 @@
             "ankama_id": 275,
             "name": "Vueloceronte zafiro y amatista",
             "family": {
-                "ankama_id": 275,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12108,7 +12108,7 @@
             "ankama_id": 276,
             "name": "Vueloceronte amatista y púrpura",
             "family": {
-                "ankama_id": 276,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12161,7 +12161,7 @@
             "ankama_id": 277,
             "name": "Vueloceronte amatista y orquídeo",
             "family": {
-                "ankama_id": 277,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12214,7 +12214,7 @@
             "ankama_id": 278,
             "name": "Vueloceronte amatista e índigo",
             "family": {
-                "ankama_id": 278,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12267,7 +12267,7 @@
             "ankama_id": 279,
             "name": "Vueloceronte amatista y ébano",
             "family": {
-                "ankama_id": 279,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12320,7 +12320,7 @@
             "ankama_id": 280,
             "name": "Vueloceronte amatista y almendrado",
             "family": {
-                "ankama_id": 280,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12373,7 +12373,7 @@
             "ankama_id": 281,
             "name": "Vueloceronte amatista y pelirrojo",
             "family": {
-                "ankama_id": 281,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12426,7 +12426,7 @@
             "ankama_id": 282,
             "name": "Vueloceronte amatista y marfil",
             "family": {
-                "ankama_id": 282,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12479,7 +12479,7 @@
             "ankama_id": 283,
             "name": "Vueloceronte amatista y turquesa",
             "family": {
-                "ankama_id": 283,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12532,7 +12532,7 @@
             "ankama_id": 284,
             "name": "Vueloceronte amatista y ciruela",
             "family": {
-                "ankama_id": 284,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12585,7 +12585,7 @@
             "ankama_id": 285,
             "name": "Vueloceronte amatista y esmeralda",
             "family": {
-                "ankama_id": 285,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12638,7 +12638,7 @@
             "ankama_id": 286,
             "name": "Vueloceronte amatista y dorado",
             "family": {
-                "ankama_id": 286,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12691,7 +12691,7 @@
             "ankama_id": 287,
             "name": "Vueloceronte ciruela y pelirrojo",
             "family": {
-                "ankama_id": 287,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12744,7 +12744,7 @@
             "ankama_id": 288,
             "name": "Vueloceronte ciruela y marfil",
             "family": {
-                "ankama_id": 288,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12797,7 +12797,7 @@
             "ankama_id": 289,
             "name": "Vueloceronte rubí y zafiro",
             "family": {
-                "ankama_id": 289,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12850,7 +12850,7 @@
             "ankama_id": 290,
             "name": "Vueloceronte rubí y amatista",
             "family": {
-                "ankama_id": 290,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12903,7 +12903,7 @@
             "ankama_id": 291,
             "name": "Vueloceronte dorado y pelirrojo",
             "family": {
-                "ankama_id": 291,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -12956,7 +12956,7 @@
             "ankama_id": 292,
             "name": "Vueloceronte dorado y almendrado",
             "family": {
-                "ankama_id": 292,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -13009,7 +13009,7 @@
             "ankama_id": 293,
             "name": "Vueloceronte dorado y marfil",
             "family": {
-                "ankama_id": 293,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -13062,7 +13062,7 @@
             "ankama_id": 294,
             "name": "Vueloceronte dorado y turquesa",
             "family": {
-                "ankama_id": 294,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -13115,7 +13115,7 @@
             "ankama_id": 295,
             "name": "Vueloceronte dorado y ciruela",
             "family": {
-                "ankama_id": 295,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
@@ -13168,7 +13168,7 @@
             "ankama_id": 296,
             "name": "Vueloceronte dorado y esmeralda",
             "family": {
-                "ankama_id": 296,
+                "ankama_id": 6,
                 "name": "Vueloceronte"
             },
             "image_urls": {
