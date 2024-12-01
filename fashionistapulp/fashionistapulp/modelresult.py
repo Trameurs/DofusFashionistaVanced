@@ -444,9 +444,9 @@ class ModelResult():
     
     def check_if_set_is_light(self):
         is_set_light = (len(self.sets) == 0 or
-                        (len(self.sets) == 1 and self.sets[0].number_of_items <= 3 or
-                         len(self.sets) == 2 and self.sets[0].number_of_items <= 2 and self.sets[1].number_of_items <= 1) or
-                         (len(self.sets) == 2 and self.sets[0].number_of_items <= 1 and self.sets[1].number_of_items <= 2))
+                        (len(self.sets) == 1 and self.sets[0].number_of_items <= 3) or
+                        (len(self.sets) == 2 and self.sets[0].number_of_items <= 2 and self.sets[1].number_of_items <= 1) or
+                        (len(self.sets) == 2 and self.sets[0].number_of_items <= 1 and self.sets[1].number_of_items <= 2))
         return is_set_light
     
     def check_if_prysmaradite(self):
