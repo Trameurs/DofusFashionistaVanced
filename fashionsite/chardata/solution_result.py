@@ -253,7 +253,7 @@ class MaxConditionLine:
 class LightSetConditionLine:
 
     def __init__(self, model_result):
-        self.text = _('Set bonus < 2')
+        self.text = _('Set bonus < 3')
         self.formatting = ''
         if model_result:
             if not model_result.check_if_set_is_light():

@@ -400,7 +400,7 @@ class ModelResult():
                     if item.weird_conditions['light_set']:
                         violation = Violation()
                         violation.item_name = item.localized_name
-                        violation.stat_name = _("Set bonus < 2")
+                        violation.stat_name = _("Set bonus < 3")
                         violation.condition_type = 'weird_light_set'
                         violation.is_red = True
                         violation.cant_equip = False
@@ -470,7 +470,7 @@ class ModelResult():
             if not self.check_if_set_is_light():
                 violation = Violation()
                 violation.item_name = item.localized_name
-                violation.stat_name = _("Set bonus < 2")
+                violation.stat_name = _("Set bonus < 3")
                 violation.condition_type = 'weird_light_set'
                 violation.is_red = True
                 violation.cant_equip = False
