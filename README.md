@@ -103,18 +103,20 @@ run_fashionista.bat
     🚧 80% Spanish (some spells and text left)           
     🚧 80% Portuguese (some spells and text left)          
     🚧 30% Deutsche (only items done)           
-    ❌ 0% Italian (API unavailable)           
-✅ All equipments and mounts updated to Dofus Unity Beta release (3.0.5.9)  
+    ❌ 0% Italian (Ankama removed Italian language)           
+✅ All equipments and mounts updated to Dofus Unity Beta release (3.0.5.9)     
+✅ Bug fixes and improvement for 3.0 release   
 ❌ Add ability to forbid prysmaradite       
 ❌ Make it mobile friendly             
-❌ Bug fixes and improvement before 1.0 release           
-❌ New features after 1.0 TBD         
-            
+        
+❌ New features after 3.0 TBD         
+       
+✅ Dofus Unity             
 ❌ Dofus Touch            
 ❌ Dofus Retro             
-✅ Dofus Unity               
+              
 
 # Reference
 
 This is a fork of https://github.com/PiwiSlayer/DofusFashionista      
-The scraper now uses https://github.com/dofusdude/doduapi
+All items data comes from https://github.com/dofusdude/doduapi

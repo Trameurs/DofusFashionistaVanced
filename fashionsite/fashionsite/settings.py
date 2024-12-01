@@ -173,7 +173,6 @@ LANGUAGES = (
     ('es', 'Spanish'),
     ('pt', 'Portuguese'),
     ('de', 'Deutsch'),
-    ('it', 'Italian'),
 )
 
 LOCALE_PATHS = (os.path.join(os.path.dirname(os.path.abspath(__file__)), '../locale'),)

@@ -21,9 +21,6 @@
             {% if LANGUAGE_CODE == 'de' %}
             <img src="{% static 'chardata/de.png' %}" id="flag" title="{% trans 'Deutsch' %}" width="24" height="24"></img>
             {% endif %}
-            {% if LANGUAGE_CODE == 'it' %}
-            <img src="{% static 'chardata/it.png' %}" id="flag" title="{% trans 'Italian' %}" width="24" height="24"></img>
-            {% endif %}
         </form>
         <div id="other-flags">
             {% if LANGUAGE_CODE != 'pt' %}
@@ -40,9 +37,6 @@
             {% endif %}
             {% if LANGUAGE_CODE != 'de' %}
             <img src="{% static 'chardata/de.png' %}" id="flag-de" class="flag-choose" title="{% trans 'Deutsch' %}" width="24" height="24"></img><br>
-            {% endif %}
-            {% if LANGUAGE_CODE != 'it' %}
-            <img src="{% static 'chardata/it.png' %}" id="flag-it" class="flag-choose" title="{% trans 'Italian' %}" width="24" height="24"></img><br>
             {% endif %}
         </div>
     </div>
