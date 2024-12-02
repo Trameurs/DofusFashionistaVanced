@@ -44,64 +44,36 @@ STAT_NAME_TO_KEY_LOCAL = {
     'Power': 'pow',
     'Damage': 'dam',
     'Heals': 'heals',
-    'Heal': 'heals', # dofus3beta/v1
     'AP': 'ap',
     'MP': 'mp',
     'Critical Hits': 'ch',
-    '% Critical': 'ch', # dofus3beta/v1
     'Agility': 'agi',
     'Strength': 'str',
     'Neutral Damage': 'neutdam',
-    'Neutral damage': 'neutdam', # dofus3beta/v1
     'Earth Damage': 'earthdam',
-    'Earth damage': 'earthdam', # dofus3beta/v1
     'Intelligence': 'int',
     'Fire Damage': 'firedam',
-    'Fire damage': 'firedam', # dofus3beta/v1
     'Air Damage': 'airdam',
-    'Air damage': 'airdam', # dofus3beta/v1
     'Chance': 'cha',
     'Water Damage': 'waterdam',
-    'Water damage': 'waterdam', # dofus3beta/v1
     'Vitality': 'vit',
     'Initiative': 'init',
     'Summon': 'summon',
-    'Summons': 'summon', # dofus3beta/v1
     'Range': 'range',
     'Wisdom': 'wis',
     'Neutral Resist': 'neutres',
-    'Neutral Resistance': 'neutres', # dofus3beta/v1
     'Water Resist': 'waterres',
-    'Water Resistance': 'waterres', # dofus3beta/v1
     'Air Resist': 'airres',
-    'Air Resistance': 'airres', # dofus3beta/v1
     'Fire Resist': 'fireres',
-    'Fire Resistance': 'fireres', # dofus3beta/v1
     'Earth Resist': 'earthres',
-    'Earth Resistance': 'earthres', # dofus3beta/v1
     '% Neutral Resist': 'neutresper',
-    '% Neutral Resistance': 'neutresper', # dofus3beta/v1
     '% Air Resist': 'airresper',
-    '% Air Resistance': 'airresper', # dofus3beta/v1
     '% Fire Resist': 'fireresper',
-    '% Fire Resistance': 'fireresper', # dofus3beta/v1
     '% Water Resist': 'waterresper',
-    '% Water Resistance': 'waterresper', # dofus3beta/v1
-    '% Earth Resistance': 'earthresper', # dofus3beta/v1
     '% Earth Resist': 'earthresper',
-    'Neutral Resistance in PVP': 'pvpneutres', # dofus3beta/v1
     'Neutral Resist in PVP': 'pvpneutres',
-    'Water Resistance in PVP': 'pvpwaterres', # dofus3beta/v1
     'Water Resist in PVP': 'pvpwaterres',
-    'Air Resistance in PVP': 'pvpairres', # dofus3beta/v1
     'Air Resist in PVP': 'pvpairres',
-    'Fire Resistance in PVP': 'pvpfireres', # dofus3beta/v1
-    'Earth Resistance in PVP': 'pvpearthres', # dofus3beta/v1
-    '% Neutral Resistance in PVP': 'pvpneutresper', # dofus3beta/v1
-    '% Air Resistance in PVP': 'pvpairresper', # dofus3beta/v1
-    '% Fire Resistance in PVP': 'pvpfireresper', # dofus3beta/v1
-    '% Water Resistance in PVP': 'pvpwaterresper', # dofus3beta/v1
-    '% Earth Resistance in PVP': 'pvpearthresper', # dofus3beta/v1
     'Fire Resist in PVP': 'pvpfireres',
     'Earth Resist in PVP': 'pvpearthres',
     '% Neutral Resist in PVP': 'pvpneutresper',
@@ -116,18 +88,13 @@ STAT_NAME_TO_KEY_LOCAL = {
     'Lock': 'lock',
     'Dodge': 'dodge',
     'Reflects': 'ref',
-    "reflected Damage": 'ref', # dofus3beta/v1
     'Pushback Damage': 'pshdam',
     'Trap Damage': 'trapdam',
     '% Trap Damage': 'trapdamper',
     'Critical Resist': 'crires',
-    'Critical Resistance': 'crires', # dofus3beta/v1
     'Pushback Resist': 'pshres',
-    'Pushback Resistance': 'pshres', # dofus3beta/v1
     'MP Loss Resist': 'mpres',
-    'MP Parry': 'mpres', # dofus3beta/v1
     'AP Loss Resist': 'apres',
-    'AP Parry': 'apres', # dofus3beta/v1
     'Critical Damage': 'cridam',
     'Critical Failure': 'cf',
     '% Melee Damage': 'permedam',
@@ -232,10 +199,15 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
             FOREIGN KEY(item) REFERENCES items(id),
             FOREIGN KEY(stat) REFERENCES stats(id));\n""")
 
+    # Track skipped stats
+    skipped_stats = []
     # Write INSERT commands for stats_of_items
     for index, item in enumerate(original_data, start=1):
         for stat in item['stats']:
             if stat[2] not in STAT_NAME_TO_KEY_LOCAL:
+                if stat[2] not in skipped_stats:
+                    print(f"Skipping {stat[2]}")
+                    skipped_stats.append(stat[2])
                 continue
             stat_value = stat[1] if stat[1] is not None else stat[0]
             stat_value = stat[0] if stat[0] < 0 else stat_value
@@ -254,7 +226,9 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
                 effect_key = int(effect_data['effect_key'])  # Number of pieces used
                 for bonus in effect_data['effects']:
                     if bonus[2] not in STAT_NAME_TO_KEY_LOCAL:
-                        print(f"Skipping {bonus[2]}") # Skip unknown stats, Title, Emote or Pet mostly
+                        if bonus[2] not in skipped_stats:
+                            print(f"Skipping {bonus[2]}") # Skip unknown stats, Title, Emote or Pet mostly
+                            skipped_stats.append(bonus[2])
                         continue
                     f.write(f"INSERT INTO set_bonus VALUES({index},{effect_key},{list(STAT_NAME_TO_KEY_LOCAL).index(bonus[2]) + 1},{bonus[0]});\n")
 
