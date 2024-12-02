@@ -111,7 +111,7 @@ STAT_NAME_TO_KEY_LOCAL = {
     '% Melee Resist': 'respermee',
     '% Ranged Resist': 'resperran',
     'HP': 'hp',
-    '% Weapon Resist': 'resperwea'
+    #'% Weapon Resist': 'resperwea' # deleted in dofus3beta/v1 ?
 }
 
 def escape_single_quotes(s):
