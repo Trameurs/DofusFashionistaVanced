@@ -110,7 +110,7 @@ STAT_NAME_TO_KEY_LOCAL = {
     '% Spell Damage': 'perspedam',
     '% Melee Resist': 'respermee',
     '% Ranged Resist': 'resperran',
-    'HP': 'hp',
+    #'HP': 'hp', # deleted in dofus3beta/v1 ?
     #'% Weapon Resist': 'resperwea' # deleted in dofus3beta/v1 ?
 }
 

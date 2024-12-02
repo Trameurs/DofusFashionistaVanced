@@ -84,7 +84,6 @@ INSERT INTO stats VALUES(66,'% Weapon Damage','perweadam');
 INSERT INTO stats VALUES(67,'% Spell Damage','perspedam');
 INSERT INTO stats VALUES(68,'% Melee Resist','respermee');
 INSERT INTO stats VALUES(69,'% Ranged Resist','resperran');
-INSERT INTO stats VALUES(70,'HP','hp');
 CREATE TABLE "sets" (
 	    `id`	INTEGER PRIMARY KEY AUTOINCREMENT,
 	    `name`	text,
@@ -51000,7 +50999,7 @@ INSERT INTO item_weird_conditions VALUES(3237, 2);
 INSERT INTO item_weird_conditions VALUES(3238, 2);
 DELETE FROM sqlite_sequence;
 INSERT INTO sqlite_sequence VALUES('item_types',10);
-INSERT INTO sqlite_sequence VALUES('stats',70);
+INSERT INTO sqlite_sequence VALUES('stats',69);
 INSERT INTO sqlite_sequence VALUES('weapontype',11);
 INSERT INTO sqlite_sequence VALUES('items',3772);
 INSERT INTO sqlite_sequence VALUES('sets',801);
