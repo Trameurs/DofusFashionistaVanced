@@ -43,37 +43,58 @@ WEAPON_TYPES = {
 STAT_NAME_TO_KEY_LOCAL = {
     'Power': 'pow',
     'Damage': 'dam',
+    'Heals': 'heals',
     'Heal': 'heals', # dofus3beta/v1
     'AP': 'ap',
     'MP': 'mp',
+    'Critical Hits': 'ch',
     '% Critical': 'ch', # dofus3beta/v1
     'Agility': 'agi',
     'Strength': 'str',
-    'Neutral Damage': 'neutdam', # dofus3beta/v1
-    'Earth Damage': 'earthdam', # dofus3beta/v1
+    'Neutral Damage': 'neutdam',
+    'Neutral damage': 'neutdam', # dofus3beta/v1
+    'Earth Damage': 'earthdam',
+    'Earth damage': 'earthdam', # dofus3beta/v1
     'Intelligence': 'int',
-    'Fire Damage': 'firedam', # dofus3beta/v1
+    'Fire Damage': 'firedam',
+    'Fire damage': 'firedam', # dofus3beta/v1
+    'Air Damage': 'airdam',
     'Air damage': 'airdam', # dofus3beta/v1
     'Chance': 'cha',
-    'Water Damage': 'waterdam', # dofus3beta/v1
+    'Water Damage': 'waterdam',
+    'Water damage': 'waterdam', # dofus3beta/v1
     'Vitality': 'vit',
     'Initiative': 'init',
+    'Summon': 'summon',
     'Summons': 'summon', # dofus3beta/v1
     'Range': 'range',
     'Wisdom': 'wis',
+    'Neutral Resist': 'neutres',
     'Neutral Resistance': 'neutres', # dofus3beta/v1
+    'Water Resist': 'waterres',
     'Water Resistance': 'waterres', # dofus3beta/v1
+    'Air Resist': 'airres',
     'Air Resistance': 'airres', # dofus3beta/v1
+    'Fire Resist': 'fireres',
     'Fire Resistance': 'fireres', # dofus3beta/v1
+    'Earth Resist': 'earthres',
     'Earth Resistance': 'earthres', # dofus3beta/v1
+    '% Neutral Resist': 'neutresper',
     '% Neutral Resistance': 'neutresper', # dofus3beta/v1
+    '% Air Resist': 'airresper',
     '% Air Resistance': 'airresper', # dofus3beta/v1
+    '% Fire Resist': 'fireresper',
     '% Fire Resistance': 'fireresper', # dofus3beta/v1
+    '% Water Resist': 'waterresper',
     '% Water Resistance': 'waterresper', # dofus3beta/v1
     '% Earth Resistance': 'earthresper', # dofus3beta/v1
+    '% Earth Resist': 'earthresper',
     'Neutral Resistance in PVP': 'pvpneutres', # dofus3beta/v1
+    'Neutral Resist in PVP': 'pvpneutres',
     'Water Resistance in PVP': 'pvpwaterres', # dofus3beta/v1
+    'Water Resist in PVP': 'pvpwaterres',
     'Air Resistance in PVP': 'pvpairres', # dofus3beta/v1
+    'Air Resist in PVP': 'pvpairres',
     'Fire Resistance in PVP': 'pvpfireres', # dofus3beta/v1
     'Earth Resistance in PVP': 'pvpearthres', # dofus3beta/v1
     '% Neutral Resistance in PVP': 'pvpneutresper', # dofus3beta/v1
@@ -94,13 +115,18 @@ STAT_NAME_TO_KEY_LOCAL = {
     'MP Reduction': 'mpred',
     'Lock': 'lock',
     'Dodge': 'dodge',
+    'Reflects': 'ref',
     "reflected Damage": 'ref', # dofus3beta/v1
     'Pushback Damage': 'pshdam',
     'Trap Damage': 'trapdam',
     '% Trap Damage': 'trapdamper',
+    'Critical Resist': 'crires',
     'Critical Resistance': 'crires', # dofus3beta/v1
+    'Pushback Resist': 'pshres',
     'Pushback Resistance': 'pshres', # dofus3beta/v1
+    'MP Loss Resist': 'mpres',
     'MP Parry': 'mpres', # dofus3beta/v1
+    'AP Loss Resist': 'apres',
     'AP Parry': 'apres', # dofus3beta/v1
     'Critical Damage': 'cridam',
     'Critical Failure': 'cf',
@@ -337,7 +363,6 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
     
     for index, item in enumerate(original_data, start=1):
         if 'stats' in item:
-            print(item['name_en'])
             i = 0
             for stat in item['stats']:
                 # Extract values and description
