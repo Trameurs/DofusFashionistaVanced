@@ -108,8 +108,8 @@ STAT_NAME_TO_KEY_LOCAL = {
     '% Ranged Damage': 'perrandam',
     '% Weapon Damage': 'perweadam',
     '% Spell Damage': 'perspedam',
-    '% Melee Resist': 'respermee',
-    '% Ranged Resist': 'resperran',
+    '% Melee Resistance': 'respermee',
+    '% Ranged Resistance': 'resperran',
     #'HP': 'hp', # deleted in dofus3beta/v1 ?
     #'% Weapon Resist': 'resperwea' # deleted in dofus3beta/v1 ?
 }
@@ -337,7 +337,6 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
     
     for index, item in enumerate(original_data, start=1):
         if 'stats' in item:
-            print(item['name_en'])
             i = 0
             for stat in item['stats']:
                 # Extract values and description
