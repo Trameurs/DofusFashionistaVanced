@@ -3928,6 +3928,8 @@ def get_equiped_weapon(char_stats):
 def calculate_damage(base_damage, char_stats, critical_hit, is_spell):
     damage_instances = []
     for dam in base_damage:
+        if dam.element == 'pushes':
+            continue
         if dam.element == 'best':
             dam.element = get_best_element(char_stats)
             dam.element = ATTRIBUTE_TO_ELEMENT[dam.element]
