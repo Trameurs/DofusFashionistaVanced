@@ -994,8 +994,8 @@ class Model:
                         'Initiative': [['Agility', 'Intelligence', 'Strength', 'Chance'],
                                        [1, 1, 1, 1]],
                         'Prospecting': [['Chance'],[0.1]],
-                        'Pods': [['Strength'],[5]]}
-                        #'HP': [['Vitality'],[1]]}
+                        'Pods': [['Strength'],[5]],
+                        'HP': [['Vitality'],[1]]}
 
         for stat in self.stats_list:
             print(f"Processing stat: {stat.name} (ID: {stat.id})")
