@@ -199,7 +199,7 @@ def evolve_result_item(result_item, r=None):
             else:
                 line = _('%(min)d to %(max)d (%(element)s)' ) % {'min': hit.min_dam, 
                             'max': hit.max_dam,
-                            'element': LOCALIZED_ELEMENTS[hit.element]}
+                            'element': LOCALIZED_ELEMENTS.get(getattr(hit, 'element', None), 'DefaultElement')}
             damage_lines.append(line)
         result_item.damage_text = '<br>'.join(damage_lines)
 
