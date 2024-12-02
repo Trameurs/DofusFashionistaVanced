@@ -3930,7 +3930,7 @@ def calculate_damage(base_damage, char_stats, critical_hit, is_spell):
     for dam in base_damage:
         if dam.element == 'pushes':
             continue
-        if dam.element == 'best':
+        if dam.element == 'best' or dam.element == 'damage':
             dam.element = get_best_element(char_stats)
             dam.element = ATTRIBUTE_TO_ELEMENT[dam.element]
         element_val = max(char_stats[DAMAGE_TYPE_TO_MAIN_STAT[dam.element]], 0)
