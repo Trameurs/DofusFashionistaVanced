@@ -1017,7 +1017,6 @@ class Model:
         adv_mins = self.structure.get_adv_mins()        
         
         for stat in adv_mins:
-            print(f"Processing advanced minimum constraint for: {stat['key']}")
             matrix = []
             for stat_name in stat['stats']:
                 matrix.append((-1, 'stat', self.structure.get_stat_by_name(stat_name).id))
