@@ -998,7 +998,7 @@ class Model:
                         'HP': [['Vitality'],[1]]}
 
         for stat in self.stats_list:
-            logging.debug(f"Processing stat: {stat.name} (ID: {stat.id})")
+            print(f"Processing stat: {stat.name} (ID: {stat.id})")
             if stat.name in dependencies:
                 sec_stats = dependencies[stat.name][0]
                 sec_stats_multipliers = dependencies[stat.name][1]
