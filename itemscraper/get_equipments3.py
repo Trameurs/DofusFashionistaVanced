@@ -178,9 +178,12 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
         if item['w_type'] == 'Petsmount':
             item['w_type'] = 'Pet'
 
-        if item['w_type'] not in TYPE_NAME_TO_SLOT:
+        if item['w_type'] not in TYPE_NAME_TO_SLOT and item['w_type'] != '':
             item['weapon_type'] = item['w_type']
             item['w_type'] = 'Weapon'
+        
+        if item['w_type'] == '':
+            item['w_type'] = 'Dofus'
 
         set_id = None
         
