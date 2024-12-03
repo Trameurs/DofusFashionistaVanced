@@ -8756,33 +8756,33 @@
         "name_es": "Set de dragohuevo vagabundo",
         "name_pt": "Conjunto do Dragovo Andarilho",
         "name_de": "Vagabunden-Drachei-Set",
-        "items": 3,
+        "items": 7,
         "stats_list": [
             {
                 "effect_key": "2",
                 "effects": [
                     [
-                        10,
+                        15,
                         null,
                         "Earth Damage"
                     ],
                     [
-                        10,
+                        15,
                         null,
                         "Fire Damage"
                     ],
                     [
-                        10,
+                        15,
                         null,
                         "Air Damage"
                     ],
                     [
-                        10,
+                        15,
                         null,
                         "Water Damage"
                     ],
                     [
-                        10,
+                        15,
                         null,
                         "Neutral Damage"
                     ],
@@ -8792,7 +8792,7 @@
                         "Critical Hits"
                     ],
                     [
-                        10,
+                        15,
                         null,
                         "Pushback Damage"
                     ]
@@ -8807,32 +8807,77 @@
                         "Critical Hits"
                     ],
                     [
-                        10,
+                        15,
                         null,
                         "Earth Damage"
                     ],
                     [
-                        10,
+                        15,
                         null,
                         "Fire Damage"
                     ],
                     [
-                        10,
+                        15,
                         null,
                         "Neutral Damage"
                     ],
                     [
-                        10,
+                        15,
                         null,
                         "Water Damage"
                     ],
                     [
-                        10,
+                        15,
                         null,
                         "Air Damage"
                     ],
                     [
+                        15,
+                        null,
+                        "Pushback Damage"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "4",
+                "effects": [
+                    [
                         10,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Neutral Damage"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Air Damage"
+                    ],
+                    [
+                        20,
                         null,
                         "Pushback Damage"
                     ],
@@ -8847,7 +8892,11 @@
         "equipment_ids": [
             8288,
             8290,
-            8291
+            8291,
+            8295,
+            8296,
+            8297,
+            8414
         ]
     },
     {
@@ -10428,9 +10477,14 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        1,
+                        30,
                         null,
-                        "AP"
+                        "Strength"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Intelligence"
                     ],
                     [
                         10,
@@ -10438,14 +10492,9 @@
                         "Heals"
                     ],
                     [
-                        30,
+                        1,
                         null,
-                        "Intelligence"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Strength"
+                        "AP"
                     ]
                 ]
             },
@@ -10453,9 +10502,14 @@
                 "effect_key": "4",
                 "effects": [
                     [
-                        1,
+                        40,
                         null,
-                        "AP"
+                        "Strength"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Intelligence"
                     ],
                     [
                         15,
@@ -10463,14 +10517,9 @@
                         "Heals"
                     ],
                     [
-                        40,
+                        1,
                         null,
-                        "Intelligence"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Strength"
+                        "AP"
                     ]
                 ]
             },
@@ -10478,14 +10527,9 @@
                 "effect_key": "5",
                 "effects": [
                     [
-                        1,
+                        50,
                         null,
-                        "AP"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Heals"
+                        "Strength"
                     ],
                     [
                         50,
@@ -10493,9 +10537,14 @@
                         "Intelligence"
                     ],
                     [
-                        50,
+                        20,
                         null,
-                        "Strength"
+                        "Heals"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
                     ]
                 ]
             },
@@ -10505,47 +10554,27 @@
                     [
                         1,
                         null,
+                        "AP"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Heals"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        1,
+                        null,
                         "MP"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Heals"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Intelligence"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Strength"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Strength"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Intelligence"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Heals"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
                     ]
                 ]
             },
@@ -10555,52 +10584,32 @@
                     [
                         1,
                         null,
-                        "MP"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Heals"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Intelligence"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Strength"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Strength"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Intelligence"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Heals"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
-                    ],
-                    [
-                        1,
-                        null,
                         "Range"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Heals"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        1,
+                        null,
+                        "MP"
                     ]
                 ]
             }
@@ -16980,7 +16989,7 @@
         "name_es": "Set de Bworker Gladiador",
         "name_pt": "Conjunto do Bworker Gladiador",
         "name_de": "GladiaBworker-Set",
-        "items": 4,
+        "items": 5,
         "stats_list": [
             {
                 "effect_key": "2",
@@ -16996,14 +17005,14 @@
                         "Chance"
                     ],
                     [
-                        5,
-                        null,
-                        "Critical Hits"
-                    ],
-                    [
                         20,
                         null,
                         "Prospecting"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Critical Hits"
                     ]
                 ]
             },
@@ -17011,14 +17020,14 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        30,
+                        1,
                         null,
-                        "Intelligence"
+                        "AP"
                     ],
                     [
-                        30,
+                        20,
                         null,
-                        "Chance"
+                        "Prospecting"
                     ],
                     [
                         5,
@@ -17026,14 +17035,14 @@
                         "Critical Hits"
                     ],
                     [
-                        20,
+                        30,
                         null,
-                        "Prospecting"
+                        "Chance"
                     ],
                     [
-                        1,
+                        30,
                         null,
-                        "AP"
+                        "Intelligence"
                     ]
                 ]
             },
@@ -17041,19 +17050,9 @@
                 "effect_key": "4",
                 "effects": [
                     [
-                        50,
+                        1,
                         null,
-                        "Intelligence"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Chance"
-                    ],
-                    [
-                        8,
-                        null,
-                        "Critical Hits"
+                        "AP"
                     ],
                     [
                         20,
@@ -17061,14 +17060,60 @@
                         "Prospecting"
                     ],
                     [
+                        8,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Intelligence"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "5",
+                "effects": [
+                    [
                         1,
                         null,
                         "AP"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Prospecting"
+                    ],
+                    [
+                        8,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Range"
                     ]
                 ]
             }
         ],
         "equipment_ids": [
+            9176,
             9178,
             9181,
             9182,
@@ -20944,14 +20989,9 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        40,
+                        1,
                         null,
-                        "Agility"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Critical Hits"
+                        "AP"
                     ],
                     [
                         1,
@@ -20959,9 +20999,14 @@
                         "Summon"
                     ],
                     [
-                        1,
+                        10,
                         null,
-                        "Range"
+                        "Critical Hits"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Agility"
                     ]
                 ]
             },
@@ -20971,17 +21016,7 @@
                     [
                         1,
                         null,
-                        "AP"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Critical Hits"
-                    ],
-                    [
-                        1,
-                        null,
-                        "Summon"
+                        "Range"
                     ],
                     [
                         40,
@@ -20991,7 +21026,17 @@
                     [
                         1,
                         null,
-                        "Range"
+                        "Summon"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
                     ]
                 ]
             },
@@ -20999,19 +21044,9 @@
                 "effect_key": "5",
                 "effects": [
                     [
-                        1,
+                        40,
                         null,
-                        "AP"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Critical Hits"
-                    ],
-                    [
-                        2,
-                        null,
-                        "Range"
+                        "Agility"
                     ],
                     [
                         1,
@@ -21019,9 +21054,19 @@
                         "Summon"
                     ],
                     [
-                        40,
+                        2,
                         null,
-                        "Agility"
+                        "Range"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
                     ]
                 ]
             }
@@ -29792,14 +29837,14 @@
                         "Initiative"
                     ],
                     [
-                        1,
-                        null,
-                        "MP"
-                    ],
-                    [
                         30,
                         null,
                         "Power"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
                     ]
                 ]
             }
@@ -34537,20 +34582,10 @@
                         "Agility"
                     ],
                     [
-                        15,
-                        null,
-                        "Lock"
-                    ],
-                    [
                         10,
                         null,
                         "AP Reduction"
-                    ]
-                ]
-            },
-            {
-                "effect_key": "3",
-                "effects": [
+                    ],
                     [
                         15,
                         null,
@@ -34559,12 +34594,22 @@
                     [
                         1,
                         null,
-                        "AP"
+                        "Range"
                     ],
                     [
                         10,
                         null,
-                        "AP Reduction"
+                        "% Water Resist"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        40,
+                        null,
+                        "Strength"
                     ],
                     [
                         40,
@@ -34572,9 +34617,29 @@
                         "Agility"
                     ],
                     [
-                        40,
+                        10,
                         null,
-                        "Strength"
+                        "AP Reduction"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Lock"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        10,
+                        null,
+                        "% Water Resist"
                     ]
                 ]
             }
@@ -39190,7 +39255,7 @@
         "name_es": "Set de dragohuevo blindado",
         "name_pt": "Conjunto do Dragovo Encouraçado",
         "name_de": "Panzer-Drachei-Set",
-        "items": 3,
+        "items": 7,
         "stats_list": [
             {
                 "effect_key": "2",
@@ -39204,6 +39269,11 @@
                         20,
                         null,
                         "Pushback Damage"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Power"
                     ]
                 ]
             },
@@ -39216,14 +39286,44 @@
                         "AP"
                     ],
                     [
+                        20,
+                        null,
+                        "Pushback Damage"
+                    ],
+                    [
                         150,
                         null,
                         "Vitality"
                     ],
                     [
-                        20,
+                        30,
+                        null,
+                        "Power"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "4",
+                "effects": [
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        30,
                         null,
                         "Pushback Damage"
+                    ],
+                    [
+                        200,
+                        null,
+                        "Vitality"
+                    ],
+                    [
+                        60,
+                        null,
+                        "Power"
                     ]
                 ]
             }
@@ -39231,7 +39331,11 @@
         "equipment_ids": [
             8286,
             8287,
-            8289
+            8289,
+            8292,
+            8293,
+            8294,
+            8420
         ]
     },
     {
@@ -48696,10 +48800,10 @@
     },
     {
         "ankama_id": 863,
-        "name_en": "[!] Panoplie Tétriste",
+        "name_en": "Tetra Set",
         "name_fr": "Panoplie Tétriste",
-        "name_es": "[!] Panoplie Tétriste",
-        "name_pt": "[!] Panoplie Tétriste",
+        "name_es": "Set tetrista",
+        "name_pt": "Conjunto Tetrista",
         "name_de": "Tetrist-Set",
         "items": 2,
         "stats_list": [
@@ -48726,10 +48830,10 @@
     },
     {
         "ankama_id": 864,
-        "name_en": "[!] Panoplie de l'Envahisseur",
+        "name_en": "Spacevader Set",
         "name_fr": "Panoplie de l'Envahisseur",
-        "name_es": "[!] Panoplie de l'Envahisseur",
-        "name_pt": "[!] Panoplie de l'Envahisseur",
+        "name_es": "Set del invasor del espacio",
+        "name_pt": "Conjunto do Invasor",
         "name_de": "Set des Angreifers",
         "items": 2,
         "stats_list": [
@@ -48766,10 +48870,10 @@
     },
     {
         "ankama_id": 865,
-        "name_en": "[!] Pacmanoplie",
+        "name_en": "Pacmanic Set",
         "name_fr": "Pacmanoplie",
-        "name_es": "[!] Pacmanoplie",
-        "name_pt": "[!] Pacmanoplie",
+        "name_es": "Set Pacmano",
+        "name_pt": "Pacmanjunto",
         "name_de": "Pacman-Set",
         "items": 2,
         "stats_list": [
@@ -48796,10 +48900,10 @@
     },
     {
         "ankama_id": 866,
-        "name_en": "[!] Panoplong",
+        "name_en": "King Pong Set",
         "name_fr": "Panoplong",
-        "name_es": "[!] Panoplong",
-        "name_pt": "[!] Panoplong",
+        "name_es": "Set Ponguno",
+        "name_pt": "Pongonjunto",
         "name_de": "Pong-Set",
         "items": 2,
         "stats_list": [
@@ -48826,10 +48930,10 @@
     },
     {
         "ankama_id": 867,
-        "name_en": "[!] Panoplie de Khan Karkass",
+        "name_en": "Khan Karkass Set",
         "name_fr": "Panoplie de Khan Karkass",
-        "name_es": "[!] Panoplie de Khan Karkass",
-        "name_pt": "[!] Panoplie de Khan Karkass",
+        "name_es": "Set de Khan Karkasa",
+        "name_pt": "Conjunto do Khan Karkass",
         "name_de": "Set von Khan Karkass",
         "items": 2,
         "stats_list": [
@@ -48856,10 +48960,10 @@
     },
     {
         "ankama_id": 868,
-        "name_en": "[!] Panoplie de Bowisse",
+        "name_en": "Bowisse Set",
         "name_fr": "Panoplie de Bowisse",
-        "name_es": "[!] Panoplie de Bowisse",
-        "name_pt": "[!] Panoplie de Bowisse",
+        "name_es": "Set de Bowis",
+        "name_pt": "Conjunto de Bowis",
         "name_de": "Bowisse-Set",
         "items": 3,
         "stats_list": [
@@ -48922,10 +49026,10 @@
     },
     {
         "ankama_id": 869,
-        "name_en": "[!] Panoplie Karnaval",
+        "name_en": "Karnaval Set",
         "name_fr": "Panoplie Karnaval",
-        "name_es": "[!] Panoplie Karnaval",
-        "name_pt": "[!] Panoplie Karnaval",
+        "name_es": "Set karnavalesco",
+        "name_pt": "Conjunto de Karnaval",
         "name_de": "Karneval-Set",
         "items": 2,
         "stats_list": [
@@ -48972,10 +49076,10 @@
     },
     {
         "ankama_id": 870,
-        "name_en": "[!] Panoplie prototype du pilote",
+        "name_en": "Prototype Pilot Set",
         "name_fr": "Panoplie prototype du pilote",
-        "name_es": "[!] Panoplie prototype du pilote",
-        "name_pt": "[!] Panoplie prototype du pilote",
+        "name_es": "Set prototipo de piloto",
+        "name_pt": "Conjunto Protótipo do Piloto",
         "name_de": "Prototyp-Set des Piloten",
         "items": 2,
         "stats_list": [
@@ -49007,10 +49111,10 @@
     },
     {
         "ankama_id": 871,
-        "name_en": "[!] Panoplie de Boufbowl",
+        "name_en": "Gobbowl Set",
         "name_fr": "Panoplie de Boufbowl",
-        "name_es": "[!] Panoplie de Boufbowl",
-        "name_pt": "[!] Panoplie de Boufbowl",
+        "name_es": "Set de jálabol",
+        "name_pt": "Conjunto de Papabol",
         "name_de": "Fressball-Set",
         "items": 3,
         "stats_list": [
@@ -49073,10 +49177,10 @@
     },
     {
         "ankama_id": 872,
-        "name_en": "[!] Pompanoplie",
+        "name_en": "Bobble Set",
         "name_fr": "Pompanoplie",
-        "name_es": "[!] Pompanoplie",
-        "name_pt": "[!] Pompanoplie",
+        "name_es": "Set pomposo",
+        "name_pt": "Pomponjunto",
         "name_de": "Pompon-Set",
         "items": 2,
         "stats_list": [
@@ -49103,10 +49207,10 @@
     },
     {
         "ankama_id": 873,
-        "name_en": "[!] Panoplie améliorée du pilote",
+        "name_en": "Enhanced Pilot Set",
         "name_fr": "Panoplie améliorée du pilote",
-        "name_es": "[!] Panoplie améliorée du pilote",
-        "name_pt": "[!] Panoplie améliorée du pilote",
+        "name_es": "Set mejorado de piloto",
+        "name_pt": "Conjunto Melhorado do Piloto",
         "name_de": "Verbessertes Set des Piloten",
         "items": 2,
         "stats_list": [
@@ -49138,10 +49242,10 @@
     },
     {
         "ankama_id": 874,
-        "name_en": "[!] Panoplie Verréhor",
+        "name_en": "Greenengol Set",
         "name_fr": "Panoplie Verréhor",
-        "name_es": "[!] Panoplie Verréhor",
-        "name_pt": "[!] Panoplie Verréhor",
+        "name_es": "Set verdoro",
+        "name_pt": "Conjunto Canarim",
         "name_de": "Grünugol-Set",
         "items": 2,
         "stats_list": [
@@ -49178,10 +49282,10 @@
     },
     {
         "ankama_id": 875,
-        "name_en": "[!] Panoplie des Grocoricos",
+        "name_en": "Bigoks Set",
         "name_fr": "Panoplie des Grocoricos",
-        "name_es": "[!] Panoplie des Grocoricos",
-        "name_pt": "[!] Panoplie des Grocoricos",
+        "name_es": "Set de los Gallikirikí",
+        "name_pt": "Conjunto dos Crocoricós",
         "name_de": "Kikeriki-Set",
         "items": 2,
         "stats_list": [
@@ -49218,10 +49322,10 @@
     },
     {
         "ankama_id": 876,
-        "name_en": "[!] Panoplie des Pamous",
+        "name_en": "Pamus Set",
         "name_fr": "Panoplie des Pamous",
-        "name_es": "[!] Panoplie des Pamous",
-        "name_pt": "[!] Panoplie des Pamous",
+        "name_es": "Set de los Pamus",
+        "name_pt": "Conjunto dos Pamus",
         "name_de": "Pamous-Set",
         "items": 2,
         "stats_list": [
@@ -49258,10 +49362,10 @@
     },
     {
         "ankama_id": 877,
-        "name_en": "[!] Panoplie des Zoblaks",
+        "name_en": "Zalblaks Set",
         "name_fr": "Panoplie des Zoblaks",
-        "name_es": "[!] Panoplie des Zoblaks",
-        "name_pt": "[!] Panoplie des Zoblaks",
+        "name_es": "Set de los Hakalblak",
+        "name_pt": "Conjunto dos Olbleks",
         "name_de": "Zoblaks-Set",
         "items": 2,
         "stats_list": [
@@ -49298,10 +49402,10 @@
     },
     {
         "ankama_id": 878,
-        "name_en": "[!] Panoplie des Redroz",
+        "name_en": "Redroz Set",
         "name_fr": "Panoplie des Redroz",
-        "name_es": "[!] Panoplie des Redroz",
-        "name_pt": "[!] Panoplie des Redroz",
+        "name_es": "Set de los Redrous",
+        "name_pt": "Conjunto dos Redenrose",
         "name_de": "Redroz-Set",
         "items": 2,
         "stats_list": [
@@ -49338,10 +49442,10 @@
     },
     {
         "ankama_id": 879,
-        "name_en": "[!] Panoplie du Molosse",
+        "name_en": "Watchdog Set",
         "name_fr": "Panoplie du Molosse",
-        "name_es": "[!] Panoplie du Molosse",
-        "name_pt": "[!] Panoplie du Molosse",
+        "name_es": "Set de moloso",
+        "name_pt": "Conjunto do Molosso",
         "name_de": "Molosser-Set",
         "items": 2,
         "stats_list": [
@@ -49373,10 +49477,10 @@
     },
     {
         "ankama_id": 880,
-        "name_en": "[!] Panoplie du Corbeau Noir",
+        "name_en": "Black Crow Set",
         "name_fr": "Panoplie du Corbeau Noir",
-        "name_es": "[!] Panoplie du Corbeau Noir",
-        "name_pt": "[!] Panoplie du Corbeau Noir",
+        "name_es": "Set del Cuervo Negro",
+        "name_pt": "Conjunto do Corvo Negro",
         "name_de": "Set des Schwarzen Raben",
         "items": 2,
         "stats_list": [
@@ -49403,10 +49507,10 @@
     },
     {
         "ankama_id": 881,
-        "name_en": "[!] Clémentopanoplie",
+        "name_en": "Satsuma Set",
         "name_fr": "Clémentopanoplie",
-        "name_es": "[!] Clémentopanoplie",
-        "name_pt": "[!] Clémentopanoplie",
+        "name_es": "Setmentina",
+        "name_pt": "Clementonjunto",
         "name_de": "Clementiset",
         "items": 2,
         "stats_list": [
@@ -49433,10 +49537,10 @@
     },
     {
         "ankama_id": 882,
-        "name_en": "[!] Givranoplie",
+        "name_en": "Frost Set",
         "name_fr": "Givranoplie",
-        "name_es": "[!] Givranoplie",
-        "name_pt": "[!] Givranoplie",
+        "name_es": "Set escarchado",
+        "name_pt": "Conjunto Congelado",
         "name_de": "Vereiset",
         "items": 2,
         "stats_list": [
@@ -49463,10 +49567,10 @@
     },
     {
         "ankama_id": 883,
-        "name_en": "[!] Panoplie de la Denrée",
+        "name_en": "Oxo Set",
         "name_fr": "Panoplie de la Denrée",
-        "name_es": "[!] Panoplie de la Denrée",
-        "name_pt": "[!] Panoplie de la Denrée",
+        "name_es": "Set del amigo extraterrestre",
+        "name_pt": "Conjunto Kinor",
         "name_de": "Morgentau-Set",
         "items": 3,
         "stats_list": [
@@ -49529,10 +49633,10 @@
     },
     {
         "ankama_id": 884,
-        "name_en": "[!] Panoplie du Monarque",
+        "name_en": "Monarch Set",
         "name_fr": "Panoplie du Monarque",
-        "name_es": "[!] Panoplie du Monarque",
-        "name_pt": "[!] Panoplie du Monarque",
+        "name_es": "Set del Monarca",
+        "name_pt": "Conjunto do Monarca",
         "name_de": "Set des Monarchen",
         "items": 3,
         "stats_list": [
@@ -49580,10 +49684,10 @@
     },
     {
         "ankama_id": 885,
-        "name_en": "[!] Panoplie du Parrain",
+        "name_en": "The Godfather Set",
         "name_fr": "Panoplie du Parrain",
-        "name_es": "[!] Panoplie du Parrain",
-        "name_pt": "[!] Panoplie du Parrain",
+        "name_es": "Set del padrino",
+        "name_pt": "Conjunto do Padrinho",
         "name_de": "Paten-Set",
         "items": 3,
         "stats_list": [
@@ -49646,10 +49750,10 @@
     },
     {
         "ankama_id": 886,
-        "name_en": "[!] Panoplie de Logram",
+        "name_en": "Logram Set",
         "name_fr": "Panoplie de Logram",
-        "name_es": "[!] Panoplie de Logram",
-        "name_pt": "[!] Panoplie de Logram",
+        "name_es": "Set de Logram",
+        "name_pt": "Conjunto de Logram",
         "name_de": "Logram-Set",
         "items": 3,
         "stats_list": [
@@ -49712,10 +49816,10 @@
     },
     {
         "ankama_id": 887,
-        "name_en": "[!] Panoplie des 1001 Griffes",
+        "name_en": "1001 Claws Set",
         "name_fr": "Panoplie des 1001 Griffes",
-        "name_es": "[!] Panoplie des 1001 Griffes",
-        "name_pt": "[!] Panoplie des 1001 Griffes",
+        "name_es": "Set de las 1001 garras",
+        "name_pt": "Conjunto das 1001 Garras",
         "name_de": "Set der 1001 Krallen",
         "items": 3,
         "stats_list": [
@@ -49783,10 +49887,10 @@
     },
     {
         "ankama_id": 888,
-        "name_en": "[!] Panoplie du Garde Royal",
+        "name_en": "Royal Guard Set",
         "name_fr": "Panoplie du Garde Royal",
-        "name_es": "[!] Panoplie du Garde Royal",
-        "name_pt": "[!] Panoplie du Garde Royal",
+        "name_es": "Set del guardia real",
+        "name_pt": "Conjunto do Guarda Real",
         "name_de": "Königswachen-Set",
         "items": 2,
         "stats_list": [
@@ -49823,10 +49927,10 @@
     },
     {
         "ankama_id": 889,
-        "name_en": "[!] Panoplie Dragocourse",
+        "name_en": "Dragorace Set",
         "name_fr": "Panoplie Dragocourse",
-        "name_es": "[!] Panoplie Dragocourse",
-        "name_pt": "[!] Panoplie Dragocourse",
+        "name_es": "Set de dragocarrera",
+        "name_pt": "Conjunto Dragocorrida",
         "name_de": "Dracorennen-Set",
         "items": 2,
         "stats_list": [
@@ -49858,10 +49962,10 @@
     },
     {
         "ankama_id": 890,
-        "name_en": "[!] Panoplie de Peggy la Porkass",
+        "name_en": "Miss Lousy Piggy Set",
         "name_fr": "Panoplie de Peggy la Porkass",
-        "name_es": "[!] Panoplie de Peggy la Porkass",
-        "name_pt": "[!] Panoplie de Peggy la Porkass",
+        "name_es": "Set de Peggy la Puerkaza",
+        "name_pt": "Conjunto de Peggy, a Porkassa",
         "name_de": "Set von Aimy Airwutz",
         "items": 2,
         "stats_list": [
@@ -49898,10 +50002,10 @@
     },
     {
         "ankama_id": 891,
-        "name_en": "[!] Ma petite panoplie",
+        "name_en": "MLP Set",
         "name_fr": "Ma petite panoplie",
-        "name_es": "[!] Ma petite panoplie",
-        "name_pt": "[!] Ma petite panoplie",
+        "name_es": "Mi pequeño set",
+        "name_pt": "Meu Pequeno Conjunto",
         "name_de": "My little Set",
         "items": 2,
         "stats_list": [
@@ -49933,10 +50037,10 @@
     },
     {
         "ankama_id": 892,
-        "name_en": "[!] Panoplie Siks Won Naïne",
+        "name_en": "Siks Wonn Ein Set",
         "name_fr": "Panoplie Siks Won Naïne",
-        "name_es": "[!] Panoplie Siks Won Naïne",
-        "name_pt": "[!] Panoplie Siks Won Naïne",
+        "name_es": "Set de Tor Nyquete",
+        "name_pt": "Conjunto Siks Wonn Ein",
         "name_de": "Set von Siks Won Nain",
         "items": 2,
         "stats_list": [
@@ -49968,10 +50072,10 @@
     },
     {
         "ankama_id": 893,
-        "name_en": "[!] Panoplie Mace",
+        "name_en": "Slugly Set",
         "name_fr": "Panoplie Mace",
-        "name_es": "[!] Panoplie Mace",
-        "name_pt": "[!] Panoplie Mace",
+        "name_es": "Set Asobab",
+        "name_pt": "Conjunto Gosmento",
         "name_de": "Schnecksel-Set",
         "items": 2,
         "stats_list": [
@@ -50003,10 +50107,10 @@
     },
     {
         "ankama_id": 894,
-        "name_en": "[!] Panoplie Sleump",
+        "name_en": "Slump Set",
         "name_fr": "Panoplie Sleump",
-        "name_es": "[!] Panoplie Sleump",
-        "name_pt": "[!] Panoplie Sleump",
+        "name_es": "Set Slump",
+        "name_pt": "Conjunto Slump",
         "name_de": "Slump-Set",
         "items": 2,
         "stats_list": [
@@ -50043,10 +50147,10 @@
     },
     {
         "ankama_id": 895,
-        "name_en": "[!] Panoplie de Slait",
+        "name_en": "Slait Set",
         "name_fr": "Panoplie de Slait",
-        "name_es": "[!] Panoplie de Slait",
-        "name_pt": "[!] Panoplie de Slait",
+        "name_es": "Set Sliat",
+        "name_pt": "Conjunto de Slait",
         "name_de": "Slait-Set",
         "items": 2,
         "stats_list": [
@@ -50088,10 +50192,10 @@
     },
     {
         "ankama_id": 896,
-        "name_en": "[!] Chapanoplie",
+        "name_en": "Chapplynn Set",
         "name_fr": "Chapanoplie",
-        "name_es": "[!] Chapanoplie",
-        "name_pt": "[!] Chapanoplie",
+        "name_es": "Chistoset",
+        "name_pt": "Conjaplin",
         "name_de": "Chap-Set",
         "items": 2,
         "stats_list": [
@@ -50123,10 +50227,10 @@
     },
     {
         "ankama_id": 897,
-        "name_en": "[!] Panoplie du Real Boitar",
+        "name_en": "Real Gobbly Set",
         "name_fr": "Panoplie du Real Boitar",
-        "name_es": "[!] Panoplie du Real Boitar",
-        "name_pt": "[!] Panoplie du Real Boitar",
+        "name_es": "Set del Atleticojos de Bonta",
+        "name_pt": "Conjunto do Paparcelona",
         "name_de": "FC Humpelstilz-Set",
         "items": 2,
         "stats_list": [
@@ -50163,10 +50267,10 @@
     },
     {
         "ankama_id": 898,
-        "name_en": "[!] Panoplie des Bouftons Rouges",
+        "name_en": "Lamechester United Set",
         "name_fr": "Panoplie des Bouftons Rouges",
-        "name_es": "[!] Panoplie des Bouftons Rouges",
-        "name_pt": "[!] Panoplie des Bouftons Rouges",
+        "name_es": "Set del Sporting Jalatín",
+        "name_pt": "Conjunto Papachester United",
         "name_de": "Set der Roten Fresssäckchen",
         "items": 2,
         "stats_list": [
@@ -50198,10 +50302,10 @@
     },
     {
         "ankama_id": 899,
-        "name_en": "[!] Yugoplie",
+        "name_en": "Yugo Set",
         "name_fr": "Yugoplie",
-        "name_es": "[!] Yugoplie",
-        "name_pt": "[!] Yugoplie",
+        "name_es": "Yugoset",
+        "name_pt": "Conjuntyugo",
         "name_de": "Yago-Set",
         "items": 3,
         "stats_list": [
@@ -50254,10 +50358,10 @@
     },
     {
         "ankama_id": 900,
-        "name_en": "[!] Panoplie Pomdeupin",
+        "name_en": "Pynekone Set",
         "name_fr": "Panoplie Pomdeupin",
-        "name_es": "[!] Panoplie Pomdeupin",
-        "name_pt": "[!] Panoplie Pomdeupin",
+        "name_es": "Set Estróbilo",
+        "name_pt": "Conjunto Pinha",
         "name_de": "Zapfentann-Set",
         "items": 2,
         "stats_list": [
@@ -50284,10 +50388,10 @@
     },
     {
         "ankama_id": 901,
-        "name_en": "[!] Chispanoplie",
+        "name_en": "Chisp Set",
         "name_fr": "Chispanoplie",
-        "name_es": "[!] Chispanoplie",
-        "name_pt": "[!] Chispanoplie",
+        "name_es": "Chispset",
+        "name_pt": "Chisponjunto",
         "name_de": "Chisp-Set",
         "items": 2,
         "stats_list": [
@@ -50314,11 +50418,11 @@
     },
     {
         "ankama_id": 902,
-        "name_en": "[!] Golpanoplie",
+        "name_en": "Trolvon Set",
         "name_fr": "Golpanoplie",
-        "name_es": "[!] Golpanoplie",
-        "name_pt": "[!] Golpanoplie",
-        "name_de": "Gol-Set",
+        "name_es": "Goldoset",
+        "name_pt": "Conjuntorak",
+        "name_de": "Goldo-Set",
         "items": 2,
         "stats_list": [
             {
@@ -50349,10 +50453,10 @@
     },
     {
         "ankama_id": 903,
-        "name_en": "[!] Panoplie Paupayahn",
+        "name_en": "Beanie Set",
         "name_fr": "Panoplie Paupayahn",
-        "name_es": "[!] Panoplie Paupayahn",
-        "name_pt": "[!] Panoplie Paupayahn",
+        "name_es": "Set Saymassa",
+        "name_pt": "Conjunto Robusto",
         "name_de": "Paupayahn-Set",
         "items": 2,
         "stats_list": [
@@ -50389,10 +50493,10 @@
     },
     {
         "ankama_id": 904,
-        "name_en": "[!] Méganoplie",
+        "name_en": "Manmega Set",
         "name_fr": "Méganoplie",
-        "name_es": "[!] Méganoplie",
-        "name_pt": "[!] Méganoplie",
+        "name_es": "Megaset",
+        "name_pt": "Conjunto Megaman",
         "name_de": "Megaman-Set",
         "items": 2,
         "stats_list": [
@@ -50429,10 +50533,10 @@
     },
     {
         "ankama_id": 905,
-        "name_en": "[!] Panoplie Vioutifoule",
+        "name_en": "Viootifool Set",
         "name_fr": "Panoplie Vioutifoule",
-        "name_es": "[!] Panoplie Vioutifoule",
-        "name_pt": "[!] Panoplie Vioutifoule",
+        "name_es": "Set Viewtiful",
+        "name_pt": "Conjunto Viutiful",
         "name_de": "Viewtifule-Set",
         "items": 2,
         "stats_list": [
@@ -50469,10 +50573,10 @@
     },
     {
         "ankama_id": 906,
-        "name_en": "[!] Panoplie de Stroud",
+        "name_en": "Stroud Set",
         "name_fr": "Panoplie de Stroud",
-        "name_es": "[!] Panoplie de Stroud",
-        "name_pt": "[!] Panoplie de Stroud",
+        "name_es": "Set de Stroud",
+        "name_pt": "Conjunto de Stroud",
         "name_de": "Struut-Set",
         "items": 2,
         "stats_list": [
@@ -50509,10 +50613,10 @@
     },
     {
         "ankama_id": 907,
-        "name_en": "[!] Gladianoplie",
+        "name_en": "Gladiator Set",
         "name_fr": "Gladianoplie",
-        "name_es": "[!] Gladianoplie",
-        "name_pt": "[!] Gladianoplie",
+        "name_es": "Gladiaset",
+        "name_pt": "Conjunto Gladiador",
         "name_de": "Gladiaset",
         "items": 2,
         "stats_list": [
@@ -50539,10 +50643,10 @@
     },
     {
         "ankama_id": 908,
-        "name_en": "[!] Panoplie du Tétounik",
+        "name_en": "Slamdance Set",
         "name_fr": "Panoplie du Tétounik",
-        "name_es": "[!] Panoplie du Tétounik",
-        "name_pt": "[!] Panoplie du Tétounik",
+        "name_es": "Set de taktikonik",
+        "name_pt": "Conjunto da Confusão",
         "name_de": "Tetonik-Set",
         "items": 3,
         "stats_list": [
@@ -50600,10 +50704,10 @@
     },
     {
         "ankama_id": 909,
-        "name_en": "[!] Printanoplie",
+        "name_en": "Springtide Set",
         "name_fr": "Printanoplie",
-        "name_es": "[!] Printanoplie",
-        "name_pt": "[!] Printanoplie",
+        "name_es": "Setmavera",
+        "name_pt": "Conjunto Primavera",
         "name_de": "Frühlingset",
         "items": 2,
         "stats_list": [
@@ -50640,11 +50744,11 @@
     },
     {
         "ankama_id": 910,
-        "name_en": "[!] Panoplie Mijotée",
+        "name_en": "Simmered Set",
         "name_fr": "Panoplie Mijotée",
-        "name_es": "[!] Panoplie Mijotée",
-        "name_pt": "[!] Panoplie Mijotée",
-        "name_de": "Köchel-Set",
+        "name_es": "Set cocido",
+        "name_pt": "Conjunto Ensopado",
+        "name_de": "Gemü-Set",
         "items": 2,
         "stats_list": [
             {
@@ -50680,10 +50784,10 @@
     },
     {
         "ankama_id": 911,
-        "name_en": "[!] Panoplienlaine",
+        "name_en": "Woollen Set",
         "name_fr": "Panoplienlaine",
-        "name_es": "[!] Panoplienlaine",
-        "name_pt": "[!] Panoplienlaine",
+        "name_es": "Set lanudo",
+        "name_pt": "Conjundilã",
         "name_de": "Woll-Set",
         "items": 2,
         "stats_list": [
@@ -50715,10 +50819,10 @@
     },
     {
         "ankama_id": 912,
-        "name_en": "[!] Panoplie du Black Wab",
+        "name_en": "Black Wab Set",
         "name_fr": "Panoplie du Black Wab",
-        "name_es": "[!] Panoplie du Black Wab",
-        "name_pt": "[!] Panoplie du Black Wab",
+        "name_es": "Set black wab",
+        "name_pt": "Conjunto do Black Wab",
         "name_de": "Black Wab-Set",
         "items": 2,
         "stats_list": [
@@ -50755,10 +50859,10 @@
     },
     {
         "ankama_id": 913,
-        "name_en": "[!] Panoplie Cristalline",
+        "name_en": "Cristalline Set",
         "name_fr": "Panoplie Cristalline",
-        "name_es": "[!] Panoplie Cristalline",
-        "name_pt": "[!] Panoplie Cristalline",
+        "name_es": "Set cristalino",
+        "name_pt": "Conjunto Cristalino",
         "name_de": "Kristallklares Set",
         "items": 2,
         "stats_list": [
@@ -50795,10 +50899,10 @@
     },
     {
         "ankama_id": 914,
-        "name_en": "[!] Panoplie Papayou",
+        "name_en": "Alowa Set",
         "name_fr": "Panoplie Papayou",
-        "name_es": "[!] Panoplie Papayou",
-        "name_pt": "[!] Panoplie Papayou",
+        "name_es": "Set del director Kuno",
+        "name_pt": "Conjunto Aloha",
         "name_de": "Papayo-Set",
         "items": 2,
         "stats_list": [
@@ -50830,10 +50934,10 @@
     },
     {
         "ankama_id": 915,
-        "name_en": "[!] Panoplie de Gadjète",
+        "name_en": "Gadjet Set",
         "name_fr": "Panoplie de Gadjète",
-        "name_es": "[!] Panoplie de Gadjète",
-        "name_pt": "[!] Panoplie de Gadjète",
+        "name_es": "Set de Gadjèt",
+        "name_pt": "Conjunto Bugiganga",
         "name_de": "Gedschet-Set",
         "items": 2,
         "stats_list": [
@@ -50865,10 +50969,10 @@
     },
     {
         "ankama_id": 916,
-        "name_en": "[!] Panoplie de Féline",
+        "name_en": "Maria Kitty Set",
         "name_fr": "Panoplie de Féline",
-        "name_es": "[!] Panoplie de Féline",
-        "name_pt": "[!] Panoplie de Féline",
+        "name_es": "Set de Felín",
+        "name_pt": "Conjunto de Feline",
         "name_de": "Féline-Set",
         "items": 2,
         "stats_list": [
@@ -50900,10 +51004,10 @@
     },
     {
         "ankama_id": 917,
-        "name_en": "[!] Panoplie de ronces",
+        "name_en": "Bramble Set",
         "name_fr": "Panoplie de ronces",
-        "name_es": "[!] Panoplie de ronces",
-        "name_pt": "[!] Panoplie de ronces",
+        "name_es": "Set de zarzas",
+        "name_pt": "Conjunto de Sarças",
         "name_de": "Ranken-Set",
         "items": 2,
         "stats_list": [
@@ -50935,10 +51039,10 @@
     },
     {
         "ankama_id": 918,
-        "name_en": "[!] Panoplie de Danioule",
+        "name_en": "Davyd's Set",
         "name_fr": "Panoplie de Danioule",
-        "name_es": "[!] Panoplie de Danioule",
-        "name_pt": "[!] Panoplie de Danioule",
+        "name_es": "Setbina",
+        "name_pt": "Conjunto do Vandja",
         "name_de": "Howies Set",
         "items": 2,
         "stats_list": [
@@ -50965,10 +51069,10 @@
     },
     {
         "ankama_id": 919,
-        "name_en": "[!] Panokami",
+        "name_en": "Imako Set",
         "name_fr": "Panokami",
-        "name_es": "[!] Panokami",
-        "name_pt": "[!] Panokami",
+        "name_es": "Setokami",
+        "name_pt": "Conjuntokami",
         "name_de": "Okami-Set",
         "items": 2,
         "stats_list": [
@@ -51010,10 +51114,10 @@
     },
     {
         "ankama_id": 920,
-        "name_en": "[!] Panoplilozité",
+        "name_en": "Hir Suit",
         "name_fr": "Panoplilozité",
-        "name_es": "[!] Panoplilozité",
-        "name_pt": "[!] Panoplilozité",
+        "name_es": "Set peloso",
+        "name_pt": "Conjunto Peludo",
         "name_de": "B-Haartes Set",
         "items": 2,
         "stats_list": [
@@ -51050,10 +51154,10 @@
     },
     {
         "ankama_id": 921,
-        "name_en": "[!] Glaglanoplie",
+        "name_en": "Brrrbli Set",
         "name_fr": "Glaglanoplie",
-        "name_es": "[!] Glaglanoplie",
-        "name_pt": "[!] Glaglanoplie",
+        "name_es": "Set jabajonillo",
+        "name_pt": "Conjunto Polar",
         "name_de": "FroFrostring-Set",
         "items": 2,
         "stats_list": [
@@ -51085,11 +51189,11 @@
     },
     {
         "ankama_id": 922,
-        "name_en": "[!] Diplanoplie",
+        "name_en": "Diplodo Set",
         "name_fr": "Diplanoplie",
-        "name_es": "[!] Diplanoplie",
-        "name_pt": "[!] Diplanoplie",
-        "name_de": "Diplom-Set",
+        "name_es": "Diplodoset",
+        "name_pt": "Diplonjunto",
+        "name_de": "Diplo-Set",
         "items": 2,
         "stats_list": [
             {
@@ -51125,10 +51229,10 @@
     },
     {
         "ankama_id": 923,
-        "name_en": "[!] Panoplisonnier",
+        "name_en": "Prisoner Set",
         "name_fr": "Panoplisonnier",
-        "name_es": "[!] Panoplisonnier",
-        "name_pt": "[!] Panoplisonnier",
+        "name_es": "Set del prisionero",
+        "name_pt": "Conjunto do Prisioneiro",
         "name_de": "Häftling-Set",
         "items": 2,
         "stats_list": [
@@ -51165,10 +51269,10 @@
     },
     {
         "ankama_id": 924,
-        "name_en": "[!] Panoplinokio",
+        "name_en": "Pinokio Set",
         "name_fr": "Panoplinokio",
-        "name_es": "[!] Panoplinokio",
-        "name_pt": "[!] Panoplinokio",
+        "name_es": "Set de pino kío",
+        "name_pt": "Conjunto Pinokio",
         "name_de": "Pinokio-Set",
         "items": 2,
         "stats_list": [
@@ -51200,10 +51304,10 @@
     },
     {
         "ankama_id": 925,
-        "name_en": "[!] Panoplie Stroplante",
+        "name_en": "World Worrier Set",
         "name_fr": "Panoplie Stroplante",
-        "name_es": "[!] Panoplie Stroplante",
-        "name_pt": "[!] Panoplie Stroplante",
+        "name_es": "Set Onstruoplanta",
+        "name_pt": "Conjunto Stroide",
         "name_de": "Jaycset",
         "items": 2,
         "stats_list": [
@@ -51235,10 +51339,10 @@
     },
     {
         "ankama_id": 926,
-        "name_en": "[!] Plumoplie",
+        "name_en": "Ploom Set",
         "name_fr": "Plumoplie",
-        "name_es": "[!] Plumoplie",
-        "name_pt": "[!] Plumoplie",
+        "name_es": "Plumoset",
+        "name_pt": "Penojunto",
         "name_de": "Federset",
         "items": 2,
         "stats_list": [
@@ -51265,10 +51369,10 @@
     },
     {
         "ankama_id": 927,
-        "name_en": "[!] Panoppinz",
+        "name_en": "Poppinz Set",
         "name_fr": "Panoppinz",
-        "name_es": "[!] Panoppinz",
-        "name_pt": "[!] Panoppinz",
+        "name_es": "Set poppinz",
+        "name_pt": "Conjunto Poppinz",
         "name_de": "Popinset",
         "items": 2,
         "stats_list": [
@@ -51300,10 +51404,10 @@
     },
     {
         "ankama_id": 928,
-        "name_en": "[!] Panoplie Chauffe-souris",
+        "name_en": "Borbat Set",
         "name_fr": "Panoplie Chauffe-souris",
-        "name_es": "[!] Panoplie Chauffe-souris",
-        "name_pt": "[!] Panoplie Chauffe-souris",
+        "name_es": "Set murciego",
+        "name_pt": "Conjunto Borcego",
         "name_de": "Fleddermaus-Set",
         "items": 2,
         "stats_list": [
@@ -51335,10 +51439,10 @@
     },
     {
         "ankama_id": 929,
-        "name_en": "[!] Panopapier",
+        "name_en": "Paper Set",
         "name_fr": "Panopapier",
-        "name_es": "[!] Panopapier",
-        "name_pt": "[!] Panopapier",
+        "name_es": "Setpapel",
+        "name_pt": "Conjunto de Papel",
         "name_de": "Papierset",
         "items": 2,
         "stats_list": [
@@ -51365,10 +51469,10 @@
     },
     {
         "ankama_id": 930,
-        "name_en": "[!] Panoplie à plumes",
+        "name_en": "Feather Set",
         "name_fr": "Panoplie à plumes",
-        "name_es": "[!] Panoplie à plumes",
-        "name_pt": "[!] Panoplie à plumes",
+        "name_es": "Set de plumas",
+        "name_pt": "Conjunto de Penas",
         "name_de": "Gefiedertes Set",
         "items": 2,
         "stats_list": [
@@ -51415,10 +51519,10 @@
     },
     {
         "ankama_id": 931,
-        "name_en": "[!] Krosmanoplie",
+        "name_en": "Krosmaset",
         "name_fr": "Krosmanoplie",
-        "name_es": "[!] Krosmanoplie",
-        "name_pt": "[!] Krosmanoplie",
+        "name_es": "Set Krosmaster",
+        "name_pt": "Krosjunto",
         "name_de": "Krosmoset",
         "items": 2,
         "stats_list": [
@@ -51470,10 +51574,10 @@
     },
     {
         "ankama_id": 932,
-        "name_en": "[!] Panoplie des Justiciers",
+        "name_en": "Vigilante Set",
         "name_fr": "Panoplie des Justiciers",
-        "name_es": "[!] Panoplie des Justiciers",
-        "name_pt": "[!] Panoplie des Justiciers",
+        "name_es": "Set de los justicieros",
+        "name_pt": "Conjunto dos Justiceiros",
         "name_de": "Set der Ritter der Gerechtigkeit",
         "items": 2,
         "stats_list": [
@@ -51491,9 +51595,34 @@
                         "Air Damage"
                     ],
                     [
+                        5,
+                        null,
+                        "% Air Resist"
+                    ],
+                    [
+                        5,
+                        null,
+                        "% Water Resist"
+                    ],
+                    [
+                        5,
+                        null,
+                        "% Fire Resist"
+                    ],
+                    [
+                        5,
+                        null,
+                        "% Earth Resist"
+                    ],
+                    [
+                        5,
+                        null,
+                        "% Neutral Resist"
+                    ],
+                    [
                         10,
                         null,
-                        "Neutral Damage"
+                        "Fire Damage"
                     ],
                     [
                         10,
@@ -51503,32 +51632,12 @@
                     [
                         10,
                         null,
-                        "Fire Damage"
+                        "Neutral Damage"
                     ],
                     [
-                        3,
+                        150,
                         null,
-                        "% Neutral Resist"
-                    ],
-                    [
-                        3,
-                        null,
-                        "% Earth Resist"
-                    ],
-                    [
-                        3,
-                        null,
-                        "% Fire Resist"
-                    ],
-                    [
-                        3,
-                        null,
-                        "% Water Resist"
-                    ],
-                    [
-                        3,
-                        null,
-                        "% Air Resist"
+                        "Vitality"
                     ]
                 ]
             }
@@ -51540,11 +51649,11 @@
     },
     {
         "ankama_id": 933,
-        "name_en": "[!] Panoplie d'apparat du Gladiatrool",
+        "name_en": "Gladiatrool Ceremonial Set",
         "name_fr": "Panoplie d'apparat du Gladiatrool",
-        "name_es": "[!] Panoplie d'apparat du Gladiatrool",
-        "name_pt": "[!] Panoplie d'apparat du Gladiatrool",
-        "name_de": "[!] Panoplie d'apparat du Gladiatrool",
+        "name_es": "Set cosmético del Gladiatrool",
+        "name_pt": "Conjunto de Aparência do Gladiatrool",
+        "name_de": "Prunkset des Gladiatrools",
         "items": 6,
         "equipment_ids": [
             30670,
@@ -51574,8 +51683,8 @@
         "name_en": "[!] Panoplie du Captain Chafer",
         "name_fr": "Panoplie du Captain Chafer",
         "name_es": "[!] Panoplie du Captain Chafer",
-        "name_pt": "[!] Panoplie du Captain Chafer",
-        "name_de": "[!] Panoplie du Captain Chafer",
+        "name_pt": "Conjunto do Capitão Chafer",
+        "name_de": "Set des Chafer-Offiziers",
         "items": 3,
         "stats_list": [
             {
@@ -51597,17 +51706,17 @@
                         "Agility"
                     ],
                     [
-                        15,
+                        20,
                         null,
                         "Fire Damage"
                     ],
                     [
-                        15,
+                        20,
                         null,
                         "Water Damage"
                     ],
                     [
-                        15,
+                        20,
                         null,
                         "Air Damage"
                     ],
@@ -51620,6 +51729,11 @@
                         10,
                         null,
                         "MP Loss Resist"
+                    ],
+                    [
+                        15,
+                        null,
+                        "MP Reduction"
                     ]
                 ]
             },
@@ -51642,17 +51756,17 @@
                         "Agility"
                     ],
                     [
-                        15,
+                        20,
                         null,
                         "Fire Damage"
                     ],
                     [
-                        15,
+                        20,
                         null,
                         "Water Damage"
                     ],
                     [
-                        15,
+                        20,
                         null,
                         "Air Damage"
                     ],
@@ -51670,6 +51784,11 @@
                         1,
                         null,
                         "AP"
+                    ],
+                    [
+                        15,
+                        null,
+                        "MP Reduction"
                     ]
                 ]
             }
@@ -51685,8 +51804,8 @@
         "name_en": "[!] Panoplie de Mama Ayuto",
         "name_fr": "Panoplie de Mama Ayuto",
         "name_es": "[!] Panoplie de Mama Ayuto",
-        "name_pt": "[!] Panoplie de Mama Ayuto",
-        "name_de": "[!] Panoplie de Mama Ayuto",
+        "name_pt": "Conjunto da Mama Ayuto",
+        "name_de": "Mama Ayutos Set",
         "items": 3,
         "stats_list": [
             {
@@ -51756,8 +51875,8 @@
         "name_en": "[!] Panoplie du Dark Vlad",
         "name_fr": "Panoplie du Dark Vlad",
         "name_es": "[!] Panoplie du Dark Vlad",
-        "name_pt": "[!] Panoplie du Dark Vlad",
-        "name_de": "[!] Panoplie du Dark Vlad",
+        "name_pt": "Conjunto do Dark Vlad",
+        "name_de": "Set von Dark Vlad",
         "items": 3,
         "stats_list": [
             {
@@ -51828,7 +51947,7 @@
         "name_fr": "Panoplie de Phong Huss",
         "name_es": "[!] Panoplie de Phong Huss",
         "name_pt": "[!] Panoplie de Phong Huss",
-        "name_de": "[!] Panoplie de Phong Huss",
+        "name_de": "Phung-Huss-Set",
         "items": 3,
         "stats_list": [
             {
@@ -51884,7 +52003,7 @@
         "name_fr": "Panoplie de Grilliane",
         "name_es": "[!] Panoplie de Grilliane",
         "name_pt": "[!] Panoplie de Grilliane",
-        "name_de": "[!] Panoplie de Grilliane",
+        "name_de": "Grilliane-Set",
         "items": 2,
         "stats_list": [
             {
@@ -51929,7 +52048,7 @@
         "name_fr": "Panoplie de Crocuzko",
         "name_es": "[!] Panoplie de Crocuzko",
         "name_pt": "[!] Panoplie de Crocuzko",
-        "name_de": "[!] Panoplie de Crocuzko",
+        "name_de": "Crocuzko-Set",
         "items": 2,
         "stats_list": [
             {
@@ -51948,7 +52067,7 @@
                     [
                         10,
                         null,
-                        "Pushback Resist"
+                        "MP Loss Resist"
                     ],
                     [
                         10,
@@ -51958,7 +52077,12 @@
                     [
                         10,
                         null,
-                        "MP Loss Resist"
+                        "Pushback Resist"
+                    ],
+                    [
+                        3,
+                        null,
+                        "Critical Hits"
                     ]
                 ]
             }
@@ -51974,14 +52098,14 @@
         "name_fr": "Panoplie de Pol Ouatnos",
         "name_es": "[!] Panoplie de Pol Ouatnos",
         "name_pt": "[!] Panoplie de Pol Ouatnos",
-        "name_de": "[!] Panoplie de Pol Ouatnos",
+        "name_de": "Pol-Watnos-Set",
         "items": 2,
         "stats_list": [
             {
                 "effect_key": "2",
                 "effects": [
                     [
-                        30,
+                        60,
                         null,
                         "Power"
                     ],
@@ -51991,14 +52115,14 @@
                         "Critical Resist"
                     ],
                     [
-                        5,
-                        null,
-                        "Critical Hits"
-                    ],
-                    [
                         7,
                         null,
                         "% Water Resist"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Critical Hits"
                     ]
                 ]
             }
@@ -52014,7 +52138,7 @@
         "name_fr": "Panoplie des Krobes",
         "name_es": "[!] Panoplie des Krobes",
         "name_pt": "[!] Panoplie des Krobes",
-        "name_de": "[!] Panoplie des Krobes",
+        "name_de": "Kroben-Set",
         "items": 4,
         "stats_list": [
             {
@@ -52033,12 +52157,12 @@
                     [
                         1,
                         null,
-                        "Range"
+                        "Summon"
                     ],
                     [
                         1,
                         null,
-                        "Summon"
+                        "Range"
                     ]
                 ]
             },
@@ -52046,24 +52170,9 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        150,
-                        null,
-                        "Vitality"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Power"
-                    ],
-                    [
                         1,
                         null,
-                        "Range"
-                    ],
-                    [
-                        1,
-                        null,
-                        "Summon"
+                        "AP"
                     ],
                     [
                         -2,
@@ -52073,22 +52182,7 @@
                     [
                         1,
                         null,
-                        "AP"
-                    ]
-                ]
-            },
-            {
-                "effect_key": "4",
-                "effects": [
-                    [
-                        150,
-                        null,
-                        "Vitality"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Power"
+                        "Summon"
                     ],
                     [
                         1,
@@ -52096,34 +52190,39 @@
                         "Range"
                     ],
                     [
-                        1,
-                        null,
-                        "Summon"
-                    ],
-                    [
-                        -3,
-                        null,
-                        "MP"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
-                    ],
-                    [
                         60,
                         null,
-                        "Strength"
+                        "Power"
                     ],
                     [
-                        60,
+                        150,
                         null,
-                        "Agility"
+                        "Vitality"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "4",
+                "effects": [
+                    [
+                        5,
+                        null,
+                        "Critical Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Fire Damage"
                     ],
                     [
                         22,
                         null,
-                        "Neutral Damage"
+                        "Air Damage"
                     ],
                     [
                         22,
@@ -52133,22 +52232,47 @@
                     [
                         22,
                         null,
-                        "Air Damage"
+                        "Neutral Damage"
                     ],
                     [
-                        10,
+                        60,
                         null,
-                        "Fire Damage"
+                        "Agility"
                     ],
                     [
-                        10,
+                        60,
                         null,
-                        "Water Damage"
+                        "Strength"
                     ],
                     [
-                        5,
+                        1,
                         null,
-                        "Critical Damage"
+                        "AP"
+                    ],
+                    [
+                        -3,
+                        null,
+                        "MP"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Summon"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        100,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        150,
+                        null,
+                        "Vitality"
                     ]
                 ]
             }
@@ -52166,7 +52290,7 @@
         "name_fr": "Panoplie de la Baleine",
         "name_es": "[!] Panoplie de la Baleine",
         "name_pt": "[!] Panoplie de la Baleine",
-        "name_de": "[!] Panoplie de la Baleine",
+        "name_de": "Wal-Set",
         "items": 5,
         "stats_list": [
             {
@@ -52185,7 +52309,12 @@
                     [
                         4,
                         null,
-                        "Critical Hits"
+                        "% Air Resist"
+                    ],
+                    [
+                        4,
+                        null,
+                        "% Earth Resist"
                     ],
                     [
                         1,
@@ -52195,12 +52324,7 @@
                     [
                         4,
                         null,
-                        "% Earth Resist"
-                    ],
-                    [
-                        4,
-                        null,
-                        "% Air Resist"
+                        "Critical Hits"
                     ]
                 ]
             },
@@ -52208,29 +52332,9 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        40,
-                        null,
-                        "Power"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Wisdom"
-                    ],
-                    [
                         6,
                         null,
-                        "Critical Hits"
-                    ],
-                    [
-                        1,
-                        null,
-                        "Range"
-                    ],
-                    [
-                        1,
-                        null,
-                        "Summon"
+                        "% Air Resist"
                     ],
                     [
                         6,
@@ -52238,9 +52342,29 @@
                         "% Earth Resist"
                     ],
                     [
-                        6,
+                        1,
                         null,
-                        "% Air Resist"
+                        "Summon"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        8,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Wisdom"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Power"
                     ]
                 ]
             },
@@ -52248,19 +52372,19 @@
                 "effect_key": "4",
                 "effects": [
                     [
-                        50,
+                        8,
                         null,
-                        "Power"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Wisdom"
+                        "% Air Resist"
                     ],
                     [
                         8,
                         null,
-                        "Critical Hits"
+                        "% Earth Resist"
+                    ],
+                    [
+                        2,
+                        null,
+                        "Summon"
                     ],
                     [
                         1,
@@ -52268,19 +52392,24 @@
                         "Range"
                     ],
                     [
-                        2,
+                        12,
                         null,
-                        "Summon"
+                        "Critical Hits"
                     ],
                     [
-                        8,
+                        50,
                         null,
-                        "% Earth Resist"
+                        "Wisdom"
                     ],
                     [
-                        8,
+                        50,
                         null,
-                        "% Air Resist"
+                        "Power"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Critical Damage"
                     ]
                 ]
             },
@@ -52288,29 +52417,9 @@
                 "effect_key": "5",
                 "effects": [
                     [
-                        60,
-                        null,
-                        "Power"
-                    ],
-                    [
-                        60,
-                        null,
-                        "Wisdom"
-                    ],
-                    [
                         10,
                         null,
-                        "Critical Hits"
-                    ],
-                    [
-                        2,
-                        null,
-                        "Range"
-                    ],
-                    [
-                        2,
-                        null,
-                        "Summon"
+                        "% Air Resist"
                     ],
                     [
                         10,
@@ -52318,9 +52427,34 @@
                         "% Earth Resist"
                     ],
                     [
-                        10,
+                        2,
                         null,
-                        "% Air Resist"
+                        "Summon"
+                    ],
+                    [
+                        2,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        16,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        60,
+                        null,
+                        "Wisdom"
+                    ],
+                    [
+                        100,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Critical Damage"
                     ]
                 ]
             }
@@ -52339,7 +52473,7 @@
         "name_fr": "Panoplie Ensevelie",
         "name_es": "[!] Panoplie Ensevelie",
         "name_pt": "[!] Panoplie Ensevelie",
-        "name_de": "[!] Panoplie Ensevelie",
+        "name_de": "Set des Bestatteten",
         "items": 2,
         "stats_list": [
             {
@@ -52379,7 +52513,7 @@
         "name_fr": "Panoplie Noyée",
         "name_es": "[!] Panoplie Noyée",
         "name_pt": "[!] Panoplie Noyée",
-        "name_de": "[!] Panoplie Noyée",
+        "name_de": "Set des Ertrunkenen",
         "items": 2,
         "stats_list": [
             {
@@ -52391,19 +52525,19 @@
                         "Vitality"
                     ],
                     [
-                        40,
+                        60,
                         null,
                         "Power"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Lock"
                     ],
                     [
                         7,
                         null,
                         "% Air Resist"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Lock"
                     ]
                 ]
             }
@@ -52419,7 +52553,7 @@
         "name_fr": "Panoplie du Fourneau",
         "name_es": "[!] Panoplie du Fourneau",
         "name_pt": "[!] Panoplie du Fourneau",
-        "name_de": "[!] Panoplie du Fourneau",
+        "name_de": "Hochofen-Set",
         "items": 2,
         "stats_list": [
             {
@@ -52459,7 +52593,7 @@
         "name_fr": "Panoplie de la Fournaise",
         "name_es": "[!] Panoplie de la Fournaise",
         "name_pt": "[!] Panoplie de la Fournaise",
-        "name_de": "[!] Panoplie de la Fournaise",
+        "name_de": "Schmelzofen-Set",
         "items": 2,
         "stats_list": [
             {
@@ -52499,7 +52633,7 @@
         "name_fr": "Panoplie de la Pyramide",
         "name_es": "[!] Panoplie de la Pyramide",
         "name_pt": "[!] Panoplie de la Pyramide",
-        "name_de": "[!] Panoplie de la Pyramide",
+        "name_de": "Pyramiden-Set",
         "items": 3,
         "stats_list": [
             {
@@ -52585,7 +52719,7 @@
         "name_fr": "Panoplie des Maudits",
         "name_es": "[!] Panoplie des Maudits",
         "name_pt": "[!] Panoplie des Maudits",
-        "name_de": "[!] Panoplie des Maudits",
+        "name_de": "Set der Verfluchten",
         "items": 3,
         "stats_list": [
             {
@@ -52602,14 +52736,19 @@
                         "Chance"
                     ],
                     [
-                        20,
+                        10,
                         null,
-                        "Heals"
+                        "Dodge"
                     ],
                     [
                         10,
                         null,
-                        "Dodge"
+                        "AP Loss Resist"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Heals"
                     ]
                 ]
             },
@@ -52617,34 +52756,14 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        10,
+                        1,
                         null,
-                        "AP Loss Resist"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Intelligence"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Chance"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Heals"
+                        "AP"
                     ],
                     [
                         10,
                         null,
-                        "Dodge"
-                    ],
-                    [
-                        10,
-                        null,
-                        "AP Loss Resist"
+                        "Fire Damage"
                     ],
                     [
                         12,
@@ -52654,12 +52773,27 @@
                     [
                         10,
                         null,
-                        "Fire Damage"
+                        "Dodge"
                     ],
                     [
-                        1,
+                        20,
                         null,
-                        "AP"
+                        "Heals"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        10,
+                        null,
+                        "AP Loss Resist"
                     ]
                 ]
             }
@@ -52676,7 +52810,7 @@
         "name_fr": "Panoplie des Abîmes",
         "name_es": "[!] Panoplie des Abîmes",
         "name_pt": "[!] Panoplie des Abîmes",
-        "name_de": "[!] Panoplie des Abîmes",
+        "name_de": "Set des Abgrunds",
         "items": 3,
         "stats_list": [
             {
@@ -52747,7 +52881,7 @@
         "name_fr": "Panoplie des Tréfonds",
         "name_es": "[!] Panoplie des Tréfonds",
         "name_pt": "[!] Panoplie des Tréfonds",
-        "name_de": "[!] Panoplie des Tréfonds",
+        "name_de": "Set der Untiefen",
         "items": 3,
         "stats_list": [
             {
@@ -52818,7 +52952,7 @@
         "name_fr": "Panoplie de la Fosse",
         "name_es": "[!] Panoplie de la Fosse",
         "name_pt": "[!] Panoplie de la Fosse",
-        "name_de": "[!] Panoplie de la Fosse",
+        "name_de": "Gruben-Set",
         "items": 3,
         "stats_list": [
             {
@@ -52889,7 +53023,7 @@
         "name_fr": "Panoplie des Profondeurs",
         "name_es": "[!] Panoplie des Profondeurs",
         "name_pt": "[!] Panoplie des Profondeurs",
-        "name_de": "[!] Panoplie des Profondeurs",
+        "name_de": "Set der Tiefen",
         "items": 3,
         "stats_list": [
             {
@@ -52960,7 +53094,7 @@
         "name_fr": "Panoplie des Spiritueurs",
         "name_es": "[!] Panoplie des Spiritueurs",
         "name_pt": "[!] Panoplie des Spiritueurs",
-        "name_de": "[!] Panoplie des Spiritueurs",
+        "name_de": "Geistreichen-Set",
         "items": 3,
         "stats_list": [
             {
@@ -53056,14 +53190,14 @@
         "name_fr": "Panoplit",
         "name_es": "[!] Panoplit",
         "name_pt": "[!] Panoplit",
-        "name_de": "[!] Panoplit",
+        "name_de": "Betten-Set",
         "items": 3,
         "stats_list": [
             {
                 "effect_key": "2",
                 "effects": [
                     [
-                        30,
+                        50,
                         null,
                         "Power"
                     ],
@@ -53073,24 +53207,24 @@
                         "Heals"
                     ],
                     [
-                        5,
+                        10,
                         null,
-                        "Dodge"
+                        "AP Reduction"
                     ],
                     [
-                        5,
-                        null,
-                        "Critical Damage"
-                    ],
-                    [
-                        5,
+                        10,
                         null,
                         "MP Reduction"
                     ],
                     [
-                        5,
+                        10,
                         null,
-                        "AP Reduction"
+                        "Critical Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Dodge"
                     ]
                 ]
             },
@@ -53098,44 +53232,19 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        40,
+                        15,
                         null,
-                        "Power"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Heals"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Dodge"
-                    ],
-                    [
-                        2,
-                        null,
-                        "Air Damage"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Earth Damage"
-                    ],
-                    [
-                        12,
-                        null,
-                        "Water Damage"
+                        "AP Reduction"
                     ],
                     [
                         15,
                         null,
-                        "Agility"
+                        "MP Reduction"
                     ],
                     [
-                        55,
+                        15,
                         null,
-                        "Chance"
+                        "Critical Damage"
                     ],
                     [
                         40,
@@ -53143,19 +53252,44 @@
                         "Strength"
                     ],
                     [
-                        10,
+                        55,
                         null,
-                        "Critical Damage"
+                        "Chance"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        12,
+                        null,
+                        "Water Damage"
                     ],
                     [
                         10,
                         null,
-                        "MP Reduction"
+                        "Earth Damage"
                     ],
                     [
-                        10,
+                        2,
                         null,
-                        "AP Reduction"
+                        "Air Damage"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Heals"
+                    ],
+                    [
+                        70,
+                        null,
+                        "Power"
                     ]
                 ]
             }
@@ -53172,7 +53306,7 @@
         "name_fr": "Panoplie du Tynril",
         "name_es": "[!] Panoplie du Tynril",
         "name_pt": "[!] Panoplie du Tynril",
-        "name_de": "[!] Panoplie du Tynril",
+        "name_de": "Tynril-Set",
         "items": 2,
         "stats_list": [
             {
@@ -53237,7 +53371,7 @@
         "name_fr": "Panoplie du Kimbo",
         "name_es": "[!] Panoplie du Kimbo",
         "name_pt": "[!] Panoplie du Kimbo",
-        "name_de": "[!] Panoplie du Kimbo",
+        "name_de": "Kimbo-Set",
         "items": 2,
         "stats_list": [
             {
@@ -53292,7 +53426,7 @@
         "name_fr": "Panoplie de l'Apiculteur",
         "name_es": "[!] Panoplie de l'Apiculteur",
         "name_pt": "[!] Panoplie de l'Apiculteur",
-        "name_de": "[!] Panoplie de l'Apiculteur",
+        "name_de": "Set des Imkers",
         "items": 2,
         "stats_list": [
             {
@@ -53347,7 +53481,7 @@
         "name_fr": "Panoplie du frigostien curieux",
         "name_es": "[!] Panoplie du frigostien curieux",
         "name_pt": "[!] Panoplie du frigostien curieux",
-        "name_de": "[!] Panoplie du frigostien curieux",
+        "name_de": "Set des neugierigen Frigostianers",
         "items": 2,
         "stats_list": [
             {
@@ -53387,7 +53521,7 @@
         "name_fr": "Abranoplie",
         "name_es": "[!] Abranoplie",
         "name_pt": "[!] Abranoplie",
-        "name_de": "[!] Abranoplie",
+        "name_de": "Astaknyset",
         "items": 5,
         "stats_list": [
             {
@@ -53532,6 +53666,139 @@
             1559,
             1619,
             1620
+        ]
+    },
+    {
+        "ankama_id": 967,
+        "name_en": "[!] Panoplie d'apparat Chimèrivan",
+        "name_fr": "Panoplie d'apparat Chimèrivan",
+        "name_es": "[!] Panoplie d'apparat Chimèrivan",
+        "name_pt": "[!] Panoplie d'apparat Chimèrivan",
+        "name_de": "[!] Panoplie d'apparat Chimèrivan",
+        "items": 8,
+        "equipment_ids": [
+            30837,
+            30838,
+            30839,
+            30840,
+            30841,
+            30842,
+            30843,
+            30844
+        ]
+    },
+    {
+        "ankama_id": 968,
+        "name_en": "[!] Panoplie d'apparat de la Foire du Trool",
+        "name_fr": "Panoplie d'apparat de la Foire du Trool",
+        "name_es": "[!] Panoplie d'apparat de la Foire du Trool",
+        "name_pt": "[!] Panoplie d'apparat de la Foire du Trool",
+        "name_de": "[!] Panoplie d'apparat de la Foire du Trool",
+        "items": 3,
+        "equipment_ids": [
+            30962,
+            30963,
+            30964
+        ]
+    },
+    {
+        "ankama_id": 969,
+        "name_en": "[!] Panoplie d'apparat Solary",
+        "name_fr": "Panoplie d'apparat Solary",
+        "name_es": "[!] Panoplie d'apparat Solary",
+        "name_pt": "[!] Panoplie d'apparat Solary",
+        "name_de": "[!] Panoplie d'apparat Solary",
+        "items": 3,
+        "equipment_ids": [
+            30971,
+            30976,
+            30981
+        ]
+    },
+    {
+        "ankama_id": 970,
+        "name_en": "[!] Panoplie d'apparat Aegis",
+        "name_fr": "Panoplie d'apparat Aegis",
+        "name_es": "[!] Panoplie d'apparat Aegis",
+        "name_pt": "[!] Panoplie d'apparat Aegis",
+        "name_de": "[!] Panoplie d'apparat Aegis",
+        "items": 3,
+        "equipment_ids": [
+            30972,
+            30978,
+            30982
+        ]
+    },
+    {
+        "ankama_id": 971,
+        "name_en": "[!] Panoplie d'apparat Karmine Corp",
+        "name_fr": "Panoplie d'apparat Karmine Corp",
+        "name_es": "[!] Panoplie d'apparat Karmine Corp",
+        "name_pt": "[!] Panoplie d'apparat Karmine Corp",
+        "name_de": "[!] Panoplie d'apparat Karmine Corp",
+        "items": 3,
+        "equipment_ids": [
+            30973,
+            30979,
+            30983
+        ]
+    },
+    {
+        "ankama_id": 972,
+        "name_en": "[!] Panoplie d'apparat Gentle Mates",
+        "name_fr": "Panoplie d'apparat Gentle Mates",
+        "name_es": "[!] Panoplie d'apparat Gentle Mates",
+        "name_pt": "[!] Panoplie d'apparat Gentle Mates",
+        "name_de": "[!] Panoplie d'apparat Gentle Mates",
+        "items": 3,
+        "equipment_ids": [
+            30975,
+            30980,
+            30984
+        ]
+    },
+    {
+        "ankama_id": 980,
+        "name_en": "[!] Panoplie d'apparat des Lary",
+        "name_fr": "Panoplie d'apparat des Lary",
+        "name_es": "[!] Panoplie d'apparat des Lary",
+        "name_pt": "[!] Panoplie d'apparat des Lary",
+        "name_de": "[!] Panoplie d'apparat des Lary",
+        "items": 4,
+        "equipment_ids": [
+            30985,
+            30986,
+            30987,
+            30988
+        ]
+    },
+    {
+        "ankama_id": 981,
+        "name_en": "[!] Panoplie d'apparat des Maîtres Lary",
+        "name_fr": "Panoplie d'apparat des Maîtres Lary",
+        "name_es": "[!] Panoplie d'apparat des Maîtres Lary",
+        "name_pt": "[!] Panoplie d'apparat des Maîtres Lary",
+        "name_de": "[!] Panoplie d'apparat des Maîtres Lary",
+        "items": 4,
+        "equipment_ids": [
+            30989,
+            30990,
+            30991,
+            30992
+        ]
+    },
+    {
+        "ankama_id": 982,
+        "name_en": "[!] Panoplie d'apparat du Jan'Ken'Pon",
+        "name_fr": "Panoplie d'apparat du Jan'Ken'Pon",
+        "name_es": "[!] Panoplie d'apparat du Jan'Ken'Pon",
+        "name_pt": "[!] Panoplie d'apparat du Jan'Ken'Pon",
+        "name_de": "[!] Panoplie d'apparat du Jan'Ken'Pon",
+        "items": 3,
+        "equipment_ids": [
+            30833,
+            30834,
+            30835
         ]
     }
 ]

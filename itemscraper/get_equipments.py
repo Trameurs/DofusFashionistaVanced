@@ -20,7 +20,7 @@ import json
 LANGUAGES = ['en', 'fr', 'es', 'pt', 'de']
 
 # API base URL
-api_base = "https://api.dofusdu.de/dofus3beta/v1/"
+api_base = "https://api.dofusdu.de/dofus3/v1/"
 
 # Endpoints
 endpoints = {

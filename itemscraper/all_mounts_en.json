@@ -14,8 +14,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/1-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/1-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/1-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/1-256.png"
             }
         },
         {
@@ -26,8 +26,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/3-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/3-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/3-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/3-256.png"
             },
             "effects": [
                 {
@@ -66,8 +66,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/6-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/6-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/6-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/6-256.png"
             }
         },
         {
@@ -78,8 +78,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/9-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/9-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/9-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/9-256.png"
             },
             "effects": [
                 {
@@ -131,8 +131,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/10-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/10-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/10-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/10-256.png"
             },
             "effects": [
                 {
@@ -171,8 +171,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/11-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/11-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/11-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/11-256.png"
             },
             "effects": [
                 {
@@ -224,8 +224,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/12-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/12-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/12-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/12-256.png"
             },
             "effects": [
                 {
@@ -277,8 +277,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/15-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/15-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/15-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/15-256.png"
             },
             "effects": [
                 {
@@ -317,8 +317,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/16-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/16-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/16-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/16-256.png"
             },
             "effects": [
                 {
@@ -357,8 +357,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/17-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/17-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/17-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/17-256.png"
             },
             "effects": [
                 {
@@ -397,8 +397,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/18-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/18-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/18-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/18-256.png"
             },
             "effects": [
                 {
@@ -437,8 +437,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/19-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/19-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/19-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/19-256.png"
             },
             "effects": [
                 {
@@ -477,8 +477,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/20-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/20-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/20-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/20-256.png"
             },
             "effects": [
                 {
@@ -517,8 +517,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/21-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/21-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/21-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/21-256.png"
             },
             "effects": [
                 {
@@ -557,8 +557,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/22-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/22-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/22-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/22-256.png"
             },
             "effects": [
                 {
@@ -597,8 +597,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/23-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/23-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/23-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/23-256.png"
             },
             "effects": [
                 {
@@ -637,8 +637,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/33-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/33-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/33-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/33-256.png"
             },
             "effects": [
                 {
@@ -690,8 +690,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/34-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/34-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/34-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/34-256.png"
             },
             "effects": [
                 {
@@ -743,8 +743,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/35-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/35-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/35-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/35-256.png"
             },
             "effects": [
                 {
@@ -796,8 +796,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/36-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/36-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/36-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/36-256.png"
             },
             "effects": [
                 {
@@ -849,8 +849,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/37-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/37-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/37-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/37-256.png"
             },
             "effects": [
                 {
@@ -902,8 +902,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/38-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/38-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/38-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/38-256.png"
             },
             "effects": [
                 {
@@ -955,8 +955,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/39-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/39-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/39-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/39-256.png"
             },
             "effects": [
                 {
@@ -1008,8 +1008,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/40-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/40-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/40-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/40-256.png"
             },
             "effects": [
                 {
@@ -1061,8 +1061,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/41-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/41-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/41-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/41-256.png"
             },
             "effects": [
                 {
@@ -1114,8 +1114,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/42-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/42-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/42-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/42-256.png"
             },
             "effects": [
                 {
@@ -1167,8 +1167,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/43-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/43-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/43-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/43-256.png"
             },
             "effects": [
                 {
@@ -1220,8 +1220,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/44-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/44-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/44-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/44-256.png"
             },
             "effects": [
                 {
@@ -1273,8 +1273,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/45-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/45-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/45-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/45-256.png"
             },
             "effects": [
                 {
@@ -1326,8 +1326,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/46-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/46-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/46-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/46-256.png"
             },
             "effects": [
                 {
@@ -1379,8 +1379,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/47-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/47-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/47-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/47-256.png"
             },
             "effects": [
                 {
@@ -1432,8 +1432,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/48-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/48-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/48-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/48-256.png"
             },
             "effects": [
                 {
@@ -1485,8 +1485,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/49-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/49-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/49-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/49-256.png"
             },
             "effects": [
                 {
@@ -1538,8 +1538,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/50-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/50-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/50-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/50-256.png"
             },
             "effects": [
                 {
@@ -1591,8 +1591,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/51-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/51-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/51-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/51-256.png"
             },
             "effects": [
                 {
@@ -1644,8 +1644,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/52-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/52-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/52-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/52-256.png"
             },
             "effects": [
                 {
@@ -1697,8 +1697,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/53-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/53-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/53-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/53-256.png"
             },
             "effects": [
                 {
@@ -1750,8 +1750,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/54-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/54-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/54-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/54-256.png"
             },
             "effects": [
                 {
@@ -1803,8 +1803,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/55-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/55-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/55-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/55-256.png"
             },
             "effects": [
                 {
@@ -1856,8 +1856,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/56-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/56-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/56-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/56-256.png"
             },
             "effects": [
                 {
@@ -1909,8 +1909,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/57-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/57-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/57-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/57-256.png"
             },
             "effects": [
                 {
@@ -1962,8 +1962,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/58-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/58-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/58-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/58-256.png"
             },
             "effects": [
                 {
@@ -2015,8 +2015,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/59-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/59-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/59-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/59-256.png"
             },
             "effects": [
                 {
@@ -2068,8 +2068,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/60-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/60-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/60-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/60-256.png"
             },
             "effects": [
                 {
@@ -2121,8 +2121,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/61-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/61-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/61-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/61-256.png"
             },
             "effects": [
                 {
@@ -2174,8 +2174,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/62-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/62-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/62-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/62-256.png"
             },
             "effects": [
                 {
@@ -2227,8 +2227,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/63-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/63-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/63-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/63-256.png"
             },
             "effects": [
                 {
@@ -2280,8 +2280,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/64-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/64-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/64-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/64-256.png"
             },
             "effects": [
                 {
@@ -2333,8 +2333,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/65-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/65-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/65-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/65-256.png"
             },
             "effects": [
                 {
@@ -2386,8 +2386,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/66-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/66-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/66-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/66-256.png"
             },
             "effects": [
                 {
@@ -2439,8 +2439,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/67-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/67-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/67-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/67-256.png"
             },
             "effects": [
                 {
@@ -2492,8 +2492,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/68-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/68-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/68-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/68-256.png"
             },
             "effects": [
                 {
@@ -2545,8 +2545,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/69-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/69-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/69-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/69-256.png"
             },
             "effects": [
                 {
@@ -2598,8 +2598,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/70-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/70-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/70-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/70-256.png"
             },
             "effects": [
                 {
@@ -2651,8 +2651,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/71-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/71-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/71-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/71-256.png"
             },
             "effects": [
                 {
@@ -2704,8 +2704,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/72-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/72-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/72-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/72-256.png"
             },
             "effects": [
                 {
@@ -2757,8 +2757,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/73-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/73-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/73-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/73-256.png"
             },
             "effects": [
                 {
@@ -2810,8 +2810,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/74-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/74-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/74-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/74-256.png"
             }
         },
         {
@@ -2822,8 +2822,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/76-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/76-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/76-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/76-256.png"
             },
             "effects": [
                 {
@@ -2875,8 +2875,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/77-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/77-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/77-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/77-256.png"
             },
             "effects": [
                 {
@@ -2928,8 +2928,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/78-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/78-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/78-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/78-256.png"
             },
             "effects": [
                 {
@@ -2981,8 +2981,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/79-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/79-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/79-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/79-256.png"
             },
             "effects": [
                 {
@@ -3034,8 +3034,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/80-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/80-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/80-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/80-256.png"
             },
             "effects": [
                 {
@@ -3087,8 +3087,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/82-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/82-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/82-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/82-256.png"
             },
             "effects": [
                 {
@@ -3140,8 +3140,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/83-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/83-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/83-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/83-256.png"
             },
             "effects": [
                 {
@@ -3193,8 +3193,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/84-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/84-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/84-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/84-256.png"
             },
             "effects": [
                 {
@@ -3246,8 +3246,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/85-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/85-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/85-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/85-256.png"
             },
             "effects": [
                 {
@@ -3299,8 +3299,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/86-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/86-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/86-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/86-256.png"
             },
             "effects": [
                 {
@@ -3352,8 +3352,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/87-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/87-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/87-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/87-256.png"
             },
             "effects": [
                 {
@@ -3405,8 +3405,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/88-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/88-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/88-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/88-256.png"
             },
             "effects": [
                 {
@@ -3497,8 +3497,8 @@
                 "name": "Dragoturkey"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/89-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/89-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/89-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/89-256.png"
             },
             "effects": [
                 {
@@ -3518,14 +3518,14 @@
                     "int_minimum": 0,
                     "int_maximum": 10,
                     "type": {
-                        "name": "reflected Damage",
-                        "id": 223,
+                        "name": "reflected damage",
+                        "id": 247,
                         "is_meta": false,
                         "is_active": false
                     },
                     "ignore_int_min": false,
                     "ignore_int_max": false,
-                    "formatted": "0 to 10 reflected Damage"
+                    "formatted": "0 to 10 reflected damage"
                 }
             ]
         },
@@ -3537,8 +3537,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/90-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/90-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/90-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/90-256.png"
             },
             "effects": [
                 {
@@ -3577,8 +3577,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/91-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/91-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/91-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/91-256.png"
             },
             "effects": [
                 {
@@ -3617,8 +3617,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/92-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/92-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/92-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/92-256.png"
             },
             "effects": [
                 {
@@ -3657,8 +3657,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/93-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/93-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/93-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/93-256.png"
             },
             "effects": [
                 {
@@ -3697,8 +3697,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/94-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/94-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/94-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/94-256.png"
             },
             "effects": [
                 {
@@ -3737,8 +3737,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/95-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/95-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/95-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/95-256.png"
             },
             "effects": [
                 {
@@ -3777,8 +3777,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/96-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/96-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/96-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/96-256.png"
             },
             "effects": [
                 {
@@ -3817,8 +3817,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/97-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/97-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/97-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/97-256.png"
             },
             "effects": [
                 {
@@ -3857,8 +3857,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/98-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/98-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/98-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/98-256.png"
             },
             "effects": [
                 {
@@ -3897,8 +3897,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/99-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/99-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/99-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/99-256.png"
             },
             "effects": [
                 {
@@ -3937,8 +3937,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/100-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/100-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/100-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/100-256.png"
             },
             "effects": [
                 {
@@ -3977,8 +3977,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/101-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/101-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/101-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/101-256.png"
             },
             "effects": [
                 {
@@ -4030,8 +4030,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/102-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/102-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/102-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/102-256.png"
             },
             "effects": [
                 {
@@ -4083,8 +4083,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/103-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/103-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/103-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/103-256.png"
             },
             "effects": [
                 {
@@ -4136,8 +4136,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/104-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/104-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/104-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/104-256.png"
             },
             "effects": [
                 {
@@ -4189,8 +4189,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/105-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/105-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/105-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/105-256.png"
             },
             "effects": [
                 {
@@ -4242,8 +4242,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/106-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/106-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/106-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/106-256.png"
             },
             "effects": [
                 {
@@ -4295,8 +4295,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/107-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/107-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/107-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/107-256.png"
             },
             "effects": [
                 {
@@ -4348,8 +4348,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/108-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/108-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/108-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/108-256.png"
             },
             "effects": [
                 {
@@ -4401,8 +4401,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/109-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/109-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/109-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/109-256.png"
             },
             "effects": [
                 {
@@ -4454,8 +4454,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/110-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/110-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/110-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/110-256.png"
             },
             "effects": [
                 {
@@ -4507,8 +4507,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/111-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/111-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/111-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/111-256.png"
             },
             "effects": [
                 {
@@ -4560,8 +4560,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/112-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/112-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/112-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/112-256.png"
             },
             "effects": [
                 {
@@ -4613,8 +4613,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/113-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/113-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/113-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/113-256.png"
             },
             "effects": [
                 {
@@ -4666,8 +4666,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/114-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/114-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/114-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/114-256.png"
             },
             "effects": [
                 {
@@ -4719,8 +4719,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/115-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/115-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/115-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/115-256.png"
             },
             "effects": [
                 {
@@ -4772,8 +4772,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/116-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/116-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/116-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/116-256.png"
             },
             "effects": [
                 {
@@ -4825,8 +4825,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/117-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/117-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/117-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/117-256.png"
             },
             "effects": [
                 {
@@ -4878,8 +4878,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/118-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/118-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/118-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/118-256.png"
             },
             "effects": [
                 {
@@ -4931,8 +4931,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/119-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/119-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/119-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/119-256.png"
             },
             "effects": [
                 {
@@ -4984,8 +4984,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/120-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/120-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/120-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/120-256.png"
             },
             "effects": [
                 {
@@ -5037,8 +5037,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/121-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/121-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/121-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/121-256.png"
             },
             "effects": [
                 {
@@ -5090,8 +5090,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/122-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/122-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/122-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/122-256.png"
             },
             "effects": [
                 {
@@ -5143,8 +5143,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/123-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/123-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/123-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/123-256.png"
             },
             "effects": [
                 {
@@ -5196,8 +5196,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/124-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/124-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/124-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/124-256.png"
             },
             "effects": [
                 {
@@ -5249,8 +5249,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/125-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/125-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/125-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/125-256.png"
             },
             "effects": [
                 {
@@ -5302,8 +5302,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/126-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/126-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/126-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/126-256.png"
             },
             "effects": [
                 {
@@ -5355,8 +5355,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/127-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/127-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/127-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/127-256.png"
             },
             "effects": [
                 {
@@ -5408,8 +5408,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/138-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/138-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/138-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/138-256.png"
             },
             "effects": [
                 {
@@ -5461,8 +5461,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/139-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/139-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/139-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/139-256.png"
             },
             "effects": [
                 {
@@ -5514,8 +5514,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/140-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/140-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/140-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/140-256.png"
             },
             "effects": [
                 {
@@ -5567,8 +5567,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/141-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/141-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/141-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/141-256.png"
             },
             "effects": [
                 {
@@ -5620,8 +5620,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/142-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/142-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/142-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/142-256.png"
             },
             "effects": [
                 {
@@ -5673,8 +5673,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/143-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/143-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/143-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/143-256.png"
             },
             "effects": [
                 {
@@ -5726,8 +5726,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/144-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/144-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/144-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/144-256.png"
             },
             "effects": [
                 {
@@ -5779,8 +5779,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/145-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/145-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/145-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/145-256.png"
             },
             "effects": [
                 {
@@ -5832,8 +5832,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/146-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/146-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/146-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/146-256.png"
             },
             "effects": [
                 {
@@ -5885,8 +5885,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/147-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/147-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/147-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/147-256.png"
             },
             "effects": [
                 {
@@ -5938,8 +5938,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/148-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/148-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/148-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/148-256.png"
             },
             "effects": [
                 {
@@ -5991,8 +5991,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/149-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/149-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/149-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/149-256.png"
             },
             "effects": [
                 {
@@ -6044,8 +6044,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/150-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/150-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/150-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/150-256.png"
             },
             "effects": [
                 {
@@ -6097,8 +6097,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/151-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/151-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/151-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/151-256.png"
             },
             "effects": [
                 {
@@ -6150,8 +6150,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/152-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/152-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/152-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/152-256.png"
             },
             "effects": [
                 {
@@ -6203,8 +6203,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/153-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/153-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/153-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/153-256.png"
             },
             "effects": [
                 {
@@ -6256,8 +6256,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/154-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/154-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/154-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/154-256.png"
             },
             "effects": [
                 {
@@ -6309,8 +6309,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/155-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/155-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/155-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/155-256.png"
             },
             "effects": [
                 {
@@ -6362,8 +6362,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/156-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/156-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/156-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/156-256.png"
             },
             "effects": [
                 {
@@ -6415,8 +6415,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/157-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/157-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/157-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/157-256.png"
             },
             "effects": [
                 {
@@ -6468,8 +6468,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/158-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/158-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/158-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/158-256.png"
             },
             "effects": [
                 {
@@ -6521,8 +6521,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/159-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/159-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/159-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/159-256.png"
             },
             "effects": [
                 {
@@ -6574,8 +6574,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/160-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/160-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/160-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/160-256.png"
             },
             "effects": [
                 {
@@ -6627,8 +6627,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/161-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/161-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/161-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/161-256.png"
             },
             "effects": [
                 {
@@ -6680,8 +6680,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/162-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/162-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/162-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/162-256.png"
             },
             "effects": [
                 {
@@ -6733,8 +6733,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/163-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/163-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/163-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/163-256.png"
             },
             "effects": [
                 {
@@ -6786,8 +6786,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/164-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/164-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/164-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/164-256.png"
             },
             "effects": [
                 {
@@ -6839,8 +6839,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/165-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/165-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/165-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/165-256.png"
             },
             "effects": [
                 {
@@ -6892,8 +6892,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/167-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/167-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/167-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/167-256.png"
             }
         },
         {
@@ -6904,8 +6904,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/168-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/168-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/168-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/168-256.png"
             },
             "effects": [
                 {
@@ -6931,8 +6931,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/169-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/169-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/169-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/169-256.png"
             },
             "effects": [
                 {
@@ -6958,8 +6958,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/170-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/170-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/170-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/170-256.png"
             },
             "effects": [
                 {
@@ -6985,8 +6985,8 @@
                 "name": "Seemyool"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/171-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/171-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/171-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/171-256.png"
             },
             "effects": [
                 {
@@ -7012,8 +7012,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/172-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/172-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/172-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/172-256.png"
             }
         },
         {
@@ -7024,8 +7024,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/173-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/173-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/173-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/173-256.png"
             }
         },
         {
@@ -7036,8 +7036,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/174-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/174-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/174-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/174-256.png"
             }
         },
         {
@@ -7048,8 +7048,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/175-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/175-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/175-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/175-256.png"
             }
         },
         {
@@ -7060,8 +7060,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/176-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/176-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/176-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/176-256.png"
             },
             "effects": [
                 {
@@ -7100,8 +7100,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/177-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/177-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/177-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/177-256.png"
             },
             "effects": [
                 {
@@ -7140,8 +7140,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/178-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/178-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/178-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/178-256.png"
             },
             "effects": [
                 {
@@ -7180,8 +7180,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/179-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/179-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/179-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/179-256.png"
             },
             "effects": [
                 {
@@ -7220,8 +7220,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/180-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/180-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/180-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/180-256.png"
             },
             "effects": [
                 {
@@ -7260,8 +7260,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/181-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/181-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/181-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/181-256.png"
             },
             "effects": [
                 {
@@ -7300,8 +7300,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/182-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/182-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/182-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/182-256.png"
             },
             "effects": [
                 {
@@ -7340,8 +7340,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/183-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/183-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/183-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/183-256.png"
             },
             "effects": [
                 {
@@ -7380,8 +7380,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/184-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/184-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/184-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/184-256.png"
             },
             "effects": [
                 {
@@ -7420,8 +7420,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/185-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/185-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/185-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/185-256.png"
             },
             "effects": [
                 {
@@ -7460,8 +7460,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/186-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/186-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/186-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/186-256.png"
             },
             "effects": [
                 {
@@ -7500,8 +7500,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/187-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/187-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/187-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/187-256.png"
             },
             "effects": [
                 {
@@ -7540,8 +7540,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/188-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/188-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/188-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/188-256.png"
             },
             "effects": [
                 {
@@ -7580,8 +7580,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/189-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/189-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/189-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/189-256.png"
             },
             "effects": [
                 {
@@ -7620,8 +7620,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/190-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/190-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/190-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/190-256.png"
             },
             "effects": [
                 {
@@ -7660,8 +7660,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/191-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/191-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/191-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/191-256.png"
             },
             "effects": [
                 {
@@ -7713,8 +7713,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/192-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/192-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/192-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/192-256.png"
             },
             "effects": [
                 {
@@ -7766,8 +7766,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/193-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/193-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/193-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/193-256.png"
             },
             "effects": [
                 {
@@ -7819,8 +7819,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/194-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/194-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/194-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/194-256.png"
             },
             "effects": [
                 {
@@ -7872,8 +7872,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/195-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/195-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/195-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/195-256.png"
             },
             "effects": [
                 {
@@ -7925,8 +7925,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/196-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/196-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/196-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/196-256.png"
             },
             "effects": [
                 {
@@ -7978,8 +7978,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/197-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/197-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/197-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/197-256.png"
             },
             "effects": [
                 {
@@ -8031,8 +8031,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/198-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/198-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/198-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/198-256.png"
             },
             "effects": [
                 {
@@ -8084,8 +8084,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/199-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/199-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/199-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/199-256.png"
             },
             "effects": [
                 {
@@ -8137,8 +8137,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/200-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/200-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/200-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/200-256.png"
             },
             "effects": [
                 {
@@ -8190,8 +8190,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/201-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/201-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/201-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/201-256.png"
             },
             "effects": [
                 {
@@ -8243,8 +8243,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/202-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/202-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/202-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/202-256.png"
             },
             "effects": [
                 {
@@ -8296,8 +8296,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/203-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/203-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/203-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/203-256.png"
             },
             "effects": [
                 {
@@ -8349,8 +8349,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/204-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/204-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/204-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/204-256.png"
             },
             "effects": [
                 {
@@ -8402,8 +8402,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/205-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/205-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/205-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/205-256.png"
             },
             "effects": [
                 {
@@ -8455,8 +8455,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/206-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/206-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/206-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/206-256.png"
             },
             "effects": [
                 {
@@ -8508,8 +8508,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/207-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/207-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/207-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/207-256.png"
             },
             "effects": [
                 {
@@ -8561,8 +8561,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/208-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/208-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/208-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/208-256.png"
             },
             "effects": [
                 {
@@ -8614,8 +8614,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/209-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/209-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/209-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/209-256.png"
             },
             "effects": [
                 {
@@ -8667,8 +8667,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/210-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/210-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/210-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/210-256.png"
             },
             "effects": [
                 {
@@ -8720,8 +8720,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/211-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/211-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/211-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/211-256.png"
             },
             "effects": [
                 {
@@ -8773,8 +8773,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/212-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/212-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/212-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/212-256.png"
             },
             "effects": [
                 {
@@ -8826,8 +8826,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/213-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/213-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/213-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/213-256.png"
             },
             "effects": [
                 {
@@ -8879,8 +8879,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/214-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/214-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/214-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/214-256.png"
             },
             "effects": [
                 {
@@ -8932,8 +8932,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/215-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/215-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/215-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/215-256.png"
             },
             "effects": [
                 {
@@ -8985,8 +8985,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/216-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/216-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/216-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/216-256.png"
             },
             "effects": [
                 {
@@ -9038,8 +9038,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/217-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/217-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/217-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/217-256.png"
             },
             "effects": [
                 {
@@ -9091,8 +9091,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/218-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/218-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/218-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/218-256.png"
             },
             "effects": [
                 {
@@ -9144,8 +9144,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/219-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/219-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/219-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/219-256.png"
             },
             "effects": [
                 {
@@ -9197,8 +9197,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/220-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/220-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/220-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/220-256.png"
             },
             "effects": [
                 {
@@ -9250,8 +9250,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/221-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/221-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/221-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/221-256.png"
             },
             "effects": [
                 {
@@ -9303,8 +9303,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/222-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/222-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/222-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/222-256.png"
             },
             "effects": [
                 {
@@ -9356,8 +9356,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/223-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/223-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/223-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/223-256.png"
             },
             "effects": [
                 {
@@ -9409,8 +9409,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/224-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/224-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/224-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/224-256.png"
             },
             "effects": [
                 {
@@ -9462,8 +9462,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/225-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/225-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/225-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/225-256.png"
             },
             "effects": [
                 {
@@ -9515,8 +9515,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/226-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/226-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/226-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/226-256.png"
             },
             "effects": [
                 {
@@ -9568,8 +9568,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/227-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/227-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/227-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/227-256.png"
             },
             "effects": [
                 {
@@ -9621,8 +9621,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/228-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/228-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/228-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/228-256.png"
             },
             "effects": [
                 {
@@ -9674,8 +9674,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/229-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/229-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/229-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/229-256.png"
             },
             "effects": [
                 {
@@ -9727,8 +9727,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/230-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/230-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/230-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/230-256.png"
             },
             "effects": [
                 {
@@ -9780,8 +9780,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/231-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/231-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/231-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/231-256.png"
             },
             "effects": [
                 {
@@ -9833,8 +9833,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/233-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/233-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/233-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/233-256.png"
             },
             "effects": [
                 {
@@ -9886,8 +9886,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/234-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/234-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/234-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/234-256.png"
             },
             "effects": [
                 {
@@ -9939,8 +9939,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/235-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/235-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/235-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/235-256.png"
             },
             "effects": [
                 {
@@ -9992,8 +9992,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/236-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/236-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/236-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/236-256.png"
             },
             "effects": [
                 {
@@ -10045,8 +10045,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/237-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/237-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/237-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/237-256.png"
             },
             "effects": [
                 {
@@ -10098,8 +10098,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/238-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/238-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/238-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/238-256.png"
             },
             "effects": [
                 {
@@ -10151,8 +10151,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/239-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/239-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/239-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/239-256.png"
             },
             "effects": [
                 {
@@ -10204,8 +10204,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/240-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/240-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/240-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/240-256.png"
             },
             "effects": [
                 {
@@ -10257,8 +10257,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/241-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/241-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/241-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/241-256.png"
             },
             "effects": [
                 {
@@ -10310,8 +10310,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/242-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/242-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/242-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/242-256.png"
             },
             "effects": [
                 {
@@ -10363,8 +10363,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/243-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/243-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/243-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/243-256.png"
             },
             "effects": [
                 {
@@ -10416,8 +10416,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/244-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/244-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/244-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/244-256.png"
             },
             "effects": [
                 {
@@ -10469,8 +10469,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/245-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/245-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/245-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/245-256.png"
             },
             "effects": [
                 {
@@ -10522,8 +10522,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/246-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/246-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/246-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/246-256.png"
             },
             "effects": [
                 {
@@ -10575,8 +10575,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/247-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/247-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/247-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/247-256.png"
             },
             "effects": [
                 {
@@ -10628,8 +10628,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/248-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/248-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/248-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/248-256.png"
             },
             "effects": [
                 {
@@ -10681,8 +10681,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/249-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/249-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/249-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/249-256.png"
             },
             "effects": [
                 {
@@ -10734,8 +10734,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/250-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/250-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/250-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/250-256.png"
             },
             "effects": [
                 {
@@ -10787,8 +10787,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/251-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/251-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/251-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/251-256.png"
             },
             "effects": [
                 {
@@ -10840,8 +10840,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/252-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/252-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/252-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/252-256.png"
             },
             "effects": [
                 {
@@ -10893,8 +10893,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/253-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/253-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/253-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/253-256.png"
             },
             "effects": [
                 {
@@ -10946,8 +10946,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/254-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/254-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/254-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/254-256.png"
             },
             "effects": [
                 {
@@ -10999,8 +10999,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/255-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/255-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/255-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/255-256.png"
             },
             "effects": [
                 {
@@ -11052,8 +11052,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/256-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/256-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/256-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/256-256.png"
             },
             "effects": [
                 {
@@ -11105,8 +11105,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/257-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/257-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/257-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/257-256.png"
             },
             "effects": [
                 {
@@ -11158,8 +11158,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/258-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/258-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/258-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/258-256.png"
             },
             "effects": [
                 {
@@ -11211,8 +11211,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/259-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/259-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/259-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/259-256.png"
             },
             "effects": [
                 {
@@ -11264,8 +11264,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/260-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/260-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/260-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/260-256.png"
             },
             "effects": [
                 {
@@ -11317,8 +11317,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/261-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/261-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/261-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/261-256.png"
             },
             "effects": [
                 {
@@ -11370,8 +11370,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/262-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/262-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/262-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/262-256.png"
             },
             "effects": [
                 {
@@ -11423,8 +11423,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/263-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/263-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/263-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/263-256.png"
             },
             "effects": [
                 {
@@ -11476,8 +11476,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/264-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/264-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/264-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/264-256.png"
             },
             "effects": [
                 {
@@ -11529,8 +11529,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/265-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/265-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/265-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/265-256.png"
             },
             "effects": [
                 {
@@ -11582,8 +11582,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/266-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/266-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/266-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/266-256.png"
             },
             "effects": [
                 {
@@ -11635,8 +11635,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/267-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/267-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/267-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/267-256.png"
             },
             "effects": [
                 {
@@ -11688,8 +11688,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/268-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/268-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/268-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/268-256.png"
             },
             "effects": [
                 {
@@ -11741,8 +11741,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/269-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/269-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/269-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/269-256.png"
             },
             "effects": [
                 {
@@ -11794,8 +11794,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/270-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/270-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/270-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/270-256.png"
             },
             "effects": [
                 {
@@ -11847,8 +11847,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/271-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/271-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/271-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/271-256.png"
             },
             "effects": [
                 {
@@ -11900,8 +11900,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/272-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/272-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/272-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/272-256.png"
             },
             "effects": [
                 {
@@ -11953,8 +11953,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/273-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/273-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/273-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/273-256.png"
             },
             "effects": [
                 {
@@ -12006,8 +12006,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/274-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/274-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/274-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/274-256.png"
             },
             "effects": [
                 {
@@ -12059,8 +12059,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/275-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/275-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/275-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/275-256.png"
             },
             "effects": [
                 {
@@ -12112,8 +12112,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/276-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/276-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/276-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/276-256.png"
             },
             "effects": [
                 {
@@ -12165,8 +12165,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/277-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/277-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/277-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/277-256.png"
             },
             "effects": [
                 {
@@ -12218,8 +12218,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/278-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/278-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/278-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/278-256.png"
             },
             "effects": [
                 {
@@ -12271,8 +12271,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/279-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/279-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/279-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/279-256.png"
             },
             "effects": [
                 {
@@ -12324,8 +12324,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/280-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/280-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/280-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/280-256.png"
             },
             "effects": [
                 {
@@ -12377,8 +12377,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/281-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/281-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/281-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/281-256.png"
             },
             "effects": [
                 {
@@ -12430,8 +12430,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/282-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/282-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/282-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/282-256.png"
             },
             "effects": [
                 {
@@ -12483,8 +12483,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/283-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/283-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/283-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/283-256.png"
             },
             "effects": [
                 {
@@ -12536,8 +12536,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/284-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/284-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/284-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/284-256.png"
             },
             "effects": [
                 {
@@ -12589,8 +12589,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/285-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/285-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/285-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/285-256.png"
             },
             "effects": [
                 {
@@ -12642,8 +12642,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/286-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/286-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/286-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/286-256.png"
             },
             "effects": [
                 {
@@ -12695,8 +12695,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/287-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/287-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/287-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/287-256.png"
             },
             "effects": [
                 {
@@ -12748,8 +12748,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/288-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/288-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/288-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/288-256.png"
             },
             "effects": [
                 {
@@ -12801,8 +12801,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/289-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/289-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/289-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/289-256.png"
             },
             "effects": [
                 {
@@ -12854,8 +12854,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/290-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/290-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/290-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/290-256.png"
             },
             "effects": [
                 {
@@ -12907,8 +12907,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/291-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/291-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/291-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/291-256.png"
             },
             "effects": [
                 {
@@ -12960,8 +12960,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/292-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/292-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/292-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/292-256.png"
             },
             "effects": [
                 {
@@ -13013,8 +13013,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/293-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/293-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/293-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/293-256.png"
             },
             "effects": [
                 {
@@ -13066,8 +13066,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/294-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/294-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/294-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/294-256.png"
             },
             "effects": [
                 {
@@ -13119,8 +13119,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/295-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/295-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/295-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/295-256.png"
             },
             "effects": [
                 {
@@ -13172,8 +13172,8 @@
                 "name": "Rhineetle"
             },
             "image_urls": {
-                "icon": "https://api.dofusdu.de/dofus3beta/v1/img/mount/296-64.png",
-                "sd": "https://api.dofusdu.de/dofus3beta/v1/img/mount/296-256.png"
+                "icon": "https://api.dofusdu.de/dofus3/v1/img/mount/296-64.png",
+                "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/296-256.png"
             },
             "effects": [
                 {

@@ -104,14 +104,14 @@ run_fashionista.bat
     🚧 80% Portuguese (some spells and text left)          
     🚧 30% Deutsche (only items done)           
     ❌ 0% Italian (Ankama removed Italian language)           
-✅ All equipments and mounts updated to Dofus Unity Beta release (3.0.5.9)     
+✅ All equipments and mounts updated to Dofus 3 Unity release (3.0.12.7)     
 ✅ Bug fixes and improvement for 3.0 release   
 ❌ Add ability to forbid prysmaradite       
 ❌ Make it mobile friendly             
         
 ❌ New features after 3.0 TBD         
        
-✅ Dofus Unity             
+✅ Dofus 3 Unity             
 ❌ Dofus Touch            
 ❌ Dofus Retro             
               
