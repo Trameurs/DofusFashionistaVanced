@@ -103,7 +103,7 @@ STAT_TRANSLATE = {
     '-special spell-': '-special spell-',
     'Emote': 'Emote',
     '(Fire steal)': 'Fire Steal',
-    '(Earth damage)': 'Earth damage',
+    '(Earth damage)': '(Earth damage)',
     '(<sprite name="feu"> Fire heals)': 'Fire heals',
     '(Water steal)': '(Water steal)',
     '(Neutral steal)': '(Neutral steal)',
