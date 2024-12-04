@@ -33,15 +33,30 @@ def download_image(url, filename):
 current_directory = os.path.dirname(__file__)
 target_directory = os.path.join(current_directory, '../fashionsite/staticfiles/chardata/')
 
-count = 0
 total = len(data)
+count = 0
+last_percentage = -1
+print(f"Total images to download: {total}")
 for item in data:
     image_url = item.get('image_url')
     if image_url:
+        original_name = f"{item['name_en']}.png"
+        sanitized_name = sanitize_filename(original_name)
+
         if item['w_type'] == 'Petsmount' or item['w_type'] == 'Pet':
-            filename = os.path.join(target_directory, "pets/", sanitize_filename(f"{item['name_en']}.png"))
+            directory = os.path.join(target_directory, "pets/")
         else:
-            filename = os.path.join(target_directory, "items/", sanitize_filename(f"{item['name_en']}.png"))
+            directory = os.path.join(target_directory, "items/")
+        
+        filename = os.path.join(directory, sanitized_name)
+        
+        if original_name != sanitized_name:
+            print(f"Filename modified: {original_name} -> {sanitized_name}")
+        
         download_image(image_url, filename)
+        
         count += 1
-        print(f"Download images {count} / {total}")
+        percentage = int((count / total) * 100)
+        if percentage > last_percentage:
+            print(f"Progress: {percentage}%")
+            last_percentage = percentage

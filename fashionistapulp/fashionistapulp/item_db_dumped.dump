@@ -2171,7 +2171,7 @@ INSERT INTO items VALUES(1260,'Studded Staff',107,1,NULL,8607,'equipment',NULL,N
 INSERT INTO items VALUES(1261,'Scrap Staff',85,1,NULL,8608,'equipment',NULL,NULL);
 INSERT INTO items VALUES(1262,'Bushi''Bow',81,1,NULL,8609,'equipment',NULL,NULL);
 INSERT INTO items VALUES(1263,'Bow Liwood',79,1,NULL,8610,'equipment',NULL,NULL);
-INSERT INTO items VALUES(1264,'Wand Else?',69,1,NULL,8611,'equipment',NULL,NULL);
+INSERT INTO items VALUES(1264,'Wand Else',69,1,NULL,8611,'equipment',NULL,NULL);
 INSERT INTO items VALUES(1265,'The Bidjiz',74,1,NULL,8612,'equipment',NULL,NULL);
 INSERT INTO items VALUES(1266,'Shovel Minster',70,1,NULL,8613,'equipment',NULL,NULL);
 INSERT INTO items VALUES(1267,'RIP Shovel',66,1,NULL,8614,'equipment',NULL,NULL);
@@ -4107,11 +4107,11 @@ INSERT INTO items VALUES(3196,'Turtelonia Horn',200,3,334,21235,'equipment',NULL
 INSERT INTO items VALUES(3197,'Prytekt',200,9,NULL,21451,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3198,'Shiny Prytekt',200,9,NULL,21452,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3199,'Iridescent Prytekt',200,9,NULL,21453,'equipment',NULL,NULL);
-INSERT INTO items VALUES(3200,'Plushy-Ball: Drheller',1,1,NULL,21506,'equipment',NULL,NULL);
-INSERT INTO items VALUES(3201,'Plushy-Ball: Gobball',1,1,NULL,21507,'equipment',NULL,NULL);
-INSERT INTO items VALUES(3202,'Plushy-Ball: Tofu',1,1,NULL,21508,'equipment',NULL,NULL);
-INSERT INTO items VALUES(3203,'Plushy-Ball: Bow Meow',1,1,NULL,21509,'equipment',NULL,NULL);
-INSERT INTO items VALUES(3204,'Plushy-Ball: Minikron',1,1,NULL,21510,'equipment',NULL,NULL);
+INSERT INTO items VALUES(3200,'Plushy-Ball Drheller',1,1,NULL,21506,'equipment',NULL,NULL);
+INSERT INTO items VALUES(3201,'Plushy-Ball Gobball',1,1,NULL,21507,'equipment',NULL,NULL);
+INSERT INTO items VALUES(3202,'Plushy-Ball Tofu',1,1,NULL,21508,'equipment',NULL,NULL);
+INSERT INTO items VALUES(3203,'Plushy-Ball Bow Meow',1,1,NULL,21509,'equipment',NULL,NULL);
+INSERT INTO items VALUES(3204,'Plushy-Ball Minikron',1,1,NULL,21510,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3205,'Weighted Wooden Wings',1,4,NULL,21711,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3206,'Weighted Helmet',1,3,NULL,21712,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3207,'Nightmare Catcher',10,1,NULL,21878,'equipment',NULL,NULL);
@@ -4342,7 +4342,7 @@ INSERT INTO items VALUES(3431,'Ziplizard',60,10,NULL,29434,'equipment',NULL,NULL
 INSERT INTO items VALUES(3432,'Kobrapid',60,10,NULL,29435,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3433,'Kwismas Gull',60,10,NULL,29456,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3434,'Tonbarian Shield',15,2,NULL,29463,'equipment',NULL,NULL);
-INSERT INTO items VALUES(3435,'[!] Égide d''Allister',197,2,173,30060,'equipment',NULL,NULL);
+INSERT INTO items VALUES(3435,'Égide d''Allister',197,2,173,30060,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3436,'Aiwuztheya Dofus',20,9,NULL,30356,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3437,'Cautious',150,9,NULL,30451,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3438,'Audacious',150,9,NULL,30452,'equipment',NULL,NULL);
@@ -4366,8 +4366,8 @@ INSERT INTO items VALUES(3455,'Virgil''s Lectern',115,2,NULL,30693,'equipment',N
 INSERT INTO items VALUES(3456,'Halt Efkat',1,2,68,30701,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3457,'Bounihime',1,1,68,30828,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3458,'Frank B. Nhin Hunting Knife',1,1,NULL,30832,'equipment',NULL,NULL);
-INSERT INTO items VALUES(3459,'[!] Poignards du Captain Chafer',200,1,776,30855,'equipment',NULL,NULL);
-INSERT INTO items VALUES(3460,'[!] Slip du Captain Chafer',200,7,776,30856,'equipment',NULL,NULL);
+INSERT INTO items VALUES(3459,'Poignards du Captain Chafer',200,1,776,30855,'equipment',NULL,NULL);
+INSERT INTO items VALUES(3460,'Slip du Captain Chafer',200,7,776,30856,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3461,'Captain Chafer''s Boots',200,8,776,30857,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3462,'Mama Ayuto''s Parasail',200,2,777,30858,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3463,'Mama Ayuto''s Rolling Pin',200,1,777,30859,'equipment',NULL,NULL);
@@ -4376,8 +4376,8 @@ INSERT INTO items VALUES(3465,'Dark Vlad''s Flamberge',200,1,778,30861,'equipmen
 INSERT INTO items VALUES(3466,'Dark Vlad''s Tabard',200,7,778,30862,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3467,'Dark Vlad''s Collar',200,5,778,30863,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3468,'Dark Vlad''s Ring',200,6,NULL,30943,'equipment',NULL,NULL);
-INSERT INTO items VALUES(3469,'[!] Masse Étacée',200,1,784,30949,'equipment',NULL,NULL);
-INSERT INTO items VALUES(3470,'[!] Booftrool blanc',20,10,NULL,30957,'equipment',NULL,NULL);
+INSERT INTO items VALUES(3469,'Masse Étacée',200,1,784,30949,'equipment',NULL,NULL);
+INSERT INTO items VALUES(3470,'Booftrool blanc',20,10,NULL,30957,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3471,'Wild Almond Dragoturkey',60,10,NULL,1,'mounts',NULL,NULL);
 INSERT INTO items VALUES(3472,'Ebony Dragoturkey',60,10,NULL,3,'mounts',NULL,NULL);
 INSERT INTO items VALUES(3473,'Wild Ginger Dragoturkey',60,10,NULL,6,'mounts',NULL,NULL);

@@ -17,6 +17,7 @@
 import json
 from copy import deepcopy
 import os
+import re
 
 current_directory = os.path.dirname(__file__) # Get the current directory
 
@@ -144,8 +145,13 @@ STAT_TRANSLATE = {
     '(best-element damage)' : '(best-element damage)',
 }
 
-
 LANGUAGES = ['en', 'fr', 'es', 'pt', 'de']
+
+
+def sanitize_filename(name):
+    name = re.sub(r'[\\/*?:"<>|]', "", name) 
+    name = name.replace("[!]", "") # Remove unavailable language tag
+    return name.strip()
 
 def parse_conditions(tree):
     """
@@ -238,8 +244,21 @@ for item in equipment_data['en']['items']:
     if "name" in item:
         for lang in LANGUAGES:
             lang_name_key = f"name_{lang}"
-            lang_item = next((i for i in equipment_data[lang]['items'] if i['ankama_id'] == item['ankama_id']), None)
-            transformed_item[lang_name_key] = lang_item['name'] if lang_item else None
+            lang_item = next(
+                (i for i in equipment_data[lang]['items'] if i['ankama_id'] == item['ankama_id']),
+                None
+            )
+            if lang_item:
+                original_name = lang_item['name']
+                if lang == "en":
+                    sanitized_name = sanitize_filename(original_name)
+                    if original_name != sanitized_name:
+                        print(f"Modified name for {lang_name_key}: '{original_name}' -> '{sanitized_name}'")
+                    transformed_item[lang_name_key] = sanitized_name
+                else:
+                    transformed_item[lang_name_key] = original_name
+            else:
+                transformed_item[lang_name_key] = None
     if "type" in item:
         transformed_item["w_type"] = item["type"]["name"]
     if "level" in item:
