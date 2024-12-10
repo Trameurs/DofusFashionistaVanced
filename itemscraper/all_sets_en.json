@@ -9671,7 +9671,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected damage",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9699,7 +9699,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected damage",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9753,7 +9753,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected damage",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9807,7 +9807,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected damage",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -37776,7 +37776,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected damage",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -37817,7 +37817,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected damage",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -82455,30 +82455,17 @@
                 ],
                 "3": [
                     {
-                        "int_minimum": 10,
+                        "int_minimum": 1,
                         "int_maximum": 0,
                         "type": {
-                            "name": "% Critical",
-                            "id": 29,
+                            "name": "AP",
+                            "id": 12,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10% Critical"
-                    },
-                    {
-                        "int_minimum": 40,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Strength",
-                            "id": 45,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "40 Strength"
+                        "formatted": "1 AP"
                     },
                     {
                         "int_minimum": 40,
@@ -82494,17 +82481,30 @@
                         "formatted": "40 Agility"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 40,
                         "int_maximum": 0,
                         "type": {
-                            "name": "MP",
-                            "id": 8,
+                            "name": "Strength",
+                            "id": 45,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "1 MP"
+                        "formatted": "40 Strength"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "% Critical",
+                            "id": 29,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10% Critical"
                     }
                 ]
             },
@@ -82935,17 +82935,17 @@
                         "formatted": "10 MP Reduction"
                     },
                     {
-                        "int_minimum": -20,
+                        "int_minimum": 20,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Dodge",
-                            "id": 59,
+                            "name": "Lock",
+                            "id": 26,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "-20 Dodge"
+                        "formatted": "20 Lock"
                     },
                     {
                         "int_minimum": 10,
@@ -82959,7 +82959,9 @@
                         "ignore_int_min": false,
                         "ignore_int_max": true,
                         "formatted": "10 Critical Damage"
-                    },
+                    }
+                ],
+                "3": [
                     {
                         "int_minimum": 20,
                         "int_maximum": 0,
@@ -82972,60 +82974,6 @@
                         "ignore_int_min": false,
                         "ignore_int_max": true,
                         "formatted": "20 Lock"
-                    }
-                ],
-                "3": [
-                    {
-                        "int_minimum": -20,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Dodge",
-                            "id": 59,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "-20 Dodge"
-                    },
-                    {
-                        "int_minimum": 60,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Intelligence",
-                            "id": 13,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "60 Intelligence"
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "MP Reduction",
-                            "id": 50,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 MP Reduction"
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Critical Damage",
-                            "id": 38,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 Critical Damage"
                     },
                     {
                         "int_minimum": 1,
@@ -83041,17 +82989,43 @@
                         "formatted": "1 AP"
                     },
                     {
-                        "int_minimum": 20,
+                        "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Lock",
-                            "id": 26,
+                            "name": "Critical Damage",
+                            "id": 38,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "20 Lock"
+                        "formatted": "10 Critical Damage"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "MP Reduction",
+                            "id": 50,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 MP Reduction"
+                    },
+                    {
+                        "int_minimum": 60,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Intelligence",
+                            "id": 13,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "60 Intelligence"
                     }
                 ]
             },
@@ -83196,7 +83170,7 @@
                         "formatted": "60 Strength"
                     },
                     {
-                        "int_minimum": 10,
+                        "int_minimum": 15,
                         "int_maximum": 0,
                         "type": {
                             "name": "Critical Damage",
@@ -83206,20 +83180,7 @@
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 Critical Damage"
-                    },
-                    {
-                        "int_minimum": -5,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "AP Parry",
-                            "id": 75,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "-5 AP Parry"
+                        "formatted": "15 Critical Damage"
                     },
                     {
                         "int_minimum": 5,
@@ -83237,43 +83198,17 @@
                 ],
                 "3": [
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 60,
                         "int_maximum": 0,
                         "type": {
-                            "name": "MP",
-                            "id": 8,
+                            "name": "Strength",
+                            "id": 45,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "1 MP"
-                    },
-                    {
-                        "int_minimum": -5,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "AP Parry",
-                            "id": 75,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "-5 AP Parry"
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Critical Damage",
-                            "id": 38,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 Critical Damage"
+                        "formatted": "60 Strength"
                     },
                     {
                         "int_minimum": 7,
@@ -83289,17 +83224,30 @@
                         "formatted": "7% Critical"
                     },
                     {
-                        "int_minimum": 60,
+                        "int_minimum": 15,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Strength",
-                            "id": 45,
+                            "name": "Critical Damage",
+                            "id": 38,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "60 Strength"
+                        "formatted": "15 Critical Damage"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "AP",
+                            "id": 12,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 AP"
                     }
                 ]
             },
@@ -101632,7 +101580,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected damage",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -101946,7 +101894,7 @@
         },
         {
             "ankama_id": 938,
-            "name": "[!] Panoplie du Captain Chafer",
+            "name": "Captain Chafer Set",
             "items": 3,
             "level": 200,
             "contains_cosmetics": false,
@@ -102213,7 +102161,7 @@
         },
         {
             "ankama_id": 941,
-            "name": "[!] Panoplie de Mama Ayuto",
+            "name": "Mama Ayuto Set",
             "items": 3,
             "level": 200,
             "contains_cosmetics": false,
@@ -102350,7 +102298,7 @@
         },
         {
             "ankama_id": 943,
-            "name": "[!] Panoplie du Dark Vlad",
+            "name": "Dark Vlad Set",
             "items": 3,
             "level": 200,
             "contains_cosmetics": false,
@@ -102487,7 +102435,7 @@
         },
         {
             "ankama_id": 944,
-            "name": "[!] Panoplie de Phong Huss",
+            "name": "Phong Huss Set",
             "items": 3,
             "level": 33,
             "contains_cosmetics": false,
@@ -102585,7 +102533,7 @@
         },
         {
             "ankama_id": 945,
-            "name": "[!] Panoplie de Grilliane",
+            "name": "Grillian Set",
             "items": 2,
             "level": 46,
             "contains_cosmetics": false,
@@ -102667,7 +102615,7 @@
         },
         {
             "ankama_id": 946,
-            "name": "[!] Panoplie de Crocuzko",
+            "name": "Crocuzko Set",
             "items": 2,
             "level": 200,
             "contains_cosmetics": false,
@@ -102762,7 +102710,7 @@
         },
         {
             "ankama_id": 947,
-            "name": "[!] Panoplie de Pol Ouatnos",
+            "name": "Pawl Ouatnos Set",
             "items": 2,
             "level": 200,
             "contains_cosmetics": false,
@@ -102831,7 +102779,7 @@
         },
         {
             "ankama_id": 948,
-            "name": "[!] Panoplie des Krobes",
+            "name": "Krobe Set",
             "items": 4,
             "level": 200,
             "contains_cosmetics": false,
@@ -103166,7 +103114,7 @@
         },
         {
             "ankama_id": 949,
-            "name": "[!] Panoplie de la Baleine",
+            "name": "Whale Set",
             "items": 5,
             "level": 200,
             "contains_cosmetics": false,
@@ -103569,7 +103517,7 @@
         },
         {
             "ankama_id": 950,
-            "name": "[!] Panoplie Ensevelie",
+            "name": "Snowbound Set",
             "items": 2,
             "level": 200,
             "contains_cosmetics": false,
@@ -103638,7 +103586,7 @@
         },
         {
             "ankama_id": 951,
-            "name": "[!] Panoplie Noyée",
+            "name": "Drowned Set",
             "items": 2,
             "level": 200,
             "contains_cosmetics": false,
@@ -103707,7 +103655,7 @@
         },
         {
             "ankama_id": 952,
-            "name": "[!] Panoplie du Fourneau",
+            "name": "Oven Set",
             "items": 2,
             "level": 200,
             "contains_cosmetics": false,
@@ -103776,7 +103724,7 @@
         },
         {
             "ankama_id": 953,
-            "name": "[!] Panoplie de la Fournaise",
+            "name": "Furnace Set",
             "items": 2,
             "level": 200,
             "contains_cosmetics": false,
@@ -103845,7 +103793,7 @@
         },
         {
             "ankama_id": 954,
-            "name": "[!] Panoplie de la Pyramide",
+            "name": "Pyramid Set",
             "items": 3,
             "level": 200,
             "contains_cosmetics": false,
@@ -104021,7 +103969,7 @@
         },
         {
             "ankama_id": 955,
-            "name": "[!] Panoplie des Maudits",
+            "name": "Cursed Set",
             "items": 3,
             "level": 200,
             "contains_cosmetics": false,
@@ -104210,7 +104158,7 @@
         },
         {
             "ankama_id": 956,
-            "name": "[!] Panoplie des Abîmes",
+            "name": "Abyss Set",
             "items": 3,
             "level": 200,
             "contains_cosmetics": false,
@@ -104347,7 +104295,7 @@
         },
         {
             "ankama_id": 957,
-            "name": "[!] Panoplie des Tréfonds",
+            "name": "Depths Set",
             "items": 3,
             "level": 200,
             "contains_cosmetics": false,
@@ -104484,7 +104432,7 @@
         },
         {
             "ankama_id": 958,
-            "name": "[!] Panoplie de la Fosse",
+            "name": "Pit Set",
             "items": 3,
             "level": 200,
             "contains_cosmetics": false,
@@ -104621,7 +104569,7 @@
         },
         {
             "ankama_id": 959,
-            "name": "[!] Panoplie des Profondeurs",
+            "name": "Deep Set",
             "items": 3,
             "level": 200,
             "contains_cosmetics": false,
@@ -104758,7 +104706,7 @@
         },
         {
             "ankama_id": 960,
-            "name": "[!] Panoplie des Spiritueurs",
+            "name": "Slayspirit Set",
             "items": 3,
             "level": 159,
             "contains_cosmetics": false,
@@ -104960,7 +104908,7 @@
         },
         {
             "ankama_id": 961,
-            "name": "[!] Panoplit",
+            "name": "Bed Set",
             "items": 3,
             "level": 196,
             "contains_cosmetics": false,
@@ -105214,7 +105162,7 @@
         },
         {
             "ankama_id": 962,
-            "name": "[!] Panoplie du Tynril",
+            "name": "Tynril Set",
             "items": 2,
             "level": 164,
             "contains_cosmetics": false,
@@ -105348,7 +105296,7 @@
         },
         {
             "ankama_id": 963,
-            "name": "[!] Panoplie du Kimbo",
+            "name": "Kimbo Set",
             "items": 2,
             "level": 196,
             "contains_cosmetics": false,
@@ -105456,7 +105404,7 @@
         },
         {
             "ankama_id": 964,
-            "name": "[!] Panoplie de l'Apiculteur",
+            "name": "Beekeeper Set",
             "items": 2,
             "level": 199,
             "contains_cosmetics": false,
@@ -105564,7 +105512,7 @@
         },
         {
             "ankama_id": 965,
-            "name": "[!] Panoplie du frigostien curieux",
+            "name": "Curious Frigostian Set",
             "items": 2,
             "level": 185,
             "contains_cosmetics": false,
@@ -105633,7 +105581,7 @@
         },
         {
             "ankama_id": 966,
-            "name": "[!] Abranoplie",
+            "name": "Treechnid Set",
             "items": 5,
             "level": 46,
             "contains_cosmetics": false,
@@ -105958,7 +105906,7 @@
         },
         {
             "ankama_id": 967,
-            "name": "[!] Panoplie d'apparat Chimèrivan",
+            "name": "Chimeritinem Ceremonial Set",
             "items": 8,
             "level": 60,
             "contains_cosmetics": true,
@@ -105976,7 +105924,7 @@
         },
         {
             "ankama_id": 968,
-            "name": "[!] Panoplie d'apparat de la Foire du Trool",
+            "name": "Trool Fair Ceremonial Set",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,
@@ -105989,7 +105937,7 @@
         },
         {
             "ankama_id": 969,
-            "name": "[!] Panoplie d'apparat Solary",
+            "name": "Solary Ceremonial Set",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,
@@ -106002,7 +105950,7 @@
         },
         {
             "ankama_id": 970,
-            "name": "[!] Panoplie d'apparat Aegis",
+            "name": "Aegis Ceremonial Set",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,
@@ -106015,7 +105963,7 @@
         },
         {
             "ankama_id": 971,
-            "name": "[!] Panoplie d'apparat Karmine Corp",
+            "name": "Karmine Corp Ceremonial Set",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,
@@ -106028,7 +105976,7 @@
         },
         {
             "ankama_id": 972,
-            "name": "[!] Panoplie d'apparat Gentle Mates",
+            "name": "Gentle Mates Ceremonial Set",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,
@@ -106040,8 +105988,644 @@
             ]
         },
         {
+            "ankama_id": 973,
+            "name": "Sceptical Frigostian Set",
+            "items": 2,
+            "level": 196,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "MP",
+                            "id": 8,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 MP"
+                    },
+                    {
+                        "int_minimum": 22,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Air damage",
+                            "id": 47,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "22 Air damage"
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Heal",
+                            "id": 121,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 Heals"
+                    },
+                    {
+                        "int_minimum": 22,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Water Damage",
+                            "id": 27,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "22 Water Damage"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Fire Damage",
+                            "id": 61,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Fire Damage"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Power",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Power"
+                    },
+                    {
+                        "int_minimum": 20,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Prospecting",
+                            "id": 25,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "20 Prospecting"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Chance",
+                            "id": 22,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Chance"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Agility",
+                            "id": 36,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Agility"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                14049,
+                14160
+            ]
+        },
+        {
+            "ankama_id": 975,
+            "name": "Dubious Frigostian Set",
+            "items": 2,
+            "level": 181,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Neutral Damage",
+                            "id": 49,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Neutral Damage"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Earth Damage",
+                            "id": 48,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Earth Damage"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Strength",
+                            "id": 45,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Strength"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Wisdom",
+                            "id": 10,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Wisdom"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "% Critical",
+                            "id": 29,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10% Critical"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Power",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Power"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Summons",
+                            "id": 28,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 Summons"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11602,
+                11740
+            ]
+        },
+        {
+            "ankama_id": 976,
+            "name": "Abbreviated Set",
+            "items": 2,
+            "level": 173,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Neutral Damage",
+                            "id": 49,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Neutral Damage"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Earth Damage",
+                            "id": 48,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Earth Damage"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Water Damage",
+                            "id": 27,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Water Damage"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Dodge",
+                            "id": 59,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Dodge"
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Prospecting",
+                            "id": 25,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 Prospecting"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Wisdom",
+                            "id": 10,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Wisdom"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Summons",
+                            "id": 28,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 Summons"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11623,
+                11729
+            ]
+        },
+        {
+            "ankama_id": 977,
+            "name": "Vague Frigostian Set",
+            "items": 2,
+            "level": 183,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 5,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Damage",
+                            "id": 30,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "5 Damage"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "% Critical",
+                            "id": 29,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10% Critical"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Intelligence",
+                            "id": 13,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Intelligence"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Agility",
+                            "id": 36,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Agility"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Power",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Power"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "MP",
+                            "id": 8,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 MP"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Fire Damage",
+                            "id": 61,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Fire Damage"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Air damage",
+                            "id": 47,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Air damage"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11727,
+                12068
+            ]
+        },
+        {
+            "ankama_id": 978,
+            "name": "Enchanting Frigostian Set",
+            "items": 2,
+            "level": 162,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 60,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Strength",
+                            "id": 45,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "60 Strength"
+                    },
+                    {
+                        "int_minimum": 60,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Agility",
+                            "id": 36,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "60 Agility"
+                    },
+                    {
+                        "int_minimum": 20,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Pushback Damage",
+                            "id": 62,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "20 Pushback Damage"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Wisdom",
+                            "id": 10,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Wisdom"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Range",
+                            "id": 31,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 Range"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Power",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Power"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11606,
+                11612
+            ]
+        },
+        {
+            "ankama_id": 979,
+            "name": "Hesperus Set",
+            "items": 3,
+            "level": 156,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "MP",
+                            "id": 8,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 MP"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Power",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Power"
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Critical Damage",
+                            "id": 38,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 Critical Damage"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "% Critical",
+                            "id": 29,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10% Critical"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11600,
+                11626,
+                11631
+            ]
+        },
+        {
             "ankama_id": 980,
-            "name": "[!] Panoplie d'apparat des Lary",
+            "name": "Lary Ceremonial Set",
             "items": 4,
             "level": 1,
             "contains_cosmetics": true,
@@ -106055,7 +106639,7 @@
         },
         {
             "ankama_id": 981,
-            "name": "[!] Panoplie d'apparat des Maîtres Lary",
+            "name": "Lary Masters Ceremonial Set",
             "items": 4,
             "level": 1,
             "contains_cosmetics": true,
@@ -106069,7 +106653,7 @@
         },
         {
             "ankama_id": 982,
-            "name": "[!] Panoplie d'apparat du Jan'Ken'Pon",
+            "name": "JanKenPon Ceremonial Set",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,

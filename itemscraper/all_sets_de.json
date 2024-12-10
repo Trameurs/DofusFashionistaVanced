@@ -9671,7 +9671,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "zurückgeworfener Schaden",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9699,7 +9699,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "zurückgeworfener Schaden",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9753,7 +9753,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "zurückgeworfener Schaden",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9807,7 +9807,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "zurückgeworfener Schaden",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -37776,7 +37776,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "zurückgeworfener Schaden",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -37817,7 +37817,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "zurückgeworfener Schaden",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -82455,30 +82455,17 @@
                 ],
                 "3": [
                     {
-                        "int_minimum": 10,
+                        "int_minimum": 1,
                         "int_maximum": 0,
                         "type": {
-                            "name": "% KT",
-                            "id": 29,
+                            "name": "AP",
+                            "id": 12,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10% KT"
-                    },
-                    {
-                        "int_minimum": 40,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Stärke",
-                            "id": 45,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "40 Stärke"
+                        "formatted": "1 AP"
                     },
                     {
                         "int_minimum": 40,
@@ -82494,17 +82481,30 @@
                         "formatted": "40 Flinkheit"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 40,
                         "int_maximum": 0,
                         "type": {
-                            "name": "BP",
-                            "id": 8,
+                            "name": "Stärke",
+                            "id": 45,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "1 BP"
+                        "formatted": "40 Stärke"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "% KT",
+                            "id": 29,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10% KT"
                     }
                 ]
             },
@@ -82935,17 +82935,17 @@
                         "formatted": "10 BP-Entzug"
                     },
                     {
-                        "int_minimum": -20,
+                        "int_minimum": 20,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Ausweichen",
-                            "id": 59,
+                            "name": "Blocken",
+                            "id": 26,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "-20 Ausweichen"
+                        "formatted": "20 Blocken"
                     },
                     {
                         "int_minimum": 10,
@@ -82959,7 +82959,9 @@
                         "ignore_int_min": false,
                         "ignore_int_max": true,
                         "formatted": "10 Kritischer Schaden"
-                    },
+                    }
+                ],
+                "3": [
                     {
                         "int_minimum": 20,
                         "int_maximum": 0,
@@ -82972,60 +82974,6 @@
                         "ignore_int_min": false,
                         "ignore_int_max": true,
                         "formatted": "20 Blocken"
-                    }
-                ],
-                "3": [
-                    {
-                        "int_minimum": -20,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Ausweichen",
-                            "id": 59,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "-20 Ausweichen"
-                    },
-                    {
-                        "int_minimum": 60,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Intelligenz",
-                            "id": 13,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "60 Intelligenz"
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "BP-Entzug",
-                            "id": 50,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 BP-Entzug"
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Kritischer Schaden",
-                            "id": 38,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 Kritischer Schaden"
                     },
                     {
                         "int_minimum": 1,
@@ -83041,17 +82989,43 @@
                         "formatted": "1 AP"
                     },
                     {
-                        "int_minimum": 20,
+                        "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Blocken",
-                            "id": 26,
+                            "name": "Kritischer Schaden",
+                            "id": 38,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "20 Blocken"
+                        "formatted": "10 Kritischer Schaden"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "BP-Entzug",
+                            "id": 50,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 BP-Entzug"
+                    },
+                    {
+                        "int_minimum": 60,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Intelligenz",
+                            "id": 13,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "60 Intelligenz"
                     }
                 ]
             },
@@ -83196,7 +83170,7 @@
                         "formatted": "60 Stärke"
                     },
                     {
-                        "int_minimum": 10,
+                        "int_minimum": 15,
                         "int_maximum": 0,
                         "type": {
                             "name": "Kritischer Schaden",
@@ -83206,20 +83180,7 @@
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 Kritischer Schaden"
-                    },
-                    {
-                        "int_minimum": -5,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Resist. AP-Entzug",
-                            "id": 75,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "-5 Resist. AP-Entzug"
+                        "formatted": "15 Kritischer Schaden"
                     },
                     {
                         "int_minimum": 5,
@@ -83237,43 +83198,17 @@
                 ],
                 "3": [
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 60,
                         "int_maximum": 0,
                         "type": {
-                            "name": "BP",
-                            "id": 8,
+                            "name": "Stärke",
+                            "id": 45,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "1 BP"
-                    },
-                    {
-                        "int_minimum": -5,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Resist. AP-Entzug",
-                            "id": 75,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "-5 Resist. AP-Entzug"
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Kritischer Schaden",
-                            "id": 38,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 Kritischer Schaden"
+                        "formatted": "60 Stärke"
                     },
                     {
                         "int_minimum": 7,
@@ -83289,17 +83224,30 @@
                         "formatted": "7% KT"
                     },
                     {
-                        "int_minimum": 60,
+                        "int_minimum": 15,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Stärke",
-                            "id": 45,
+                            "name": "Kritischer Schaden",
+                            "id": 38,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "60 Stärke"
+                        "formatted": "15 Kritischer Schaden"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "AP",
+                            "id": 12,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 AP"
                     }
                 ]
             },
@@ -101632,7 +101580,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "zurückgeworfener Schaden",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -105958,7 +105906,7 @@
         },
         {
             "ankama_id": 967,
-            "name": "[!] Panoplie d'apparat Chimèrivan",
+            "name": "Lebendimären-Prunkset",
             "items": 8,
             "level": 60,
             "contains_cosmetics": true,
@@ -105976,7 +105924,7 @@
         },
         {
             "ankama_id": 968,
-            "name": "[!] Panoplie d'apparat de la Foire du Trool",
+            "name": "Prunkset des Jahrmarkts des Trools",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,
@@ -105989,7 +105937,7 @@
         },
         {
             "ankama_id": 969,
-            "name": "[!] Panoplie d'apparat Solary",
+            "name": "Solary-Prunkset",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,
@@ -106002,7 +105950,7 @@
         },
         {
             "ankama_id": 970,
-            "name": "[!] Panoplie d'apparat Aegis",
+            "name": "Aegis-Prunkset",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,
@@ -106015,7 +105963,7 @@
         },
         {
             "ankama_id": 971,
-            "name": "[!] Panoplie d'apparat Karmine Corp",
+            "name": "Prunkset des Karmine Corps",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,
@@ -106028,7 +105976,7 @@
         },
         {
             "ankama_id": 972,
-            "name": "[!] Panoplie d'apparat Gentle Mates",
+            "name": "Prunkset der Gentle Mates",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,
@@ -106040,8 +105988,644 @@
             ]
         },
         {
+            "ankama_id": 973,
+            "name": "Ausrüstungsset des skeptischen Frigostianers",
+            "items": 2,
+            "level": 196,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "BP",
+                            "id": 8,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 BP"
+                    },
+                    {
+                        "int_minimum": 22,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Luftschaden",
+                            "id": 47,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "22 Luftschaden"
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Heilung",
+                            "id": 121,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 Heilung"
+                    },
+                    {
+                        "int_minimum": 22,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Wasserschaden",
+                            "id": 27,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "22 Wasserschaden"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Feuerschaden",
+                            "id": 61,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Feuerschaden"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Schlagkraft",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Schlagkraft"
+                    },
+                    {
+                        "int_minimum": 20,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Filzpunkte",
+                            "id": 25,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "20 Filzpunkte"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Glück",
+                            "id": 22,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Glück"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Flinkheit",
+                            "id": 36,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Flinkheit"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                14049,
+                14160
+            ]
+        },
+        {
+            "ankama_id": 975,
+            "name": "Ausrüstungsset des zweifelhaften Frigostianers",
+            "items": 2,
+            "level": 181,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Neutralschaden",
+                            "id": 49,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Neutralschaden"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Erdschaden",
+                            "id": 48,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Erdschaden"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Stärke",
+                            "id": 45,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Stärke"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Weisheit",
+                            "id": 10,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Weisheit"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "% KT",
+                            "id": 29,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10% KT"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Schlagkraft",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Schlagkraft"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Beschwörung",
+                            "id": 28,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 Beschwörung"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11602,
+                11740
+            ]
+        },
+        {
+            "ankama_id": 976,
+            "name": "Gekürztes Ausrüstungsset",
+            "items": 2,
+            "level": 173,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Neutralschaden",
+                            "id": 49,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Neutralschaden"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Erdschaden",
+                            "id": 48,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Erdschaden"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Wasserschaden",
+                            "id": 27,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Wasserschaden"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Ausweichen",
+                            "id": 59,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Ausweichen"
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Filzpunkte",
+                            "id": 25,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 Filzpunkte"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Weisheit",
+                            "id": 10,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Weisheit"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Beschwörung",
+                            "id": 28,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 Beschwörung"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11623,
+                11729
+            ]
+        },
+        {
+            "ankama_id": 977,
+            "name": "Ausrüstungsset des nachlässigen Frigostianers",
+            "items": 2,
+            "level": 183,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 5,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Schaden",
+                            "id": 30,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "5 Schaden"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "% KT",
+                            "id": 29,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10% KT"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Intelligenz",
+                            "id": 13,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Intelligenz"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Flinkheit",
+                            "id": 36,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Flinkheit"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Schlagkraft",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Schlagkraft"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "BP",
+                            "id": 8,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 BP"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Feuerschaden",
+                            "id": 61,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Feuerschaden"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Luftschaden",
+                            "id": 47,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Luftschaden"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11727,
+                12068
+            ]
+        },
+        {
+            "ankama_id": 978,
+            "name": "Ausrüstungsset des bezaubernden Frigostianers",
+            "items": 2,
+            "level": 162,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 60,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Stärke",
+                            "id": 45,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "60 Stärke"
+                    },
+                    {
+                        "int_minimum": 60,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Flinkheit",
+                            "id": 36,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "60 Flinkheit"
+                    },
+                    {
+                        "int_minimum": 20,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Schubsschaden",
+                            "id": 62,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "20 Schubsschaden"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Weisheit",
+                            "id": 10,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Weisheit"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "RW",
+                            "id": 31,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 RW"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Schlagkraft",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Schlagkraft"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11606,
+                11612
+            ]
+        },
+        {
+            "ankama_id": 979,
+            "name": "Black Roggs Ausrüstungsset",
+            "items": 3,
+            "level": 156,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "BP",
+                            "id": 8,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 BP"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Schlagkraft",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Schlagkraft"
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Kritischer Schaden",
+                            "id": 38,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 Kritischer Schaden"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "% KT",
+                            "id": 29,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10% KT"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11600,
+                11626,
+                11631
+            ]
+        },
+        {
             "ankama_id": 980,
-            "name": "[!] Panoplie d'apparat des Lary",
+            "name": "Lary-Prunkset",
             "items": 4,
             "level": 1,
             "contains_cosmetics": true,
@@ -106055,7 +106639,7 @@
         },
         {
             "ankama_id": 981,
-            "name": "[!] Panoplie d'apparat des Maîtres Lary",
+            "name": "Meister-Lary-Prunkset",
             "items": 4,
             "level": 1,
             "contains_cosmetics": true,
@@ -106069,7 +106653,7 @@
         },
         {
             "ankama_id": 982,
-            "name": "[!] Panoplie d'apparat du Jan'Ken'Pon",
+            "name": "JanKenPon-Prunkset",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,

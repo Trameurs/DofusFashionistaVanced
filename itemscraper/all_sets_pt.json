@@ -9671,7 +9671,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "de danos reenviados",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9699,7 +9699,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "de danos reenviados",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9753,7 +9753,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "de danos reenviados",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9807,7 +9807,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "de danos reenviados",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -37776,7 +37776,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "de danos reenviados",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -37817,7 +37817,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "de danos reenviados",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -82455,30 +82455,17 @@
                 ],
                 "3": [
                     {
-                        "int_minimum": 10,
+                        "int_minimum": 1,
                         "int_maximum": 0,
                         "type": {
-                            "name": "% de crítico",
-                            "id": 29,
+                            "name": "PA",
+                            "id": 12,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10% de crítico"
-                    },
-                    {
-                        "int_minimum": 40,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Força",
-                            "id": 45,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "40 Força"
+                        "formatted": "1 PA"
                     },
                     {
                         "int_minimum": 40,
@@ -82494,17 +82481,30 @@
                         "formatted": "40 Agilidade"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 40,
                         "int_maximum": 0,
                         "type": {
-                            "name": "PM",
-                            "id": 8,
+                            "name": "Força",
+                            "id": 45,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "1 PM"
+                        "formatted": "40 Força"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "% de crítico",
+                            "id": 29,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10% de crítico"
                     }
                 ]
             },
@@ -82935,17 +82935,17 @@
                         "formatted": "10 Retirada de PM"
                     },
                     {
-                        "int_minimum": -20,
+                        "int_minimum": 20,
                         "int_maximum": 0,
                         "type": {
-                            "name": "de fuga",
-                            "id": 59,
+                            "name": "Bloqueio",
+                            "id": 26,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "-20 de fuga"
+                        "formatted": "20 Bloqueio"
                     },
                     {
                         "int_minimum": 10,
@@ -82959,7 +82959,9 @@
                         "ignore_int_min": false,
                         "ignore_int_max": true,
                         "formatted": "10 de danos críticos"
-                    },
+                    }
+                ],
+                "3": [
                     {
                         "int_minimum": 20,
                         "int_maximum": 0,
@@ -82972,60 +82974,6 @@
                         "ignore_int_min": false,
                         "ignore_int_max": true,
                         "formatted": "20 Bloqueio"
-                    }
-                ],
-                "3": [
-                    {
-                        "int_minimum": -20,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "de fuga",
-                            "id": 59,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "-20 de fuga"
-                    },
-                    {
-                        "int_minimum": 60,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Inteligência",
-                            "id": 13,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "60 Inteligência"
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Retirada de PM",
-                            "id": 50,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 Retirada de PM"
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "de dano críticos",
-                            "id": 38,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 de danos críticos"
                     },
                     {
                         "int_minimum": 1,
@@ -83041,17 +82989,43 @@
                         "formatted": "1 PA"
                     },
                     {
-                        "int_minimum": 20,
+                        "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Bloqueio",
-                            "id": 26,
+                            "name": "de dano críticos",
+                            "id": 38,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "20 Bloqueio"
+                        "formatted": "10 de danos críticos"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Retirada de PM",
+                            "id": 50,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Retirada de PM"
+                    },
+                    {
+                        "int_minimum": 60,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Inteligência",
+                            "id": 13,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "60 Inteligência"
                     }
                 ]
             },
@@ -83196,7 +83170,7 @@
                         "formatted": "60 Força"
                     },
                     {
-                        "int_minimum": 10,
+                        "int_minimum": 15,
                         "int_maximum": 0,
                         "type": {
                             "name": "de dano críticos",
@@ -83206,20 +83180,7 @@
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 de danos críticos"
-                    },
-                    {
-                        "int_minimum": -5,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "de esquiva PA",
-                            "id": 75,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "-5 de esquiva PA"
+                        "formatted": "15 de danos críticos"
                     },
                     {
                         "int_minimum": 5,
@@ -83237,43 +83198,17 @@
                 ],
                 "3": [
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 60,
                         "int_maximum": 0,
                         "type": {
-                            "name": "PM",
-                            "id": 8,
+                            "name": "Força",
+                            "id": 45,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "1 PM"
-                    },
-                    {
-                        "int_minimum": -5,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "de esquiva PA",
-                            "id": 75,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "-5 de esquiva PA"
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "de dano críticos",
-                            "id": 38,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 de danos críticos"
+                        "formatted": "60 Força"
                     },
                     {
                         "int_minimum": 7,
@@ -83289,17 +83224,30 @@
                         "formatted": "7% de crítico"
                     },
                     {
-                        "int_minimum": 60,
+                        "int_minimum": 15,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Força",
-                            "id": 45,
+                            "name": "de dano críticos",
+                            "id": 38,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "60 Força"
+                        "formatted": "15 de danos críticos"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "PA",
+                            "id": 12,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 PA"
                     }
                 ]
             },
@@ -101632,7 +101580,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "de danos reenviados",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -102487,7 +102435,7 @@
         },
         {
             "ankama_id": 944,
-            "name": "[!] Panoplie de Phong Huss",
+            "name": "Conjunto de Phong Huss",
             "items": 3,
             "level": 33,
             "contains_cosmetics": false,
@@ -102585,7 +102533,7 @@
         },
         {
             "ankama_id": 945,
-            "name": "[!] Panoplie de Grilliane",
+            "name": "Conjunto de Grillian",
             "items": 2,
             "level": 46,
             "contains_cosmetics": false,
@@ -102667,7 +102615,7 @@
         },
         {
             "ankama_id": 946,
-            "name": "[!] Panoplie de Crocuzko",
+            "name": "Conjunto de Crocuzko",
             "items": 2,
             "level": 200,
             "contains_cosmetics": false,
@@ -102762,7 +102710,7 @@
         },
         {
             "ankama_id": 947,
-            "name": "[!] Panoplie de Pol Ouatnos",
+            "name": "Conjunto do Pow Uatisson",
             "items": 2,
             "level": 200,
             "contains_cosmetics": false,
@@ -102831,7 +102779,7 @@
         },
         {
             "ankama_id": 948,
-            "name": "[!] Panoplie des Krobes",
+            "name": "Conjunto dos Króbios",
             "items": 4,
             "level": 200,
             "contains_cosmetics": false,
@@ -103166,7 +103114,7 @@
         },
         {
             "ankama_id": 949,
-            "name": "[!] Panoplie de la Baleine",
+            "name": "Conjunto da Baleia",
             "items": 5,
             "level": 200,
             "contains_cosmetics": false,
@@ -103569,7 +103517,7 @@
         },
         {
             "ankama_id": 950,
-            "name": "[!] Panoplie Ensevelie",
+            "name": "Conjunto Soterrado",
             "items": 2,
             "level": 200,
             "contains_cosmetics": false,
@@ -103638,7 +103586,7 @@
         },
         {
             "ankama_id": 951,
-            "name": "[!] Panoplie Noyée",
+            "name": "Conjunto Afogado",
             "items": 2,
             "level": 200,
             "contains_cosmetics": false,
@@ -103707,7 +103655,7 @@
         },
         {
             "ankama_id": 952,
-            "name": "[!] Panoplie du Fourneau",
+            "name": "Conjunto do Forno",
             "items": 2,
             "level": 200,
             "contains_cosmetics": false,
@@ -103776,7 +103724,7 @@
         },
         {
             "ankama_id": 953,
-            "name": "[!] Panoplie de la Fournaise",
+            "name": "Conjunto da Fornalha",
             "items": 2,
             "level": 200,
             "contains_cosmetics": false,
@@ -103845,7 +103793,7 @@
         },
         {
             "ankama_id": 954,
-            "name": "[!] Panoplie de la Pyramide",
+            "name": "Conjunto da Pirâmide",
             "items": 3,
             "level": 200,
             "contains_cosmetics": false,
@@ -104021,7 +103969,7 @@
         },
         {
             "ankama_id": 955,
-            "name": "[!] Panoplie des Maudits",
+            "name": "Conjunto dos Malditos",
             "items": 3,
             "level": 200,
             "contains_cosmetics": false,
@@ -104210,7 +104158,7 @@
         },
         {
             "ankama_id": 956,
-            "name": "[!] Panoplie des Abîmes",
+            "name": "Conjunto dos Abismos",
             "items": 3,
             "level": 200,
             "contains_cosmetics": false,
@@ -104347,7 +104295,7 @@
         },
         {
             "ankama_id": 957,
-            "name": "[!] Panoplie des Tréfonds",
+            "name": "Conjunto das Entranhas",
             "items": 3,
             "level": 200,
             "contains_cosmetics": false,
@@ -104484,7 +104432,7 @@
         },
         {
             "ankama_id": 958,
-            "name": "[!] Panoplie de la Fosse",
+            "name": "Conjunto da Fossa",
             "items": 3,
             "level": 200,
             "contains_cosmetics": false,
@@ -104621,7 +104569,7 @@
         },
         {
             "ankama_id": 959,
-            "name": "[!] Panoplie des Profondeurs",
+            "name": "Conjunto das Profundezas",
             "items": 3,
             "level": 200,
             "contains_cosmetics": false,
@@ -104758,7 +104706,7 @@
         },
         {
             "ankama_id": 960,
-            "name": "[!] Panoplie des Spiritueurs",
+            "name": "Conjunto dos Assassispíritos",
             "items": 3,
             "level": 159,
             "contains_cosmetics": false,
@@ -104960,7 +104908,7 @@
         },
         {
             "ankama_id": 961,
-            "name": "[!] Panoplit",
+            "name": "Camonjunto",
             "items": 3,
             "level": 196,
             "contains_cosmetics": false,
@@ -105214,7 +105162,7 @@
         },
         {
             "ankama_id": 962,
-            "name": "[!] Panoplie du Tynril",
+            "name": "Conjunto do Tynril",
             "items": 2,
             "level": 164,
             "contains_cosmetics": false,
@@ -105348,7 +105296,7 @@
         },
         {
             "ankama_id": 963,
-            "name": "[!] Panoplie du Kimbo",
+            "name": "Conjunto do Kimbo",
             "items": 2,
             "level": 196,
             "contains_cosmetics": false,
@@ -105456,7 +105404,7 @@
         },
         {
             "ankama_id": 964,
-            "name": "[!] Panoplie de l'Apiculteur",
+            "name": "Conjunto do Apicultor",
             "items": 2,
             "level": 199,
             "contains_cosmetics": false,
@@ -105564,7 +105512,7 @@
         },
         {
             "ankama_id": 965,
-            "name": "[!] Panoplie du frigostien curieux",
+            "name": "Conjunto do Frigostiano Curioso",
             "items": 2,
             "level": 185,
             "contains_cosmetics": false,
@@ -105633,7 +105581,7 @@
         },
         {
             "ankama_id": 966,
-            "name": "[!] Abranoplie",
+            "name": "Arvrakonjunto",
             "items": 5,
             "level": 46,
             "contains_cosmetics": false,
@@ -105958,7 +105906,7 @@
         },
         {
             "ankama_id": 967,
-            "name": "[!] Panoplie d'apparat Chimèrivan",
+            "name": "Conjunto de Aparência Quimerivivo",
             "items": 8,
             "level": 60,
             "contains_cosmetics": true,
@@ -105976,7 +105924,7 @@
         },
         {
             "ankama_id": 968,
-            "name": "[!] Panoplie d'apparat de la Foire du Trool",
+            "name": "Conjunto de Aparência da Feira do Trool",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,
@@ -105989,7 +105937,7 @@
         },
         {
             "ankama_id": 969,
-            "name": "[!] Panoplie d'apparat Solary",
+            "name": "Conjunto de Aparência Solary",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,
@@ -106002,7 +105950,7 @@
         },
         {
             "ankama_id": 970,
-            "name": "[!] Panoplie d'apparat Aegis",
+            "name": "Conjunto de Aparência Aegis",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,
@@ -106015,7 +105963,7 @@
         },
         {
             "ankama_id": 971,
-            "name": "[!] Panoplie d'apparat Karmine Corp",
+            "name": "Conjunto de Aparência Karmine Corp",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,
@@ -106028,7 +105976,7 @@
         },
         {
             "ankama_id": 972,
-            "name": "[!] Panoplie d'apparat Gentle Mates",
+            "name": "Conjunto de Aparência Gentle Mates",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,
@@ -106040,8 +105988,644 @@
             ]
         },
         {
+            "ankama_id": 973,
+            "name": "Conjunto do Frigostiano Cético",
+            "items": 2,
+            "level": 196,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "PM",
+                            "id": 8,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 PM"
+                    },
+                    {
+                        "int_minimum": 22,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de dano de ar",
+                            "id": 47,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "22 de danos de ar"
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de cura",
+                            "id": 121,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 de curas"
+                    },
+                    {
+                        "int_minimum": 22,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de dano de água",
+                            "id": 27,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "22 de danos de água"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de dano de fogo",
+                            "id": 61,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 de danos de fogo"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Potência",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Potência"
+                    },
+                    {
+                        "int_minimum": 20,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Prospecção",
+                            "id": 25,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "20 Prospecção"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Sorte",
+                            "id": 22,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Sorte"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Agilidade",
+                            "id": 36,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Agilidade"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                14049,
+                14160
+            ]
+        },
+        {
+            "ankama_id": 975,
+            "name": "Conjunto do Frigostiano Desconfiado",
+            "items": 2,
+            "level": 181,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de dano neutros",
+                            "id": 49,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 de danos neutros"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de dano de terra",
+                            "id": 48,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 de danos de terra"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Força",
+                            "id": 45,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Força"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Sabedoria",
+                            "id": 10,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Sabedoria"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "% de crítico",
+                            "id": 29,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10% de crítico"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Potência",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Potência"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "invocaç",
+                            "id": 28,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 invocaç"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11602,
+                11740
+            ]
+        },
+        {
+            "ankama_id": 976,
+            "name": "Conjunto Abreviado",
+            "items": 2,
+            "level": 173,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de dano neutros",
+                            "id": 49,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 de danos neutros"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de dano de terra",
+                            "id": 48,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 de danos de terra"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de dano de água",
+                            "id": 27,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 de danos de água"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Fuga",
+                            "id": 59,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Fuga"
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Prospecção",
+                            "id": 25,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 Prospecção"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Sabedoria",
+                            "id": 10,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Sabedoria"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "invocaç",
+                            "id": 28,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 invocaç"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11623,
+                11729
+            ]
+        },
+        {
+            "ankama_id": 977,
+            "name": "Conjunto do Frigostiano Aproximativo",
+            "items": 2,
+            "level": 183,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 5,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de dano",
+                            "id": 30,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "5 de danos"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "% de crítico",
+                            "id": 29,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10% de crítico"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Inteligência",
+                            "id": 13,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Inteligência"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Agilidade",
+                            "id": 36,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Agilidade"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Potência",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Potência"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "PM",
+                            "id": 8,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 PM"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de dano de fogo",
+                            "id": 61,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 de danos de fogo"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de dano de ar",
+                            "id": 47,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 de danos de ar"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11727,
+                12068
+            ]
+        },
+        {
+            "ankama_id": 978,
+            "name": "Conjunto do Frigostiano Hipnotizante",
+            "items": 2,
+            "level": 162,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 60,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Força",
+                            "id": 45,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "60 Força"
+                    },
+                    {
+                        "int_minimum": 60,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Agilidade",
+                            "id": 36,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "60 Agilidade"
+                    },
+                    {
+                        "int_minimum": 20,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de dano de empurrão",
+                            "id": 62,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "20 de danos de empurrão"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Sabedoria",
+                            "id": 10,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Sabedoria"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de alcance",
+                            "id": 31,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 de alcance"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Potência",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Potência"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11606,
+                11612
+            ]
+        },
+        {
+            "ankama_id": 979,
+            "name": "Conjunto do Ogrolandês",
+            "items": 3,
+            "level": 156,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "PM",
+                            "id": 8,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 PM"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Potência",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Potência"
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "de dano críticos",
+                            "id": 38,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 de danos críticos"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "% de crítico",
+                            "id": 29,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10% de crítico"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11600,
+                11626,
+                11631
+            ]
+        },
+        {
             "ankama_id": 980,
-            "name": "[!] Panoplie d'apparat des Lary",
+            "name": "Conjunto de Aparência dos Lary",
             "items": 4,
             "level": 1,
             "contains_cosmetics": true,
@@ -106055,7 +106639,7 @@
         },
         {
             "ankama_id": 981,
-            "name": "[!] Panoplie d'apparat des Maîtres Lary",
+            "name": "Conjunto de Aparência dos Mestres Lary",
             "items": 4,
             "level": 1,
             "contains_cosmetics": true,
@@ -106069,7 +106653,7 @@
         },
         {
             "ankama_id": 982,
-            "name": "[!] Panoplie d'apparat du Jan'Ken'Pon",
+            "name": "Conjunto de Aparência do Jankenpon",
             "items": 3,
             "level": 1,
             "contains_cosmetics": true,

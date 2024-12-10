@@ -9671,7 +9671,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Dommages Renvoyés",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9699,7 +9699,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Dommages Renvoyés",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9753,7 +9753,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Dommages Renvoyés",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9807,7 +9807,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Dommages Renvoyés",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -37776,7 +37776,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Dommages Renvoyés",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -37817,7 +37817,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Dommages Renvoyés",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -82455,30 +82455,17 @@
                 ],
                 "3": [
                     {
-                        "int_minimum": 10,
+                        "int_minimum": 1,
                         "int_maximum": 0,
                         "type": {
-                            "name": "% Critique",
-                            "id": 29,
+                            "name": "PA",
+                            "id": 12,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10% Critique"
-                    },
-                    {
-                        "int_minimum": 40,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Force",
-                            "id": 45,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "40 Force"
+                        "formatted": "1 PA"
                     },
                     {
                         "int_minimum": 40,
@@ -82494,17 +82481,30 @@
                         "formatted": "40 Agilité"
                     },
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 40,
                         "int_maximum": 0,
                         "type": {
-                            "name": "PM",
-                            "id": 8,
+                            "name": "Force",
+                            "id": 45,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "1 PM"
+                        "formatted": "40 Force"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "% Critique",
+                            "id": 29,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10% Critique"
                     }
                 ]
             },
@@ -82935,17 +82935,17 @@
                         "formatted": "10 Retrait PM"
                     },
                     {
-                        "int_minimum": -20,
+                        "int_minimum": 20,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Fuite",
-                            "id": 59,
+                            "name": "Tacle",
+                            "id": 26,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "-20 Fuite"
+                        "formatted": "20 Tacle"
                     },
                     {
                         "int_minimum": 10,
@@ -82959,7 +82959,9 @@
                         "ignore_int_min": false,
                         "ignore_int_max": true,
                         "formatted": "10 Dommages Critiques"
-                    },
+                    }
+                ],
+                "3": [
                     {
                         "int_minimum": 20,
                         "int_maximum": 0,
@@ -82972,60 +82974,6 @@
                         "ignore_int_min": false,
                         "ignore_int_max": true,
                         "formatted": "20 Tacle"
-                    }
-                ],
-                "3": [
-                    {
-                        "int_minimum": -20,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Fuite",
-                            "id": 59,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "-20 Fuite"
-                    },
-                    {
-                        "int_minimum": 60,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Intelligence",
-                            "id": 13,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "60 Intelligence"
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Retrait PM",
-                            "id": 50,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 Retrait PM"
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Dommage Critiques",
-                            "id": 38,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 Dommages Critiques"
                     },
                     {
                         "int_minimum": 1,
@@ -83041,17 +82989,43 @@
                         "formatted": "1 PA"
                     },
                     {
-                        "int_minimum": 20,
+                        "int_minimum": 10,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Tacle",
-                            "id": 26,
+                            "name": "Dommage Critiques",
+                            "id": 38,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "20 Tacle"
+                        "formatted": "10 Dommages Critiques"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Retrait PM",
+                            "id": 50,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Retrait PM"
+                    },
+                    {
+                        "int_minimum": 60,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Intelligence",
+                            "id": 13,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "60 Intelligence"
                     }
                 ]
             },
@@ -83196,7 +83170,7 @@
                         "formatted": "60 Force"
                     },
                     {
-                        "int_minimum": 10,
+                        "int_minimum": 15,
                         "int_maximum": 0,
                         "type": {
                             "name": "Dommage Critiques",
@@ -83206,20 +83180,7 @@
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "10 Dommages Critiques"
-                    },
-                    {
-                        "int_minimum": -5,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Esquive PA",
-                            "id": 75,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "-5 Esquive PA"
+                        "formatted": "15 Dommages Critiques"
                     },
                     {
                         "int_minimum": 5,
@@ -83237,43 +83198,17 @@
                 ],
                 "3": [
                     {
-                        "int_minimum": 1,
+                        "int_minimum": 60,
                         "int_maximum": 0,
                         "type": {
-                            "name": "PM",
-                            "id": 8,
+                            "name": "Force",
+                            "id": 45,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "1 PM"
-                    },
-                    {
-                        "int_minimum": -5,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Esquive PA",
-                            "id": 75,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "-5 Esquive PA"
-                    },
-                    {
-                        "int_minimum": 10,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Dommage Critiques",
-                            "id": 38,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "10 Dommages Critiques"
+                        "formatted": "60 Force"
                     },
                     {
                         "int_minimum": 7,
@@ -83289,17 +83224,30 @@
                         "formatted": "7% Critique"
                     },
                     {
-                        "int_minimum": 60,
+                        "int_minimum": 15,
                         "int_maximum": 0,
                         "type": {
-                            "name": "Force",
-                            "id": 45,
+                            "name": "Dommage Critiques",
+                            "id": 38,
                             "is_meta": false,
                             "is_active": false
                         },
                         "ignore_int_min": false,
                         "ignore_int_max": true,
-                        "formatted": "60 Force"
+                        "formatted": "15 Dommages Critiques"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "PA",
+                            "id": 12,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 PA"
                     }
                 ]
             },
@@ -101632,7 +101580,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "Dommages Renvoyés",
-                            "id": 247,
+                            "id": 248,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -106037,6 +105985,642 @@
                 30975,
                 30980,
                 30984
+            ]
+        },
+        {
+            "ankama_id": 973,
+            "name": "Panoplie du frigostien sceptique",
+            "items": 2,
+            "level": 196,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "PM",
+                            "id": 8,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 PM"
+                    },
+                    {
+                        "int_minimum": 22,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Dommage Air",
+                            "id": 47,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "22 Dommages Air"
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Soin",
+                            "id": 121,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 Soins"
+                    },
+                    {
+                        "int_minimum": 22,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Dommage Eau",
+                            "id": 27,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "22 Dommages Eau"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Dommage Feu",
+                            "id": 61,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Dommages Feu"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Puissance",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Puissance"
+                    },
+                    {
+                        "int_minimum": 20,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Prospection",
+                            "id": 25,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "20 Prospection"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Chance",
+                            "id": 22,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Chance"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Agilité",
+                            "id": 36,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Agilité"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                14049,
+                14160
+            ]
+        },
+        {
+            "ankama_id": 975,
+            "name": "Panoplie du frigostien douteux",
+            "items": 2,
+            "level": 181,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Dommage Neutre",
+                            "id": 49,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Dommages Neutre"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Dommage Terre",
+                            "id": 48,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Dommages Terre"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Force",
+                            "id": 45,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Force"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Sagesse",
+                            "id": 10,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Sagesse"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "% Critique",
+                            "id": 29,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10% Critique"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Puissance",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Puissance"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Invocation",
+                            "id": 28,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 Invocation"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11602,
+                11740
+            ]
+        },
+        {
+            "ankama_id": 976,
+            "name": "Panoplie Abrégée",
+            "items": 2,
+            "level": 173,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Dommage Neutre",
+                            "id": 49,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Dommages Neutre"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Dommage Terre",
+                            "id": 48,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Dommages Terre"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Dommage Eau",
+                            "id": 27,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Dommages Eau"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Fuite",
+                            "id": 59,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Fuite"
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Prospection",
+                            "id": 25,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 Prospection"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Sagesse",
+                            "id": 10,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Sagesse"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Invocation",
+                            "id": 28,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 Invocation"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11623,
+                11729
+            ]
+        },
+        {
+            "ankama_id": 977,
+            "name": "Panoplie du frigostien approximatif",
+            "items": 2,
+            "level": 183,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 5,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Dommage",
+                            "id": 30,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "5 Dommages"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "% Critique",
+                            "id": 29,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10% Critique"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Intelligence",
+                            "id": 13,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Intelligence"
+                    },
+                    {
+                        "int_minimum": 50,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Agilité",
+                            "id": 36,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "50 Agilité"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Puissance",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Puissance"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "PM",
+                            "id": 8,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 PM"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Dommage Feu",
+                            "id": 61,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Dommages Feu"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Dommage Air",
+                            "id": 47,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10 Dommages Air"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11727,
+                12068
+            ]
+        },
+        {
+            "ankama_id": 978,
+            "name": "Panoplie du frigostien envoûtant",
+            "items": 2,
+            "level": 162,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 60,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Force",
+                            "id": 45,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "60 Force"
+                    },
+                    {
+                        "int_minimum": 60,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Agilité",
+                            "id": 36,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "60 Agilité"
+                    },
+                    {
+                        "int_minimum": 20,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Dommage Poussée",
+                            "id": 62,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "20 Dommages Poussée"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Sagesse",
+                            "id": 10,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Sagesse"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Portée",
+                            "id": 31,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 Portée"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Puissance",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Puissance"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11606,
+                11612
+            ]
+        },
+        {
+            "ankama_id": 979,
+            "name": "Panoplie du Grolandais",
+            "items": 3,
+            "level": 156,
+            "contains_cosmetics": false,
+            "contains_cosmetics_only": false,
+            "effects": {
+                "1": null,
+                "2": [
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "PM",
+                            "id": 8,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 PM"
+                    },
+                    {
+                        "int_minimum": 30,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Puissance",
+                            "id": 32,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "30 Puissance"
+                    },
+                    {
+                        "int_minimum": 15,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Dommage Critiques",
+                            "id": 38,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "15 Dommages Critiques"
+                    },
+                    {
+                        "int_minimum": 10,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "% Critique",
+                            "id": 29,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "10% Critique"
+                    }
+                ]
+            },
+            "equipment_ids": [
+                11600,
+                11626,
+                11631
             ]
         },
         {

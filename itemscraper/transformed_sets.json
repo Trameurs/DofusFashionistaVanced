@@ -2268,7 +2268,7 @@
         "ankama_id": 15,
         "name_en": "Wind Kwak Set",
         "name_fr": "Panoplie du Kwak de Vent",
-        "name_es": "Set del kwak de viento",
+        "name_es": "Set de kwak de viento",
         "name_pt": "Conjunto do Kwak de Vento",
         "name_de": "Wind-Kwack-Set",
         "items": 7,
@@ -39220,14 +39220,9 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        10,
+                        1,
                         null,
-                        "Critical Hits"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Strength"
+                        "AP"
                     ],
                     [
                         40,
@@ -39235,9 +39230,14 @@
                         "Agility"
                     ],
                     [
-                        1,
+                        40,
                         null,
-                        "MP"
+                        "Strength"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Critical Hits"
                     ]
                 ]
             }
@@ -39462,19 +39462,14 @@
                         "MP Reduction"
                     ],
                     [
-                        -20,
+                        20,
                         null,
-                        "Dodge"
+                        "Lock"
                     ],
                     [
                         10,
                         null,
                         "Critical Damage"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Lock"
                     ]
                 ]
             },
@@ -39482,24 +39477,9 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        -20,
+                        20,
                         null,
-                        "Dodge"
-                    ],
-                    [
-                        60,
-                        null,
-                        "Intelligence"
-                    ],
-                    [
-                        10,
-                        null,
-                        "MP Reduction"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Critical Damage"
+                        "Lock"
                     ],
                     [
                         1,
@@ -39507,9 +39487,19 @@
                         "AP"
                     ],
                     [
-                        20,
+                        10,
                         null,
-                        "Lock"
+                        "Critical Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "MP Reduction"
+                    ],
+                    [
+                        60,
+                        null,
+                        "Intelligence"
                     ]
                 ]
             }
@@ -39599,14 +39589,9 @@
                         "Strength"
                     ],
                     [
-                        10,
+                        15,
                         null,
                         "Critical Damage"
-                    ],
-                    [
-                        -5,
-                        null,
-                        "AP Loss Resist"
                     ],
                     [
                         5,
@@ -39619,19 +39604,9 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        1,
+                        60,
                         null,
-                        "MP"
-                    ],
-                    [
-                        -5,
-                        null,
-                        "AP Loss Resist"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Critical Damage"
+                        "Strength"
                     ],
                     [
                         7,
@@ -39639,9 +39614,14 @@
                         "Critical Hits"
                     ],
                     [
-                        60,
+                        15,
                         null,
-                        "Strength"
+                        "Critical Damage"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
                     ]
                 ]
             }
@@ -51680,9 +51660,9 @@
     },
     {
         "ankama_id": 938,
-        "name_en": "[!] Panoplie du Captain Chafer",
+        "name_en": "Captain Chafer Set",
         "name_fr": "Panoplie du Captain Chafer",
-        "name_es": "[!] Panoplie du Captain Chafer",
+        "name_es": "Set del Capitán Chafer",
         "name_pt": "Conjunto do Capitão Chafer",
         "name_de": "Set des Chafer-Offiziers",
         "items": 3,
@@ -51801,9 +51781,9 @@
     },
     {
         "ankama_id": 941,
-        "name_en": "[!] Panoplie de Mama Ayuto",
+        "name_en": "Mama Ayuto Set",
         "name_fr": "Panoplie de Mama Ayuto",
-        "name_es": "[!] Panoplie de Mama Ayuto",
+        "name_es": "Set de Mami Ayuto",
         "name_pt": "Conjunto da Mama Ayuto",
         "name_de": "Mama Ayutos Set",
         "items": 3,
@@ -51872,9 +51852,9 @@
     },
     {
         "ankama_id": 943,
-        "name_en": "[!] Panoplie du Dark Vlad",
+        "name_en": "Dark Vlad Set",
         "name_fr": "Panoplie du Dark Vlad",
-        "name_es": "[!] Panoplie du Dark Vlad",
+        "name_es": "Set de Dark Vlad",
         "name_pt": "Conjunto do Dark Vlad",
         "name_de": "Set von Dark Vlad",
         "items": 3,
@@ -51943,10 +51923,10 @@
     },
     {
         "ankama_id": 944,
-        "name_en": "[!] Panoplie de Phong Huss",
+        "name_en": "Phong Huss Set",
         "name_fr": "Panoplie de Phong Huss",
-        "name_es": "[!] Panoplie de Phong Huss",
-        "name_pt": "[!] Panoplie de Phong Huss",
+        "name_es": "Set de Phong Huss",
+        "name_pt": "Conjunto de Phong Huss",
         "name_de": "Phung-Huss-Set",
         "items": 3,
         "stats_list": [
@@ -51999,10 +51979,10 @@
     },
     {
         "ankama_id": 945,
-        "name_en": "[!] Panoplie de Grilliane",
+        "name_en": "Grillian Set",
         "name_fr": "Panoplie de Grilliane",
-        "name_es": "[!] Panoplie de Grilliane",
-        "name_pt": "[!] Panoplie de Grilliane",
+        "name_es": "Set de Grilyan",
+        "name_pt": "Conjunto de Grillian",
         "name_de": "Grilliane-Set",
         "items": 2,
         "stats_list": [
@@ -52044,10 +52024,10 @@
     },
     {
         "ankama_id": 946,
-        "name_en": "[!] Panoplie de Crocuzko",
+        "name_en": "Crocuzko Set",
         "name_fr": "Panoplie de Crocuzko",
-        "name_es": "[!] Panoplie de Crocuzko",
-        "name_pt": "[!] Panoplie de Crocuzko",
+        "name_es": "Set de Cocuzko",
+        "name_pt": "Conjunto de Crocuzko",
         "name_de": "Crocuzko-Set",
         "items": 2,
         "stats_list": [
@@ -52094,10 +52074,10 @@
     },
     {
         "ankama_id": 947,
-        "name_en": "[!] Panoplie de Pol Ouatnos",
+        "name_en": "Pawl Ouatnos Set",
         "name_fr": "Panoplie de Pol Ouatnos",
-        "name_es": "[!] Panoplie de Pol Ouatnos",
-        "name_pt": "[!] Panoplie de Pol Ouatnos",
+        "name_es": "Set de Pol Guatson",
+        "name_pt": "Conjunto do Pow Uatisson",
         "name_de": "Pol-Watnos-Set",
         "items": 2,
         "stats_list": [
@@ -52134,10 +52114,10 @@
     },
     {
         "ankama_id": 948,
-        "name_en": "[!] Panoplie des Krobes",
+        "name_en": "Krobe Set",
         "name_fr": "Panoplie des Krobes",
-        "name_es": "[!] Panoplie des Krobes",
-        "name_pt": "[!] Panoplie des Krobes",
+        "name_es": "Set de los krobios",
+        "name_pt": "Conjunto dos Króbios",
         "name_de": "Kroben-Set",
         "items": 4,
         "stats_list": [
@@ -52286,10 +52266,10 @@
     },
     {
         "ankama_id": 949,
-        "name_en": "[!] Panoplie de la Baleine",
+        "name_en": "Whale Set",
         "name_fr": "Panoplie de la Baleine",
-        "name_es": "[!] Panoplie de la Baleine",
-        "name_pt": "[!] Panoplie de la Baleine",
+        "name_es": "Set de la ballena",
+        "name_pt": "Conjunto da Baleia",
         "name_de": "Wal-Set",
         "items": 5,
         "stats_list": [
@@ -52469,10 +52449,10 @@
     },
     {
         "ankama_id": 950,
-        "name_en": "[!] Panoplie Ensevelie",
+        "name_en": "Snowbound Set",
         "name_fr": "Panoplie Ensevelie",
-        "name_es": "[!] Panoplie Ensevelie",
-        "name_pt": "[!] Panoplie Ensevelie",
+        "name_es": "Set sepultado",
+        "name_pt": "Conjunto Soterrado",
         "name_de": "Set des Bestatteten",
         "items": 2,
         "stats_list": [
@@ -52509,10 +52489,10 @@
     },
     {
         "ankama_id": 951,
-        "name_en": "[!] Panoplie Noyée",
+        "name_en": "Drowned Set",
         "name_fr": "Panoplie Noyée",
-        "name_es": "[!] Panoplie Noyée",
-        "name_pt": "[!] Panoplie Noyée",
+        "name_es": "Set ahogado",
+        "name_pt": "Conjunto Afogado",
         "name_de": "Set des Ertrunkenen",
         "items": 2,
         "stats_list": [
@@ -52549,10 +52529,10 @@
     },
     {
         "ankama_id": 952,
-        "name_en": "[!] Panoplie du Fourneau",
+        "name_en": "Oven Set",
         "name_fr": "Panoplie du Fourneau",
-        "name_es": "[!] Panoplie du Fourneau",
-        "name_pt": "[!] Panoplie du Fourneau",
+        "name_es": "Set del horno",
+        "name_pt": "Conjunto do Forno",
         "name_de": "Hochofen-Set",
         "items": 2,
         "stats_list": [
@@ -52589,10 +52569,10 @@
     },
     {
         "ankama_id": 953,
-        "name_en": "[!] Panoplie de la Fournaise",
+        "name_en": "Furnace Set",
         "name_fr": "Panoplie de la Fournaise",
-        "name_es": "[!] Panoplie de la Fournaise",
-        "name_pt": "[!] Panoplie de la Fournaise",
+        "name_es": "Set de la fogata",
+        "name_pt": "Conjunto da Fornalha",
         "name_de": "Schmelzofen-Set",
         "items": 2,
         "stats_list": [
@@ -52629,10 +52609,10 @@
     },
     {
         "ankama_id": 954,
-        "name_en": "[!] Panoplie de la Pyramide",
+        "name_en": "Pyramid Set",
         "name_fr": "Panoplie de la Pyramide",
-        "name_es": "[!] Panoplie de la Pyramide",
-        "name_pt": "[!] Panoplie de la Pyramide",
+        "name_es": "Set de la pirámide",
+        "name_pt": "Conjunto da Pirâmide",
         "name_de": "Pyramiden-Set",
         "items": 3,
         "stats_list": [
@@ -52715,10 +52695,10 @@
     },
     {
         "ankama_id": 955,
-        "name_en": "[!] Panoplie des Maudits",
+        "name_en": "Cursed Set",
         "name_fr": "Panoplie des Maudits",
-        "name_es": "[!] Panoplie des Maudits",
-        "name_pt": "[!] Panoplie des Maudits",
+        "name_es": "Set de los malditos",
+        "name_pt": "Conjunto dos Malditos",
         "name_de": "Set der Verfluchten",
         "items": 3,
         "stats_list": [
@@ -52806,10 +52786,10 @@
     },
     {
         "ankama_id": 956,
-        "name_en": "[!] Panoplie des Abîmes",
+        "name_en": "Abyss Set",
         "name_fr": "Panoplie des Abîmes",
-        "name_es": "[!] Panoplie des Abîmes",
-        "name_pt": "[!] Panoplie des Abîmes",
+        "name_es": "Set del precipicio",
+        "name_pt": "Conjunto dos Abismos",
         "name_de": "Set des Abgrunds",
         "items": 3,
         "stats_list": [
@@ -52877,10 +52857,10 @@
     },
     {
         "ankama_id": 957,
-        "name_en": "[!] Panoplie des Tréfonds",
+        "name_en": "Depths Set",
         "name_fr": "Panoplie des Tréfonds",
-        "name_es": "[!] Panoplie des Tréfonds",
-        "name_pt": "[!] Panoplie des Tréfonds",
+        "name_es": "Set de la sima",
+        "name_pt": "Conjunto das Entranhas",
         "name_de": "Set der Untiefen",
         "items": 3,
         "stats_list": [
@@ -52948,10 +52928,10 @@
     },
     {
         "ankama_id": 958,
-        "name_en": "[!] Panoplie de la Fosse",
+        "name_en": "Pit Set",
         "name_fr": "Panoplie de la Fosse",
-        "name_es": "[!] Panoplie de la Fosse",
-        "name_pt": "[!] Panoplie de la Fosse",
+        "name_es": "Set de la fosa",
+        "name_pt": "Conjunto da Fossa",
         "name_de": "Gruben-Set",
         "items": 3,
         "stats_list": [
@@ -53019,10 +52999,10 @@
     },
     {
         "ankama_id": 959,
-        "name_en": "[!] Panoplie des Profondeurs",
+        "name_en": "Deep Set",
         "name_fr": "Panoplie des Profondeurs",
-        "name_es": "[!] Panoplie des Profondeurs",
-        "name_pt": "[!] Panoplie des Profondeurs",
+        "name_es": "Set de las profundidades",
+        "name_pt": "Conjunto das Profundezas",
         "name_de": "Set der Tiefen",
         "items": 3,
         "stats_list": [
@@ -53090,10 +53070,10 @@
     },
     {
         "ankama_id": 960,
-        "name_en": "[!] Panoplie des Spiritueurs",
+        "name_en": "Slayspirit Set",
         "name_fr": "Panoplie des Spiritueurs",
-        "name_es": "[!] Panoplie des Spiritueurs",
-        "name_pt": "[!] Panoplie des Spiritueurs",
+        "name_es": "Set de los espiritasesinos",
+        "name_pt": "Conjunto dos Assassispíritos",
         "name_de": "Geistreichen-Set",
         "items": 3,
         "stats_list": [
@@ -53186,10 +53166,10 @@
     },
     {
         "ankama_id": 961,
-        "name_en": "[!] Panoplit",
+        "name_en": "Bed Set",
         "name_fr": "Panoplit",
-        "name_es": "[!] Panoplit",
-        "name_pt": "[!] Panoplit",
+        "name_es": "Set camero",
+        "name_pt": "Camonjunto",
         "name_de": "Betten-Set",
         "items": 3,
         "stats_list": [
@@ -53302,10 +53282,10 @@
     },
     {
         "ankama_id": 962,
-        "name_en": "[!] Panoplie du Tynril",
+        "name_en": "Tynril Set",
         "name_fr": "Panoplie du Tynril",
-        "name_es": "[!] Panoplie du Tynril",
-        "name_pt": "[!] Panoplie du Tynril",
+        "name_es": "Set del Tynril",
+        "name_pt": "Conjunto do Tynril",
         "name_de": "Tynril-Set",
         "items": 2,
         "stats_list": [
@@ -53367,10 +53347,10 @@
     },
     {
         "ankama_id": 963,
-        "name_en": "[!] Panoplie du Kimbo",
+        "name_en": "Kimbo Set",
         "name_fr": "Panoplie du Kimbo",
-        "name_es": "[!] Panoplie du Kimbo",
-        "name_pt": "[!] Panoplie du Kimbo",
+        "name_es": "Set del Kimbo",
+        "name_pt": "Conjunto do Kimbo",
         "name_de": "Kimbo-Set",
         "items": 2,
         "stats_list": [
@@ -53422,10 +53402,10 @@
     },
     {
         "ankama_id": 964,
-        "name_en": "[!] Panoplie de l'Apiculteur",
+        "name_en": "Beekeeper Set",
         "name_fr": "Panoplie de l'Apiculteur",
-        "name_es": "[!] Panoplie de l'Apiculteur",
-        "name_pt": "[!] Panoplie de l'Apiculteur",
+        "name_es": "Set de apicultor",
+        "name_pt": "Conjunto do Apicultor",
         "name_de": "Set des Imkers",
         "items": 2,
         "stats_list": [
@@ -53477,10 +53457,10 @@
     },
     {
         "ankama_id": 965,
-        "name_en": "[!] Panoplie du frigostien curieux",
+        "name_en": "Curious Frigostian Set",
         "name_fr": "Panoplie du frigostien curieux",
-        "name_es": "[!] Panoplie du frigostien curieux",
-        "name_pt": "[!] Panoplie du frigostien curieux",
+        "name_es": "Set de frigosteño curioso",
+        "name_pt": "Conjunto do Frigostiano Curioso",
         "name_de": "Set des neugierigen Frigostianers",
         "items": 2,
         "stats_list": [
@@ -53517,10 +53497,10 @@
     },
     {
         "ankama_id": 966,
-        "name_en": "[!] Abranoplie",
+        "name_en": "Treechnid Set",
         "name_fr": "Abranoplie",
-        "name_es": "[!] Abranoplie",
-        "name_pt": "[!] Abranoplie",
+        "name_es": "Set abráknido",
+        "name_pt": "Arvrakonjunto",
         "name_de": "Astaknyset",
         "items": 5,
         "stats_list": [
@@ -53670,11 +53650,11 @@
     },
     {
         "ankama_id": 967,
-        "name_en": "[!] Panoplie d'apparat Chimèrivan",
+        "name_en": "Chimeritinem Ceremonial Set",
         "name_fr": "Panoplie d'apparat Chimèrivan",
-        "name_es": "[!] Panoplie d'apparat Chimèrivan",
-        "name_pt": "[!] Panoplie d'apparat Chimèrivan",
-        "name_de": "[!] Panoplie d'apparat Chimèrivan",
+        "name_es": "Set cosmético quimeravivo",
+        "name_pt": "Conjunto de Aparência Quimerivivo",
+        "name_de": "Lebendimären-Prunkset",
         "items": 8,
         "equipment_ids": [
             30837,
@@ -53689,11 +53669,11 @@
     },
     {
         "ankama_id": 968,
-        "name_en": "[!] Panoplie d'apparat de la Foire du Trool",
+        "name_en": "Trool Fair Ceremonial Set",
         "name_fr": "Panoplie d'apparat de la Foire du Trool",
-        "name_es": "[!] Panoplie d'apparat de la Foire du Trool",
-        "name_pt": "[!] Panoplie d'apparat de la Foire du Trool",
-        "name_de": "[!] Panoplie d'apparat de la Foire du Trool",
+        "name_es": "Set cosmético de la Feria del Trool",
+        "name_pt": "Conjunto de Aparência da Feira do Trool",
+        "name_de": "Prunkset des Jahrmarkts des Trools",
         "items": 3,
         "equipment_ids": [
             30962,
@@ -53703,11 +53683,11 @@
     },
     {
         "ankama_id": 969,
-        "name_en": "[!] Panoplie d'apparat Solary",
+        "name_en": "Solary Ceremonial Set",
         "name_fr": "Panoplie d'apparat Solary",
-        "name_es": "[!] Panoplie d'apparat Solary",
-        "name_pt": "[!] Panoplie d'apparat Solary",
-        "name_de": "[!] Panoplie d'apparat Solary",
+        "name_es": "Set cosmético de Solary",
+        "name_pt": "Conjunto de Aparência Solary",
+        "name_de": "Solary-Prunkset",
         "items": 3,
         "equipment_ids": [
             30971,
@@ -53717,11 +53697,11 @@
     },
     {
         "ankama_id": 970,
-        "name_en": "[!] Panoplie d'apparat Aegis",
+        "name_en": "Aegis Ceremonial Set",
         "name_fr": "Panoplie d'apparat Aegis",
-        "name_es": "[!] Panoplie d'apparat Aegis",
-        "name_pt": "[!] Panoplie d'apparat Aegis",
-        "name_de": "[!] Panoplie d'apparat Aegis",
+        "name_es": "Set cosmético de Aegis",
+        "name_pt": "Conjunto de Aparência Aegis",
+        "name_de": "Aegis-Prunkset",
         "items": 3,
         "equipment_ids": [
             30972,
@@ -53731,11 +53711,11 @@
     },
     {
         "ankama_id": 971,
-        "name_en": "[!] Panoplie d'apparat Karmine Corp",
+        "name_en": "Karmine Corp Ceremonial Set",
         "name_fr": "Panoplie d'apparat Karmine Corp",
-        "name_es": "[!] Panoplie d'apparat Karmine Corp",
-        "name_pt": "[!] Panoplie d'apparat Karmine Corp",
-        "name_de": "[!] Panoplie d'apparat Karmine Corp",
+        "name_es": "Set cosmético de Karmine Corp",
+        "name_pt": "Conjunto de Aparência Karmine Corp",
+        "name_de": "Prunkset des Karmine Corps",
         "items": 3,
         "equipment_ids": [
             30973,
@@ -53745,11 +53725,11 @@
     },
     {
         "ankama_id": 972,
-        "name_en": "[!] Panoplie d'apparat Gentle Mates",
+        "name_en": "Gentle Mates Ceremonial Set",
         "name_fr": "Panoplie d'apparat Gentle Mates",
-        "name_es": "[!] Panoplie d'apparat Gentle Mates",
-        "name_pt": "[!] Panoplie d'apparat Gentle Mates",
-        "name_de": "[!] Panoplie d'apparat Gentle Mates",
+        "name_es": "Set cosmético de Gentle Mates",
+        "name_pt": "Conjunto de Aparência Gentle Mates",
+        "name_de": "Prunkset der Gentle Mates",
         "items": 3,
         "equipment_ids": [
             30975,
@@ -53758,12 +53738,338 @@
         ]
     },
     {
+        "ankama_id": 973,
+        "name_en": "Sceptical Frigostian Set",
+        "name_fr": "Panoplie du frigostien sceptique",
+        "name_es": "Set de frigosteño escéptico",
+        "name_pt": "Conjunto do Frigostiano Cético",
+        "name_de": "Ausrüstungsset des skeptischen Frigostianers",
+        "items": 2,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        1,
+                        null,
+                        "MP"
+                    ],
+                    [
+                        22,
+                        null,
+                        "Air Damage"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Heals"
+                    ],
+                    [
+                        22,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Prospecting"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Agility"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            14049,
+            14160
+        ]
+    },
+    {
+        "ankama_id": 975,
+        "name_en": "Dubious Frigostian Set",
+        "name_fr": "Panoplie du frigostien douteux",
+        "name_es": "Set de frigosteño dudoso",
+        "name_pt": "Conjunto do Frigostiano Desconfiado",
+        "name_de": "Ausrüstungsset des zweifelhaften Frigostianers",
+        "items": 2,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        10,
+                        null,
+                        "Neutral Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Wisdom"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Summon"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            11602,
+            11740
+        ]
+    },
+    {
+        "ankama_id": 976,
+        "name_en": "Abbreviated Set",
+        "name_fr": "Panoplie Abrégée",
+        "name_es": "Set abreviado",
+        "name_pt": "Conjunto Abreviado",
+        "name_de": "Gekürztes Ausrüstungsset",
+        "items": 2,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        10,
+                        null,
+                        "Neutral Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Prospecting"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Wisdom"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Summon"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            11623,
+            11729
+        ]
+    },
+    {
+        "ankama_id": 977,
+        "name_en": "Vague Frigostian Set",
+        "name_fr": "Panoplie du frigostien approximatif",
+        "name_es": "Set de frigosteño aproximativo",
+        "name_pt": "Conjunto do Frigostiano Aproximativo",
+        "name_de": "Ausrüstungsset des nachlässigen Frigostianers",
+        "items": 2,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        5,
+                        null,
+                        "Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        1,
+                        null,
+                        "MP"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Air Damage"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            11727,
+            12068
+        ]
+    },
+    {
+        "ankama_id": 978,
+        "name_en": "Enchanting Frigostian Set",
+        "name_fr": "Panoplie du frigostien envoûtant",
+        "name_es": "Set de frigosteño cautivador",
+        "name_pt": "Conjunto do Frigostiano Hipnotizante",
+        "name_de": "Ausrüstungsset des bezaubernden Frigostianers",
+        "items": 2,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        60,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        60,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Pushback Damage"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Wisdom"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Power"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            11606,
+            11612
+        ]
+    },
+    {
+        "ankama_id": 979,
+        "name_en": "Hesperus Set",
+        "name_fr": "Panoplie du Grolandais",
+        "name_es": "Set del Roca Negra",
+        "name_pt": "Conjunto do Ogrolandês",
+        "name_de": "Black Roggs Ausrüstungsset",
+        "items": 3,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        1,
+                        null,
+                        "MP"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Critical Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Critical Hits"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            11600,
+            11626,
+            11631
+        ]
+    },
+    {
         "ankama_id": 980,
-        "name_en": "[!] Panoplie d'apparat des Lary",
+        "name_en": "Lary Ceremonial Set",
         "name_fr": "Panoplie d'apparat des Lary",
-        "name_es": "[!] Panoplie d'apparat des Lary",
-        "name_pt": "[!] Panoplie d'apparat des Lary",
-        "name_de": "[!] Panoplie d'apparat des Lary",
+        "name_es": "Set cosmético de los Lary",
+        "name_pt": "Conjunto de Aparência dos Lary",
+        "name_de": "Lary-Prunkset",
         "items": 4,
         "equipment_ids": [
             30985,
@@ -53774,11 +54080,11 @@
     },
     {
         "ankama_id": 981,
-        "name_en": "[!] Panoplie d'apparat des Maîtres Lary",
+        "name_en": "Lary Masters Ceremonial Set",
         "name_fr": "Panoplie d'apparat des Maîtres Lary",
-        "name_es": "[!] Panoplie d'apparat des Maîtres Lary",
-        "name_pt": "[!] Panoplie d'apparat des Maîtres Lary",
-        "name_de": "[!] Panoplie d'apparat des Maîtres Lary",
+        "name_es": "Set cosmético de los maestros Lary",
+        "name_pt": "Conjunto de Aparência dos Mestres Lary",
+        "name_de": "Meister-Lary-Prunkset",
         "items": 4,
         "equipment_ids": [
             30989,
@@ -53789,11 +54095,11 @@
     },
     {
         "ankama_id": 982,
-        "name_en": "[!] Panoplie d'apparat du Jan'Ken'Pon",
+        "name_en": "JanKenPon Ceremonial Set",
         "name_fr": "Panoplie d'apparat du Jan'Ken'Pon",
-        "name_es": "[!] Panoplie d'apparat du Jan'Ken'Pon",
-        "name_pt": "[!] Panoplie d'apparat du Jan'Ken'Pon",
-        "name_de": "[!] Panoplie d'apparat du Jan'Ken'Pon",
+        "name_es": "Set cosmético de Chin'Chan'Pun",
+        "name_pt": "Conjunto de Aparência do Jankenpon",
+        "name_de": "JanKenPon-Prunkset",
         "items": 3,
         "equipment_ids": [
             30833,
