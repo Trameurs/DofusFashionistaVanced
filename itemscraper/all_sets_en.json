@@ -9671,7 +9671,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected damage",
-                            "id": 248,
+                            "id": 250,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9699,7 +9699,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected damage",
-                            "id": 248,
+                            "id": 250,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9753,7 +9753,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected damage",
-                            "id": 248,
+                            "id": 250,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -9807,7 +9807,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected damage",
-                            "id": 248,
+                            "id": 250,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -37776,7 +37776,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected damage",
-                            "id": 248,
+                            "id": 250,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -37817,7 +37817,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected damage",
-                            "id": 248,
+                            "id": 250,
                             "is_meta": false,
                             "is_active": false
                         },
@@ -101580,7 +101580,7 @@
                         "int_maximum": 0,
                         "type": {
                             "name": "reflected damage",
-                            "id": 248,
+                            "id": 250,
                             "is_meta": false,
                             "is_active": false
                         },
