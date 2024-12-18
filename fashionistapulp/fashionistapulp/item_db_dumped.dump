@@ -901,6 +901,7 @@ INSERT INTO sets VALUES(813,'Hesperus Set',979,NULL);
 INSERT INTO sets VALUES(814,'Lary Ceremonial Set',980,NULL);
 INSERT INTO sets VALUES(815,'Lary Masters Ceremonial Set',981,NULL);
 INSERT INTO sets VALUES(816,'JanKenPon Ceremonial Set',982,NULL);
+INSERT INTO sets VALUES(817,'Marvellous Woman Ceremonial Set',984,NULL);
 CREATE TABLE "items" (
         `id` INTEGER PRIMARY KEY AUTOINCREMENT,
         `name` text,
@@ -56237,6 +56238,10 @@ INSERT INTO set_names VALUES(816, 'fr', 'Panoplie d''apparat du Jan''Ken''Pon');
 INSERT INTO set_names VALUES(816, 'es', 'Set cosmético de Chin''Chan''Pun');
 INSERT INTO set_names VALUES(816, 'pt', 'Conjunto de Aparência do Jankenpon');
 INSERT INTO set_names VALUES(816, 'de', 'JanKenPon-Prunkset');
+INSERT INTO set_names VALUES(817, 'fr', 'Panoplie d''apparat de la Femme Merveilleuse');
+INSERT INTO set_names VALUES(817, 'es', 'Set cosmético de la Mujer Maravillosa');
+INSERT INTO set_names VALUES(817, 'pt', 'Conjunto de Aparência da Mulher Maravilhosa');
+INSERT INTO set_names VALUES(817, 'de', 'Prunkset der Wunderfrau');
 CREATE TABLE item_weird_conditions (item INTEGER, condition_id INTEGER, FOREIGN KEY(item) REFERENCES items(id));
 INSERT INTO item_weird_conditions VALUES(2676, 1);
 INSERT INTO item_weird_conditions VALUES(2677, 1);
@@ -56362,5 +56367,5 @@ INSERT INTO sqlite_sequence VALUES('item_types',10);
 INSERT INTO sqlite_sequence VALUES('stats',64);
 INSERT INTO sqlite_sequence VALUES('weapontype',11);
 INSERT INTO sqlite_sequence VALUES('items',3736);
-INSERT INTO sqlite_sequence VALUES('sets',816);
+INSERT INTO sqlite_sequence VALUES('sets',817);
 COMMIT;

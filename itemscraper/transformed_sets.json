@@ -47865,10 +47865,11 @@
         "name_es": "Set cosmético de la weina Henelsuw",
         "name_pt": "Conjunto de Aparência da Wainha Dossul",
         "name_de": "Prunkset der Kwönigin Desswüdens",
-        "items": 2,
+        "items": 3,
         "equipment_ids": [
             27848,
-            29498
+            29498,
+            31042
         ]
     },
     {
@@ -54105,6 +54106,21 @@
             30833,
             30834,
             30835
+        ]
+    },
+    {
+        "ankama_id": 984,
+        "name_en": "Marvellous Woman Ceremonial Set",
+        "name_fr": "Panoplie d'apparat de la Femme Merveilleuse",
+        "name_es": "Set cosmético de la Mujer Maravillosa",
+        "name_pt": "Conjunto de Aparência da Mulher Maravilhosa",
+        "name_de": "Prunkset der Wunderfrau",
+        "items": 4,
+        "equipment_ids": [
+            19097,
+            31045,
+            31046,
+            31047
         ]
     }
 ]
