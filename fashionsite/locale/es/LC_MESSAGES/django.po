@@ -344,8 +344,8 @@ msgid "%(min)d to %(max)d (%(element)s)"
 msgstr "%(min)d a %(max)d (%(element)s)"
 
 #: chardata/solution_result.py:256
-msgid "Set bonus < 2"
-msgstr "Bonus de set < 2"
+msgid "Set bonus < 3"
+msgstr "Bonus de set < 3"
 
 #: chardata/solution_result.py:265
 msgid "Prysmaradite < 1"
@@ -1674,8 +1674,8 @@ msgid "Allow Dofuses and Trophies"
 msgstr "Permitir Dofus y Trofeos"
 
 #: chardata/templates/chardata/options.html:78
-msgid "Remove only <2"
-msgstr "Eliminar sólo <2"
+msgid "Remove only <3"
+msgstr "Eliminar sólo <3"
 
 #: chardata/templates/chardata/options.html:80
 msgid "Allow only Cawwot Dofus"

@@ -3519,7 +3519,7 @@
                     "int_maximum": 10,
                     "type": {
                         "name": "de danos reenviados",
-                        "id": 246,
+                        "id": 247,
                         "is_meta": false,
                         "is_active": false
                     },

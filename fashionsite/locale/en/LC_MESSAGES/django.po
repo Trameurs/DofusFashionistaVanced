@@ -330,7 +330,7 @@ msgid "%(min)d to %(max)d (%(element)s)"
 msgstr ""
 
 #: chardata/solution_result.py:256
-msgid "Set bonus < 2"
+msgid "Set bonus < 3"
 msgstr ""
 
 #: chardata/solution_result.py:265
@@ -1503,7 +1503,7 @@ msgid "Allow Dofuses and Trophies"
 msgstr ""
 
 #: chardata/templates/chardata/options.html:78
-msgid "Remove only <2"
+msgid "Remove only <3"
 msgstr ""
 
 #: chardata/templates/chardata/options.html:80

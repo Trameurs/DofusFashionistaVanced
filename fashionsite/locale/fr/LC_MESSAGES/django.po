@@ -26,8 +26,8 @@ msgstr "projet"
 #: fashionistapulp/fashionistapulp/modelresult.py:403
 #: fashionistapulp/fashionistapulp/modelresult.py:473
 #: fashionsite/chardata/solution_result.py:256
-msgid "Set bonus < 2"
-msgstr "Bonus de panoplies < 2"
+msgid "Set bonus < 3"
+msgstr "Bonus de panoplies < 3"
 
 #: fashionistapulp/fashionistapulp/modelresult.py:416
 #: fashionistapulp/fashionistapulp/modelresult.py:482
@@ -1795,8 +1795,8 @@ msgid "Allow Dofuses and Trophies"
 msgstr "Autoriser les dofus et trophées"
 
 #: fashionsite/chardata/templates/chardata/options.html:78
-msgid "Remove only <2"
-msgstr "Supprimer les <2"
+msgid "Remove only <3"
+msgstr "Supprimer les <3"
 
 #: fashionsite/chardata/templates/chardata/options.html:80
 msgid "Allow only Cawwot Dofus"
