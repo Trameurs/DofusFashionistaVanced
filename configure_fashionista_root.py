@@ -29,16 +29,44 @@ if platform.system() == 'Windows':
 else:
     CONFIG_DIR = '/etc/fashionista'
 
-# Updated package list for Debian-based systems
 PACKAGES_TO_INSTALL = {
     'apt-get': [
-        'python3-pip', 'sqlite3', 'pngcrush', 'imagemagick', 'mariadb-server',
-        'mariadb-client', 'python3-dev', 'libmariadb-dev', 'libevent-dev', 'memcached',
+        'python3-pip',
+        'sqlite3',
+        'pngcrush',
+        'imagemagick',
+        'mariadb-server',
+        'mariadb-client',
+        'python3-dev',
+        'libmariadb-dev',
+        'libevent-dev',
+        'memcached',
     ],
     'yum': [
-        'python3-pip', 'sqlite', 'pngcrush', 'ImageMagick', 'mariadb-server',
-        'mariadb', 'python3-devel', 'mariadb-devel', 'libevent-devel', 'memcached',
-    ]
+        'python3-pip',
+        'sqlite',
+        'pngcrush',
+        'ImageMagick',
+        'mariadb-server',
+        'mariadb',
+        'python3-devel',
+        'mariadb-devel',
+        'libevent-devel',
+        'memcached',
+    ],
+    # Added for Fedora
+    'dnf': [
+        'python3-pip',
+        'sqlite',
+        'pngcrush',
+        'ImageMagick',
+        'mariadb-server',
+        'mariadb',
+        'python3-devel',
+        'mariadb-devel',
+        'libevent-devel',
+        'memcached',
+    ],
 }
 
 PIP_PACKAGES_TO_INSTALL = [
@@ -150,11 +178,13 @@ password={GEN_CONFIGS['mysql_PASSWORD']}
 def _get_package_manager():
     try:
         with open('/etc/os-release', 'r') as f:
-            distro_name = f.readline().split('=')[1].strip().replace('"', '')
-        if 'ubuntu' in distro_name.lower() or 'debian' in distro_name.lower():
+            lines = f.read().lower()
+        if 'ubuntu' in lines or 'debian' in lines:
             return 'apt-get'
-        elif 'amzn' in distro_name.lower() or 'centos' in distro_name.lower():
+        elif 'amzn' in lines or 'centos' in lines:
             return 'yum'
+        elif 'fedora' in lines:
+            return 'dnf'
     except Exception as e:
         print(f"Error determining package manager: {e}")
         return None
