@@ -556,8 +556,6 @@ class ModelResultItem():
             self.extras = localized_extras
     
             if self.type == 'Weapon':
-                # Just copy?
-                print(self.name)
                 weapon = structure.get_weapon_by_name(self.name)
                 self.is_mageable = weapon.is_mageable
                 self.non_crit_hits = weapon.non_crit_hits
