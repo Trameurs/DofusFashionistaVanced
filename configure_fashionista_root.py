@@ -163,7 +163,11 @@ password={GEN_CONFIGS['mysql_PASSWORD']}
 user={GEN_CONFIGS['mysql_USER']}
 password={GEN_CONFIGS['mysql_PASSWORD']}
 """)
-    call(['chmod', '644', mysql_config_file_path])
+    if os.name == 'nt':  # Windows
+        import stat
+        os.chmod(mysql_config_file_path, stat.S_IREAD | stat.S_IWRITE)
+    else:  # Unix/Linux
+        call(['chmod', '644', mysql_config_file_path])
     print(f'Wrote MySQL config to {mysql_config_file_path}')
 
     if args.install_deps:
