@@ -11432,7 +11432,7 @@
     {
         "ankama_id": 71,
         "name_en": "Green Piwi Set",
-        "name_fr": "Panoplie du Piou Vert",
+        "name_fr": "Panoplie du Piou Jaune",
         "name_es": "Set de pío verde",
         "name_pt": "Conjunto do Piu Verde",
         "name_de": "Grünes Piepmatz-Set",
@@ -11492,14 +11492,14 @@
                         "Agility"
                     ],
                     [
-                        3,
-                        null,
-                        "Air Damage"
-                    ],
-                    [
                         1,
                         null,
                         "Range"
+                    ],
+                    [
+                        3,
+                        null,
+                        "Air Damage"
                     ]
                 ]
             }
@@ -11516,7 +11516,7 @@
     {
         "ankama_id": 72,
         "name_en": "Yellow Piwi Set",
-        "name_fr": "Panoplie du Piou Jaune",
+        "name_fr": "Panoplie du Piou Vert",
         "name_es": "Set de pío amarillo",
         "name_pt": "Conjunto de Piu Amarelo",
         "name_de": "Gelbes Piepmatz-Set",
@@ -11576,14 +11576,14 @@
                         "Strength"
                     ],
                     [
-                        1,
-                        null,
-                        "Range"
-                    ],
-                    [
                         3,
                         null,
                         "Earth Damage"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Range"
                     ]
                 ]
             }
@@ -54121,6 +54121,23 @@
             31045,
             31046,
             31047
+        ]
+    },
+    {
+        "ankama_id": 985,
+        "name_en": "[!] Panoplie d'apparat Ophidienne",
+        "name_fr": "Panoplie d'apparat Ophidienne",
+        "name_es": "[!] Panoplie d'apparat Ophidienne",
+        "name_pt": "[!] Panoplie d'apparat Ophidienne",
+        "name_de": "[!] Panoplie d'apparat Ophidienne",
+        "items": 6,
+        "equipment_ids": [
+            31053,
+            31054,
+            31055,
+            31056,
+            31057,
+            31058
         ]
     }
 ]

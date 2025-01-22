@@ -24136,19 +24136,6 @@
                         "formatted": "30 Agility"
                     },
                     {
-                        "int_minimum": 3,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Air damage",
-                            "id": 47,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "3 Air damage"
-                    },
-                    {
                         "int_minimum": 1,
                         "int_maximum": 0,
                         "type": {
@@ -24160,6 +24147,19 @@
                         "ignore_int_min": false,
                         "ignore_int_max": true,
                         "formatted": "1 Range"
+                    },
+                    {
+                        "int_minimum": 3,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Air damage",
+                            "id": 47,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "3 Air damage"
                     }
                 ]
             },
@@ -24269,19 +24269,6 @@
                         "formatted": "30 Strength"
                     },
                     {
-                        "int_minimum": 1,
-                        "int_maximum": 0,
-                        "type": {
-                            "name": "Range",
-                            "id": 31,
-                            "is_meta": false,
-                            "is_active": false
-                        },
-                        "ignore_int_min": false,
-                        "ignore_int_max": true,
-                        "formatted": "1 Range"
-                    },
-                    {
                         "int_minimum": 3,
                         "int_maximum": 0,
                         "type": {
@@ -24293,6 +24280,19 @@
                         "ignore_int_min": false,
                         "ignore_int_max": true,
                         "formatted": "3 Earth Damage"
+                    },
+                    {
+                        "int_minimum": 1,
+                        "int_maximum": 0,
+                        "type": {
+                            "name": "Range",
+                            "id": 31,
+                            "is_meta": false,
+                            "is_active": false
+                        },
+                        "ignore_int_min": false,
+                        "ignore_int_max": true,
+                        "formatted": "1 Range"
                     }
                 ]
             },
@@ -106677,6 +106677,22 @@
                 31045,
                 31046,
                 31047
+            ]
+        },
+        {
+            "ankama_id": 985,
+            "name": "[!] Panoplie d'apparat Ophidienne",
+            "items": 6,
+            "level": 60,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
+            "equipment_ids": [
+                31053,
+                31054,
+                31055,
+                31056,
+                31057,
+                31058
             ]
         }
     ]

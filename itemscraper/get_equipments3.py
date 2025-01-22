@@ -17,12 +17,18 @@
 import json
 import pickle
 import os
+import sys
+
+current_directory = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(current_directory)
+sys.path.append(project_root)
+
 from fashionistapulp.fashionistapulp.dofus_constants import (
     STAT_NAME_TO_KEY,
     STAT_ORDER,
     TYPE_NAME_TO_SLOT
 )
-current_directory = os.path.dirname(__file__)
+#current_directory = os.path.dirname(__file__)
 
 LANGUAGES = ['en', 'fr', 'es', 'pt', 'de']
 
