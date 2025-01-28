@@ -54125,11 +54125,11 @@
     },
     {
         "ankama_id": 985,
-        "name_en": "[!] Panoplie d'apparat Ophidienne",
+        "name_en": "Ophidian Ceremonial Set",
         "name_fr": "Panoplie d'apparat Ophidienne",
-        "name_es": "[!] Panoplie d'apparat Ophidienne",
-        "name_pt": "[!] Panoplie d'apparat Ophidienne",
-        "name_de": "[!] Panoplie d'apparat Ophidienne",
+        "name_es": "Set cosmético ofidiano",
+        "name_pt": "Conjunto de Aparência Ofídico",
+        "name_de": "Schlangen-Prunkset",
         "items": 6,
         "equipment_ids": [
             31053,
