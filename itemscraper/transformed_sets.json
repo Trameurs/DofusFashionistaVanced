@@ -45001,12 +45001,13 @@
         "name_es": "Set cosmético de prestancia acuosa",
         "name_pt": "Conjunto de Aparência de Presença Aquosa",
         "name_de": "Stattliches wässriges Prunkset",
-        "items": 4,
+        "items": 5,
         "equipment_ids": [
             25121,
             25374,
             27395,
-            27730
+            27730,
+            31061
         ]
     },
     {
@@ -45016,12 +45017,13 @@
         "name_es": "Set cosmético de prestancia ígnea",
         "name_pt": "Conjunto de Aparência de Presença Ígnea",
         "name_de": "Stattliches feuriges Prunkset",
-        "items": 4,
+        "items": 5,
         "equipment_ids": [
             25122,
             25373,
             27396,
-            27731
+            27731,
+            31064
         ]
     },
     {
@@ -45031,12 +45033,13 @@
         "name_es": "Set cosmético de prestancia vegetal",
         "name_pt": "Conjunto de Aparência de Presença Vegetal",
         "name_de": "Stattliches pflanzliches Prunkset",
-        "items": 4,
+        "items": 5,
         "equipment_ids": [
             25123,
             25375,
             27393,
-            27732
+            27732,
+            31062
         ]
     },
     {
@@ -45046,12 +45049,13 @@
         "name_es": "Set cosmético de prestancia volátil",
         "name_pt": "Conjunto de Aparência de Presença Volátil",
         "name_de": "Stattliches flüchtiges Prunkset",
-        "items": 4,
+        "items": 5,
         "equipment_ids": [
             25124,
             25376,
             27394,
-            27729
+            27729,
+            31063
         ]
     },
     {
@@ -45150,12 +45154,13 @@
         "name_es": "Set cosmético de Platta",
         "name_pt": "Conjunto de Aparência de Argento",
         "name_de": "Argentums Prunkset",
-        "items": 4,
+        "items": 5,
         "equipment_ids": [
             26739,
             26740,
             26741,
-            26742
+            26742,
+            30238
         ]
     },
     {
@@ -45326,13 +45331,14 @@
         "name_es": "Set cosmético de Horo",
         "name_pt": "Conjunto de Aparência de Oiro",
         "name_de": "Aurums Prunkset",
-        "items": 5,
+        "items": 6,
         "equipment_ids": [
             26743,
             26744,
             26745,
             26746,
-            26748
+            26748,
+            30239
         ]
     },
     {
@@ -45358,12 +45364,13 @@
         "name_es": "Set cosmético osteomante",
         "name_pt": "Conjunto de Aparência Osteomante",
         "name_de": "Knochenbeschwörerin-Prunkset",
-        "items": 4,
+        "items": 5,
         "equipment_ids": [
             25929,
             25930,
             25931,
-            25932
+            25932,
+            31060
         ]
     },
     {
@@ -48462,14 +48469,15 @@
         "name_es": "Set cosmético de la Sombra Maldita",
         "name_pt": "Conjunto de Aparência de Sombra Maldita",
         "name_de": "Prunkset des Verfluchten Schattens",
-        "items": 6,
+        "items": 7,
         "equipment_ids": [
             29731,
             29732,
             29733,
             29734,
             29742,
-            30021
+            30021,
+            30052
         ]
     },
     {

@@ -93495,7 +93495,7 @@
         {
             "ankama_id": 598,
             "name": "Aqueous Panache Ceremonial Set",
-            "items": 4,
+            "items": 5,
             "level": 1,
             "contains_cosmetics": true,
             "contains_cosmetics_only": true,
@@ -93503,13 +93503,14 @@
                 25121,
                 25374,
                 27395,
-                27730
+                27730,
+                31061
             ]
         },
         {
             "ankama_id": 599,
             "name": "Fiery Panache Ceremonial Set",
-            "items": 4,
+            "items": 5,
             "level": 1,
             "contains_cosmetics": true,
             "contains_cosmetics_only": true,
@@ -93517,13 +93518,14 @@
                 25122,
                 25373,
                 27396,
-                27731
+                27731,
+                31064
             ]
         },
         {
             "ankama_id": 600,
             "name": "Botanic Panache Ceremonial Set",
-            "items": 4,
+            "items": 5,
             "level": 1,
             "contains_cosmetics": true,
             "contains_cosmetics_only": true,
@@ -93531,13 +93533,14 @@
                 25123,
                 25375,
                 27393,
-                27732
+                27732,
+                31062
             ]
         },
         {
             "ankama_id": 601,
             "name": "Volatile Panache Ceremonial Set",
-            "items": 4,
+            "items": 5,
             "level": 1,
             "contains_cosmetics": true,
             "contains_cosmetics_only": true,
@@ -93545,7 +93548,8 @@
                 25124,
                 25376,
                 27394,
-                27729
+                27729,
+                31063
             ]
         },
         {
@@ -93634,7 +93638,7 @@
         {
             "ankama_id": 608,
             "name": "Arjan's Ceremonial Set",
-            "items": 4,
+            "items": 5,
             "level": 1,
             "contains_cosmetics": true,
             "contains_cosmetics_only": true,
@@ -93642,7 +93646,8 @@
                 26739,
                 26740,
                 26741,
-                26742
+                26742,
+                30238
             ]
         },
         {
@@ -93798,7 +93803,7 @@
         {
             "ankama_id": 621,
             "name": "Aurum Ceremonial Set",
-            "items": 5,
+            "items": 6,
             "level": 1,
             "contains_cosmetics": true,
             "contains_cosmetics_only": true,
@@ -93807,7 +93812,8 @@
                 26744,
                 26745,
                 26746,
-                26748
+                26748,
+                30239
             ]
         },
         {
@@ -93828,7 +93834,7 @@
         {
             "ankama_id": 623,
             "name": "Osteomancer Ceremonial Set",
-            "items": 4,
+            "items": 5,
             "level": 60,
             "contains_cosmetics": true,
             "contains_cosmetics_only": true,
@@ -93836,7 +93842,8 @@
                 25929,
                 25930,
                 25931,
-                25932
+                25932,
+                31060
             ]
         },
         {
@@ -96720,7 +96727,7 @@
         {
             "ankama_id": 840,
             "name": "Cursed Shadow Ceremonial Set",
-            "items": 6,
+            "items": 7,
             "level": 60,
             "contains_cosmetics": true,
             "contains_cosmetics_only": true,
@@ -96730,7 +96737,8 @@
                 29733,
                 29734,
                 29742,
-                30021
+                30021,
+                30052
             ]
         },
         {
