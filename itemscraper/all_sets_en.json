@@ -93906,8 +93906,8 @@
         {
             "ankama_id": 628,
             "name": "Mask Parade Ceremonial Set",
-            "items": 5,
-            "level": 1,
+            "items": 6,
+            "level": 60,
             "contains_cosmetics": true,
             "contains_cosmetics_only": true,
             "equipment_ids": [
@@ -93915,7 +93915,8 @@
                 24952,
                 24953,
                 24954,
-                24955
+                24955,
+                31489
             ]
         },
         {
@@ -93965,13 +93966,15 @@
         {
             "ankama_id": 632,
             "name": "Karnaval Ceremonial Set",
-            "items": 2,
+            "items": 4,
             "level": 1,
             "contains_cosmetics": true,
             "contains_cosmetics_only": true,
             "equipment_ids": [
                 15097,
-                15098
+                15098,
+                31483,
+                31484
             ]
         },
         {
@@ -106701,6 +106704,73 @@
                 31056,
                 31057,
                 31058
+            ]
+        },
+        {
+            "ankama_id": 988,
+            "name": "Permafrost Ceremonial Set",
+            "items": 7,
+            "level": 60,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
+            "equipment_ids": [
+                31449,
+                31450,
+                31451,
+                31452,
+                31453,
+                31454,
+                31455
+            ]
+        },
+        {
+            "ankama_id": 989,
+            "name": "Black Dragon Finery",
+            "items": 7,
+            "level": 60,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
+            "equipment_ids": [
+                31456,
+                31457,
+                31458,
+                31459,
+                31460,
+                31461,
+                31462
+            ]
+        },
+        {
+            "ankama_id": 990,
+            "name": "Eliacube Set",
+            "items": 7,
+            "level": 60,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
+            "equipment_ids": [
+                31463,
+                31464,
+                31465,
+                31466,
+                31467,
+                31468,
+                31469
+            ]
+        },
+        {
+            "ankama_id": 991,
+            "name": "Harebourg Frozen Set",
+            "items": 6,
+            "level": 60,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
+            "equipment_ids": [
+                31470,
+                31471,
+                31472,
+                31473,
+                31474,
+                31475
             ]
         }
     ]
