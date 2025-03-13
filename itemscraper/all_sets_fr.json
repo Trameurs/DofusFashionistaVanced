@@ -106772,6 +106772,24 @@
                 31474,
                 31475
             ]
+        },
+        {
+            "ankama_id": 1002,
+            "name": "Panoplie d'apparat du Chevalier du Ciel",
+            "items": 8,
+            "level": 60,
+            "contains_cosmetics": true,
+            "contains_cosmetics_only": true,
+            "equipment_ids": [
+                29550,
+                29551,
+                29552,
+                30423,
+                31500,
+                31501,
+                31506,
+                31507
+            ]
         }
     ]
 }

@@ -54221,5 +54221,24 @@
             31474,
             31475
         ]
+    },
+    {
+        "ankama_id": 1002,
+        "name_en": "[!] Panoplie d'apparat du Chevalier du Ciel",
+        "name_fr": "Panoplie d'apparat du Chevalier du Ciel",
+        "name_es": "[!] Panoplie d'apparat du Chevalier du Ciel",
+        "name_pt": "[!] Panoplie d'apparat du Chevalier du Ciel",
+        "name_de": "[!] Panoplie d'apparat du Chevalier du Ciel",
+        "items": 8,
+        "equipment_ids": [
+            29550,
+            29551,
+            29552,
+            30423,
+            31500,
+            31501,
+            31506,
+            31507
+        ]
     }
 ]
