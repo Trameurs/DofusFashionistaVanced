@@ -250,14 +250,15 @@ LOGGING = {
     }
 }
 
-CACHES = { 
-  'default' : { 
-     'BACKEND': 'django.core.cache.backends.memcached.PyLibMCCache', 
-     'LOCATION' : '127.0.0.1:11211',
-     'TIMEOUT': 600,
-     'CULL_FREQUENCY': 3
-  }
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'fashionista-cache',
+    }
 }
+
+
+
 
 EMAIL_USE_TLS = GEN_CONFIGS['EMAIL_USE_TLS']
 EMAIL_HOST = GEN_CONFIGS['EMAIL_HOST']
@@ -275,3 +276,14 @@ EXPERIMENTS = {
 }
 
 DEFAULT_THEME = 'lighttheme'
+
+
+
+
+
+
+
+
+
+
+
