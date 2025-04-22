@@ -143,6 +143,7 @@ STAT_TRANSLATE = {
     '(MP)': '(MP)',
     'reflected damage' : 'Reflects',
     '(best-element damage)' : '(best-element damage)',
+    'Size: %' : 'Size: %'
 }
 
 LANGUAGES = ['en', 'fr', 'es', 'pt', 'de']
