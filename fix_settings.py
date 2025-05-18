@@ -11,7 +11,7 @@ import os
 print("Correction du fichier settings.py...")
 
 # Chemin du fichier settings.py - Correction du chemin
-settings_path = "C:\\Users\\Hokli\\Documents\\test_jeanseb_geckos\\test\\autocompletion_livraison\\bac_a_guigui\\DofusFashionistaVanced\\fashionsite\\fashionsite\\settings.py"
+settings_path = os.path.join(os.path.dirname(__file__), 'fashionsite', 'fashionsite', 'settings.py')
 
 # Vérification de l'existence du fichier
 if not os.path.exists(settings_path):
