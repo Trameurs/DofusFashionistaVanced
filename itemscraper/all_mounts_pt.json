@@ -2828,19 +2828,6 @@
             "effects": [
                 {
                     "int_minimum": 0,
-                    "int_maximum": 70,
-                    "type": {
-                        "name": "Inteligência",
-                        "id": 13,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 70 Inteligência"
-                },
-                {
-                    "int_minimum": 0,
                     "int_maximum": 300,
                     "type": {
                         "name": "Vitalidade",
@@ -2864,6 +2851,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 70 Força"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 70,
+                    "type": {
+                        "name": "Inteligência",
+                        "id": 13,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 70 Inteligência"
                 }
             ]
         },
@@ -2894,19 +2894,6 @@
                 },
                 {
                     "int_minimum": 0,
-                    "int_maximum": 1,
-                    "type": {
-                        "name": "de alcance",
-                        "id": 31,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 1 de alcance"
-                },
-                {
-                    "int_minimum": 0,
                     "int_maximum": 1000,
                     "type": {
                         "name": "Iniciativa",
@@ -2917,6 +2904,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 1000 Iniciativa"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 1,
+                    "type": {
+                        "name": "de alcance",
+                        "id": 31,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 1 de alcance"
                 }
             ]
         },
@@ -2932,6 +2932,19 @@
                 "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/78-256.png"
             },
             "effects": [
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 300,
+                    "type": {
+                        "name": "Vitalidade",
+                        "id": 9,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 300 Vitalidade"
+                },
                 {
                     "int_minimum": 0,
                     "int_maximum": 1,
@@ -2957,19 +2970,6 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 1 invocaç"
-                },
-                {
-                    "int_minimum": 0,
-                    "int_maximum": 300,
-                    "type": {
-                        "name": "Vitalidade",
-                        "id": 9,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 300 Vitalidade"
                 }
             ]
         },
@@ -2987,16 +2987,16 @@
             "effects": [
                 {
                     "int_minimum": 0,
-                    "int_maximum": 300,
+                    "int_maximum": 70,
                     "type": {
-                        "name": "Vitalidade",
-                        "id": 9,
+                        "name": "Agilidade",
+                        "id": 36,
                         "is_meta": false,
                         "is_active": false
                     },
                     "ignore_int_min": false,
                     "ignore_int_max": false,
-                    "formatted": "0 a 300 Vitalidade"
+                    "formatted": "0 a 70 Agilidade"
                 },
                 {
                     "int_minimum": 0,
@@ -3013,16 +3013,16 @@
                 },
                 {
                     "int_minimum": 0,
-                    "int_maximum": 70,
+                    "int_maximum": 300,
                     "type": {
-                        "name": "Agilidade",
-                        "id": 36,
+                        "name": "Vitalidade",
+                        "id": 9,
                         "is_meta": false,
                         "is_active": false
                     },
                     "ignore_int_min": false,
                     "ignore_int_max": false,
-                    "formatted": "0 a 70 Agilidade"
+                    "formatted": "0 a 300 Vitalidade"
                 }
             ]
         },
@@ -3040,19 +3040,6 @@
             "effects": [
                 {
                     "int_minimum": 0,
-                    "int_maximum": 8,
-                    "type": {
-                        "name": "% de crítico",
-                        "id": 29,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 8% de crítico"
-                },
-                {
-                    "int_minimum": 0,
                     "int_maximum": 1,
                     "type": {
                         "name": "de alcance",
@@ -3063,6 +3050,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 1 de alcance"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 8,
+                    "type": {
+                        "name": "% de crítico",
+                        "id": 29,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 8% de crítico"
                 },
                 {
                     "int_minimum": 0,
@@ -3093,6 +3093,19 @@
             "effects": [
                 {
                     "int_minimum": 0,
+                    "int_maximum": 1,
+                    "type": {
+                        "name": "de alcance",
+                        "id": 31,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 1 de alcance"
+                },
+                {
+                    "int_minimum": 0,
                     "int_maximum": 70,
                     "type": {
                         "name": "Sorte",
@@ -3116,19 +3129,6 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 300 Vitalidade"
-                },
-                {
-                    "int_minimum": 0,
-                    "int_maximum": 1,
-                    "type": {
-                        "name": "de alcance",
-                        "id": 31,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 1 de alcance"
                 }
             ]
         },
@@ -3146,16 +3146,16 @@
             "effects": [
                 {
                     "int_minimum": 0,
-                    "int_maximum": 300,
+                    "int_maximum": 50,
                     "type": {
-                        "name": "Vitalidade",
-                        "id": 9,
+                        "name": "Potência",
+                        "id": 32,
                         "is_meta": false,
                         "is_active": false
                     },
                     "ignore_int_min": false,
                     "ignore_int_max": false,
-                    "formatted": "0 a 300 Vitalidade"
+                    "formatted": "0 a 50 Potência"
                 },
                 {
                     "int_minimum": 0,
@@ -3172,16 +3172,16 @@
                 },
                 {
                     "int_minimum": 0,
-                    "int_maximum": 50,
+                    "int_maximum": 300,
                     "type": {
-                        "name": "Potência",
-                        "id": 32,
+                        "name": "Vitalidade",
+                        "id": 9,
                         "is_meta": false,
                         "is_active": false
                     },
                     "ignore_int_min": false,
                     "ignore_int_max": false,
-                    "formatted": "0 a 50 Potência"
+                    "formatted": "0 a 300 Vitalidade"
                 }
             ]
         },
@@ -3212,19 +3212,6 @@
                 },
                 {
                     "int_minimum": 0,
-                    "int_maximum": 35,
-                    "type": {
-                        "name": "de cura",
-                        "id": 121,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 35 de cura"
-                },
-                {
-                    "int_minimum": 0,
                     "int_maximum": 1,
                     "type": {
                         "name": "de alcance",
@@ -3235,6 +3222,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 1 de alcance"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 35,
+                    "type": {
+                        "name": "de cura",
+                        "id": 121,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 35 de cura"
                 }
             ]
         },
@@ -3252,16 +3252,16 @@
             "effects": [
                 {
                     "int_minimum": 0,
-                    "int_maximum": 60,
+                    "int_maximum": 300,
                     "type": {
-                        "name": "Prospecção",
-                        "id": 25,
+                        "name": "Vitalidade",
+                        "id": 9,
                         "is_meta": false,
                         "is_active": false
                     },
                     "ignore_int_min": false,
                     "ignore_int_max": false,
-                    "formatted": "0 a 60 Prospecção"
+                    "formatted": "0 a 300 Vitalidade"
                 },
                 {
                     "int_minimum": 0,
@@ -3278,16 +3278,16 @@
                 },
                 {
                     "int_minimum": 0,
-                    "int_maximum": 300,
+                    "int_maximum": 60,
                     "type": {
-                        "name": "Vitalidade",
-                        "id": 9,
+                        "name": "Prospecção",
+                        "id": 25,
                         "is_meta": false,
                         "is_active": false
                     },
                     "ignore_int_min": false,
                     "ignore_int_max": false,
-                    "formatted": "0 a 300 Vitalidade"
+                    "formatted": "0 a 60 Prospecção"
                 }
             ]
         },
@@ -3303,19 +3303,6 @@
                 "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/86-256.png"
             },
             "effects": [
-                {
-                    "int_minimum": 0,
-                    "int_maximum": 300,
-                    "type": {
-                        "name": "Vitalidade",
-                        "id": 9,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 300 Vitalidade"
-                },
                 {
                     "int_minimum": 0,
                     "int_maximum": 1,
@@ -3341,6 +3328,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 70 Inteligência"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 300,
+                    "type": {
+                        "name": "Vitalidade",
+                        "id": 9,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 300 Vitalidade"
                 }
             ]
         },
@@ -3356,19 +3356,6 @@
                 "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/87-256.png"
             },
             "effects": [
-                {
-                    "int_minimum": 0,
-                    "int_maximum": 300,
-                    "type": {
-                        "name": "Vitalidade",
-                        "id": 9,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 300 Vitalidade"
-                },
                 {
                     "int_minimum": 0,
                     "int_maximum": 1,
@@ -3394,6 +3381,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 70 Força"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 300,
+                    "type": {
+                        "name": "Vitalidade",
+                        "id": 9,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 300 Vitalidade"
                 }
             ]
         },
@@ -3409,32 +3409,6 @@
                 "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/88-256.png"
             },
             "effects": [
-                {
-                    "int_minimum": 0,
-                    "int_maximum": 5,
-                    "type": {
-                        "name": "% resistência neutra",
-                        "id": 34,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 5% resistência neutra"
-                },
-                {
-                    "int_minimum": 0,
-                    "int_maximum": 50,
-                    "type": {
-                        "name": "Potência",
-                        "id": 32,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 50 Potência"
-                },
                 {
                     "int_minimum": 0,
                     "int_maximum": 5,
@@ -3463,6 +3437,19 @@
                 },
                 {
                     "int_minimum": 0,
+                    "int_maximum": 50,
+                    "type": {
+                        "name": "Potência",
+                        "id": 32,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 50 Potência"
+                },
+                {
+                    "int_minimum": 0,
                     "int_maximum": 5,
                     "type": {
                         "name": "% resistência à água",
@@ -3486,6 +3473,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 5% resistência ao ar"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 5,
+                    "type": {
+                        "name": "% resistência neutra",
+                        "id": 34,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 5% resistência neutra"
                 }
             ]
         },
@@ -3503,19 +3503,6 @@
             "effects": [
                 {
                     "int_minimum": 0,
-                    "int_maximum": 100,
-                    "type": {
-                        "name": "Vitalidade",
-                        "id": 9,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 100 Vitalidade"
-                },
-                {
-                    "int_minimum": 0,
                     "int_maximum": 10,
                     "type": {
                         "name": "de danos reenviados",
@@ -3526,6 +3513,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 10 de danos reenviados"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 100,
+                    "type": {
+                        "name": "Vitalidade",
+                        "id": 9,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 100 Vitalidade"
                 }
             ]
         },
@@ -3623,19 +3623,6 @@
             "effects": [
                 {
                     "int_minimum": 0,
-                    "int_maximum": 16,
-                    "type": {
-                        "name": "% resistência à água",
-                        "id": 17,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 16% resistência à água"
-                },
-                {
-                    "int_minimum": 0,
                     "int_maximum": 1,
                     "type": {
                         "name": "PM",
@@ -3646,6 +3633,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 1 PM"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 16,
+                    "type": {
+                        "name": "% resistência à água",
+                        "id": 17,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 16% resistência à água"
                 }
             ]
         },
@@ -3663,19 +3663,6 @@
             "effects": [
                 {
                     "int_minimum": 0,
-                    "int_maximum": 16,
-                    "type": {
-                        "name": "% resistência à terra",
-                        "id": 63,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 16% resistência à terra"
-                },
-                {
-                    "int_minimum": 0,
                     "int_maximum": 1,
                     "type": {
                         "name": "PM",
@@ -3686,6 +3673,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 1 PM"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 16,
+                    "type": {
+                        "name": "% resistência à terra",
+                        "id": 63,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 16% resistência à terra"
                 }
             ]
         },
@@ -3703,19 +3703,6 @@
             "effects": [
                 {
                     "int_minimum": 0,
-                    "int_maximum": 1,
-                    "type": {
-                        "name": "PM",
-                        "id": 8,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 1 PM"
-                },
-                {
-                    "int_minimum": 0,
                     "int_maximum": 50,
                     "type": {
                         "name": "Potência",
@@ -3726,6 +3713,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 50 Potência"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 1,
+                    "type": {
+                        "name": "PM",
+                        "id": 8,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 1 PM"
                 }
             ]
         },
@@ -3783,19 +3783,6 @@
             "effects": [
                 {
                     "int_minimum": 0,
-                    "int_maximum": 1,
-                    "type": {
-                        "name": "PM",
-                        "id": 8,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 1 PM"
-                },
-                {
-                    "int_minimum": 0,
                     "int_maximum": 40,
                     "type": {
                         "name": "Fuga",
@@ -3806,6 +3793,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 40 Fuga"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 1,
+                    "type": {
+                        "name": "PM",
+                        "id": 8,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 1 PM"
                 }
             ]
         },
@@ -3823,19 +3823,6 @@
             "effects": [
                 {
                     "int_minimum": 0,
-                    "int_maximum": 1,
-                    "type": {
-                        "name": "PM",
-                        "id": 8,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 1 PM"
-                },
-                {
-                    "int_minimum": 0,
                     "int_maximum": 40,
                     "type": {
                         "name": "Esquiva PA",
@@ -3846,6 +3833,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 40 Esquiva PA"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 1,
+                    "type": {
+                        "name": "PM",
+                        "id": 8,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 1 PM"
                 }
             ]
         },
@@ -3983,19 +3983,6 @@
             "effects": [
                 {
                     "int_minimum": 0,
-                    "int_maximum": 40,
-                    "type": {
-                        "name": "Potência",
-                        "id": 32,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 40 Potência"
-                },
-                {
-                    "int_minimum": 0,
                     "int_maximum": 8,
                     "type": {
                         "name": "% resistência à terra",
@@ -4019,6 +4006,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 1 PM"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 40,
+                    "type": {
+                        "name": "Potência",
+                        "id": 32,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 40 Potência"
                 }
             ]
         },
@@ -4104,19 +4104,6 @@
                     "int_minimum": 0,
                     "int_maximum": 8,
                     "type": {
-                        "name": "% resistência à terra",
-                        "id": 63,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 8% resistência à terra"
-                },
-                {
-                    "int_minimum": 0,
-                    "int_maximum": 8,
-                    "type": {
                         "name": "% resistência ao ar",
                         "id": 16,
                         "is_meta": false,
@@ -4125,6 +4112,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 8% resistência ao ar"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 8,
+                    "type": {
+                        "name": "% resistência à terra",
+                        "id": 63,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 8% resistência à terra"
                 }
             ]
         },
@@ -4195,16 +4195,16 @@
             "effects": [
                 {
                     "int_minimum": 0,
-                    "int_maximum": 40,
+                    "int_maximum": 8,
                     "type": {
-                        "name": "Potência",
-                        "id": 32,
+                        "name": "% resistência ao fogo",
+                        "id": 37,
                         "is_meta": false,
                         "is_active": false
                     },
                     "ignore_int_min": false,
                     "ignore_int_max": false,
-                    "formatted": "0 a 40 Potência"
+                    "formatted": "0 a 8% resistência ao fogo"
                 },
                 {
                     "int_minimum": 0,
@@ -4221,16 +4221,16 @@
                 },
                 {
                     "int_minimum": 0,
-                    "int_maximum": 8,
+                    "int_maximum": 40,
                     "type": {
-                        "name": "% resistência ao fogo",
-                        "id": 37,
+                        "name": "Potência",
+                        "id": 32,
                         "is_meta": false,
                         "is_active": false
                     },
                     "ignore_int_min": false,
                     "ignore_int_max": false,
-                    "formatted": "0 a 8% resistência ao fogo"
+                    "formatted": "0 a 40 Potência"
                 }
             ]
         },
@@ -4246,6 +4246,19 @@
                 "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/106-256.png"
             },
             "effects": [
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 1,
+                    "type": {
+                        "name": "PM",
+                        "id": 8,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 1 PM"
+                },
                 {
                     "int_minimum": 0,
                     "int_maximum": 8,
@@ -4271,19 +4284,6 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 8% resistência à água"
-                },
-                {
-                    "int_minimum": 0,
-                    "int_maximum": 1,
-                    "type": {
-                        "name": "PM",
-                        "id": 8,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 1 PM"
                 }
             ]
         },
@@ -4301,19 +4301,6 @@
             "effects": [
                 {
                     "int_minimum": 0,
-                    "int_maximum": 1,
-                    "type": {
-                        "name": "PM",
-                        "id": 8,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 1 PM"
-                },
-                {
-                    "int_minimum": 0,
                     "int_maximum": 8,
                     "type": {
                         "name": "% resistência ao ar",
@@ -4324,6 +4311,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 8% resistência ao ar"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 1,
+                    "type": {
+                        "name": "PM",
+                        "id": 8,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 1 PM"
                 },
                 {
                     "int_minimum": 0,
@@ -4354,19 +4354,6 @@
             "effects": [
                 {
                     "int_minimum": 0,
-                    "int_maximum": 1,
-                    "type": {
-                        "name": "PM",
-                        "id": 8,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 1 PM"
-                },
-                {
-                    "int_minimum": 0,
                     "int_maximum": 40,
                     "type": {
                         "name": "Potência",
@@ -4390,6 +4377,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 8% resistência à água"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 1,
+                    "type": {
+                        "name": "PM",
+                        "id": 8,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 1 PM"
                 }
             ]
         },
@@ -4405,19 +4405,6 @@
                 "sd": "https://api.dofusdu.de/dofus3/v1/img/mount/109-256.png"
             },
             "effects": [
-                {
-                    "int_minimum": 0,
-                    "int_maximum": 8,
-                    "type": {
-                        "name": "% resistência ao ar",
-                        "id": 16,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 8% resistência ao ar"
-                },
                 {
                     "int_minimum": 0,
                     "int_maximum": 8,
@@ -4443,6 +4430,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 1 PM"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 8,
+                    "type": {
+                        "name": "% resistência ao ar",
+                        "id": 16,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 8% resistência ao ar"
                 }
             ]
         },
@@ -4460,19 +4460,6 @@
             "effects": [
                 {
                     "int_minimum": 0,
-                    "int_maximum": 1,
-                    "type": {
-                        "name": "PM",
-                        "id": 8,
-                        "is_meta": false,
-                        "is_active": false
-                    },
-                    "ignore_int_min": false,
-                    "ignore_int_max": false,
-                    "formatted": "0 a 1 PM"
-                },
-                {
-                    "int_minimum": 0,
                     "int_maximum": 8,
                     "type": {
                         "name": "% resistência ao ar",
@@ -4483,6 +4470,19 @@
                     "ignore_int_min": false,
                     "ignore_int_max": false,
                     "formatted": "0 a 8% resistência ao ar"
+                },
+                {
+                    "int_minimum": 0,
+                    "int_maximum": 1,
+                    "type": {
+                        "name": "PM",
+                        "id": 8,
+                        "is_meta": false,
+                        "is_active": false
+                    },
+                    "ignore_int_min": false,
+                    "ignore_int_max": false,
+                    "formatted": "0 a 1 PM"
                 },
                 {
                     "int_minimum": 0,
