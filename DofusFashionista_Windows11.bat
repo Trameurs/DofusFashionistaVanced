@@ -1,13 +1,15 @@
-@echo off
+﻿@echo off
+chcp 65001 >nul
+
 echo ===============================================
 echo Lancement de DofusFashionistaVanced pour Windows 11...
 echo Launching DofusFashionistaVanced for Windows 11...
 echo ===============================================
 echo.
 
-REM Exécute le script PowerShell avec les paramètres adaptés
-REM Run the PowerShell script with the appropriate parameters
-powershell -NoProfile -ExecutionPolicy RemoteSigned -File "%~dp0run_windows11.ps1" %*
+REM Exécute le script PowerShell avec les paramètres adaptés et force l'encodage UTF-8
+REM Run PowerShell script with appropriate parameters and force UTF-8 encoding
+powershell -NoProfile -ExecutionPolicy RemoteSigned -Command "& { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8; $OutputEncoding = [System.Text.Encoding]::UTF8; & '%~dp0run_windows11.ps1' %* }"
 
 REM Si PowerShell rencontre une erreur, on l'affiche 
 REM If PowerShell encounters an error, display it

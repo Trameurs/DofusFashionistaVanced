@@ -1,6 +1,10 @@
-# DofusFashionistaVanced - Lanceur Windows 11
+﻿# DofusFashionistaVanced - Lanceur Windows 11
 # Script PowerShell robuste pour lancer l'application sur Windows 11
 # Utilise des chemins absolus et gère les erreurs de façon avancée
+
+# Force UTF-8 encoding
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+$OutputEncoding = [System.Text.Encoding]::UTF8
 
 #Requires -Version 5.0
 
@@ -152,7 +156,7 @@ function Ensure-DumpFile {
             Write-LogMessage "Fichier dump copié avec succès." "SUCCESS"
             
             # Corriger le chemin qui contient l'erreur
-            $wrongPathDumpDir = "C:\Users\Hokli\Documents\test\DofusFashionistaVanced\fashionistapulp\fashionistapulp"
+            $wrongPathDumpDir = Join-Path $PSScriptRoot "fashionistapulp\fashionistapulp"
             if (-not (Test-Path -Path $wrongPathDumpDir)) {
                 New-Item -ItemType Directory -Path $wrongPathDumpDir -Force -ErrorAction SilentlyContinue | Out-Null
                 Copy-Item -Path $alternateDumpPath -Destination "$wrongPathDumpDir\item_db_dumped.dump" -Force -ErrorAction SilentlyContinue
@@ -173,7 +177,7 @@ function Ensure-DumpFile {
                 Write-LogMessage "Fichier dump vide créé." "SUCCESS"
                 
                 # Corriger également le chemin incorrect qui cause l'erreur
-                $wrongPathDumpDir = "C:\Users\Hokli\Documents\test\DofusFashionistaVanced\fashionistapulp\fashionistapulp"
+                $wrongPathDumpDir = Join-Path $PSScriptRoot "fashionistapulp\fashionistapulp"
                 if (-not (Test-Path -Path $wrongPathDumpDir)) {
                     New-Item -ItemType Directory -Path $wrongPathDumpDir -Force -ErrorAction SilentlyContinue | Out-Null 
                     "" | Out-File -FilePath "$wrongPathDumpDir\item_db_dumped.dump" -Encoding utf8 -ErrorAction SilentlyContinue
@@ -189,7 +193,7 @@ function Ensure-DumpFile {
         Write-LogMessage "Fichier dump existant trouvé." "SUCCESS"
         
         # S'assurer que le chemin alternatif mentionné dans l'erreur existe aussi
-        $wrongPathDumpDir = "C:\Users\Hokli\Documents\test\DofusFashionistaVanced\fashionistapulp\fashionistapulp"
+        $wrongPathDumpDir = Join-Path $PSScriptRoot "fashionistapulp\fashionistapulp"
         $wrongPathDumpFile = "$wrongPathDumpDir\item_db_dumped.dump"
         if (-not (Test-Path -Path $wrongPathDumpFile)) {
             try {
