@@ -56170,11 +56170,11 @@
     },
     {
         "ankama_id": 1003,
-        "name_en": "[!] Panoplie d'apparat du Démon I",
+        "name_en": "Demon I Ceremonial Set",
         "name_fr": "Panoplie d'apparat du Démon I",
-        "name_es": "[!] Panoplie d'apparat du Démon I",
-        "name_pt": "[!] Panoplie d'apparat du Démon I",
-        "name_de": "[!] Panoplie d'apparat du Démon I",
+        "name_es": "Set cosmético del Demonio I",
+        "name_pt": "Conjunto de Aparência do Demônio I",
+        "name_de": "Prunkset von Dämon I",
         "items": 4,
         "equipment_ids": [
             31535,
@@ -56185,11 +56185,11 @@
     },
     {
         "ankama_id": 1004,
-        "name_en": "[!] Panoplie d'apparat diaprée du Démon I",
+        "name_en": "Many-Hued Demon I Ceremonial Set",
         "name_fr": "Panoplie d'apparat diaprée du Démon I",
-        "name_es": "[!] Panoplie d'apparat diaprée du Démon I",
-        "name_pt": "[!] Panoplie d'apparat diaprée du Démon I",
-        "name_de": "[!] Panoplie d'apparat diaprée du Démon I",
+        "name_es": "Set cosmético matizado del Demonio I",
+        "name_pt": "Conjunto de Aparência Matizado do Demônio I",
+        "name_de": "Schillerndes Prunkset von Dämon I",
         "items": 4,
         "equipment_ids": [
             31539,
@@ -56220,11 +56220,11 @@
     },
     {
         "ankama_id": 1006,
-        "name_en": "[!] Panoplie d'apparat Pararayon",
+        "name_en": "Raydi Ceremonial Set",
         "name_fr": "Panoplie d'apparat Pararayon",
-        "name_es": "[!] Panoplie d'apparat Pararayon",
-        "name_pt": "[!] Panoplie d'apparat Pararayon",
-        "name_de": "[!] Panoplie d'apparat Pararayon",
+        "name_es": "Set cosmético pararrayo",
+        "name_pt": "Conjunto de Aparência Para-Raios",
+        "name_de": "Strahlenschirm-Prunkset",
         "items": 4,
         "equipment_ids": [
             9566,
@@ -56235,11 +56235,11 @@
     },
     {
         "ankama_id": 1007,
-        "name_en": "[!] Panoplie d'apparat de Savara",
+        "name_en": "Savara Ceremonial Set",
         "name_fr": "Panoplie d'apparat de Savara",
-        "name_es": "[!] Panoplie d'apparat de Savara",
-        "name_pt": "[!] Panoplie d'apparat de Savara",
-        "name_de": "[!] Panoplie d'apparat de Savara",
+        "name_es": "Set cosmético de Savara",
+        "name_pt": "Conjunto de Aparência de Savara",
+        "name_de": "Savara-Prunkset",
         "items": 2,
         "equipment_ids": [
             31601,

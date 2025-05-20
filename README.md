@@ -21,7 +21,7 @@ This is a fork and an attempt at putting back up the website and update it to th
 
 # Install Fashionista:
 
-## Windows 11
+## Windows 11 (Thanks Hoklims)
 
 Le support pour Windows 11 est maintenant pleinement fonctionnel avec une méthode d'installation simplifiée ! Suivez ces étapes pour installer le projet :
 
@@ -145,7 +145,7 @@ Si vous rencontrez des problèmes lors de l'installation sur Windows 11, voici q
 # Progress and Roadmap
 
 ✅ Website is fully operational     
-✅ All equipments and mounts updated to Dofus 3.1.5.4      
+✅ All equipments and mounts updated to Dofus 3.1.6.6      
 ✅ Sets 2.70 done  
 ✅ Updated all special effects to 2.70     
 ✅ Special items effects updated including Prytek         
@@ -157,8 +157,8 @@ Si vous rencontrez des problèmes lors de l'installation sur Windows 11, voici q
 ✅ Add support for new languages         
     ✅ Deutsche          
     ✅ Italian          
-✅ Bug fixes and improvement for 3.0 release 
-✅ Windows 11 compatibility         
+✅ Bug fixes and improvement for 3.0 release     
+✅ Windows 11 compatibility (Thanks Hoklims)         
 🚧 Translate new content           
     ✅ 100% English           
     🚧 95% French (some spells left)            
