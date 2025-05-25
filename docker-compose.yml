@@ -59,10 +59,6 @@ services:
         echo 'Migration spécifique pour chardata...'
         cd /app/fashionsite && python manage.py migrate chardata
         
-        # Migration spécifique pour l'application chardata
-        echo 'Migration spécifique pour chardata...'
-        cd /app/fashionsite && python manage.py migrate chardata
-        
         # Correction des fins de ligne CRLF supplémentaires (méthode complète)
         echo 'Correction des fins de ligne CRLF...'
         find /app -name '*.py' -type f -exec dos2unix {} \\;
