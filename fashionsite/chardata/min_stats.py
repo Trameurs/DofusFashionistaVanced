@@ -62,6 +62,8 @@ def set_min_stats(char, minimum_values):
             assert type(stat_value) == int
     char.minimum_stats = pickle.dumps(minimum_values)
     char.save()
+    from chardata.util import remove_cache_for_char
+    remove_cache_for_char(char.id)
 
 def get_min_stats_digested(char):
     min_stats = get_min_stats(char)
