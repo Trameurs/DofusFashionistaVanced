@@ -144,14 +144,25 @@ SOCIAL_AUTH_FACEBOOK_SECRET = GEN_CONFIGS['SOCIAL_AUTH_FACEBOOK_SECRET']
 
 USE_MYSQL = True
 if USE_MYSQL:
+    # Support pour Docker avec variables d'environnement
+    DB_HOST = os.environ.get('DB_HOST', 'localhost')
+    DB_PORT = os.environ.get('DB_PORT', '3306')
+    DB_NAME = os.environ.get('DB_NAME', 'fashionista')
+    DB_USER = os.environ.get('DB_USER', GEN_CONFIGS['mysql_USER'])
+    DB_PASSWORD = os.environ.get('DB_PASSWORD', GEN_CONFIGS['mysql_PASSWORD'])
+    
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql', 
-            'NAME': 'fashionista',
-            'USER': GEN_CONFIGS['mysql_USER'],
-            'PASSWORD': GEN_CONFIGS['mysql_PASSWORD'],
-            'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
-            'PORT': '3306',
+            'NAME': DB_NAME,
+            'USER': DB_USER,
+            'PASSWORD': DB_PASSWORD,
+            'HOST': DB_HOST,
+            'PORT': DB_PORT,
+            'OPTIONS': {
+                'charset': 'utf8mb4',
+                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+            },
         }
     }
 else:

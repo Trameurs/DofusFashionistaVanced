@@ -1,8 +1,9 @@
-FROM python:3.9
+FROM python:3.9-slim
 
 # Installer les dépendances système nécessaires
 RUN apt-get update && apt-get install -y \
     default-libmysqlclient-dev \
+    build-essential \
     memcached \
     gettext \
     mariadb-client \
@@ -11,6 +12,7 @@ RUN apt-get update && apt-get install -y \
     pkg-config \
     dos2unix \
     sqlite3 \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
 # Définir le répertoire de travail
@@ -21,33 +23,27 @@ COPY requirements.txt .
 
 # Installer les dépendances Python
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install gunicorn
 
 # Copier le reste du code source
 COPY . .
 
 # Corriger les problèmes de fin de ligne CRLF sur tous les scripts
-# La commande correcte avec parenthèses pour regrouper les expressions
-RUN apt-get update && apt-get install -y dos2unix
-RUN find . -name "*.py" -type f -exec dos2unix -b {} \;
-RUN find . -name "*.sh" -type f -exec dos2unix -b {} \;
-RUN find . -name "*.py" -type f -exec sed -i -e 's/\r$//' {} \;
-RUN find . -name "*.sh" -type f -exec sed -i -e 's/\r$//' {} \;
-
-# Correction spécifique des shebangs
-RUN grep -l '^#!' $(find . -name "*.py") | xargs -r sed -i -e '1s/^#!.*python\r*$/#!\/usr\/bin\/env python/'
-RUN grep -l '^#!' $(find . -name "*.sh") | xargs -r sed -i -e '1s/^#!.*sh\r*$/#!\/bin\/bash/'
+RUN find . -name "*.py" -type f -exec dos2unix {} \;
+RUN find . -name "*.sh" -type f -exec dos2unix {} \;
 
 # Rendre les scripts exécutables
-RUN chmod +x *.py *.sh
+RUN chmod +x *.py
+RUN find . -name "*.sh" -type f -exec chmod +x {} \;
 
-# Créer le répertoire de configuration
+# Créer le répertoire de configuration pour Docker
 RUN mkdir -p /etc/fashionista
 
-# Créer un fichier gen_config.json de base
+# Créer un fichier gen_config.json pour Docker
 RUN echo '{\
-    "PASSWORD_RESET_SALT": "my_salt",\
-    "EMAIL_CONFIRMATION_SALT": "my_salt_2",\
-    "SECRET_KEY": "django-insecure-change-me-in-production",\
+    "PASSWORD_RESET_SALT": "docker_salt_change_me",\
+    "EMAIL_CONFIRMATION_SALT": "docker_salt_2_change_me",\
+    "SECRET_KEY": "django-insecure-docker-change-me-in-production",\
     "mysql_PASSWORD": "fashionista",\
     "mysql_USER": "fashionista",\
     "EMAIL_HOST_USER": "",\
@@ -59,19 +55,20 @@ RUN echo '{\
     "DBBACKUP_S3_ACCESS_KEY": null,\
     "DBBACKUP_S3_SECRET_KEY": null,\
     "url_captcha_secret": null,\
-    "char_id_SECRET_PART_1": "my_secret",\
-    "char_id_SECRET_PART_2": "my_other_secret",\
+    "char_id_SECRET_PART_1": "docker_secret_1",\
+    "char_id_SECRET_PART_2": "docker_secret_2",\
     "google_analytics_id": null,\
     "EMAIL_USE_TLS": true,\
     "EMAIL_HOST": "smtp.gmail.com",\
     "EMAIL_PORT": 587,\
-    "TESTER_USERS_EMAILS": []\
+    "TESTER_USERS_EMAILS": ["admin@localhost"],\
+    "SUPER_USERS_EMAILS": ["admin@localhost"]\
 }' > /etc/fashionista/gen_config.json
 
-# Configurer le mode DEBUG par défaut
+# Configurer le mode DEBUG pour Docker
 RUN echo "True" > /etc/fashionista/debug_mode
 
-# Configurer le mode serve_static
+# Configurer le mode serve_static pour Docker
 RUN echo "True" > /etc/fashionista/serve_static
 
 # Créer un fichier config avec le chemin du projet
@@ -80,24 +77,13 @@ RUN echo "/app" > /etc/fashionista/config
 # Ajouter les répertoires au PYTHONPATH
 ENV PYTHONPATH="/app:/app/fashionistapulp:/app/fashionsite"
 
+# Copier et configurer le script d'entrée pour Docker
+COPY docker-entrypoint.sh /app/docker-entrypoint.sh
+RUN dos2unix /app/docker-entrypoint.sh
+RUN chmod +x /app/docker-entrypoint.sh
+
 # Exposer le port 8000
 EXPOSE 8000
 
-# Commande pour démarrer le serveur
-CMD ["bash", "-c", "\
-    # Convertir tous les fichiers Python et Shell en format Unix\n\
-    find /app -name '*.py' -type f -exec dos2unix {} \\; && \
-    find /app -name '*.sh' -type f -exec dos2unix {} \\; && \
-    # Correction spécifique des shebangs\n\
-    find /app -name '*.py' -type f -exec grep -l '^#!' {} \\; | xargs -r sed -i -e '1s/^#!.*python\\r*$/#!\\/usr\\/bin\\/env python/' && \
-    find /app -name '*.sh' -type f -exec grep -l '^#!' {} \\; | xargs -r sed -i -e '1s/^#!.*sh\\r*$/#!\\/bin\\/bash/' && \
-    # Migrations de la base de données Django\n\
-    cd /app/fashionsite && python manage.py migrate && cd /app && \
-    # Exécuter les commandes suivantes\n\
-    python /app/wipe_solution_cache.py || echo 'Attention: wipe_solution_cache.py a échoué, mais on continue' && \
-    cd fashionsite && \
-    django-admin compilemessages && \
-    cd .. && \
-    cd /app && \
-    PYTHONPATH=/app:/app/fashionsite:/app/fashionistapulp gunicorn --chdir /app/fashionsite wsgi:application --bind 0.0.0.0:8000 --timeout 150 --log-level debug \
-"]
+# Point d'entrée
+ENTRYPOINT ["/app/docker-entrypoint.sh"]
