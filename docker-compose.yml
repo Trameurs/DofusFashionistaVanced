@@ -1,0 +1,95 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: fashionista_db
+    environment:
+      MYSQL_DATABASE: fashionista
+      MYSQL_USER: fashionista
+      MYSQL_PASSWORD: fashionista
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+      - '3307:3306'
+    volumes:
+      - fashionista_db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "fashionista", "-pfashionista"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  memcached:
+    image: memcached:1.6-alpine
+    container_name: fashionista_memcached
+    ports:
+      - '11211:11211'
+
+  web:
+    build: .
+    container_name: fashionista_web
+    depends_on:
+      - db
+      - memcached
+    environment:
+      - PYTHONPATH=/app:/app/fashionistapulp:/app/fashionsite
+      - DB_HOST=db   # Définir explicitement l'hôte DB
+    volumes:
+      - .:/app
+    ports:
+      - '8000:8000'
+    restart: unless-stopped
+    command: >
+      bash -c "
+        # On attend que la base de données soit prête
+        echo 'Attente de la base de données...'
+        while ! mysqladmin ping -h db -u fashionista -pfashionista --silent; do
+          sleep 1
+        done
+        
+        # Initialisation de la base de données
+        echo 'Initialisation de la base de données MySQL...'
+        mysql -h db -u fashionista -pfashionista fashionista -e 'SELECT 1' || python configure_fashionista.py
+        
+        # Migration de la base de données Django
+        echo 'Migration de la base de données Django...'
+        cd /app/fashionsite && python manage.py migrate
+        
+        # Migration spécifique pour l'application chardata
+        echo 'Migration spécifique pour chardata...'
+        cd /app/fashionsite && python manage.py migrate chardata
+        
+        # Migration spécifique pour l'application chardata
+        echo 'Migration spécifique pour chardata...'
+        cd /app/fashionsite && python manage.py migrate chardata
+        
+        # Correction des fins de ligne CRLF supplémentaires (méthode complète)
+        echo 'Correction des fins de ligne CRLF...'
+        find /app -name '*.py' -type f -exec dos2unix {} \\;
+        find /app -name '*.sh' -type f -exec dos2unix {} \\;
+        
+        # Correction spécifique des shebangs
+        echo 'Correction des shebangs...'
+        find /app -name '*.py' -type f -exec grep -l '^#!' {} \\; | xargs -r sed -i -e '1s/^#!.*python\\r*$/#!\\/usr\\/bin\\/env python/'
+        find /app -name '*.sh' -type f -exec grep -l '^#!' {} \\; | xargs -r sed -i -e '1s/^#!.*sh\\r*$/#!\\/bin\\/bash/'
+        
+        # Initialisation de la base de données SQLite items.db
+        echo 'Initialisation de la base de données SQLite items.db...'
+        python /app/load_item_db.py
+        
+        # Initialisation de la table ItemDbVersion
+        echo 'Initialisation de la table ItemDbVersion...'
+        python /app/init_itemdbversion_table.py || echo \"Attention: init_itemdbversion_table.py a échoué, mais on continue\"
+        
+        # Nettoyage du cache et compilation des messages
+        echo 'Nettoyage du cache et compilation des messages...'
+        python /app/wipe_solution_cache.py || echo \"Attention: wipe_solution_cache.py a échoué, mais on continue\"
+        cd fashionsite && django-admin compilemessages && cd ..
+        
+        # Démarrage du serveur avec PYTHONPATH correct
+        echo 'Démarrage du serveur...'
+        cd /app && PYTHONPATH=/app:/app/fashionsite:/app/fashionistapulp gunicorn --chdir /app/fashionsite fashionsite.wsgi:application --bind 0.0.0.0:8000 --timeout 150
+      "
+
+volumes:
+  fashionista_db_data:
