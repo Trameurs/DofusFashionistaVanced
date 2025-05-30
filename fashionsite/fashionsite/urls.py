@@ -83,6 +83,7 @@ urlpatterns = [
 
     re_path(r'^exclusions/(?P<char_id>\d+)/', exclusions_view.exclusions, name='exclusions'),
     re_path(r'^exclusionspost/(?P<char_id>\d+)/', exclusions_view.exclusions_post, name='exclusions_post'),
+    re_path(r'^forbid_all_prysmaradites/(?P<char_id>\d+)/', exclusions_view.forbid_all_prysmaradites_post, name='forbid_all_prysmaradites'),
 
     re_path(r'^wizard/(?P<char_id>\d+)/', wizard_view.wizard, name='wizard'),
     re_path(r'^wizardpost/(?P<char_id>\d+)/', wizard_view.wizard_post, name='wizard_post'),
