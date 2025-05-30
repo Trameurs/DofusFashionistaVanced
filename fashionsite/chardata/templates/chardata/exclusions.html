@@ -20,11 +20,12 @@
 <p align="center" class='big-text'>{% trans "Declare items that cannot be used on your character's set. By doing this you can avoid items that are expensive, hard to obtain, require a dungeon to be complete, or are just plain ugly." %}</p>
 
 <form id="main_form" method="post">
-    {% csrf_token %}    <div align="center" id="form_container">
+    {% csrf_token %}
+
+    <div align="center" id="form_container">
         <input id="input-item-to-forbid">
         <button id="button-forbid" class="button-generic">{% trans "Forbid" %}</button>
-        <button id="button-forbid-all-prysmaradites" class="button-generic" style="margin-left: 10px;">{% trans "Forbid All Prysmaradites" %}</button>
-    </div>
+    </div>  
 
     <br>
   <div align="center">
@@ -153,52 +154,14 @@
             newDiv.remove();
         });
         return newDiv;
-    }    function postData() {
+    }
+
+    function postData() {
         return {exclusions: JSON.stringify(Object.keys(itemsExcludedSet))};
-    }    function onForbidAllPrysmaraditesClick(event) {
-        event.preventDefault();
-        
-        // Désactiver le bouton pour éviter les clics multiples
-        var button = $("#button-forbid-all-prysmaradites");
-        button.prop('disabled', true);
-        button.text("{% trans 'Processing...' %}");
-        
-        // Obtenir la liste des prysmaradites depuis le backend
-        $.ajax({
-            url: "{% url 'forbid_all_prysmaradites' char_id %}",
-            type: 'POST',
-            dataType: 'json',
-            success: function(data) {
-                if (data.success && data.prysmaradite_items) {
-                    var addedCount = 0;                    // Ajouter chaque prysmaradite à l'état local comme changements en attente
-                    $.each(data.prysmaradite_items, function(i, item) {
-                        if (!(item.id in itemsExcludedSet)) {
-                            forbidItem(item, true); // true = marquer comme changement en attente
-                            addedCount++;
-                        }
-                    });
-                    
-                    if (addedCount > 0) {
-                        alert("{% trans 'Added' %} " + addedCount + " {% trans 'prysmaradites to exclusions. Click Save to confirm or Cancel to revert.' %}");
-                    } else {
-                        alert("{% trans 'All prysmaradites are already forbidden.' %}");
-                    }
-                } else {
-                    alert("{% trans 'Error occurred while loading prysmaradites.' %}");
-                }
-            },
-            error: function() {
-                alert("{% trans 'Error occurred while loading prysmaradites.' %}");
-            },
-            complete: function() {
-                // Réactiver le bouton
-                button.prop('disabled', false);
-                button.text("{% trans 'Forbid All Prysmaradites' %}");
-            }
-        });
-    }$(document).ready(function() {
+    }
+
+    $(document).ready(function() {
         $("#button-forbid").click(onForbidButtonClick);
-        $("#button-forbid-all-prysmaradites").click(onForbidAllPrysmaraditesClick);
         
         setupStateEngine(init,
             "{% url 'exclusions_post' char_id %}",
