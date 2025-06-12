@@ -80,3 +80,44 @@ def exclusions_post(request, char_id):
     set_exclusions_list_and_check_inclusions(char, actual_exclusions)
     
     return HttpResponseJson(json.dumps(get_all_exclusions_ids(char)))
+
+
+def forbid_all_prysmaradites_post(request, char_id):
+    """Endpoint pour obtenir la liste des prysmaradites à interdire (sans sauvegarde immédiate)"""
+    char = get_char_or_raise(request, char_id)
+    language = get_supported_language()
+    s = get_structure()
+    
+    # Récupère tous les items prysmaradite
+    prysmaradite_items_ids = get_all_prysmaradite_items()
+    
+    # Convertit les IDs en objets avec noms pour le JavaScript
+    prysmaradite_items = []
+    for item_id in prysmaradite_items_ids:
+        item = s.get_item_by_id(item_id)
+        if item:
+            prysmaradite_items.append({
+                'id': item_id,
+                'name': item.localized_names[language]
+            })
+    
+    return HttpResponseJson(json.dumps({
+        'success': True,
+        'prysmaradite_items': prysmaradite_items,
+        'total_count': len(prysmaradite_items)
+    }))
+
+
+def get_all_prysmaradite_items():
+    """Récupère tous les items prysmaradite depuis la base de données"""
+    s = get_structure()
+    # Récupère tous les items disponibles (normal et dofus touch)
+    all_items = s.get_concatenated_items_lists()
+    prysmaradite_items = []
+    
+    for item in all_items:
+        # Vérifie si l'item a la condition prysmaradite
+        if item.weird_conditions.get('prysmaradite', False):
+            prysmaradite_items.append(item.id)
+    
+    return prysmaradite_items

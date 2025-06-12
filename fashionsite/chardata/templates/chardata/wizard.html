@@ -108,7 +108,7 @@ $(document).ready(function() {
     init(initialData);
     inclusionsInit(initialData.inclusions, constantData.inclusions.items_by_type, constantData.inclusions.items_by_type_and_name, constantData.inclusions.slot_to_type,
 constantData.inclusions.images_urls);
-    optionsInit(initialData.options.options);
+    optionsInit(initialData.options.options, initialData.prysmaradites);
     wizardSlidersInit(initialData.sliders.sliders, getTriangleURL());
     
     var scrolling = initialData.scrolled.scrolling;
@@ -165,8 +165,8 @@ constantData.inclusions.images_urls);
     $("#blanket").click(function() {
          top = $(window).scrollTop().pageYOffset + 10;
          popupSwitch(top);
-    });
-    disableUnusableDofus(initialData.options.options.dofusnotforchar);
+    });    disableUnusableDofus(initialData.options.options.dofusnotforchar);
+    disableUnusablePrysmaradites(initialData.options.options.prysmaraditesnotforchar);
 });
 
 </script>
