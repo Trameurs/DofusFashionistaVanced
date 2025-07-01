@@ -44667,7 +44667,7 @@
         "name_es": "Set cosmético parabiótico",
         "name_pt": "Conjunto de Aparência Parabiótico",
         "name_de": "Parabiotisches Prunkset",
-        "items": 4,
+        "items": 6,
         "stats_list": [
             {
                 "effect_key": "1",
@@ -44708,13 +44708,35 @@
                         "Title:"
                     ]
                 ]
+            },
+            {
+                "effect_key": "5",
+                "effects": [
+                    [
+                        null,
+                        null,
+                        "Title:"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "6",
+                "effects": [
+                    [
+                        null,
+                        null,
+                        "Title:"
+                    ]
+                ]
             }
         ],
         "equipment_ids": [
             12424,
             12425,
             12426,
-            12427
+            12427,
+            31729,
+            31730
         ]
     },
     {
@@ -56244,6 +56266,36 @@
         "equipment_ids": [
             31601,
             31602
+        ]
+    },
+    {
+        "ankama_id": 1008,
+        "name_en": "Armoured Inventor Ceremonial Set",
+        "name_fr": "Panoplie d'apparat de l'inventeur cuirassé",
+        "name_es": "Set cosmético de inventor acorazado",
+        "name_pt": "Conjunto de Aparência do Inventor Encouraçado",
+        "name_de": "Prunkset des gepanzerten Erfinders",
+        "items": 4,
+        "equipment_ids": [
+            31692,
+            31693,
+            31694,
+            31795
+        ]
+    },
+    {
+        "ankama_id": 1009,
+        "name_en": "Bestial Cult Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du culte bestial",
+        "name_es": "Set cosmético del culto bestial",
+        "name_pt": "Conjunto de Aparência do Culto Bestial",
+        "name_de": "Prunkset des Bestienkults",
+        "items": 4,
+        "equipment_ids": [
+            31725,
+            31726,
+            31727,
+            31728
         ]
     }
 ]
