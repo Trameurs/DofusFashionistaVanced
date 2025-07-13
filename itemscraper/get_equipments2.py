@@ -143,7 +143,9 @@ STAT_TRANSLATE = {
     '(MP)': '(MP)',
     'reflected damage' : 'Reflects',
     '(best-element damage)' : '(best-element damage)',
-    'Size: %' : 'Size: %'
+    'Size: %' : 'Size: %',
+    'Action Points (AP)': 'AP',
+    'Movement Points (MP)': 'MP'
 }
 
 LANGUAGES = ['en', 'fr', 'es', 'pt', 'de']
@@ -317,10 +319,10 @@ for item in equipment_data['en']['items']:
                     lang_name_key = f"name_{lang}"
                     if lang_name_key in copy_item:
                         copy_item[lang_name_key] += f" {i + 1}"
-                copy_item["conditions"] = [f"{cond['element']['name']} {cond['operator']} {cond['int_value']}" for cond in conditions]
+                copy_item["conditions"] = [f"{STAT_TRANSLATE.get(cond['element']['name'], cond['element']['name'])} {cond['operator']} {cond['int_value']}" for cond in conditions]
                 new_data.append(copy_item)
         else:
-            transformed_item["conditions"] = [f"{cond['element']['name']} {cond['operator']} {cond['int_value']}" for cond in flattened_or_conditions[0]]
+            transformed_item["conditions"] = [f"{STAT_TRANSLATE.get(cond['element']['name'], cond['element']['name'])} {cond['operator']} {cond['int_value']}" for cond in flattened_or_conditions[0]]
             new_data.append(transformed_item)
     else:
         # Ensure "conditions" key exists with an empty list

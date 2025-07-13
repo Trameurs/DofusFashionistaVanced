@@ -277,7 +277,10 @@ class Model:
         #Adding more weight to Ganymede's Diadem equivalent to 1 AP
         #The bearer gains 2 AP on even turns and loses 1 AP on odd turns.
         self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name("Ganymede's Diadem").id, 
+                               self.structure.get_item_by_name("Ganymede's Diadem 1").id, 
+                               objective_values.get('ap', 0))
+        self.problem.add_to_of('p', 
+                               self.structure.get_item_by_name("Ganymede's Diadem 2").id, 
                                objective_values.get('ap', 0))
         
         #Adding more weight to Rykke Errel's Bravery equivalent to 400 hp and -10% ranged damage
