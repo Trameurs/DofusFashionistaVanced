@@ -145,7 +145,8 @@ STAT_TRANSLATE = {
     '(best-element damage)' : '(best-element damage)',
     'Size: %' : 'Size: %',
     'Action Points (AP)': 'AP',
-    'Movement Points (MP)': 'MP'
+    'Movement Points (MP)': 'MP',
+    '(Attracts by cell)': '(Attracts by cell)'
 }
 
 LANGUAGES = ['en', 'fr', 'es', 'pt', 'de']
@@ -285,7 +286,7 @@ for item in equipment_data['en']['items']:
                 eff["int_maximum"] if not eff["ignore_int_max"] else None,
                 f"({eff['type']['name']})" if eff["type"]["is_active"] else eff["type"]["name"]
             ] for eff in item["effects"]
-            if not ((eff["type"]["name"] == 'MP' and item["name"] in ["War's Halbaxe", "Wulan's Bow", "Roasty Breadstick", "Pillar of Ephedrya", "Imp Sword", "Phonemenal Scythe"]) or (eff["type"]["id"] == 179) or (eff["type"]["id"] == 238))
+            if not ((eff["type"]["name"] == 'MP' and item["name"] in ["War's Halbaxe", "Wulan's Bow", "Roasty Breadstick", "Pillar of Ephedrya", "Imp Sword", "Phonemenal Scythe"]) or (eff["type"]["id"] == 179) or (eff["type"]["id"] == 238) or (eff["type"]["id"] == 253) or (eff["type"]["id"] == 254))
         ]
         for eff in item["effects"]:
             if eff["type"]["name"] == '-special spell-':
