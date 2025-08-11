@@ -41866,14 +41866,29 @@
                         "Neutral Damage"
                     ],
                     [
-                        3,
+                        2,
                         null,
-                        "% Earth Resist"
+                        "AP Loss Resist"
+                    ],
+                    [
+                        2,
+                        null,
+                        "MP Loss Resist"
+                    ],
+                    [
+                        4,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        4,
+                        null,
+                        "Lock"
                     ],
                     [
                         3,
                         null,
-                        "% Fire Resist"
+                        "% Air Resist"
                     ],
                     [
                         3,
@@ -41883,27 +41898,37 @@
                     [
                         3,
                         null,
-                        "% Air Resist"
+                        "% Fire Resist"
                     ],
                     [
-                        4,
+                        3,
                         null,
-                        "Lock"
+                        "% Earth Resist"
                     ],
                     [
-                        4,
+                        1,
                         null,
-                        "Dodge"
+                        "Range"
                     ],
                     [
-                        2,
+                        5,
                         null,
-                        "MP Loss Resist"
+                        "Air Damage"
                     ],
                     [
-                        2,
+                        5,
                         null,
-                        "AP Loss Resist"
+                        "Water Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Earth Damage"
                     ]
                 ]
             },
@@ -41911,9 +41936,44 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        -40,
+                        2,
                         null,
-                        "Critical Hits"
+                        "AP Loss Resist"
+                    ],
+                    [
+                        2,
+                        null,
+                        "MP Loss Resist"
+                    ],
+                    [
+                        4,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        4,
+                        null,
+                        "Lock"
+                    ],
+                    [
+                        3,
+                        null,
+                        "% Air Resist"
+                    ],
+                    [
+                        3,
+                        null,
+                        "% Water Resist"
+                    ],
+                    [
+                        3,
+                        null,
+                        "% Fire Resist"
+                    ],
+                    [
+                        3,
+                        null,
+                        "% Earth Resist"
                     ],
                     [
                         40,
@@ -41921,44 +41981,34 @@
                         "Neutral Damage"
                     ],
                     [
-                        3,
+                        -40,
                         null,
-                        "% Earth Resist"
+                        "Critical Hits"
                     ],
                     [
-                        3,
+                        1,
                         null,
-                        "% Fire Resist"
+                        "Range"
                     ],
                     [
-                        3,
+                        5,
                         null,
-                        "% Water Resist"
+                        "Air Damage"
                     ],
                     [
-                        3,
+                        5,
                         null,
-                        "% Air Resist"
+                        "Water Damage"
                     ],
                     [
-                        4,
+                        5,
                         null,
-                        "Lock"
+                        "Fire Damage"
                     ],
                     [
-                        4,
+                        5,
                         null,
-                        "Dodge"
-                    ],
-                    [
-                        2,
-                        null,
-                        "MP Loss Resist"
-                    ],
-                    [
-                        2,
-                        null,
-                        "AP Loss Resist"
+                        "Earth Damage"
                     ]
                 ]
             },
@@ -41966,94 +42016,9 @@
                 "effect_key": "4",
                 "effects": [
                     [
-                        -40,
-                        null,
-                        "Critical Hits"
-                    ],
-                    [
-                        60,
-                        null,
-                        "Neutral Damage"
-                    ],
-                    [
-                        6,
-                        null,
-                        "% Earth Resist"
-                    ],
-                    [
-                        6,
-                        null,
-                        "% Fire Resist"
-                    ],
-                    [
-                        6,
-                        null,
-                        "% Water Resist"
-                    ],
-                    [
-                        6,
-                        null,
-                        "% Air Resist"
-                    ],
-                    [
-                        8,
-                        null,
-                        "Lock"
-                    ],
-                    [
-                        8,
-                        null,
-                        "Dodge"
-                    ],
-                    [
-                        4,
-                        null,
-                        "MP Loss Resist"
-                    ],
-                    [
-                        4,
-                        null,
-                        "AP Loss Resist"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
-                    ],
-                    [
-                        2,
-                        null,
-                        "Range"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Earth Damage"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Fire Damage"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Water Damage"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Air Damage"
-                    ],
-                    [
                         100,
                         null,
-                        "Strength"
-                    ],
-                    [
-                        100,
-                        null,
-                        "Intelligence"
+                        "Agility"
                     ],
                     [
                         100,
@@ -42063,7 +42028,92 @@
                     [
                         100,
                         null,
-                        "Agility"
+                        "Intelligence"
+                    ],
+                    [
+                        100,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Air Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        2,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        4,
+                        null,
+                        "AP Loss Resist"
+                    ],
+                    [
+                        4,
+                        null,
+                        "MP Loss Resist"
+                    ],
+                    [
+                        8,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        8,
+                        null,
+                        "Lock"
+                    ],
+                    [
+                        6,
+                        null,
+                        "% Air Resist"
+                    ],
+                    [
+                        6,
+                        null,
+                        "% Water Resist"
+                    ],
+                    [
+                        6,
+                        null,
+                        "% Fire Resist"
+                    ],
+                    [
+                        6,
+                        null,
+                        "% Earth Resist"
+                    ],
+                    [
+                        60,
+                        null,
+                        "Neutral Damage"
+                    ],
+                    [
+                        -40,
+                        null,
+                        "Critical Hits"
                     ]
                 ]
             },
@@ -42071,9 +42121,94 @@
                 "effect_key": "5",
                 "effects": [
                     [
-                        -40,
+                        100,
                         null,
-                        "Critical Hits"
+                        "Agility"
+                    ],
+                    [
+                        100,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        100,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        100,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Air Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        2,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        4,
+                        null,
+                        "AP Loss Resist"
+                    ],
+                    [
+                        4,
+                        null,
+                        "MP Loss Resist"
+                    ],
+                    [
+                        8,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        8,
+                        null,
+                        "Lock"
+                    ],
+                    [
+                        6,
+                        null,
+                        "% Air Resist"
+                    ],
+                    [
+                        6,
+                        null,
+                        "% Water Resist"
+                    ],
+                    [
+                        6,
+                        null,
+                        "% Fire Resist"
+                    ],
+                    [
+                        6,
+                        null,
+                        "% Earth Resist"
                     ],
                     [
                         60,
@@ -42081,94 +42216,9 @@
                         "Neutral Damage"
                     ],
                     [
-                        6,
+                        -40,
                         null,
-                        "% Earth Resist"
-                    ],
-                    [
-                        6,
-                        null,
-                        "% Fire Resist"
-                    ],
-                    [
-                        6,
-                        null,
-                        "% Water Resist"
-                    ],
-                    [
-                        6,
-                        null,
-                        "% Air Resist"
-                    ],
-                    [
-                        8,
-                        null,
-                        "Lock"
-                    ],
-                    [
-                        8,
-                        null,
-                        "Dodge"
-                    ],
-                    [
-                        4,
-                        null,
-                        "MP Loss Resist"
-                    ],
-                    [
-                        4,
-                        null,
-                        "AP Loss Resist"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
-                    ],
-                    [
-                        2,
-                        null,
-                        "Range"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Earth Damage"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Fire Damage"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Water Damage"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Air Damage"
-                    ],
-                    [
-                        100,
-                        null,
-                        "Strength"
-                    ],
-                    [
-                        100,
-                        null,
-                        "Intelligence"
-                    ],
-                    [
-                        100,
-                        null,
-                        "Chance"
-                    ],
-                    [
-                        100,
-                        null,
-                        "Agility"
+                        "Critical Hits"
                     ]
                 ]
             },
@@ -42176,99 +42226,9 @@
                 "effect_key": "6",
                 "effects": [
                     [
-                        -40,
-                        null,
-                        "Critical Hits"
-                    ],
-                    [
-                        80,
-                        null,
-                        "Neutral Damage"
-                    ],
-                    [
-                        9,
-                        null,
-                        "% Earth Resist"
-                    ],
-                    [
-                        9,
-                        null,
-                        "% Fire Resist"
-                    ],
-                    [
-                        9,
-                        null,
-                        "% Water Resist"
-                    ],
-                    [
-                        9,
-                        null,
-                        "% Air Resist"
-                    ],
-                    [
-                        12,
-                        null,
-                        "Lock"
-                    ],
-                    [
-                        12,
-                        null,
-                        "Dodge"
-                    ],
-                    [
-                        6,
-                        null,
-                        "MP Loss Resist"
-                    ],
-                    [
-                        6,
-                        null,
-                        "AP Loss Resist"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
-                    ],
-                    [
-                        2,
-                        null,
-                        "Range"
-                    ],
-                    [
-                        1,
-                        null,
-                        "MP"
-                    ],
-                    [
-                        150,
-                        null,
-                        "Strength"
-                    ],
-                    [
-                        150,
-                        null,
-                        "Intelligence"
-                    ],
-                    [
-                        150,
-                        null,
-                        "Chance"
-                    ],
-                    [
-                        150,
-                        null,
-                        "Agility"
-                    ],
-                    [
                         20,
                         null,
-                        "Earth Damage"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Fire Damage"
+                        "Air Damage"
                     ],
                     [
                         20,
@@ -42278,7 +42238,92 @@
                     [
                         20,
                         null,
-                        "Air Damage"
+                        "Fire Damage"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        150,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        150,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        150,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        150,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        2,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        2,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        6,
+                        null,
+                        "AP Loss Resist"
+                    ],
+                    [
+                        6,
+                        null,
+                        "MP Loss Resist"
+                    ],
+                    [
+                        12,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        12,
+                        null,
+                        "Lock"
+                    ],
+                    [
+                        9,
+                        null,
+                        "% Air Resist"
+                    ],
+                    [
+                        9,
+                        null,
+                        "% Water Resist"
+                    ],
+                    [
+                        9,
+                        null,
+                        "% Fire Resist"
+                    ],
+                    [
+                        9,
+                        null,
+                        "% Earth Resist"
+                    ],
+                    [
+                        80,
+                        null,
+                        "Neutral Damage"
+                    ],
+                    [
+                        -40,
+                        null,
+                        "Critical Hits"
                     ]
                 ]
             }
@@ -43333,88 +43378,18 @@
                 "effects": [
                     [
                         23,
-                        5,
+                        4,
                         "Max."
                     ],
                     [
-                        -1,
-                        null,
-                        "Range"
+                        19,
+                        4,
+                        "Max."
                     ],
                     [
-                        7,
-                        null,
-                        "Lock"
-                    ],
-                    [
-                        25,
-                        null,
-                        "MP Loss Resist"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Pushback Resist"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Power"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Air Resist"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Fire Resist"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Water Resist"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Neutral Resist"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Earth Resist"
-                    ],
-                    [
-                        5,
-                        null,
-                        "% Earth Resist"
-                    ],
-                    [
-                        5,
-                        null,
-                        "% Water Resist"
-                    ],
-                    [
-                        5,
-                        null,
-                        "% Air Resist"
-                    ],
-                    [
-                        5,
-                        null,
-                        "% Fire Resist"
-                    ],
-                    [
-                        5,
-                        null,
-                        "% Neutral Resist"
-                    ],
-                    [
-                        300,
-                        null,
-                        "Initiative"
+                        26,
+                        4,
+                        "Max."
                     ],
                     [
                         -10,
@@ -43422,9 +43397,59 @@
                         "Dodge"
                     ],
                     [
-                        26,
-                        5,
-                        "Max."
+                        300,
+                        null,
+                        "Initiative"
+                    ],
+                    [
+                        2,
+                        null,
+                        "% Neutral Resist"
+                    ],
+                    [
+                        2,
+                        null,
+                        "% Fire Resist"
+                    ],
+                    [
+                        2,
+                        null,
+                        "% Air Resist"
+                    ],
+                    [
+                        2,
+                        null,
+                        "% Water Resist"
+                    ],
+                    [
+                        2,
+                        null,
+                        "% Earth Resist"
+                    ],
+                    [
+                        3,
+                        null,
+                        "% Ranged Resist"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Pushback Resist"
+                    ],
+                    [
+                        25,
+                        null,
+                        "MP Loss Resist"
+                    ],
+                    [
+                        7,
+                        null,
+                        "Lock"
                     ]
                 ]
             },
@@ -43432,84 +43457,19 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        1,
-                        null,
-                        "AP"
+                        26,
+                        3,
+                        "Max."
                     ],
                     [
-                        10,
-                        null,
-                        "Lock"
+                        23,
+                        3,
+                        "Max."
                     ],
                     [
-                        30,
-                        null,
-                        "MP Loss Resist"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Pushback Resist"
-                    ],
-                    [
-                        60,
-                        null,
-                        "Power"
-                    ],
-                    [
-                        15,
-                        null,
-                        "Air Resist"
-                    ],
-                    [
-                        15,
-                        null,
-                        "Fire Resist"
-                    ],
-                    [
-                        15,
-                        null,
-                        "Water Resist"
-                    ],
-                    [
-                        15,
-                        null,
-                        "Neutral Resist"
-                    ],
-                    [
-                        15,
-                        null,
-                        "Earth Resist"
-                    ],
-                    [
-                        7,
-                        null,
-                        "% Earth Resist"
-                    ],
-                    [
-                        7,
-                        null,
-                        "% Water Resist"
-                    ],
-                    [
-                        7,
-                        null,
-                        "% Air Resist"
-                    ],
-                    [
-                        7,
-                        null,
-                        "% Fire Resist"
-                    ],
-                    [
-                        7,
-                        null,
-                        "% Neutral Resist"
-                    ],
-                    [
-                        500,
-                        null,
-                        "Initiative"
+                        19,
+                        3,
+                        "Max."
                     ],
                     [
                         -20,
@@ -43517,112 +43477,57 @@
                         "Dodge"
                     ],
                     [
-                        -2,
-                        null,
-                        "Range"
-                    ],
-                    [
-                        23,
-                        4,
-                        "Max."
-                    ],
-                    [
-                        26,
-                        4,
-                        "Max."
-                    ]
-                ]
-            },
-            {
-                "effect_key": "4",
-                "effects": [
-                    [
-                        23,
-                        3,
-                        "Max."
-                    ],
-                    [
-                        -2,
-                        null,
-                        "Range"
-                    ],
-                    [
-                        -25,
-                        null,
-                        "Dodge"
-                    ],
-                    [
-                        750,
+                        500,
                         null,
                         "Initiative"
                     ],
                     [
-                        10,
+                        4,
                         null,
                         "% Neutral Resist"
                     ],
                     [
-                        10,
+                        4,
                         null,
                         "% Fire Resist"
                     ],
                     [
-                        10,
+                        4,
                         null,
                         "% Air Resist"
                     ],
                     [
-                        10,
+                        4,
                         null,
                         "% Water Resist"
                     ],
                     [
-                        10,
+                        4,
                         null,
                         "% Earth Resist"
                     ],
                     [
-                        20,
+                        6,
                         null,
-                        "Earth Resist"
+                        "% Ranged Resist"
                     ],
                     [
-                        20,
-                        null,
-                        "Neutral Resist"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Water Resist"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Fire Resist"
-                    ],
-                    [
-                        100,
+                        60,
                         null,
                         "Power"
                     ],
                     [
                         20,
                         null,
-                        "Air Resist"
-                    ],
-                    [
-                        25,
-                        null,
                         "Pushback Resist"
                     ],
                     [
-                        50,
+                        30,
                         null,
                         "MP Loss Resist"
                     ],
                     [
-                        15,
+                        10,
                         null,
                         "Lock"
                     ],
@@ -43630,9 +43535,89 @@
                         1,
                         null,
                         "AP"
-                    ],
+                    ]
+                ]
+            },
+            {
+                "effect_key": "4",
+                "effects": [
                     [
                         26,
+                        3,
+                        "Max."
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Lock"
+                    ],
+                    [
+                        50,
+                        null,
+                        "MP Loss Resist"
+                    ],
+                    [
+                        25,
+                        null,
+                        "Pushback Resist"
+                    ],
+                    [
+                        100,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        9,
+                        null,
+                        "% Ranged Resist"
+                    ],
+                    [
+                        6,
+                        null,
+                        "% Earth Resist"
+                    ],
+                    [
+                        6,
+                        null,
+                        "% Water Resist"
+                    ],
+                    [
+                        6,
+                        null,
+                        "% Air Resist"
+                    ],
+                    [
+                        6,
+                        null,
+                        "% Fire Resist"
+                    ],
+                    [
+                        6,
+                        null,
+                        "% Neutral Resist"
+                    ],
+                    [
+                        750,
+                        null,
+                        "Initiative"
+                    ],
+                    [
+                        -25,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        19,
+                        3,
+                        "Max."
+                    ],
+                    [
+                        23,
                         3,
                         "Max."
                     ]
@@ -43642,94 +43627,9 @@
                 "effect_key": "5",
                 "effects": [
                     [
-                        23,
-                        2,
+                        26,
+                        3,
                         "Max."
-                    ],
-                    [
-                        -2,
-                        null,
-                        "Range"
-                    ],
-                    [
-                        -35,
-                        null,
-                        "Dodge"
-                    ],
-                    [
-                        1000,
-                        null,
-                        "Initiative"
-                    ],
-                    [
-                        15,
-                        null,
-                        "% Neutral Resist"
-                    ],
-                    [
-                        15,
-                        null,
-                        "% Fire Resist"
-                    ],
-                    [
-                        15,
-                        null,
-                        "% Air Resist"
-                    ],
-                    [
-                        15,
-                        null,
-                        "% Water Resist"
-                    ],
-                    [
-                        15,
-                        null,
-                        "% Earth Resist"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Earth Resist"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Neutral Resist"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Water Resist"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Fire Resist"
-                    ],
-                    [
-                        150,
-                        null,
-                        "Power"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Air Resist"
-                    ],
-                    [
-                        35,
-                        null,
-                        "Pushback Resist"
-                    ],
-                    [
-                        75,
-                        null,
-                        "MP Loss Resist"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Lock"
                     ],
                     [
                         1,
@@ -43737,8 +43637,73 @@
                         "AP"
                     ],
                     [
-                        26,
-                        2,
+                        20,
+                        null,
+                        "Lock"
+                    ],
+                    [
+                        75,
+                        null,
+                        "MP Loss Resist"
+                    ],
+                    [
+                        35,
+                        null,
+                        "Pushback Resist"
+                    ],
+                    [
+                        12,
+                        null,
+                        "% Ranged Resist"
+                    ],
+                    [
+                        150,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        8,
+                        null,
+                        "% Earth Resist"
+                    ],
+                    [
+                        8,
+                        null,
+                        "% Water Resist"
+                    ],
+                    [
+                        8,
+                        null,
+                        "% Air Resist"
+                    ],
+                    [
+                        8,
+                        null,
+                        "% Fire Resist"
+                    ],
+                    [
+                        8,
+                        null,
+                        "% Neutral Resist"
+                    ],
+                    [
+                        1000,
+                        null,
+                        "Initiative"
+                    ],
+                    [
+                        -35,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        19,
+                        3,
+                        "Max."
+                    ],
+                    [
+                        23,
+                        3,
                         "Max."
                     ]
                 ]
@@ -43747,94 +43712,9 @@
                 "effect_key": "6",
                 "effects": [
                     [
+                        26,
                         2,
-                        null,
-                        "AP"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Lock"
-                    ],
-                    [
-                        100,
-                        null,
-                        "MP Loss Resist"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Pushback Resist"
-                    ],
-                    [
-                        200,
-                        null,
-                        "Power"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Fire Resist"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Air Resist"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Water Resist"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Earth Resist"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Neutral Resist"
-                    ],
-                    [
-                        20,
-                        null,
-                        "% Earth Resist"
-                    ],
-                    [
-                        20,
-                        null,
-                        "% Air Resist"
-                    ],
-                    [
-                        20,
-                        null,
-                        "% Water Resist"
-                    ],
-                    [
-                        20,
-                        null,
-                        "% Fire Resist"
-                    ],
-                    [
-                        1500,
-                        null,
-                        "Initiative"
-                    ],
-                    [
-                        20,
-                        null,
-                        "% Neutral Resist"
-                    ],
-                    [
-                        -50,
-                        null,
-                        "Dodge"
-                    ],
-                    [
-                        -3,
-                        null,
-                        "Range"
+                        "Max."
                     ],
                     [
                         23,
@@ -43842,9 +43722,74 @@
                         "Max."
                     ],
                     [
-                        26,
+                        19,
                         2,
                         "Max."
+                    ],
+                    [
+                        -50,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        15,
+                        null,
+                        "% Ranged Resist"
+                    ],
+                    [
+                        1500,
+                        null,
+                        "Initiative"
+                    ],
+                    [
+                        10,
+                        null,
+                        "% Fire Resist"
+                    ],
+                    [
+                        10,
+                        null,
+                        "% Water Resist"
+                    ],
+                    [
+                        10,
+                        null,
+                        "% Air Resist"
+                    ],
+                    [
+                        10,
+                        null,
+                        "% Earth Resist"
+                    ],
+                    [
+                        10,
+                        null,
+                        "% Neutral Resist"
+                    ],
+                    [
+                        200,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Pushback Resist"
+                    ],
+                    [
+                        100,
+                        null,
+                        "MP Loss Resist"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Lock"
+                    ],
+                    [
+                        2,
+                        null,
+                        "AP"
                     ]
                 ]
             }
@@ -56454,21 +56399,6 @@
         ]
     },
     {
-        "ankama_id": 1005,
-        "name_en": "[!] Panoplie prototype du vagabond incompris",
-        "name_fr": "Panoplie prototype du vagabond incompris",
-        "name_es": "[!] Panoplie prototype du vagabond incompris",
-        "name_pt": "[!] Panoplie prototype du vagabond incompris",
-        "name_de": "[!] Panoplie prototype du vagabond incompris",
-        "items": 4,
-        "equipment_ids": [
-            31564,
-            31569,
-            31861,
-            32074
-        ]
-    },
-    {
         "ankama_id": 1006,
         "name_en": "Raydi Ceremonial Set",
         "name_fr": "Panoplie d'apparat Pararayon",
@@ -57617,21 +57547,6 @@
         ]
     },
     {
-        "ankama_id": 1019,
-        "name_en": "[!] Panoplie triplement stupide",
-        "name_fr": "Panoplie triplement stupide",
-        "name_es": "[!] Panoplie triplement stupide",
-        "name_pt": "[!] Panoplie triplement stupide",
-        "name_de": "[!] Panoplie triplement stupide",
-        "items": 4,
-        "equipment_ids": [
-            31567,
-            31645,
-            31742,
-            31858
-        ]
-    },
-    {
         "ankama_id": 1020,
         "name_en": "Demon II Ceremonial Set",
         "name_fr": "Panoplie d'apparat du Démon II",
@@ -57700,51 +57615,6 @@
             31941,
             31942,
             31943
-        ]
-    },
-    {
-        "ankama_id": 1024,
-        "name_en": "[!] Ponctunoplie",
-        "name_fr": "Ponctunoplie",
-        "name_es": "[!] Ponctunoplie",
-        "name_pt": "[!] Ponctunoplie",
-        "name_de": "[!] Ponctunoplie",
-        "items": 4,
-        "equipment_ids": [
-            31568,
-            31570,
-            32072,
-            32073
-        ]
-    },
-    {
-        "ankama_id": 1025,
-        "name_en": "[!] Panoplie suspecte",
-        "name_fr": "Panoplie suspecte",
-        "name_es": "[!] Panoplie suspecte",
-        "name_pt": "[!] Panoplie suspecte",
-        "name_de": "[!] Panoplie suspecte",
-        "items": 4,
-        "equipment_ids": [
-            31573,
-            31914,
-            31915,
-            31925
-        ]
-    },
-    {
-        "ankama_id": 1026,
-        "name_en": "[!] Panoplie du vagabond incompris",
-        "name_fr": "Panoplie du vagabond incompris",
-        "name_es": "[!] Panoplie du vagabond incompris",
-        "name_pt": "[!] Panoplie du vagabond incompris",
-        "name_de": "[!] Panoplie du vagabond incompris",
-        "items": 4,
-        "equipment_ids": [
-            31565,
-            31566,
-            31571,
-            31887
         ]
     }
 ]
