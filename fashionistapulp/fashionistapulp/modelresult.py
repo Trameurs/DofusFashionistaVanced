@@ -363,15 +363,27 @@ class ModelResult():
             else: 
                 composite_mins = s.get_adv_mins() 
                 for stat in composite_mins:
-                    if stat['key'] in min_val:
+                    stat_found = stat['key'] in min_val or stat['name'] in min_val
+                    if stat_found:
+                        required_min = min_val.get(stat['key'], min_val.get(stat['name']))
                         char_stat = 0
+                        debug_info = []
                         for attribute in stat['stats']:
-                            char_stat += self.stats_total[STAT_NAME_TO_KEY[attribute]]
-                        if char_stat < min_val[stat['key']]:
+                            val = self.stats_total[STAT_NAME_TO_KEY[attribute]]
+                            original_val = val
+                            if attribute.strip().startswith('%') and attribute.strip().endswith('Resist'):
+                                val = min(val, 50)
+                                if original_val != val:
+                                    debug_info.append(f"{attribute}: {original_val}→{val}")
+                            char_stat += val
+                        if char_stat < required_min:
                             violation = Violation()
                             violation.item_name = _('project')
-                            violation.stat_name = stat['local_name']
-                            violation.stat_value = min_val[stat['key']]
+                            stat_name = stat['local_name']
+                            if debug_info:
+                                stat_name += f" (capped: {', '.join(debug_info)})"
+                            violation.stat_name = stat_name
+                            violation.stat_value = required_min
                             violation.condition_type = 'min_eq'
                             violation.cant_equip = False
                             violations.append(violation)

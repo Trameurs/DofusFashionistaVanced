@@ -53,6 +53,18 @@ class Model:
         self.create_stat_points_variables()
         self.create_light_set_variables()
         self.create_prysmaradite_variables()
+        self.create_capped_resistance_variables()
+    
+    def create_capped_resistance_variables(self):
+        adv_mins = self.structure.get_adv_mins()
+        for stat in adv_mins:
+            is_percent_resist_sum = all(stat_name.strip().startswith('%') and stat_name.strip().endswith('Resist') 
+                                      for stat_name in stat['stats'])
+            if is_percent_resist_sum:
+                for stat_name in stat['stats']:
+                    stat_obj = self.structure.get_stat_by_name(stat_name)
+                    var_id = f"capped_{stat_obj.key}"
+                    self.problem.setup_variable('capped_resist', var_id, 0, 50)
     
     def create_item_number_variables(self):
         for item in self.items_list:
@@ -1017,8 +1029,19 @@ class Model:
         
         for stat in adv_mins:
             matrix = []
-            for stat_name in stat['stats']:
-                matrix.append((-1, 'stat', self.structure.get_stat_by_name(stat_name).id))
+            is_percent_resist_sum = all(stat_name.strip().startswith('%') and stat_name.strip().endswith('Resist') 
+                                      for stat_name in stat['stats'])
+            if is_percent_resist_sum:
+                for stat_name in stat['stats']:
+                    stat_obj = self.structure.get_stat_by_name(stat_name)
+                    var_id = f"capped_{stat_obj.key}"
+                    constraint_matrix = [(1, 'capped_resist', var_id), (-1, 'stat', stat_obj.id)]
+                    self.problem.restriction_lt_eq(0, constraint_matrix)
+                    matrix.append((-1, 'capped_resist', var_id))
+            else:
+                for stat_name in stat['stats']:
+                    matrix.append((-1, 'stat', self.structure.get_stat_by_name(stat_name).id))
+            
             restriction = self.problem.restriction_lt_eq(-10000, matrix)   
             self.restrictions.advanced_minimum_stat_constraints[stat['key']] = restriction
 
