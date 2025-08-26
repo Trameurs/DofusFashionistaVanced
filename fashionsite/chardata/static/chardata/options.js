@@ -19,7 +19,7 @@ function optionsBooleanTrophiesToYesNo(bool_param) {
     return (bool_param) ? 'yes' : 'no';
 }
 
-function optionsInit(options) {
+function optionsInit(options, prysmaradites) {
     var $apExoRadios = $('input:radio[name=ap_exo]');
     $apExoRadios.filter('[value=' + optionsBooleanToYesNo(options['ap_exo']) + ']')
         .prop('checked', true);
@@ -118,10 +118,71 @@ function optionsInit(options) {
     $dorigamiCheckbox.prop('checked', options.dofuses.dorigami);
 
     var $nightmareCheckbox = $('input:checkbox[name=nightmare]');
-    $nightmareCheckbox.prop('checked', options.dofuses.nightmare);
-
-    var $sylvanCheckbox = $('input:checkbox[name=sylvan]');
+    $nightmareCheckbox.prop('checked', options.dofuses.nightmare);    var $sylvanCheckbox = $('input:checkbox[name=sylvan]');
     $sylvanCheckbox.prop('checked', options.dofuses.sylvan);
+
+    // Initialize individual prysmaradite checkboxes
+    if (prysmaradites && prysmaradites.prysmaradites) {
+        // Prytekt family
+        var $prytektCheckbox = $('input:checkbox[name=prytekt]');
+        $prytektCheckbox.prop('checked', prysmaradites.prysmaradites.prytekt);
+        
+        var $shinyPrytektCheckbox = $('input:checkbox[name=shiny_prytekt]');
+        $shinyPrytektCheckbox.prop('checked', prysmaradites.prysmaradites.shiny_prytekt);
+        
+        var $iridescentPrytektCheckbox = $('input:checkbox[name=iridescent_prytekt]');
+        $iridescentPrytektCheckbox.prop('checked', prysmaradites.prysmaradites.iridescent_prytekt);
+        
+        // Pryssure family
+        var $pryssureCheckbox = $('input:checkbox[name=pryssure]');
+        $pryssureCheckbox.prop('checked', prysmaradites.prysmaradites.pryssure);
+        
+        var $shinyPryssureCheckbox = $('input:checkbox[name=shiny_pryssure]');
+        $shinyPryssureCheckbox.prop('checked', prysmaradites.prysmaradites.shiny_pryssure);
+        
+        var $iridescentPryssureCheckbox = $('input:checkbox[name=iridescent_pryssure]');
+        $iridescentPryssureCheckbox.prop('checked', prysmaradites.prysmaradites.iridescent_pryssure);
+        
+        // Surpryz family
+        var $surpryzCheckbox = $('input:checkbox[name=surpryz]');
+        $surpryzCheckbox.prop('checked', prysmaradites.prysmaradites.surpryz);
+        
+        var $shinySurpryzCheckbox = $('input:checkbox[name=shiny_surpryz]');
+        $shinySurpryzCheckbox.prop('checked', prysmaradites.prysmaradites.shiny_surpryz);
+        
+        var $iridescentSurpryzCheckbox = $('input:checkbox[name=iridescent_surpryz]');
+        $iridescentSurpryzCheckbox.prop('checked', prysmaradites.prysmaradites.iridescent_surpryz);
+        
+        // Pryndsight family
+        var $pryndsightCheckbox = $('input:checkbox[name=pryndsight]');
+        $pryndsightCheckbox.prop('checked', prysmaradites.prysmaradites.pryndsight);
+        
+        var $shinyPryndsightCheckbox = $('input:checkbox[name=shiny_pryndsight]');
+        $shinyPryndsightCheckbox.prop('checked', prysmaradites.prysmaradites.shiny_pryndsight);
+        
+        var $iridescentPryndsightCheckbox = $('input:checkbox[name=iridescent_pryndsight]');
+        $iridescentPryndsightCheckbox.prop('checked', prysmaradites.prysmaradites.iridescent_pryndsight);
+        
+        // Prylixir family
+        var $prylixirCheckbox = $('input:checkbox[name=prylixir]');
+        $prylixirCheckbox.prop('checked', prysmaradites.prysmaradites.prylixir);
+        
+        var $shinyPrylixirCheckbox = $('input:checkbox[name=shiny_prylixir]');
+        $shinyPrylixirCheckbox.prop('checked', prysmaradites.prysmaradites.shiny_prylixir);
+        
+        var $iridescentPrylixirCheckbox = $('input:checkbox[name=iridescent_prylixir]');
+        $iridescentPrylixirCheckbox.prop('checked', prysmaradites.prysmaradites.iridescent_prylixir);
+        
+        // Pryveil family
+        var $pryveilCheckbox = $('input:checkbox[name=pryveil]');
+        $pryveilCheckbox.prop('checked', prysmaradites.prysmaradites.pryveil);
+        
+        var $shinyPryveilCheckbox = $('input:checkbox[name=shiny_pryveil]');
+        $shinyPryveilCheckbox.prop('checked', prysmaradites.prysmaradites.shiny_pryveil);
+        
+        var $iridescentPryveilCheckbox = $('input:checkbox[name=iridescent_pryveil]');
+        $iridescentPryveilCheckbox.prop('checked', prysmaradites.prysmaradites.iridescent_pryveil);
+    }
 }
 
 function disableUnusableDofus(unusable){
@@ -131,6 +192,16 @@ function disableUnusableDofus(unusable){
         $(classStr).attr('checked',false);
         $(classStr).css({ 'opacity' : 0.7 });
         $(classStr).attr('title', gettext('You need to be a higher level to equip this Dofus'));
+    }
+}
+
+function disableUnusablePrysmaradites(unusable){
+    for (var key in unusable){
+        var classStr = ".".concat(key);
+        $(classStr).attr('disabled',true);
+        $(classStr).attr('checked',false);
+        $(classStr).css({ 'opacity' : 0.7 });
+        $(classStr).attr('title', gettext('You need to be a higher level to equip this Prysmaradite'));
     }
 }
 
