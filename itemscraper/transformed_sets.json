@@ -57616,5 +57616,32 @@
             31942,
             31943
         ]
+    },
+    {
+        "ankama_id": 1028,
+        "name_en": "[!] Panoplie d'apparat de Zi",
+        "name_fr": "Panoplie d'apparat de Zi",
+        "name_es": "[!] Panoplie d'apparat de Zi",
+        "name_pt": "[!] Panoplie d'apparat de Zi",
+        "name_de": "[!] Panoplie d'apparat de Zi",
+        "items": 2,
+        "equipment_ids": [
+            30536,
+            32107
+        ]
+    },
+    {
+        "ankama_id": 1029,
+        "name_en": "[!] Panoplie d'apparat Osavora",
+        "name_fr": "Panoplie d'apparat Osavora",
+        "name_es": "[!] Panoplie d'apparat Osavora",
+        "name_pt": "[!] Panoplie d'apparat Osavora",
+        "name_de": "[!] Panoplie d'apparat Osavora",
+        "items": 3,
+        "equipment_ids": [
+            31944,
+            31945,
+            31946
+        ]
     }
 ]
