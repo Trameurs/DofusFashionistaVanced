@@ -146,7 +146,9 @@ STAT_TRANSLATE = {
     'Size: %' : 'Size: %',
     'Action Points (AP)': 'AP',
     'Movement Points (MP)': 'MP',
-    '(Attracts by cell)': '(Attracts by cell)'
+    '(Attracts by cell)': '(Attracts by cell)',
+    '(best-element steal)' : '(best-element steal)',
+    '(Advances by cell)' : '(Advances by cell)',
 }
 
 LANGUAGES = ['en', 'fr', 'es', 'pt', 'de']

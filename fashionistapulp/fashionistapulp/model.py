@@ -396,40 +396,12 @@ class Model:
                                 self.structure.get_item_by_name("Surpryz").id,
                                 surpryz_new_stat_weight)
 
-        #Shiny Surpryz
-        #The bearer gains 35% Critical for 2 turns.
-        shiny_surpryz_new_stat_weight = objective_values.get('ch', 0) * 17.5
-        self.problem.add_to_of('p',
-                                self.structure.get_item_by_name("Shiny Surpryz").id,
-                                shiny_surpryz_new_stat_weight)
-
-        #Iridescent Surpryz
-        #The bearer gains 100% Critical for 1 turn.
-        iridescent_surpryz_new_stat_weight = objective_values.get('ch', 0) * 25
-        self.problem.add_to_of('p',
-                                self.structure.get_item_by_name("Iridescent Surpryz").id,
-                                iridescent_surpryz_new_stat_weight)
-
-        #Pryndsight
+        #Prynyang
         #For 1 turn, the bearer gains as much Power as damage suffered by enemies, up to 200 Power (3 turns).
-        pryndsight_new_stat_weight = objective_values.get('pow', 0) * 100
+        prynyang_new_stat_weight = objective_values.get('pow', 0) * 100
         self.problem.add_to_of('p',
-                                self.structure.get_item_by_name("Pryndsight").id,
-                                pryndsight_new_stat_weight)
-
-        #Shiny Pryndsight
-        #For 1 turn, the bearer gains as much Power as damage suffered by enemies, up to 300 Power (2 turns).
-        shiny_pryndsight_new_stat_weight = objective_values.get('pow', 0) * 100
-        self.problem.add_to_of('p',
-                                self.structure.get_item_by_name("Shiny Pryndsight").id,
-                                shiny_pryndsight_new_stat_weight)
-
-        #Iridescent Pryndsight
-        #For 1 turn, the bearer gains as much Power as damage suffered by enemies, up to 600 Power (1 turn).
-        iridescent_pryndsight_new_stat_weight = objective_values.get('pow', 0) * 100
-        self.problem.add_to_of('p',
-                                self.structure.get_item_by_name("Iridescent Pryndsight").id,
-                                iridescent_pryndsight_new_stat_weight)
+                                self.structure.get_item_by_name("Prynyang").id,
+                                prynyang_new_stat_weight)
 
         #Prycapture
         #The bearer gains 1 MP (2 turns) per enemy more than 15 cells away.
@@ -438,40 +410,12 @@ class Model:
                                 self.structure.get_item_by_name("Prycapture").id,
                                 prycapture_new_stat_weight)
 
-        #Shiny Prycapture
-        #The bearer gains 1 MP (2 turns) per enemy more than 12 cells away and loses 1 AP (2 turns) per enemy within 12 cells.
-        shiny_prycapture_new_stat_weight = objective_values.get('mp', 0) * 0.5 - objective_values.get('ap', 0) * 0.5
-        self.problem.add_to_of('p',
-                                self.structure.get_item_by_name("Shiny Prycapture").id,
-                                shiny_prycapture_new_stat_weight)
-
-        #Iridescent Prycapture
-        #The bearer gains 1 MP (2 turns) per enemy more than 9 cells away and loses 2 AP (2 turns) per enemy within 9 cells.
-        iridescent_prycapture_new_stat_weight = objective_values.get('mp', 0) * 0.5 - objective_values.get('ap', 0) * 1
-        self.problem.add_to_of('p',
-                                self.structure.get_item_by_name("Iridescent Prycapture").id,
-                                iridescent_prycapture_new_stat_weight)
-
         #Prygenerate
         #Heals 15% of enemy damage suffered until the end of the third turn.
         prygenerate_new_stat_weight = objective_values.get('hp', 0) * 0.15 * 3 * level
         self.problem.add_to_of('p',
                                 self.structure.get_item_by_name("Prygenerate").id,
                                 prygenerate_new_stat_weight)
-
-        #Shiny Prygenerate
-        #Heals 30% of enemy damage suffered until the end of the second turn.
-        shiny_prygenerate_new_stat_weight = objective_values.get('hp', 0) * 0.3 * 1.5 * level
-        self.problem.add_to_of('p',
-                                self.structure.get_item_by_name("Shiny Prygenerate").id,
-                                shiny_prygenerate_new_stat_weight)
-
-        #Iridescent Prygenerate
-        #Heals 100% of enemy damage suffered until the end of the first turn.
-        iridescent_prygenerate_new_stat_weight = objective_values.get('hp', 0) * 1 * 0.5 * level
-        self.problem.add_to_of('p',
-                                self.structure.get_item_by_name("Iridescent Prygenerate").id,
-                                iridescent_prygenerate_new_stat_weight)
 
         #Prysipitate
         #The bearer gains +2 AP for their first round.
@@ -508,26 +452,12 @@ class Model:
                                 self.structure.get_item_by_name("Prysical").id,
                                 prysical_new_stat_weight)
 
-        #Pryank
+        #Caraprys
         #At the end of their first turn, the bearer reduces damage by 5% (3 turns) for each enemy (excluding summons) in their line of sight.
-        pryank_new_stat_weight = objective_values.get('respermee', 0) * 7.5 + objective_values.get('resperran', 0) * 7.5
+        caraprys_new_stat_weight = objective_values.get('respermee', 0) * 7.5 + objective_values.get('resperran', 0) * 7.5
         self.problem.add_to_of('p',
-                                self.structure.get_item_by_name("Pryank").id,
-                                pryank_new_stat_weight)
-
-        #Shiny Pryank
-        #At the end of their first turn, the bearer reduces damage by 10% (2 turns) for each enemy (excluding summons) in their line of sight.
-        shiny_pryank_new_stat_weight = objective_values.get('respermee', 0) * 7.5 + objective_values.get('resperran', 0) * 7.5
-        self.problem.add_to_of('p',
-                                self.structure.get_item_by_name("Shiny Pryank").id,
-                                shiny_pryank_new_stat_weight)
-
-        #Iridescent Pryank
-        #At the end of their first turn, the bearer reduces damage by 20% (1 turn) for each enemy (excluding summons) in their line of sight.
-        iridescent_pryank_new_stat_weight = objective_values.get('respermee', 0) * 7.5 + objective_values.get('resperran', 0) * 7.5
-        self.problem.add_to_of('p',
-                                self.structure.get_item_by_name("Iridescent Pryank").id,
-                                iridescent_pryank_new_stat_weight)
+                                self.structure.get_item_by_name("Caraprys").id,
+                                caraprys_new_stat_weight)
 
         #TODO: find better way to add weight to Disaprys
         #Disaprys
@@ -553,15 +483,15 @@ class Model:
                                 pryshield_new_stat_weight)
 
         #Pryximity
-        #At the start of their first round, the bearer gains 200% of their level in shield (infinite) for each enemy (excluding summons) in their line of sight.
-        pryximity_new_stat_weight = objective_values.get('hp', 0) * 2 * level * 2
+        #The bearer gains 2% close-combat damage for 3 turns for each enemy fighter within 3 cells or less of the bearer at the start of their first turn.
+        pryximity_new_stat_weight = objective_values.get('permedam', 0) * 2 * 2 * 0.5
         self.problem.add_to_of('p',
                                 self.structure.get_item_by_name("Pryximity").id,
                                 pryximity_new_stat_weight)
 
         #Prymune
         #The bearer reduces all types of damage suffered by 80% on the first turn.
-        prymune_new_stat_weight = objective_values.get('respermee', 0) * 10 + objective_values.get('resperran', 0) * 10
+        prymune_new_stat_weight = (objective_values.get('respermee', 0) + objective_values.get('resperran', 0)) * 80 * 0.18
         self.problem.add_to_of('p',
                                 self.structure.get_item_by_name("Prymune").id,
                                 prymune_new_stat_weight)

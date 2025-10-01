@@ -45789,7 +45789,7 @@
         "name_es": "Set cosmético de osamodas",
         "name_pt": "Conjunto de Aparência Osamodas",
         "name_de": "Osamodas-Prunkset",
-        "items": 7,
+        "items": 8,
         "equipment_ids": [
             21769,
             21770,
@@ -45797,7 +45797,8 @@
             21772,
             21773,
             21774,
-            23005
+            23005,
+            32108
         ]
     },
     {
@@ -45843,7 +45844,7 @@
         "name_es": "Set cosmético de sacrógrito",
         "name_pt": "Conjunto de Aparência Sacrier",
         "name_de": "Sacrieur-Prunkset",
-        "items": 8,
+        "items": 9,
         "equipment_ids": [
             23212,
             23213,
@@ -45852,7 +45853,8 @@
             23216,
             23217,
             23643,
-            30244
+            30244,
+            32109
         ]
     },
     {
@@ -45862,7 +45864,7 @@
         "name_es": "Set cosmético xelor",
         "name_pt": "Conjunto de Aparência Xelor",
         "name_de": "Xélor-Prunkset",
-        "items": 7,
+        "items": 8,
         "equipment_ids": [
             23463,
             23464,
@@ -45870,7 +45872,8 @@
             23477,
             23478,
             23479,
-            23645
+            23645,
+            32111
         ]
     },
     {
@@ -46026,7 +46029,7 @@
         "name_es": "Set cosmético hipermago",
         "name_pt": "Conjunto de aparência Huppermago",
         "name_de": "Übermagier-Prunkset",
-        "items": 7,
+        "items": 8,
         "equipment_ids": [
             25173,
             25174,
@@ -46034,7 +46037,8 @@
             25184,
             25185,
             25186,
-            25997
+            25997,
+            32110
         ]
     },
     {
@@ -57618,6 +57622,20 @@
         ]
     },
     {
+        "ankama_id": 1027,
+        "name_en": "Dream Fountain Ceremonial Set",
+        "name_fr": "Panoplie d'apparat de la Fontaine Onirique",
+        "name_es": "Set cosmético de la fuente onírica",
+        "name_pt": "Conjunto de Aparência da Fonte Onírica",
+        "name_de": "Prunkset der Träumerischen Fontäne",
+        "items": 3,
+        "equipment_ids": [
+            32082,
+            32083,
+            32084
+        ]
+    },
+    {
         "ankama_id": 1028,
         "name_en": "[!] Panoplie d'apparat de Zi",
         "name_fr": "Panoplie d'apparat de Zi",
@@ -57642,6 +57660,68 @@
             31944,
             31945,
             31946
+        ]
+    },
+    {
+        "ankama_id": 1030,
+        "name_en": "Beta Tester Ceremonial Set",
+        "name_fr": "Panoplie d'apparat des Bétas testeurs",
+        "name_es": "Set cosmético de los betatesteadores",
+        "name_pt": "Conjunto de Aparência dos Testadores Beta",
+        "name_de": "Prunkset der Beta-Tester",
+        "items": 2,
+        "equipment_ids": [
+            28359,
+            32141
+        ]
+    },
+    {
+        "ankama_id": 1031,
+        "name_en": "Many-Hued Demon III Ceremonial Set",
+        "name_fr": "Panoplie d'apparat diaprée du Démon III",
+        "name_es": "Set cosmético matizado del Demonio III",
+        "name_pt": "Conjunto de Aparência Matizado do Demônio III",
+        "name_de": "Schillerndes Prunkset von Dämon III",
+        "items": 4,
+        "equipment_ids": [
+            32155,
+            32157,
+            32159,
+            32161
+        ]
+    },
+    {
+        "ankama_id": 1032,
+        "name_en": "Demon III Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Démon III",
+        "name_es": "Set cosmético del Demonio III",
+        "name_pt": "Conjunto de Aparência do Demônio III",
+        "name_de": "Prunkset von Dämon III",
+        "items": 4,
+        "equipment_ids": [
+            32154,
+            32156,
+            32158,
+            32160
+        ]
+    },
+    {
+        "ankama_id": 1033,
+        "name_en": "Dreamalive Ceremonial Set",
+        "name_fr": "Panoplie d'apparat Songevante",
+        "name_es": "Set cosmético sueñivivo",
+        "name_pt": "Conjunto de Aparência Sonhante",
+        "name_de": "Lebendtraum-Prunkset",
+        "items": 8,
+        "equipment_ids": [
+            32169,
+            32170,
+            32171,
+            32172,
+            32173,
+            32174,
+            32175,
+            32176
         ]
     }
 ]
