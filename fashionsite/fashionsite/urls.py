@@ -20,17 +20,26 @@ from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib import admin
 from django.views.generic import TemplateView
+from django.http import HttpResponse
+from django.views.static import serve
+import os
 from chardata import home_view, login_view, views, projects_view, base_stats_view, create_project_view, \
     stats_weights_view, min_stats_view, options_view, inclusions_view, exclusions_view, wizard_view, \
     fashion_action, solution_view, spells_view, contact_view, manage_account_view, util, manage_items_view, \
     compare_sets_view, item_exchange, util_views
 admin.autodiscover()
 
+def ads_txt_view(request):
+    """Serve the ads.txt file"""
+    content = "google.com, pub-3961330018791408, DIRECT, f08c47fec0942fa0"
+    return HttpResponse(content, content_type='text/plain')
+
 js_info_dict = {
     'packages': 'chardata',
 }
 
 urlpatterns = [
+    re_path(r'^ads\.txt$', ads_txt_view, name='ads_txt'),
     re_path(r'^jsi18n/$', JavaScriptCatalog.as_view(), name='javascript-catalog', kwargs=js_info_dict),
     re_path(r'^$', home_view.home, name='home'),
     re_path(r'^login_page/', login_view.login_page, name='login_page'),
