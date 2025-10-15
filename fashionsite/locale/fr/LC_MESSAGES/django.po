@@ -1807,6 +1807,10 @@ msgstr "Autoriser uniquement Cawotte"
 msgid "Allow Mounts"
 msgstr "Autoriser les montures :"
 
+#: fashionsite/chardata/templates/chardata/wizard_options.html:228
+msgid "Prysmaradite"
+msgstr "Prysmaradite"
+
 #: fashionsite/chardata/templates/chardata/options.html:96
 #: fashionsite/chardata/templates/chardata/wizard_options.html:28
 msgid "Dragoturkeys"
@@ -1825,6 +1829,10 @@ msgstr "Volkornes"
 #: fashionsite/chardata/templates/chardata/options.html:113
 msgid "Allow dofuses:"
 msgstr "Autoriser les dofus :"
+
+#: fashionsite/chardata/templates/chardata/options.html:113
+msgid "Allow dofuses and prysmaradite:"
+msgstr "Autoriser les dofus et prysmaradite :"
 
 #: fashionsite/chardata/templates/chardata/options.html:119
 #: fashionsite/chardata/templates/chardata/wizard_options.html:43
@@ -2620,6 +2628,10 @@ msgstr "Exos et Montures"
 #: fashionsite/chardata/templates/chardata/wizard_options.html:37
 msgid "Dofuses"
 msgstr "les Dofus "
+
+#: fashionsite/chardata/templates/chardata/wizard_options.html:37
+msgid "Dofuses and Prysmaradite"
+msgstr "les Dofus et Prysmaradite"
 
 #: fashionsite/chardata/templates/chardata/wizard_options.html:162
 msgid "Black Spotted"

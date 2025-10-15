@@ -1685,6 +1685,10 @@ msgstr "Permitir somente o Cenouwa"
 msgid "Allow Mounts"
 msgstr "Permitir Montarias:"
 
+#: chardata/templates/chardata/wizard_options.html:228
+msgid "Prysmaradite"
+msgstr "Prysmaradite"
+
 #: chardata/templates/chardata/options.html:96
 #: chardata/templates/chardata/wizard_options.html:28
 msgid "Dragoturkeys"
@@ -1703,6 +1707,10 @@ msgstr "Vulkórnios"
 #: chardata/templates/chardata/options.html:113
 msgid "Allow dofuses:"
 msgstr "Permitir dofus:"
+
+#: chardata/templates/chardata/options.html:113
+msgid "Allow dofuses and prysmaradite:"
+msgstr "Permitir dofus e prysmaradite:"
 
 #: chardata/templates/chardata/options.html:119
 #: chardata/templates/chardata/wizard_options.html:43
@@ -2509,6 +2517,10 @@ msgstr "Exos e Montarias"
 #: chardata/templates/chardata/wizard_options.html:37
 msgid "Dofuses"
 msgstr "Dofus"
+
+#: chardata/templates/chardata/wizard_options.html:37
+msgid "Dofuses and Prysmaradite"
+msgstr "Dofus e Prysmaradite"
 
 #: chardata/templates/chardata/wizard_options.html:162
 msgid "Black Spotted"

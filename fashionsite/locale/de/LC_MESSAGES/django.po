@@ -1543,6 +1543,10 @@ msgstr ""
 msgid "Allow Mounts"
 msgstr ""
 
+#: chardata/templates/chardata/wizard_options.html:228
+msgid "Prysmaradite"
+msgstr "Prysmaradite"
+
 #: chardata/templates/chardata/options.html:96
 #: chardata/templates/chardata/wizard_options.html:28
 msgid "Dragoturkeys"
@@ -1561,6 +1565,10 @@ msgstr ""
 #: chardata/templates/chardata/options.html:113
 msgid "Allow dofuses:"
 msgstr ""
+
+#: chardata/templates/chardata/options.html:113
+msgid "Allow dofuses and prysmaradite:"
+msgstr "Dofus und Prysmaradite erlauben:"
 
 #: chardata/templates/chardata/options.html:119
 #: chardata/templates/chardata/wizard_options.html:43
@@ -2285,6 +2293,10 @@ msgstr ""
 #: chardata/templates/chardata/wizard_options.html:37
 msgid "Dofuses"
 msgstr ""
+
+#: chardata/templates/chardata/wizard_options.html:37
+msgid "Dofuses and Prysmaradite"
+msgstr "Dofus und Prysmaradite"
 
 #: chardata/templates/chardata/wizard_options.html:162
 msgid "Black Spotted"

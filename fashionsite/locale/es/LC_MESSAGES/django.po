@@ -1686,6 +1686,10 @@ msgstr "Permitir sólo Zanahowia"
 msgid "Allow Mounts"
 msgstr "Permitir Monturas:"
 
+#: chardata/templates/chardata/wizard_options.html:228
+msgid "Prysmaradite"
+msgstr "Prysmaradite"
+
 #: chardata/templates/chardata/options.html:96
 #: chardata/templates/chardata/wizard_options.html:28
 msgid "Dragoturkeys"
@@ -1704,6 +1708,10 @@ msgstr "Vuelocerontes"
 #: chardata/templates/chardata/options.html:113
 msgid "Allow dofuses:"
 msgstr "Permitir dofus:"
+
+#: chardata/templates/chardata/options.html:113
+msgid "Allow dofuses and prysmaradite:"
+msgstr "Permitir dofus y prysmaradite:"
 
 #: chardata/templates/chardata/options.html:119
 #: chardata/templates/chardata/wizard_options.html:43
@@ -2520,6 +2528,10 @@ msgstr "Exos y Monturas"
 #: chardata/templates/chardata/wizard_options.html:37
 msgid "Dofuses"
 msgstr "Dofus"
+
+#: chardata/templates/chardata/wizard_options.html:37
+msgid "Dofuses and Prysmaradite"
+msgstr "Dofus y Prysmaradite"
 
 #: chardata/templates/chardata/wizard_options.html:162
 msgid "Black Spotted"

@@ -748,7 +748,9 @@ class Model:
                     and 'Seemyool' in item.name
                 or ((not options['rhineetle'])
                     and item.type == self.structure.get_type_id_by_name('Pet'))
-                    and 'Rhineetle' in item.name):
+                    and 'Rhineetle' in item.name
+                or ((not options['prysmaradite'])
+                    and item.weird_conditions['prysmaradite'])):
                 restriction.changeRHS(0)
             else:
                 restriction.changeRHS(1)
