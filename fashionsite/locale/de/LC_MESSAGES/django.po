@@ -4521,3 +4521,33 @@ msgstr ""
 msgctxt "Slider section"
 msgid "Special"
 msgstr ""
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Pushes %(cells)d cells"
+msgstr "Stößt um %(cells)d Felder zurück"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Pushes %(min)d to %(max)d cells"
+msgstr "Stößt um %(min)d bis %(max)d Felder zurück"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Attracts %(cells)d cells"
+msgstr "Zieht um %(cells)d Felder heran"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Attracts %(min)d to %(max)d cells"
+msgstr "Zieht um %(min)d bis %(max)d Felder heran"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Steals %(kamas)d kamas"
+msgstr "Stiehlt %(kamas)d Kamas"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Steals %(min)d to %(max)d kamas"
+msgstr "Stiehlt %(min)d bis %(max)d Kamas"

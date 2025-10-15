@@ -5335,3 +5335,33 @@ msgstr "Spécial"
 
 #~ msgid "Neu"
 #~ msgstr "Neu"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Pushes %(cells)d cells"
+msgstr "Pousse de %(cells)d cases"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Pushes %(min)d to %(max)d cells"
+msgstr "Pousse de %(min)d à %(max)d cases"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Attracts %(cells)d cells"
+msgstr "Attire de %(cells)d cases"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Attracts %(min)d to %(max)d cells"
+msgstr "Attire de %(min)d à %(max)d cases"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Steals %(kamas)d kamas"
+msgstr "Vole %(kamas)d kamas"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Steals %(min)d to %(max)d kamas"
+msgstr "Vole %(min)d à %(max)d kamas"

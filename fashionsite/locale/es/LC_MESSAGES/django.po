@@ -4798,3 +4798,33 @@ msgstr "Especial"
 
 #~ msgid "If a Bomba de agua is present"
 #~ msgstr "Si una bomba está presente"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Pushes %(cells)d cells"
+msgstr "Empuja %(cells)d casillas"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Pushes %(min)d to %(max)d cells"
+msgstr "Empuja de %(min)d a %(max)d casillas"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Attracts %(cells)d cells"
+msgstr "Atrae %(cells)d casillas"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Attracts %(min)d to %(max)d cells"
+msgstr "Atrae de %(min)d a %(max)d casillas"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Steals %(kamas)d kamas"
+msgstr "Roba %(kamas)d kamas"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Steals %(min)d to %(max)d kamas"
+msgstr "Roba de %(min)d a %(max)d kamas"

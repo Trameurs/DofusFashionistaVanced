@@ -4789,3 +4789,33 @@ msgstr "Especial"
 
 #~ msgid "Neu"
 #~ msgstr "Neu"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Pushes %(cells)d cells"
+msgstr "Empurra por %(cells)d células"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Pushes %(min)d to %(max)d cells"
+msgstr "Empurra por %(min)d a %(max)d células"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Attracts %(cells)d cells"
+msgstr "Atrai por %(cells)d células"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Attracts %(min)d to %(max)d cells"
+msgstr "Atrai por %(min)d a %(max)d células"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Steals %(kamas)d kamas"
+msgstr "Rouba %(kamas)d kamas"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Steals %(min)d to %(max)d kamas"
+msgstr "Rouba de %(min)d a %(max)d kamas"

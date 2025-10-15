@@ -196,6 +196,21 @@ def evolve_result_item(result_item, r=None):
             elif hit.heals:
                 line = _('%(min)d to %(max)d (HP restored)' ) % {'min': hit.min_dam, 
                             'max': hit.max_dam}
+            elif hasattr(hit, 'element') and hit.element == 'pushes':
+                if hit.min_dam == hit.max_dam:
+                    line = _('Pushes %(cells)d cells') % {'cells': hit.min_dam}
+                else:
+                    line = _('Pushes %(min)d to %(max)d cells') % {'min': hit.min_dam, 'max': hit.max_dam}
+            elif hasattr(hit, 'element') and hit.element == 'attracts':
+                if hit.min_dam == hit.max_dam:
+                    line = _('Attracts %(cells)d cells') % {'cells': hit.min_dam}
+                else:
+                    line = _('Attracts %(min)d to %(max)d cells') % {'min': hit.min_dam, 'max': hit.max_dam}
+            elif hasattr(hit, 'element') and hit.element == 'steals' and not hit.steals:
+                if hit.min_dam == hit.max_dam:
+                    line = _('Steals %(kamas)d kamas') % {'kamas': hit.min_dam}
+                else:
+                    line = _('Steals %(min)d to %(max)d kamas') % {'min': hit.min_dam, 'max': hit.max_dam}
             else:
                 line = _('%(min)d to %(max)d (%(element)s)' ) % {'min': hit.min_dam, 
                             'max': hit.max_dam,
