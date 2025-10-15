@@ -137,6 +137,7 @@ function setStatMin(stat, statValue) {
             var selectOption = lineContainer.find("select option[value='" + stat + "']");
             selectOption.prop('selected', true); // Use prop instead of attr for boolean attributes
             input = lineContainer.find("input");
+            input.attr('name', 'min_' + stat);
         }
     }
 
@@ -169,26 +170,37 @@ function addCompositeMinimums(stat){
 }
 
 function init(data) {
+    var dataToUse = data || initialData;
+    
     $("#form_container").empty();
+    $("#composite_form_container").empty();
     $.each(fixedStats, function(index, value) {
         addFixedFields(value);
     });
     $.each(advStats, function(index, value) {
         addCompositeMinimums(value);
     });
-    if (data["minimum_stats"]) { // Check if minimum_stats exists
-        $.each(data["minimum_stats"], function(stat, stat_value) {
+    if (dataToUse["minimum_stats"]) {
+        $.each(dataToUse["minimum_stats"], function(stat, stat_value) {
             if (stat_value !== '') {
                 setStatMin(stat, stat_value);
             }
         });
     }
+    addIfNeeded();
 }
 
 $(document).ready(function() {
+    function onDataReceived(data) {
+        initialData = data;
+        init(initialData);
+    }
+    
     setupStateEngine(init,
          "{% url 'min_stats_post' char_id %}",
-         initialData);
+         initialData,
+         null,
+         onDataReceived);
     addIfNeeded();
 });
 

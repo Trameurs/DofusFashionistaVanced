@@ -1043,10 +1043,11 @@ class Model:
         for stat in self.main_stats_list: 
             stats[stat.key] = 0
             for i in range(0,6):
-                stats[stat.key] += int(lp_vars['stat_point_statpoint_%d_%d' % (i, stat.id)])
-                #print '%s: tier %d - %d' % (stat.name, i, lp_vars['stat_point_statpoint_%d_%d' % (i, stat.id)])
+                sanitized_id = str(stat.id).replace(' ', '_').replace('-', '_')
+                stats[stat.key] += int(lp_vars['stat_point_statpoint_%d_%s' % (i, sanitized_id)])
+                #print '%s: tier %d - %d' % (stat.name, i, lp_vars['stat_point_statpoint_%d_%s' % (i, sanitized_id)])
                 #if i < 5:                
-                #    print 'y %s: tier %d - %d' % (stat.name, i, lp_vars['stat_point_max_statpointmax_%d_%d' % (i, stat.id)])
+                #    print 'y %s: tier %d - %d' % (stat.name, i, lp_vars['stat_point_max_statpointmax_%d_%s' % (i, sanitized_id)])
         return stats
         
     def get_result_minimal(self):

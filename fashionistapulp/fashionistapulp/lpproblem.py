@@ -109,7 +109,8 @@ class LpProblem2:
         return {v.name: v.varValue for v in self.pulp_lp.variables()}
 
     def setup_variable(self, category, id, min_bound, max_bound):
-        name = '%s_%s' % (category, str(id))
+        sanitized_id = str(id).replace(' ', '_').replace('-', '_')
+        name = '%s_%s' % (category, sanitized_id)
         pulpVar = LpVariable(name, min_bound, max_bound, LpInteger)
         self.pulp_vars[name] = pulpVar
 
@@ -117,25 +118,26 @@ class LpProblem2:
         self.obj_vars = {}
 
     def add_to_of(self, category, id, weight):
-        var_name = '%s_%s' % (category, str(id))
+        sanitized_id = str(id).replace(' ', '_').replace('-', '_')
+        var_name = '%s_%s' % (category, sanitized_id)
         if self.obj_vars.get(var_name) == None:
             self.obj_vars[var_name] = weight
         else:
             self.obj_vars[var_name] += weight
 
     def finish_objective_function(self):
-        self.pulp_lp += sum([value * self.pulp_vars[key] for key, value in
+        self.pulp_lp.objective = sum([value * self.pulp_vars[key] for key, value in
                          self.obj_vars.items() if key in self.pulp_vars])
         
     def restriction_lt_eq(self, max_bound, parcels):
-        restriction = sum([parcel[0] * self.pulp_vars['%s_%s' % (parcel[1], str(parcel[2]))] 
+        restriction = sum([parcel[0] * self.pulp_vars['%s_%s' % (parcel[1], str(parcel[2]).replace(' ', '_').replace('-', '_'))] 
                             for parcel in parcels]) <= max_bound
         self.pulp_lp += restriction
         return restriction
         
 
     def restriction_eq(self, max_bound, parcels):
-        restriction = sum([parcel[0] * self.pulp_vars['%s_%s' % (parcel[1], str(parcel[2]))] 
+        restriction = sum([parcel[0] * self.pulp_vars['%s_%s' % (parcel[1], str(parcel[2]).replace(' ', '_').replace('-', '_'))] 
                             for parcel in parcels]) == max_bound
         self.pulp_lp += restriction
         return restriction

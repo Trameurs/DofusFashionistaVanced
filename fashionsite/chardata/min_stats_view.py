@@ -73,21 +73,32 @@ def min_stats_post(request, char_id):
     structure = get_structure()
 
     minimum_values = {}
-    for stat in get_structure().get_stats_list():
-        minimum = safe_int(request.POST.get('min_%s' % stat.key, ''))
-        if minimum is not None:
-            minimum_values[stat.name] = minimum
-
-    minimum = safe_int(request.POST.get('min_hp'))
-    if minimum is not None:
-        minimum_values['HP'] = minimum
-
+    
     adv_stats = structure.get_adv_mins()
+    adv_stat_keys = set([stat['key'] for stat in adv_stats])
+    
+    for stat in get_structure().get_stats_list():
+        field_name = 'min_%s' % stat.key
+        if stat.key in adv_stat_keys:
+            continue
+        if field_name in request.POST:
+            minimum = safe_int(request.POST.get(field_name, ''))
+            if minimum is not None and minimum != 0:
+                minimum_values[stat.name] = minimum
+
+    if 'min_hp' in request.POST:
+        minimum = safe_int(request.POST.get('min_hp'))
+        if minimum is not None and minimum != 0:
+            minimum_values['HP'] = minimum
+
     minimum_values['adv_mins'] = {}
     for stat in adv_stats:
-        minimum = safe_int(request.POST.get('min_%s' % stat['key'], ''))
-        if minimum is not None:
-            minimum_values['adv_mins'][stat['name']] = minimum
+        field_name = 'min_%s' % stat['key']
+        if field_name in request.POST:
+            minimum = safe_int(request.POST.get(field_name, ''))
+            if minimum is not None and minimum != 0:
+                minimum_values['adv_mins'][stat['name']] = minimum
+    
     set_min_stats(char, minimum_values)        
     
     return HttpResponseJson(json.dumps(_get_initial_data(char)))
