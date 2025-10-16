@@ -504,6 +504,10 @@ msgstr ""
 msgid "Copyright and License information"
 msgstr "Informações de Licença e Copyright"
 
+#: chardata/templates/chardata/base.html:226
+msgid "Support Fashionista"
+msgstr "Apoiar Fashionista"
+
 #: chardata/templates/chardata/about.html:29
 msgid "Website version:"
 msgstr "Versão do site:"

@@ -221,6 +221,13 @@
                     <img src="{% static 'chardata/discord.png' %}" alt="Discord" class="discord-logo" />
                     fashionista
                 </a>
+                
+                <!-- Ko-fi Donation Button -->
+                <div class="kofi-widget-wrapper">
+                    <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+                    <script type='text/javascript'>kofiwidget2.init('{% trans "Support Fashionista" %}', '#f57873', 'T6T81MWTYO');kofiwidget2.draw();</script>
+                </div>
+                
             </div>
             <style>
                 .discord-invite-btn {
@@ -246,6 +253,12 @@
                     margin-right: 8px;
                     height: 20px;
                     width: 26px;
+                }
+                
+                .kofi-widget-wrapper {
+                    display: inline-block;
+                    margin: 10px 5px 23px 5px;
+                    vertical-align: middle;
                 }
             </style>
         </div>

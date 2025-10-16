@@ -638,6 +638,10 @@ msgstr ""
 msgid "Copyright and License information"
 msgstr "Information de licence et de copyright"
 
+#: fashionsite/chardata/templates/chardata/base.html:226
+msgid "Support Fashionista"
+msgstr "Soutenir Fashionista"
+
 #: fashionsite/chardata/templates/chardata/about.html:29
 msgid "Website version:"
 msgstr "Version du site :"
