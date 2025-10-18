@@ -4828,6 +4828,16 @@ msgstr "Atrai por %(min)d a %(max)d células"
 
 #: chardata/solution_result.py
 #, python-format
+msgid "Advances %(cells)d cells"
+msgstr "Avança %(cells)d células"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Advances %(min)d to %(max)d cells"
+msgstr "Avança de %(min)d a %(max)d células"
+
+#: chardata/solution_result.py
+#, python-format
 msgid "Steals %(kamas)d kamas"
 msgstr "Rouba %(kamas)d kamas"
 

@@ -4560,6 +4560,16 @@ msgstr "Zieht um %(min)d bis %(max)d Felder heran"
 
 #: chardata/solution_result.py
 #, python-format
+msgid "Advances %(cells)d cells"
+msgstr "Rückt %(cells)d Felder vor"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Advances %(min)d to %(max)d cells"
+msgstr "Rückt %(min)d bis %(max)d Felder vor"
+
+#: chardata/solution_result.py
+#, python-format
 msgid "Steals %(kamas)d kamas"
 msgstr "Stiehlt %(kamas)d Kamas"
 

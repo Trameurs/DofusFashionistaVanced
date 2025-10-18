@@ -5381,3 +5381,13 @@ msgstr "Vole %(kamas)d kamas"
 #, python-format
 msgid "Steals %(min)d to %(max)d kamas"
 msgstr "Vole %(min)d à %(max)d kamas"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Advances %(cells)d cells"
+msgstr "Avance de %(cells)d cases"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Advances %(min)d to %(max)d cells"
+msgstr "Avance de %(min)d à %(max)d cases"

@@ -4837,6 +4837,16 @@ msgstr "Atrae de %(min)d a %(max)d casillas"
 
 #: chardata/solution_result.py
 #, python-format
+msgid "Advances %(cells)d cells"
+msgstr "Avanza %(cells)d casillas"
+
+#: chardata/solution_result.py
+#, python-format
+msgid "Advances %(min)d to %(max)d cells"
+msgstr "Avanza de %(min)d a %(max)d casillas"
+
+#: chardata/solution_result.py
+#, python-format
 msgid "Steals %(kamas)d kamas"
 msgstr "Roba %(kamas)d kamas"
 

@@ -112,9 +112,9 @@ class Model:
         
     def add_weird_item_weights_to_objective_funcion(self, objective_values, level):    
 
-        #Adding more weight to Crimson Dofus equivalent to 5% melee damage + 5% ranged damage = 5% final damage = 5 times stack average.
-        #For each attack suffered, the final damage inflicted is increased by 1% for 1 turn.\nThe effects can stack 10 times.
-        crimson_dofus_new_stat_weight = objective_values.get('permedam', 0) * 5 + objective_values.get('perrandam', 0) * 5
+        #Crimson Dofus
+        #Deep Crimson: When attacked, the bearer gains 1% final damage for 2 turns (stackable 10 times).
+        crimson_dofus_new_stat_weight = objective_values.get('permedam', 0) * 7 + objective_values.get('perrandam', 0) * 7
         self.problem.add_to_of('p', 
                                self.structure.get_item_by_name('Crimson Dofus').id, 
                                crimson_dofus_new_stat_weight)
@@ -169,10 +169,9 @@ class Model:
                                  self.structure.get_item_by_name('Black-Spotted Dofus').id,
                                  black_spotted_dofus_new_stat_weight)
         
-        #TODO: find better way to add weight to Ebony Dofus
-        #Adding more weight to Ebony Dofus equivalent to 60 Power * level / 200
-        #Inflicting ranged damage and close-combat damage during one's turn triggers the Ebony Dofus's power: the next attack during the same turn applies a poison (2 turns).\nThis attack takes 2 turns to recharge. The poison can be stacked 2 times.
-        ebony_dofus_new_stat_weight = objective_values.get('pow', 0) * 60.0 * level / 200
+        #Ebony Dofus
+        #Ebony Black: When the bearer attacks in close combat during their turn, they gain 1% ranged damage for 3 turns (stackable 10 times).\nWhen they attack from long range, they gain 1% close-combat damage for 3 turns (stackable 10 times).\nTriggering both effects during the turn allows the next attack to apply a 16 poison in its element for 2 turns (stackable 2 times, once every 2 turns).
+        ebony_dofus_new_stat_weight = objective_values.get('permedam', 0) * 5 + objective_values.get('perrandam', 0) * 5 + objective_values.get('pow', 0) * 16 * level / 200
         self.problem.add_to_of('p', 
                                self.structure.get_item_by_name('Ebony Dofus').id, 
                                ebony_dofus_new_stat_weight)
@@ -191,9 +190,9 @@ class Model:
                                self.structure.get_item_by_name('Ochre Dofus').id, 
                                ochre_dofus_new_stat_weight)
         
-        #Adding more weight to Cloudy Dofus equivalent to 15% damage distance and melee
-        #On odd turns, increases damage by 20%. On even turns, decreases damage by 10%.
-        cloudy_dofus_new_stat_weight = objective_values.get('permedam', 0) * 15 + objective_values.get('perrandam', 0) * 15
+        #Cloudy Dofus
+        #On odd turns, the bearer gains 20% final damage but loses 10% final healing.\nOn even turns, the bearer gains 20% final healing but loses 10% final damage.
+        cloudy_dofus_new_stat_weight = objective_values.get('permedam', 0) * 5 + objective_values.get('perrandam', 0) * 5 + objective_values.get('heals', 0) * 5
         self.problem.add_to_of('p',
                                  self.structure.get_item_by_name('Cloudy Dofus').id,
                                  cloudy_dofus_new_stat_weight)
@@ -213,9 +212,9 @@ class Model:
                                 self.structure.get_item_by_name('Dokoko').id,
                                 dokoko_new_stat_weight)
         
-        #Adding more weight to Abyssal Dofus equivalent to 1/2 AP + 1/2 MP
+        #Abyssal Dofus
         #At the start of each turn, if there are no enemies in close combat, gives 1 MP. Otherwise, gives 1 AP.
-        abyssal_dofus_new_stat_weight = objective_values.get('ap', 0) * 0.5 + objective_values.get('mp', 0) * 0.5
+        abyssal_dofus_new_stat_weight = objective_values.get('ap', 0) * 2.5 + objective_values.get('mp', 0) * 2.5
         self.problem.add_to_of('p', 
                                self.structure.get_item_by_name('Abyssal Dofus').id, 
                                abyssal_dofus_new_stat_weight)
@@ -260,12 +259,15 @@ class Model:
                                self.structure.get_item_by_name("Crocobur 3").id, 
                                objective_values.get('hp', 0) * level / 2 + objective_values.get('perrandam', 0) * level / 200)
         
-        #TODO: find better way to add weight to Buhorado Feather
-        #Adding more weight to Buhorado Feather equivalent to 10 pushback damage
-        #Whenever the bearer inflicts Critical Hits, they gain pushback damage for 2 turns, stackable 5 times.
+        #Buhorado Feather
+        #When the bearer lands a critical hit, they gain 10 Pushback Damage for 3 turns (stackable 10 times).
+        #With crits, you can stack up to 100 Pushback Damage (10 stacks × 10)
+        #For crit builds (~60% crit): sustain ~6 stacks on average = 60 pushback damage
+        #More conservative: ~40-50 average pushback damage for crit builds
+        buhorado_feather_new_stat_weight = objective_values.get('pshdam', 0) * 45 * objective_values.get('ch', 0) / 100
         self.problem.add_to_of('p', 
                                self.structure.get_item_by_name("Buhorado Feather").id, 
-                               objective_values.get('pshdam', 0) * 10 * objective_values.get('ch', 0) / 100)
+                               buhorado_feather_new_stat_weight)
         
         #Adding more weight to Fallanster's Rectitude equivalent to 2% HP
         #If the bearer ends their turn with a line of sight to at least one opponent, they earn a 10% damage suffered reduction for 1 turn as long as they haven't been pushed, attracted, carried, teleported or transposed.
@@ -390,15 +392,21 @@ class Model:
                                 iridescent_pryssure_new_stat_weight)
 
         #Surpryz
-        #The bearer gains 15% Critical for 3 turns.
-        surpryz_new_stat_weight = objective_values.get('ch', 0) * 11.25
+        #The bearer gains 100% Critical on the first turn, 35% on the second turn and 15% on the third turn.
+        #For crit builds with ~60% base crit: Turn 1: +40% (capped at 100%), Turn 2: +35%, Turn 3: +15%
+        #Average effective bonus: (40 + 35 + 15) / 3 = 30% average for crit builds
+        surpryz_new_stat_weight = objective_values.get('ch', 0) * 20
         self.problem.add_to_of('p',
                                 self.structure.get_item_by_name("Surpryz").id,
                                 surpryz_new_stat_weight)
 
         #Prynyang
-        #For 1 turn, the bearer gains as much Power as damage suffered by enemies, up to 200 Power (3 turns).
-        prynyang_new_stat_weight = objective_values.get('pow', 0) * 100
+        #The bearer sacrifices 10% resistance to gain 10% final damage on the first turn, then gains 3% final damage and resistance on the second turn, and sacrifices 10% final damage to gain 10% resistance on the third turn.
+        #Turn 1: +10% damage, -10% res | Turn 2: +3% damage, +3% res | Turn 3: -10% damage, +10% res
+        #With optimal play: attack on turns 1-2 (13% damage total), defend on turn 3 (10% res when needed)
+        #Effective value: ~4-5% damage when attacking, ~3% res when defending
+        prynyang_new_stat_weight = (objective_values.get('permedam', 0) * 5 + objective_values.get('perrandam', 0) * 5 + 
+                                    objective_values.get('respermee', 0) * 4 + objective_values.get('resperran', 0) * 4)
         self.problem.add_to_of('p',
                                 self.structure.get_item_by_name("Prynyang").id,
                                 prynyang_new_stat_weight)
@@ -533,13 +541,13 @@ class Model:
                                 self.structure.get_item_by_name("Misery's Flail-Scale").id,
                                 miserys_flail_scale_new_stat_weight)
         
-        #Adding more weight to Domakuro equivalent to dmg * 16
-        #Starting on the 5th turn, the caster gains up to 64 damage for the rest of the fight.\nThis bonus is reduced each time the caster inflicts damage on an opponent during their turn for each of the first 4 turns of the fight:\n\nNo attacks: 16 damage.\n1 attack: 8 damage.\n2+ attacks: 0 damage.
+        #Adding more weight to Domakuro equivalent to dmg * 10 (includes summon buff)
+        #Starting on turn 5, the bearer and their summons gain up to 64 Damage until the end of the fight.\nThis bonus is reduced each time the bearer inflicts damage on an enemy during their turn for each of the first 4 turns of the fight:\nNo attacks: 16 Damage\n1 attack: 8 Damage\n2 attacks or more: 0 Damage
         domakuro_dofus_new_stat_weight = (objective_values.get('neutdam', 0) + 
                                           objective_values.get('earthdam', 0) + 
                                           objective_values.get('firedam', 0) + 
                                           objective_values.get('airdam', 0) + 
-                                          objective_values.get('waterdam', 0)) * 16
+                                          objective_values.get('waterdam', 0)) * 8
         self.problem.add_to_of('p', 
                                self.structure.get_item_by_name('Domakuro').id, 
                                domakuro_dofus_new_stat_weight)
@@ -551,8 +559,8 @@ class Model:
                                dorigami_dofus_new_stat_weight)
         
         #Nightmare Dofus
-        #If the bearer applies or receives a shield, allies within 3 cells or less of the bearer are healed by 7% of their HP. \nIf the bearer unbewitches a target, allies within 3 cells or less gain 150 Power for 1 turn (stacks 1 time, cannot be dissipated). \nEach effect can only be triggered once per turn, but if both are triggered in the same turn, the bearer receives 10% additional damage for 1 turn (cannot be dissipated).
-        nightmare_dofus_new_stat_weight = objective_values.get('heals', 0) * 10 + objective_values.get('pow', 0) * 50 + objective_values.get('permedam', 0) * 5 + objective_values.get('perrandam', 0) * 5
+        #Bontarian Shield: When the bearer is unbewitched or debuffed, the bearer gains 100% of their level as shield for 1 turn.\nBrakmarian Power: Whenever the bearer inflicts or suffers pushback damage, the bearer gains 100 Power for 1 turn.\nNightmare Eye: If the bearer triggers Bontarian Shield and Brakmarian Power in the same turn, the damage they inflict and suffer increases by 10% for 1 turn.\nThe effects can only be triggered once per turn.
+        nightmare_dofus_new_stat_weight = objective_values.get('hp', 0) * level * 0.5 + objective_values.get('pow', 0) * 40 + objective_values.get('permedam', 0) * 4 + objective_values.get('perrandam', 0) * 4
         self.problem.add_to_of('p',
                                 self.structure.get_item_by_name("Nightmare Dofus").id,
                                 nightmare_dofus_new_stat_weight)

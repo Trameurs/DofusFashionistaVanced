@@ -3928,9 +3928,9 @@ def get_equiped_weapon(char_stats):
 def calculate_damage(base_damage, char_stats, critical_hit, is_spell):
     damage_instances = []
     for dam in base_damage:
-        if dam.element == 'pushes' or dam.element == 'steals' or dam.element == 'attracts': #pushes cells, steals kamas, and attracts entities
+        if dam.element == 'pushes' or dam.element == 'steals' or dam.element == 'attracts' or dam.element == 'advances': #pushes = pushes cells, steals = steals kamas, attracts = attracts entities, advances = advances entities
             continue
-        if dam.element == 'best' or dam.element == 'damage' or dam.element == 'best-element': #damage is damage in best element
+        if dam.element == 'best' or dam.element == 'damage' or dam.element == 'best-element': #best/damage/best-element = damage in best element
             dam.element = get_best_element(char_stats)
             dam.element = ATTRIBUTE_TO_ELEMENT[dam.element]
         element_val = max(char_stats[DAMAGE_TYPE_TO_MAIN_STAT[dam.element]], 0)
