@@ -56467,14 +56467,15 @@
         "name_es": "Set cosmético de cuerbacilo",
         "name_pt": "Conjunto de Aparência do Corbacilo",
         "name_de": "Prunkset der Rabzille",
-        "items": 6,
+        "items": 7,
         "equipment_ids": [
             31731,
             31732,
             31733,
             31734,
             31735,
-            31736
+            31736,
+            32391
         ]
     },
     {

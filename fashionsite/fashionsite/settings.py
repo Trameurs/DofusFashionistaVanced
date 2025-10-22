@@ -52,7 +52,7 @@ with open(os.path.join(CONFIG_DIR, 'debug_mode')) as f:
 if DEBUG:
     ALLOWED_HOSTS = ["*"]
 else:
-    ALLOWED_HOSTS = ['fashionistavanced.com', 'www.fashionistavanced.com', '16.171.215.36']
+    ALLOWED_HOSTS = ['.fashionistavanced.com', 'fashionistavanced.com', '16.171.215.36']
 
 STATIC_URL = '/static/'
 
@@ -277,7 +277,7 @@ EMAIL_HOST_USER = GEN_CONFIGS['EMAIL_HOST_USER']
 EMAIL_HOST_PASSWORD = GEN_CONFIGS['EMAIL_HOST_PASSWORD']
 EMAIL_PORT = GEN_CONFIGS['EMAIL_PORT']
 
-SITE_VERSION = '3.3.11.10'
+SITE_VERSION = '3.3.13.12'
 
 EXPERIMENTS = {
     'COMPARE_SETS': True,

@@ -4471,8 +4471,8 @@ INSERT INTO items VALUES(3509,'Menalt''s Lightning Spear',200,1,NULL,32116,'equi
 INSERT INTO items VALUES(3510,'Thanatena''s Judgement',200,1,NULL,32117,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3511,'Helsephine''s Love',200,5,NULL,32118,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3512,'Henual''s Punctuality',200,6,NULL,32119,'equipment',NULL,NULL);
-INSERT INTO items VALUES(3513,'Meriana''s Clairvoyance 1',197,8,NULL,32121,'equipment',NULL,NULL);
-INSERT INTO items VALUES(3514,'Meriana''s Clairvoyance 2',197,8,NULL,32121,'equipment',NULL,NULL);
+INSERT INTO items VALUES(3513,'Meriana''s Clairvoyance 1',200,8,NULL,32121,'equipment',NULL,NULL);
+INSERT INTO items VALUES(3514,'Meriana''s Clairvoyance 2',200,8,NULL,32121,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3515,'Amayiro''s Fervour',200,1,NULL,32163,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3516,'Unmovaprys',200,9,NULL,32164,'equipment',NULL,NULL);
 INSERT INTO items VALUES(3517,'Wild Almond Dragoturkey',60,10,NULL,1,'mounts',NULL,NULL);
