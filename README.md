@@ -145,7 +145,7 @@ Si vous rencontrez des problèmes lors de l'installation sur Windows 11, voici q
 # Progress and Roadmap
 
 ✅ Website is fully operational     
-✅ All equipments and mounts updated to Dofus 3.3.13.12      
+✅ All equipments and mounts updated to Dofus 3.3.14.13      
 ✅ Sets 2.70 done  
 ✅ Updated all special effects to 2.70     
 ✅ Special items effects updated including Prytek         

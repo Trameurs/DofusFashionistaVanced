@@ -4568,6 +4568,10 @@ msgstr "Rückt %(cells)d Felder vor"
 msgid "Advances %(min)d to %(max)d cells"
 msgstr "Rückt %(min)d bis %(max)d Felder vor"
 
+#: chardata/templates/chardata/license.html
+msgid "The Dofus Fashionista uses Google services (Analytics, AdSense, OAuth) to improve user experience, display relevant ads, and provide authentication. These services may collect anonymous usage data. You can manage your consent preferences through the privacy settings banner."
+msgstr "Dofus Fashionista verwendet Google-Dienste (Analytics, AdSense, OAuth), um die Benutzererfahrung zu verbessern, relevante Anzeigen anzuzeigen und die Authentifizierung bereitzustellen. Diese Dienste können anonyme Nutzungsdaten sammeln. Sie können Ihre Einwilligungspräferenzen über das Banner für Datenschutzeinstellungen verwalten."
+
 #: chardata/solution_result.py
 #, python-format
 msgid "Steals %(kamas)d kamas"

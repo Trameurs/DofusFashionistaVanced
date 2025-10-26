@@ -4549,3 +4549,7 @@ msgstr "Advances %(cells)d cells"
 #, python-format
 msgid "Advances %(min)d to %(max)d cells"
 msgstr "Advances %(min)d to %(max)d cells"
+
+#: chardata/templates/chardata/license.html
+msgid "The Dofus Fashionista uses Google services (Analytics, AdSense, OAuth) to improve user experience, display relevant ads, and provide authentication. These services may collect anonymous usage data. You can manage your consent preferences through the privacy settings banner."
+msgstr "The Dofus Fashionista uses Google services (Analytics, AdSense, OAuth) to improve user experience, display relevant ads, and provide authentication. These services may collect anonymous usage data. You can manage your consent preferences through the privacy settings banner."

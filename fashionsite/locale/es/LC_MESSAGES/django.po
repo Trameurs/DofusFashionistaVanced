@@ -4845,6 +4845,10 @@ msgstr "Avanza %(cells)d casillas"
 msgid "Advances %(min)d to %(max)d cells"
 msgstr "Avanza de %(min)d a %(max)d casillas"
 
+#: chardata/templates/chardata/license.html
+msgid "The Dofus Fashionista uses Google services (Analytics, AdSense, OAuth) to improve user experience, display relevant ads, and provide authentication. These services may collect anonymous usage data. You can manage your consent preferences through the privacy settings banner."
+msgstr "Dofus Fashionista utiliza servicios de Google (Analytics, AdSense, OAuth) para mejorar la experiencia del usuario, mostrar anuncios relevantes y proporcionar autenticación. Estos servicios pueden recopilar datos de uso anónimos. Puede gestionar sus preferencias de consentimiento a través del banner de configuración de privacidad."
+
 #: chardata/solution_result.py
 #, python-format
 msgid "Steals %(kamas)d kamas"
