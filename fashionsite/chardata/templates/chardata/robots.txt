@@ -6,4 +6,4 @@ User-agent: *
 Disallow: /understandbuild/
 
 # Sitemap location
-Sitemap: https://dofus.fashionistavanced.com/sitemap.xml
+Sitemap: https://fashionistavanced.com/sitemap.xml
