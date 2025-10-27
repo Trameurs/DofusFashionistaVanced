@@ -27,6 +27,8 @@ from chardata import home_view, login_view, views, projects_view, base_stats_vie
     stats_weights_view, min_stats_view, options_view, inclusions_view, exclusions_view, wizard_view, \
     fashion_action, solution_view, spells_view, contact_view, manage_account_view, util, manage_items_view, \
     compare_sets_view, item_exchange, util_views
+from chardata.models import Char
+from chardata.encoded_char_id import encode_char_id
 admin.autodiscover()
 
 def ads_txt_view(request):
@@ -34,12 +36,127 @@ def ads_txt_view(request):
     content = "google.com, pub-3961330018791408, DIRECT, f08c47fec0942fa0"
     return HttpResponse(content, content_type='text/plain')
 
+def sitemap_view(request):
+    """Generate a comprehensive sitemap.xml for AdSense and SEO
+    
+    Includes static pages and a sample of popular shared solutions.
+    Google will also discover more pages by following links on your site.
+    """
+    base_url = request.build_absolute_uri('/').rstrip('/')
+    
+    # Build URLs for shared solutions (limit to 50 most recently shared)
+    shared_solutions = []
+    try:
+        shared_chars = Char.objects.filter(link_shared=True, deleted=False).order_by('-modified_time')[:50]
+        for char in shared_chars:
+            try:
+                encoded_id = encode_char_id(int(char.id))
+                char_name = char.char_name or 'shared'
+                # Escape special characters in char_name for URL safety
+                from urllib.parse import quote
+                char_name_safe = quote(char_name.encode('utf-8'), safe='')
+                shared_url = f"{base_url}/s/{char_name_safe}/{encoded_id}/"
+                
+                # Use modified_time as lastmod if available
+                lastmod = ""
+                if char.modified_time:
+                    # Convert date to ISO format (YYYY-MM-DD)
+                    lastmod = f"<lastmod>{char.modified_time.isoformat()}</lastmod>"
+                
+                shared_solutions.append(f"""  <url>
+    <loc>{shared_url}</loc>{lastmod}
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>""")
+            except Exception:
+                # Skip individual chars that fail
+                continue
+    except Exception:
+        # If there's any error querying shared solutions, continue without them
+        pass
+    
+    shared_solutions_xml = '\n'.join(shared_solutions) if shared_solutions else '  <!-- No shared solutions yet -->'
+    
+    sitemap_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
+  <url>
+    <loc>{base_url}/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Information Pages -->
+  <url>
+    <loc>{base_url}/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>{base_url}/faq/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>{base_url}/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{base_url}/license/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- User Authentication -->
+  <url>
+    <loc>{base_url}/login_page/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>{base_url}/register/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Main Features -->
+  <url>
+    <loc>{base_url}/setup/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>{base_url}/loadprojects/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>{base_url}/choose_compare_sets/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <!-- Thank You / Confirmation Pages -->
+  <url>
+    <loc>{base_url}/contact/thankyou/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  
+  <!-- Sample of Popular Shared Solutions -->
+{shared_solutions_xml}
+</urlset>"""
+    
+    return HttpResponse(sitemap_content, content_type='application/xml')
+
 js_info_dict = {
     'packages': 'chardata',
 }
 
 urlpatterns = [
     re_path(r'^ads\.txt$', ads_txt_view, name='ads_txt'),
+    re_path(r'^sitemap\.xml$', sitemap_view, name='sitemap'),
     re_path(r'^jsi18n/$', JavaScriptCatalog.as_view(), name='javascript-catalog', kwargs=js_info_dict),
     re_path(r'^$', home_view.home, name='home'),
     re_path(r'^login_page/', login_view.login_page, name='login_page'),
