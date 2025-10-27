@@ -54,6 +54,24 @@ if DEBUG:
 else:
     ALLOWED_HOSTS = ['.fashionistavanced.com', 'fashionistavanced.com', '16.171.215.36']
 
+# CSRF trusted origins for Django 4.0+
+CSRF_TRUSTED_ORIGINS = [
+    'https://fashionistavanced.com',
+    'https://dofus.fashionistavanced.com',
+    'https://www.fashionistavanced.com',
+]
+
+# Security settings for production (HTTPS)
+if not DEBUG:
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    CSRF_COOKIE_SAMESITE = 'Lax'
+    SECURE_SSL_REDIRECT = False  # AWS/CloudFront handles redirect
+    SECURE_HSTS_SECONDS = 31536000  # 1 year
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_HSTS_PRELOAD = True
+
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
