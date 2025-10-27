@@ -17,24 +17,9 @@
 
     <link rel="shortcut icon" type="image/png" href="{% static "chardata/favicon.ico" %}"/>
 
-    <!-- Google Funding Choices (Consent Management) -->
-    <script async src="https://fundingchoicesmessages.google.com/i/pub-3961330018791408?ers=1"></script>
-    <script>
-    (function() {
-      function s() {
-        if (!window.frames['googlefcPresent']) {
-          function a() {
-            const f = document.createElement('iframe');
-            f.style.cssText = 'width:0;height:0;border:0;display:none';
-            f.name = 'googlefcPresent';
-            document.body.appendChild(f);
-          }
-          document.body ? a() : window.addEventListener('DOMContentLoaded', a);
-        }
-      }
-      s();
-    })();
-    </script>
+    <!-- Google Funding Choices (Consent Management) - Must load before other Google scripts -->
+    <script data-ad-client="ca-pub-3961330018791408" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="https://fundingchoicesmessages.google.com/i/pub-3961330018791408?ers=1" nonce="{{ request.csp_nonce }}"></script>
 
     <!-- Google tag (gtag.js) - Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XKQQ02BGR0"></script>
@@ -44,10 +29,6 @@
       gtag('js', new Date());
       gtag('config', 'G-XKQQ02BGR0');
     </script>
-    
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3961330018791408"
-         crossorigin="anonymous"></script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript" src="{% url 'javascript-catalog' %}"></script>
