@@ -549,6 +549,10 @@ msgid "Load a project"
 msgstr "Abrir um projeto"
 
 #: chardata/templates/chardata/base.html:115
+msgid "Shared Builds"
+msgstr "Builds Compartilhados"
+
+#: chardata/templates/chardata/base.html:118
 msgid "Compare sets"
 msgstr "Comparar Sets"
 
@@ -1897,6 +1901,9 @@ msgid ""
 msgstr ""
 "Priorizar, sacrificando outras stats <span id='aspect_limit_text'>(até 2)</"
 "span>"
+
+msgid "up to 2"
+msgstr "até 2"
 
 #: chardata/templates/chardata/projdetails.html:81
 msgid "Create a set by hand"
@@ -4849,3 +4856,91 @@ msgstr "Rouba %(kamas)d kamas"
 #, python-format
 msgid "Steals %(min)d to %(max)d kamas"
 msgstr "Rouba de %(min)d a %(max)d kamas"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Browse and discover builds shared by the community. Click on any build to view details."
+msgstr "Navegue e descubra builds compartilhados pela comunidade. Clique em qualquer build para ver os detalhes."
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Search & Filter"
+msgstr "Buscar e Filtrar"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Search"
+msgstr "Buscar"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Project or character name"
+msgstr "Nome do projeto ou personagem"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "All Classes"
+msgstr "Todas as Classes"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Build Type"
+msgstr "Tipo de Build"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "All Builds"
+msgstr "Todos os Builds"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Min Level"
+msgstr "Nível Mín"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Max Level"
+msgstr "Nível Máx"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Order By"
+msgstr "Ordenar por"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Most Viewed"
+msgstr "Mais Vistos"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Recently Modified"
+msgstr "Modificados Recentemente"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Recently Created"
+msgstr "Criados Recentemente"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Apply Filters"
+msgstr "Aplicar Filtros"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Clear Filters"
+msgstr "Limpar Filtros"
+
+#: chardata/templates/chardata/shared_builds.html
+#, python-format
+msgid "Found %(counter)s shared build"
+msgid_plural "Found %(counter)s shared builds"
+msgstr[0] "%(counter)s build compartilhado encontrado"
+msgstr[1] "%(counter)s builds compartilhados encontrados"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "showing first 100"
+msgstr "mostrando os primeiros 100"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Views"
+msgstr "Visualizações"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Total Stats"
+msgstr "Estatísticas Totais"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "View Build"
+msgstr "Ver Build"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "No shared builds found matching your criteria. Try adjusting your filters."
+msgstr "Nenhum build compartilhado encontrado que corresponda aos seus critérios. Tente ajustar seus filtros."
+

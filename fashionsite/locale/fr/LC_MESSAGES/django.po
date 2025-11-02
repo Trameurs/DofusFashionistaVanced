@@ -685,6 +685,10 @@ msgid "Load a project"
 msgstr "Ouvrir un projet"
 
 #: fashionsite/chardata/templates/chardata/base.html:115
+msgid "Shared Builds"
+msgstr "Builds Partagés"
+
+#: fashionsite/chardata/templates/chardata/base.html:118
 msgid "Compare sets"
 msgstr "Comparer les panoplies"
 
@@ -2019,6 +2023,9 @@ msgid ""
 msgstr ""
 "Se concentrer sur, en sacrifiant d'autres statistiques <span "
 "id='aspect_limit_text'>(maximum 2)</span>"
+
+msgid "up to 2"
+msgstr "maximum 2"
 
 #: fashionsite/chardata/templates/chardata/projdetails.html:81
 msgid "Create a set by hand"
@@ -5395,3 +5402,91 @@ msgstr "Avance de %(min)d à %(max)d cases"
 #: chardata/templates/chardata/license.html
 msgid "The Dofus Fashionista uses Google services (Analytics, AdSense, OAuth) to improve user experience, display relevant ads, and provide authentication. These services may collect anonymous usage data. You can manage your consent preferences through the privacy settings banner."
 msgstr "Dofus Fashionista utilise les services Google (Analytics, AdSense, OAuth) pour améliorer l'expérience utilisateur, afficher des publicités pertinentes et fournir l'authentification. Ces services peuvent collecter des données d'utilisation anonymes. Vous pouvez gérer vos préférences de consentement via la bannière de paramètres de confidentialité."
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Browse and discover builds shared by the community. Click on any build to view details."
+msgstr "Parcourez et découvrez les builds partagés par la communauté. Cliquez sur un build pour voir les détails."
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Search & Filter"
+msgstr "Recherche et Filtres"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Search"
+msgstr "Rechercher"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Project or character name"
+msgstr "Nom du projet ou du personnage"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "All Classes"
+msgstr "Toutes les Classes"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Build Type"
+msgstr "Type de Build"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "All Builds"
+msgstr "Tous les Builds"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Min Level"
+msgstr "Niveau Min"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Max Level"
+msgstr "Niveau Max"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Order By"
+msgstr "Trier par"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Most Viewed"
+msgstr "Plus Vus"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Recently Modified"
+msgstr "Récemment Modifiés"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Recently Created"
+msgstr "Récemment Créés"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Apply Filters"
+msgstr "Appliquer les Filtres"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Clear Filters"
+msgstr "Effacer les Filtres"
+
+#: chardata/templates/chardata/shared_builds.html
+#, python-format
+msgid "Found %(counter)s shared build"
+msgid_plural "Found %(counter)s shared builds"
+msgstr[0] "%(counter)s build partagé trouvé"
+msgstr[1] "%(counter)s builds partagés trouvés"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "showing first 100"
+msgstr "affichage des 100 premiers"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Views"
+msgstr "Vues"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Total Stats"
+msgstr "Stats Totales"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "View Build"
+msgstr "Voir le Build"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "No shared builds found matching your criteria. Try adjusting your filters."
+msgstr "Aucun build partagé trouvé correspondant à vos critères. Essayez d'ajuster vos filtres."
+

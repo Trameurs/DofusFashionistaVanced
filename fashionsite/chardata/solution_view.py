@@ -106,6 +106,10 @@ def hide_sharing_link(request, char_id):
 def solution_linked(request, char_name, encoded_char_id):
     char = get_char_encoded_or_raise(encoded_char_id)
     
+    # Increment view count for shared builds
+    char.view_count += 1
+    char.save()
+    
     return _solution(request, char.pk, True, encoded_char_id)
 
 def generate_link(char):

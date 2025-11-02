@@ -34,6 +34,7 @@ class Char(models.Model):
     stats_weight = models.BinaryField()
     minimal_solution = models.BinaryField(default=b'')
     link_shared = models.BooleanField()
+    view_count = models.IntegerField(default=0)
     options = models.BinaryField()
     inclusions = models.BinaryField()
     exclusions = models.BinaryField()

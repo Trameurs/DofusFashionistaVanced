@@ -501,6 +501,10 @@ msgid "Load a project"
 msgstr ""
 
 #: chardata/templates/chardata/base.html:115
+msgid "Shared Builds"
+msgstr ""
+
+#: chardata/templates/chardata/base.html:118
 msgid "Compare sets"
 msgstr ""
 
@@ -4549,6 +4553,93 @@ msgstr "Advances %(cells)d cells"
 #, python-format
 msgid "Advances %(min)d to %(max)d cells"
 msgstr "Advances %(min)d to %(max)d cells"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Browse and discover builds shared by the community. Click on any build to view details."
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Search & Filter"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Search"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Project or character name"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "All Classes"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Build Type"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "All Builds"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Min Level"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Max Level"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Order By"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Most Viewed"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Recently Modified"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Recently Created"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Apply Filters"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Clear Filters"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+#, python-format
+msgid "Found %(counter)s shared build"
+msgid_plural "Found %(counter)s shared builds"
+msgstr[0] "Found %(counter)s shared build"
+msgstr[1] "Found %(counter)s shared builds"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "showing first 100"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Views"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Total Stats"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "View Build"
+msgstr ""
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "No shared builds found matching your criteria. Try adjusting your filters."
+msgstr ""
 
 #: chardata/templates/chardata/license.html
 msgid "The Dofus Fashionista uses Google services (Analytics, AdSense, OAuth) to improve user experience, display relevant ads, and provide authentication. These services may collect anonymous usage data. You can manage your consent preferences through the privacy settings banner."
