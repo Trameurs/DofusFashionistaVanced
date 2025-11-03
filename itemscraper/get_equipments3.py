@@ -32,6 +32,36 @@ from fashionistapulp.fashionistapulp.dofus_constants import (
 
 LANGUAGES = ['en', 'fr', 'es', 'pt', 'de']
 
+# Mounts and equipment share ankama_ids, so we offset mount IDs
+# Duplicate items (same ankama_id, different conditions) also need offsets
+MOUNT_ID_OFFSET = 1000000
+DUPLICATE_ID_OFFSET = 100000000
+
+# Track ankama_id occurrences to handle duplicates
+ankama_id_counter = {}
+
+def get_item_id(item):
+    """Get the database ID for an item, accounting for mount and duplicate offsets"""
+    ankama_id = item['ankama_id']
+    
+    # Track duplicates
+    if ankama_id not in ankama_id_counter:
+        ankama_id_counter[ankama_id] = 0
+    else:
+        ankama_id_counter[ankama_id] += 1
+    
+    # Calculate ID
+    if item.get('ankama_type') == 'mounts':
+        new_id = MOUNT_ID_OFFSET + ankama_id
+        if ankama_id_counter[ankama_id] > 0:
+            new_id += DUPLICATE_ID_OFFSET * ankama_id_counter[ankama_id]
+    else:
+        new_id = ankama_id
+        if ankama_id_counter[ankama_id] > 0:
+            new_id += DUPLICATE_ID_OFFSET * ankama_id_counter[ankama_id]
+    
+    return new_id
+
 WEAPON_TYPES = {
     'Hammer': 'hammer',
     'Axe': 'axe',
@@ -144,7 +174,7 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
 
     # Write CREATE TABLE for sets
     f.write("""CREATE TABLE "sets" (
-	    `id`	INTEGER PRIMARY KEY AUTOINCREMENT,
+	    `id`	INTEGER PRIMARY KEY,
 	    `name`	text,
 	    `ankama_id`	INTEGER,
 	    `dofustouch`	INTEGER
@@ -152,12 +182,13 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
 
     #INSERT INTO sets VALUES(1,'Pink Piwi Set',70,NULL);
 
-    for index, item in enumerate(original_sets, start=1):
-        f.write(f"INSERT INTO sets VALUES({index},'{escape_single_quotes(item['name_en'])}',{item['ankama_id']},NULL);\n")
+    for item in original_sets:
+        set_id = item['ankama_id']
+        f.write(f"INSERT INTO sets VALUES({set_id},'{escape_single_quotes(item['name_en'])}',{item['ankama_id']},NULL);\n")
 
     # Write CREATE TABLE for items
     f.write("""CREATE TABLE "items" (
-        `id` INTEGER PRIMARY KEY AUTOINCREMENT,
+        `id` INTEGER PRIMARY KEY,
         `name` text,
         `level` INTEGER,
         `type` INTEGER,
@@ -172,7 +203,7 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
 
     #INSERT INTO items VALUES(6854,'Leurnettes',12,1,NULL,340,'equipment',0,1);
     
-    for index, item in enumerate(original_data, start=1):
+    for item in original_data:
         # Write INSERT command for items
         if item['w_type'] == 'Trophy':
             item['w_type'] = 'Dofus'
@@ -193,14 +224,16 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
 
         set_id = None
         
-        for i, set in enumerate(original_sets, start=1):
-            if item['ankama_id'] in set['equipment_ids']:
-                set_id = i  # Using the index as the set ID
+        for set_item in original_sets:
+            if item['ankama_id'] in set_item['equipment_ids']:
+                set_id = set_item['ankama_id']  # Using the set's ankama_id
                 break
 
         # Use 'NULL' if set_id is None, otherwise use the set_id
         set_id_or_null = 'NULL' if set_id is None else set_id
-        f.write(f"INSERT INTO items VALUES({index},'{escape_single_quotes(item['name_en'])}',{item['level']},{list(TYPE_NAME_TO_SLOT.values()).index(item['w_type'].lower()) + 1},{set_id_or_null},{item['ankama_id']},'{item['ankama_type']}',NULL,NULL);\n")
+        # Use ankama_id as the primary key (id), with offset for mounts
+        item_id = get_item_id(item)
+        f.write(f"INSERT INTO items VALUES({item_id},'{escape_single_quotes(item['name_en'])}',{item['level']},{list(TYPE_NAME_TO_SLOT.values()).index(item['w_type'].lower()) + 1},{set_id_or_null},{item['ankama_id']},'{item['ankama_type']}',NULL,NULL);\n")
 
     # Write CREATE TABLE for stats_of_items
     f.write("""CREATE TABLE stats_of_item
@@ -211,7 +244,8 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
     # Track skipped stats
     skipped_stats = []
     # Write INSERT commands for stats_of_items
-    for index, item in enumerate(original_data, start=1):
+    for item in original_data:
+        item_id = get_item_id(item)
         for stat in item['stats']:
             if stat[2] not in STAT_NAME_TO_KEY_LOCAL:
                 if stat[2] not in skipped_stats:
@@ -220,7 +254,7 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
                 continue
             stat_value = stat[1] if stat[1] is not None else stat[0]
             stat_value = stat[0] if stat[0] < 0 else stat_value
-            f.write(f"INSERT INTO stats_of_item VALUES({index},{list(STAT_NAME_TO_KEY_LOCAL).index(stat[2]) + 1},{stat_value});\n")
+            f.write(f"INSERT INTO stats_of_item VALUES({item_id},{list(STAT_NAME_TO_KEY_LOCAL).index(stat[2]) + 1},{stat_value});\n")
 
     # Write CREATE TABLE for set_bonus
     f.write("""CREATE TABLE set_bonus
@@ -229,7 +263,8 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
               FOREIGN KEY(stat) REFERENCES stats(id));\n""")
     
     # Write INSERT commands for set_bonus
-    for index, set_data in enumerate(original_sets, start=1):
+    for set_data in original_sets:
+        set_id = set_data['ankama_id']
         if 'stats_list' in set_data:
             for effect_data in set_data['stats_list']:
                 effect_key = int(effect_data['effect_key'])  # Number of pieces used
@@ -239,7 +274,7 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
                             print(f"Skipping {bonus[2]}") # Skip unknown stats, Title, Emote or Pet mostly
                             skipped_stats.append(bonus[2])
                         continue
-                    f.write(f"INSERT INTO set_bonus VALUES({index},{effect_key},{list(STAT_NAME_TO_KEY_LOCAL).index(bonus[2]) + 1},{bonus[0]});\n")
+                    f.write(f"INSERT INTO set_bonus VALUES({set_id},{effect_key},{list(STAT_NAME_TO_KEY_LOCAL).index(bonus[2]) + 1},{bonus[0]});\n")
 
     # Write CREATE TABLE for min_stat_to_equip
     f.write("""CREATE TABLE min_stat_to_equip
@@ -248,7 +283,8 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
               FOREIGN KEY(stat) REFERENCES stats(id));\n""")
     
     # Write INSERT commands for min_stat_to_equip
-    for index, item in enumerate(original_data, start=1):
+    for item in original_data:
+        item_id = get_item_id(item)
         if 'conditions' in item:
             for condition_string in item['conditions']:
                 parts = condition_string.split(' ')  # Split the string by spaces
@@ -261,7 +297,7 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
                     stat_value = parts[2]  # The value, e.g., "34"
                     stat_index = list(STAT_NAME_TO_KEY_LOCAL).index(stat_name) + 1
                     if operator == '>':
-                        f.write(f"INSERT INTO min_stat_to_equip VALUES({index},{stat_index},{int(stat_value)+1});\n")
+                        f.write(f"INSERT INTO min_stat_to_equip VALUES({item_id},{stat_index},{int(stat_value)+1});\n")
 
     # Write CREATE TABLE for max_stat_to_equip
     f.write("""CREATE TABLE max_stat_to_equip
@@ -270,7 +306,8 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
               FOREIGN KEY(stat) REFERENCES stats(id));\n""")
     
     # Write INSERT commands for max_stat_to_equip
-    for index, item in enumerate(original_data, start=1):
+    for item in original_data:
+        item_id = get_item_id(item)
         if 'conditions' in item:
             for condition_string in item['conditions']:
                 parts = condition_string.split(' ')  # Split the string by spaces
@@ -280,7 +317,7 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
                     stat_value = parts[2]  # The value, e.g., "34"
                     stat_index = list(STAT_NAME_TO_KEY_LOCAL).index(stat_name) + 1
                     if operator == '<':
-                        f.write(f"INSERT INTO max_stat_to_equip VALUES({index},{stat_index},{int(stat_value)-1});\n")
+                        f.write(f"INSERT INTO max_stat_to_equip VALUES({item_id},{stat_index},{int(stat_value)-1});\n")
 
     # Write CREATE TABLE for min_rank_to_equip
     f.write("""CREATE TABLE min_rank_to_equip
@@ -303,25 +340,28 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
              (item INTEGER, value INTEGER,
               FOREIGN KEY(item) REFERENCES items(id));\n""")
     
-    for index, item in enumerate(original_data, start=1):
+    for item in original_data:
+        item_id = get_item_id(item)
         if 'crit_chance' in item:
-            f.write(f"INSERT INTO weapon_crit_hits VALUES({index},{item['crit_chance']});\n")
+            f.write(f"INSERT INTO weapon_crit_hits VALUES({item_id},{item['crit_chance']});\n")
 
     f.write("""CREATE TABLE weapon_crit_bonus
              (item INTEGER, value INTEGER,
               FOREIGN KEY(item) REFERENCES items(id));\n""")
     
-    for index, item in enumerate(original_data, start=1):
+    for item in original_data:
+        item_id = get_item_id(item)
         if 'crit_bonus' in item:
-            f.write(f"INSERT INTO weapon_crit_bonus VALUES({index},{item['crit_bonus']});\n")
+            f.write(f"INSERT INTO weapon_crit_bonus VALUES({item_id},{item['crit_bonus']});\n")
 
     f.write("""CREATE TABLE weapon_ap
              (item INTEGER, value INTEGER,
               FOREIGN KEY(item) REFERENCES items(id));\n""")
     
-    for index, item in enumerate(original_data, start=1):
+    for item in original_data:
+        item_id = get_item_id(item)
         if 'ap' in item:
-            f.write(f"INSERT INTO weapon_ap VALUES({index},{item['ap']});\n")
+            f.write(f"INSERT INTO weapon_ap VALUES({item_id},{item['ap']});\n")
 
     f.write("""CREATE TABLE weapontype
              (id INTEGER PRIMARY KEY AUTOINCREMENT, name text, key text);\n""")
@@ -334,17 +374,19 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
               FOREIGN KEY(item) REFERENCES items(id),
               FOREIGN KEY(weapontype) REFERENCES weapontype(id));\n""")
     
-    for index, item in enumerate(original_data, start=1):
+    for item in original_data:
+        item_id = get_item_id(item)
         if 'weapon_type' in item:
             if item['weapon_type'] in WEAPON_TYPES:
-                f.write(f"INSERT INTO weapon_weapontype VALUES({index},{list(WEAPON_TYPES).index(item['weapon_type']) + 1});\n")
+                f.write(f"INSERT INTO weapon_weapontype VALUES({item_id},{list(WEAPON_TYPES).index(item['weapon_type']) + 1});\n")
 
     f.write("""CREATE TABLE weapon_hits
              (item INTEGER, hit INTEGER, min_value INTEGER, max_value INTEGER, steals INTEGER,
               heals INTEGER, element text,
               FOREIGN KEY(item) REFERENCES items(id));\n""")
     
-    for index, item in enumerate(original_data, start=1):
+    for item in original_data:
+        item_id = get_item_id(item)
         if 'stats' in item:
             i = 0
             for stat in item['stats']:
@@ -373,13 +415,14 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
                     if element == 'neutral':
                         element = 'neut'
 
-                    f.write(f"INSERT INTO weapon_hits VALUES({index},{i},{min_value},{max_value},{steals},{heals},'{element}');\n")
+                    f.write(f"INSERT INTO weapon_hits VALUES({item_id},{i},{min_value},{max_value},{steals},{heals},'{element}');\n")
 
                     i += 1
 
     f.write("""CREATE TABLE extra_lines (item INTEGER, line text, language text, FOREIGN KEY(item) REFERENCES items(id));\n""")
 
-    for index, item in enumerate(original_data, start=1):
+    for item in original_data:
+        item_id = get_item_id(item)
         if 'special_spell_en' in item:
             for lang in LANGUAGES:
                 special_spell_key = f'special_spell_{lang}'
@@ -395,45 +438,44 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
                     # Convert the pickled data to a hexadecimal string
                     hex_data = pickled_data.hex()
 
-                    f.write(f"INSERT INTO extra_lines VALUES({index}, X'{hex_data}', '{lang}');\n")
+                    f.write(f"INSERT INTO extra_lines VALUES({item_id}, X'{hex_data}', '{lang}');\n")
 
     f.write("""CREATE TABLE item_names (item INTEGER, language text, name text, FOREIGN KEY(item) REFERENCES items(id));\n""")
 
-    for index, item in enumerate(original_data, start=1):
+    for item in original_data:
+        item_id = get_item_id(item)
         for lang in LANGUAGES:
             if lang == 'en':
                 continue
             name_key = f'name_{lang}'
             if name_key in item:
                 name = item[name_key]
-                f.write(f"INSERT INTO item_names VALUES({index}, '{lang}', '{escape_single_quotes(name)}');\n")
+                f.write(f"INSERT INTO item_names VALUES({item_id}, '{lang}', '{escape_single_quotes(name)}');\n")
 
     f.write("""CREATE TABLE set_names (item_set INTEGER, language text, name text, FOREIGN KEY(item_set) REFERENCES sets(id));\n""")
 
-    for index, item in enumerate(original_sets, start=1):
+    for item in original_sets:
+        set_id = item['ankama_id']
         for lang in LANGUAGES:
             if lang == 'en':
                 continue
             name_key = f'name_{lang}'
             if name_key in item:
                 name = item[name_key]
-                f.write(f"INSERT INTO set_names VALUES({index}, '{lang}', '{escape_single_quotes(name)}');\n")
+                f.write(f"INSERT INTO set_names VALUES({set_id}, '{lang}', '{escape_single_quotes(name)}');\n")
 
     f.write("""CREATE TABLE item_weird_conditions (item INTEGER, condition_id INTEGER, FOREIGN KEY(item) REFERENCES items(id));\n""")
 
-    for index, item in enumerate(original_data, start=1):
+    for item in original_data:
+        item_id = get_item_id(item)
         if 'conditions' in item:
             if 'Set bonus < 3' in item["conditions"]: # dofus3beta/v1 new set bonus
-                f.write(f"INSERT INTO item_weird_conditions VALUES({index}, 1);\n")
+                f.write(f"INSERT INTO item_weird_conditions VALUES({item_id}, 1);\n")
         if 'is_prysmaradite' in item:
             if item['is_prysmaradite']:
-                f.write(f"INSERT INTO item_weird_conditions VALUES({index}, 2);\n")
+                f.write(f"INSERT INTO item_weird_conditions VALUES({item_id}, 2);\n")
 
-    f.write(f"""DELETE FROM sqlite_sequence;
-INSERT INTO sqlite_sequence VALUES('item_types',{len(TYPE_NAME_TO_SLOT)});
-INSERT INTO sqlite_sequence VALUES('stats',{len(STAT_NAME_TO_KEY_LOCAL)});
-INSERT INTO sqlite_sequence VALUES('weapontype',{len(WEAPON_TYPES)});
-INSERT INTO sqlite_sequence VALUES('items',{len(original_data)});
-INSERT INTO sqlite_sequence VALUES('sets',{len(original_sets)});
-COMMIT;\n""")
+    # Note: sqlite_sequence is no longer needed since we're not using AUTOINCREMENT
+    # The IDs are now explicitly set using ankama_id
+    f.write("""COMMIT;\n""")
     

@@ -42,7 +42,8 @@ def sitemap_view(request):
     Includes static pages and a sample of popular shared solutions.
     Google will also discover more pages by following links on your site.
     """
-    base_url = request.build_absolute_uri('/').rstrip('/')
+    # Always use HTTPS for sitemap URLs to avoid redirect issues
+    base_url = 'https://fashionistavanced.com'
     
     # Build URLs for shared solutions (limit to 50 most recently shared)
     shared_solutions = []
