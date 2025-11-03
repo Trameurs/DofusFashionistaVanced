@@ -19,7 +19,7 @@ from django.db.models import Q
 from django.utils.translation import gettext as _
 import json
 
-from chardata.models import Char
+from chardata.models import Char, UserAlias
 from chardata.util import set_response
 from chardata.encoded_char_id import encode_char_id
 from chardata.solution import get_solution
@@ -88,6 +88,7 @@ def shared_builds(request):
     max_level = request.GET.get('max_level', '')
     order_by = request.GET.get('order_by', 'created')  # views, modified, created (default: created)
     search_query = request.GET.get('search', '')
+    user_search = request.GET.get('user_search', '')
     
     # Get selected build aspects from checkboxes
     selected_aspects = []
@@ -160,6 +161,14 @@ def shared_builds(request):
             Q(char_name__icontains=search_query)
         )
     
+    # Filter by user
+    if user_search:
+        # Search by username or alias
+        builds = builds.filter(
+            Q(owner__username__icontains=user_search) |
+            Q(owner__useralias__alias__icontains=user_search)
+        )
+    
     # Order results
     if order_by == 'views':
         builds = builds.order_by('-view_count', '-modified_time')
@@ -180,6 +189,15 @@ def shared_builds(request):
         char_name = char.char_name or 'shared'
         link = 'https://fashionistavanced.com' + reverse('solution_linked',
                                                           args=(char_name, encoded_id))
+        
+        # Get creator name (prefer alias, fallback to username)
+        creator_name = None
+        if char.owner:
+            try:
+                user_alias = UserAlias.objects.get(user=char.owner)
+                creator_name = user_alias.alias if user_alias.alias else char.owner.username
+            except UserAlias.DoesNotExist:
+                creator_name = char.owner.username
         
         # Try to get solution stats if available
         solution = get_solution(char)
@@ -217,6 +235,7 @@ def shared_builds(request):
             'total_stats': total_stats or 0,
             'view_count': char.view_count,
             'build_name_translated': build_name_translated,
+            'creator_name': creator_name,
         })
     
     # Get all unique classes for filter dropdown
@@ -241,6 +260,7 @@ def shared_builds(request):
             'max_level': max_level,
             'order_by': order_by,
             'search': search_query,
+            'user_search': user_search,
         }
     }
     

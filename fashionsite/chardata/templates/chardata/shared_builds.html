@@ -277,6 +277,13 @@
                 </div>
                 
                 <div class="filter-group">
+                    <label class="filter-label">{% trans "User" %}</label>
+                    <input type="text" name="user_search" class="filter-input pretty-input" 
+                           placeholder="{% trans 'Search by username' %}" 
+                           value="{{ filters.user_search }}">
+                </div>
+                
+                <div class="filter-group">
                     <label class="filter-label">{% trans "Class" %}</label>
                     <select name="char_class" class="filter-input pretty-input">
                         <option value="">{% trans "All Classes" %}</option>
@@ -368,6 +375,12 @@
                     </div>
                     
                     <div class="build-info">
+                        {% if build.creator_name %}
+                            <div class="build-info-row">
+                                <span class="build-label">{% trans "Creator" %}:</span>
+                                <span class="build-value">{{ build.creator_name }}</span>
+                            </div>
+                        {% endif %}
                         <div class="build-info-row">
                             <span class="build-label">{% trans "Class" %}:</span>
                             <span class="build-value">{{ build.char.char_class }}</span>
@@ -478,10 +491,6 @@ $(document).ready(function() {
     balancedElement.change(function(e) {
         if ($(this).prop('checked')) {
             aspectElements.prop('checked', false);
-        } else {
-            if (aspectElements.filter(":checked").length == 0) {
-                balancedElement.prop('checked', true);
-            }
         }
     });
     
@@ -493,16 +502,8 @@ $(document).ready(function() {
                 $(this).prop('checked', false);
                 alert('{% trans "You can select up to 2 focus aspects only." %}');
             }
-        } else {
-            if (aspectElements.filter(":checked").length == 0) {
-                balancedElement.prop('checked', true);
-            }
         }
     });
-    
-    if (aspectElements.filter(":checked").length == 0 && !balancedElement.prop('checked')) {
-        balancedElement.prop('checked', true);
-    }
 });
 </script>
 {% endblock %}

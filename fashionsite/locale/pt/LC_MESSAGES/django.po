@@ -4874,6 +4874,14 @@ msgid "Project or character name"
 msgstr "Nome do projeto ou personagem"
 
 #: chardata/templates/chardata/shared_builds.html
+msgid "User"
+msgstr "Usuário"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Search by username"
+msgstr "Buscar por nome de usuário"
+
+#: chardata/templates/chardata/shared_builds.html
 msgid "All Classes"
 msgstr "Todas as Classes"
 
@@ -4927,6 +4935,10 @@ msgstr[1] "%(counter)s builds compartilhados encontrados"
 #: chardata/templates/chardata/shared_builds.html
 msgid "showing first 100"
 msgstr "mostrando os primeiros 100"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Creator"
+msgstr "Criador"
 
 #: chardata/templates/chardata/shared_builds.html
 msgid "Views"
