@@ -57724,23 +57724,5 @@
             32175,
             32176
         ]
-    },
-    {
-        "ankama_id": 1051,
-        "name_en": "Vademecum Ceremonial Set",
-        "name_fr": "Panoplie d'apparat Vadémécoume",
-        "name_es": "Set cosmético Vademékum",
-        "name_pt": "Conjunto de Aparência Vademecum",
-        "name_de": "Vademecum-Prunkset",
-        "items": 7,
-        "equipment_ids": [
-            32445,
-            32446,
-            32447,
-            32448,
-            32449,
-            32450,
-            32451
-        ]
     }
 ]
