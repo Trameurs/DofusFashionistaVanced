@@ -180,6 +180,7 @@ urlpatterns = [
     re_path(r'^duplicateproject/', projects_view.duplicate_project, name='duplicate_project'),
     re_path(r'^duplicatemyproject/(?P<char_id>\d+)/', projects_view.duplicate_my_project, name='duplicate_my_project'),
     re_path(r'^sharedbuilds/', shared_builds_view.shared_builds, name='shared_builds'),
+    re_path(r'^votebuild/(?P<build_id>\d+)/', shared_builds_view.vote_build, name='vote_build'),
     re_path(r'^duplicatesomeonesproject/(?P<encoded_char_id>.+)/', projects_view.duplicate_someones_project, name='duplicate_someones_project'),
 
     re_path(r'^setup/(?P<char_id>\d+)/', base_stats_view.setup_base_stats, name='setup_base_stats'),

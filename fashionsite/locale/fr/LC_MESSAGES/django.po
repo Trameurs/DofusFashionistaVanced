@@ -5456,12 +5456,28 @@ msgid "Most Viewed"
 msgstr "Plus Vus"
 
 #: chardata/templates/chardata/shared_builds.html
+msgid "Most Liked"
+msgstr "Plus Aimés"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Most Favorited"
+msgstr "Plus Favoris"
+
+#: chardata/templates/chardata/shared_builds.html
 msgid "Recently Modified"
 msgstr "Récemment Modifiés"
 
 #: chardata/templates/chardata/shared_builds.html
 msgid "Recently Created"
 msgstr "Récemment Créés"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Show only my liked builds"
+msgstr "Afficher uniquement mes builds aimés"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Show only my favorited builds"
+msgstr "Afficher uniquement mes builds favoris"
 
 #: chardata/templates/chardata/shared_builds.html
 msgid "Apply Filters"
@@ -5483,6 +5499,30 @@ msgid "showing first 100"
 msgstr "affichage des 100 premiers"
 
 #: chardata/templates/chardata/shared_builds.html
+msgid "Page"
+msgstr "Page"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "of"
+msgstr "sur"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "First"
+msgstr "Premier"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Previous"
+msgstr "Précédent"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Next"
+msgstr "Suivant"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Last"
+msgstr "Dernier"
+
+#: chardata/templates/chardata/shared_builds.html
 msgid "Creator"
 msgstr "Créateur"
 
@@ -5491,8 +5531,34 @@ msgid "Views"
 msgstr "Vues"
 
 #: chardata/templates/chardata/shared_builds.html
+msgid "Likes"
+msgstr "J'aime"
+
+#: chardata/templates/chardata/shared_builds.html
+msgid "Favorites"
+msgstr "Favoris"
+
+#: chardata/templates/chardata/shared_builds.html
 msgid "Total Stats"
 msgstr "Stats Totales"
+
+#: chardata/templates/chardata/shared_builds.html
+#: chardata/templates/chardata/solution.html
+msgid "Like"
+msgstr "J'aime"
+
+#: chardata/templates/chardata/solution.html
+msgid "Unlike"
+msgstr "Retirer J'aime"
+
+#: chardata/templates/chardata/shared_builds.html
+#: chardata/templates/chardata/solution.html
+msgid "Favorite"
+msgstr "Favori"
+
+#: chardata/templates/chardata/solution.html
+msgid "Unfavorite"
+msgstr "Retirer Favori"
 
 #: chardata/templates/chardata/shared_builds.html
 msgid "View Build"

@@ -54,6 +54,31 @@ class CharBaseStats(models.Model):
 class UserAlias(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     alias = models.CharField(max_length=50, null=True, blank=True)
+
+class BuildVote(models.Model):
+    """Track user votes (likes/favorites) for shared builds"""
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    build = models.ForeignKey(Char, on_delete=models.CASCADE)
+    vote_type = models.CharField(max_length=10, choices=[('like', 'Like'), ('favorite', 'Favorite')])
+    created_time = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        unique_together = ('user', 'build', 'vote_type')
+        indexes = [
+            models.Index(fields=['build', 'vote_type']),
+            models.Index(fields=['user', 'vote_type']),
+        ]
+
+class BuildView(models.Model):
+    """Track build views with IP-based rate limiting (1 view per IP per 24h)"""
+    build = models.ForeignKey(Char, on_delete=models.CASCADE)
+    ip_address = models.GenericIPAddressField()
+    viewed_at = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        indexes = [
+            models.Index(fields=['build', 'ip_address', 'viewed_at']),
+        ]
     
 class ContactForm(forms.Form):
     name = forms.CharField()

@@ -141,6 +141,80 @@
             color: #A0826D;
         }
         
+        .vote-buttons {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+            padding-top: 10px;
+            border-top: 1px solid #8B7355;
+        }
+        
+        .vote-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            padding: 8px;
+            border: 2px solid #8B7355;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #D4AF37;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 14px;
+        }
+        
+        .vote-btn:hover {
+            background-color: rgba(212, 175, 55, 0.1);
+            border-color: #D4AF37;
+        }
+        
+        .vote-btn.active {
+            background-color: rgba(212, 175, 55, 0.2);
+            border-color: #D4AF37;
+            font-weight: bold;
+        }
+        
+        .vote-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 30px 0;
+        }
+        
+        .pagination a, .pagination span {
+            padding: 8px 12px;
+            border: 2px solid #8B7355;
+            border-radius: 4px;
+            color: #D4AF37;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        
+        .pagination a:hover {
+            background-color: rgba(212, 175, 55, 0.2);
+            border-color: #D4AF37;
+        }
+        
+        .pagination .current {
+            background-color: #D4AF37;
+            color: #000;
+            font-weight: bold;
+        }
+        
+        .pagination .disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+        
         .build-link {
             display: block;
             text-align: center;
@@ -341,9 +415,32 @@
                         <option value="views" {% if filters.order_by == 'views' %}selected{% endif %}>
                             {% trans "Most Viewed" %}
                         </option>
+                        <option value="likes" {% if filters.order_by == 'likes' %}selected{% endif %}>
+                            {% trans "Most Liked" %}
+                        </option>
+                        <option value="favorites" {% if filters.order_by == 'favorites' %}selected{% endif %}>
+                            {% trans "Most Favorited" %}
+                        </option>
                     </select>
                 </div>
             </div>
+            
+            {% if user.is_authenticated %}
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label style="color: #D4AF37;">
+                        <input type="checkbox" name="show_liked" value="1" {% if filters.show_liked %}checked{% endif %}>
+                        {% trans "Show only my liked builds" %}
+                    </label>
+                </div>
+                <div class="filter-group">
+                    <label style="color: #D4AF37;">
+                        <input type="checkbox" name="show_favorited" value="1" {% if filters.show_favorited %}checked{% endif %}>
+                        {% trans "Show only my favorited builds" %}
+                    </label>
+                </div>
+            </div>
+            {% endif %}
             
             <div class="filter-row" style="justify-content: center;">
                 <button type="submit" class="filter-button button-generic">{% trans "Apply Filters" %}</button>
@@ -356,10 +453,8 @@
     
     {% if builds %}
         <div class="results-count">
-            {% blocktrans count counter=builds|length %}Found {{ counter }} shared build{% plural %}Found {{ counter }} shared builds{% endblocktrans %}
-            {% if builds|length == 100 %}
-                ({% trans "showing first 100" %})
-            {% endif %}
+            {% blocktrans count counter=page_obj.paginator.count %}Found {{ counter }} shared build{% plural %}Found {{ counter }} shared builds{% endblocktrans %}
+            ({% trans "Page" %} {{ page_obj.number }} {% trans "of" %} {{ page_obj.paginator.num_pages }})
         </div>
         
         <div class="builds-grid">
@@ -402,6 +497,14 @@
                             <div class="stat-value">{{ build.view_count }}</div>
                             <div class="stat-label">{% trans "Views" %}</div>
                         </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="like-count-{{ build.char.id }}">{{ build.like_count }}</div>
+                            <div class="stat-label">{% trans "Likes" %}</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="favorite-count-{{ build.char.id }}">{{ build.favorite_count }}</div>
+                            <div class="stat-label">{% trans "Favorites" %}</div>
+                        </div>
                         {% if build.total_stats > 0 %}
                             <div class="stat-item">
                                 <div class="stat-value">{{ build.total_stats|floatformat:0 }}</div>
@@ -410,12 +513,52 @@
                         {% endif %}
                     </div>
                     
+                    {% if user.is_authenticated %}
+                    <div class="vote-buttons">
+                        <button class="vote-btn {% if build.user_liked %}active{% endif %}" 
+                                onclick="vote({{ build.char.id }}, 'like', this)"
+                                data-build-id="{{ build.char.id }}"
+                                data-vote-type="like">
+                            ❤️ {% trans "Like" %}
+                        </button>
+                        <button class="vote-btn {% if build.user_favorited %}active{% endif %}"
+                                onclick="vote({{ build.char.id }}, 'favorite', this)"
+                                data-build-id="{{ build.char.id }}"
+                                data-vote-type="favorite">
+                            ⭐ {% trans "Favorite" %}
+                        </button>
+                    </div>
+                    {% endif %}
+                    
                     <a href="{{ build.link }}" class="build-link" target="_blank">
                         {% trans "View Build" %} →
                     </a>
                 </div>
             {% endfor %}
         </div>
+        
+        <!-- Pagination -->
+        {% if page_obj.has_other_pages %}
+        <div class="pagination">
+            {% if page_obj.has_previous %}
+                <a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page=1">{% trans "First" %}</a>
+                <a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ page_obj.previous_page_number }}">{% trans "Previous" %}</a>
+            {% else %}
+                <span class="disabled">{% trans "First" %}</span>
+                <span class="disabled">{% trans "Previous" %}</span>
+            {% endif %}
+            
+            <span class="current">{% trans "Page" %} {{ page_obj.number }} {% trans "of" %} {{ page_obj.paginator.num_pages }}</span>
+            
+            {% if page_obj.has_next %}
+                <a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ page_obj.next_page_number }}">{% trans "Next" %}</a>
+                <a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ page_obj.paginator.num_pages }}">{% trans "Last" %}</a>
+            {% else %}
+                <span class="disabled">{% trans "Next" %}</span>
+                <span class="disabled">{% trans "Last" %}</span>
+            {% endif %}
+        </div>
+        {% endif %}
     {% else %}
         <div class="no-builds">
             {% trans "No shared builds found matching your criteria. Try adjusting your filters." %}
@@ -505,5 +648,40 @@ $(document).ready(function() {
         }
     });
 });
+
+// Vote function
+function vote(buildId, voteType, button) {
+    var isActive = $(button).hasClass('active');
+    var action = isActive ? 'remove' : 'add';
+    
+    // Disable button during request
+    $(button).prop('disabled', true);
+    
+    $.ajax({
+        url: '/votebuild/' + buildId + '/',
+        type: 'POST',
+        data: {
+            'vote_type': voteType,
+            'action': action,
+            'csrfmiddlewaretoken': '{{ csrf_token }}'
+        },
+        success: function(response) {
+            if (response.success) {
+                // Toggle active class
+                $(button).toggleClass('active');
+                
+                // Update counts
+                $('#like-count-' + buildId).text(response.like_count);
+                $('#favorite-count-' + buildId).text(response.favorite_count);
+            }
+        },
+        error: function(xhr) {
+            alert('Error: ' + (xhr.responseJSON ? xhr.responseJSON.error : 'Unknown error'));
+        },
+        complete: function() {
+            $(button).prop('disabled', false);
+        }
+    });
+}
 </script>
 {% endblock %}

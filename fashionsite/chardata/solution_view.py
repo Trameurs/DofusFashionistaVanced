@@ -16,6 +16,7 @@
 
 from django.urls import reverse
 from django.shortcuts import get_object_or_404
+from django.db.models import Count, Case, When, IntegerField
 import json
 
 from chardata.encoded_char_id import encode_char_id
@@ -23,9 +24,11 @@ from chardata.fashion_action import fashion, get_options
 from chardata.lock_forbid import (set_excluded,
                                   set_item_included,
     get_all_inclusions_en_names, get_all_exclusions_en_names)
-from chardata.models import Char
+from chardata.models import Char, BuildVote, BuildView
 import chardata.smart_build
 from chardata.solution import get_solution, set_minimal_solution
+from django.utils import timezone
+from datetime import timedelta
 from chardata.solution_result import SolutionResult
 from chardata.util import set_response, get_char_or_raise, get_alias, get_char_encoded_or_raise, \
     HttpResponseText, get_base_stats_by_attr
@@ -61,6 +64,24 @@ def _solution(request, char_id, is_guest, encoded_char_id=None):
     solution_result = SolutionResult(solution,
                                      inclusions,
                                      exclusions)
+    
+    # Get vote counts and user's votes for shared builds
+    like_count = 0
+    favorite_count = 0
+    user_liked = False
+    user_favorited = False
+    
+    if char.link_shared:
+        try:
+            like_count = BuildVote.objects.filter(build=char, vote_type='like').count()
+            favorite_count = BuildVote.objects.filter(build=char, vote_type='favorite').count()
+            
+            if request.user.is_authenticated:
+                user_liked = BuildVote.objects.filter(user=request.user, build=char, vote_type='like').exists()
+                user_favorited = BuildVote.objects.filter(user=request.user, build=char, vote_type='favorite').exists()
+        except Exception as e:
+            print(f"Error fetching vote data: {e}")
+    
     params = {'char_id': char_id,
               'lock_item': static('chardata/lock-icon.png'),
               'switch_item': static('chardata/1412645636_Left-right.png'),
@@ -73,7 +94,11 @@ def _solution(request, char_id, is_guest, encoded_char_id=None):
               'encoded_char_id': encoded_char_id,
               'link_shared': char.link_shared,
               'owner_alias': get_alias(char.owner),
-              'is_dueler': chardata.smart_build.char_has_aspect(char, 'duel')}
+              'is_dueler': chardata.smart_build.char_has_aspect(char, 'duel'),
+              'like_count': like_count,
+              'favorite_count': favorite_count,
+              'user_liked': user_liked,
+              'user_favorited': user_favorited}
               
     if char.link_shared:
         params['initial_link'] = generate_link(char)
@@ -103,12 +128,40 @@ def hide_sharing_link(request, char_id):
         
     return HttpResponseText('hid')
 
+def get_client_ip(request):
+    """Get the client's IP address from the request"""
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
+
 def solution_linked(request, char_name, encoded_char_id):
     char = get_char_encoded_or_raise(encoded_char_id)
     
-    # Increment view count for shared builds
-    char.view_count += 1
-    char.save()
+    # Increment view count only once per IP per 24 hours
+    try:
+        ip_address = get_client_ip(request)
+        if ip_address:  # Only track if we can get an IP
+            twenty_four_hours_ago = timezone.now() - timedelta(hours=24)
+            
+            # Check if this IP has viewed this build in the last 24 hours
+            recent_view = BuildView.objects.filter(
+                build=char,
+                ip_address=ip_address,
+                viewed_at__gte=twenty_four_hours_ago
+            ).exists()
+            
+            if not recent_view:
+                # Record the view
+                BuildView.objects.create(build=char, ip_address=ip_address)
+                # Increment counter
+                char.view_count += 1
+                char.save()
+    except Exception as e:
+        # If view tracking fails, log it but don't break the page
+        print(f"View tracking error: {e}")
     
     return _solution(request, char.pk, True, encoded_char_id)
 

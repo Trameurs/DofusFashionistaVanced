@@ -15,11 +15,15 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 from django.urls import reverse
-from django.db.models import Q
+from django.db.models import Q, Count, Case, When, IntegerField
 from django.utils.translation import gettext as _
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.http import JsonResponse
+from django.views.decorators.http import require_POST
+from django.contrib.auth.decorators import login_required
 import json
 
-from chardata.models import Char, UserAlias
+from chardata.models import Char, UserAlias, BuildVote
 from chardata.util import set_response
 from chardata.encoded_char_id import encode_char_id
 from chardata.solution import get_solution
@@ -86,9 +90,12 @@ def shared_builds(request):
     char_class = request.GET.get('char_class', '')
     min_level = request.GET.get('min_level', '')
     max_level = request.GET.get('max_level', '')
-    order_by = request.GET.get('order_by', 'created')  # views, modified, created (default: created)
+    order_by = request.GET.get('order_by', 'created')  # views, modified, created, likes, favorites
     search_query = request.GET.get('search', '')
     user_search = request.GET.get('user_search', '')
+    show_liked = request.GET.get('show_liked', '')  # Show only liked builds by current user
+    show_favorited = request.GET.get('show_favorited', '')  # Show only favorited builds by current user
+    page_number = request.GET.get('page', 1)
     
     # Get selected build aspects from checkboxes
     selected_aspects = []
@@ -99,7 +106,11 @@ def shared_builds(request):
             selected_aspects.append(aspect)
     
     # Start with all shared, non-deleted builds
-    builds = Char.objects.filter(link_shared=True, deleted=False)
+    # Annotate with like and favorite counts
+    builds = Char.objects.filter(link_shared=True, deleted=False).annotate(
+        like_count=Count(Case(When(buildvote__vote_type='like', then=1), output_field=IntegerField())),
+        favorite_count=Count(Case(When(buildvote__vote_type='favorite', then=1), output_field=IntegerField()))
+    )
     
     # Apply filters
     if char_class:
@@ -169,6 +180,13 @@ def shared_builds(request):
             Q(owner__useralias__alias__icontains=user_search)
         )
     
+    # Filter by liked/favorited (only for logged-in users)
+    if request.user.is_authenticated:
+        if show_liked:
+            builds = builds.filter(buildvote__user=request.user, buildvote__vote_type='like')
+        if show_favorited:
+            builds = builds.filter(buildvote__user=request.user, buildvote__vote_type='favorite')
+    
     # Order results
     if order_by == 'views':
         builds = builds.order_by('-view_count', '-modified_time')
@@ -176,15 +194,36 @@ def shared_builds(request):
         builds = builds.order_by('-modified_time')
     elif order_by == 'created':
         builds = builds.order_by('-created_time')
+    elif order_by == 'likes':
+        builds = builds.order_by('-like_count', '-modified_time')
+    elif order_by == 'favorites':
+        builds = builds.order_by('-favorite_count', '-modified_time')
     else:
         builds = builds.order_by('-view_count', '-modified_time')
     
-    # Limit to first 100 results for performance
-    builds = builds[:100]
+    # Paginate results (25 per page)
+    paginator = Paginator(builds, 25)
+    try:
+        builds_page = paginator.page(page_number)
+    except PageNotAnInteger:
+        builds_page = paginator.page(1)
+    except EmptyPage:
+        builds_page = paginator.page(paginator.num_pages)
+    
+    # Get user's votes if logged in
+    user_likes = set()
+    user_favorites = set()
+    if request.user.is_authenticated:
+        user_likes = set(BuildVote.objects.filter(
+            user=request.user, vote_type='like', build__in=builds_page
+        ).values_list('build_id', flat=True))
+        user_favorites = set(BuildVote.objects.filter(
+            user=request.user, vote_type='favorite', build__in=builds_page
+        ).values_list('build_id', flat=True))
     
     # Prepare build data with links and stats
     builds_data = []
-    for char in builds:
+    for char in builds_page:
         encoded_id = encode_char_id(int(char.id))
         char_name = char.char_name or 'shared'
         link = 'https://fashionistavanced.com' + reverse('solution_linked',
@@ -236,6 +275,10 @@ def shared_builds(request):
             'view_count': char.view_count,
             'build_name_translated': build_name_translated,
             'creator_name': creator_name,
+            'like_count': char.like_count,
+            'favorite_count': char.favorite_count,
+            'user_liked': char.id in user_likes,
+            'user_favorited': char.id in user_favorites,
         })
     
     # Get all unique classes for filter dropdown
@@ -250,6 +293,7 @@ def shared_builds(request):
     
     params = {
         'builds': builds_data,
+        'page_obj': builds_page,
         'all_classes': all_classes,
         'aspect_to_name': json.dumps(aspect_to_name),
         'aspect_layout': json.dumps(aspect_layout),
@@ -261,6 +305,8 @@ def shared_builds(request):
             'order_by': order_by,
             'search': search_query,
             'user_search': user_search,
+            'show_liked': show_liked,
+            'show_favorited': show_favorited,
         }
     }
     
@@ -268,3 +314,40 @@ def shared_builds(request):
                             'chardata/shared_builds.html',
                             params)
     return response
+
+
+@login_required
+@require_POST
+def vote_build(request, build_id):
+    """API endpoint to add/remove a vote (like or favorite) on a build"""
+    try:
+        build = Char.objects.get(id=build_id, link_shared=True, deleted=False)
+        vote_type = request.POST.get('vote_type')  # 'like' or 'favorite'
+        action = request.POST.get('action')  # 'add' or 'remove'
+        
+        if vote_type not in ['like', 'favorite']:
+            return JsonResponse({'error': 'Invalid vote type'}, status=400)
+        
+        if action == 'add':
+            BuildVote.objects.get_or_create(user=request.user, build=build, vote_type=vote_type)
+            message = 'Added'
+        elif action == 'remove':
+            BuildVote.objects.filter(user=request.user, build=build, vote_type=vote_type).delete()
+            message = 'Removed'
+        else:
+            return JsonResponse({'error': 'Invalid action'}, status=400)
+        
+        # Get updated counts
+        like_count = BuildVote.objects.filter(build=build, vote_type='like').count()
+        favorite_count = BuildVote.objects.filter(build=build, vote_type='favorite').count()
+        
+        return JsonResponse({
+            'success': True,
+            'message': message,
+            'like_count': like_count,
+            'favorite_count': favorite_count
+        })
+    except Char.DoesNotExist:
+        return JsonResponse({'error': 'Build not found'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
