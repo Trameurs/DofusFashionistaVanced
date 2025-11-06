@@ -203,6 +203,9 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
 
     #INSERT INTO items VALUES(6854,'Leurnettes',12,1,NULL,340,'equipment',0,1);
     
+    # Dictionary to store item_id for each item (to reuse when writing stats)
+    item_to_id = {}
+    
     for item in original_data:
         # Write INSERT command for items
         if item['w_type'] == 'Trophy':
@@ -233,6 +236,8 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
         set_id_or_null = 'NULL' if set_id is None else set_id
         # Use ankama_id as the primary key (id), with offset for mounts
         item_id = get_item_id(item)
+        # Store the item_id for later use in stats
+        item_to_id[id(item)] = item_id
         f.write(f"INSERT INTO items VALUES({item_id},'{escape_single_quotes(item['name_en'])}',{item['level']},{list(TYPE_NAME_TO_SLOT.values()).index(item['w_type'].lower()) + 1},{set_id_or_null},{item['ankama_id']},'{item['ankama_type']}',NULL,NULL);\n")
 
     # Write CREATE TABLE for stats_of_items
@@ -245,7 +250,8 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
     skipped_stats = []
     # Write INSERT commands for stats_of_items
     for item in original_data:
-        item_id = get_item_id(item)
+        # Reuse the item_id that was calculated during item insertion
+        item_id = item_to_id[id(item)]
         for stat in item['stats']:
             if stat[2] not in STAT_NAME_TO_KEY_LOCAL:
                 if stat[2] not in skipped_stats:
@@ -284,7 +290,7 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
     
     # Write INSERT commands for min_stat_to_equip
     for item in original_data:
-        item_id = get_item_id(item)
+        item_id = item_to_id[id(item)]
         if 'conditions' in item:
             for condition_string in item['conditions']:
                 parts = condition_string.split(' ')  # Split the string by spaces
@@ -307,7 +313,7 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
     
     # Write INSERT commands for max_stat_to_equip
     for item in original_data:
-        item_id = get_item_id(item)
+        item_id = item_to_id[id(item)]
         if 'conditions' in item:
             for condition_string in item['conditions']:
                 parts = condition_string.split(' ')  # Split the string by spaces
@@ -341,7 +347,7 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
               FOREIGN KEY(item) REFERENCES items(id));\n""")
     
     for item in original_data:
-        item_id = get_item_id(item)
+        item_id = item_to_id[id(item)]
         if 'crit_chance' in item:
             f.write(f"INSERT INTO weapon_crit_hits VALUES({item_id},{item['crit_chance']});\n")
 
@@ -350,7 +356,7 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
               FOREIGN KEY(item) REFERENCES items(id));\n""")
     
     for item in original_data:
-        item_id = get_item_id(item)
+        item_id = item_to_id[id(item)]
         if 'crit_bonus' in item:
             f.write(f"INSERT INTO weapon_crit_bonus VALUES({item_id},{item['crit_bonus']});\n")
 
@@ -359,7 +365,7 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
               FOREIGN KEY(item) REFERENCES items(id));\n""")
     
     for item in original_data:
-        item_id = get_item_id(item)
+        item_id = item_to_id[id(item)]
         if 'ap' in item:
             f.write(f"INSERT INTO weapon_ap VALUES({item_id},{item['ap']});\n")
 
@@ -375,7 +381,7 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
               FOREIGN KEY(weapontype) REFERENCES weapontype(id));\n""")
     
     for item in original_data:
-        item_id = get_item_id(item)
+        item_id = item_to_id[id(item)]
         if 'weapon_type' in item:
             if item['weapon_type'] in WEAPON_TYPES:
                 f.write(f"INSERT INTO weapon_weapontype VALUES({item_id},{list(WEAPON_TYPES).index(item['weapon_type']) + 1});\n")
@@ -386,7 +392,7 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
               FOREIGN KEY(item) REFERENCES items(id));\n""")
     
     for item in original_data:
-        item_id = get_item_id(item)
+        item_id = item_to_id[id(item)]
         if 'stats' in item:
             i = 0
             for stat in item['stats']:
@@ -422,7 +428,7 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
     f.write("""CREATE TABLE extra_lines (item INTEGER, line text, language text, FOREIGN KEY(item) REFERENCES items(id));\n""")
 
     for item in original_data:
-        item_id = get_item_id(item)
+        item_id = item_to_id[id(item)]
         if 'special_spell_en' in item:
             for lang in LANGUAGES:
                 special_spell_key = f'special_spell_{lang}'
@@ -443,7 +449,7 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
     f.write("""CREATE TABLE item_names (item INTEGER, language text, name text, FOREIGN KEY(item) REFERENCES items(id));\n""")
 
     for item in original_data:
-        item_id = get_item_id(item)
+        item_id = item_to_id[id(item)]
         for lang in LANGUAGES:
             if lang == 'en':
                 continue
@@ -467,7 +473,7 @@ with open(f'{current_directory}/../fashionistapulp/fashionistapulp/item_db_dumpe
     f.write("""CREATE TABLE item_weird_conditions (item INTEGER, condition_id INTEGER, FOREIGN KEY(item) REFERENCES items(id));\n""")
 
     for item in original_data:
-        item_id = get_item_id(item)
+        item_id = item_to_id[id(item)]
         if 'conditions' in item:
             if 'Set bonus < 3' in item["conditions"]: # dofus3beta/v1 new set bonus
                 f.write(f"INSERT INTO item_weird_conditions VALUES({item_id}, 1);\n")
