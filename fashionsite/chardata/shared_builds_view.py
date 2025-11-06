@@ -15,7 +15,7 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 from django.urls import reverse
-from django.db.models import Q, Count, Case, When, IntegerField
+from django.db.models import Q, Count, Case, When, IntegerField, F
 from django.utils.translation import gettext as _
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.http import JsonResponse
@@ -191,9 +191,17 @@ def shared_builds(request):
     if order_by == 'views':
         builds = builds.order_by('-view_count', '-modified_time')
     elif order_by == 'modified':
-        builds = builds.order_by('-modified_time')
+        builds = builds.order_by(
+            F('modified_time').desc(nulls_last=True),
+            F('created_time').desc(nulls_last=True),
+            '-id'
+        )
     elif order_by == 'created':
-        builds = builds.order_by('-created_time')
+        builds = builds.order_by(
+            F('created_time').desc(nulls_last=True),
+            F('modified_time').desc(nulls_last=True),
+            '-id'
+        )
     elif order_by == 'likes':
         builds = builds.order_by('-like_count', '-modified_time')
     elif order_by == 'favorites':

@@ -22,8 +22,8 @@ from django.forms.widgets import Textarea
 
 class Char(models.Model):
     owner = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
-    created_time = models.DateField(auto_now_add=True, blank=True, null=True)
-    modified_time = models.DateField(auto_now=True, blank=True, null=True)
+    created_time = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+    modified_time = models.DateTimeField(auto_now=True, blank=True, null=True)
     name = models.CharField(max_length=50)
     char_name = models.CharField(max_length=50)
     char_class = models.CharField(max_length=20)
@@ -89,8 +89,8 @@ class ContactForm(forms.Form):
 class SolutionCounter(models.Model):
     input_hash = models.BigIntegerField(unique=True)
     get_count = models.IntegerField(default=0)
-    created_time = models.DateField(auto_now_add=True, blank=True, null=True)
-    modified_time = models.DateField(auto_now=True, blank=True, null=True)
+    created_time = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+    modified_time = models.DateTimeField(auto_now=True, blank=True, null=True)
 
 class SolutionMemory(models.Model):
     input_hash = models.BigIntegerField(unique=True)
