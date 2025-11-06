@@ -129,6 +129,78 @@ function Set-PythonEnvironment {
     Write-LogMessage "PYTHONPATH défini: $env:PYTHONPATH" "SUCCESS"
 }
 
+# Fonction pour importer un dump MySQL/MariaDB dans la base locale
+function Import-MySqlDump {
+    param(
+        [Parameter(Mandatory=$true)]
+        [string]$SqlPath,
+
+        [Parameter(Mandatory=$false)]
+        [string]$DbName
+    )
+
+    try {
+        if (-not (Test-Path -Path $SqlPath)) {
+            Write-LogMessage "Dump SQL introuvable: $SqlPath" "WARNING"
+            return
+        }
+
+        # Lire les identifiants MySQL depuis %APPDATA%\fashionista\gen_config.json
+        $configDir = Join-Path $env:APPDATA 'fashionista'
+        $genConfigPath = Join-Path $configDir 'gen_config.json'
+        if (-not (Test-Path -Path $genConfigPath)) {
+            Write-LogMessage "Fichier de configuration introuvable: $genConfigPath" "WARNING"
+            Write-LogMessage "Import SQL ignoré (identifiants MySQL inconnus)." "WARNING"
+            return
+        }
+
+        $cfg = Get-Content -Path $genConfigPath -Raw | ConvertFrom-Json
+        $dbUser = $cfg.mysql_USER
+        $dbPass = $cfg.mysql_PASSWORD
+        if (-not $DbName -or $DbName -eq '') {
+            # Utiliser la même logique que Django: DB_NAME par défaut = 'fashionista'
+            $DbName = if ($env:DB_NAME) { $env:DB_NAME } else { 'fashionista' }
+        }
+
+        # Déterminer le binaire mysql
+        $mysqlCmd = 'mysql'
+        if (-not (Test-CommandExists $mysqlCmd)) {
+            $candidate = 'C:\\Program Files\\MariaDB 11.6\\bin\\mysql.exe'
+            if (Test-Path -Path $candidate) {
+                $mysqlCmd = $candidate
+            } else {
+                Write-LogMessage "Client MySQL introuvable (mysql). Ajoutez mysql au PATH ou installez MariaDB/MySQL." "WARNING"
+                return
+            }
+        }
+
+        Write-LogMessage "Import du dump SQL vers la base '$DbName'" "INFO"
+
+        # Créer la base si nécessaire
+        $createDbOut = & $mysqlCmd -u $dbUser -p$dbPass -e "CREATE DATABASE IF NOT EXISTS `$DbName` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;" 2>&1
+        if ($LASTEXITCODE -ne 0) {
+            Write-LogMessage "Échec lors de la création/vérification de la base '$DbName'." "ERROR"
+            if ($createDbOut) { Write-LogMessage $createDbOut "ERROR" }
+            return
+        }
+
+        # Importer le fichier. Utiliser cmd /c pour gérer la redirection d'entrée (<) de façon fiable sous PowerShell
+        $quotedMysql = '"' + $mysqlCmd + '"'
+        $quotedSql = '"' + $SqlPath + '"'
+        $cmdLine = "$quotedMysql -u $dbUser -p$dbPass $DbName --default-character-set=utf8mb4 < $quotedSql"
+        $importOut = cmd /c $cmdLine 2>&1
+        if ($LASTEXITCODE -eq 0) {
+            Write-LogMessage "Import SQL terminé avec succès dans '$DbName'." "SUCCESS"
+        } else {
+            Write-LogMessage "Échec de l'import SQL (code $LASTEXITCODE)." "ERROR"
+            if ($importOut) { Write-LogMessage $importOut "ERROR" }
+        }
+    }
+    catch {
+        Write-LogMessage "Erreur lors de l'import du dump SQL: $_" "ERROR"
+    }
+}
+
 # Fonction pour vérifier ou créer le fichier dump
 function Ensure-DumpFile {
     Write-LogMessage "Vérification du fichier dump..." "INFO"
@@ -457,6 +529,8 @@ function Start-DjangoServer {
             # Définir les variables d'environnement correctement pour le processus Python
             $env:PYTHONPATH = "$PSScriptRoot\fashionistapulp"
             $env:PYTHONUNBUFFERED = "1"
+            # Forcer l'utilisation des bons settings Django
+            $env:DJANGO_SETTINGS_MODULE = 'fashionsite.settings'
             
             # Utiliser le serveur standard au lieu du serveur SSL qui a des problèmes avec Python 3.12
             & python -X faulthandler manage.py runserver --noreload 0.0.0.0:8000
@@ -511,10 +585,22 @@ function Start-DofusFashionista {
     
     # Configurer l'environnement Python
     Set-PythonEnvironment
+
+    # Forcer l'utilisation de la base 'fashionista_migration' pour correspondre aux dumps migrés
+    $env:DB_NAME = 'fashionista_migration'
+    Write-LogMessage "DB_NAME défini sur $env:DB_NAME pour cette session." "INFO"
     
     # S'assurer que le fichier dump existe
     Ensure-DumpFile
     
+    # Importer le dump de prod migré si présent
+    $defaultDump = "C:\Users\jems3\Documents\AWS\migrated_production.sql"
+    if (Test-Path -Path $defaultDump) {
+        Import-MySqlDump -SqlPath $defaultDump -DbName $env:DB_NAME
+    } else {
+        Write-LogMessage "Dump de prod non trouvé à $defaultDump (étape d'import ignorée)." "WARNING"
+    }
+
     # Nettoyer le cache des solutions
     Clear-SolutionCache
     

@@ -5,3 +5,4 @@
 *.bak
 fashionsite/staticfiles/chardata/spells/Con.png
 /logs
+migrated_data.json

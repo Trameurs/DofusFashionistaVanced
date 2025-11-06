@@ -523,6 +523,8 @@ class ModelResult():
 class ModelResultItem():
     
     def __init__(self, item):
+        # Default weapon-specific flags so legacy pickles missing new fields stay safe
+        self.is_mageable = False
         if item:
             structure = get_structure()
             self.item_added = True
@@ -589,7 +591,7 @@ class ModelResultItem():
             self.localized_name = _(SLOT_NAME_TO_TYPE[slot])
         
     def mage_weapon_smartly(self, char_stats):
-        if self.is_mageable:
+        if getattr(self, 'is_mageable', False):
             calculated_damage = {}
             for element in DAMAGE_TYPES:
                 calculated_damage[element] = calculate_damage(self.non_crit_hits[element],
