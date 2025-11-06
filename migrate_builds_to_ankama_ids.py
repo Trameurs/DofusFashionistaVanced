@@ -8,6 +8,9 @@ This script updates the minimal_solution field in all Char objects to use
 ankama_ids instead of sequential IDs.
 """
 
+import sys
+sys.stdout.reconfigure(line_buffering=True)  # Force immediate output
+
 import os
 import sys
 import django
@@ -170,7 +173,9 @@ def main():
     errors = 0
     
     for i, char in enumerate(chars, 1):
-        print(f"[{i}/{total}] Checking character '{char.name}' (ID: {char.id})...")
+        # Print progress every 100 characters
+        if i % 100 == 0 or i == 1:
+            print(f"[PROGRESS] {i}/{total} characters processed ({(i/total)*100:.1f}%) - Migrated: {migrated_builds} builds, {migrated_exclusions} exclusions")
         
         char_changed = False
         
@@ -180,29 +185,24 @@ def main():
                 if migrate_build(char, id_mapping):
                     migrated_builds += 1
                     char_changed = True
-                    print(f"  [OK] Build migrated")
             
             # Migrate exclusions
             if char.exclusions:
                 if migrate_exclusions(char, id_mapping):
                     migrated_exclusions += 1
                     char_changed = True
-                    print(f"  [OK] Exclusions migrated")
             
             # Migrate inclusions
             if char.inclusions:
                 if migrate_inclusions(char, id_mapping):
                     migrated_inclusions += 1
                     char_changed = True
-                    print(f"  [OK] Inclusions migrated")
             
             if char_changed:
                 char.save()
-            else:
-                print(f"  - No changes needed")
                 
         except Exception as e:
-            print(f"  [ERROR] {e}")
+            print(f"  [ERROR] Character {char.id}: {e}")
             errors += 1
     
     print()
