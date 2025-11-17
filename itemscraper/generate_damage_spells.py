@@ -28,6 +28,22 @@ ELEMENT_LITERAL = {
     "AIR": "AIR",
 }
 
+STAT_BUFF_CHARACTERISTICS = {
+    10: "buff_str",
+    11: "buff_vit",
+    13: "buff_cha",
+    14: "buff_agi",
+    15: "buff_int",
+}
+
+BUFF_SORT_ORDER = {
+    "buff_str": 0,
+    "buff_int": 1,
+    "buff_cha": 2,
+    "buff_agi": 3,
+    "buff_vit": 4,
+}
+
 BASE_CLASSES = [
     "Eniripsa",
     "Iop",
@@ -104,7 +120,7 @@ LEGACY_DEFAULT_SPELLS: Dict[str, SpellEntry] = {
         level_requirements=[1],
         non_crit_ranges=[["300"]],
         crit_ranges=[["350"]],
-        elements=["buff_pow_weapon"],
+    elements=["'buff_pow_weapon'"],
         steals=None,
         is_linked=None,
         order=0,
@@ -324,6 +340,113 @@ def _is_player_breed(breed_id: Any) -> bool:
     return 1 <= value <= 19
 
 
+def _extract_stat_buff_rows(spell: Mapping[str, Any], level_count: int) -> List[Dict[str, Any]]:
+    levels = spell.get("levels") or []
+    if not levels or level_count <= 0:
+        return []
+    rows: Dict[str, Dict[str, Any]] = {}
+
+    def _ensure_row(token: str, order: int) -> Dict[str, Any]:
+        row = rows.get(token)
+        if row is None:
+            row = {
+                "token": token,
+                "normal": [None] * level_count,
+                "critical": None,
+                "order": order,
+            }
+            rows[token] = row
+        return row
+
+    for level_idx, level in enumerate(levels):
+        for effect in level.get("effects", []):
+            token = _stat_buff_token(effect)
+            if not token:
+                continue
+            value = _format_buff_value(effect.get("dice"))
+            if not value:
+                continue
+            row = _ensure_row(token, effect.get("order") or 0)
+            row["normal"][level_idx] = value
+
+    for level_idx, level in enumerate(levels):
+        for effect in level.get("critical_effects", []):
+            token = _stat_buff_token(effect)
+            if not token:
+                continue
+            value = _format_buff_value(effect.get("dice"))
+            if not value:
+                continue
+            row = _ensure_row(token, effect.get("order") or 0)
+            if row["critical"] is None:
+                row["critical"] = [None] * level_count
+            row["critical"][level_idx] = value
+
+    supplemental: List[Dict[str, Any]] = []
+    for token, row in rows.items():
+        filled_normal = _fill_missing_row(row["normal"])
+        filled_crit = _fill_missing_row(row["critical"]) if row["critical"] else None
+        supplemental.append(
+            {
+                "token": token,
+                "element": repr(token),
+                "normal": filled_normal,
+                "critical": filled_crit,
+                "order": row["order"],
+            }
+        )
+
+    supplemental.sort(key=lambda item: (BUFF_SORT_ORDER.get(item["token"], 1000), item["order"], item["element"]))
+    return supplemental
+
+
+def _stat_buff_token(effect: Mapping[str, Any]) -> Optional[str]:
+    metadata = effect.get("effect_metadata") or {}
+    characteristic = metadata.get("characteristic")
+    token = STAT_BUFF_CHARACTERISTICS.get(characteristic)
+    if not token:
+        return None
+
+    description = (metadata.get("description") or {}).get("en", "").lower()
+    if "steals" in description:
+        return token
+
+    bonus_type = metadata.get("bonus_type")
+    try:
+        bonus_value = int(bonus_type)
+    except (TypeError, ValueError):
+        bonus_value = None
+    if bonus_value and bonus_value > 0:
+        return token
+    return None
+
+
+def _format_buff_value(dice: Optional[Mapping[str, Any]]) -> Optional[str]:
+    if not dice:
+        return None
+    min_val = dice.get("min")
+    max_val = dice.get("max")
+    if min_val is None:
+        return None
+    if max_val in (None, 0, min_val):
+        return str(min_val)
+    return f"{min_val}-{max_val}"
+
+
+def _fill_missing_row(values: Optional[Sequence[Optional[str]]]) -> List[str]:
+    if not values:
+        return []
+    filled: List[str] = []
+    last_value: Optional[str] = None
+    for value in values:
+        if value is None:
+            filled.append(last_value or "0")
+        else:
+            filled.append(value)
+            last_value = value
+    return filled
+
+
 def convert_spell(spell: Mapping[str, Any]) -> Optional[SpellEntry]:
     damage = spell.get("damage_templates")
     if not damage:
@@ -343,6 +466,19 @@ def convert_spell(spell: Mapping[str, Any]) -> Optional[SpellEntry]:
     level_requirements = spell.get("level_requirements") or damage.get("levels")
     if not level_requirements:
         return None
+
+    buff_rows = _extract_stat_buff_rows(spell, len(level_requirements))
+    if buff_rows:
+        for row in buff_rows:
+            non_crit.append(row["normal"])
+            if crit is not None:
+                if row["critical"] is not None and len(row["critical"]) == len(level_requirements):
+                    crit.append(row["critical"])
+                else:
+                    crit.append(list(row["normal"]))
+            elements.append(row["element"])
+        if steals is not None:
+            steals.extend([False] * len(buff_rows))
     variant_link = spell.get("variant_link")
     is_linked = _convert_variant_link(variant_link)
 
