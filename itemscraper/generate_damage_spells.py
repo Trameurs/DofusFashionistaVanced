@@ -79,6 +79,7 @@ class SpellEntry:
     is_linked: Optional[Sequence[Any]]
     order: int
     ankama_id: int
+    stacks: Optional[int] = None
 
 
 LEGACY_DEFAULT_SPELLS: Dict[str, SpellEntry] = {
@@ -447,6 +448,22 @@ def _fill_missing_row(values: Optional[Sequence[Optional[str]]]) -> List[str]:
     return filled
 
 
+def _extract_stack_limit(spell: Mapping[str, Any]) -> Optional[int]:
+    levels = spell.get("levels") or []
+    stack_values: List[int] = []
+    for level in levels:
+        try:
+            stack = int(level.get("max_stack"))
+        except (TypeError, ValueError):
+            continue
+        if stack <= 1:
+            continue
+        stack_values.append(stack)
+    if not stack_values:
+        return None
+    return max(stack_values)
+
+
 def convert_spell(spell: Mapping[str, Any]) -> Optional[SpellEntry]:
     damage = spell.get("damage_templates")
     if not damage:
@@ -479,6 +496,7 @@ def convert_spell(spell: Mapping[str, Any]) -> Optional[SpellEntry]:
             elements.append(row["element"])
         if steals is not None:
             steals.extend([False] * len(buff_rows))
+    stacks = _extract_stack_limit(spell)
     variant_link = spell.get("variant_link")
     is_linked = _convert_variant_link(variant_link)
 
@@ -493,6 +511,7 @@ def convert_spell(spell: Mapping[str, Any]) -> Optional[SpellEntry]:
         elements=elements,
         steals=steals,
         is_linked=is_linked,
+        stacks=stacks,
         order=order,
         ankama_id=ankama_id,
     )
@@ -551,6 +570,8 @@ def render_spell(entry: SpellEntry) -> List[str]:
         lines.append(f"{indent}    steals={steals_literal},")
     closing = f"{indent})"
     extra_args: List[str] = []
+    if entry.stacks not in (None, 1):
+        extra_args.append(f"stacks={entry.stacks}")
     if entry.is_linked:
         extra_args.append(f"is_linked=({entry.is_linked[0]}, {entry.is_linked[1]!r})")
     if extra_args:
