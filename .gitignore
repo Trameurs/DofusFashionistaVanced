@@ -5,4 +5,7 @@
 *.bak
 fashionsite/staticfiles/chardata/spells/Con.png
 /logs
+/itemscraper/raw
 migrated_data.json
+itemscraper/transformed_spells.json
+itemscraper/transformed_class_spells.json
