@@ -11,7 +11,7 @@ from dataclasses import dataclass, replace
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Mapping, MutableMapping, Optional, Sequence, Set
 
-from default_damage_spells import DEFAULT_DAMAGE_SPELL_NAMES
+from default_damage_spells import DefaultSpellSpec, DEFAULT_DAMAGE_SPELL_SPECS
 
 AUTO_START = "# AUTO-GENERATED DAMAGE_SPELLS START"
 AUTO_END = "# AUTO-GENERATED DAMAGE_SPELLS END"
@@ -66,6 +66,17 @@ class SpellEntry:
 
 
 LEGACY_DEFAULT_SPELLS: Dict[str, SpellEntry] = {
+    "Burnt Pie": SpellEntry(
+        name="Burnt Pie",
+        level_requirements=[30, 97, 164],
+        non_crit_ranges=[["5-7", "6-8", "8-10"] for _ in range(4)],
+        crit_ranges=[["6-8", "8-10", "10-12"] for _ in range(4)],
+        elements=["EARTH", "FIRE", "WATER", "AIR"],
+        steals=None,
+        is_linked=(1, "Leek Pie"),
+        order=0,
+        ankama_id=0,
+    ),
     "Ebony Dofus": SpellEntry(
         name="Ebony Dofus",
         level_requirements=[180],
@@ -93,7 +104,7 @@ LEGACY_DEFAULT_SPELLS: Dict[str, SpellEntry] = {
         level_requirements=[1],
         non_crit_ranges=[["300"]],
         crit_ranges=[["350"]],
-        elements=["'buff_pow_weapon'"],
+        elements=["buff_pow_weapon"],
         steals=None,
         is_linked=None,
         order=0,
@@ -168,9 +179,12 @@ def build_spell_map(class_data: Mapping[str, Any], all_spells: Sequence[Mapping[
     for class_name in spells_by_class:
         spells_by_class[class_name].sort(key=lambda entry: (entry.order, entry.ankama_id))
 
-    default_entries = _extract_default_entries(class_data)
+    default_entries = _select_named_defaults(all_spells)
+    extras = _extract_default_entries(class_data)
+    if extras:
+        default_entries = _merge_spell_lists(default_entries, extras)
     if not default_entries:
-        default_entries = _select_named_defaults(all_spells)
+        default_entries = extras
     spells_by_class = {"default": default_entries, **spells_by_class}
     return spells_by_class
 
@@ -232,28 +246,42 @@ def _extract_default_entries(class_data: Mapping[str, Any]) -> List[SpellEntry]:
     return entries
 
 
+def _merge_spell_lists(
+    primary: Optional[Sequence[SpellEntry]],
+    extras: Sequence[SpellEntry],
+) -> List[SpellEntry]:
+    merged: List[SpellEntry] = list(primary or [])
+    seen = {entry.name for entry in merged}
+    for entry in extras:
+        if entry.name in seen:
+            continue
+        merged.append(entry)
+        seen.add(entry.name)
+    return merged
+
+
 def _select_named_defaults(all_spells: Sequence[Mapping[str, Any]]) -> List[SpellEntry]:
-    lookup: Dict[str, Mapping[str, Any]] = {}
+    lookup: Dict[str, List[Mapping[str, Any]]] = {}
     for spell in all_spells:
         name = (spell.get("name_en") or "").strip().lower()
         if not name:
             continue
-        lookup.setdefault(name, spell)
+        lookup.setdefault(name, []).append(spell)
 
     entries: List[SpellEntry] = []
     missing: List[str] = []
-    for name in DEFAULT_DAMAGE_SPELL_NAMES:
-        spell = lookup.get(name.lower())
+    for spec in DEFAULT_DAMAGE_SPELL_SPECS:
+        spell = _choose_default_candidate(lookup.get(spec.name.lower(), []), spec)
         if spell:
             converted = convert_spell(spell)
             if converted:
                 entries.append(converted)
                 continue
-        legacy = LEGACY_DEFAULT_SPELLS.get(name)
+        legacy = LEGACY_DEFAULT_SPELLS.get(spec.name)
         if legacy:
             entries.append(deepcopy(legacy))
             continue
-        missing.append(name)
+        missing.append(spec.name)
     if missing:
         print(
             "Warning: the following default spells were not found in transformed_spells.json: "
@@ -261,6 +289,39 @@ def _select_named_defaults(all_spells: Sequence[Mapping[str, Any]]) -> List[Spel
             file=sys.stderr,
         )
     return entries
+
+
+def _choose_default_candidate(
+    candidates: Optional[Sequence[Mapping[str, Any]]], spec
+) -> Optional[Mapping[str, Any]]:
+    if not candidates:
+        return None
+
+    def score(spell: Mapping[str, Any]) -> tuple:
+        variant_group = spell.get("variant_group")
+        has_variant = bool(variant_group)
+        variant_penalty = 0
+        if spec.prefer_variant and not has_variant:
+            variant_penalty = 1
+        elif not spec.prefer_variant and has_variant:
+            variant_penalty = 0
+        breed_ids = spell.get("breed_ids") or []
+        breed_penalty = 0
+        if breed_ids:
+            if not all(_is_player_breed(bid) for bid in breed_ids):
+                breed_penalty = 1
+        damage_penalty = 0 if spell.get("damage_templates") else 1
+        return (variant_penalty, breed_penalty, damage_penalty, spell.get("ankama_id") or 0)
+
+    return min(candidates, key=score)
+
+
+def _is_player_breed(breed_id: Any) -> bool:
+    try:
+        value = int(breed_id)
+    except (TypeError, ValueError):
+        return False
+    return 1 <= value <= 19
 
 
 def convert_spell(spell: Mapping[str, Any]) -> Optional[SpellEntry]:

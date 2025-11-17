@@ -3877,49 +3877,32 @@ DAMAGE_SPELLS_OLD = {
 # Do not edit it manually.
 DAMAGE_SPELLS = {
     'default': [
-        Spell('Moon Hammer', [0], Effects(
-            [['31-35']],
-            None,
-            [NEUTRAL],
-        )),
-        Spell('Perfidious Boomerang', [100, 200], Effects(
-            [['21-23', '26-29'], ['21-23', '26-29'], ['21-23', '26-29'], ['21-23', '26-29']],
-            [['25-28', '31-35'], ['25-28', '31-35'], ['25-28', '31-35'], ['25-28', '31-35']],
+        Spell('Burnt Pie', [30, 97, 164], Effects(
+            [['5-7', '6-8', '8-10'],
+             ['5-7', '6-8', '8-10'],
+             ['5-7', '6-8', '8-10'],
+             ['5-7', '6-8', '8-10']],
+            [['6-8', '8-10', '10-12'],
+             ['6-8', '8-10', '10-12'],
+             ['6-8', '8-10', '10-12'],
+             ['6-8', '8-10', '10-12']],
             [EARTH, FIRE, WATER, AIR],
-            steals=[True, True, True, True],
-        ), is_linked=(1, 'Diamondine Boomerang')),
+        ), is_linked=(1, 'Leek Pie')),
+        Spell('Leek Pie', [97, 164], Effects(
+            [['6-8', '8-10'], ['6-8', '8-10'], ['6-8', '8-10'], ['6-8', '8-10']],
+            [['8-10', '10-12'], ['8-10', '10-12'], ['8-10', '10-12'], ['8-10', '10-12']],
+            [EARTH, FIRE, WATER, AIR],
+        ), is_linked=(2, 'Burnt Pie')),
         Spell("Grunob's Lightning Strike", [20, 87, 154], Effects(
             [['13-16', '17-21', '21-26']],
             [['17-21', '22-27', '27-33']],
             [FIRE],
         ), is_linked=(1, "Grunob's Lesson")),
-        Spell("Crocobur's Appetite", [1], Effects(
-            [['16-20']],
-            None,
-            [NEUTRAL],
-            steals=[True],
-        )),
-        Spell('Diamondine Boomerang', [100, 200], Effects(
-            [['21-23', '26-29'], ['21-23', '26-29'], ['21-23', '26-29'], ['21-23', '26-29']],
-            [['25-28', '31-35'], ['25-28', '31-35'], ['25-28', '31-35'], ['25-28', '31-35']],
-            [EARTH, FIRE, WATER, AIR],
-            steals=[True, True, True, True],
-        ), is_linked=(2, 'Perfidious Boomerang')),
-        Spell('Darkli Moon Hammer', [80, 147], Effects(
-            [['17-20', '21-25']],
-            [['21-24', '26-30']],
-            [AIR],
-        ), is_linked=(2, 'Moon Hammer')),
-        Spell('Mantiscroc', [60, 127, 194], Effects(
-            [['14-17', '18-22', '20-24']],
-            [['18-22', '23-27', '25-30']],
-            [EARTH],
-        ), is_linked=(1, 'Dart Mocles')),
-        Spell('Dart Mocles', [127, 194], Effects(
-            [['20-23', '22-27']],
-            [['25-29', '28-33']],
-            [EARTH],
-        ), is_linked=(2, 'Mantiscroc')),
+        Spell("Grunob's Lesson", [87, 154], Effects(
+            [['15-18', '19-22']],
+            [['19-22', '23-26']],
+            [FIRE],
+        ), is_linked=(2, "Grunob's Lightning Strike")),
         Spell('Kannibubble', [40, 107, 174], Effects(
             [['12-15', '15-19', '19-23']],
             [['16-19', '20-24', '24-29']],
@@ -3930,11 +3913,64 @@ DAMAGE_SPELLS = {
             [['20-23', '25-29']],
             [WATER],
         ), is_linked=(2, 'Kannibubble')),
-        Spell("Grunob's Lesson", [87, 154], Effects(
-            [['15-18', '19-22']],
-            [['19-22', '23-26']],
-            [FIRE],
-        ), is_linked=(2, "Grunob's Lightning Strike")),
+        Spell('Mantiscroc', [60, 127, 194], Effects(
+            [['14-17', '18-22', '20-24']],
+            [['18-22', '23-27', '25-30']],
+            [EARTH],
+        ), is_linked=(1, 'Dart Mocles')),
+        Spell('Dart Mocles', [127, 194], Effects(
+            [['20-23', '22-27']],
+            [['25-29', '28-33']],
+            [EARTH],
+        ), is_linked=(2, 'Mantiscroc')),
+        Spell('Moon Hammer', [80, 147], Effects(
+            [['15-19', '19-23']],
+            [['20-24', '24-30']],
+            [AIR],
+        ), is_linked=(1, 'Darkli Moon Hammer')),
+        Spell('Darkli Moon Hammer', [80, 147], Effects(
+            [['17-20', '21-25']],
+            [['21-24', '26-30']],
+            [AIR],
+        ), is_linked=(2, 'Moon Hammer')),
+        Spell('Perfidious Boomerang', [100, 200], Effects(
+            [['21-23', '26-29'], ['21-23', '26-29'], ['21-23', '26-29'], ['21-23', '26-29']],
+            [['25-28', '31-35'], ['25-28', '31-35'], ['25-28', '31-35'], ['25-28', '31-35']],
+            [EARTH, FIRE, WATER, AIR],
+            steals=[True, True, True, True],
+        ), is_linked=(1, 'Diamondine Boomerang')),
+        Spell('Diamondine Boomerang', [100, 200], Effects(
+            [['21-23', '26-29'], ['21-23', '26-29'], ['21-23', '26-29'], ['21-23', '26-29']],
+            [['25-28', '31-35'], ['25-28', '31-35'], ['25-28', '31-35'], ['25-28', '31-35']],
+            [EARTH, FIRE, WATER, AIR],
+            steals=[True, True, True, True],
+        ), is_linked=(2, 'Perfidious Boomerang')),
+        Spell('Weapon Skill', [1], Effects(
+            [['300']],
+            [['350']],
+            ['buff_pow_weapon'],
+        )),
+        Spell('Ebony Dofus', [180], Effects(
+            [['14-16'], ['14-16'], ['14-16'], ['14-16']],
+            None,
+            [EARTH, FIRE, WATER, AIR],
+        )),
+        Spell("Crocobur's Appetite", [1], Effects(
+            [['16-20']],
+            None,
+            [NEUTRAL],
+            steals=[True],
+        )),
+        Spell('Pestilential Fog', [200], Effects(
+            [['16-18'], ['16-18'], ['16-18'], ['16-18'], ['16-18']],
+            None,
+            [NEUTRAL, EARTH, FIRE, WATER, AIR],
+        )),
+        Spell('Scurvion Toxicity', [200], Effects(
+            [['6-8'], ['6-8'], ['6-8'], ['6-8'], ['6-8']],
+            None,
+            [NEUTRAL, EARTH, FIRE, WATER, AIR],
+        )),
     ],
     'Cra': [
         Spell('Optical Arrow', [1, 66, 132], Effects(
