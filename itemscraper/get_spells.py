@@ -9,6 +9,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Mapping, MutableMapping, Optional, Sequence
 
+from default_damage_spells import DEFAULT_DAMAGE_SPELL_NAMES
+
 LANGUAGES: Sequence[str] = ("en", "fr", "es", "pt", "de")
 RAW_ROOT = Path("itemscraper/raw")
 DEFAULT_OUTPUT = Path("itemscraper/transformed_spells.json")
@@ -545,7 +547,40 @@ class SpellTransformer:
             class_data["spells"].sort(
                 key=lambda spell: (spell.get("order") or 0, spell.get("ankama_id") or 0)
             )
+
+        default_spells = self._build_default_spells(payload)
+        if default_spells:
+            grouped["default"] = {
+                "breed_id": None,
+                "names": {"en": "default"},
+                "spells": default_spells,
+            }
         return grouped
+
+    def _build_default_spells(self, payload: Sequence[Mapping[str, Any]]) -> List[Dict[str, Any]]:
+        lookup: Dict[str, Mapping[str, Any]] = {}
+        for entry in payload:
+            name = (entry.get("name_en") or "").strip()
+            if not name:
+                continue
+            lookup.setdefault(name.lower(), entry)
+
+        spells: List[Dict[str, Any]] = []
+        missing: List[str] = []
+        for name in DEFAULT_DAMAGE_SPELL_NAMES:
+            entry = lookup.get(name.lower())
+            if not entry:
+                missing.append(name)
+                continue
+            spells.append(self._spell_for_class(entry))
+
+        if missing:
+            print(
+                "Warning: the following default spells were not found in the payload: "
+                + ", ".join(missing),
+                file=sys.stderr,
+            )
+        return spells
 
     def write_class_map(self, class_map: Mapping[str, Any], output_path: Path) -> None:
         output_path.parent.mkdir(parents=True, exist_ok=True)
