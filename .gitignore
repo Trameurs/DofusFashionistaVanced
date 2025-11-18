@@ -9,3 +9,5 @@ fashionsite/staticfiles/chardata/spells/Con.png
 migrated_data.json
 itemscraper/transformed_spells.json
 itemscraper/transformed_class_spells.json
+itemscraper/spell_icons_test
+itemscraper/spell_images
