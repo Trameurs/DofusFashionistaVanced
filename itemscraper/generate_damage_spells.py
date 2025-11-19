@@ -34,6 +34,7 @@ STAT_BUFF_CHARACTERISTICS = {
     13: "buff_cha",
     14: "buff_agi",
     15: "buff_int",
+    25: "buff_pow",
 }
 
 BUFF_SORT_ORDER = {
@@ -42,6 +43,7 @@ BUFF_SORT_ORDER = {
     "buff_cha": 2,
     "buff_agi": 3,
     "buff_vit": 4,
+    "buff_pow": 5,
 }
 
 BASE_CLASSES = [
@@ -465,16 +467,20 @@ def _extract_stack_limit(spell: Mapping[str, Any]) -> Optional[int]:
 
 
 def convert_spell(spell: Mapping[str, Any]) -> Optional[SpellEntry]:
-    damage = spell.get("damage_templates")
-    if not damage:
-        return None
+    damage = spell.get("damage_templates") or {}
     normal_rows = damage.get("normal") or []
-    if not normal_rows:
-        return None
     crit_rows = damage.get("critical") or []
-    non_crit = [[str(value) for value in row.get("ranges", [])] for row in normal_rows]
-    crit = [[str(value) for value in row.get("ranges", [])] for row in crit_rows] if crit_rows else None
-    elements = [
+
+    non_crit: List[List[str]] = [
+        [str(value) for value in row.get("ranges", [])]
+        for row in normal_rows
+    ]
+    crit: Optional[List[List[str]]] = (
+        [[str(value) for value in row.get("ranges", [])] for row in crit_rows]
+        if crit_rows
+        else None
+    )
+    elements: List[str] = [
         ELEMENT_LITERAL.get(row.get("element"), repr(row.get("element")))
         for row in normal_rows
     ]
@@ -488,14 +494,17 @@ def convert_spell(spell: Mapping[str, Any]) -> Optional[SpellEntry]:
     if buff_rows:
         for row in buff_rows:
             non_crit.append(row["normal"])
-            if crit is not None:
-                if row["critical"] is not None and len(row["critical"]) == len(level_requirements):
-                    crit.append(row["critical"])
-                else:
-                    crit.append(list(row["normal"]))
+            if row["critical"] is not None and len(row["critical"]) == len(level_requirements):
+                if crit is None:
+                    crit = []
+                crit.append(row["critical"])
+            elif crit is not None:
+                crit.append(list(row["normal"]))
             elements.append(row["element"])
         if steals is not None:
             steals.extend([False] * len(buff_rows))
+    if not non_crit:
+        return None
     stacks = _extract_stack_limit(spell)
     variant_link = spell.get("variant_link")
     is_linked = _convert_variant_link(variant_link)
