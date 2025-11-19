@@ -4001,7 +4001,7 @@ DAMAGE_SPELLS = {
             [['150', '220', '300']],
             [['170', '250', '350']],
             ['buff_pow'],
-        ), is_linked=(1, 'Piercing Shots')),
+        )),
         Spell('Atonement Arrow', [75, 142], Effects(
             [['28-30', '35-37']],
             [['34-36', '42-44']],
@@ -4162,7 +4162,7 @@ DAMAGE_SPELLS = {
              ['100', '200', '400']],
             None,
             ['buff_str', 'buff_int', 'buff_cha', 'buff_agi'],
-        ), is_linked=(1, "Ecaflip's Tarot")),
+        )),
         Spell('Feline Spirit', [65, 131, 198], Effects(
             [['19-21', '26-29', '31-34']],
             [['26-0', '35-0', '41-0']],
@@ -4283,7 +4283,7 @@ DAMAGE_SPELLS = {
             [['30', '60', '90']],
             None,
             ['buff_pow'],
-        ), stacks=3, is_linked=(1, 'Summoning Stroke')),
+        ), stacks=3),
         Spell('Reflex', [1, 66, 132], Effects(
             [['8-10', '11-13', '14-17']],
             [['12-0', '16-0', '20-0']],
@@ -4413,7 +4413,7 @@ DAMAGE_SPELLS = {
              ['50-0', '55-0', '60-0']],
             [AIR, WATER, FIRE, EARTH, AIR, WATER, FIRE, EARTH, AIR, WATER, FIRE, EARTH, AIR, WATER, FIRE, EARTH, AIR, WATER, FIRE, EARTH, AIR, WATER, FIRE, EARTH, AIR, WATER, FIRE, EARTH, AIR, WATER, FIRE, EARTH],
             steals=[True, True, True, True, False, False, False, False, True, True, True, True, False, False, False, False, True, True, True, True, False, False, False, False, True, True, True, True, False, False, False, False],
-        ), is_linked=(1, 'All or Nothing')),
+        )),
         Spell('Nerve', [135], Effects(
             [['44-48'], ['26-28']],
             [['58-0'], ['33-0']],
@@ -4562,12 +4562,12 @@ DAMAGE_SPELLS = {
             [['150']],
             None,
             ['buff_pow'],
-        ), is_linked=(2, 'Distribution')),
+        )),
         Spell('Cabal', [40, 107, 174], Effects(
             [['100', '150', '200']],
             None,
             ['buff_pow'],
-        ), is_linked=(1, 'Resilience')),
+        )),
         Spell('Composure', [135], Effects(
             [['32-36']],
             [['39-43']],
@@ -4619,7 +4619,7 @@ DAMAGE_SPELLS = {
             [['150']],
             None,
             ['buff_pow'],
-        ), is_linked=(2, 'Life-Giving Word')),
+        )),
         Spell('Commotion', [130, 197], Effects(
             [['23-25', '25-28'], ['23-25', '25-28'], ['23-25', '25-28']],
             [['27-29', '30-33'], ['27-29', '30-33'], ['27-29', '30-33']],
@@ -4765,7 +4765,7 @@ DAMAGE_SPELLS = {
             [['200']],
             None,
             ['buff_pow'],
-        ), is_linked=(2, 'Clumsiness')),
+        )),
         Spell('Expiry', [75, 142], Effects(
             [['33-35', '41-44'], ['33-35', '41-44']],
             [['39-42', '49-53'], ['39-42', '49-53']],
@@ -4790,7 +4790,7 @@ DAMAGE_SPELLS = {
             [['50', '100', '150']],
             None,
             ['buff_pow'],
-        ), is_linked=(1, 'Wandering')),
+        )),
         Spell('Auriferous Shovel', [45, 112, 179], Effects(
             [['21-23', '27-31', '33-37']],
             [['25-28', '33-37', '40-44']],
@@ -4830,7 +4830,7 @@ DAMAGE_SPELLS = {
             [['20', '30', '50']],
             None,
             ['buff_pow'],
-        ), is_linked=(1, 'Decadence')),
+        )),
         Spell('Placer Mining', [100, 167], Effects(
             [['23-26', '28-32'], ['7-9', '10-12']],
             [['27-31', '34-38'], ['10-12', '13-15']],
@@ -4875,7 +4875,7 @@ DAMAGE_SPELLS = {
             [['20']],
             None,
             ['buff_pow'],
-        ), is_linked=(2, 'Bribery')),
+        )),
         Spell('Bankruptcy', [60, 127, 194], Effects(
             [['26-29', '32-36', '36-40'], ['30-33', '37-41', '41-45']],
             [['31-35', '39-44', '43-48'], ['35-39', '44-49', '49-54']],
@@ -4952,12 +4952,12 @@ DAMAGE_SPELLS = {
             [['100', '150', '200']],
             None,
             ['buff_pow'],
-        ), is_linked=(1, 'Truce')),
+        )),
         Spell('Reinforced Protection', [200], Effects(
             [['200'], ['200'], ['200'], ['200']],
             None,
             ['buff_str', 'buff_int', 'buff_cha', 'buff_agi'],
-        ), is_linked=(2, 'Feca Shield')),
+        )),
         Spell("Shepherd's Crook", [180], Effects(
             [['18-20']],
             [['22-24']],
@@ -5114,7 +5114,7 @@ DAMAGE_SPELLS = {
             [['7-9'], ['7-9'], ['7-9'], ['7-9']],
             [['10-12'], ['10-12'], ['10-12'], ['10-12']],
             [WATER, EARTH, FIRE, AIR],
-        ), is_linked=(2, 'Sonar')),
+        )),
         Spell('Spyglass', [1, 66, 132], Effects(
             [['15-17', '20-23', '25-29']],
             [['18-21', '24-27', '30-35']],
@@ -5262,12 +5262,12 @@ DAMAGE_SPELLS = {
              ['25-34', '33-42', '41-50'],
              ['25-34', '33-42', '41-50']],
             [EARTH, FIRE, WATER, AIR],
-        ), is_linked=(1, 'Runic Repulsion')),
+        )),
         Spell('Contribution', [55, 122, 189], Effects(
             [['150', '150', '150']],
             None,
             ['buff_pow'],
-        ), stacks=2, is_linked=(1, 'Creation')),
+        ), stacks=2),
         Spell('Celestial Wave', [105, 172], Effects(
             [['11-13', '14-16'], ['11-13', '14-16']],
             [['14-16', '17-19'], ['14-16', '17-19']],
@@ -5327,7 +5327,7 @@ DAMAGE_SPELLS = {
             [['10-0'], ['10-0'], ['10-0'], ['10-0']],
             None,
             [WATER, FIRE, AIR, EARTH],
-        ), is_linked=(2, 'Runic Treatment')),
+        )),
         Spell('Tectonic Breach', [130, 197], Effects(
             [['12-14', '14-16']],
             [['15-17', '17-19']],
@@ -5389,7 +5389,7 @@ DAMAGE_SPELLS = {
             [['150', '200', '300']],
             [['180', '240', '350']],
             ['buff_pow'],
-        ), is_linked=(1, 'Prosecution')),
+        )),
         Spell('Destructive Sword', [35, 102, 169], Effects(
             [['20-23', '26-29', '32-36']],
             [['24-27', '31-35', '38-43']],
@@ -5562,12 +5562,12 @@ DAMAGE_SPELLS = {
              ['8-9', '9-10', '10-11'],
              ['8-9', '9-10', '10-11']],
             [FIRE, EARTH, WATER, AIR],
-        ), is_linked=(1, 'Pivot')),
+        )),
         Spell('Masquerade', [185], Effects(
             [['25-0'], ['25-0'], ['25-0'], ['25-0']],
             None,
             [NEUTRAL, NEUTRAL, NEUTRAL, NEUTRAL],
-        ), is_linked=(2, 'Ardour')),
+        )),
         Spell('Agular', [135], Effects(
             [['30-34']],
             [['36-41']],
@@ -5608,7 +5608,7 @@ DAMAGE_SPELLS = {
             [['250']],
             None,
             ['buff_pow'],
-        ), is_linked=(2, 'Trance')),
+        )),
         Spell('Ronda', [180], Effects(
             [['38-42']],
             [['46-50']],
@@ -5677,12 +5677,12 @@ DAMAGE_SPELLS = {
             [['18-20', '22-25']],
             [['21-24', '26-30']],
             [AIR],
-        ), is_linked=(2, 'Gobball')),
+        )),
         Spell('Chtiger Claws', [120, 187], Effects(
             [['21-23', '26-29']],
             [['25-28', '31-35']],
             [FIRE],
-        ), is_linked=(2, 'Tofu')),
+        )),
         Spell('Piranya Teeth', [1, 68, 134], Effects(
             [['15-17', '20-22', '25-28'], ['15-17', '20-22', '25-28']],
             [['18-20', '23-26', '30-34'], ['18-20', '23-26', '30-34']],
@@ -5698,7 +5698,7 @@ DAMAGE_SPELLS = {
             [['22-24', '24-27']],
             [['26-29', '29-32']],
             [EARTH],
-        ), is_linked=(2, 'Sweetoad')),
+        )),
         Spell('Swamp', [110, 177], Effects(
             [['22-24', '27-30']],
             [['26-29', '32-36']],
@@ -5738,7 +5738,7 @@ DAMAGE_SPELLS = {
             [['15-17']],
             [['18-20']],
             [WATER],
-        ), is_linked=(2, 'Dragoone')),
+        )),
         Spell('Fangs of Boowolf', [95, 162], Effects(
             [['26-28', '29-31']],
             [['29-31', '35-37']],
@@ -5810,7 +5810,7 @@ DAMAGE_SPELLS = {
             [['50', '70', '100']],
             None,
             ['buff_pow'],
-        ), stacks=2, is_linked=(1, 'Snuggletooth')),
+        ), stacks=2),
         Spell('Jaw', [95, 162], Effects(
             [['23-25', '28-31']],
             [['27-30', '34-37']],
@@ -5872,7 +5872,7 @@ DAMAGE_SPELLS = {
             [['30']],
             None,
             ['buff_pow'],
-        ), is_linked=(2, 'Bark')),
+        )),
         Spell('Carving Up', [110, 177], Effects(
             [['34-38', '40-45']],
             [['41-46', '48-54']],
@@ -6002,7 +6002,7 @@ DAMAGE_SPELLS = {
             [['50', '50', '50']],
             None,
             ['buff_pow'],
-        ), is_linked=(1, 'Drunkenness')),
+        )),
         Spell('Alcoshu', [130, 197], Effects(
             [['13-15', '15-17']],
             [['16-18', '18-20']],
@@ -6018,7 +6018,7 @@ DAMAGE_SPELLS = {
             [['7-0'], ['7-0'], ['7-0'], ['7-0'], ['7-0']],
             [['10-0'], ['10-0'], ['10-0'], ['10-0'], ['10-0']],
             [NEUTRAL, EARTH, FIRE, WATER, AIR],
-        ), is_linked=(2, 'Pandiniuras')),
+        )),
         Spell('Explosive Palm', [1, 67, 133], Effects(
             [['12-14', '15-17', '20-22'], ['12-14', '15-17', '20-22']],
             [['15-17', '19-21', '24-26'], ['15-17', '19-21', '24-26']],
@@ -6176,17 +6176,17 @@ DAMAGE_SPELLS = {
             [['50', '100', '150']],
             None,
             ['buff_pow'],
-        ), is_linked=(1, 'Blood Pact')),
+        )),
         Spell('Transfusion', [50, 117, 184], Effects(
             [['8-0', '9-0', '10-0']],
             None,
             [NEUTRAL],
-        ), is_linked=(1, 'Blood Ties')),
+        )),
         Spell('Retribution', [90, 157], Effects(
             [['30-0', '35-0']],
             [['30-0', '35-0']],
             [NEUTRAL],
-        ), is_linked=(1, 'Bloodthirsty Madness')),
+        )),
         Spell('Condensation', [35, 102, 169], Effects(
             [['13-16', '17-20', '21-25']],
             [['17-20', '21-25', '26-31']],
@@ -6249,7 +6249,7 @@ DAMAGE_SPELLS = {
             [['15-0']],
             None,
             [NEUTRAL],
-        ), is_linked=(2, 'Libation')),
+        )),
         Spell('Hemorrhage', [1, 67, 133], Effects(
             [['13-16', '17-20', '22-26']],
             [['17-20', '21-24', '27-31']],
@@ -6479,7 +6479,7 @@ DAMAGE_SPELLS = {
             [['23-26', '27-30']],
             [WATER],
             steals=[True],
-        ), is_linked=(2, 'Tricky Trap')),
+        )),
         Spell('Toxic Injection', [165], Effects(
             [['28-32']],
             [['34-38']],
@@ -6489,12 +6489,12 @@ DAMAGE_SPELLS = {
             [['32-36', '36-40'], ['32-36', '36-40']],
             None,
             [AIR, AIR],
-        ), is_linked=(2, 'Miry Trap')),
+        )),
         Spell('Misconstrual', [170], Effects(
             [['1-0']],
             None,
             [NEUTRAL],
-        ), is_linked=(2, 'Fear')),
+        )),
         Spell('Perquisition', [150], Effects(
             [['13-15']],
             [['16-18']],
@@ -6509,12 +6509,12 @@ DAMAGE_SPELLS = {
             [['1-0']],
             None,
             [NEUTRAL],
-        ), is_linked=(2, 'Evasion')),
+        )),
         Spell('Break-In', [135], Effects(
             [['15-17']],
             [['19-21']],
             [FIRE],
-        ), stacks=2, is_linked=(2, 'Malevolent Trap')),
+        ), stacks=2),
         Spell('Deviousness', [1, 67, 133], Effects(
             [['17-19', '22-24', '28-31']],
             [['20-22', '26-29', '34-37']],
@@ -6629,7 +6629,7 @@ DAMAGE_SPELLS = {
             [['6-0'], ['6-0'], ['6-0'], ['6-0']],
             [['7-0'], ['7-0'], ['7-0'], ['7-0']],
             [FIRE, WATER, AIR, EARTH],
-        ), stacks=6, is_linked=(2, 'Synchro')),
+        ), stacks=6),
         Spell('Harmpit', [180], Effects(
             [['12-14'], ['30-32']],
             [['15-17'], ['36-38']],

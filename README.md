@@ -107,6 +107,38 @@ cd ..
 python3 resize_images.py
 ```
 
+## Refresh spell icons
+
+Use the scripts in `itemscraper/` whenever Ankama publishes new spell art. All commands below must be executed from the repository root.
+
+1. **Download the latest raw dump**
+   ```powershell
+   python itemscraper/download_raw_data.py --tag 3.3.18.17 --filter spell_images --filter spells --filter translations
+   ```
+   *Set `--tag` to the datacenter tag you want (see https://github.com/dofusdude/dofus3-main/releases). The script writes every asset into `itemscraper/raw/<tag>/`. Provide a `GITHUB_TOKEN` if you regularly hit GitHub's unauthenticated rate limit.*
+2. **Regenerate spell metadata** (keeps English names up to date for the icon filenames).
+   ```powershell
+   python itemscraper/get_spells.py --tag 3.3.18.17 --output itemscraper/transformed_spells.json
+   ```
+   *Reuse the same `--tag` you downloaded above. The default output path already matches what the image downloader expects, so you usually don't need to change it.*
+3. **Extract and mirror the PNGs**
+   ```powershell
+   python itemscraper/download_spell_images.py --version 3.3.18.17 --size 96 --scope damage --prune
+   ```
+   This script:
+   - Unpacks `spell_images_<size>.tar.gz` from `itemscraper/raw/<version>/` into `itemscraper/spell_images/<size>`
+   - Renames each icon using the latest English spell name (falling back to `spell_<ankama_id>` when needed)
+   - Copies them into `fashionsite/chardata/static/chardata/spells` **and** mirrors them to `fashionsite/staticfiles/chardata/spells`
+   - Removes any stale files in those destinations when `--prune` is supplied
+
+   Pass `--scope all` if you also want non-damage/class spells, `--size 48` for the smaller archive, or `--overwrite` if you need to force-refresh already existing PNGs. You can disable the staticfiles mirror with `--extra-static-dirs` and no values.
+
+4. **Verify the assets**
+   - Spot-check a few new spells inside both static directories
+   - Run your preferred Django collectstatic/static hosting step if you're syncing to a live server
+
+When everything looks good, commit the updated `itemscraper/transformed_spells.json` and any changed PNGs so the frontend picks up the new artwork.
+
 # Run Dofus Fashionista
 
 Running Dofus Fashionista will create/populate the database the first time you run it or recreate it if you used the Scraper.

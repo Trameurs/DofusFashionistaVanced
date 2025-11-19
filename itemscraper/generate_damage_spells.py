@@ -220,6 +220,7 @@ def build_spell_map(class_data: Mapping[str, Any], all_spells: Sequence[Mapping[
     if not default_entries:
         default_entries = extras
     spells_by_class = {"default": default_entries, **spells_by_class}
+    _prune_missing_links(spells_by_class)
     return spells_by_class
 
 
@@ -292,6 +293,14 @@ def _merge_spell_lists(
         merged.append(entry)
         seen.add(entry.name)
     return merged
+
+
+def _prune_missing_links(spells_by_class: Mapping[str, List[SpellEntry]]) -> None:
+    for entries in spells_by_class.values():
+        names = {entry.name for entry in entries}
+        for entry in entries:
+            if entry.is_linked and entry.is_linked[1] not in names:
+                entry.is_linked = None
 
 
 def _select_named_defaults(
