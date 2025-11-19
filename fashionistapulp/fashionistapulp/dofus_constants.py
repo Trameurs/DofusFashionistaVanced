@@ -4908,11 +4908,36 @@ DAMAGE_SPELLS = {
             [['21-24', '27-31', '35-40']],
             [EARTH],
         ), stacks=2, is_linked=(1, 'Tetany')),
+        Spell('Scorched Dirt', [60, 127, 194], Effects(
+            [['22-25', '27-30', '27-30'], ['0-0', '0-0', '30-34']],
+            None,
+            [FIRE, FIRE],
+        ), is_linked=(1, 'Lookout')),
+        Spell('Dirt Floor', [55, 122, 189], Effects(
+            [['19-22', '25-29', '25-29'], ['0-0', '0-0', '29-33']],
+            None,
+            [EARTH, EARTH],
+        ), is_linked=(1, 'Refuge')),
+        Spell('Distrust', [85, 152], Effects(
+            [['17-18', '21-22'], ['17-18', '21-22'], ['17-18', '21-22'], ['17-18', '21-22']],
+            None,
+            [EARTH, FIRE, WATER, AIR],
+        ), is_linked=(1, 'Barrier')),
         Spell('Shiver', [30, 97, 164], Effects(
             [['16-18', '21-23', '26-29']],
             [['20-22', '25-28', '31-35']],
             [AIR],
         ), is_linked=(1, 'Sudden Shower')),
+        Spell('Valley', [50, 117, 184], Effects(
+            [['18-20', '24-27', '28-32']],
+            None,
+            [WATER],
+        ), is_linked=(1, 'Black Ice')),
+        Spell('Prairie', [45, 112, 179], Effects(
+            [['20-22', '26-29', '31-35']],
+            None,
+            [AIR],
+        ), is_linked=(1, 'Pastureland')),
         Spell('Lethargy', [20, 87, 154], Effects(
             [['18-20', '23-25', '28-31']],
             [['21-23', '27-30', '34-37']],
@@ -4978,6 +5003,11 @@ DAMAGE_SPELLS = {
             [['35-39', '43-48']],
             [EARTH],
         ), is_linked=(2, 'Backlash')),
+        Spell('Barrier', [195], Effects(
+            [['21-22'], ['21-22'], ['21-22'], ['21-22'], ['0-0'], ['0-0'], ['0-0'], ['0-0']],
+            None,
+            [EARTH, FIRE, WATER, AIR, EARTH, FIRE, WATER, AIR],
+        ), is_linked=(2, 'Distrust')),
         Spell('Refuge', [165], Effects(
             [['32-36']],
             [['38-43']],

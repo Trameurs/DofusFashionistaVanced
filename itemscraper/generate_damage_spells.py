@@ -68,6 +68,7 @@ BASE_CLASSES = [
     "Forgelance",
 ]
 CHARACTER_CLASSES = sorted(BASE_CLASSES)
+GLYPH_EFFECT_IDS = {401, 402, 1091, 1165}
 
 
 @dataclass
@@ -182,12 +183,26 @@ def load_json(path: Path) -> Any:
         return json.load(handle)
 
 
+def _build_spell_lookup(all_spells: Sequence[Mapping[str, Any]]) -> Dict[int, Mapping[str, Any]]:
+    lookup: Dict[int, Mapping[str, Any]] = {}
+    for spell in all_spells:
+        try:
+            ankama_id = int(spell.get("ankama_id"))
+        except (TypeError, ValueError):
+            continue
+        if ankama_id <= 0:
+            continue
+        lookup[ankama_id] = spell
+    return lookup
+
+
 def build_spell_map(class_data: Mapping[str, Any], all_spells: Sequence[Mapping[str, Any]]) -> Dict[str, List[SpellEntry]]:
     breed_lookup = _build_breed_lookup(class_data)
+    spell_lookup = _build_spell_lookup(all_spells)
     spells_by_class: Dict[str, List[SpellEntry]] = {cls: [] for cls in CHARACTER_CLASSES}
 
     for spell in sorted(all_spells, key=_sort_key):
-        converted = convert_spell(spell)
+        converted = convert_spell(spell, spell_lookup=spell_lookup)
         if not converted:
             continue
         matched_classes = _classes_for_spell(spell, breed_lookup)
@@ -198,8 +213,8 @@ def build_spell_map(class_data: Mapping[str, Any], all_spells: Sequence[Mapping[
     for class_name in spells_by_class:
         spells_by_class[class_name].sort(key=lambda entry: (entry.order, entry.ankama_id))
 
-    default_entries = _select_named_defaults(all_spells)
-    extras = _extract_default_entries(class_data)
+    default_entries = _select_named_defaults(all_spells, spell_lookup)
+    extras = _extract_default_entries(class_data, spell_lookup)
     if extras:
         default_entries = _merge_spell_lists(default_entries, extras)
     if not default_entries:
@@ -253,13 +268,13 @@ def _classes_for_spell(spell: Mapping[str, Any], breed_lookup: Mapping[int, str]
     return classes
 
 
-def _extract_default_entries(class_data: Mapping[str, Any]) -> List[SpellEntry]:
+def _extract_default_entries(class_data: Mapping[str, Any], spell_lookup: Mapping[int, Mapping[str, Any]]) -> List[SpellEntry]:
     payload = class_data.get("default")
     if not payload:
         return []
     entries: List[SpellEntry] = []
     for spell in sorted(payload.get("spells", []), key=_sort_key):
-        converted = convert_spell(spell)
+        converted = convert_spell(spell, spell_lookup=spell_lookup)
         if converted:
             entries.append(converted)
     return entries
@@ -279,7 +294,10 @@ def _merge_spell_lists(
     return merged
 
 
-def _select_named_defaults(all_spells: Sequence[Mapping[str, Any]]) -> List[SpellEntry]:
+def _select_named_defaults(
+    all_spells: Sequence[Mapping[str, Any]],
+    spell_lookup: Mapping[int, Mapping[str, Any]],
+) -> List[SpellEntry]:
     lookup: Dict[str, List[Mapping[str, Any]]] = {}
     for spell in all_spells:
         name = (spell.get("name_en") or "").strip().lower()
@@ -292,7 +310,7 @@ def _select_named_defaults(all_spells: Sequence[Mapping[str, Any]]) -> List[Spel
     for spec in DEFAULT_DAMAGE_SPELL_SPECS:
         spell = _choose_default_candidate(lookup.get(spec.name.lower(), []), spec)
         if spell:
-            converted = convert_spell(spell)
+            converted = convert_spell(spell, spell_lookup=spell_lookup)
             if converted:
                 entries.append(converted)
                 continue
@@ -466,10 +484,112 @@ def _extract_stack_limit(spell: Mapping[str, Any]) -> Optional[int]:
     return max(stack_values)
 
 
-def convert_spell(spell: Mapping[str, Any]) -> Optional[SpellEntry]:
+def _derive_glyph_damage(
+    spell: Mapping[str, Any],
+    spell_lookup: Mapping[int, Mapping[str, Any]],
+    level_count: int,
+) -> Optional[Dict[str, List[Dict[str, Any]]]]:
+    if level_count <= 0:
+        return None
+    sources = _glyph_damage_sources(spell, spell_lookup)
+    if not sources:
+        return None
+
+    normal_rows: List[Dict[str, Any]] = []
+    critical_rows: List[Dict[str, Any]] = []
+    for _, linked_spell in sources:
+        damage = linked_spell.get("damage_templates") or {}
+        normal_rows.extend(_copy_damage_rows(damage.get("normal"), level_count))
+        critical_rows.extend(_copy_damage_rows(damage.get("critical"), level_count))
+
+    if not normal_rows:
+        return None
+    return {"normal": normal_rows, "critical": critical_rows}
+
+
+def _glyph_damage_sources(
+    spell: Mapping[str, Any],
+    spell_lookup: Mapping[int, Mapping[str, Any]],
+) -> List[tuple]:
+    candidates: List[tuple] = []
+    for level in spell.get("levels") or []:
+        for effect_block in (level.get("effects") or []), (level.get("critical_effects") or []):
+            for effect in effect_block or []:
+                if effect.get("effect_id") not in GLYPH_EFFECT_IDS:
+                    continue
+                dice = effect.get("dice") or {}
+                for key in ("min", "max"):
+                    linked_id = dice.get(key)
+                    if not isinstance(linked_id, int):
+                        continue
+                    if linked_id not in spell_lookup:
+                        continue
+                    candidates.append((effect.get("order") or 0, linked_id))
+
+    ordered: List[tuple] = []
+    seen: Set[int] = set()
+    for order, spell_id in sorted(candidates):
+        if spell_id in seen:
+            continue
+        seen.add(spell_id)
+        linked_spell = spell_lookup.get(spell_id)
+        if not linked_spell:
+            continue
+        damage = linked_spell.get("damage_templates") or {}
+        if not (damage.get("normal") or damage.get("critical")):
+            continue
+        ordered.append((order, linked_spell))
+    return ordered
+
+
+def _copy_damage_rows(rows: Optional[Sequence[Mapping[str, Any]]], level_count: int) -> List[Dict[str, Any]]:
+    if not rows or level_count <= 0:
+        return []
+    copied: List[Dict[str, Any]] = []
+    for row in rows:
+        copied.append(
+            {
+                "element": row.get("element"),
+                "steals": row.get("steals"),
+                "ranges": _fit_ranges(list(row.get("ranges", [])), level_count),
+            }
+        )
+    return copied
+
+
+def _fit_ranges(source: List[Optional[str]], target_len: int) -> List[str]:
+    if target_len <= 0:
+        return []
+    result: List[str] = []
+    last_value: Optional[str] = None
+    for idx in range(target_len):
+        value = source[idx] if idx < len(source) else None
+        if value:
+            last_value = value
+            result.append(value)
+        else:
+            result.append(last_value or "0-0")
+    return result
+
+
+def convert_spell(
+    spell: Mapping[str, Any],
+    *,
+    spell_lookup: Optional[Mapping[int, Mapping[str, Any]]] = None,
+) -> Optional[SpellEntry]:
     damage = spell.get("damage_templates") or {}
+    level_requirements = spell.get("level_requirements") or damage.get("levels")
+    if not level_requirements:
+        return None
+    level_count = len(level_requirements)
+
     normal_rows = damage.get("normal") or []
     crit_rows = damage.get("critical") or []
+    if not normal_rows and spell_lookup:
+        glyph_damage = _derive_glyph_damage(spell, spell_lookup, level_count)
+        if glyph_damage:
+            normal_rows = glyph_damage["normal"]
+            crit_rows = glyph_damage["critical"]
 
     non_crit: List[List[str]] = [
         [str(value) for value in row.get("ranges", [])]
@@ -486,9 +606,6 @@ def convert_spell(spell: Mapping[str, Any]) -> Optional[SpellEntry]:
     ]
     steals_raw = [bool(row.get("steals")) for row in normal_rows]
     steals = steals_raw if any(steals_raw) else None
-    level_requirements = spell.get("level_requirements") or damage.get("levels")
-    if not level_requirements:
-        return None
 
     buff_rows = _extract_stat_buff_rows(spell, len(level_requirements))
     if buff_rows:
