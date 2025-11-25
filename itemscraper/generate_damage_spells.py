@@ -83,6 +83,7 @@ class SpellEntry:
     order: int
     ankama_id: int
     stacks: Optional[int] = None
+    heals: Optional[List[bool]] = None
 
 
 LEGACY_DEFAULT_SPELLS: Dict[str, SpellEntry] = {
@@ -615,6 +616,8 @@ def convert_spell(
     ]
     steals_raw = [bool(row.get("steals")) for row in normal_rows]
     steals = steals_raw if any(steals_raw) else None
+    heals_raw = [bool(row.get("heals")) for row in normal_rows]
+    heals = heals_raw if any(heals_raw) else None
 
     buff_rows = _extract_stat_buff_rows(spell, len(level_requirements))
     if buff_rows:
@@ -629,6 +632,8 @@ def convert_spell(
             elements.append(row["element"])
         if steals is not None:
             steals.extend([False] * len(buff_rows))
+        if heals is not None:
+            heals.extend([False] * len(buff_rows))
     if not non_crit:
         return None
     stacks = _extract_stack_limit(spell)
@@ -645,6 +650,7 @@ def convert_spell(
         crit_ranges=crit,
         elements=elements,
         steals=steals,
+    heals=heals,
         is_linked=is_linked,
         stacks=stacks,
         order=order,
@@ -703,6 +709,9 @@ def render_spell(entry: SpellEntry) -> List[str]:
     if entry.steals is not None:
         steals_literal = "[" + ", ".join("True" if val else "False" for val in entry.steals) + "]"
         lines.append(f"{indent}    steals={steals_literal},")
+    if entry.heals is not None:
+        heals_literal = "[" + ", ".join("True" if val else "False" for val in entry.heals) + "]"
+        lines.append(f"{indent}    heals={heals_literal},")
     closing = f"{indent})"
     extra_args: List[str] = []
     if entry.stacks not in (None, 1):

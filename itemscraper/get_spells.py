@@ -347,8 +347,10 @@ class SpellTransformer:
                 if not dice:
                     continue
                 desc_en = (metadata.get("description") or {}).get("en", "")
-                steals = "steal" in desc_en.lower()
-                key = (effect.get("order"), element_token, steals)
+                desc_lower = desc_en.lower()
+                steals = "steal" in desc_lower
+                heals_flag = "heal" in desc_lower
+                key = (effect.get("order"), element_token, steals, heals_flag)
                 idx = key_to_idx.get(key)
                 if idx is None:
                     idx = len(rows)
@@ -356,6 +358,7 @@ class SpellTransformer:
                     rows.append({
                         "element": element_token,
                         "steals": steals,
+                        "heals": heals_flag,
                         "ranges": [None] * level_count,
                     })
                 rows[idx]["ranges"][level_idx] = dice
