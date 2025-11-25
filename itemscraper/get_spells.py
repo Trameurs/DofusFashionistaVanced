@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import copy
 import json
+import re
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -29,6 +30,10 @@ ELEMENT_ID_TO_TOKEN = {
     3: "WATER",
     4: "AIR",
 }
+
+STACK_CONTROLLER_EFFECT_IDS = {792, 1160}
+SUMMON_STACK_PATTERN = re.compile(r"each of the caster's .*summon", re.IGNORECASE)
+SUMMON_STACK_CAP = 10
 
 
 def _unwrap_array(value: Any) -> List[Any]:
@@ -372,7 +377,17 @@ class SpellTransformer:
                     last_value = value
         return rows
 
-    def _build_damage_templates(self, levels: Sequence[Mapping[str, Any]]) -> Optional[Dict[str, Any]]:
+    def _infer_stack_cap(self, spell_entry: Mapping[str, Any]) -> Optional[int]:
+        description = (spell_entry.get("description_en") or "").lower()
+        if description and SUMMON_STACK_PATTERN.search(description):
+            return SUMMON_STACK_CAP
+        return None
+
+    def _build_damage_templates(
+        self,
+        levels: Sequence[Mapping[str, Any]],
+        stack_cap_override: Optional[int] = None,
+    ) -> Optional[Dict[str, Any]]:
         normal = self._collect_damage_rows(levels, critical=False)
         critical = self._collect_damage_rows(levels, critical=True)
         if not normal and not critical:
@@ -382,18 +397,23 @@ class SpellTransformer:
             "normal": normal,
             "critical": critical,
         }
-        stackable = self._extract_stackable_damage(levels)
+        stackable = self._extract_stackable_damage(levels, stack_cap_override=stack_cap_override)
         if stackable:
             template["stackable_damage"] = stackable
         return template
 
-    def _extract_stackable_damage(self, levels: Sequence[Mapping[str, Any]]) -> Optional[Dict[str, Any]]:
+    def _extract_stackable_damage(
+        self,
+        levels: Sequence[Mapping[str, Any]],
+        *,
+        stack_cap_override: Optional[int] = None,
+    ) -> Optional[Dict[str, Any]]:
         has_controller = False
         per_stack: List[Optional[int]] = []
         max_stacks: List[Optional[int]] = []
         for level in levels:
             effects = level.get("effects") or []
-            if not has_controller and any(effect.get("effect_id") == 792 for effect in effects):
+            if not has_controller and any(effect.get("effect_id") in STACK_CONTROLLER_EFFECT_IDS for effect in effects):
                 has_controller = True
             boost = next((effect for effect in effects if effect.get("effect_id") == 293), None)
             if boost:
@@ -403,7 +423,9 @@ class SpellTransformer:
                     per_stack.append(0)
                 zone = boost.get("zone") or {}
                 max_apply = zone.get("maxDamageDecreaseApplyCount")
-                if max_apply is not None:
+                if stack_cap_override is not None:
+                    max_stacks.append(stack_cap_override)
+                elif max_apply is not None:
                     try:
                         max_stacks.append(int(max_apply))
                     except (TypeError, ValueError):
@@ -413,7 +435,7 @@ class SpellTransformer:
             else:
                 per_stack.append(None)
                 max_stacks.append(None)
-        if not has_controller or not any(value for value in per_stack if value):
+        if not (has_controller or stack_cap_override is not None) or not any(value for value in per_stack if value):
             return None
         return {
             "per_stack": per_stack,
@@ -486,7 +508,8 @@ class SpellTransformer:
             if breed_ids:
                 entry["breed_ids"] = breed_ids
             entry["level_requirements"] = [lvl.get("min_player_level") for lvl in levels]
-            damage_templates = self._build_damage_templates(levels)
+            stack_cap_hint = self._infer_stack_cap(entry)
+            damage_templates = self._build_damage_templates(levels, stack_cap_override=stack_cap_hint)
             if damage_templates:
                 entry["damage_templates"] = damage_templates
 
