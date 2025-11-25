@@ -109,7 +109,7 @@ python3 resize_images.py
 
 # Spell data & icons
 
-Spells, damage tables, and icons all come from the datacenter dumps published on the [dofusdude/dofus3-main](https://github.com/dofusdude/dofus3-main) GitHub project. Everything below is scraped from those releases with the scripts in `itemscraper/`. Run the commands from the repo root.
+Spells, damage tables, and icons all come from the data published on the [dofusdude/dofus3-main](https://github.com/dofusdude/dofus3-main) GitHub project. Everything below is scraped from those releases with the scripts in `itemscraper/`. Run the commands from the repo root.
 
 1. **Download the dumps**
    ```powershell
@@ -127,16 +127,13 @@ Spells, damage tables, and icons all come from the datacenter dumps published on
    ```powershell
    python itemscraper/generate_damage_spells.py --class-json itemscraper/transformed_class_spells.json --spells-json itemscraper/transformed_spells.json --constants fashionistapulp/fashionistapulp/dofus_constants.py
    ```
-   Fills the auto-generated block in `dofus_constants.py` with the new damage rows, glyphs, buffs, and cleaned links.
+   Fills the auto-generated block in `dofus_constants.py`.
 
 4. **Refresh spell icons**
    ```powershell
    python itemscraper/download_spell_images.py --version 3.3.18.17 --size 96 --scope damage --prune
    ```
    Extracts `spell_images_<size>.tar.gz`, renames each PNG with the latest English name, and copies the files to `fashionsite/chardata/static/chardata/spells` plus the mirrored `fashionsite/staticfiles/chardata/spells` directory.
-
-5. **Commit the changes**
-   Check in the updated JSON files, `fashionistapulp/fashionistapulp/dofus_constants.py`, and the two spell icon folders so the website shows the same data you just scraped.
 
 # Run Dofus Fashionista
 
