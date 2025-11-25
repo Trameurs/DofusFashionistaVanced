@@ -9,7 +9,7 @@ import sys
 import textwrap
 from dataclasses import dataclass, replace
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Mapping, MutableMapping, Optional, Sequence, Set
+from typing import Any, Dict, Iterable, List, Mapping, MutableMapping, Optional, Sequence, Set, Tuple
 
 from default_damage_spells import DefaultSpellSpec, DEFAULT_DAMAGE_SPELL_SPECS
 
@@ -84,6 +84,24 @@ class SpellEntry:
     ankama_id: int
     stacks: Optional[int] = None
     heals: Optional[List[bool]] = None
+    aggregates: Optional[List[Tuple[str, List[int]]]] = None
+
+
+def _parse_damage_literal(literal: str) -> tuple[int, int]:
+    parts = literal.split("-", 1)
+    try:
+        if len(parts) == 1:
+            value = int(parts[0])
+            return value, value
+        return int(parts[0]), int(parts[1])
+    except ValueError:
+        return 0, 0
+
+
+def _format_damage_literal(min_val: int, max_val: int) -> str:
+    if min_val == max_val:
+        return str(min_val)
+    return f"{min_val}-{max_val}"
 
 
 LEGACY_DEFAULT_SPELLS: Dict[str, SpellEntry] = {
@@ -196,6 +214,72 @@ def _build_spell_lookup(all_spells: Sequence[Mapping[str, Any]]) -> Dict[int, Ma
         lookup[ankama_id] = spell
     return lookup
 
+
+def _apply_stackable_damage(
+    damage_template: Optional[Mapping[str, Any]],
+    level_requirements: Sequence[int],
+    non_crit: List[List[str]],
+    crit: Optional[List[List[str]]],
+    elements: List[str],
+    steals: Optional[List[bool]],
+    heals: Optional[List[bool]],
+) -> Optional[List[Tuple[str, List[int]]]]:
+    if not damage_template:
+        return None
+    stack_info = damage_template.get("stackable_damage")
+    if not stack_info or len(non_crit) != 1 or not elements:
+        return None
+    per_stack = stack_info.get("per_stack") or []
+    if len(per_stack) != len(level_requirements):
+        return None
+    caps = stack_info.get("max_stacks") or []
+    if len(caps) < len(level_requirements):
+        caps = caps + [None] * (len(level_requirements) - len(caps))
+    stack_cap = 0
+    for cap in caps:
+        if cap and cap > stack_cap:
+            stack_cap = cap
+    if stack_cap <= 0:
+        return None
+    base_non_crit = non_crit[0]
+    base_crit = crit[0] if crit else None
+    default_element = elements[0]
+    default_steal = steals[0] if steals else False
+    default_heal = heals[0] if heals else False
+    aggregates: List[Tuple[str, List[int]]] = [("Stack 0", [0])]
+    for stack_count in range(1, stack_cap + 1):
+        new_non: List[str] = []
+        for level_idx, base_literal in enumerate(base_non_crit):
+            delta_single = per_stack[level_idx] or 0
+            if delta_single == 0:
+                new_non.append(base_literal)
+                continue
+            cap = caps[level_idx] if level_idx < len(caps) else None
+            effective_stack = min(stack_count, cap) if cap else stack_count
+            min_val, max_val = _parse_damage_literal(base_literal)
+            delta_total = delta_single * effective_stack
+            new_non.append(_format_damage_literal(min_val + delta_total, max_val + delta_total))
+        non_crit.append(new_non)
+        if base_crit is not None and crit is not None:
+            new_crit: List[str] = []
+            for level_idx, base_literal in enumerate(base_crit):
+                delta_single = per_stack[level_idx] or 0
+                if delta_single == 0:
+                    new_crit.append(base_literal)
+                    continue
+                cap = caps[level_idx] if level_idx < len(caps) else None
+                effective_stack = min(stack_count, cap) if cap else stack_count
+                min_val, max_val = _parse_damage_literal(base_literal)
+                delta_total = delta_single * effective_stack
+                new_crit.append(_format_damage_literal(min_val + delta_total, max_val + delta_total))
+            crit.append(new_crit)
+        elements.append(default_element)
+        if steals is not None:
+            steals.append(default_steal)
+        if heals is not None:
+            heals.append(default_heal)
+        aggregates.append((f"Stack {stack_count}", [len(non_crit) - 1]))
+    return aggregates
 
 def build_spell_map(class_data: Mapping[str, Any], all_spells: Sequence[Mapping[str, Any]]) -> Dict[str, List[SpellEntry]]:
     breed_lookup = _build_breed_lookup(class_data)
@@ -634,6 +718,15 @@ def convert_spell(
             steals.extend([False] * len(buff_rows))
         if heals is not None:
             heals.extend([False] * len(buff_rows))
+    stack_aggregates = _apply_stackable_damage(
+        damage,
+        level_requirements,
+        non_crit,
+        crit,
+        elements,
+        steals,
+        heals,
+    )
     if not non_crit:
         return None
     stacks = _extract_stack_limit(spell)
@@ -650,9 +743,10 @@ def convert_spell(
         crit_ranges=crit,
         elements=elements,
         steals=steals,
-    heals=heals,
+        heals=heals,
         is_linked=is_linked,
         stacks=stacks,
+        aggregates=stack_aggregates,
         order=order,
         ankama_id=ankama_id,
     )
@@ -714,6 +808,9 @@ def render_spell(entry: SpellEntry) -> List[str]:
         lines.append(f"{indent}    heals={heals_literal},")
     closing = f"{indent})"
     extra_args: List[str] = []
+    if entry.aggregates:
+        aggregates_literal = pprint.pformat(entry.aggregates)
+        extra_args.append(f"aggregates={aggregates_literal}")
     if entry.stacks not in (None, 1):
         extra_args.append(f"stacks={entry.stacks}")
     if entry.is_linked:

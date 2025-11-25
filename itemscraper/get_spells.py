@@ -377,10 +377,47 @@ class SpellTransformer:
         critical = self._collect_damage_rows(levels, critical=True)
         if not normal and not critical:
             return None
-        return {
+        template: Dict[str, Any] = {
             "levels": [lvl.get("min_player_level") for lvl in levels],
             "normal": normal,
             "critical": critical,
+        }
+        stackable = self._extract_stackable_damage(levels)
+        if stackable:
+            template["stackable_damage"] = stackable
+        return template
+
+    def _extract_stackable_damage(self, levels: Sequence[Mapping[str, Any]]) -> Optional[Dict[str, Any]]:
+        has_controller = False
+        per_stack: List[Optional[int]] = []
+        max_stacks: List[Optional[int]] = []
+        for level in levels:
+            effects = level.get("effects") or []
+            if not has_controller and any(effect.get("effect_id") == 792 for effect in effects):
+                has_controller = True
+            boost = next((effect for effect in effects if effect.get("effect_id") == 293), None)
+            if boost:
+                try:
+                    per_stack.append(int(boost.get("value") or 0))
+                except (TypeError, ValueError):
+                    per_stack.append(0)
+                zone = boost.get("zone") or {}
+                max_apply = zone.get("maxDamageDecreaseApplyCount")
+                if max_apply is not None:
+                    try:
+                        max_stacks.append(int(max_apply))
+                    except (TypeError, ValueError):
+                        max_stacks.append(None)
+                else:
+                    max_stacks.append(None)
+            else:
+                per_stack.append(None)
+                max_stacks.append(None)
+        if not has_controller or not any(value for value in per_stack if value):
+            return None
+        return {
+            "per_stack": per_stack,
+            "max_stacks": max_stacks,
         }
 
     def _attach_variant_links(self, entries_by_id: Mapping[int, Dict[str, Any]]) -> None:
