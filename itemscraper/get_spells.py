@@ -34,6 +34,7 @@ ELEMENT_ID_TO_TOKEN = {
 STACK_CONTROLLER_EFFECT_IDS = {792, 1160}
 SUMMON_STACK_PATTERN = re.compile(r"each of the caster's .*summon", re.IGNORECASE)
 SUMMON_STACK_CAP = 10
+STACKABLE_TIMES_PATTERN = re.compile(r"stackable\s*(?:up to\s*)?(\d+)", re.IGNORECASE)
 
 
 def _unwrap_array(value: Any) -> List[Any]:
@@ -378,9 +379,26 @@ class SpellTransformer:
         return rows
 
     def _infer_stack_cap(self, spell_entry: Mapping[str, Any]) -> Optional[int]:
-        description = (spell_entry.get("description_en") or "").lower()
-        if description and SUMMON_STACK_PATTERN.search(description):
-            return SUMMON_STACK_CAP
+        descriptions: List[str] = []
+        for lang in self.languages:
+            text = spell_entry.get(f"description_{lang}")
+            if text:
+                descriptions.append(str(text).lower())
+        description_en = (spell_entry.get("description_en") or "").lower()
+        if description_en:
+            descriptions.insert(0, description_en)
+        for text in descriptions:
+            match = STACKABLE_TIMES_PATTERN.search(text)
+            if match:
+                try:
+                    cap = int(match.group(1))
+                except ValueError:
+                    cap = None
+                if cap and cap > 0:
+                    return cap
+        for text in descriptions:
+            if text and SUMMON_STACK_PATTERN.search(text):
+                return SUMMON_STACK_CAP
         return None
 
     def _build_damage_templates(
@@ -397,7 +415,10 @@ class SpellTransformer:
             "normal": normal,
             "critical": critical,
         }
-        stackable = self._extract_stackable_damage(levels, stack_cap_override=stack_cap_override)
+        stackable = self._extract_stackable_damage(
+            levels,
+            stack_cap_override=stack_cap_override,
+        )
         if stackable:
             template["stackable_damage"] = stackable
         return template
