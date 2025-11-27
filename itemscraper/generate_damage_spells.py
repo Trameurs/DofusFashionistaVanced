@@ -36,7 +36,11 @@ STAT_BUFF_CHARACTERISTICS = {
     14: "buff_agi",
     15: "buff_int",
     25: "buff_pow",
+    49: "buff_finalheals",
+    107: "buff_final",
 }
+
+ALWAYS_BUFF_TOKENS = {"buff_final", "buff_finalheals"}
 
 BUFF_SORT_ORDER = {
     "buff_str": 0,
@@ -45,6 +49,8 @@ BUFF_SORT_ORDER = {
     "buff_agi": 3,
     "buff_vit": 4,
     "buff_pow": 5,
+    "buff_final": 6,
+    "buff_finalheals": 7,
 }
 
 BASE_CLASSES = [
@@ -70,6 +76,7 @@ BASE_CLASSES = [
 ]
 CHARACTER_CLASSES = sorted(BASE_CLASSES)
 GLYPH_EFFECT_IDS = {401, 402, 1091, 1165}
+BESTIAL_PACT_ANKAMA_ID = 31141
 
 
 @dataclass
@@ -86,6 +93,7 @@ class SpellEntry:
     stacks: Optional[int] = None
     heals: Optional[List[bool]] = None
     aggregates: Optional[List[Tuple[str, List[int]]]] = None
+    buff_scaling: Optional[Dict[str, Any]] = None
 
 
 def _parse_damage_literal(literal: str) -> tuple[int, int]:
@@ -524,6 +532,8 @@ def _stat_buff_token(effect: Mapping[str, Any]) -> Optional[str]:
         return None
 
     description = (metadata.get("description") or {}).get("en", "").lower()
+    if token in ALWAYS_BUFF_TOKENS:
+        return token
     if "steals" in description:
         return token
 
@@ -789,7 +799,7 @@ def convert_spell(
     name = pick_name(spell)
     order = spell.get("order") or 0
     ankama_id = spell.get("ankama_id") or 0
-    return SpellEntry(
+    entry = SpellEntry(
         name=name,
         level_requirements=[int(level) for level in level_requirements],
         non_crit_ranges=non_crit,
@@ -803,6 +813,67 @@ def convert_spell(
         order=order,
         ankama_id=ankama_id,
     )
+
+    _attach_special_buff_scaling(spell, entry)
+    return entry
+
+
+def _attach_special_buff_scaling(spell: Mapping[str, Any], entry: SpellEntry) -> None:
+    scaling = _bestial_pact_scaling(spell)
+    if not scaling:
+        return
+    entry.buff_scaling = scaling
+    desired_stacks = scaling.get("selection_count", 0)
+    if desired_stacks <= 0:
+        desired_stacks = scaling.get("max_effective", 0)
+    if desired_stacks and (entry.stacks is None or desired_stacks > entry.stacks):
+        entry.stacks = desired_stacks
+
+
+def _bestial_pact_scaling(spell: Mapping[str, Any]) -> Optional[Dict[str, Any]]:
+    if spell.get("ankama_id") != BESTIAL_PACT_ANKAMA_ID:
+        return None
+    levels = spell.get("levels") or []
+    if not levels:
+        return None
+
+    final_vals = _collect_characteristic_values(levels, 107)
+    final_heal_vals = _collect_characteristic_values(levels, 49)
+    if len(final_vals) < 2 or len(final_heal_vals) < 2:
+        return None
+
+    base_final = max(final_vals)
+    per_final = min(final_vals)
+    base_heal = max(final_heal_vals)
+    per_heal = min(final_heal_vals)
+    if not (base_final > per_final >= 0 and base_heal > per_heal >= 0):
+        return None
+
+    return {
+        "type": "summon_final",
+        "stack_offset": 1,
+        "selection_count": 11,
+        "stats": {
+            "final": {"base": base_final, "per_stack": per_final, "max_effective": 10},
+            "finalheals": {"base": base_heal, "per_stack": per_heal, "max_effective": 10},
+        },
+    }
+
+
+def _collect_characteristic_values(levels: Sequence[Mapping[str, Any]], characteristic: int) -> List[int]:
+    values: List[int] = []
+    for level in levels:
+        for effect in level.get("effects", []):
+            metadata = effect.get("effect_metadata") or {}
+            if metadata.get("characteristic") != characteristic:
+                continue
+            dice = effect.get("dice") or {}
+            try:
+                value = int(dice.get("min"))
+            except (TypeError, ValueError):
+                continue
+            values.append(value)
+    return values
 
 
 def _convert_variant_link(variant_link: Optional[Mapping[str, Any]]) -> Optional[Sequence[Any]]:
@@ -868,6 +939,9 @@ def render_spell(entry: SpellEntry) -> List[str]:
         extra_args.append(f"stacks={entry.stacks}")
     if entry.is_linked:
         extra_args.append(f"is_linked=({entry.is_linked[0]}, {entry.is_linked[1]!r})")
+    if entry.buff_scaling:
+        scaling_literal = pprint.pformat(entry.buff_scaling)
+        extra_args.append(f"buff_scaling={scaling_literal}")
     if extra_args:
         closing += ", " + ", ".join(extra_args)
     closing += ")"

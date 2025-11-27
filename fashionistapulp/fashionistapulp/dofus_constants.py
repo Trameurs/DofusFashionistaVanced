@@ -310,7 +310,7 @@ WEIRD_CONDITIONS = list(WEIRD_CONDITION_TO_ID.keys())
 
 class Spell:
     def __init__(self, name, level_req, effects, aggregates=[], 
-                 is_linked=None, stacks=1, special=None):
+                 is_linked=None, stacks=1, special=None, buff_scaling=None):
         self.name = name
         self.level_req = level_req
         self.effects = effects
@@ -319,6 +319,7 @@ class Spell:
         self.digest = None
         self.is_linked = is_linked
         self.special = special
+        self.buff_scaling = buff_scaling
 
     def get_effects_digest(self):
         if self.digest is None:
@@ -4169,9 +4170,10 @@ DAMAGE_SPELLS = {
             [['100', '200', '400'],
              ['100', '200', '400'],
              ['100', '200', '400'],
-             ['100', '200', '400']],
+             ['100', '200', '400'],
+             ['40', '60', '100']],
             None,
-            ['buff_str', 'buff_int', 'buff_cha', 'buff_agi'],
+            ['buff_str', 'buff_int', 'buff_cha', 'buff_agi', 'buff_finalheals'],
         )),
         Spell('Feline Spirit', [65, 131, 198], Effects(
             [['19-21', '26-29', '31-34']],
@@ -5004,6 +5006,11 @@ DAMAGE_SPELLS = {
             [['22-25', '28-31']],
             [WATER],
         ), is_linked=(2, 'Audacious')),
+        Spell('Wandering', [115, 182], Effects(
+            [['2', '2'], ['2', '2']],
+            None,
+            ['buff_final', 'buff_finalheals'],
+        ), is_linked=(2, 'Portal')),
         Spell('Convulsion', [105, 172], Effects(
             [['19-22', '24-27']],
             [['23-26', '29-32']],
@@ -5067,6 +5074,11 @@ DAMAGE_SPELLS = {
             [['41-46']],
             [EARTH],
         ), is_linked=(2, 'Ridicule')),
+        Spell('Portal', [5, 72, 139], Effects(
+            [['2', '2', '2'], ['2', '2', '2']],
+            None,
+            ['buff_final', 'buff_finalheals'],
+        ), is_linked=(1, 'Wandering')),
         Spell('Audacious', [1, 67, 133], Effects(
             [['15-17', '20-23', '26-29'], ['15-17', '20-23', '26-29']],
             [['19-21', '24-27', '31-35'], ['19-21', '24-27', '31-35']],
@@ -5124,10 +5136,10 @@ DAMAGE_SPELLS = {
  ('', [6]),
  ('', [7])]),
         Spell('Commotion', [130, 197], Effects(
-            [['23-25', '25-28'], ['23-25', '25-28'], ['23-25', '25-28']],
-            [['27-29', '30-33'], ['27-29', '30-33'], ['27-29', '30-33']],
-            [FIRE, FIRE, FIRE],
-            heals=[True, True, False],
+            [['23-25', '25-28'], ['23-25', '25-28'], ['23-25', '25-28'], ['25', '25']],
+            [['27-29', '30-33'], ['27-29', '30-33'], ['27-29', '30-33'], ['25', '25']],
+            [FIRE, FIRE, FIRE, 'buff_final'],
+            heals=[True, True, False, False],
         ), is_linked=(2, 'Lamentations')),
         Spell('Deafening Cry', [100, 167], Effects(
             [['19-22', '24-28']],
@@ -5253,10 +5265,10 @@ DAMAGE_SPELLS = {
             heals=[True, False],
         ), is_linked=(2, 'Flowery Word')),
         Spell('Secret Word', [150], Effects(
-            [['28-32'], ['28-32'], ['55-59'], ['55-59']],
-            [['34-38'], ['34-38'], ['61-65'], ['61-65']],
-            [AIR, AIR, AIR, AIR],
-            heals=[True, False, True, False],
+            [['28-32'], ['28-32'], ['55-59'], ['55-59'], ['25']],
+            [['34-38'], ['34-38'], ['61-65'], ['61-65'], ['25']],
+            [AIR, AIR, AIR, AIR, 'buff_finalheals'],
+            heals=[True, False, True, False, False],
         ), is_linked=(2, 'Warpaint')),
         Spell('Murmur', [195], Effects(
             [['16-18'], ['16-18']],
@@ -5352,7 +5364,7 @@ DAMAGE_SPELLS = {
             [['20', '30', '50']],
             None,
             ['buff_pow'],
-        )),
+        ), is_linked=(1, 'Decadence')),
         Spell('Placer Mining', [100, 167], Effects(
             [['23-26', '28-32'], ['7-9', '10-12']],
             [['27-31', '34-38'], ['10-12', '13-15']],
@@ -5378,6 +5390,11 @@ DAMAGE_SPELLS = {
             [['31-35', '36-41'], ['11-13', '14-16']],
             [FIRE, FIRE],
         ), is_linked=(2, 'Opportuneness')),
+        Spell('Decadence', [150], Effects(
+            [['10']],
+            None,
+            ['buff_final'],
+        ), is_linked=(2, 'Miserliness')),
         Spell('Sieving', [185], Effects(
             [['25-29']],
             [['30-35']],
@@ -6204,6 +6221,11 @@ DAMAGE_SPELLS = {
             [['38-43']],
             [FIRE],
         ), is_linked=(2, 'Capering')),
+        Spell('Transfiguration', [200], Effects(
+            [['20']],
+            None,
+            ['buff_final'],
+        ), is_linked=(2, 'Carnavalo')),
         Spell('Carnavalo', [90, 157], Effects(
             [['19-23', '24-28'],
              ['19-23', '24-28'],
@@ -6229,7 +6251,7 @@ DAMAGE_SPELLS = {
  ('Hit in best element', [4]),
  ('', [5]),
  ('', [6]),
- ('', [7])]),
+ ('', [7])], is_linked=(1, 'Transfiguration')),
         Spell('Catalepsy', [1, 67, 133], Effects(
             [['13-15', '18-20', '23-25']],
             [['16-18', '22-24', '28-30']],
@@ -6422,6 +6444,15 @@ DAMAGE_SPELLS = {
  ('Stack 8', [8]),
  ('Stack 9', [9]),
  ('Stack 10', [10])], is_linked=(2, 'Piranya Teeth')),
+        Spell('Bestial Pact', [140], Effects(
+            [['3'], ['3']],
+            None,
+            ['buff_final', 'buff_finalheals'],
+        ), stacks=11, buff_scaling={'selection_count': 11,
+ 'stack_offset': 1,
+ 'stats': {'final': {'base': 10, 'max_effective': 10, 'per_stack': 3},
+           'finalheals': {'base': 10, 'max_effective': 10, 'per_stack': 3}},
+ 'type': 'summon_final'}),
         Spell('Feather Tornado', [150], Effects(
             [['34-38']],
             [['41-46']],
@@ -7078,9 +7109,9 @@ DAMAGE_SPELLS = {
             steals=[True],
         ), is_linked=(1, 'Decimation')),
         Spell('Fury', [95, 162], Effects(
-            [['25-27', '31-34']],
-            [['30-33', '37-41']],
-            [AIR],
+            [['25-27', '31-34'], ['2', '3']],
+            [['30-33', '37-41'], ['2', '3']],
+            [AIR, 'buff_final'],
         ), stacks=2, is_linked=(2, 'Absorption')),
         Spell('Torture', [1, 68, 134], Effects(
             [['13-16', '17-20', '22-26']],

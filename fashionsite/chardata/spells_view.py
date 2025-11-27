@@ -104,6 +104,7 @@ def _create_spell_web_digest(spell):
     web_digest['aggregates'] = convert_aggregates(digest.aggregates)
     web_digest['is_linked'] = (spell.is_linked[0], _(spell.is_linked[1])) if spell.is_linked else None
     web_digest['special'] = spell.special
+    web_digest['buff_scaling'] = spell.buff_scaling
     return web_digest
 
 def spells(request, char_id=0):
