@@ -30,6 +30,8 @@ ELEMENT_ID_TO_TOKEN = {
     3: "WATER",
     4: "AIR",
 }
+BEST_ELEMENT_DESCRIPTION_TOKENS = ("best-element", "best element")
+BEST_ELEMENT_TOKENS = ("EARTH", "FIRE", "WATER", "AIR")
 
 STACK_CONTROLLER_EFFECT_IDS = {792, 1160}
 SUMMON_STACK_PATTERN = re.compile(r"each of the caster's .*summon", re.IGNORECASE)
@@ -340,14 +342,12 @@ class SpellTransformer:
         rows: List[Dict[str, Any]] = []
         key_to_idx: Dict[tuple, int] = {}
         level_count = len(levels)
+        best_element_group_counter = 0
         for level_idx, level in enumerate(levels):
             effects = level["critical_effects" if critical else "effects"]
             for effect in effects:
                 metadata = effect.get("effect_metadata")
                 if not metadata or metadata.get("category") != 2:
-                    continue
-                element_token = ELEMENT_ID_TO_TOKEN.get(effect.get("effect_element"))
-                if not element_token:
                     continue
                 dice = self._format_range(effect.get("dice"))
                 if not dice:
@@ -356,18 +356,42 @@ class SpellTransformer:
                 desc_lower = desc_en.lower()
                 steals = "steal" in desc_lower
                 heals_flag = "heal" in desc_lower
-                key = (effect.get("order"), element_token, steals, heals_flag)
-                idx = key_to_idx.get(key)
-                if idx is None:
-                    idx = len(rows)
-                    key_to_idx[key] = idx
-                    rows.append({
-                        "element": element_token,
-                        "steals": steals,
-                        "heals": heals_flag,
-                        "ranges": [None] * level_count,
-                    })
-                rows[idx]["ranges"][level_idx] = dice
+                element_token = ELEMENT_ID_TO_TOKEN.get(effect.get("effect_element"))
+
+                def _register_row(token: str, *, best_group: Optional[str] = None) -> None:
+                    key = (effect.get("order"), token, steals, heals_flag)
+                    idx = key_to_idx.get(key)
+                    if idx is None:
+                        idx = len(rows)
+                        key_to_idx[key] = idx
+                        row = {
+                            "element": token,
+                            "steals": steals,
+                            "heals": heals_flag,
+                            "ranges": [None] * level_count,
+                        }
+                        if best_group is not None:
+                            row["best_element_group"] = best_group
+                        rows.append(row)
+                    else:
+                        row = rows[idx]
+                        if best_group is not None and "best_element_group" not in row:
+                            row["best_element_group"] = best_group
+                    rows[idx]["ranges"][level_idx] = dice
+
+                is_best_element = False
+                if not element_token and desc_lower:
+                    if any(token in desc_lower for token in BEST_ELEMENT_DESCRIPTION_TOKENS):
+                        is_best_element = True
+                if is_best_element:
+                    group_id = f"best-element-{best_element_group_counter}"
+                    best_element_group_counter += 1
+                    for token in BEST_ELEMENT_TOKENS:
+                        _register_row(token, best_group=group_id)
+                    continue
+                if not element_token:
+                    continue
+                _register_row(element_token)
 
         for row in rows:
             last_value: Optional[str] = None

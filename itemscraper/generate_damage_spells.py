@@ -27,6 +27,7 @@ ELEMENT_LITERAL = {
     "WATER": "WATER",
     "AIR": "AIR",
 }
+BEST_ELEMENT_LABEL = "Hit in best element"
 
 STAT_BUFF_CHARACTERISTICS = {
     10: "buff_str",
@@ -666,6 +667,50 @@ def _fit_ranges(source: List[Optional[str]], target_len: int) -> List[str]:
     return result
 
 
+def _extract_best_element_groups(rows: Sequence[Mapping[str, Any]]) -> Dict[Any, List[int]]:
+    groups: Dict[Any, List[int]] = {}
+    for idx, row in enumerate(rows):
+        group = row.get("best_element_group")
+        if group is None:
+            continue
+        groups.setdefault(group, []).append(idx)
+    return {key: sorted(indexes) for key, indexes in groups.items()}
+
+
+def _build_best_element_aggregates(
+    group_map: Mapping[Any, Sequence[int]],
+    base_row_count: int,
+    total_row_count: int,
+) -> Optional[List[Tuple[str, List[int]]]]:
+    if not group_map or total_row_count == 0:
+        return None
+    index_to_group: Dict[int, Any] = {}
+    for group, indexes in group_map.items():
+        for idx in indexes:
+            index_to_group[idx] = group
+    aggregates: List[Tuple[str, List[int]]] = []
+    processed_groups: Set[Any] = set()
+    used_indexes: Set[int] = set()
+    for idx in range(base_row_count):
+        group = index_to_group.get(idx)
+        if group and group not in processed_groups:
+            processed_groups.add(group)
+            sorted_indexes = sorted(group_map[group])
+            for offset, target_idx in enumerate(sorted_indexes):
+                label = BEST_ELEMENT_LABEL if offset == 0 else ""
+                aggregates.append((label, [target_idx]))
+                used_indexes.add(target_idx)
+        elif group:
+            continue
+        else:
+            if idx not in used_indexes:
+                aggregates.append(("", [idx]))
+                used_indexes.add(idx)
+    for idx in range(base_row_count, total_row_count):
+        aggregates.append(("", [idx]))
+    return aggregates
+
+
 def convert_spell(
     spell: Mapping[str, Any],
     *,
@@ -684,6 +729,8 @@ def convert_spell(
         if glyph_damage:
             normal_rows = glyph_damage["normal"]
             crit_rows = glyph_damage["critical"]
+    best_element_groups = _extract_best_element_groups(normal_rows)
+    base_row_count = len(normal_rows)
 
     non_crit: List[List[str]] = [
         [str(value) for value in row.get("ranges", [])]
@@ -727,6 +774,12 @@ def convert_spell(
         steals,
         heals,
     )
+    best_element_aggregates = _build_best_element_aggregates(
+        best_element_groups,
+        base_row_count,
+        len(non_crit),
+    )
+    aggregates = best_element_aggregates or stack_aggregates
     if not non_crit:
         return None
     stacks = _extract_stack_limit(spell)
@@ -746,7 +799,7 @@ def convert_spell(
         heals=heals,
         is_linked=is_linked,
         stacks=stacks,
-        aggregates=stack_aggregates,
+        aggregates=aggregates,
         order=order,
         ankama_id=ankama_id,
     )
