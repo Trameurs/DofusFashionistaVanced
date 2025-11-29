@@ -77,6 +77,9 @@ BASE_CLASSES = [
 CHARACTER_CLASSES = sorted(BASE_CLASSES)
 GLYPH_EFFECT_IDS = {401, 402, 1091, 1165}
 BESTIAL_PACT_ANKAMA_ID = 31141
+MP_DAMAGE_EFFECT_ID = 293
+MP_DAMAGE_TRIGGER_TOKEN = "MP"
+DEFAULT_MP_DAMAGE_STACK_CAP = 10
 
 
 @dataclass
@@ -289,6 +292,100 @@ def _apply_stackable_damage(
             heals.append(default_heal)
         aggregates.append((f"Stack {stack_count}", [len(non_crit) - 1]))
     return aggregates
+
+
+def _prepare_mp_stackable_damage(
+    spell: Mapping[str, Any],
+    damage_template: MutableMapping[str, Any],
+    level_count: int,
+) -> Optional[Dict[str, Any]]:
+    if level_count <= 0 or not isinstance(damage_template, MutableMapping):
+        return None
+    if damage_template.get("stackable_damage"):
+        return None
+    spec = _detect_mp_damage_stack_spec(spell, level_count)
+    if not spec:
+        return None
+    damage_template["stackable_damage"] = {
+        "per_stack": spec["per_stack"],
+        "max_stacks": spec["max_stacks"],
+    }
+    return spec
+
+
+def _detect_mp_damage_stack_spec(spell: Mapping[str, Any], level_count: int) -> Optional[Dict[str, Any]]:
+    if level_count <= 0:
+        return None
+    levels = sorted(
+        spell.get("levels") or [],
+        key=lambda lvl: ((lvl.get("grade") or 0), (lvl.get("level_id") or 0)),
+    )
+    if len(levels) < level_count:
+        return None
+    owner_id = spell.get("ankama_id")
+    per_stack: List[int] = []
+    for idx in range(level_count):
+        effect = _mp_damage_effect_for_level(levels[idx], owner_id)
+        if not effect:
+            return None
+        try:
+            value = int(effect.get("value"))
+        except (TypeError, ValueError):
+            value = 0
+        per_stack.append(value)
+    if not any(value > 0 for value in per_stack):
+        return None
+    stack_cap = _infer_mp_stack_cap(levels)
+    if stack_cap is None:
+        stack_cap = DEFAULT_MP_DAMAGE_STACK_CAP
+    if stack_cap <= 0:
+        return None
+    return {
+        "per_stack": per_stack,
+        "max_stacks": [stack_cap] * level_count,
+        "labels": [f"{count} MP used this turn" for count in range(stack_cap + 1)],
+    }
+
+
+def _mp_damage_effect_for_level(level: Mapping[str, Any], owner_id: Any) -> Optional[Mapping[str, Any]]:
+    for effect in level.get("effects", []):
+        if effect.get("effect_id") != MP_DAMAGE_EFFECT_ID:
+            continue
+        triggers = (effect.get("triggers") or "").upper()
+        if MP_DAMAGE_TRIGGER_TOKEN not in triggers:
+            continue
+        dice = effect.get("dice") or {}
+        linked_id = dice.get("min")
+        if linked_id not in (owner_id, None):
+            continue
+        return effect
+    return None
+
+
+def _infer_mp_stack_cap(levels: Sequence[Mapping[str, Any]]) -> Optional[int]:
+    for level in levels:
+        try:
+            stack_value = int(level.get("max_stack"))
+        except (TypeError, ValueError):
+            stack_value = None
+        if stack_value and stack_value > 1:
+            return stack_value
+    return None
+
+
+def _apply_custom_stack_labels(
+    aggregates: Sequence[Tuple[str, List[int]]],
+    labels: Sequence[Optional[str]],
+) -> List[Tuple[str, List[int]]]:
+    updated: List[Tuple[str, List[int]]] = []
+    for idx, aggregate in enumerate(aggregates):
+        label = aggregate[0]
+        if idx < len(labels):
+            replacement = labels[idx]
+            if replacement:
+                label = str(replacement)
+        updated.append((label, aggregate[1]))
+    return updated
 
 def build_spell_map(class_data: Mapping[str, Any], all_spells: Sequence[Mapping[str, Any]]) -> Dict[str, List[SpellEntry]]:
     breed_lookup = _build_breed_lookup(class_data)
@@ -731,6 +828,7 @@ def convert_spell(
     if not level_requirements:
         return None
     level_count = len(level_requirements)
+    mp_stack_spec = _prepare_mp_stackable_damage(spell, damage, level_count)
 
     normal_rows = damage.get("normal") or []
     crit_rows = damage.get("critical") or []
@@ -784,6 +882,8 @@ def convert_spell(
         steals,
         heals,
     )
+    if stack_aggregates and mp_stack_spec and mp_stack_spec.get("labels"):
+        stack_aggregates = _apply_custom_stack_labels(stack_aggregates, mp_stack_spec["labels"])
     best_element_aggregates = _build_best_element_aggregates(
         best_element_groups,
         base_row_count,
