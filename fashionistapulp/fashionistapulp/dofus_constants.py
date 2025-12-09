@@ -5445,7 +5445,10 @@ DAMAGE_SPELLS = {
             [['20']],
             None,
             ['buff_pow'],
-        )),
+        ), stacks=11, buff_scaling={'selection_count': 11,
+ 'stack_offset': 1,
+ 'stats': {'pow': {'base': 20, 'max_effective': 10, 'per_stack': 20}},
+ 'type': 'mp_buff'}),
         Spell('Bankruptcy', [60, 127, 194], Effects(
             [['26-29', '32-36', '36-40'], ['30-33', '37-41', '41-45']],
             [['31-35', '39-44', '43-48'], ['35-39', '44-49', '49-54']],

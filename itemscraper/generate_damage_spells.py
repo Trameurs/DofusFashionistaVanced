@@ -80,6 +80,7 @@ BESTIAL_PACT_ANKAMA_ID = 31141
 MP_DAMAGE_EFFECT_ID = 293
 MP_DAMAGE_TRIGGER_TOKEN = "MP"
 DEFAULT_MP_DAMAGE_STACK_CAP = 10
+MP_TRIGGER_EFFECT_ID = 1160
 
 
 @dataclass
@@ -914,12 +915,19 @@ def convert_spell(
         ankama_id=ankama_id,
     )
 
-    _attach_special_buff_scaling(spell, entry)
+    _attach_special_buff_scaling(spell, entry, spell_lookup=spell_lookup)
     return entry
 
 
-def _attach_special_buff_scaling(spell: Mapping[str, Any], entry: SpellEntry) -> None:
+def _attach_special_buff_scaling(
+    spell: Mapping[str, Any],
+    entry: SpellEntry,
+    *,
+    spell_lookup: Optional[Mapping[int, Mapping[str, Any]]] = None,
+) -> None:
     scaling = _bestial_pact_scaling(spell)
+    if not scaling:
+        scaling = _mp_buff_scaling(spell, spell_lookup)
     if not scaling:
         return
     entry.buff_scaling = scaling
@@ -958,6 +966,72 @@ def _bestial_pact_scaling(spell: Mapping[str, Any]) -> Optional[Dict[str, Any]]:
             "finalheals": {"base": base_heal, "per_stack": per_heal, "max_effective": 10},
         },
     }
+
+
+def _mp_buff_scaling(
+    spell: Mapping[str, Any],
+    spell_lookup: Optional[Mapping[int, Mapping[str, Any]]],
+) -> Optional[Dict[str, Any]]:
+    if not spell_lookup:
+        return None
+    levels = spell.get("levels") or []
+    base_value = _max_characteristic_value(levels, 25)
+    if base_value is None or base_value <= 0:
+        return None
+    triggered_id = _extract_triggered_spell_id(levels)
+    if not isinstance(triggered_id, int) or triggered_id == spell.get("ankama_id"):
+        return None
+    triggered_spell = spell_lookup.get(triggered_id)
+    if not triggered_spell:
+        return None
+    triggered_levels = triggered_spell.get("levels") or []
+    if not _spell_has_mp_trigger(triggered_levels):
+        return None
+    per_stack = _max_characteristic_value(triggered_levels, 25)
+    if per_stack is None or per_stack <= 0:
+        return None
+    max_effective = DEFAULT_MP_DAMAGE_STACK_CAP
+    selection_count = max_effective + 1
+    return {
+        "type": "mp_buff",
+        "stack_offset": 1,
+        "selection_count": selection_count,
+        "stats": {
+            "pow": {
+                "base": base_value,
+                "per_stack": per_stack,
+                "max_effective": max_effective,
+            }
+        },
+    }
+def _max_characteristic_value(levels: Sequence[Mapping[str, Any]], characteristic: int) -> Optional[int]:
+    values = _collect_characteristic_values(levels, characteristic)
+    if not values:
+        return None
+    return max(values)
+
+
+def _extract_triggered_spell_id(levels: Sequence[Mapping[str, Any]]) -> Optional[int]:
+    for level in levels:
+        for effect in level.get("effects", []):
+            if effect.get("effect_id") != MP_TRIGGER_EFFECT_ID:
+                continue
+            dice = effect.get("dice") or {}
+            linked_id = dice.get("min")
+            if isinstance(linked_id, int):
+                return linked_id
+    return None
+
+
+def _spell_has_mp_trigger(levels: Sequence[Mapping[str, Any]]) -> bool:
+    for level in levels:
+        for effect in level.get("effects", []):
+            if effect.get("effect_id") != MP_TRIGGER_EFFECT_ID:
+                continue
+            triggers = (effect.get("triggers") or "").upper()
+            if MP_DAMAGE_TRIGGER_TOKEN in triggers:
+                return True
+    return False
 
 
 def _collect_characteristic_values(levels: Sequence[Mapping[str, Any]], characteristic: int) -> List[int]:
