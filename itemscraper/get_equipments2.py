@@ -149,6 +149,7 @@ STAT_TRANSLATE = {
     '(Attracts by cell)': '(Attracts by cell)',
     '(best-element steal)' : '(best-element steal)',
     '(Advances by cell)' : '(Advances by cell)',
+    '(Fire heals)' : '(Fire heals)',
 }
 
 LANGUAGES = ['en', 'fr', 'es', 'pt', 'de']

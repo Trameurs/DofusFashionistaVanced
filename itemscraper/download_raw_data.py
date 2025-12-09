@@ -11,7 +11,7 @@ import requests
 
 API_ROOT = "https://api.github.com"
 DEFAULT_REPO = "dofusdude/dofus3-main"
-DEFAULT_TAG = "3.3.18.17"
+DEFAULT_TAG = "3.4.3.4"
 DEFAULT_DEST = "itemscraper/raw"
 
 

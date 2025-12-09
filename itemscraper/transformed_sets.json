@@ -16996,7 +16996,7 @@
         "name_es": "Set de Bworker Berserker",
         "name_pt": "Conjunto do Bworker Berserker",
         "name_de": "BerserkBworker-Set",
-        "items": 3,
+        "items": 4,
         "stats_list": [
             {
                 "effect_key": "2",
@@ -17014,12 +17014,12 @@
                     [
                         30,
                         null,
-                        "Strength"
+                        "Agility"
                     ],
                     [
                         30,
                         null,
-                        "Agility"
+                        "Strength"
                     ]
                 ]
             },
@@ -17027,19 +17027,9 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        1,
+                        30,
                         null,
-                        "AP"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Prospecting"
-                    ],
-                    [
-                        5,
-                        null,
-                        "Critical Hits"
+                        "Strength"
                     ],
                     [
                         30,
@@ -17047,14 +17037,55 @@
                         "Agility"
                     ],
                     [
-                        30,
+                        5,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Prospecting"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "4",
+                "effects": [
+                    [
+                        50,
                         null,
                         "Strength"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        8,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Prospecting"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
                     ]
                 ]
             }
         ],
         "equipment_ids": [
+            9176,
             9177,
             9179,
             9180
@@ -17067,7 +17098,7 @@
         "name_es": "Set de Bworker Gladiador",
         "name_pt": "Conjunto do Bworker Gladiador",
         "name_de": "GladiaBworker-Set",
-        "items": 5,
+        "items": 4,
         "stats_list": [
             {
                 "effect_key": "2",
@@ -17083,14 +17114,14 @@
                         "Chance"
                     ],
                     [
-                        20,
-                        null,
-                        "Prospecting"
-                    ],
-                    [
                         5,
                         null,
                         "Critical Hits"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Prospecting"
                     ]
                 ]
             },
@@ -17098,14 +17129,14 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        1,
+                        30,
                         null,
-                        "AP"
+                        "Intelligence"
                     ],
                     [
-                        20,
+                        30,
                         null,
-                        "Prospecting"
+                        "Chance"
                     ],
                     [
                         5,
@@ -17113,14 +17144,14 @@
                         "Critical Hits"
                     ],
                     [
-                        30,
+                        20,
                         null,
-                        "Chance"
+                        "Prospecting"
                     ],
                     [
-                        30,
+                        1,
                         null,
-                        "Intelligence"
+                        "AP"
                     ]
                 ]
             },
@@ -17128,19 +17159,9 @@
                 "effect_key": "4",
                 "effects": [
                     [
-                        1,
+                        50,
                         null,
-                        "AP"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Prospecting"
-                    ],
-                    [
-                        8,
-                        null,
-                        "Critical Hits"
+                        "Intelligence"
                     ],
                     [
                         50,
@@ -17148,19 +17169,9 @@
                         "Chance"
                     ],
                     [
-                        50,
+                        8,
                         null,
-                        "Intelligence"
-                    ]
-                ]
-            },
-            {
-                "effect_key": "5",
-                "effects": [
-                    [
-                        1,
-                        null,
-                        "AP"
+                        "Critical Hits"
                     ],
                     [
                         20,
@@ -17168,30 +17179,14 @@
                         "Prospecting"
                     ],
                     [
-                        8,
-                        null,
-                        "Critical Hits"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Chance"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Intelligence"
-                    ],
-                    [
                         1,
                         null,
-                        "Range"
+                        "AP"
                     ]
                 ]
             }
         ],
         "equipment_ids": [
-            9176,
             9178,
             9181,
             9182,
@@ -18678,7 +18673,7 @@
         "name_es": "Set Granizado",
         "name_pt": "Conjunto Granizo",
         "name_de": "Hagelset",
-        "items": 3,
+        "items": 4,
         "stats_list": [
             {
                 "effect_key": "2",
@@ -18692,6 +18687,16 @@
                         30,
                         null,
                         "Chance"
+                    ],
+                    [
+                        7,
+                        null,
+                        "% Air Resist"
+                    ],
+                    [
+                        7,
+                        null,
+                        "% Fire Resist"
                     ],
                     [
                         10,
@@ -18717,12 +18722,27 @@
                         20,
                         null,
                         "Prospecting"
+                    ],
+                    [
+                        10,
+                        null,
+                        "AP Reduction"
                     ]
                 ]
             },
             {
                 "effect_key": "3",
                 "effects": [
+                    [
+                        7,
+                        null,
+                        "% Air Resist"
+                    ],
+                    [
+                        7,
+                        null,
+                        "% Fire Resist"
+                    ],
                     [
                         30,
                         null,
@@ -18762,6 +18782,76 @@
                         1,
                         null,
                         "AP"
+                    ],
+                    [
+                        10,
+                        null,
+                        "AP Reduction"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "4",
+                "effects": [
+                    [
+                        7,
+                        null,
+                        "% Air Resist"
+                    ],
+                    [
+                        7,
+                        null,
+                        "% Fire Resist"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Neutral Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        300,
+                        null,
+                        "Initiative"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Prospecting"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        20,
+                        null,
+                        "AP Reduction"
                     ]
                 ]
             }
@@ -18769,7 +18859,8 @@
         "equipment_ids": [
             11470,
             11471,
-            11472
+            11472,
+            11514
         ]
     },
     {
@@ -18953,19 +19044,14 @@
                         "Intelligence"
                     ],
                     [
-                        -5,
+                        10,
                         null,
-                        "Dodge"
+                        "Critical Resist"
                     ],
                     [
                         5,
                         null,
                         "Lock"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Critical Resist"
                     ]
                 ]
             },
@@ -18973,24 +19059,9 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        1,
+                        30,
                         null,
-                        "AP"
-                    ],
-                    [
-                        -5,
-                        null,
-                        "Dodge"
-                    ],
-                    [
-                        5,
-                        null,
-                        "Lock"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Critical Resist"
+                        "Agility"
                     ],
                     [
                         30,
@@ -18998,9 +19069,19 @@
                         "Intelligence"
                     ],
                     [
-                        30,
+                        10,
                         null,
-                        "Agility"
+                        "Critical Resist"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Lock"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
                     ]
                 ]
             },
@@ -19008,24 +19089,9 @@
                 "effect_key": "4",
                 "effects": [
                     [
-                        10,
+                        1,
                         null,
-                        "Critical Hits"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Agility"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Intelligence"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Critical Resist"
+                        "AP"
                     ],
                     [
                         5,
@@ -19033,14 +19099,24 @@
                         "Lock"
                     ],
                     [
-                        -5,
+                        10,
                         null,
-                        "Dodge"
+                        "Critical Resist"
                     ],
                     [
-                        1,
+                        40,
                         null,
-                        "AP"
+                        "Intelligence"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Critical Hits"
                     ]
                 ]
             }
@@ -21956,9 +22032,9 @@
                         "Strength"
                     ],
                     [
-                        30,
+                        300,
                         null,
-                        "Agility"
+                        "Initiative"
                     ],
                     [
                         15,
@@ -21966,9 +22042,19 @@
                         "Critical Damage"
                     ],
                     [
-                        300,
+                        30,
                         null,
-                        "Initiative"
+                        "Agility"
+                    ],
+                    [
+                        7,
+                        null,
+                        "Lock"
+                    ],
+                    [
+                        7,
+                        null,
+                        "MP Reduction"
                     ]
                 ]
             },
@@ -21976,24 +22062,9 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        100,
+                        1,
                         null,
-                        "Vitality"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Strength"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Agility"
-                    ],
-                    [
-                        15,
-                        null,
-                        "Critical Damage"
+                        "AP"
                     ],
                     [
                         300,
@@ -22001,9 +22072,34 @@
                         "Initiative"
                     ],
                     [
-                        1,
+                        15,
                         null,
-                        "AP"
+                        "Critical Damage"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        100,
+                        null,
+                        "Vitality"
+                    ],
+                    [
+                        7,
+                        null,
+                        "Lock"
+                    ],
+                    [
+                        7,
+                        null,
+                        "MP Reduction"
                     ]
                 ]
             },
@@ -22011,24 +22107,9 @@
                 "effect_key": "4",
                 "effects": [
                     [
-                        200,
+                        1,
                         null,
-                        "Vitality"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Strength"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Agility"
-                    ],
-                    [
-                        25,
-                        null,
-                        "Critical Damage"
+                        "AP"
                     ],
                     [
                         500,
@@ -22036,9 +22117,34 @@
                         "Initiative"
                     ],
                     [
-                        1,
+                        25,
                         null,
-                        "AP"
+                        "Critical Damage"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        200,
+                        null,
+                        "Vitality"
+                    ],
+                    [
+                        12,
+                        null,
+                        "Lock"
+                    ],
+                    [
+                        12,
+                        null,
+                        "MP Reduction"
                     ]
                 ]
             }
@@ -25410,29 +25516,9 @@
                         "Chance"
                     ],
                     [
-                        500,
-                        null,
-                        "Initiative"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Lock"
-                    ],
-                    [
-                        10,
-                        null,
-                        "AP Reduction"
-                    ],
-                    [
-                        200,
-                        null,
-                        "Vitality"
-                    ],
-                    [
                         15,
                         null,
-                        "Neutral Damage"
+                        "Water Damage"
                     ],
                     [
                         15,
@@ -25442,7 +25528,32 @@
                     [
                         15,
                         null,
-                        "Water Damage"
+                        "Neutral Damage"
+                    ],
+                    [
+                        200,
+                        null,
+                        "Vitality"
+                    ],
+                    [
+                        10,
+                        null,
+                        "AP Reduction"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Lock"
+                    ],
+                    [
+                        500,
+                        null,
+                        "Initiative"
+                    ],
+                    [
+                        15,
+                        null,
+                        "% Earth Resist"
                     ]
                 ]
             },
@@ -25450,44 +25561,9 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        1,
-                        null,
-                        "AP"
-                    ],
-                    [
-                        500,
-                        null,
-                        "Initiative"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Lock"
-                    ],
-                    [
-                        10,
-                        null,
-                        "AP Reduction"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Chance"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Strength"
-                    ],
-                    [
-                        200,
-                        null,
-                        "Vitality"
-                    ],
-                    [
                         15,
                         null,
-                        "Neutral Damage"
+                        "Water Damage"
                     ],
                     [
                         15,
@@ -25497,7 +25573,47 @@
                     [
                         15,
                         null,
-                        "Water Damage"
+                        "Neutral Damage"
+                    ],
+                    [
+                        200,
+                        null,
+                        "Vitality"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        10,
+                        null,
+                        "AP Reduction"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Lock"
+                    ],
+                    [
+                        500,
+                        null,
+                        "Initiative"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        15,
+                        null,
+                        "% Earth Resist"
                     ]
                 ]
             }
@@ -25648,29 +25764,9 @@
                         "Chance"
                     ],
                     [
-                        10,
+                        8,
                         null,
-                        "Water Damage"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Fire Damage"
-                    ],
-                    [
-                        150,
-                        null,
-                        "Vitality"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Heals"
-                    ],
-                    [
-                        -20,
-                        null,
-                        "Critical Hits"
+                        "% Air Resist"
                     ],
                     [
                         10,
@@ -25678,9 +25774,24 @@
                         "% Earth Resist"
                     ],
                     [
-                        8,
+                        40,
                         null,
-                        "% Air Resist"
+                        "Heals"
+                    ],
+                    [
+                        150,
+                        null,
+                        "Vitality"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
                     ]
                 ]
             },
@@ -25688,44 +25799,9 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        10,
+                        8,
                         null,
-                        "Water Damage"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Fire Damage"
-                    ],
-                    [
-                        150,
-                        null,
-                        "Vitality"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Intelligence"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Chance"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Heals"
-                    ],
-                    [
-                        -20,
-                        null,
-                        "Critical Hits"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
+                        "% Air Resist"
                     ],
                     [
                         10,
@@ -25733,9 +25809,39 @@
                         "% Earth Resist"
                     ],
                     [
-                        8,
+                        1,
                         null,
-                        "% Air Resist"
+                        "AP"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Heals"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        150,
+                        null,
+                        "Vitality"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
                     ]
                 ]
             }
@@ -26809,27 +26915,7 @@
                     [
                         15,
                         null,
-                        "Critical Damage"
-                    ],
-                    [
-                        15,
-                        null,
                         "Lock"
-                    ]
-                ]
-            },
-            {
-                "effect_key": "3",
-                "effects": [
-                    [
-                        5,
-                        null,
-                        "Critical Hits"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
                     ],
                     [
                         20,
@@ -26837,9 +26923,19 @@
                         "Critical Damage"
                     ],
                     [
-                        50,
+                        100,
                         null,
-                        "Power"
+                        "Vitality"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        15,
+                        null,
+                        "Lock"
                     ],
                     [
                         10,
@@ -26847,9 +26943,29 @@
                         "AP Loss Resist"
                     ],
                     [
-                        15,
+                        50,
                         null,
-                        "Lock"
+                        "Power"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Critical Damage"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        100,
+                        null,
+                        "Vitality"
                     ]
                 ]
             }
@@ -26964,9 +27080,9 @@
                         "Lock"
                     ],
                     [
-                        1,
+                        -1,
                         null,
-                        "MP"
+                        "Range"
                     ],
                     [
                         8,
@@ -26974,19 +27090,14 @@
                         "Critical Hits"
                     ],
                     [
-                        -1,
+                        1,
                         null,
-                        "Range"
-                    ]
-                ]
-            },
-            {
-                "effect_key": "3",
-                "effects": [
+                        "MP"
+                    ],
                     [
                         8,
                         null,
-                        "% Air Resist"
+                        "% Fire Resist"
                     ],
                     [
                         8,
@@ -26996,27 +27107,22 @@
                     [
                         8,
                         null,
-                        "% Fire Resist"
+                        "% Air Resist"
                     ],
                     [
-                        60,
+                        100,
                         null,
-                        "Agility"
-                    ],
+                        "Vitality"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
                     [
-                        15,
+                        -1,
                         null,
-                        "Lock"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
-                    ],
-                    [
-                        1,
-                        null,
-                        "MP"
+                        "Range"
                     ],
                     [
                         8,
@@ -27024,9 +27130,44 @@
                         "Critical Hits"
                     ],
                     [
-                        -1,
+                        1,
                         null,
-                        "Range"
+                        "MP"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Lock"
+                    ],
+                    [
+                        60,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        8,
+                        null,
+                        "% Fire Resist"
+                    ],
+                    [
+                        8,
+                        null,
+                        "% Water Resist"
+                    ],
+                    [
+                        8,
+                        null,
+                        "% Air Resist"
+                    ],
+                    [
+                        200,
+                        null,
+                        "Vitality"
                     ]
                 ]
             }
@@ -27060,32 +27201,32 @@
                         "Water Damage"
                     ],
                     [
+                        45,
+                        null,
+                        "Neutral Damage"
+                    ],
+                    [
+                        100,
+                        null,
+                        "Vitality"
+                    ],
+                    [
                         20,
                         null,
                         "Prospecting"
                     ],
                     [
-                        20,
-                        null,
-                        "Neutral Resist"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Fire Resist"
-                    ],
-                    [
-                        30,
+                        60,
                         null,
                         "Agility"
                     ],
                     [
-                        30,
+                        60,
                         null,
                         "Chance"
                     ],
                     [
-                        30,
+                        60,
                         null,
                         "Strength"
                     ],
@@ -27093,6 +27234,21 @@
                         30,
                         null,
                         "Air Damage"
+                    ],
+                    [
+                        7,
+                        null,
+                        "% Earth Resist"
+                    ],
+                    [
+                        7,
+                        null,
+                        "% Water Resist"
+                    ],
+                    [
+                        7,
+                        null,
+                        "% Air Resist"
                     ]
                 ]
             },
@@ -27100,19 +27256,14 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        10,
+                        65,
                         null,
-                        "Air Resist"
+                        "Neutral Damage"
                     ],
                     [
-                        10,
+                        150,
                         null,
-                        "Water Resist"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Earth Resist"
+                        "Vitality"
                     ],
                     [
                         20,
@@ -27120,32 +27271,22 @@
                         "Prospecting"
                     ],
                     [
-                        30,
-                        null,
-                        "Neutral Resist"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Fire Resist"
-                    ],
-                    [
                         1,
                         null,
                         "AP"
                     ],
                     [
-                        50,
+                        100,
                         null,
                         "Agility"
                     ],
                     [
-                        50,
+                        100,
                         null,
                         "Chance"
                     ],
                     [
-                        50,
+                        100,
                         null,
                         "Strength"
                     ],
@@ -27178,6 +27319,21 @@
                         15,
                         null,
                         "Critical Damage"
+                    ],
+                    [
+                        7,
+                        null,
+                        "% Earth Resist"
+                    ],
+                    [
+                        7,
+                        null,
+                        "% Water Resist"
+                    ],
+                    [
+                        7,
+                        null,
+                        "% Air Resist"
                     ]
                 ]
             }
@@ -27504,14 +27660,19 @@
                         "Strength"
                     ],
                     [
-                        10,
+                        7,
                         null,
-                        "Water Damage"
+                        "% Water Resist"
+                    ],
+                    [
+                        7,
+                        null,
+                        "% Earth Resist"
                     ],
                     [
                         60,
                         null,
-                        "Chance"
+                        "Intelligence"
                     ],
                     [
                         10,
@@ -27521,17 +27682,12 @@
                     [
                         60,
                         null,
-                        "Intelligence"
+                        "Chance"
                     ],
                     [
-                        7,
+                        10,
                         null,
-                        "% Earth Resist"
-                    ],
-                    [
-                        7,
-                        null,
-                        "% Water Resist"
+                        "Water Damage"
                     ]
                 ]
             },
@@ -27539,39 +27695,9 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        1,
+                        7,
                         null,
-                        "AP"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Water Damage"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Fire Damage"
-                    ],
-                    [
-                        60,
-                        null,
-                        "Chance"
-                    ],
-                    [
-                        60,
-                        null,
-                        "Intelligence"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Strength"
-                    ],
-                    [
-                        150,
-                        null,
-                        "Vitality"
+                        "% Water Resist"
                     ],
                     [
                         7,
@@ -27579,9 +27705,39 @@
                         "% Earth Resist"
                     ],
                     [
-                        7,
+                        150,
                         null,
-                        "% Water Resist"
+                        "Vitality"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        100,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        100,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
                     ]
                 ]
             }
@@ -28935,9 +29091,9 @@
                         "Earth Damage"
                     ],
                     [
-                        15,
+                        7,
                         null,
-                        "Water Damage"
+                        "MP Reduction"
                     ],
                     [
                         1,
@@ -28945,14 +29101,9 @@
                         "Range"
                     ],
                     [
-                        7,
+                        15,
                         null,
-                        "MP Reduction"
-                    ],
-                    [
-                        -5,
-                        null,
-                        "Dodge"
+                        "Water Damage"
                     ]
                 ]
             },
@@ -28960,9 +29111,24 @@
                 "effect_key": "3",
                 "effects": [
                     [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        7,
+                        null,
+                        "MP Reduction"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Range"
+                    ],
+                    [
                         15,
                         null,
-                        "Neutral Damage"
+                        "Water Damage"
                     ],
                     [
                         15,
@@ -28972,27 +29138,7 @@
                     [
                         15,
                         null,
-                        "Water Damage"
-                    ],
-                    [
-                        1,
-                        null,
-                        "Range"
-                    ],
-                    [
-                        7,
-                        null,
-                        "MP Reduction"
-                    ],
-                    [
-                        -5,
-                        null,
-                        "Dodge"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
+                        "Neutral Damage"
                     ]
                 ]
             }
@@ -29303,14 +29449,9 @@
                         "Intelligence"
                     ],
                     [
-                        5,
+                        30,
                         null,
-                        "Critical Hits"
-                    ],
-                    [
-                        10,
-                        null,
-                        "AP Loss Resist"
+                        "Chance"
                     ],
                     [
                         10,
@@ -29318,9 +29459,19 @@
                         "Dodge"
                     ],
                     [
-                        30,
+                        10,
                         null,
-                        "Chance"
+                        "AP Loss Resist"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        10,
+                        null,
+                        "% Water Resist"
                     ]
                 ]
             },
@@ -29328,19 +29479,19 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        1,
+                        60,
                         null,
-                        "AP"
+                        "Strength"
                     ],
                     [
-                        5,
+                        60,
                         null,
-                        "Critical Hits"
+                        "Intelligence"
                     ],
                     [
-                        10,
+                        60,
                         null,
-                        "AP Loss Resist"
+                        "Chance"
                     ],
                     [
                         10,
@@ -29348,19 +29499,24 @@
                         "Dodge"
                     ],
                     [
-                        30,
+                        10,
                         null,
-                        "Chance"
+                        "AP Loss Resist"
                     ],
                     [
-                        30,
+                        8,
                         null,
-                        "Intelligence"
+                        "Critical Hits"
                     ],
                     [
-                        30,
+                        1,
                         null,
-                        "Strength"
+                        "AP"
+                    ],
+                    [
+                        10,
+                        null,
+                        "% Water Resist"
                     ]
                 ]
             }
@@ -29795,14 +29951,9 @@
                         "Chance"
                     ],
                     [
-                        30,
+                        7,
                         null,
-                        "Pushback Damage"
-                    ],
-                    [
-                        15,
-                        null,
-                        "AP Reduction"
+                        "% Air Resist"
                     ],
                     [
                         7,
@@ -29810,9 +29961,24 @@
                         "% Water Resist"
                     ],
                     [
-                        7,
+                        15,
                         null,
-                        "% Air Resist"
+                        "AP Reduction"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Pushback Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Air Damage"
                     ]
                 ]
             },
@@ -29820,29 +29986,9 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        30,
+                        7,
                         null,
-                        "Pushback Damage"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
-                    ],
-                    [
-                        15,
-                        null,
-                        "AP Reduction"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Chance"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Agility"
+                        "% Air Resist"
                     ],
                     [
                         7,
@@ -29850,9 +29996,39 @@
                         "% Water Resist"
                     ],
                     [
-                        7,
+                        40,
                         null,
-                        "% Air Resist"
+                        "Agility"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        15,
+                        null,
+                        "AP Reduction"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Pushback Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Air Damage"
                     ]
                 ]
             }
@@ -29888,17 +30064,7 @@
                     [
                         10,
                         null,
-                        "% Fire Resist"
-                    ],
-                    [
-                        1,
-                        null,
-                        "Range"
-                    ],
-                    [
-                        15,
-                        null,
-                        "MP Reduction"
+                        "% Air Resist"
                     ],
                     [
                         60,
@@ -29906,9 +30072,24 @@
                         "Intelligence"
                     ],
                     [
+                        15,
+                        null,
+                        "MP Reduction"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Range"
+                    ],
+                    [
                         10,
                         null,
-                        "% Air Resist"
+                        "% Fire Resist"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Fire Damage"
                     ]
                 ]
             },
@@ -29918,32 +30099,7 @@
                     [
                         10,
                         null,
-                        "% Fire Resist"
-                    ],
-                    [
-                        1,
-                        null,
-                        "Range"
-                    ],
-                    [
-                        15,
-                        null,
-                        "MP Reduction"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Heals"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Dodge"
+                        "% Air Resist"
                     ],
                     [
                         60,
@@ -29953,7 +30109,37 @@
                     [
                         10,
                         null,
-                        "% Air Resist"
+                        "Dodge"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Heals"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        15,
+                        null,
+                        "MP Reduction"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        10,
+                        null,
+                        "% Fire Resist"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Fire Damage"
                     ]
                 ]
             }
@@ -30239,19 +30425,14 @@
                         "Agility"
                     ],
                     [
-                        10,
+                        1,
                         null,
-                        "% Water Resist"
-                    ],
-                    [
-                        800,
-                        null,
-                        "Initiative"
+                        "Range"
                     ],
                     [
                         10,
                         null,
-                        "Critical Resist"
+                        "MP Reduction"
                     ],
                     [
                         10,
@@ -30261,12 +30442,32 @@
                     [
                         10,
                         null,
-                        "MP Reduction"
+                        "Critical Resist"
                     ],
                     [
-                        1,
+                        800,
                         null,
-                        "Range"
+                        "Initiative"
+                    ],
+                    [
+                        10,
+                        null,
+                        "% Water Resist"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Neutral Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Air Damage"
                     ]
                 ]
             },
@@ -30274,19 +30475,29 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        10,
+                        1,
                         null,
-                        "% Water Resist"
+                        "AP"
                     ],
                     [
-                        800,
+                        1,
                         null,
-                        "Initiative"
+                        "Range"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Strength"
                     ],
                     [
                         10,
                         null,
-                        "Critical Resist"
+                        "MP Reduction"
                     ],
                     [
                         10,
@@ -30296,27 +30507,32 @@
                     [
                         10,
                         null,
-                        "MP Reduction"
+                        "Critical Resist"
                     ],
                     [
-                        40,
+                        800,
                         null,
-                        "Strength"
+                        "Initiative"
                     ],
                     [
-                        40,
+                        10,
                         null,
-                        "Agility"
+                        "% Water Resist"
                     ],
                     [
-                        1,
+                        5,
                         null,
-                        "Range"
+                        "Neutral Damage"
                     ],
                     [
-                        1,
+                        5,
                         null,
-                        "AP"
+                        "Earth Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Air Damage"
                     ]
                 ]
             }
@@ -30686,7 +30902,7 @@
                 "effect_key": "2",
                 "effects": [
                     [
-                        500,
+                        1000,
                         null,
                         "Initiative"
                     ],
@@ -30696,9 +30912,9 @@
                         "Strength"
                     ],
                     [
-                        10,
+                        15,
                         null,
-                        "AP Reduction"
+                        "Lock"
                     ],
                     [
                         10,
@@ -30706,9 +30922,9 @@
                         "Critical Hits"
                     ],
                     [
-                        10,
+                        15,
                         null,
-                        "Lock"
+                        "AP Reduction"
                     ]
                 ]
             },
@@ -30716,24 +30932,9 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        500,
+                        15,
                         null,
-                        "Initiative"
-                    ],
-                    [
-                        60,
-                        null,
-                        "Strength"
-                    ],
-                    [
-                        10,
-                        null,
-                        "AP Reduction"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
+                        "Lock"
                     ],
                     [
                         10,
@@ -30741,9 +30942,24 @@
                         "Critical Hits"
                     ],
                     [
-                        10,
+                        1,
                         null,
-                        "Lock"
+                        "AP"
+                    ],
+                    [
+                        15,
+                        null,
+                        "AP Reduction"
+                    ],
+                    [
+                        60,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        1000,
+                        null,
+                        "Initiative"
                     ]
                 ]
             }
@@ -30777,14 +30993,19 @@
                         "Intelligence"
                     ],
                     [
-                        40,
+                        15,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        30,
                         null,
                         "Critical Damage"
                     ],
                     [
-                        15,
+                        1,
                         null,
-                        "Dodge"
+                        "Summon"
                     ]
                 ]
             },
@@ -30792,9 +31013,19 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        40,
+                        15,
                         null,
-                        "Strength"
+                        "Dodge"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Critical Damage"
                     ],
                     [
                         40,
@@ -30804,17 +31035,17 @@
                     [
                         40,
                         null,
-                        "Critical Damage"
+                        "Strength"
                     ],
                     [
                         1,
                         null,
-                        "AP"
+                        "Summon"
                     ],
                     [
-                        15,
+                        7,
                         null,
-                        "Dodge"
+                        "Critical Hits"
                     ]
                 ]
             }
@@ -30969,19 +31200,9 @@
                         "Agility"
                     ],
                     [
-                        10,
-                        null,
-                        "% Water Resist"
-                    ],
-                    [
-                        10,
-                        null,
-                        "% Fire Resist"
-                    ],
-                    [
                         30,
                         null,
-                        "Chance"
+                        "Pushback Damage"
                     ],
                     [
                         12,
@@ -30991,13 +31212,13 @@
                     [
                         30,
                         null,
-                        "Pushback Damage"
-                    ]
-                ]
-            },
-            {
-                "effect_key": "3",
-                "effects": [
+                        "Chance"
+                    ],
+                    [
+                        10,
+                        null,
+                        "% Fire Resist"
+                    ],
                     [
                         10,
                         null,
@@ -31006,12 +31227,42 @@
                     [
                         10,
                         null,
-                        "% Fire Resist"
+                        "Fire Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Air Damage"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Pushback Damage"
+                    ],
+                    [
+                        12,
+                        null,
+                        "Critical Hits"
                     ],
                     [
                         60,
                         null,
-                        "Intelligence"
+                        "Chance"
                     ],
                     [
                         60,
@@ -31021,22 +31272,32 @@
                     [
                         60,
                         null,
-                        "Chance"
+                        "Intelligence"
                     ],
                     [
-                        12,
+                        10,
                         null,
-                        "Critical Hits"
+                        "% Fire Resist"
                     ],
                     [
-                        30,
+                        10,
                         null,
-                        "Pushback Damage"
+                        "% Water Resist"
                     ],
                     [
-                        1,
+                        10,
                         null,
-                        "AP"
+                        "Fire Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Air Damage"
                     ]
                 ]
             }
@@ -31824,34 +32085,9 @@
                         "AP"
                     ],
                     [
-                        1,
+                        120,
                         null,
-                        "Summon"
-                    ],
-                    [
-                        1,
-                        null,
-                        "Range"
-                    ],
-                    [
-                        35,
-                        null,
-                        "Heals"
-                    ],
-                    [
-                        35,
-                        null,
-                        "MP Loss Resist"
-                    ],
-                    [
-                        35,
-                        null,
-                        "AP Loss Resist"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Lock"
+                        "Power"
                     ],
                     [
                         25,
@@ -31859,19 +32095,24 @@
                         "Dodge"
                     ],
                     [
-                        80,
+                        20,
                         null,
-                        "Power"
-                    ]
-                ]
-            },
-            {
-                "effect_key": "3",
-                "effects": [
+                        "Lock"
+                    ],
                     [
-                        1,
+                        35,
                         null,
-                        "Summon"
+                        "AP Loss Resist"
+                    ],
+                    [
+                        35,
+                        null,
+                        "MP Loss Resist"
+                    ],
+                    [
+                        35,
+                        null,
+                        "Heals"
                     ],
                     [
                         1,
@@ -31879,9 +32120,44 @@
                         "Range"
                     ],
                     [
+                        1,
+                        null,
+                        "Summon"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        200,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        2,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        1,
+                        null,
+                        "MP"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Lock"
+                    ],
+                    [
                         50,
                         null,
-                        "Heals"
+                        "AP Loss Resist"
                     ],
                     [
                         50,
@@ -31891,32 +32167,17 @@
                     [
                         50,
                         null,
-                        "AP Loss Resist"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Lock"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Dodge"
+                        "Heals"
                     ],
                     [
                         1,
                         null,
-                        "MP"
+                        "Range"
                     ],
                     [
-                        2,
+                        1,
                         null,
-                        "AP"
-                    ],
-                    [
-                        120,
-                        null,
-                        "Power"
+                        "Summon"
                     ]
                 ]
             }
@@ -31950,14 +32211,9 @@
                         "Chance"
                     ],
                     [
-                        10,
+                        25,
                         null,
-                        "% Water Resist"
-                    ],
-                    [
-                        10,
-                        null,
-                        "% Fire Resist"
+                        "Heals"
                     ],
                     [
                         25,
@@ -31965,9 +32221,14 @@
                         "Pushback Damage"
                     ],
                     [
-                        20,
+                        10,
                         null,
-                        "Heals"
+                        "% Fire Resist"
+                    ],
+                    [
+                        10,
+                        null,
+                        "% Water Resist"
                     ]
                 ]
             },
@@ -31975,19 +32236,19 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        10,
+                        1,
                         null,
-                        "% Water Resist"
-                    ],
-                    [
-                        10,
-                        null,
-                        "% Fire Resist"
+                        "AP"
                     ],
                     [
                         40,
                         null,
-                        "Intelligence"
+                        "Heals"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Pushback Damage"
                     ],
                     [
                         40,
@@ -31995,19 +32256,19 @@
                         "Chance"
                     ],
                     [
-                        25,
+                        40,
                         null,
-                        "Pushback Damage"
+                        "Intelligence"
                     ],
                     [
-                        20,
+                        10,
                         null,
-                        "Heals"
+                        "% Fire Resist"
                     ],
                     [
-                        1,
+                        10,
                         null,
-                        "AP"
+                        "% Water Resist"
                     ]
                 ]
             }
@@ -32699,19 +32960,9 @@
                         "Water Damage"
                     ],
                     [
-                        5,
-                        null,
-                        "Dodge"
-                    ],
-                    [
                         20,
                         null,
-                        "Fire Damage"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Earth Damage"
+                        "Pushback Resist"
                     ],
                     [
                         20,
@@ -32721,7 +32972,17 @@
                     [
                         20,
                         null,
-                        "Pushback Resist"
+                        "Earth Damage"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Dodge"
                     ]
                 ]
             },
@@ -32729,14 +32990,29 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        5,
+                        20,
                         null,
-                        "Dodge"
+                        "Pushback Resist"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
                     ],
                     [
                         20,
                         null,
-                        "Air Damage"
+                        "Neutral Damage"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Fire Damage"
                     ],
                     [
                         20,
@@ -32746,27 +33022,12 @@
                     [
                         20,
                         null,
-                        "Fire Damage"
+                        "Air Damage"
                     ],
                     [
-                        20,
+                        5,
                         null,
-                        "Earth Damage"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Neutral Damage"
-                    ],
-                    [
-                        1,
-                        null,
-                        "MP"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Pushback Resist"
+                        "Dodge"
                     ]
                 ]
             }
@@ -34732,6 +34993,11 @@
                         10,
                         null,
                         "MP Loss Resist"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Pushback Resist"
                     ]
                 ]
             },
@@ -34741,12 +35007,7 @@
                     [
                         10,
                         null,
-                        "MP Loss Resist"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
+                        "Air Damage"
                     ],
                     [
                         60,
@@ -34754,9 +35015,19 @@
                         "Agility"
                     ],
                     [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
                         10,
                         null,
-                        "Air Damage"
+                        "MP Loss Resist"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Pushback Resist"
                     ]
                 ]
             }
@@ -35367,19 +35638,9 @@
                         "Water Damage"
                     ],
                     [
-                        7,
+                        10,
                         null,
-                        "Critical Hits"
-                    ],
-                    [
-                        30,
-                        null,
-                        "Heals"
-                    ],
-                    [
-                        15,
-                        null,
-                        "MP Reduction"
+                        "% Fire Resist"
                     ],
                     [
                         1,
@@ -35387,19 +35648,9 @@
                         "Range"
                     ],
                     [
-                        10,
+                        15,
                         null,
-                        "% Fire Resist"
-                    ]
-                ]
-            },
-            {
-                "effect_key": "3",
-                "effects": [
-                    [
-                        7,
-                        null,
-                        "Critical Hits"
+                        "MP Reduction"
                     ],
                     [
                         30,
@@ -35407,14 +35658,29 @@
                         "Heals"
                     ],
                     [
+                        10,
+                        null,
+                        "Critical Hits"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        10,
+                        null,
+                        "% Fire Resist"
+                    ],
+                    [
                         1,
                         null,
-                        "AP"
+                        "Range"
                     ],
                     [
                         15,
                         null,
-                        "MP Reduction"
+                        "Fire Damage"
                     ],
                     [
                         15,
@@ -35424,17 +35690,22 @@
                     [
                         15,
                         null,
-                        "Fire Damage"
+                        "MP Reduction"
                     ],
                     [
                         1,
                         null,
-                        "Range"
+                        "AP"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Heals"
                     ],
                     [
                         10,
                         null,
-                        "% Fire Resist"
+                        "Critical Hits"
                     ]
                 ]
             }
@@ -38178,19 +38449,19 @@
                 "effect_key": "2",
                 "effects": [
                     [
-                        10,
+                        15,
                         null,
                         "Air Damage"
                     ],
                     [
-                        10,
+                        15,
                         null,
                         "Water Damage"
                     ],
                     [
-                        80,
+                        10,
                         null,
-                        "Heals"
+                        "MP Loss Resist"
                     ],
                     [
                         -10,
@@ -38198,9 +38469,9 @@
                         "Critical Hits"
                     ],
                     [
-                        10,
+                        80,
                         null,
-                        "MP Loss Resist"
+                        "Heals"
                     ]
                 ]
             },
@@ -38210,22 +38481,7 @@
                     [
                         10,
                         null,
-                        "Air Damage"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Water Damage"
-                    ],
-                    [
-                        80,
-                        null,
-                        "Heals"
-                    ],
-                    [
-                        -10,
-                        null,
-                        "Critical Hits"
+                        "MP Loss Resist"
                     ],
                     [
                         1,
@@ -38233,9 +38489,24 @@
                         "AP"
                     ],
                     [
-                        10,
+                        -10,
                         null,
-                        "MP Loss Resist"
+                        "Critical Hits"
+                    ],
+                    [
+                        80,
+                        null,
+                        "Heals"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Air Damage"
                     ]
                 ]
             }
@@ -38750,6 +39021,21 @@
                         "Range"
                     ],
                     [
+                        5,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Neutral Damage"
+                    ],
+                    [
                         1,
                         null,
                         "Summon"
@@ -38770,11 +39056,6 @@
                         "Dodge"
                     ],
                     [
-                        -10,
-                        null,
-                        "Lock"
-                    ],
-                    [
                         10,
                         null,
                         "% Earth Resist"
@@ -38784,6 +39065,21 @@
             {
                 "effect_key": "3",
                 "effects": [
+                    [
+                        5,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Neutral Damage"
+                    ],
                     [
                         1,
                         null,
@@ -38818,11 +39114,6 @@
                         10,
                         null,
                         "Dodge"
-                    ],
-                    [
-                        -10,
-                        null,
-                        "Lock"
                     ],
                     [
                         10,
@@ -38952,9 +39243,9 @@
                         "Dodge"
                     ],
                     [
-                        10,
+                        40,
                         null,
-                        "AP Loss Resist"
+                        "Agility"
                     ],
                     [
                         40,
@@ -38962,9 +39253,19 @@
                         "Intelligence"
                     ],
                     [
-                        40,
+                        10,
                         null,
-                        "Agility"
+                        "AP Loss Resist"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Air Damage"
                     ]
                 ]
             },
@@ -38972,24 +39273,9 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        10,
+                        40,
                         null,
-                        "AP Loss Resist"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Dodge"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
-                    ],
-                    [
-                        1500,
-                        null,
-                        "Initiative"
+                        "Agility"
                     ],
                     [
                         40,
@@ -38997,9 +39283,34 @@
                         "Intelligence"
                     ],
                     [
-                        40,
+                        1500,
                         null,
-                        "Agility"
+                        "Initiative"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        10,
+                        null,
+                        "AP Loss Resist"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Air Damage"
                     ]
                 ]
             }
@@ -40272,9 +40583,19 @@
                         "Agility"
                     ],
                     [
+                        5,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Power"
+                    ],
+                    [
                         20,
                         null,
-                        "Critical Damage"
+                        "AP Loss Resist"
                     ],
                     [
                         20,
@@ -40284,17 +40605,17 @@
                     [
                         20,
                         null,
-                        "AP Loss Resist"
+                        "Critical Damage"
                     ],
                     [
-                        30,
+                        2,
                         null,
-                        "Power"
+                        "Water Damage"
                     ],
                     [
-                        5,
+                        2,
                         null,
-                        "Critical Hits"
+                        "Air Damage"
                     ]
                 ]
             },
@@ -40302,34 +40623,9 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        20,
+                        5,
                         null,
-                        "Chance"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Agility"
-                    ],
-                    [
-                        40,
-                        null,
-                        "MP Loss Resist"
-                    ],
-                    [
-                        40,
-                        null,
-                        "AP Loss Resist"
-                    ],
-                    [
-                        20,
-                        null,
-                        "Critical Damage"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
+                        "Critical Hits"
                     ],
                     [
                         30,
@@ -40337,9 +40633,54 @@
                         "Power"
                     ],
                     [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Critical Damage"
+                    ],
+                    [
+                        40,
+                        null,
+                        "AP Loss Resist"
+                    ],
+                    [
+                        40,
+                        null,
+                        "MP Loss Resist"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Chance"
+                    ],
+                    [
                         5,
                         null,
-                        "Critical Hits"
+                        "Water Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Air Damage"
+                    ],
+                    [
+                        3,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        3,
+                        null,
+                        "Fire Damage"
                     ]
                 ]
             }
@@ -40480,9 +40821,9 @@
                         "Pushback Resist"
                     ],
                     [
-                        10,
+                        60,
                         null,
-                        "Lock"
+                        "Chance"
                     ],
                     [
                         10,
@@ -40490,9 +40831,14 @@
                         "MP Loss Resist"
                     ],
                     [
-                        60,
+                        10,
                         null,
-                        "Chance"
+                        "Lock"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
                     ]
                 ]
             },
@@ -40502,22 +40848,7 @@
                     [
                         10,
                         null,
-                        "MP Loss Resist"
-                    ],
-                    [
-                        60,
-                        null,
-                        "Chance"
-                    ],
-                    [
-                        1,
-                        null,
-                        "AP"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Pushback Resist"
+                        "Lock"
                     ],
                     [
                         500,
@@ -40525,9 +40856,29 @@
                         "Initiative"
                     ],
                     [
+                        50,
+                        null,
+                        "Pushback Resist"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        60,
+                        null,
+                        "Chance"
+                    ],
+                    [
                         10,
                         null,
-                        "Lock"
+                        "MP Loss Resist"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
                     ]
                 ]
             }
@@ -44274,7 +44625,7 @@
                     [
                         1,
                         null,
-                        "MP"
+                        "AP"
                     ],
                     [
                         15,
@@ -44320,6 +44671,11 @@
                         10,
                         null,
                         "AP Loss Resist"
+                    ],
+                    [
+                        200,
+                        null,
+                        "Neutral Damage"
                     ]
                 ]
             }
@@ -47712,7 +48068,7 @@
         "ankama_id": 706,
         "name_en": "Winged Ceremonial Set",
         "name_fr": "Panoplie d'apparat Ailés",
-        "name_es": "Set cosmético aliados",
+        "name_es": "Set cosmético alados",
         "name_pt": "Conjunto de Aparência Alado",
         "name_de": "Prunkset Flügel",
         "items": 3,
@@ -48025,7 +48381,7 @@
         "ankama_id": 729,
         "name_en": "Grillian Ceremonial Set",
         "name_fr": "Panoplie d'apparat Grilliane",
-        "name_es": "Set cosmético Grillian",
+        "name_es": "Set cosmético de Grilyan",
         "name_pt": "Conjunto de Aparência Grillian",
         "name_de": "Prunkset Grillian",
         "items": 2,
@@ -48958,11 +49314,12 @@
         "name_es": "Set cosmético de la weina Henelsuw",
         "name_pt": "Conjunto de Aparência da Wainha Dossul",
         "name_de": "Prunkset der Kwönigin Desswüdens",
-        "items": 3,
+        "items": 4,
         "equipment_ids": [
             27848,
             29498,
-            31042
+            31042,
+            32985
         ]
     },
     {
@@ -52149,7 +52506,7 @@
         "name_fr": "Panokami",
         "name_es": "Setokami",
         "name_pt": "Conjuntokami",
-        "name_de": "Okami-Set",
+        "name_de": "Okamimikry-Set",
         "items": 2,
         "stats_list": [
             {
@@ -53212,7 +53569,7 @@
                 "effect_key": "2",
                 "effects": [
                     [
-                        100,
+                        60,
                         null,
                         "Power"
                     ],
@@ -53222,14 +53579,19 @@
                         "Critical Resist"
                     ],
                     [
+                        7,
+                        null,
+                        "% Water Resist"
+                    ],
+                    [
                         5,
                         null,
                         "Critical Hits"
                     ],
                     [
-                        7,
+                        30,
                         null,
-                        "% Water Resist"
+                        "Critical Damage"
                     ]
                 ]
             }
@@ -53717,14 +54079,19 @@
                         "Power"
                     ],
                     [
+                        10,
+                        null,
+                        "Lock"
+                    ],
+                    [
                         7,
                         null,
                         "% Air Resist"
                     ],
                     [
-                        10,
+                        25,
                         null,
-                        "Lock"
+                        "Damage"
                     ]
                 ]
             }
@@ -55501,19 +55868,19 @@
                         "Strength"
                     ],
                     [
-                        10,
+                        40,
                         null,
-                        "% Water Resist"
+                        "Intelligence"
+                    ],
+                    [
+                        16,
+                        null,
+                        "Fire Damage"
                     ],
                     [
                         10,
                         null,
-                        "% Fire Resist"
-                    ],
-                    [
-                        10,
-                        null,
-                        "Critical Damage"
+                        "Critical Hits"
                     ],
                     [
                         25,
@@ -55523,17 +55890,12 @@
                     [
                         10,
                         null,
-                        "Critical Hits"
+                        "% Fire Resist"
                     ],
                     [
-                        16,
+                        10,
                         null,
-                        "Fire Damage"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Intelligence"
+                        "% Water Resist"
                     ]
                 ]
             },
@@ -55541,24 +55903,34 @@
                 "effect_key": "3",
                 "effects": [
                     [
-                        1,
+                        50,
                         null,
-                        "AP"
+                        "Power"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        100,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        16,
+                        null,
+                        "Fire Damage"
                     ],
                     [
                         15,
                         null,
-                        "Lock"
+                        "Critical Hits"
                     ],
                     [
-                        400,
+                        25,
                         null,
-                        "Initiative"
-                    ],
-                    [
-                        10,
-                        null,
-                        "% Water Resist"
+                        "Pushback Damage"
                     ],
                     [
                         10,
@@ -55568,37 +55940,17 @@
                     [
                         10,
                         null,
-                        "Critical Damage"
-                    ],
-                    [
-                        25,
-                        null,
-                        "Pushback Damage"
+                        "% Water Resist"
                     ],
                     [
                         15,
                         null,
-                        "Critical Hits"
+                        "Lock"
                     ],
                     [
-                        16,
+                        1,
                         null,
-                        "Fire Damage"
-                    ],
-                    [
-                        100,
-                        null,
-                        "Intelligence"
-                    ],
-                    [
-                        40,
-                        null,
-                        "Strength"
-                    ],
-                    [
-                        50,
-                        null,
-                        "Power"
+                        "AP"
                     ]
                 ]
             }
@@ -57638,11 +57990,11 @@
     },
     {
         "ankama_id": 1028,
-        "name_en": "[!] Panoplie d'apparat de Zi",
+        "name_en": "Zi Ceremonial Set",
         "name_fr": "Panoplie d'apparat de Zi",
-        "name_es": "[!] Panoplie d'apparat de Zi",
-        "name_pt": "[!] Panoplie d'apparat de Zi",
-        "name_de": "[!] Panoplie d'apparat de Zi",
+        "name_es": "Set cosmético de Zi",
+        "name_pt": "Conjunto de Aparência de Zi",
+        "name_de": "Zi-Prunkset",
         "items": 2,
         "equipment_ids": [
             30536,
@@ -57651,11 +58003,11 @@
     },
     {
         "ankama_id": 1029,
-        "name_en": "[!] Panoplie d'apparat Osavora",
+        "name_en": "Osavora Ceremonial Set",
         "name_fr": "Panoplie d'apparat Osavora",
-        "name_es": "[!] Panoplie d'apparat Osavora",
-        "name_pt": "[!] Panoplie d'apparat Osavora",
-        "name_de": "[!] Panoplie d'apparat Osavora",
+        "name_es": "Set cosmético Osavora",
+        "name_pt": "Conjunto de Aparência de Osavora",
+        "name_de": "Osavora-Prunkset",
         "items": 3,
         "equipment_ids": [
             31944,
@@ -57726,6 +58078,1531 @@
         ]
     },
     {
+        "ankama_id": 1034,
+        "name_en": "Mastoslob Set",
+        "name_fr": "Panoplie de Bouflouth",
+        "name_es": "Set de Jalalut",
+        "name_pt": "Conjunto do Papodonte",
+        "name_de": "Ausrüstungsset von Fressglut",
+        "items": 3,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        10,
+                        null,
+                        "Air Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Neutral Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Critical Damage"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Strength"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        60,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        60,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        60,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Critical Damage"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Neutral Damage"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Air Damage"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            32201,
+            32202,
+            32203
+        ]
+    },
+    {
+        "ankama_id": 1035,
+        "name_en": "Mister Penguin Set",
+        "name_fr": "Panoplie de Monsieur Pingouin",
+        "name_es": "Set de Elpin Güino",
+        "name_pt": "Conjunto do Senhor Pinguim",
+        "name_de": "Ausrüstungsset von Mister Ping",
+        "items": 3,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        25,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        25,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        25,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        5,
+                        null,
+                        "AP Reduction"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Critical Resist"
+                    ],
+                    [
+                        2,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Water Damage"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        50,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        10,
+                        null,
+                        "AP Reduction"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Critical Resist"
+                    ],
+                    [
+                        2,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            32204,
+            32205,
+            32206
+        ]
+    },
+    {
+        "ankama_id": 1036,
+        "name_en": "Katigger Set",
+        "name_fr": "Panoplie de Katigrou",
+        "name_es": "Set de Katigrú",
+        "name_pt": "Conjunto do Katigre",
+        "name_de": "Ausrüstungsset von Katigger",
+        "items": 3,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        40,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        3,
+                        null,
+                        "% Air Resist"
+                    ],
+                    [
+                        3,
+                        null,
+                        "% Water Resist"
+                    ],
+                    [
+                        3,
+                        null,
+                        "% Fire Resist"
+                    ],
+                    [
+                        3,
+                        null,
+                        "% Earth Resist"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Chance"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        10,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        6,
+                        null,
+                        "% Air Resist"
+                    ],
+                    [
+                        6,
+                        null,
+                        "% Water Resist"
+                    ],
+                    [
+                        6,
+                        null,
+                        "% Fire Resist"
+                    ],
+                    [
+                        6,
+                        null,
+                        "% Earth Resist"
+                    ],
+                    [
+                        80,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        80,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        80,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        80,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            32207,
+            32208,
+            32209
+        ]
+    },
+    {
+        "ankama_id": 1037,
+        "name_en": "Pirate Bhey Set",
+        "name_fr": "Panoplie de Fantômayte",
+        "name_es": "Set de Phantomeyt",
+        "name_pt": "Conjunto do Fantomaite",
+        "name_de": "Ausrüstungsset von Phantomaytje",
+        "items": 3,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        30,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        500,
+                        null,
+                        "Initiative"
+                    ],
+                    [
+                        12,
+                        null,
+                        "MP Reduction"
+                    ],
+                    [
+                        12,
+                        null,
+                        "AP Reduction"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Wisdom"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        12,
+                        null,
+                        "MP Reduction"
+                    ],
+                    [
+                        12,
+                        null,
+                        "AP Reduction"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Wisdom"
+                    ],
+                    [
+                        500,
+                        null,
+                        "Initiative"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            32210,
+            32211,
+            32212
+        ]
+    },
+    {
+        "ankama_id": 1038,
+        "name_en": "Masked Avenger Set",
+        "name_fr": "Panoplie de Vengeuse Masquée",
+        "name_es": "Set de Vengadora Enmascarada",
+        "name_pt": "Conjunto da Vingadora Mascarada",
+        "name_de": "Ausrüstungsset der Maskierten Rächerin",
+        "items": 3,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        30,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Summon"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Neutral Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Water Damage"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        1,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Summon"
+                    ],
+                    [
+                        60,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        60,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        60,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Neutral Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            32213,
+            32214,
+            32215
+        ]
+    },
+    {
+        "ankama_id": 1039,
+        "name_en": "YeCh'Ti Set",
+        "name_fr": "Panoplie du YeCh'Ti",
+        "name_es": "Set de YeCh'Ti",
+        "name_pt": "Conjunto do YeCh'Ti",
+        "name_de": "Ausrüstungsset von YeCh'Ti",
+        "items": 3,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        100,
+                        null,
+                        "Vitality"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        5,
+                        null,
+                        "AP Loss Resist"
+                    ],
+                    [
+                        5,
+                        null,
+                        "MP Loss Resist"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Critical Hits"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        200,
+                        null,
+                        "Vitality"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        10,
+                        null,
+                        "AP Loss Resist"
+                    ],
+                    [
+                        10,
+                        null,
+                        "MP Loss Resist"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Critical Hits"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            32216,
+            32217,
+            32218
+        ]
+    },
+    {
+        "ankama_id": 1040,
+        "name_en": "San Jifu Set",
+        "name_fr": "Panoplie de San Jifu",
+        "name_es": "Set de San Jifu",
+        "name_pt": "Conjunto do San Jifu",
+        "name_de": "Ausrüstungsset von San Jifu",
+        "items": 3,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        30,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        7,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        7,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        7,
+                        null,
+                        "AP Reduction"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        7,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        7,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        7,
+                        null,
+                        "AP Reduction"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            32219,
+            32220,
+            32221
+        ]
+    },
+    {
+        "ankama_id": 1041,
+        "name_en": "Flasho Set",
+        "name_fr": "Panoplie de Flasho",
+        "name_es": "Set de Tejash",
+        "name_pt": "Conjunto do Flashugo",
+        "name_de": "Ausrüstungsset von Daxoflash",
+        "items": 3,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        150,
+                        null,
+                        "Vitality"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        12,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        7,
+                        null,
+                        "AP Reduction"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        150,
+                        null,
+                        "Vitality"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        12,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        7,
+                        null,
+                        "AP Reduction"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            32222,
+            32223,
+            32224
+        ]
+    },
+    {
+        "ankama_id": 1042,
+        "name_en": "Doctor Gobotnegg Set",
+        "name_fr": "Panoplie du Docteur Eggob",
+        "name_es": "Set del doctor Eggob",
+        "name_pt": "Conjunto do Goblotnik",
+        "name_de": "Ausrüstungsset von Doktor Eggob",
+        "items": 3,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        500,
+                        null,
+                        "Initiative"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        25,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Pushback Damage"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        500,
+                        null,
+                        "Initiative"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        25,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Pushback Damage"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            32225,
+            32226,
+            32227
+        ]
+    },
+    {
+        "ankama_id": 1043,
+        "name_en": "Vinnie the Bearbarian Set",
+        "name_fr": "Panoplie de Viti Glourson",
+        "name_es": "Set de Huini Golosote",
+        "name_pt": "Conjunto do Viti Glurso",
+        "name_de": "Ausrüstungsset von Wini Barbär",
+        "items": 3,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        30,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Lock"
+                    ],
+                    [
+                        10,
+                        null,
+                        "MP Reduction"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Pushback Damage"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Pushback Damage"
+                    ],
+                    [
+                        20,
+                        null,
+                        "MP Reduction"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Lock"
+                    ],
+                    [
+                        60,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        60,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        60,
+                        null,
+                        "Strength"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            32228,
+            32229,
+            32230
+        ]
+    },
+    {
+        "ankama_id": 1044,
+        "name_en": "Ice Knight Set",
+        "name_fr": "Panoplie du Chevalier de Glace",
+        "name_es": "Set del Caballero de Hielo",
+        "name_pt": "Conjunto do Cavaleiro de Gelo",
+        "name_de": "Ausrüstungsset des Eisritters",
+        "items": 3,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        30,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        15,
+                        null,
+                        "AP Loss Resist"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        10,
+                        null,
+                        "MP Reduction"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        15,
+                        null,
+                        "AP Loss Resist"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Dodge"
+                    ],
+                    [
+                        10,
+                        null,
+                        "MP Reduction"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            32231,
+            32232,
+            32233
+        ]
+    },
+    {
+        "ankama_id": 1045,
+        "name_en": "Erotegg Set",
+        "name_fr": "Panoplie de Culbutœuf",
+        "name_es": "Set de Tentenhuevo",
+        "name_pt": "Conjunto do Estrovo",
+        "name_de": "Ausrüstungsset von Kuhklebei",
+        "items": 3,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        30,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Pushback Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Air Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Neutral Damage"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        12,
+                        null,
+                        "Critical Hits"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        1,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Pushback Damage"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Air Damage"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Neutral Damage"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        50,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        18,
+                        null,
+                        "Critical Hits"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            32234,
+            32235,
+            32236
+        ]
+    },
+    {
+        "ankama_id": 1046,
+        "name_en": "Bearendizer Set",
+        "name_fr": "Panoplie de Glourdorak",
+        "name_es": "Set de Golosorak",
+        "name_pt": "Conjunto do Glurdorak",
+        "name_de": "Ausrüstungsset von Barbärdizer",
+        "items": 3,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        1000,
+                        null,
+                        "Initiative"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Critical Damage"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Pushback Damage"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Heals"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Critical Hits"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ],
+                    [
+                        1000,
+                        null,
+                        "Initiative"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Critical Damage"
+                    ],
+                    [
+                        20,
+                        null,
+                        "Pushback Damage"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Heals"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Critical Hits"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            32237,
+            32238,
+            32239
+        ]
+    },
+    {
+        "ankama_id": 1047,
+        "name_en": "Mekstagob Set",
+        "name_fr": "Panoplie de Mekamouth",
+        "name_es": "Set de Mecanimut",
+        "name_pt": "Conjunto do Mekamute",
+        "name_de": "Ausrüstungsset von Mechmut",
+        "items": 3,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        40,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        1,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        5,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        10,
+                        null,
+                        "AP Reduction"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        10,
+                        null,
+                        "Neutral Damage"
+                    ],
+                    [
+                        40,
+                        null,
+                        "Intelligence"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        1,
+                        null,
+                        "Range"
+                    ],
+                    [
+                        8,
+                        null,
+                        "Critical Hits"
+                    ],
+                    [
+                        15,
+                        null,
+                        "AP Reduction"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Water Damage"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Fire Damage"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Earth Damage"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Neutral Damage"
+                    ],
+                    [
+                        70,
+                        null,
+                        "Intelligence"
+                    ],
+                    [
+                        70,
+                        null,
+                        "Chance"
+                    ],
+                    [
+                        70,
+                        null,
+                        "Strength"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            32240,
+            32241,
+            32242
+        ]
+    },
+    {
+        "ankama_id": 1048,
+        "name_en": "Psychopump Set",
+        "name_fr": "Panoplie de Psikopompe",
+        "name_es": "Set de Psikopomzopato",
+        "name_pt": "Conjunto do Psikopompo",
+        "name_de": "Ausrüstungsset von Psychopomps",
+        "items": 3,
+        "stats_list": [
+            {
+                "effect_key": "2",
+                "effects": [
+                    [
+                        30,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        15,
+                        null,
+                        "Critical Resist"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Heals"
+                    ],
+                    [
+                        10,
+                        null,
+                        "MP Reduction"
+                    ]
+                ]
+            },
+            {
+                "effect_key": "3",
+                "effects": [
+                    [
+                        15,
+                        null,
+                        "Critical Resist"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Heals"
+                    ],
+                    [
+                        10,
+                        null,
+                        "MP Reduction"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Power"
+                    ],
+                    [
+                        30,
+                        null,
+                        "Agility"
+                    ],
+                    [
+                        1,
+                        null,
+                        "AP"
+                    ]
+                ]
+            }
+        ],
+        "equipment_ids": [
+            32243,
+            32244,
+            32245
+        ]
+    },
+    {
+        "ankama_id": 1049,
+        "name_en": "Demon IV Ceremonial Set",
+        "name_fr": "Panoplie d'apparat de la Démone IV",
+        "name_es": "Set cosmético de la Demonio IV",
+        "name_pt": "Conjunto de Aparência da Demônia IV",
+        "name_de": "Prunkset von Dämonin IV",
+        "items": 4,
+        "equipment_ids": [
+            32419,
+            32420,
+            32421,
+            32422
+        ]
+    },
+    {
+        "ankama_id": 1050,
+        "name_en": "Many-Hued Demon IV Ceremonial Set",
+        "name_fr": "Panoplie d'apparat diaprée de la Démone IV",
+        "name_es": "Set cosmético matizado de la Demonio IV",
+        "name_pt": "Conjunto de Aparência Matizada da Demônia IV",
+        "name_de": "Schillerndes Prunkset von Dämonin IV",
+        "items": 4,
+        "equipment_ids": [
+            32423,
+            32424,
+            32425,
+            32426
+        ]
+    },
+    {
         "ankama_id": 1051,
         "name_en": "Vademecum Ceremonial Set",
         "name_fr": "Panoplie d'apparat Vadémécoume",
@@ -57741,6 +59618,124 @@
             32449,
             32450,
             32451
+        ]
+    },
+    {
+        "ankama_id": 1052,
+        "name_en": "Goultard Ceremonial Set",
+        "name_fr": "Panoplie d'apparat de Goultard",
+        "name_es": "Set cosmético de Gúltar",
+        "name_pt": "Conjuntos de Aparência de Gultar",
+        "name_de": "Goultards Prunkset",
+        "items": 3,
+        "equipment_ids": [
+            32454,
+            32456,
+            32463
+        ]
+    },
+    {
+        "ankama_id": 1053,
+        "name_en": "Incorporated Ceremonial Set",
+        "name_fr": "Panoplie d'apparat Corpo",
+        "name_es": "Set cosmético de Corpo",
+        "name_pt": "Conjunto de Aparência Corporativa",
+        "name_de": "Corpo-Prunkset",
+        "items": 6,
+        "equipment_ids": [
+            32531,
+            32532,
+            32533,
+            32534,
+            32535,
+            32536
+        ]
+    },
+    {
+        "ankama_id": 1055,
+        "name_en": "Tactician Ceremonial Set",
+        "name_fr": "Panoplie d'apparat du Tacticien",
+        "name_es": "Set cosmético de estratega",
+        "name_pt": "Conjunto de Aparência do Estrategista",
+        "name_de": "Prunkset des Taktikers",
+        "items": 1,
+        "equipment_ids": [
+            32566
+        ]
+    },
+    {
+        "ankama_id": 1056,
+        "name_en": "Bronze Aytee Ceremonial Set",
+        "name_fr": "Panoplie d'apparat Théa de Bronze",
+        "name_es": "Set cosmético Katea de bronce",
+        "name_pt": "Conjunto de Aparência Thea de Bronze",
+        "name_de": "Prunkset der Bronzenen Thea",
+        "items": 3,
+        "equipment_ids": [
+            23088,
+            32558,
+            32561
+        ]
+    },
+    {
+        "ankama_id": 1057,
+        "name_en": "Silver Aytee Ceremonial Set",
+        "name_fr": "Panoplie d'apparat Théa d'Argent",
+        "name_es": "Set cosmético Katea de plata",
+        "name_pt": "Conjunto de Aparência Thea de Prata",
+        "name_de": "Prunkset der Silbernen Thea",
+        "items": 3,
+        "equipment_ids": [
+            23089,
+            32559,
+            32562
+        ]
+    },
+    {
+        "ankama_id": 1058,
+        "name_en": "Gold Aytee Ceremonial Set",
+        "name_fr": "Panoplie d'apparat Théa d'Or",
+        "name_es": "Set cosmético Katea de oro",
+        "name_pt": "Conjunto de Aparência Thea de Ouro",
+        "name_de": "Prunkset der Goldenen Thea",
+        "items": 3,
+        "equipment_ids": [
+            23090,
+            32560,
+            32563
+        ]
+    },
+    {
+        "ankama_id": 1059,
+        "name_en": "Ankamaset",
+        "name_fr": "Ankamanoplie",
+        "name_es": "Ankamaset",
+        "name_pt": "Ankamonjunto",
+        "name_de": "Ankamaset",
+        "items": 4,
+        "equipment_ids": [
+            33531,
+            33532,
+            33533,
+            33534
+        ]
+    },
+    {
+        "ankama_id": 1060,
+        "name_en": "Oni Devotee Ceremonial Set",
+        "name_fr": "Panoplie d'apparat des adorateurs d'Onis",
+        "name_es": "Set cosmético de los adoradores de onis",
+        "name_pt": "Conjunto de Aparência dos Adoradores de Onis",
+        "name_de": "Prunkset der Oni-Bewunderer",
+        "items": 7,
+        "equipment_ids": [
+            33545,
+            33546,
+            33547,
+            33548,
+            33549,
+            33550,
+            33551
         ]
     }
 ]

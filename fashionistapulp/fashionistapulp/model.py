@@ -291,10 +291,7 @@ class Model:
         #Adding more weight to Ganymede's Diadem equivalent to 1 AP
         #The bearer gains 2 AP on even turns and loses 1 AP on odd turns.
         self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name("Ganymede's Diadem 1").id, 
-                               objective_values.get('ap', 0))
-        self.problem.add_to_of('p', 
-                               self.structure.get_item_by_name("Ganymede's Diadem 2").id, 
+                               self.structure.get_item_by_name("Ganymede's Diadem").id, 
                                objective_values.get('ap', 0))
         
         #Adding more weight to Rykke Errel's Bravery equivalent to 400 hp and -10% ranged damage
@@ -353,7 +350,7 @@ class Model:
         #The bearer gains 550% of their level in shield points on the first turn, 200% on the second turn and 100% on the third.
         prytekt_new_stat_weight = objective_values.get('hp', 0) * ((0.7*550+0.85*200+100)/4) * level / 200
         self.problem.add_to_of('p',
-                                self.structure.get_item_by_name("Prytekt").id,
+                                self.structure.get_item_by_name("Prytekt-O-Mat").id,
                                 prytekt_new_stat_weight)
         #Shiny Prytekt
         #The bearer gains 150% of their level in shield points on the first turn, 450% on the second turn and 150% on the third.
@@ -373,7 +370,7 @@ class Model:
         #The bearer gains 1 AP for 3 turns but inflicts -10% damage.
         pryssure_new_stat_weight = objective_values.get('ap', 0) * 0.75 - objective_values.get('permedam', 0) * 7.5 - objective_values.get('perrandam', 0) * 7.5     
         self.problem.add_to_of('p',
-                                self.structure.get_item_by_name("Pryssure").id,
+                                self.structure.get_item_by_name("Pryssure-O-Mat").id,
                                 pryssure_new_stat_weight)
 
         #Shiny Pryssure
@@ -429,7 +426,7 @@ class Model:
         #The bearer gains +2 AP for their first round.
         prysipitate_new_stat_weight = objective_values.get('ap', 0) * 0.5
         self.problem.add_to_of('p',
-                                self.structure.get_item_by_name("Prysipitate").id,
+                                self.structure.get_item_by_name("Prysipitate-O-Mat").id,
                                 prysipitate_new_stat_weight)
 
         #Shiny Prysipitate
