@@ -111,15 +111,21 @@ python3 resize_images.py
 
 Spells, damage tables, and icons all come from the data published on the [dofusdude/dofus3-main](https://github.com/dofusdude/dofus3-main) GitHub project. Everything below is scraped from those releases with the scripts in `itemscraper/`. Run the commands from the repo root.
 
+Start by capturing the current in-game version from the centralized helper:
+
+```powershell
+$version = python -m fashionista_version
+```
+
 1. **Download the dumps**
    ```powershell
-   python itemscraper/download_raw_data.py --tag 3.4.3.4 --filter spell --filter translations --filter spell_images
+   python itemscraper/download_raw_data.py --tag $version --filter spell --filter translations --filter spell_images
    ```
    This pulls the selected release into `itemscraper/raw/<tag>/`. Set a `GITHUB_TOKEN` if GitHub rate-limits you.
 
 2. **Transform the spells**
    ```powershell
-   python itemscraper/get_spells.py --tag 3.4.3.4 --output itemscraper/transformed_spells.json --class-output itemscraper/transformed_class_spells.json
+   python itemscraper/get_spells.py --tag $version --output itemscraper/transformed_spells.json --class-output itemscraper/transformed_class_spells.json
    ```
    Generates the compact spell JSON plus the class map that mirrors the in-game spellbook.
 
@@ -131,7 +137,7 @@ Spells, damage tables, and icons all come from the data published on the [dofusd
 
 4. **Refresh spell icons**
    ```powershell
-   python itemscraper/download_spell_images.py --version 3.4.3.4 --size 96 --scope damage --prune
+   python itemscraper/download_spell_images.py --version $version --size 96 --scope damage --prune
    ```
    Extracts `spell_images_<size>.tar.gz`, renames each PNG with the latest English name, and copies the files to `fashionsite/chardata/static/chardata/spells` plus the mirrored `fashionsite/staticfiles/chardata/spells` directory.
 
@@ -173,7 +179,7 @@ Si vous rencontrez des problèmes lors de l'installation sur Windows 11, voici q
 # Progress and Roadmap
 
 ✅ Website is fully operational     
-✅ All equipments and mounts updated to Dofus 3.4.3.4      
+✅ All equipments and mounts updated to the Dofus version defined in [fashionista_version.py](fashionista_version.py)      
 ✅ Sets 2.70 done  
 ✅ Updated all special effects to 2.70     
 ✅ Special items effects updated including Prytek         

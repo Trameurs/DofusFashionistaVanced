@@ -9,9 +9,11 @@ from typing import Iterable, List, Optional
 
 import requests
 
+from fashionista_version import FASHIONISTA_VERSION
+
 API_ROOT = "https://api.github.com"
 DEFAULT_REPO = "dofusdude/dofus3-main"
-DEFAULT_TAG = "3.4.3.4"
+DEFAULT_TAG = FASHIONISTA_VERSION
 DEFAULT_DEST = "itemscraper/raw"
 
 

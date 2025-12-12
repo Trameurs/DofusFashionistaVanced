@@ -12,6 +12,8 @@ from pathlib import Path
 from types import ModuleType
 from typing import Dict, Iterable, List, Sequence, Set, Tuple
 
+from fashionista_version import FASHIONISTA_VERSION
+
 
 DEFAULT_RAW_ROOT = Path("itemscraper/raw")
 DEFAULT_OUTPUT = Path("itemscraper/spell_images")
@@ -55,7 +57,10 @@ def parse_args() -> argparse.Namespace:
         "--version",
         type=str,
         default=None,
-        help="Specific raw subdirectory to use (e.g. 3.4.3.4). Defaults to the latest available.",
+        help=(
+            "Specific raw subdirectory to use (e.g. "
+            f"{FASHIONISTA_VERSION}). Defaults to the latest available."
+        ),
     )
     parser.add_argument(
         "--size",
