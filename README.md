@@ -200,10 +200,11 @@ Si vous rencontrez des problèmes lors de l'installation sur Windows 11, voici q
     🚧 80% Portuguese (some spells and text left)          
     🚧 30% Deutsche (only items done)           
     ❌ 0% Italian (Ankama removed Italian language)           
-❌ Add ability to forbid prysmaradite       
+✅ Add ability to forbid prysmaradite       
 ❌ Make it mobile friendly             
         
-❌ New features after 3.0 TBD         
+🚧 New features after 3.0 TBD     
+    ✅ Shared Builds
        
 ✅ Dofus 3 Unity             
 ❌ Dofus Touch            
