@@ -295,6 +295,125 @@ def _apply_stackable_damage(
     return aggregates
 
 
+def _expand_multi_row_stackable_damage(
+    rows: List[Dict[str, Any]],
+    crit_rows: List[Dict[str, Any]],
+    stack_info: Mapping[str, Any],
+    level_count: int,
+    stack_cap_override: Optional[int] = None,
+) -> Tuple[Optional[List[str]], int]:
+    if not rows or not stack_info or level_count <= 0:
+        return None, 0
+    per_stack = list(stack_info.get("per_stack") or [])
+    if len(per_stack) != level_count:
+        return None, 0
+    if stack_cap_override and stack_cap_override > 1:
+        stack_cap = stack_cap_override
+        effective_caps = [stack_cap] * level_count
+    else:
+        caps = list(stack_info.get("max_stacks") or [])
+        if len(caps) < level_count:
+            caps = caps + [caps[-1] if caps else None] * (level_count - len(caps))
+        stack_cap = 0
+        for cap in caps:
+            if cap and cap > stack_cap:
+                stack_cap = cap
+        if stack_cap <= 1:
+            return None, 0
+        effective_caps = [cap or stack_cap for cap in caps[:level_count]]
+    if stack_cap <= 1:
+        return None, 0
+
+    base_rows = list(rows)
+    base_crit_rows = list(crit_rows or [])
+
+    def _clone_row(source: Mapping[str, Any], stack_count: int) -> Dict[str, Any]:
+        cloned: Dict[str, Any] = dict(source)
+        ranges = list(source.get("ranges") or [])
+        new_ranges: List[str] = []
+        for idx, literal in enumerate(ranges):
+            if idx >= level_count:
+                new_ranges.append(str(literal))
+                continue
+            single = per_stack[idx] if idx < len(per_stack) and per_stack[idx] is not None else 0
+            if not single:
+                new_ranges.append(str(literal))
+                continue
+            delta = single * min(stack_count, effective_caps[idx])
+            if not delta:
+                new_ranges.append(str(literal))
+                continue
+            min_val, max_val = _parse_damage_literal(str(literal))
+            new_ranges.append(_format_damage_literal(min_val + delta, max_val + delta))
+        cloned["ranges"] = new_ranges
+        group = cloned.get("best_element_group")
+        if group is not None:
+            cloned["best_element_group"] = f"{group}-stack{stack_count}"
+        return cloned
+
+    for stack_count in range(1, stack_cap + 1):
+        for row in base_rows:
+            rows.append(_clone_row(row, stack_count))
+        if base_crit_rows:
+            for row in base_crit_rows:
+                crit_rows.append(_clone_row(row, stack_count))
+
+    labels = stack_info.get("labels")
+    if labels and len(labels) >= stack_cap + 1:
+        stack_labels = [str(label) for label in labels[: stack_cap + 1]]
+    else:
+        stack_labels = [f"Stack {count}" for count in range(stack_cap + 1)]
+    return stack_labels, stack_cap
+
+
+def _prefix_stack_labels(
+    aggregates: Optional[List[Tuple[str, List[int]]]],
+    base_row_block: int,
+    stack_labels: Optional[Sequence[str]],
+) -> Optional[List[Tuple[str, List[int]]]]:
+    if not aggregates or not stack_labels or base_row_block <= 0:
+        return aggregates
+    total_stack_rows = base_row_block * len(stack_labels)
+    updated: List[Tuple[str, List[int]]] = []
+    for label, indexes in aggregates:
+        new_label = label
+        if indexes:
+            idx = indexes[0]
+            if idx < total_stack_rows:
+                stack_idx = idx // base_row_block
+                if stack_idx > 0 and stack_idx < len(stack_labels):
+                    prefix = stack_labels[stack_idx]
+                    if label:
+                        new_label = f"{prefix} - {label}"
+                    else:
+                        new_label = prefix
+        updated.append((new_label, indexes))
+    return updated
+
+
+def _build_stack_row_aggregates(
+    stack_row_block: int,
+    base_row_count: int,
+    stack_labels: Sequence[str],
+) -> Optional[List[Tuple[str, List[int]]]]:
+    if stack_row_block <= 0 or base_row_count <= 0 or not stack_labels:
+        return None
+    aggregates: List[Tuple[str, List[int]]] = []
+    stacks = min(len(stack_labels), (base_row_count + stack_row_block - 1) // stack_row_block)
+    for stack_idx in range(stacks):
+        start = stack_idx * stack_row_block
+        label = stack_labels[stack_idx]
+        if not label:
+            label = f"Stack {stack_idx}"
+        for offset in range(stack_row_block):
+            row_idx = start + offset
+            if row_idx >= base_row_count:
+                break
+            display = label if offset == 0 else ""
+            aggregates.append((display, [row_idx]))
+    return aggregates
+
+
 def _prepare_mp_stackable_damage(
     spell: Mapping[str, Any],
     damage_template: MutableMapping[str, Any],
@@ -346,6 +465,97 @@ def _detect_mp_damage_stack_spec(spell: Mapping[str, Any], level_count: int) -> 
         "max_stacks": [stack_cap] * level_count,
         "labels": [f"{count} MP used this turn" for count in range(stack_cap + 1)],
     }
+
+
+def _prepare_base_damage_stackable_damage(
+    spell: Mapping[str, Any],
+    damage_template: MutableMapping[str, Any],
+    level_count: int,
+) -> Optional[Dict[str, Any]]:
+    if level_count <= 0 or not isinstance(damage_template, MutableMapping):
+        return None
+    if damage_template.get("stackable_damage"):
+        return None
+    normal_rows = damage_template.get("normal") or []
+    if not normal_rows:
+        return None
+    spec = _detect_base_damage_stack_spec(spell, level_count)
+    if not spec:
+        return None
+    damage_template["stackable_damage"] = {
+        "per_stack": spec["per_stack"],
+        "max_stacks": spec["max_stacks"],
+    }
+    return spec
+
+
+def _detect_base_damage_stack_spec(
+    spell: Mapping[str, Any],
+    level_count: int,
+) -> Optional[Dict[str, Any]]:
+    if level_count <= 0:
+        return None
+    try:
+        owner_id = int(spell.get("ankama_id"))
+    except (TypeError, ValueError):
+        return None
+    levels = sorted(
+        spell.get("levels") or [],
+        key=lambda lvl: ((lvl.get("grade") or 0), (lvl.get("level_id") or 0)),
+    )
+    if len(levels) < level_count:
+        return None
+    per_stack: List[int] = []
+    max_stacks: List[Optional[int]] = []
+    stack_cap = 0
+    for idx in range(level_count):
+        level = levels[idx]
+        effect = _self_base_damage_effect(level, owner_id)
+        if not effect:
+            return None
+        try:
+            value = int(effect.get("value"))
+        except (TypeError, ValueError):
+            value = 0
+        per_stack.append(value)
+        try:
+            cap_value = int(level.get("max_stack"))
+        except (TypeError, ValueError):
+            cap_value = None
+        if cap_value and cap_value > 1:
+            stack_cap = max(stack_cap, cap_value)
+            max_stacks.append(cap_value)
+        else:
+            max_stacks.append(None)
+    if stack_cap <= 1:
+        return None
+    if not any(value > 0 for value in per_stack):
+        return None
+    return {"per_stack": per_stack, "max_stacks": max_stacks}
+
+
+def _self_base_damage_effect(level: Mapping[str, Any], owner_id: int) -> Optional[Mapping[str, Any]]:
+    for effect in level.get("effects", []):
+        if effect.get("effect_id") != MP_DAMAGE_EFFECT_ID:
+            continue
+        dice = effect.get("dice") or {}
+        try:
+            linked_id = int(dice.get("min"))
+        except (TypeError, ValueError):
+            continue
+        if linked_id != owner_id:
+            continue
+        triggers = (effect.get("triggers") or "").upper()
+        if MP_DAMAGE_TRIGGER_TOKEN in triggers:
+            continue
+        try:
+            value = int(effect.get("value"))
+        except (TypeError, ValueError):
+            value = None
+        if not value or value <= 0:
+            continue
+        return effect
+    return None
 
 
 def _mp_damage_effect_for_level(level: Mapping[str, Any], owner_id: Any) -> Optional[Mapping[str, Any]]:
@@ -830,6 +1040,9 @@ def convert_spell(
         return None
     level_count = len(level_requirements)
     mp_stack_spec = _prepare_mp_stackable_damage(spell, damage, level_count)
+    if not damage.get("stackable_damage"):
+        _prepare_base_damage_stackable_damage(spell, damage, level_count)
+    stack_limit = _extract_stack_limit(spell)
 
     normal_rows = damage.get("normal") or []
     crit_rows = damage.get("critical") or []
@@ -838,6 +1051,23 @@ def convert_spell(
         if glyph_damage:
             normal_rows = glyph_damage["normal"]
             crit_rows = glyph_damage["critical"]
+
+    stack_row_block = len(normal_rows)
+    stack_labels: Optional[List[str]] = None
+    if damage.get("stackable_damage") and len(normal_rows) > 1:
+        stack_labels, stack_cap = _expand_multi_row_stackable_damage(
+            normal_rows,
+            crit_rows,
+            damage.get("stackable_damage") or {},
+            level_count,
+            stack_limit,
+        )
+        if stack_labels:
+            damage["stackable_damage"] = None
+            if stack_cap:
+                stack_limit = max(stack_limit or 0, stack_cap)
+        stack_row_block = stack_row_block or len(normal_rows)
+
     best_element_groups = _extract_best_element_groups(normal_rows)
     base_row_count = len(normal_rows)
 
@@ -891,9 +1121,14 @@ def convert_spell(
         len(non_crit),
     )
     aggregates = best_element_aggregates or stack_aggregates
+    aggregates_from_best = aggregates is best_element_aggregates and aggregates is not None
+    if not aggregates and stack_labels and stack_row_block:
+        aggregates = _build_stack_row_aggregates(stack_row_block, base_row_count, stack_labels)
+    if aggregates_from_best and aggregates and stack_labels and stack_row_block:
+        aggregates = _prefix_stack_labels(aggregates, stack_row_block, stack_labels)
     if not non_crit:
         return None
-    stacks = _extract_stack_limit(spell)
+    stacks = stack_limit
     variant_link = spell.get("variant_link")
     is_linked = _convert_variant_link(variant_link)
 
